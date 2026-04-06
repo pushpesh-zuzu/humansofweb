@@ -179,6 +179,120 @@ const ICONS = [
       </>
     ),
   },
+  {
+    label: "growth chart",
+    path: (
+      <>
+        <path d="M4 19h16" />
+        <path d="M6 16l4-4 3 2 5-7" />
+        <path d="M15 7h3v3" />
+      </>
+    ),
+  },
+  {
+    label: "keyword tag",
+    path: (
+      <>
+        <path d="M4 12V5h7l9 9-7 7-9-9z" />
+        <circle cx="8" cy="9" r="1" />
+        <path d="M10 13h5M10 16h3" />
+      </>
+    ),
+  },
+  {
+    label: "backlink",
+    path: (
+      <>
+        <path d="M10 7h-1a5 5 0 0 0 0 10h3" />
+        <path d="M14 7h1a5 5 0 0 1 0 10h-3" />
+        <path d="M8 12h8" />
+      </>
+    ),
+  },
+  {
+    label: "reviews star",
+    path: (
+      <>
+        <path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3z" />
+      </>
+    ),
+  },
+  {
+    label: "mobile website",
+    path: (
+      <>
+        <rect x="8" y="3" width="8" height="18" rx="2" />
+        <path d="M11 6h2M12 18h.01" />
+      </>
+    ),
+  },
+  {
+    label: "speed performance",
+    path: (
+      <>
+        <path d="M5 16a7 7 0 1 1 14 0" />
+        <path d="M12 16l4-5" />
+        <path d="M8 20h8" />
+      </>
+    ),
+  },
+  {
+    label: "security shield",
+    path: (
+      <>
+        <path d="M12 3l7 3v5c0 4.4-2.8 8.4-7 10-4.2-1.6-7-5.6-7-10V6l7-3z" />
+        <path d="M9 12l2 2 4-4" />
+      </>
+    ),
+  },
+  {
+    label: "strategy lightbulb",
+    path: (
+      <>
+        <path d="M9 18h6M10 21h4" />
+        <path d="M8 11a4 4 0 1 1 8 0c0 2-1.5 3-2.2 4H10.2C9.5 14 8 13 8 11z" />
+        <path d="M12 3V2M5 6l-1-1M19 6l1-1" />
+      </>
+    ),
+  },
+  {
+    label: "video marketing",
+    path: (
+      <>
+        <rect x="4" y="6" width="16" height="12" rx="2" />
+        <path d="M10 9l5 3-5 3V9z" />
+      </>
+    ),
+  },
+  {
+    label: "automation gear",
+    path: (
+      <>
+        <circle cx="12" cy="12" r="3" />
+        <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
+      </>
+    ),
+  },
+  {
+    label: "team users",
+    path: (
+      <>
+        <circle cx="9" cy="8" r="3" />
+        <circle cx="17" cy="10" r="2" />
+        <path d="M4 20c.6-3 2.5-5 5-5s4.4 2 5 5" />
+        <path d="M14 16c1.9.2 3.3 1.6 4 4" />
+      </>
+    ),
+  },
+  {
+    label: "calendar campaign",
+    path: (
+      <>
+        <rect x="4" y="5" width="16" height="15" rx="2" />
+        <path d="M8 3v4M16 3v4M4 10h16M8 14h.01M12 14h.01M16 14h.01" />
+      </>
+    ),
+  },
 ];
 
 function createSeededRandom(seed) {
@@ -193,7 +307,7 @@ export default function FloatingBalls() {
   const icons = useMemo(() => {
     const random = createSeededRandom(42);
 
-    return Array.from({ length: 18 }, (_, index) => {
+    return Array.from({ length: 24 }, (_, index) => {
       const size = 18 + Math.floor(random() * 14);
       const left = `${Math.floor(random() * 100)}%`;
       const startY = `${102 + Math.floor(random() * 28)}%`;
