@@ -65,13 +65,13 @@ export default function HeroSection() {
             >
               <h1 className="text-h1 font-semibold text-[#1c1c1c]">
                 We Turn{" "}
-                <span className="text-[#162cb9]">Visibility Into Revenue</span>{" "}
+                <span className="text-primary">Visibility Into Revenue</span>{" "}
                 Everywhere Your Audience Spends Time
               </h1>
 
               <p className="mt-5 p-tertiary font-semibold text-[#1c1c1c]">
                 HOW Helps{" "}
-                <span className="relative inline-flex min-w-[12ch] align-bottom text-[#162cb9]">
+                <span className="relative inline-flex min-w-[12ch] align-bottom text-primary">
                   <span className="inline-block">{displayText}</span>
                 </span>
               </p>
@@ -80,9 +80,9 @@ export default function HeroSection() {
                 <input
                   type="text"
                   placeholder="Enter website address"
-                  className="h-[52px] w-full rounded-none border border-[#162cb9] px-4 text-sm text-[#111111] outline-none transition focus:border-[#162cb9] sm:max-w-[210px]"
+                  className="h-[52px] w-full rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
                 />
-                <button className="h-[52px] cursor-pointer bg-[#162cb9] px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-[#E87722]">
+                <button className="h-[52px] cursor-pointer rounded-full bg-primary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-secondary">
                   Get Your Free Proposal
                 </button>
               </div>
@@ -96,9 +96,9 @@ export default function HeroSection() {
               <a
                 href="#"
                 onClick={handleExploreClick}
-                className="group mt-7 flex w-full items-center justify-center gap-3 text-[14px] font-bold uppercase tracking-[0.08em] text-[#162cb9] transition-all duration-500 ease-out md:w-fit md:justify-start md:text-[20px]"
+                className="group mt-7 flex w-full items-center justify-center gap-3 text-[14px] font-bold uppercase tracking-[0.08em] text-primary transition-all duration-500 ease-out md:w-fit md:justify-start md:text-[20px]"
               >
-                <span className="transition-colors duration-500 ease-out group-hover:text-[#E87722]">
+                <span className="transition-colors duration-500 ease-out group-hover:text-secondary">
                   Explore Our Services
                 </span>
                 <span

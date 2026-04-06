@@ -26,7 +26,7 @@ export default function DropdownMenu({ items, open }) {
       onMouseLeave={() => setActiveIndex(null)}
     >
       {/* Left Column */}
-      <ul className="bg-[#E87722] min-w-[240px] overflow-hidden shadow-2xl">
+      <ul className="bg-secondary min-w-[240px] overflow-hidden shadow-2xl">
         {items.map((item, idx) => (
           <li
             key={idx}
@@ -40,8 +40,8 @@ export default function DropdownMenu({ items, open }) {
                 onClick={() => setActiveItem(idx)}
                 className={`w-full text-left flex items-center justify-between gap-4 px-5 py-3 text-sm font-medium text-white transition-colors duration-200
                   ${activeIndex === idx
-                    ? "bg-[#c9641a]"
-                    : "hover:bg-[#d06a1c]"
+                    ? "bg-[#f4758a]"
+                    : "hover:bg-[#f4758a]"
                   }`}
               >
                 {item.label}
@@ -62,7 +62,7 @@ export default function DropdownMenu({ items, open }) {
             ) : (
               <Link
                 href={item.href ?? "#"}
-                className="block px-5 py-3 text-sm font-medium text-white hover:bg-[#d06a1c]"
+                className="block px-5 py-3 text-sm font-medium text-white hover:bg-[#f4758a]"
               >
                 {item.label}
               </Link>
@@ -74,14 +74,14 @@ export default function DropdownMenu({ items, open }) {
       {/* Right Column (Sub Items) */}
       {hasSubItems && (
         <ul
-          className="absolute left-full ml-1 bg-[#E87722] min-w-[240px] overflow-hidden shadow-2xl before:absolute before:-left-1 before:top-0 before:h-full before:w-1 before:content-['']"
+          className="absolute left-full ml-1 bg-secondary min-w-[240px] overflow-hidden shadow-2xl before:absolute before:-left-1 before:top-0 before:h-full before:w-1 before:content-['']"
           style={{ top: activeTop }}
         >
           {activeItem.subItems.map((sub, idx) => (
             <li key={idx}>
               <Link
                 href={sub.href}
-                className="block px-5 py-3 text-sm text-white hover:bg-[#b85510]"
+                className="block px-5 py-3 text-sm text-white hover:bg-[#f4758a]"
               >
                 {sub.label}
               </Link>

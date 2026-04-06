@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
-      <div className="bg-[#162cb9] py-[4.6px] w-full"></div>
+      <div className="bg-primary py-[4.6px] w-full"></div>
       <div className="mx-auto px-4 sm:px-6 py-[10px] lg:px-7 lg:py-7">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -43,14 +43,14 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <Link
                 href="#"
-                className="hidden md:inline-flex items-center button-outline font-bold text-[#4b4b4b] border-1 px-4.5 py-3.75 hover:bg-[#E87722] hover:text-white transition-colors duration-200"
+                className="hidden md:inline-flex rounded-full items-center button-outline font-bold text-[#4b4b4b] border-1 px-4.5 py-3.75 hover:bg-secondary hover:text-white transition-colors duration-200"
               >
                 GET A PROPOSAL
               </Link>
 
               <button
                 onClick={() => setMobileOpen((v) => !v)}
-                className="flex xl:hidden p-2 rounded text-gray-700 hover:text-[#E87722]"
+                className="flex xl:hidden p-2 rounded text-gray-700 hover:text-secondary"
                 aria-label="Toggle menu"
               >
                 <svg

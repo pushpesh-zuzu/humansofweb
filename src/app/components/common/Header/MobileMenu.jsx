@@ -15,7 +15,7 @@ export default function MobileMenu({ items, open, onClose }) {
 
   function ToggleIcon({ expanded }) {
     return (
-      <span className="flex h-5 w-5 items-center justify-center rounded-[4px] bg-white text-[#162cb9]">
+      <span className="flex h-5 w-5 items-center justify-center rounded-[4px] bg-white text-primary">
         <svg
           className="h-3 w-3"
           fill="none"
@@ -46,7 +46,7 @@ export default function MobileMenu({ items, open, onClose }) {
       />
 
       <div
-        className={`relative flex h-full w-[88vw] max-w-[250px] flex-col bg-[#162cb9] shadow-2xl transition-transform duration-300 ease-out md:max-w-[350px] ${open ? "translate-x-0" : "-translate-x-full"
+        className={`relative flex h-full w-[88vw] max-w-[250px] flex-col bg-primary shadow-2xl transition-transform duration-300 ease-out md:max-w-[350px] ${open ? "translate-x-0" : "-translate-x-full"
           }`}
       >
         <div className="flex items-center justify-between border-b border-white/20 px-5 py-5">
@@ -150,7 +150,7 @@ export default function MobileMenu({ items, open, onClose }) {
         <div className="border-t border-white/20 p-4">
           <Link
             href="#"
-            className="block w-full rounded border-2 border-[#E87722] bg-[#E87722] px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-transparent hover:text-[#E87722]"
+            className="block w-full rounded border-2 border-secondary bg-secondary px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-transparent hover:text-secondary"
           >
             GET A PROPOSAL
           </Link>

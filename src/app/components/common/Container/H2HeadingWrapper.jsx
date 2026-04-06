@@ -12,7 +12,7 @@ function H2HeadingWrapper({
       <h2 className="text-h2">
         {headdingBlack} {breakLine && <br />}{" "}
         {headingBlue && (
-          <span className="font-bold text-[#162cb9]">{headingBlue}</span>
+          <span className="font-bold text-primary">{headingBlue}</span>
         )}
       </h2>
       {subHeading && (

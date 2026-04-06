@@ -13,7 +13,7 @@ function AnimatedBorder({ hovered }) {
         transform: hovered ? "scaleX(1)" : "scaleX(0)",
         transition: "transform 0.6s ease",
       }}
-      className="absolute bottom-0 left-0 h-[1.5px] w-full bg-[#E87722] block"
+      className="absolute bottom-0 left-0 h-[1.5px] w-full bg-secondary block"
     />
   );
 }
@@ -54,7 +54,7 @@ export default function NavItem({ item }) {
         href={item.href ?? "#"}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="relative text-[15px] font-normal text-[#2c2c2c] hover:text-[#E87722] transition-colors duration-500 ease-in-out px-4.5 py-3.75"
+        className="relative text-[15px] font-normal text-[#2c2c2c] hover:text-secondary transition-colors duration-500 ease-in-out px-4.5 py-3.75"
       >
         {item.label}
         <AnimatedBorder hovered={hovered} />
@@ -72,7 +72,7 @@ export default function NavItem({ item }) {
       <button
         onClick={() => setOpen((v) => !v)}
         className={`relative  flex items-center gap-1 text-[15px] font-normal transition-colors duration-600 cursor-pointer ease-in-out px-3 xl:px-4.5 py-3.75
-          ${open || hovered ? "text-[#E87722]" : "text-[#2c2c2c]"}`}
+          ${open || hovered ? "text-secondary" : "text-[#2c2c2c]"}`}
       >
         {item.label}
         <svg

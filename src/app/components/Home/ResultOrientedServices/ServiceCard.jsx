@@ -68,7 +68,7 @@ export default function ServiceCard({
           {icon}
         </div>
 
-        <h5 className="text-h5 text-[#162cb9] font-bold text-center py-5">
+        <h5 className="text-h5 text-primary font-bold text-center py-5">
           {title}
         </h5>
 
