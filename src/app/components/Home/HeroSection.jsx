@@ -64,7 +64,7 @@ export default function HeroSection() {
               className="relative z-10 max-w-[650px]"
             >
               <h1 className="text-h1 font-semibold text-[#1c1c1c]">
-                We - Turn{" "}
+                We Turn{" "}
                 <span className="text-primary">Visibility Into Revenue</span>{" "}
                 Everywhere Your Audience Spends Time
               </h1>
