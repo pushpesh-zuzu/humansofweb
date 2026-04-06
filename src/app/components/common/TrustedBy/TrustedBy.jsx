@@ -81,7 +81,7 @@ export default function TrustedBy() {
   };
 
   return (
-    <ContainerWrapper maxWidth="max-w-[1440px] max-w-[92%] ">
+    <ContainerWrapper maxWidth="max-w-[1440px] w-[100%] md:w-[92%] lg:w-[95%]">
       <PaddingWrapper padding="py-9.5 md:py-12 xl:py-15">
         <section className="w-full  overflow-hidden bg-white">
           {/* Title */}

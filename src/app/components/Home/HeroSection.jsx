@@ -7,9 +7,9 @@ import ContainerWrapper from "../common/Container/ContainerWrapper";
 import PaddingWrapper from "../common/Container/PaddingWrapper";
 
 const ROTATING_TEXTS = [
-  "Healthcare Brands",
-  "E-commerce Brands",
-  "SaaS Companies",
+  "startups",
+  "creators",
+  "brands",
 ];
 
 export default function HeroSection() {
@@ -52,51 +52,50 @@ export default function HeroSection() {
   return (
     <ContainerWrapper
       background="#ffffff"
-      maxWidth="max-w-[1500px] w-[92%] xl:w-[88%]"
+      maxWidth="max-w-[1440px] w-[92%]"
     >
       <PaddingWrapper padding="pt-6 pb-10 md:pt-10 md:pb-14 xl:pt-15 xl:pb-7.5">
-        <section className="relative overflow-hidden rounded-[34px] bg-white">
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
+        <section className="relative overflow-visible rounded-[34px] bg-white">
+          <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="relative z-10 max-w-[650px]"
+              className="relative z-10 max-w-[650px] md:mx-auto md:text-center lg:mx-0 lg:text-left"
             >
               <h1 className="text-h1 font-semibold text-[#1c1c1c]">
                 We Turn{" "}
-                <span className="text-primary">Visibility Into Revenue</span>{" "}
-                Everywhere Your Audience Spends Time
+                <span className="text-primary">Ideas Into Digital Experiences</span>{" "}
+                That Humans Love
               </h1>
 
               <p className="mt-5 p-tertiary font-semibold text-[#1c1c1c]">
-                HOW Helps{" "}
-                <span className="relative inline-flex min-w-[12ch] align-bottom text-primary">
+                Humans of Web helps{" "}
+                <span className="relative inline-flex align-bottom text-primary">
                   <span className="inline-block">{displayText}</span>
-                </span>
+                </span>{" "}
+                craft human-centered digital experiences that convert.
               </p>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
                 <input
                   type="text"
-                  placeholder="Enter website address"
+                  placeholder="Enter your website"
                   className="h-[52px] w-full rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
                 />
                 <button className="h-[52px] cursor-pointer rounded-full bg-primary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-secondary">
-                  Get Your Free Proposal
+                  Get Your Free Consultation
                 </button>
               </div>
 
-              <p className="mt-9 max-w-[560px] p-default leading-[1.30] font-semibold text-[#000000]">
-                Grow faster with full-stack digital marketing across search,
-                social, forums, and AI platforms like ChatGPT. Strategy meets
-                execution to drive results that actually move the needle.
+              <p className="mt-9 max-w-[560px] p-default leading-[1.30] font-semibold text-[#000000] md:mx-auto lg:mx-0">
+                We help your business grow faster using digital marketing across search, social media, forums, and AI platforms like ChatGPT. From planning to execution, everything we do is focused on getting real results.
               </p>
 
               <a
                 href="#"
                 onClick={handleExploreClick}
-                className="group mt-7 flex w-full items-center justify-center gap-3 text-[14px] font-bold uppercase tracking-[0.08em] text-primary transition-all duration-500 ease-out md:w-fit md:justify-start md:text-[20px]"
+                className="group mt-7 flex w-full items-center justify-center gap-3 text-[14px] font-bold uppercase tracking-[0.08em] text-primary transition-all duration-500 ease-out md:mx-auto md:w-fit md:text-[20px] lg:mx-0 lg:justify-start"
               >
                 <span className="transition-colors duration-500 ease-out group-hover:text-secondary">
                   Explore Our Services
@@ -114,7 +113,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="relative flex min-h-[420px] items-center justify-center lg:min-h-[580px]"
+              className="relative flex items-start justify-center"
             >
               <div className="absolute right-[10%] top-[12%] h-14 w-14 rounded-full border border-dashed border-[#1d1d1d]/40" />
               <div className="absolute left-[2%] bottom-[16%] h-24 w-24 rounded-full border border-dashed border-[#1d1d1d]/25" />

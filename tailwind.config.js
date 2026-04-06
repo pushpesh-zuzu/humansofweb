@@ -213,6 +213,9 @@ module.exports = {
     "./src/lib/**/*.{js,jsx,ts,tsx,mdx}",
   ],
   theme: {
+    borderRadius: {
+      full: "9999px",
+    },
     extend: {
       fontFamily: {
         sans: ["var(--font-montserrat)", "sans-serif"],

@@ -3,6 +3,7 @@
 import HeroSection from "./components/Home/HeroSection";
 import TrustedBy from "./components/common/TrustedBy/TrustedBy";
 import ResultOrientedServices from "./components/Home/ResultOrientedServices";
+import WorkingWithUs from "./components/Home/WorkingWithUs";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <TrustedBy />
       <ResultOrientedServices />
+      <WorkingWithUs />
     </>
   );
 }

@@ -3,12 +3,12 @@
 
 const borderGradient = (reverse) => `linear-gradient(
   to ${reverse ? "top" : "bottom"},
-  #667eea 0%,
-  #667eea 50%,
-  #8b9ef0 60%,
-  #b0bef5 70%,
-  #d4d9fa 80%,
-  #eceffe 90%,
+  #48179C 0%,
+  #48179C 50%,
+  #6f3dcc 60%,
+  #9b7ee0 70%,
+  #c8b6ef 80%,
+  #eee8fb 90%,
   transparent 100%
 )`;
 
@@ -37,19 +37,19 @@ export default function ServiceCard({
       }}
     >
       <div
-        className="pt-7.5 pb-10 px-5"
+        className="px-5 py-6"
         style={{
           background: warm ? "#fffdf4" : "#f5f6ff",
           borderRadius: 14,
 
-          minHeight: 485,
+          minHeight: 350,
           display: "flex",
           flexDirection: "column",
           transition: "box-shadow 0.3s ease",
           cursor: "default",
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = "0 12px 36px rgba(102,126,234,0.2)";
+          e.currentTarget.style.boxShadow = "0 12px 36px rgba(72,23,156,0.2)";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.boxShadow = "none";
@@ -73,7 +73,7 @@ export default function ServiceCard({
         </h5>
 
         {subtitle && (
-          <h6 className="text-h6 text-center font-bold pt-3.75">{subtitle}</h6>
+          <h6 className="text-h6 text-center font-bold pt-2.5">{subtitle}</h6>
         )}
         <p className="text-base font-normal text-center">{description}</p>
       </div>
