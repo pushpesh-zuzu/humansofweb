@@ -1,0 +1,41 @@
+@config "../../tailwind.config.js";
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+  --font-heading: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@keyframes float-up {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.95;
+  }
+
+  50% {
+    transform: translate3d(var(--float-drift-x, 0px), -65vh, 0) scale(1.05);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: translate3d(calc(var(--float-drift-x, 0px) * -1), -130vh, 0)
+      scale(1.12);
+    opacity: 0;
+  }
+}

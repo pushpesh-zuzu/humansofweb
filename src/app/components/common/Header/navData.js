@@ -1,0 +1,94 @@
+const NAV_ITEMS = [
+  { label: "Home", href: "/" },
+  {
+    label: "Industry Expertise",
+    children: [
+      {
+        label: "Ecommerce",
+        subItems: [
+          { label: "E-Commerce SEO", href: "#" },
+          { label: "E-Commerce Website Development", href: "#" },
+          { label: "E-Commerce PPC", href: "#" },
+          { label: "E-Commerce GEO Services", href: "#" },
+          { label: "E-Commerce Social Media Marketing", href: "#" },
+          { label: "E-Commerce CRO", href: "#" },
+          { label: "E-Commerce Email Marketing", href: "#" },
+          { label: "E-Commerce Content Marketing", href: "#" },
+          { label: "Amazon Marketing", href: "#" },
+        ],
+      },
+      {
+        label: "SaaS",
+        subItems: [
+          { label: "SaaS SEO", href: "#" },
+          { label: "SaaS PPC", href: "#" },
+        ],
+      },
+      {
+        label: "Dental",
+        subItems: [
+          { label: "Dental SEO", href: "#" },
+          { label: "Dental Web Design", href: "#" },
+        ],
+      },
+      {
+        label: "Healthcare",
+        subItems: [
+          { label: "Healthcare SEO", href: "#" },
+          { label: "Healthcare PPC", href: "#" },
+        ],
+      },
+      {
+        label: "Ophthalmology",
+        subItems: [
+          { label: "Ophthalmology SEO", href: "#" },
+          { label: "Ophthalmology Web Design", href: "#" },
+        ],
+      },
+      {
+        label: "Chiropractor",
+        subItems: [{ label: "Chiropractor SEO", href: "#" }],
+      },
+      {
+        label: "Plastic Surgeon",
+        subItems: [{ label: "Plastic Surgeon SEO", href: "#" }],
+      },
+      {
+        label: "Legal",
+        subItems: [
+          { label: "Legal SEO", href: "#" },
+          { label: "Legal PPC", href: "#" },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Platform Expertise",
+    children: [
+      {
+        label: "WordPress",
+        subItems: [{ label: "WordPress Development", href: "#" }],
+      },
+      {
+        label: "Shopify",
+        subItems: [{ label: "Shopify Development", href: "#" }],
+      },
+      {
+        label: "WooCommerce",
+        subItems: [{ label: "WooCommerce Setup", href: "#" }],
+      },
+    ],
+  },
+  {
+    label: "Company",
+    children: [
+      { label: "About Us", href: "#" },
+      { label: "Our Team", href: "#" },
+      { label: "Case Studies", href: "#" },
+      { label: "Blog", href: "#" },
+    ],
+  },
+  { label: "Contact us", href: "/contact" },
+];
+
+export default NAV_ITEMS;
