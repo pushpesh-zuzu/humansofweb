@@ -4,7 +4,7 @@ import HeroSection from "./components/Home/HeroSection";
 import TrustedBy from "./components/common/TrustedBy/TrustedBy";
 import ResultOrientedServices from "./components/Home/ResultOrientedServices";
 import WorkingWithUs from "./components/Home/WorkingWithUs";
-// import ProposalModal from "./components/auth/ProposalModal";
+import ProposalModal from "./components/auth/ProposalModal";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -25,12 +25,12 @@ export default function Home() {
       <TrustedBy />
       <ResultOrientedServices />
       <WorkingWithUs />
-      {/* <ProposalModal
+      <ProposalModal
         isOpen={isOpen}
         onClose={() => {
           setIsOpen(false);
         }}
-      /> */}
+      />
     </>
   );
 }
