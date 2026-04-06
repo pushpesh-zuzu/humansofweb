@@ -25,12 +25,12 @@ export default function Home() {
       <TrustedBy />
       <ResultOrientedServices />
       <WorkingWithUs />
-      <ProposalModal
+      {/* <ProposalModal
         isOpen={isOpen}
         onClose={() => {
           setIsOpen(false);
         }}
-      />
+      /> */}
     </>
   );
 }
