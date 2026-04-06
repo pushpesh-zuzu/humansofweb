@@ -269,7 +269,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                 </div>
 
                 <div
-                  className="rounded-xl p-4 mb-6"
+                  className="rounded-[16px] p-4 mb-6"
                   style={{
                     background:
                       "linear-gradient(135deg, #f5f0ff 0%, #fff0f3 100%)",
