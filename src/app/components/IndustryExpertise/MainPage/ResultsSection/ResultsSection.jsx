@@ -244,7 +244,7 @@ export default function ResultsSection() {
             <button
               className="button-primary hover:text-secondary hover:bg-white!"
             >
-              See If We're the Right Fit →
+              See If We're the Right Fit
             </button>
           </div>
         </div>
