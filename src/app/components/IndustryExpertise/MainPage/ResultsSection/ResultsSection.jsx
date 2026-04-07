@@ -25,10 +25,10 @@ function useCountUp(target, duration = 1800, start = false) {
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
 const STATS = [
-  { value: 312, suffix: "%", label: "Average increase in organic leads", sub: "across client portfolio", color: "#a78bfa" },
+  { value: 312, suffix: "%", label: "Average increase in organic leads", sub: "across client portfolio", color: "#732cee" },
   { value: 850, suffix: "+", label: "Keywords ranked on Page 1", sub: "Google & Bing combined", color: "#F65A75" },
   { value: 4.8, suffix: "x", label: "Average ROAS on paid campaigns", sub: "within first 90 days", color: "#34d399", isFloat: true },
-  { value: 60, suffix: "%", label: "Reduction in cost per lead", sub: "vs. industry benchmark", color: "#60a5fa" },
+  { value: 60, suffix: "%", label: "Reduction in cost per lead", sub: "vs. industry benchmark", color: "#732cee" },
 ];
 
 // ── Case Studies ──────────────────────────────────────────────────────────────
@@ -38,22 +38,22 @@ const CASES = [
     brand: "Local Contractor Co.",
     result: "3.4x more inbound calls in 90 days",
     metrics: [
-      { label: "Organic Traffic", before: 820, after: 4100, color: "#a78bfa" },
+      { label: "Organic Traffic", before: 820, after: 4100, color: "#732cee" },
       { label: "Monthly Leads", before: 34, after: 116, color: "#F65A75" },
     ],
     tag: "Local SEO + Google Ads",
-    color: "#a78bfa",
+    color: "#732cee",
   },
   {
     industry: "SaaS",
     brand: "TechFlow App",
     result: "41% jump in trial signups in 60 days",
     metrics: [
-      { label: "Trial Signups", before: 210, after: 890, color: "#60a5fa" },
+      { label: "Trial Signups", before: 210, after: 890, color: "#732cee" },
       { label: "Paid Conversions", before: 28, after: 312, color: "#34d399" },
     ],
     tag: "SaaS SEO + Email Flows",
-    color: "#60a5fa",
+    color: "#732cee",
   },
   {
     industry: "Real Estate",
@@ -204,13 +204,13 @@ export default function ResultsSection() {
           <div className="text-center mb-12">
             <span
               className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4"
-              style={{ background: "rgba(167,139,250,0.15)", color: "#a78bfa", border: "1px solid rgba(167,139,250,0.3)" }}
+              style={{ background: "rgba(167,139,250,0.15)", color: "#732cee", border: "1px solid rgba(167,139,250,0.3)" }}
             >
               Proof, Not Promises
             </span>
             <h2 className="text-h2 font-extrabold text-white leading-tight">
               Numbers That{" "}
-              <span style={{ color: "#a78bfa" }}>Actually Matter</span>
+              <span style={{ color: "#732cee" }}>Actually Matter</span>
             </h2>
             <p className="p-default mt-3 mx-auto" style={{ color: "rgba(255,255,255,0.5)", maxWidth: 520 }}>
               Real results from real brands — no cherry-picked outliers, no inflated claims.
@@ -242,10 +242,7 @@ export default function ResultsSection() {
               *Results vary by industry, budget, and baseline. All figures are real client data.
             </p>
             <button
-              className="button-primary"
-              style={{ background: "#48179C", border: "none" }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = "#6d28d9")}
-              onMouseLeave={(e) => (e.currentTarget.style.background = "#48179C")}
+              className="button-primary hover:text-secondary hover:bg-white!"
             >
               See If We're the Right Fit →
             </button>
