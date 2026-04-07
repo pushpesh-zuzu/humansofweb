@@ -85,6 +85,18 @@ const headingStyles = {
       lineHeight: "20px",
     },
   },
+  ".p-small": {
+    fontSize: "14px",
+    lineHeight: "16px",
+    "@media (min-width: 768px)": {
+      fontSize: "14px",
+      lineHeight: "16px",
+    },
+    "@media (min-width: 1280px)": {
+      fontSize: "16px",
+      lineHeight: "18px",
+    },
+  },
   ".p-tertiary": {
     fontSize: "18px",
     lineHeight: "20px",

@@ -2,6 +2,7 @@ import React from "react";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
 import PaddingWrapper from "../common/Container/PaddingWrapper";
 import H2HeadingWrapper from "../common/Container/H2HeadingWrapper";
+import StepsCard from "./CustomGeneration/StepsCard";
 
 
 const CustomGeneration = () => {
@@ -13,6 +14,7 @@ const CustomGeneration = () => {
                     headingBlue="Actually Brings Real Customers"
                     subHeading="Built to attract the right audience and drive meaningful results for your business."
                 />
+                <StepsCard />
             </PaddingWrapper>
         </ContainerWrapper>)
 }

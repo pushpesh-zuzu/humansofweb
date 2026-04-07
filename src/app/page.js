@@ -7,6 +7,8 @@ import WorkingWithUs from "./components/Home/WorkingWithUs";
 import ProposalModal from "./components/auth/ProposalModal";
 import { useEffect, useState } from "react";
 import CustomGeneration from "./components/Home/CustomGeneration";
+import BlogSection from "./components/Home/BlogSection";
+import Footer from "./components/common/Footer/Footer";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +29,8 @@ export default function Home() {
       <ResultOrientedServices />
       <WorkingWithUs />
       <CustomGeneration />
+      <BlogSection />
+      <Footer />
       <ProposalModal
         isOpen={isOpen}
         onClose={() => {
