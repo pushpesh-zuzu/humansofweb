@@ -105,7 +105,7 @@ function WorkingWithUs() {
             headingBlue="That Want to Grow"
             subHeading="Real experiences from people who partnered with us to scale smarter"
           />
-          <div className="relative px-10 xl:px-0">
+          <div className="relative px-8 xl:px-0">
             <button
               type="button"
               onClick={scrollPrev}

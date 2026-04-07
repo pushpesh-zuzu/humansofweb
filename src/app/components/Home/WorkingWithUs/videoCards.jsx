@@ -5,39 +5,48 @@ export default function VideoCards({ testimonial, onPlay }) {
 
   return (
     <div
-      className="group mx-auto w-full max-w-[450px] overflow-hidden border-2 border-primary bg-primary text-white transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_18px_40px_rgba(72,23,156,0.28)]"
+      className="group relative mx-auto w-full max-w-[450px] overflow-hidden border-2 border-primary bg-primary text-white transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_18px_40px_rgba(72,23,156,0.28)]"
       style={{
         borderRadius: 18,
         height: 370,
       }}
     >
-      <div className="relative h-[67%] w-full overflow-hidden">
+      <img
+        src={testimonial.avatar}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+      />
+      <div className="absolute inset-0 bg-primary/0 transition-colors duration-500 group-hover:bg-primary/45" />
+
+      <div className="relative z-10 h-[67%] w-full overflow-hidden">
         <img
           src={testimonial.image}
           alt={testimonial.name}
-          className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover object-center transition-all duration-500 group-hover:scale-105 group-hover:opacity-0"
         />
 
         <button
           type="button"
           onClick={() => onPlay(testimonial)}
-          className="absolute inset-0 flex cursor-pointer items-center justify-center -translate-y-4"
+          className="absolute inset-0 cursor-pointer"
           aria-label={`Play ${testimonial.name} video`}
         >
           <div
-            className="transition-transform duration-300 group-hover:scale-110"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{ height: 80, width: 80 }}
           >
-            <img
-              src={playOutlineIcon.src}
-              alt="play"
-              className="block h-full w-full object-contain"
-            />
+            <div className="h-full w-full transition-transform duration-300 group-hover:animate-[playDrop_0.55s_ease-out] group-hover:scale-110">
+              <img
+                src={playOutlineIcon.src}
+                alt="play"
+                className="block h-full w-full object-contain"
+              />
+            </div>
           </div>
         </button>
 
       </div>
-      <div className="flex h-[50%] w-full flex-col px-4 py-4">
+      <div className="relative z-10 flex h-[50%] w-full flex-col px-4 py-4 transition-colors duration-500 group-hover:bg-transparent">
         <p className="p-default overflow-hidden font-bold text-white">{description}</p>
         <div
           className="flex items-center gap-6 mt-3"
@@ -56,6 +65,16 @@ export default function VideoCards({ testimonial, onPlay }) {
           <p className="truncate font-medium text-white">{testimonial.name}</p>
         </div>
       </div>
+      <style>{`
+        @keyframes playDrop {
+          0% {
+            transform: translateY(-120px);
+          }
+          100% {
+            transform: translateY(0) scale(1.1);
+          }
+        }
+      `}</style>
     </div>
   );
 }

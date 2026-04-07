@@ -7,6 +7,7 @@ import NavItem from "./NavItem";
 import MobileMenu from "./MobileMenu";
 import NAV_ITEMS from "./navData";
 import Logo from "../Icons/Home/Logo";
+import HeaderMotionStrip from "./HeaderMotionStrip";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,12 +22,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
-      <div
-        className="w-full py-[4.6px]"
-        style={{
-          background: "linear-gradient(90deg, #F65A75 0%, #48179C 100%)",
-        }}
-      ></div>
+      <HeaderMotionStrip />
       <div className="mx-auto px-4 sm:px-6 py-[10px] lg:px-7 lg:py-7">
         <div className="flex items-center justify-between">
           {/* Logo */}
