@@ -22,11 +22,11 @@ export default function IndustryHeroSection() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-[650px] md:mx-auto md:text-center lg:mx-0 lg:text-left"
+              className="max-w-[650px] h-full md:mx-auto md:text-center lg:mx-0 lg:text-left"
             >
              
               {/* Heading */}
-              <h1 className="text-h1 font-semibold text-white mt-3 leading-[1.25]">
+              <h1 className="text-h1 font-semibold text-white mb-auto leading-[1.25]">
                 Industry Expertise That Drives{" "}
                 <span className="text-secondary">
                   Real Growth
@@ -45,13 +45,13 @@ export default function IndustryHeroSection() {
               </p>
 
               {/* CTA */}
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
+              <div className="mt-8 md:mt-12 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
                 
-                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary">
+                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary hover:text-white">
                   Get Free Strategy
                 </button>
 
-                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary">
+                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary hover:text-white">
                   View Industries
                 </button>
 
@@ -75,7 +75,7 @@ export default function IndustryHeroSection() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(72,23,156,0.12),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(246,90,117,0.14),_transparent_35%)]" />
 
                 <Image
-                  src="/IndustryExpertise/indusries.webp"
+                  src="/IndustryExpertise/industryHero.webp"
                   alt="Industry Expertise"
                   fill
                   className="object-cover"

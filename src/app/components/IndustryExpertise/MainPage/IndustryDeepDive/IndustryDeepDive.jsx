@@ -1,8 +1,9 @@
-'use client'
+"use client";
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
+import Image from "next/image";
 import React from "react";
 
 // ── Data ──────────────────────────────────────────────────────────────────────
@@ -16,8 +17,18 @@ const INDUSTRIES = [
     services: [
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#48179C"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="M21 21l-4.35-4.35" />
           </svg>
         ),
         title: "Local SEO",
@@ -25,9 +36,19 @@ const INDUSTRIES = [
       },
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#48179C"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
           </svg>
         ),
         title: "Lead Generation",
@@ -35,68 +56,26 @@ const INDUSTRIES = [
       },
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#48179C"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <path d="M8 21h8M12 17v4" />
           </svg>
         ),
         title: "Conversion Pages",
         desc: "Landing pages built to turn visitors into booked jobs — not just traffic.",
       },
     ],
-    visual: (
-      // Mock: Google Maps + contractor card
-      <div className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden" style={{ background: "#e8f0e9" }}>
-        {/* Map bg */}
-        <svg width="100%" height="100%" viewBox="0 0 400 340" preserveAspectRatio="xMidYMid slice">
-          {/* Grid roads */}
-          {[60,120,180,240,300].map(y => <line key={y} x1="0" y1={y} x2="400" y2={y} stroke="#c8d8c8" strokeWidth="8"/>)}
-          {[80,160,240,320].map(x => <line key={x} x1={x} y1="0" x2={x} y2="340" stroke="#c8d8c8" strokeWidth="8"/>)}
-          {/* Blocks */}
-          {[[20,20,50,30],[100,20,50,30],[170,20,60,30],[250,20,60,30],[330,20,55,30],
-            [20,70,45,40],[100,70,50,40],[170,70,55,40],[250,70,60,40],[330,70,50,40],
-            [20,130,55,35],[100,130,50,35],[170,130,60,35],[250,130,55,35],[330,130,60,35],
-            [20,190,50,40],[100,190,55,40],[170,190,50,40],[250,190,60,40],[330,190,55,40],
-            [20,250,55,30],[100,250,50,30],[170,250,60,30],[250,250,55,30],[330,250,60,30],
-          ].map(([x,y,w,h],i) => (
-            <rect key={i} x={x} y={y} width={w} height={h} rx="4" fill="#d0e2d0" opacity="0.8"/>
-          ))}
-          {/* Map pin */}
-          <circle cx="200" cy="160" r="14" fill="#48179C"/>
-          <circle cx="200" cy="160" r="6" fill="white"/>
-          {/* Ripple */}
-          <circle cx="200" cy="160" r="28" fill="none" stroke="#48179C" strokeWidth="2" opacity="0.3"/>
-          <circle cx="200" cy="160" r="44" fill="none" stroke="#48179C" strokeWidth="1.5" opacity="0.15"/>
-        </svg>
-
-        {/* Business card overlay */}
-        <div
-          className="absolute bottom-4 left-4 right-4 rounded-xl p-4 flex gap-3 items-center"
-          style={{ background: "white", boxShadow: "0 8px 24px rgba(0,0,0,0.12)" }}
-        >
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "#f5f0ff" }}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="text-sm font-bold text-gray-800">Quick Fix Contractors</div>
-            <div className="flex items-center gap-1 mt-0.5">
-              {[1,2,3,4,5].map(i => <svg key={i} width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>)}
-              <span className="text-xs text-gray-500 ml-1">4.9 (127 reviews)</span>
-            </div>
-          </div>
-          <div className="text-xs font-bold px-2 py-1 rounded-full flex-shrink-0" style={{ background: "#f0fdf4", color: "#16a34a" }}>
-            #1 Local
-          </div>
-        </div>
-
-        {/* Top-right stat badge */}
-        <div className="absolute top-4 right-4 rounded-xl px-3 py-2 text-center" style={{ background: "white", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
-          <div className="text-lg font-extrabold" style={{ color: "#48179C" }}>3.4x</div>
-          <div className="text-xs text-gray-500">More Calls</div>
-        </div>
-      </div>
-    ),
+    visual: "/IndustryExpertise/globalBusiness.webp",
+    isImage: true,
   },
   {
     label: "Real Estate",
@@ -107,8 +86,18 @@ const INDUSTRIES = [
     services: [
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#F65A75"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
           </svg>
         ),
         title: "Listing SEO & Content",
@@ -116,9 +105,19 @@ const INDUSTRIES = [
       },
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-            <path d="M7 8h10M7 12h6"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#F65A75"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <path d="M8 21h8M12 17v4" />
+            <path d="M7 8h10M7 12h6" />
           </svg>
         ),
         title: "Performance Ads",
@@ -126,8 +125,17 @@ const INDUSTRIES = [
       },
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.98 1.18 2 2 0 012.96 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#F65A75"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.98 1.18 2 2 0 012.96 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91" />
           </svg>
         ),
         title: "Lead Nurture Flows",
@@ -136,13 +144,25 @@ const INDUSTRIES = [
     ],
     visual: (
       // Mock: Property dashboard
-      <div className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden bg-white" style={{ boxShadow: "0 4px 32px rgba(246,90,117,0.08)" }}>
+      <div
+        className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden bg-white"
+        style={{ boxShadow: "0 4px 32px rgba(246,90,117,0.08)" }}
+      >
         <div className="p-4 border-b border-gray-100 flex items-center justify-between">
           <div>
-            <div className="text-xs text-gray-400 font-medium">Property Dashboard</div>
-            <div className="text-sm font-bold text-gray-800 mt-0.5">HOW Real Estate Analytics</div>
+            <div className="text-xs text-gray-400 font-medium">
+              Property Dashboard
+            </div>
+            <div className="text-sm font-bold text-gray-800 mt-0.5">
+              HOW Real Estate Analytics
+            </div>
           </div>
-          <div className="text-xs px-2 py-1 rounded-full font-semibold" style={{ background: "#fff0f3", color: "#F65A75" }}>Live</div>
+          <div
+            className="text-xs px-2 py-1 rounded-full font-semibold"
+            style={{ background: "#fff0f3", color: "#F65A75" }}
+          >
+            Live
+          </div>
         </div>
         {/* Stat cards */}
         <div className="grid grid-cols-3 gap-2 p-3">
@@ -151,34 +171,81 @@ const INDUSTRIES = [
             { label: "Avg. Cost/Lead", val: "₹420", delta: "-18%", up: true },
             { label: "Listings Viewed", val: "5.1K", delta: "+47%", up: true },
           ].map((s) => (
-            <div key={s.label} className="rounded-xl p-3" style={{ background: "#fafafa", border: "1px solid #f0f0f0" }}>
-              <div className="text-xs text-gray-400 leading-tight mb-1">{s.label}</div>
-              <div className="text-lg font-extrabold text-gray-800">{s.val}</div>
-              <div className="text-xs font-semibold mt-0.5" style={{ color: "#16a34a" }}>{s.delta} ↑</div>
+            <div
+              key={s.label}
+              className="rounded-xl p-3"
+              style={{ background: "#fafafa", border: "1px solid #f0f0f0" }}
+            >
+              <div className="text-xs text-gray-400 leading-tight mb-1">
+                {s.label}
+              </div>
+              <div className="text-lg font-extrabold text-gray-800">
+                {s.val}
+              </div>
+              <div
+                className="text-xs font-semibold mt-0.5"
+                style={{ color: "#16a34a" }}
+              >
+                {s.delta} ↑
+              </div>
             </div>
           ))}
         </div>
         {/* Listing cards */}
         <div className="px-3 pb-3 flex flex-col gap-2">
           {[
-            { name: "Green Valley Villa", price: "₹1.8 Cr", views: "342 views", badge: "Hot" },
-            { name: "Skyline Apartments 3BHK", price: "₹95 L", views: "218 views", badge: "New" },
-            { name: "Downtown Studio Loft", price: "₹55 L", views: "189 views", badge: "" },
+            {
+              name: "Green Valley Villa",
+              price: "₹1.8 Cr",
+              views: "342 views",
+              badge: "Hot",
+            },
+            {
+              name: "Skyline Apartments 3BHK",
+              price: "₹95 L",
+              views: "218 views",
+              badge: "New",
+            },
+            {
+              name: "Downtown Studio Loft",
+              price: "₹55 L",
+              views: "189 views",
+              badge: "",
+            },
           ].map((p) => (
-            <div key={p.name} className="flex items-center gap-3 rounded-xl p-3" style={{ background: "#fff0f3", border: "1px solid #ffd6de" }}>
-              <div className="w-10 h-10 rounded-lg flex-shrink-0" style={{ background: "linear-gradient(135deg,#F65A75,#ff8fa3)" }}/>
+            <div
+              key={p.name}
+              className="flex items-center gap-3 rounded-xl p-3"
+              style={{ background: "#fff0f3", border: "1px solid #ffd6de" }}
+            >
+              <div
+                className="w-10 h-10 rounded-lg flex-shrink-0"
+                style={{
+                  background: "linear-gradient(135deg,#F65A75,#ff8fa3)",
+                }}
+              />
               <div className="flex-1 min-w-0">
-                <div className="text-xs font-semibold text-gray-800 truncate">{p.name}</div>
-                <div className="text-xs text-gray-400">{p.price} · {p.views}</div>
+                <div className="text-xs font-semibold text-gray-800 truncate">
+                  {p.name}
+                </div>
+                <div className="text-xs text-gray-400">
+                  {p.price} · {p.views}
+                </div>
               </div>
               {p.badge && (
-                <span className="text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0" style={{ background: "#F65A75", color: "white" }}>{p.badge}</span>
+                <span
+                  className="text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0"
+                  style={{ background: "#F65A75", color: "white" }}
+                >
+                  {p.badge}
+                </span>
               )}
             </div>
           ))}
         </div>
       </div>
     ),
+    isImage: false,
   },
   {
     label: "SaaS & Tech",
@@ -189,9 +256,19 @@ const INDUSTRIES = [
     services: [
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-            <path d="M11 8v3h3"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#0284c7"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="M21 21l-4.35-4.35" />
+            <path d="M11 8v3h3" />
           </svg>
         ),
         title: "SaaS SEO",
@@ -199,8 +276,17 @@ const INDUSTRIES = [
       },
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#0284c7"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
           </svg>
         ),
         title: "Performance Marketing",
@@ -208,9 +294,18 @@ const INDUSTRIES = [
       },
       {
         icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#0284c7"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
           </svg>
         ),
         title: "Onboarding Email Flows",
@@ -219,10 +314,26 @@ const INDUSTRIES = [
     ],
     visual: (
       // Mock: SaaS analytics dashboard
-      <div className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden bg-white" style={{ border: "1px solid #e0f0fb" }}>
+      <div
+        className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden bg-white"
+        style={{ border: "1px solid #e0f0fb" }}
+      >
         <div className="p-4 border-b border-gray-100 flex items-center gap-3">
-          <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: "#f0f9ff" }}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="2.5" strokeLinecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <div
+            className="w-7 h-7 rounded-lg flex items-center justify-center"
+            style={{ background: "#f0f9ff" }}
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#0284c7"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+            >
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
           </div>
           <div className="text-sm font-bold text-gray-800">Growth Overview</div>
           <div className="ml-auto text-xs text-gray-400">Last 30 days</div>
@@ -230,54 +341,135 @@ const INDUSTRIES = [
 
         <div className="grid grid-cols-2 gap-2 p-3">
           {[
-            { label: "Trial Signups", val: "1,284", delta: "+41%", color: "#0284c7", bg: "#f0f9ff" },
-            { label: "Paid Conversions", val: "312", delta: "+28%", color: "#16a34a", bg: "#f0fdf4" },
-            { label: "MRR", val: "₹4.2L", delta: "+19%", color: "#48179C", bg: "#f5f0ff" },
-            { label: "Churn Rate", val: "2.1%", delta: "-0.8%", color: "#F65A75", bg: "#fff0f3" },
+            {
+              label: "Trial Signups",
+              val: "1,284",
+              delta: "+41%",
+              color: "#0284c7",
+              bg: "#f0f9ff",
+            },
+            {
+              label: "Paid Conversions",
+              val: "312",
+              delta: "+28%",
+              color: "#16a34a",
+              bg: "#f0fdf4",
+            },
+            {
+              label: "MRR",
+              val: "₹4.2L",
+              delta: "+19%",
+              color: "#48179C",
+              bg: "#f5f0ff",
+            },
+            {
+              label: "Churn Rate",
+              val: "2.1%",
+              delta: "-0.8%",
+              color: "#F65A75",
+              bg: "#fff0f3",
+            },
           ].map((s) => (
-            <div key={s.label} className="rounded-xl p-3" style={{ background: s.bg }}>
+            <div
+              key={s.label}
+              className="rounded-xl p-3"
+              style={{ background: s.bg }}
+            >
               <div className="text-xs text-gray-400 mb-1">{s.label}</div>
-              <div className="text-base font-extrabold" style={{ color: s.color }}>{s.val}</div>
-              <div className="text-xs font-semibold mt-0.5" style={{ color: s.color }}>{s.delta}</div>
+              <div
+                className="text-base font-extrabold"
+                style={{ color: s.color }}
+              >
+                {s.val}
+              </div>
+              <div
+                className="text-xs font-semibold mt-0.5"
+                style={{ color: s.color }}
+              >
+                {s.delta}
+              </div>
             </div>
           ))}
         </div>
 
         {/* Funnel visual */}
         <div className="px-3 pb-3">
-          <div className="text-xs text-gray-400 font-medium mb-2">Conversion Funnel</div>
+          <div className="text-xs text-gray-400 font-medium mb-2">
+            Conversion Funnel
+          </div>
           {[
             { stage: "Visitors", count: "18,400", pct: 100, color: "#0284c7" },
-            { stage: "Trial Signups", count: "1,284", pct: 70, color: "#48179C" },
+            {
+              stage: "Trial Signups",
+              count: "1,284",
+              pct: 70,
+              color: "#48179C",
+            },
             { stage: "Activated", count: "876", pct: 48, color: "#F65A75" },
             { stage: "Paid", count: "312", pct: 24, color: "#16a34a" },
           ].map((f) => (
             <div key={f.stage} className="flex items-center gap-2 mb-1.5">
-              <div className="text-xs text-gray-500 w-24 flex-shrink-0">{f.stage}</div>
-              <div className="flex-1 rounded-full overflow-hidden" style={{ background: "#f0f0f0", height: 8 }}>
-                <div style={{ width: `${f.pct}%`, height: "100%", background: f.color, borderRadius: 999, transition: "width 0.4s" }}/>
+              <div className="text-xs text-gray-500 w-24 flex-shrink-0">
+                {f.stage}
               </div>
-              <div className="text-xs font-semibold text-gray-600 w-12 text-right flex-shrink-0">{f.count}</div>
+              <div
+                className="flex-1 rounded-full overflow-hidden"
+                style={{ background: "#f0f0f0", height: 8 }}
+              >
+                <div
+                  style={{
+                    width: `${f.pct}%`,
+                    height: "100%",
+                    background: f.color,
+                    borderRadius: 999,
+                    transition: "width 0.4s",
+                  }}
+                />
+              </div>
+              <div className="text-xs font-semibold text-gray-600 w-12 text-right flex-shrink-0">
+                {f.count}
+              </div>
             </div>
           ))}
         </div>
       </div>
     ),
+    isImage: false,
   },
 ];
 
 // ── Single Row ────────────────────────────────────────────────────────────────
 function IndustryRow({ industry, reverse, index }) {
-  const { label, heading, headingBlue, description, services, visual } = industry;
-  const accentColor = index === 0 ? "#48179C" : index === 1 ? "#F65A75" : "#0284c7";
+  const {
+    label,
+    heading,
+    headingBlue,
+    description,
+    services,
+    visual,
+    isImage,
+  } = industry;
+  const accentColor =
+    index === 0 ? "#48179C" : index === 1 ? "#F65A75" : "#0284c7";
 
   return (
-    <div className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-8 xl:gap-14 items-center py-10 md:py-14`}
+    <div
+      className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-8 xl:gap-14 items-center py-10 md:py-14`}
       style={{ borderBottom: "1px solid #f0f0f0" }}
     >
       {/* Visual */}
-      <div className="w-full md:w-1/2 flex-shrink-0">
-        {visual}
+      <div className="w-full md:w-1/2 flex-shrink-0 rounded-[30px]">
+        {isImage ? (
+          <Image
+            src={visual}
+            alt="service"
+            height={544}
+            width={680}
+            className="rounded-[30px]"
+          />
+        ) : (
+          visual
+        )}{" "}
       </div>
 
       {/* Text */}
@@ -285,17 +477,25 @@ function IndustryRow({ industry, reverse, index }) {
         {/* Industry label pill */}
         <span
           className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4"
-          style={{ background: `${accentColor}18`, color: accentColor, border: `1px solid ${accentColor}30` }}
+          style={{
+            background: `${accentColor}18`,
+            color: accentColor,
+            border: `1px solid ${accentColor}30`,
+          }}
         >
           {label}
         </span>
 
-        <h3 className="text-h3 font-extrabold leading-tight mb-3" style={{ color: "#1a1a2e" }}>
-          {heading}{" "}
-          <span style={{ color: accentColor }}>{headingBlue}</span>
+        <h3
+          className="text-h3 font-extrabold leading-tight mb-3"
+          style={{ color: "#1a1a2e" }}
+        >
+          {heading} <span style={{ color: accentColor }}>{headingBlue}</span>
         </h3>
 
-        <p className="p-default text-gray-500 leading-relaxed mb-6">{description}</p>
+        <p className="p-default text-gray-500 leading-relaxed mb-6">
+          {description}
+        </p>
 
         {/* Service list */}
         <div className="flex flex-col gap-4 mb-7">
@@ -309,7 +509,9 @@ function IndustryRow({ industry, reverse, index }) {
               </div>
               <div>
                 <div className="text-sm font-bold text-gray-800">{s.title}</div>
-                <div className="text-sm text-gray-500 leading-relaxed mt-0.5">{s.desc}</div>
+                <div className="text-sm text-gray-500 leading-relaxed mt-0.5">
+                  {s.desc}
+                </div>
               </div>
             </div>
           ))}
