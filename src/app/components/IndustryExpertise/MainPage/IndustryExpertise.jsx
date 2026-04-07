@@ -11,7 +11,7 @@ import CTASection from './CTASection/CTASection'
 function IndustryExpertise() {
   return (<>
     <IndustryHeroSection/>
-    <TrustedBy/>
+    <TrustedBy padding={'py-5 md:py-12 xl:py-15'}/>
     <IndustriesWeServe/>
     <IndustryDeepDive/>
     <HowWeWork/>
