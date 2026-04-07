@@ -237,6 +237,9 @@ module.exports = {
         primary: "#48179C",   // Blue
         secondary: "#F65A75", // Orange
       },
+      animation: {
+      "marquee-scroll": "marquee-scroll 12s linear infinite",
+    },
     },
   },
   plugins: [
