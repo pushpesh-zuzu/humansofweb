@@ -3,6 +3,7 @@ import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import Header from "./components/common/Header/Header";
 import FloatingBalls from "./components/common/Decor/FloatingBalls";
+import Footer from "./components/common/Footer/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
         <div className="relative z-10">
           <Header />
           <StoreProvider>{children}</StoreProvider>
+          <Footer/>
         </div>
       </body>
     </html>
