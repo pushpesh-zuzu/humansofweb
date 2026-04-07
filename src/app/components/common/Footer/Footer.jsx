@@ -10,6 +10,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import NAV_ITEMS from "../Header/navData";
+import Logo from "../Icons/Home/Logo";
 
 const SOCIAL_LINKS = [
   { label: "Facebook", href: "#", icon: FaFacebookF },
@@ -51,7 +52,7 @@ const CONTACT_INFO = [
 
 const Footer = () => {
   return (
-    <footer className="relative mt-8 overflow-hidden bg-primary text-white">
+    <footer className="relative overflow-hidden bg-primary text-white">
       <div className="absolute inset-0 opacity-30">
         <Image
           src="/Home/blog4.webp"
@@ -66,9 +67,9 @@ const Footer = () => {
       <div className="relative mx-auto max-w-[1500px] px-[4%] py-7 md:py-9 xl:py-10">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:items-center">
           <div>
-            <p className="text-[40px] font-bold leading-none tracking-[0.08em] text-white md:text-[56px] xl:text-[72px]">
-              HOW
-            </p>
+            <div className="inline-flex rounded-full bg-white px-3 py-2">
+              <Logo className="h-8 w-32 md:h-10 md:w-44" />
+            </div>
             <p className="p-small mt-4 max-w-[420px] font-medium text-white/85">
               Human-first digital growth for brands that want clearer strategy, better visibility, and real customer action.
             </p>

@@ -30,7 +30,6 @@ export default function Home() {
       <WorkingWithUs />
       <CustomGeneration />
       <BlogSection />
-      {/* <Footer /> */}
       <ProposalModal
         isOpen={isOpen}
         onClose={() => {

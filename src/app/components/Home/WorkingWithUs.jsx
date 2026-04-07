@@ -4,9 +4,9 @@ import React, { useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
-import PaddingWrapper from "../common/Container/PaddingWrapper";
 import H2HeadingWrapper from "../common/Container/H2HeadingWrapper";
 import VideoCards from "./WorkingWithUs/videoCards";
+import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
 
 const TESTIMONIALS = [
   {
@@ -98,8 +98,8 @@ function WorkingWithUs() {
           }
         }
       `}</style>
-      <ContainerWrapper maxWidth="max-w-[1500px] w-[92%]">
-        <PaddingWrapper padding="py-5 md:py-7 xl:py-10">
+      <ContainerWrapper>
+        <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
           <H2HeadingWrapper
             headdingBlack="Trusted by Teams"
             headingBlue="That Want to Grow"
@@ -138,7 +138,7 @@ function WorkingWithUs() {
               </svg>
             </button>
           </div>
-        </PaddingWrapper>
+        </PaddingWrapper2>
       </ContainerWrapper>
       {activeVideo && (
         <div

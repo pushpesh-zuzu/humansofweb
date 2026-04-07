@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
-import PaddingWrapper from "../common/Container/PaddingWrapper";
+import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
 
 const ROTATING_TEXTS = [
   "startups",
@@ -52,9 +52,8 @@ export default function HeroSection() {
   return (
     <ContainerWrapper
       background="#ffffff"
-      maxWidth="max-w-[1440px] w-[92%]"
     >
-      <PaddingWrapper padding="pt-6 pb-0 md:pt-10 md:pb-0 xl:pt-15 xl:pb-0">
+      <PaddingWrapper2>
         <section className="relative overflow-visible rounded-[34px] bg-white">
           <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
             <motion.div
@@ -128,7 +127,7 @@ export default function HeroSection() {
             </motion.div>
           </div>
         </section>
-      </PaddingWrapper>
+      </PaddingWrapper2>
     </ContainerWrapper>
   );
 }

@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ContainerWrapper from "../Container/ContainerWrapper";
-import PaddingWrapper from "../Container/PaddingWrapper";
 import Image from "next/image";
+import PaddingWrapper2 from "../Container/PaddingWrapper2";
 
 const PARTNERS = [
   {
@@ -81,8 +81,8 @@ export default function TrustedBy() {
   };
 
   return (
-    <ContainerWrapper maxWidth="max-w-[1440px] w-[100%] md:w-[92%] lg:w-[95%]">
-      <PaddingWrapper padding="py-9.5 md:py-12 xl:py-15">
+    <ContainerWrapper>
+      <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
         <section className="w-full  overflow-hidden bg-white">
           {/* Title */}
           <div className="mx-auto px-4 mb-6">
@@ -102,7 +102,7 @@ export default function TrustedBy() {
             </Slider>
           </div>
         </section>
-      </PaddingWrapper>
+      </PaddingWrapper2>
     </ContainerWrapper>
   );
 }

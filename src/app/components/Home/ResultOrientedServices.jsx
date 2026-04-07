@@ -1,21 +1,20 @@
 import React from "react";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
-import PaddingWrapper from "../common/Container/PaddingWrapper";
 import H2HeadingWrapper from "../common/Container/H2HeadingWrapper";
-// import ServicesSlider from "./ResultOrientedServices/ServicesSlider";
 import ServicesSlider1 from "./ResultOrientedServices/ServiceSlider1";
+import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
 
 function ResultOrientedServices() {
   return (
-    <ContainerWrapper maxWidth="max-w-[1500px] w-[92%]">
-      <PaddingWrapper padding="py-3 md:py-7 xl:py-5">
+    <ContainerWrapper>
+      <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
         <H2HeadingWrapper
           headdingBlack="Performance-Driven"
           headingBlue="Solutions"
           subHeading="Built to Deliver. Powered by Strategy"
         />
         <ServicesSlider1 />
-      </PaddingWrapper>
+      </PaddingWrapper2>
     </ContainerWrapper>
   );
 }

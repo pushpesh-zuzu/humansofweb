@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
-import PaddingWrapper from "../common/Container/PaddingWrapper";
 import H2HeadingWrapper from "../common/Container/H2HeadingWrapper";
+import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
 
 const BLOGS = [
   {
@@ -73,9 +73,9 @@ function BlogSection() {
   const smallBlogs = BLOGS.filter((blog) => !blog.featured);
 
   return (
-    <ContainerWrapper maxWidth="max-w-[1500px] w-[92%]">
-      <PaddingWrapper padding="py-5 md:py-7 xl:py-10">
-        <section className="relative overflow-hidden bg-[#f5f6ff] px-4 py-8 md:px-8 md:py-10" style={{ borderRadius: 18 }}>
+    <ContainerWrapper>
+      <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
+        <section className="relative overflow-hidden bg-[#f5f6ff]" style={{ borderRadius: 18 }}>
           <div className="relative">
             <H2HeadingWrapper
               headdingBlack="Ideas That Help"
@@ -93,7 +93,7 @@ function BlogSection() {
             </div>
           </div>
         </section>
-      </PaddingWrapper>
+      </PaddingWrapper2>
     </ContainerWrapper>
   );
 }
