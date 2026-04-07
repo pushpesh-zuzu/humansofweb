@@ -277,8 +277,8 @@ export default function ProposalModal({ isOpen, onClose }) {
                   }}
                 >
                   <p className="text-sm font-semibold italic text-gray-700 leading-relaxed">
-                    "More visibility. More leads. More growth — without the
-                    extra cost."
+                    &quot;More visibility. More leads. More growth — without the
+                    extra cost.&quot;
                   </p>
                 </div>
 
@@ -343,7 +343,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                   Ready to Think Big?
                 </h3>
                 <p className="p-default text-gray-400 mt-1">
-                  Tell us about your brand — we'll do the rest.
+                  Tell us about your brand — we&apos;ll do the rest.
                 </p>
               </div>
 
@@ -493,3 +493,4 @@ export default function ProposalModal({ isOpen, onClose }) {
     </div>
   );
 }
+

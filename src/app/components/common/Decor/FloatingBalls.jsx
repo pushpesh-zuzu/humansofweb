@@ -308,7 +308,7 @@ export default function FloatingBalls() {
     const random = createSeededRandom(42);
 
     return Array.from({ length: 24 }, (_, index) => {
-      const size = 12 + Math.floor(random() * 8);
+      const size = 10 + Math.floor(random() * 8);
       const left = `${Math.floor(random() * 100)}%`;
       const startY = `${102 + Math.floor(random() * 28)}%`;
       const driftX = `${Math.floor(random() * 120 - 60)}px`;

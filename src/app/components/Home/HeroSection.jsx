@@ -54,9 +54,9 @@ export default function HeroSection() {
       background="#ffffff"
       maxWidth="max-w-[1440px] w-[92%]"
     >
-      <PaddingWrapper padding="pt-6 pb-10 md:pt-10 md:pb-14 xl:pt-15 xl:pb-7.5">
+      <PaddingWrapper padding="pt-6 pb-0 md:pt-10 md:pb-0 xl:pt-15 xl:pb-0">
         <section className="relative overflow-visible rounded-[34px] bg-white">
-          <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
+          <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)]">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -113,19 +113,16 @@ export default function HeroSection() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="relative flex items-start justify-center"
+              className="relative flex items-center justify-center"
             >
-              <div className="absolute right-[10%] top-[12%] h-14 w-14 rounded-full border border-dashed border-[#1d1d1d]/40" />
-              <div className="absolute left-[2%] bottom-[16%] h-24 w-24 rounded-full border border-dashed border-[#1d1d1d]/25" />
-
-              <div className="relative h-[320px] w-full max-w-[430px] overflow-hidden rounded-[36px] bg-[#f3f6ff] shadow-[0_24px_70px_rgba(22,44,185,0.12)] md:h-[420px]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(22,44,185,0.12),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(232,119,34,0.16),_transparent_35%)]" />
+              <div className="relative h-[250px] w-full max-w-[660px] md:h-[410px] lg:h-[480px] xl:h-[500px]">
                 <Image
-                  src="/globe.svg"
-                  alt="Hero visual"
+                  src="/Home/homeherosection.webp"
+                  alt="test"
                   fill
                   priority
-                  className="object-contain p-10 md:p-14"
+                  sizes="(min-width: 1024px) 48vw, 92vw"
+                  className="-translate-y-3 scale-110 object-contain object-center"
                 />
               </div>
             </motion.div>

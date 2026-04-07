@@ -1,21 +1,173 @@
-import React from "react";
+"use client";
+
+import React, { useCallback, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
 import PaddingWrapper from "../common/Container/PaddingWrapper";
 import H2HeadingWrapper from "../common/Container/H2HeadingWrapper";
-import ServicesSlider1 from "./ResultOrientedServices/ServiceSlider1";
+import VideoCards from "./WorkingWithUs/videoCards";
+
+const TESTIMONIALS = [
+  {
+    brand: "PURE",
+    title: "Driving growth through consistent results and real impact.",
+    name: "Linda Zindroski",
+    company: "Purr Glass",
+    image: "/Home/thumb1.webp",
+    video: "https://www.youtube.com/watch?v=t2_Q2BRzeEE&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0",
+    avatar: "/Home/image3.webp",
+    avatarMarginTop: 0,
+  },
+  {
+    brand: "RUSTY",
+    title: "Turning vision into measurable digital success.",
+    name: "Ben Stewart",
+    company: "Rusty Rooster Metal",
+    image: "/Home/thumb2.webp",
+    video: "https://www.youtube.com/watch?v=UrsmFxEIp5k",
+    avatar: "/Home/image1.webp",
+    avatarMarginTop: 0,
+  },
+  {
+    brand: "COAST",
+    title: "Scaling traffic and sales with the right strategy.",
+    name: "Garry Mueller",
+    company: "Treasure Coast Metal Detector",
+    image: "/Home/thumb3.webp",
+    video: "https://www.youtube.com/watch?v=YZkyL-f-YXY&list=PLsyeobzWxl7omDoEYrrf3oXvXxa6MPgek",
+    avatar: "/Home/image2.webp",
+    avatarMarginTop: 0,
+  }
+];
+
+function getYouTubeEmbedUrl(url) {
+  if (!url) return "";
+
+  const shortsMatch = url.match(/youtube\.com\/shorts\/([^?&/]+)/);
+  if (shortsMatch) return `https://www.youtube.com/embed/${shortsMatch[1]}`;
+
+  const watchMatch = url.match(/[?&]v=([^?&]+)/);
+  if (watchMatch) return `https://www.youtube.com/embed/${watchMatch[1]}`;
+
+  const shortUrlMatch = url.match(/youtu\.be\/([^?&/]+)/);
+  if (shortUrlMatch) return `https://www.youtube.com/embed/${shortUrlMatch[1]}`;
+
+  return url;
+}
 
 function WorkingWithUs() {
+  const [activeVideo, setActiveVideo] = useState(null);
+  const activeEmbedUrl = activeVideo ? getYouTubeEmbedUrl(activeVideo.video) : "";
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { align: "start", loop: true },
+    [Autoplay({ delay: 2500, stopOnInteraction: false })]
+  );
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+
   return (
-    <ContainerWrapper maxWidth="max-w-[1500px] w-[92%]">
-      <PaddingWrapper padding="py-5 md:py-7 xl:py-10">
-        <H2HeadingWrapper
-          headdingBlack="Trusted by Teams"
-          headingBlue="That Want to Grow"
-          subHeading="Real experiences from people who partnered with us to scale smarter"
-        />
-        {/* <ServicesSlider1 /> */}
-      </PaddingWrapper>
-    </ContainerWrapper>
+    <>
+      <style>{`
+        .testimonials-embla {
+          overflow: hidden;
+        }
+
+        .testimonials-embla-track {
+          display: flex;
+          margin-left: -24px;
+          padding-top: 12px;
+          padding-bottom: 20px;
+        }
+
+        .testimonials-embla-slide {
+          flex: 0 0 100%;
+          min-width: 0;
+          padding-left: 24px;
+        }
+
+        @media (min-width: 768px) {
+          .testimonials-embla-slide {
+            flex-basis: 50%;
+          }
+        }
+
+        @media (min-width: 1280px) {
+          .testimonials-embla-slide {
+            flex-basis: 33.333%;
+          }
+        }
+      `}</style>
+      <ContainerWrapper maxWidth="max-w-[1500px] w-[92%]">
+        <PaddingWrapper padding="py-5 md:py-7 xl:py-10">
+          <H2HeadingWrapper
+            headdingBlack="Trusted by Teams"
+            headingBlue="That Want to Grow"
+            subHeading="Real experiences from people who partnered with us to scale smarter"
+          />
+          <div className="relative px-10 xl:px-0">
+            <button
+              type="button"
+              onClick={scrollPrev}
+              aria-label="Previous testimonial"
+              className="absolute left-0 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full text-secondary xl:hidden"
+            >
+              <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            <div ref={emblaRef} className="testimonials-embla">
+              <div className="testimonials-embla-track">
+                {TESTIMONIALS.map((testimonial) => (
+                  <div key={testimonial.name} className="testimonials-embla-slide">
+                    <VideoCards testimonial={testimonial} onPlay={setActiveVideo} />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={scrollNext}
+              aria-label="Next testimonial"
+              className="absolute right-0 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full text-secondary xl:hidden"
+            >
+              <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </PaddingWrapper>
+      </ContainerWrapper>
+      {activeVideo && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4"
+          onClick={() => setActiveVideo(null)}
+        >
+          <div
+            className="relative w-full max-w-[900px] overflow-hidden rounded-lg bg-black"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setActiveVideo(null)}
+              aria-label="Close video"
+              className="absolute right-3 top-3 z-10 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-white text-xl font-bold text-primary"
+            >
+              x
+            </button>
+            <iframe
+              src={`${activeEmbedUrl}?autoplay=1`}
+              title={`${activeVideo.name} video`}
+              className="aspect-video w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

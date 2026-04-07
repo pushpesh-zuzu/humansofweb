@@ -6,6 +6,7 @@ import ResultOrientedServices from "./components/Home/ResultOrientedServices";
 import WorkingWithUs from "./components/Home/WorkingWithUs";
 import ProposalModal from "./components/auth/ProposalModal";
 import { useEffect, useState } from "react";
+import CustomGeneration from "./components/Home/CustomGeneration";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +26,13 @@ export default function Home() {
       <TrustedBy />
       <ResultOrientedServices />
       <WorkingWithUs />
-      {/* <ProposalModal
+      <CustomGeneration />
+      <ProposalModal
         isOpen={isOpen}
         onClose={() => {
           setIsOpen(false);
         }}
-      /> */}
+      />
     </>
   );
 }
