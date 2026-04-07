@@ -201,7 +201,7 @@ export default function ResultsSection() {
       <PaddingWrapper2>
         <div ref={ref}>
           {/* Section heading */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 md:mb-[70px]">
             <span
               className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4"
               style={{ background: "rgba(167,139,250,0.15)", color: "#732cee", border: "1px solid rgba(167,139,250,0.3)" }}

@@ -181,7 +181,7 @@ export default function HowWeWork() {
         />
 
         {/* Desktop: horizontal flow | Mobile: vertical stack */}
-        <div className="flex flex-col lg:flex-row items-stretch gap-0 lg:gap-0">
+        <div className="flex flex-col lg:flex-row items-stretch gap-0 lg:gap-0 pt-1.25  md:pt-5">
           {STEPS.map((step, idx) => (
             <React.Fragment key={step.number}>
               <StepCard step={step} isLast={idx === STEPS.length - 1} />

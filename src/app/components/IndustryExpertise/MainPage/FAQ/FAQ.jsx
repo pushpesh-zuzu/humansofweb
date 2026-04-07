@@ -28,10 +28,9 @@ export const FAQ = ({
         <H2HeadingWrapper
           headingBlue={"FAQ's"}
           headdingBlack={headingblack}
-          className="mb-5 md:mb-6 lg:mb-10"
-        />
+                  />
 
-        <div className="space-y-0 border-2 lg:border-4 border-[#F65A75] rounded-[20px] overflow-hidden bg-white shadow-sm">
+        <div className="space-y-0 mt-4 md:mt-8.75 border-2 lg:border-4 border-[#F65A75] rounded-[20px] overflow-hidden bg-white shadow-sm">
           {data.map((item, index) => (
             <div
               key={item.key}

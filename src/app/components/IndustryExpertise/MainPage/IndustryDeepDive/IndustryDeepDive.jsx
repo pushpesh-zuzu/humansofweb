@@ -74,8 +74,80 @@ const INDUSTRIES = [
         desc: "Landing pages built to turn visitors into booked jobs — not just traffic.",
       },
     ],
-    visual: "/IndustryExpertise/globalBusiness.webp",
-    isImage: true,
+    // visual: "/IndustryExpertise/globalBusiness.webp",
+    // isImage: true,
+visual: (
+  <div className="rounded-[24px] relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden bg-[linear-gradient(90deg,#48179C_0%,#F65A75_25%,#48179C_50%,#F65A75_75%,#48179C_100%)] text-white">
+
+    {/* Glow Effect */}
+    <div className="absolute top-[-50px] left-[-50px] w-[200px] h-[200px] bg-purple-500 opacity-20 blur-3xl rounded-full"></div>
+    <div className="absolute bottom-[-50px] right-[-50px] w-[200px] h-[200px] bg-pink-500 opacity-20 blur-3xl rounded-full"></div>
+
+    {/* Header */}
+    <div className="p-4 flex items-center">
+      <div className="text-sm text-white font-semibold ">
+        Local Growth Dashboard
+      </div>
+      <div className="text-white ml-auto text-xs ">
+        Last 7 days
+      </div>
+    </div>
+
+    {/* Main KPI (Hero Number) */}
+    <div className="px-4 pb-2">
+      <div className="text-xs opacity-60">Total Calls</div>
+      <div className="text-3xl font-extrabold">124</div>
+      <div className="text-green-400 text-sm font-semibold">+38% growth</div>
+    </div>
+
+    {/* Small Cards */}
+    <div className="grid grid-cols-2 gap-3 px-4 py-3">
+      {[
+        { label: "Leads", value: "86" },
+        { label: "Jobs Booked", value: "32" },
+        { label: "Cost / Lead", value: "₹420" },
+        { label: "Conversion", value: "37%" },
+      ].map((item) => (
+        <div
+          key={item.label}
+          className="bg-white/5 backdrop-blur-md rounded-xl p-3 border border-white/10"
+        >
+          <div className="text-xs opacity-60">{item.label}</div>
+          <div className="text-lg font-bold">{item.value}</div>
+        </div>
+      ))}
+    </div>
+
+    {/* Graph */}
+    <div className="px-4 pb-3">
+      <div className="text-xs opacity-60 mb-2">Calls Trend</div>
+
+      <div className="h-20 flex items-end gap-1">
+        {[30, 50, 40, 70, 60, 80, 100].map((h, i) => (
+          <div
+            key={i}
+            className="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-sm"
+            style={{ height: `${h}%` }}
+          />
+        ))}
+      </div>
+    </div>
+
+    {/* Ranking Highlight */}
+    <div className="absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-3 flex justify-between items-center">
+      <div>
+        <div className="text-xs opacity-60">Google Ranking</div>
+        <div className="text-sm font-semibold">#1 Local Pack</div>
+      </div>
+
+      <div className="text-green-400 text-xs font-bold">
+        ↑ Top Position
+      </div>
+    </div>
+
+  </div>
+),
+    isImage:false
   },
   {
     label: "Real Estate",
@@ -145,8 +217,8 @@ const INDUSTRIES = [
     visual: (
       // Mock: Property dashboard
       <div
-        className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden bg-white"
-        style={{ boxShadow: "0 4px 32px rgba(246,90,117,0.08)" }}
+        className="relative w-full h-full min-h-[340px] rounded-[16px] overflow-hidden bg-white"
+        style={{ boxShadow: "0 4px 32px rgba(246,90,117,0.1)" }}
       >
         <div className="p-4 border-b border-gray-100 flex items-center justify-between">
           <div>
@@ -315,7 +387,7 @@ const INDUSTRIES = [
     visual: (
       // Mock: SaaS analytics dashboard
       <div
-        className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden bg-white"
+        className=" rounded-[16px] relative w-full h-full min-h-[340px] rounded-[16px] overflow-hidden bg-white"
         style={{ border: "1px solid #e0f0fb" }}
       >
         <div className="p-4 border-b border-gray-100 flex items-center gap-3">
@@ -456,7 +528,7 @@ function IndustryRow({ industry, reverse, index }) {
 
   return (
     <div
-      className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-8 xl:gap-14 items-center py-10 md:py-14`}
+      className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-12 xl:gap-14 items-center md:py-5`}
       style={{ borderBottom: "1px solid #f0f0f0" }}
     >
       {/* Visual */}
@@ -475,7 +547,7 @@ function IndustryRow({ industry, reverse, index }) {
       </div>
 
       {/* Text */}
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 mb-4 md:mb-0">
         {/* Industry label pill */}
         <span
           className={`${accentTextColor} inline-block text-xs font-bold px-3 py-1 rounded-full mb-4`}

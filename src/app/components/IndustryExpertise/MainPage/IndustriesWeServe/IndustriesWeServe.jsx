@@ -15,7 +15,7 @@ export default function IndustriesWeServe({ INDUSTRIES = [] }) {
           description="We work with businesses across verticals — each with unique challenges, and each deserving a strategy built specifically for them."
         />
 
-        <div className="flex flex-wrap justify-center gap-6 pt-2">
+        <div className="flex flex-wrap justify-center gap-6 md:pt-5">
           {INDUSTRIES.map((industry, idx) => (
             <div
               key={industry.title}
