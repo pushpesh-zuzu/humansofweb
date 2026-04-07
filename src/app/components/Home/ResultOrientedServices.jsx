@@ -8,7 +8,7 @@ import ServicesSlider1 from "./ResultOrientedServices/ServiceSlider1";
 function ResultOrientedServices() {
   return (
     <ContainerWrapper maxWidth="max-w-[1500px] w-[92%]">
-      <PaddingWrapper padding="py-5 md:py-7 xl:py-10">
+      <PaddingWrapper padding="py-3 md:py-7 xl:py-5">
         <H2HeadingWrapper
           headdingBlack="Performance-Driven"
           headingBlue="Solutions"
