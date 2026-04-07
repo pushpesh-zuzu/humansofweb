@@ -66,7 +66,7 @@ const PARTNERS = [
     logo: (
       <Image
         alt="world Ads Verified Partner"
-        src={"/Home/klaviyo.webp"}
+        src={"/Home/Klaviyo.webp"}
         height={82}
         width={287}
         // className="h-[50px] w-[260px] md:h-[82px] md:w-[287px]"
