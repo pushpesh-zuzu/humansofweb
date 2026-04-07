@@ -17,7 +17,7 @@ const PARTNERS = [
         src={"/Home/shopify.webp"}
         height={82}
         width={287}
-        // className="h-[50px] w-[260px] md:h-[82px] md:w-[287px]"
+        className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-[82px]"
       />
     ),
   },
@@ -30,7 +30,7 @@ const PARTNERS = [
         src={"/Home/googleCloud.webp"}
         height={82}
         width={287}
-        // className="h-[50px] w-[260px] md:h-[82px] md:w-[287px]"
+        className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-[82px]"
       />
     ),
   },
@@ -43,7 +43,7 @@ const PARTNERS = [
         src={"/Home/metaBusiness.webp"}
         height={82}
         width={287}
-        // className="h-[50px] w-[260px] md:h-[82px] md:w-[287px]"
+        className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-[82px]"
       />
     ),
   },
@@ -56,7 +56,7 @@ const PARTNERS = [
         src={"/Home/amazon.webp"}
         height={82}
         width={287}
-        // className="h-[50px] w-[260px] md:h-[82px] md:w-[287px]"
+        className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-[82px]"
       />
     ),
   },
@@ -69,7 +69,7 @@ const PARTNERS = [
         src={"/Home/Klaviyo.webp"}
         height={82}
         width={287}
-        // className="h-[50px] w-[260px] md:h-[82px] md:w-[287px]"
+        className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-[82px]"
       />
     ),
   },
@@ -112,7 +112,7 @@ export default function TrustedBy({padding='pb-10 px-8.75 md:pb-14 md:px-12.5 xl
           </div>
 
           {/* Slider */}
-          <div className=" mx-auto px-4 h-16 xl:h-37.5">
+          <div className=" mx-auto px-4 ">
             <Slider {...settings}>
               {PARTNERS.map((partner) => (
                 <div key={partner.id} className="px-6">
