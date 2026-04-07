@@ -8,6 +8,7 @@ import ResultsSection from './ResultsSection/ResultsSection'
 import WhyHOW from './WhyHOW/WhyHOW'
 import CTASection from './CTASection/CTASection'
 import { FAQ } from './FAQ/FAQ'
+import { INDUSTRIES } from './IndustriesWeServe/IndustriesWeServerData'
 
 export const FREQUENTLY_QUESTION = [
   {
@@ -34,11 +35,11 @@ function IndustryExpertise() {
   return (<>
     <IndustryHeroSection/>
     <TrustedBy padding={'py-5 md:py-12 xl:py-15'}/>
-    <IndustriesWeServe/>
+    <IndustriesWeServe INDUSTRIES={INDUSTRIES}/>
     <IndustryDeepDive/>
     <HowWeWork/>
     <ResultsSection/>
-    <WhyHOW/>
+    {/* <WhyHOW/> */}
     <FAQ data={FREQUENTLY_QUESTION}/>
     {/* <CTASection/> */}
   </>

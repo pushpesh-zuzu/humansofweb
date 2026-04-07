@@ -261,7 +261,7 @@ const INDUSTRIES = [
             height="22"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#0284c7"
+            stroke="#48179C"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -281,7 +281,7 @@ const INDUSTRIES = [
             height="22"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#0284c7"
+            stroke="#48179C"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -299,7 +299,7 @@ const INDUSTRIES = [
             height="22"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#0284c7"
+            stroke="#48179C"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -328,7 +328,7 @@ const INDUSTRIES = [
               height="14"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#0284c7"
+              stroke="#48179C"
               strokeWidth="2.5"
               strokeLinecap="round"
             >
@@ -345,7 +345,7 @@ const INDUSTRIES = [
               label: "Trial Signups",
               val: "1,284",
               delta: "+41%",
-              color: "#0284c7",
+              color: "#48179C",
               bg: "#f0f9ff",
             },
             {
@@ -398,7 +398,7 @@ const INDUSTRIES = [
             Conversion Funnel
           </div>
           {[
-            { stage: "Visitors", count: "18,400", pct: 100, color: "#0284c7" },
+            { stage: "Visitors", count: "18,400", pct: 100, color: "#48179C" },
             {
               stage: "Trial Signups",
               count: "1,284",
@@ -450,7 +450,9 @@ function IndustryRow({ industry, reverse, index }) {
     isImage,
   } = industry;
   const accentColor =
-    index === 0 ? "#48179C" : index === 1 ? "#F65A75" : "#0284c7";
+    index === 0 ? "#48179C" : index === 1 ? "#F65A75" : "#48179C";
+    const accentTextColor =
+    index === 0 ? "text-primary" : index === 1 ? "text-secondary" : "text-primary";
 
   return (
     <div
@@ -476,10 +478,9 @@ function IndustryRow({ industry, reverse, index }) {
       <div className="w-full md:w-1/2">
         {/* Industry label pill */}
         <span
-          className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4"
+          className={`${accentTextColor} inline-block text-xs font-bold px-3 py-1 rounded-full mb-4`}
           style={{
             background: `${accentColor}18`,
-            color: accentColor,
             border: `1px solid ${accentColor}30`,
           }}
         >
@@ -490,7 +491,7 @@ function IndustryRow({ industry, reverse, index }) {
           className="text-h3 font-extrabold leading-tight mb-3"
           style={{ color: "#1a1a2e" }}
         >
-          {heading} <span style={{ color: accentColor }}>{headingBlue}</span>
+          {heading} <span className={`${accentTextColor}`}>{headingBlue}</span>
         </h3>
 
         <p className="p-default text-gray-500 leading-relaxed mb-6">
