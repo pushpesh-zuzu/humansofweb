@@ -75,7 +75,7 @@ function BlogSection() {
   return (
     <ContainerWrapper>
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
-        <section className="relative overflow-hidden bg-[#f5f6ff]" style={{ borderRadius: 18 }}>
+        <section className="relative overflow-hidden bg-[#f5f6ff] px-4 py-8 md:px-8 md:py-10" style={{ borderRadius: 18 }}>
           <div className="relative">
             <H2HeadingWrapper
               headdingBlack="Ideas That Help"
