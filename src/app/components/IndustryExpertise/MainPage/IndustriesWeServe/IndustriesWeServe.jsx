@@ -199,36 +199,24 @@ export default function IndustriesWeServe() {
           description="We work with businesses across verticals — each with unique challenges, and each deserving a strategy built specifically for them."
         />
 
-        {/* Grid — 1 col mobile, 2 col tablet, 3 col desktop with last 2 centered */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "1.5rem",
-          }}
-          className="pt-2"
-        >
-          {/* First 3 cards */}
-          {INDUSTRIES.slice(0, 3).map((industry, idx) => (
-            <IndustryCard key={industry.title} {...industry} reverse={idx % 2 !== 0} />
-          ))}
-        </div>
-
-        {/* Last 2 cards — centered row */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "1.5rem",
-            maxWidth: "66.666%",
-            margin: "1.5rem auto 0",
-          }}
-          className="max-md:max-w-full"
-        >
-          {INDUSTRIES.slice(3).map((industry, idx) => (
-            <IndustryCard key={industry.title} {...industry} reverse={idx % 2 === 0} />
-          ))}
-        </div>
+       <div className="flex flex-wrap justify-center gap-6 pt-2">
+  {INDUSTRIES.map((industry, idx) => (
+    <div
+      key={industry.title}
+      className="
+        w-full
+        sm:w-[calc(50%-12px)]
+        lg:w-[calc(33.333%-16px)]
+        max-w-[350px] lg:max-w-[425px]
+      "
+    >
+      <IndustryCard
+        {...industry}
+        reverse={idx % 2 !== 0}
+      />
+    </div>
+  ))}
+</div>
       </PaddingWrapper2>
     </ContainerWrapper>
   );

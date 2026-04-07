@@ -1,0 +1,118 @@
+"use client";
+import React, { useState } from "react";
+import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
+import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
+import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
+import MinusIcon from "@/app/components/common/Icons/FAQ/MinusIcon";
+import PlusIconFaq from "@/app/components/common/Icons/FAQ/PlusIconFaq";
+
+export const FAQ = ({
+  data,
+  defaultOpen = "1",
+  headdingblue = "",
+  headingblack = "",
+  containerClass = "w-full",
+}) => {
+  const [openItem, setOpenItem] = useState(defaultOpen || null);
+
+  const toggleItem = (key) => {
+    setOpenItem(openItem === key ? null : key);
+  };
+
+  return (
+    <ContainerWrapper>
+      {" "}
+      <PaddingWrapper2>
+
+      <div className={containerClass}>
+        <H2HeadingWrapper
+          headingBlue={"FAQ's"}
+          headdingBlack={headingblack}
+          className="mb-5 md:mb-6 lg:mb-10"
+        />
+
+        <div className="space-y-0 border-2 lg:border-4 border-[#F65A75] rounded-[20px] overflow-hidden bg-white shadow-sm">
+          {data.map((item, index) => (
+            <div
+              key={item.key}
+              className={`${index !== 0 ? "border-t-2 lg:border-t-4 border-[#F65A75]" : ""}`}
+            >
+              <button
+                onClick={() => toggleItem(item.key)}
+                className="w-full flex items-center justify-between px-[10px] pb-[15px] pt-[15px] md:px-5 md:pb-[30px] md:pt-5 hover:bg-gray-50 transition-colors duration-200 text-left"
+                aria-expanded={openItem === item.key}
+              >
+                 <h4
+                  className={`text-h4
+                      flex-1 max-w-[90%] md:max-w-full
+                      text-[20px] leading-[25px]
+                      md:text-[20px] md:leading-[20px]
+                      lg:text-[25px] lg:leading-[25px]
+                      font-Inter font-semibold
+                      
+                    `}
+                >
+                  {item.title}
+                </h4>
+
+                <span className="flex-shrink-0 cursor-pointer flex items-center justify-right">
+                  {openItem === item.key ? <MinusIcon /> : <PlusIconFaq />}
+                  
+
+                </span>
+              </button>
+
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  openItem === item.key
+                    ? "max-h-[2000px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="pl-2.5 pr-[30px] pb-[30px] md:px-[20px] md:pb-[30px]">
+                  <p
+                    bold="font-normal"
+                    variant="secondary"
+                    dangerouslySetInnerHTML={{ __html: item.description }}
+                    className={`font-[Arial] faq-content text-[16px] 
+                            md:text-[16px] leading-[20px]
+                            lg:text-[20px] lg:leading-[24px] tracking-[0em]! font-normal md:max-w-[95%]`}
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <style jsx global>{`
+          .faq-content a {
+            color: #00afe3;
+            text-decoration: none;
+          }
+          .faq-content a:hover {
+            text-decoration: underline;
+          }
+          .faq-content p {
+            margin-bottom: 12px;
+          }
+          .faq-content p:last-child {
+            margin-bottom: 0;
+          }
+          .faq-content ul {
+            margin: 8px 0;
+            padding-left: 18px;
+            margin-left: 30px;
+          }
+          .faq-content li {
+            margin-bottom: 8px;
+          }
+          .faq-content strong {
+            font-weight: 600;
+          }
+        `}</style>
+      </div>
+      </PaddingWrapper2>
+      
+    </ContainerWrapper>
+  );
+};

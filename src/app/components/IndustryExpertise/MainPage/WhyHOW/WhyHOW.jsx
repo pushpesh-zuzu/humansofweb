@@ -1,152 +1,193 @@
-'use client'
+"use client";
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
+import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import React from "react";
 
 // ── Why Points ────────────────────────────────────────────────────────────────
 const WHY_POINTS = [
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-        <path d="M2 17l10 5 10-5"/>
-        <path d="M2 12l10 5 10-5"/>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
       </svg>
     ),
     title: "Tailored Strategies",
-    description: "No templates. No copy-paste playbooks. Every strategy is built from scratch around your industry, audience, and growth stage.",
+    description:
+      "No templates. No copy-paste playbooks. Every strategy is built from scratch around your industry, audience, and growth stage.",
     color: "#48179C",
     bg: "#f5f0ff",
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
       </svg>
     ),
     title: "ROI-Focused Execution",
-    description: "Every rupee we spend or recommend has a purpose — measurable outcomes tied to leads, revenue, and growth. Not vanity metrics.",
+    description:
+      "Every rupee we spend or recommend has a purpose — measurable outcomes tied to leads, revenue, and growth. Not vanity metrics.",
     color: "#F65A75",
     bg: "#fff0f3",
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="3" width="6" height="6" rx="1"/>
-        <rect x="9" y="3" width="6" height="6" rx="1"/>
-        <rect x="16" y="3" width="6" height="6" rx="1"/>
-        <rect x="2" y="12" width="6" height="6" rx="1"/>
-        <rect x="9" y="12" width="6" height="6" rx="1"/>
-        <rect x="16" y="12" width="6" height="6" rx="1"/>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect x="2" y="3" width="6" height="6" rx="1" />
+        <rect x="9" y="3" width="6" height="6" rx="1" />
+        <rect x="16" y="3" width="6" height="6" rx="1" />
+        <rect x="2" y="12" width="6" height="6" rx="1" />
+        <rect x="9" y="12" width="6" height="6" rx="1" />
+        <rect x="16" y="12" width="6" height="6" rx="1" />
       </svg>
     ),
     title: "Multi-Industry Experience",
-    description: "From local plumbers to SaaS platforms — we've grown brands across verticals and know what works where.",
+    description:
+      "From local plumbers to SaaS platforms — we've grown brands across verticals and know what works where.",
     color: "#0284c7",
     bg: "#f0f9ff",
   },
   {
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
       </svg>
     ),
     title: "Fast, Agile Execution",
-    description: "We move at startup speed — campaigns live in days, not months. No bureaucracy, no endless approval loops.",
+    description:
+      "We move at startup speed — campaigns live in days, not months. No bureaucracy, no endless approval loops.",
     color: "#d97706",
     bg: "#fffbeb",
   },
-  {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
-        <circle cx="12" cy="12" r="3"/>
-      </svg>
-    ),
-    title: "Full Transparency",
-    description: "Live dashboards, weekly updates, and zero jargon reports. You always know exactly what's happening and why.",
-    color: "#16a34a",
-    bg: "#f0fdf4",
-  },
-  {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-        <circle cx="9" cy="7" r="4"/>
-        <path d="M23 21v-2a4 4 0 00-3-3.87"/>
-        <path d="M16 3.13a4 4 0 010 7.75"/>
-      </svg>
-    ),
-    title: "A Team That Cares",
-    description: "You get a dedicated strategist — not a rotating account manager. Someone who knows your brand as well as you do.",
-    color: "#7c3aed",
-    bg: "#f5f3ff",
-  },
+  // {
+  //   icon: (
+  //     <svg
+  //       width="24"
+  //       height="24"
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="1.8"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //     >
+  //       <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
+  //       <circle cx="12" cy="12" r="3" />
+  //     </svg>
+  //   ),
+  //   title: "Full Transparency",
+  //   description:
+  //     "Live dashboards, weekly updates, and zero jargon reports. You always know exactly what's happening and why.",
+  //   color: "#16a34a",
+  //   bg: "#f0fdf4",
+  // },
+  // {
+  //   icon: (
+  //     <svg
+  //       width="24"
+  //       height="24"
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="1.8"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //     >
+  //       <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+  //       <circle cx="9" cy="7" r="4" />
+  //       <path d="M23 21v-2a4 4 0 00-3-3.87" />
+  //       <path d="M16 3.13a4 4 0 010 7.75" />
+  //     </svg>
+  //   ),
+  //   title: "A Team That Cares",
+  //   description:
+  //     "You get a dedicated strategist — not a rotating account manager. Someone who knows your brand as well as you do.",
+  //   color: "#7c3aed",
+  //   bg: "#f5f3ff",
+  // },
 ];
 
 // ── Abstract visual — tech grid ───────────────────────────────────────────────
-function AbstractVisual() {
+function AbstractVisual({ path = "/IndustryExpertise/digitalDisplay.webp" }) {
   return (
-    <div className="relative w-full h-full min-h-[480px] rounded-3xl overflow-hidden flex items-center justify-center"
-      style={{ background: "linear-gradient(155deg, #0f0a1e 0%, #1e0a3c 50%, #2d0a2e 100%)" }}
+    <div
+      className="relative w-full h-full rounded-[30px] min-h-[480px] rounded-3xl overflow-hidden flex items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: path
+          ? `url(${path})`
+          : "linear-gradient(155deg, #0f0a1e 0%, #1e0a3c 50%, #2d0a2e 100%)",
+      }}
     >
-      {/* Grid dots */}
-      <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 400 480" preserveAspectRatio="xMidYMid slice">
-        {Array.from({ length: 10 }).map((_, row) =>
-          Array.from({ length: 8 }).map((_, col) => (
-            <circle
-              key={`${row}-${col}`}
-              cx={col * 50 + 25}
-              cy={row * 50 + 25}
-              r="1.5"
-              fill="#a78bfa"
-              opacity={(row + col) % 3 === 0 ? 1 : 0.3}
-            />
-          ))
-        )}
-      </svg>
-
-      {/* Glow rings */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        {[180, 130, 80].map((size, i) => (
-          <div
-            key={i}
-            className="absolute rounded-full"
-            style={{
-              width: size * 2,
-              height: size * 2,
-              border: `1px solid rgba(167,139,250,${0.08 + i * 0.06})`,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Center HOW logo mark */}
+      {/* Center content */}
       <div className="relative z-10 flex flex-col items-center gap-6">
-        <div className="relative">
-          <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
-            <rect x="3.5" y="3.5" width="12" height="12" rx="2.5" fill="#a78bfa" transform="rotate(45 9.5 9.5)"/>
-            <rect x="21.5" y="3.5" width="12" height="12" rx="2.5" fill="none" stroke="#a78bfa" strokeWidth="1.5" transform="rotate(45 27.5 9.5)"/>
-            <rect x="3.5" y="21.5" width="12" height="12" rx="2.5" fill="none" stroke="#a78bfa" strokeWidth="1.5" transform="rotate(45 9.5 27.5)"/>
-            <rect x="21.5" y="21.5" width="12" height="12" rx="2.5" fill="#F65A75" opacity="0.8" transform="rotate(45 27.5 27.5)"/>
-          </svg>
-        </div>
-
-        <div className="text-center px-6">
-          <div className="text-white font-black text-2xl tracking-tight mb-1">
-            H<span style={{ color: "#F65A75" }}>O</span>W
-          </div>
-          <div className="text-xs font-medium" style={{ color: "rgba(255,255,255,0.4)", letterSpacing: "0.15em" }}>
-            HUMANS OF WEB
-          </div>
-        </div>
-
         {/* Floating stat chips */}
         {[
-          { label: "Avg. ROAS", val: "4.8x", color: "#34d399", top: -120, left: -100 },
-          { label: "Client Retention", val: "94%", color: "#a78bfa", top: -80, left: 80 },
-          { label: "Industries", val: "12+", color: "#F65A75", top: 80, left: -110 },
-          { label: "Keywords Ranked", val: "850+", color: "#60a5fa", top: 100, left: 70 },
+          {
+            label: "Avg. ROAS",
+            val: "4.8x",
+            color: "#34d399",
+            top: -120,
+            left: -120,
+          },
+          {
+            label: "Client Retention",
+            val: "94%",
+            color: "#a78bfa",
+            top: -80,
+            left: 80,
+          },
+          {
+            label: "Industries",
+            val: "12+",
+            color: "#F65A75",
+            top: 80,
+            left: -110,
+          },
+          {
+            label: "Keywords Ranked",
+            val: "850+",
+            color: "#60a5fa",
+            top: 100,
+            left: 70,
+          },
         ].map((chip) => (
           <div
             key={chip.label}
@@ -160,16 +201,25 @@ function AbstractVisual() {
               minWidth: 90,
             }}
           >
-            <div style={{ fontSize: 18, fontWeight: 800, color: chip.color, lineHeight: 1 }}>{chip.val}</div>
-            <div style={{ fontSize: 10, color: "rgba(255,255,255,0.45)", marginTop: 2 }}>{chip.label}</div>
+            <div
+              style={{
+                fontSize: 18,
+                fontWeight: 800,
+                color: chip.color,
+                lineHeight: 1,
+              }}
+            >
+              {chip.val}
+            </div>
+            <div
+              className="text-secondary font-extrabold"
+              style={{ fontSize: 10, marginTop: 2 }}
+            >
+              {chip.label}
+            </div>
           </div>
         ))}
       </div>
-
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
-        style={{ background: "linear-gradient(to top, rgba(15,10,30,0.6), transparent)" }}
-      />
     </div>
   );
 }
@@ -202,7 +252,10 @@ function WhyCard({ point }) {
         <h4 className="text-h6 font-bold mb-1" style={{ color: "#1a1a2e" }}>
           {point.title}
         </h4>
-        <p className="p-default text-gray-500 leading-relaxed" style={{ margin: 0 }}>
+        <p
+          className="p-default text-gray-500 leading-relaxed"
+          style={{ margin: 0 }}
+        >
           {point.description}
         </p>
       </div>
@@ -213,32 +266,38 @@ function WhyCard({ point }) {
 // ── Main Export ───────────────────────────────────────────────────────────────
 export default function WhyHOW() {
   return (
-    <ContainerWrapper background="#fff">
-      <PaddingWrapper>
-        <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-center">
-
+    <ContainerWrapper maxWidth="max-w-[1500px]" background="#fff">
+      <PaddingWrapper2>
+        <div className="flex flex-col lg:flex-row gap-12 xl:gap-4 items-center">
           {/* LEFT — Visual */}
-          <div className="w-full lg:w-[42%] flex-shrink-0">
+          <div className="w-full lg:w-[50%] flex-shrink-0">
             <AbstractVisual />
           </div>
 
           {/* RIGHT — Content */}
           <div className="flex-1 min-w-0">
-
             {/* Heading */}
             <div className="mb-8">
               <span
                 className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4"
-                style={{ background: "#f5f0ff", color: "#48179C", border: "1px solid #e9d5ff" }}
+                style={{
+                  background: "#f5f0ff",
+                  color: "#48179C",
+                  border: "1px solid #e9d5ff",
+                }}
               >
                 Why HOW?
               </span>
-              <h2 className="text-h2 font-extrabold leading-tight mb-3" style={{ color: "#1a1a2e" }}>
+              <h2
+                className="text-h2 font-extrabold leading-tight mb-3"
+                style={{ color: "#1a1a2e" }}
+              >
                 Not Just Another{" "}
                 <span style={{ color: "#48179C" }}>Digital Agency</span>
               </h2>
               <p className="p-default text-gray-500 leading-relaxed">
-                Most agencies sell you reports. We sell you results. Here's what makes Humans of Web different from everyone else you've tried.
+                Most agencies sell you reports. We sell you results. Here's what
+                makes Humans of Web different from everyone else you've tried.
               </p>
             </div>
 
@@ -254,8 +313,12 @@ export default function WhyHOW() {
               <button
                 className="button-primary"
                 style={{ background: "#48179C", border: "none" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "#2d0e6e")}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "#48179C")}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.background = "#2d0e6e")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "#48179C")
+                }
               >
                 Work With Us →
               </button>
@@ -265,15 +328,23 @@ export default function WhyHOW() {
                 style={{ color: "#48179C" }}
               >
                 See our results
-                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                <svg
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
             </div>
           </div>
-
         </div>
-      </PaddingWrapper>
+      </PaddingWrapper2>
     </ContainerWrapper>
   );
 }

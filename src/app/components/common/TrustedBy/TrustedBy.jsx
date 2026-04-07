@@ -112,7 +112,7 @@ export default function TrustedBy({padding='pb-10 px-8.75 md:pb-14 md:px-12.5 xl
           </div>
 
           {/* Slider */}
-          <div className=" mx-auto px-4 h-24 xl:h-37.5">
+          <div className=" mx-auto px-4 h-16 xl:h-37.5">
             <Slider {...settings}>
               {PARTNERS.map((partner) => (
                 <div key={partner.id} className="px-6">
