@@ -112,7 +112,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="relative flex items-center justify-center"
+              className="relative flex items-center justify-center pt-4 md:pt-6 lg:pt-7"
             >
               <div className="relative h-[250px] w-full max-w-[660px] md:h-[410px] lg:h-[480px] xl:h-[500px]">
                 <Image

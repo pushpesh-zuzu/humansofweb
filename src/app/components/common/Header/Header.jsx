@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <HeaderMotionStrip />
-      <div className="mx-auto px-4 sm:px-6 py-[10px] lg:px-7 lg:py-7">
+      <div className="mx-auto px-4 sm:px-6 py-[10px] lg:px-7 lg:py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0 h-11">

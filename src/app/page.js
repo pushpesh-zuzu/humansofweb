@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 import CustomGeneration from "./components/Home/CustomGeneration";
 // import BlogSection from "./components/Home/BlogSection";
 import IndustryTags from "./components/Home/IndustryTags";
+import OurExport from "./components/Home/OurExport";
+import ServiceSectors from "./components/Home/ServiceSectors";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,7 @@ export default function Home() {
     const timer = null;
     setTimeout(() => {
       setIsOpen(true);
-    }, 3000);
+    }, 5000);
     return () => {
       clearTimeout(timer);
     };
@@ -28,8 +30,10 @@ export default function Home() {
       <TrustedBy />
       <ResultOrientedServices />
       <IndustryTags />
+      <ServiceSectors />
       <WorkingWithUs />
       <CustomGeneration />
+      <OurExport />
       {/* <BlogSection /> */}
       <ProposalModal
         isOpen={isOpen}

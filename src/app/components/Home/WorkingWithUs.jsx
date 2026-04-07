@@ -110,7 +110,7 @@ function WorkingWithUs() {
               type="button"
               onClick={scrollPrev}
               aria-label="Previous testimonial"
-              className="absolute left-0 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full text-secondary xl:hidden"
+              className="absolute left-[-10px] top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full text-secondary xl:hidden"
             >
               <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
@@ -131,7 +131,7 @@ function WorkingWithUs() {
               type="button"
               onClick={scrollNext}
               aria-label="Next testimonial"
-              className="absolute right-0 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full text-secondary xl:hidden"
+              className="absolute right-[-10px] top-1/2 z-10 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full text-secondary xl:hidden"
             >
               <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
