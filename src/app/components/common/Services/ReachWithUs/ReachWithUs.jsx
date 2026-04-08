@@ -19,7 +19,7 @@ const ReachWithUs = ({
       : [normalizedTitle];
 
   return (
-    <ContainerWrapper>
+    <ContainerWrapper maxWidth="max-w-none">
       <PaddingWrapper2 padding="pb-10 px-0 md:pb-14 xl:pb-18">
         <section
           className="relative overflow-hidden"
