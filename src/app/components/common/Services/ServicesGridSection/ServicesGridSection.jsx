@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ContainerWrapper from "../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
+import ContainerWrapper from "../../Container/ContainerWrapper";
+import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 
 export default function ServicesGridSection({
@@ -21,6 +21,7 @@ export default function ServicesGridSection({
             headdingBlack={headdingBlack}
             headingBlue={headingBlue}
             multiParagraph={description}
+            breakLine
           />
         </div>
 

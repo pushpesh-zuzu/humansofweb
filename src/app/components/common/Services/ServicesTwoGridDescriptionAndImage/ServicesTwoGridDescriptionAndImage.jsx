@@ -3,11 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ContainerWrapper from "../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
+import ContainerWrapper from "../../Container/ContainerWrapper";
+import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 
-export default function EcommerceStrategy({
+export default function ServicesTwoGridDescriptionAndImage({
   headdingBlack,
   headingBlue,
   subheading = "",
@@ -21,8 +21,9 @@ export default function EcommerceStrategy({
   seeMore = true,
   limit = 7,
   bottomParagraph = [],
-  breakLine = false,
+  breakLine = true,
   headingColor = true,
+  isImageSmall=false
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -45,9 +46,10 @@ export default function EcommerceStrategy({
 
         <section className="relative">
           <div
-            className={`grid items-center gap-12 lg:grid-cols-2 ${
-              reverse ? "lg:[&>*:first-child]:order-2" : ""
-            }`}
+            className={`grid items-center gap-12 
+              ${isImageSmall ? "lg:grid-cols-[30%_70%]" : "lg:grid-cols-2"}
+              ${reverse ? "lg:[&>*:first-child]:order-2" : ""}
+            `}
           >
             {/* IMAGE */}
             <motion.div
@@ -72,7 +74,7 @@ export default function EcommerceStrategy({
               initial={{ opacity: 0, x: reverse ? -30 : 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-[700px]"
+              className={`${isImageSmall ? 'max-w-full' :'max-w-[700px]'}`}
             >
               {isHeadingInGridSection && (
                 <H2HeadingWrapper
@@ -80,6 +82,7 @@ export default function EcommerceStrategy({
                   headdingBlack={headdingBlack}
                   headingBlue={headingBlue}
                   textAlign="text-left"
+                  breakLine={breakLine}
                 />
               )}
 

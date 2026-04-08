@@ -49,6 +49,7 @@ export default function ProcessCarouselSection({
             headdingBlack={headdingBlack}
             headingBlue={headingBlue}
             multiParagraph={description}
+            breakLine
           />
         </div>
 
