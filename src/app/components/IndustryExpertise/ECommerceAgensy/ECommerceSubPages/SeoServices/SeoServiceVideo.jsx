@@ -67,7 +67,7 @@ const SeoServiceVideo = ({
                   src={coverImage}
                   alt="E-commerce SEO Services designed to drive potential customers to website"
                   fill
-                  className="object-cover rounded-[30px]"
+                  className="object-cover"
                   sizes="(min-width: 1280px) 1135px, calc(100vw - 70px)"
                 />
                 <button

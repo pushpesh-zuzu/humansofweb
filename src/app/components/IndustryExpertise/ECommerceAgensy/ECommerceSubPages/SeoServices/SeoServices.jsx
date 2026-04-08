@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from '../HeroSection/HeroSection'
 import TrustedBy from '@/app/components/common/TrustedBy/TrustedBy'
 import SeoServiceVideo from './SeoServiceVideo'
+import SeoPerformance from './SeoPerformance'
 
 const SeoServices = () => {
     return (
@@ -15,6 +16,7 @@ const SeoServices = () => {
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15'} />
             <SeoServiceVideo />
+            <SeoPerformance />
         </>
     )
 }
