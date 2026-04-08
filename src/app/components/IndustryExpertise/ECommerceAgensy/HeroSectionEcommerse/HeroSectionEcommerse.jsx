@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import ContainerWrapper from "../../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 
-export default function HeroSectionEcommerse() {
+export default function HeroSectionEcommerse({ bgImag = "" }) {
   return (
     <ContainerWrapper
       background="#48179C"
@@ -69,7 +69,7 @@ export default function HeroSectionEcommerse() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(72,23,156,0.12),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(246,90,117,0.14),_transparent_35%)]" />
 
                 <Image
-                  src="/IndustryExpertise/industryHero.webp"
+                  src={bgImag}
                   alt="Industry Expertise"
                   fill
                   className="object-cover"

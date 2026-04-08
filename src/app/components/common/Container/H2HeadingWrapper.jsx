@@ -6,19 +6,31 @@ function H2HeadingWrapper({
   subHeading = "",
   description = "",
   breakLine = false,
+  headingColor=false,
+  multiParagraph=[],
+  textAlign=""
 }) {
   return (
-    <div className="pb-6 md:pb-8.75 text-center">
-      <h2 className="text-h2">
+    <div className={`pb-6 md:pb-8.75 ${textAlign ? textAlign :'text-center'}`}>
+      <h2 className={`text-h2 ${headingColor ? 'text-white' : ''}`}>
         {headdingBlack} {breakLine && <br />}{" "}
         {headingBlue && (
-          <span className="font-bold text-primary">{headingBlue}</span>
+          <span className={`font-bold ${headingColor ? 'text-white' : 'text-primary'}`}>{headingBlue}</span>
         )}
       </h2>
       {subHeading && (
         <h4 className="text-h4 py-3 md:py-6  font-medium">{subHeading}</h4>
       )}
-      {description && <p className="p-default p-3.75">{description}</p>}
+      {/* Paragraph Logic */}
+      {multiParagraph && multiParagraph.length > 0 ? (
+        multiParagraph.map((para, index) => (
+          <p key={index} className="p-default mt-3.75">
+            {para}
+          </p>
+        ))
+      ) : (
+        description && <p className="p-default p-3.75">{description}</p>
+      )}
     </div>
   );
 }
