@@ -120,7 +120,7 @@ export default function EcommerceStrategy({
 
               {/* CTA */}
               {ctaText && (
-                <button className="mt-4 button-primary bg-secondary outline-none  hover:bg-white border-white hover:text-secondary text-white hover:border hover:border-secondary ">
+                <button className="mt-4 button-primary bg-secondary outline-none  hover:bg-white border-transparent hover:text-secondary text-white hover:border hover:border-secondary ">
                   {ctaText}
                 </button>
               )}
