@@ -106,7 +106,7 @@ const Footer = () => {
               <input
                 type="url"
                 placeholder="Enter website address"
-                className="h-12 w-full min-w-0 flex-1 rounded-full border border-white bg-white px-4 p-small font-medium text-[#1c1c1c] outline-none transition placeholder:text-[#6b6b6b] focus:border-secondary"
+                className="h-12 w-full py-3.5 md:py-0 min-w-0 flex-1 rounded-full border border-white bg-white px-4 p-small font-medium text-[#1c1c1c] outline-none transition placeholder:text-[#6b6b6b] focus:border-secondary"
               />
               <button
                 type="button"
