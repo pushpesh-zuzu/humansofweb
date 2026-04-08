@@ -57,16 +57,6 @@ const ICONS = [
     ),
   },
   {
-    label: "ranking",
-    path: (
-      <>
-        <path d="M5 17l4-4 3 3 7-8" />
-        <path d="M15 8h4v4" />
-        <path d="M5 21h14" />
-      </>
-    ),
-  },
-  {
     label: "marketing megaphone",
     path: (
       <>
@@ -83,23 +73,6 @@ const ICONS = [
         <path d="M4 5h2l2.2 10.5h9.8l2-7.5H8" />
         <circle cx="10" cy="20" r="1.5" />
         <circle cx="18" cy="20" r="1.5" />
-      </>
-    ),
-  },
-  {
-    label: "dental",
-    path: (
-      <>
-        <path d="M8 4c1.8 0 2.4 1 4 1s2.2-1 4-1c2.2 0 3.5 1.8 3 4.4-.4 2.1-1.3 3.8-2 6-.9 2.8-1.4 5.6-3.1 5.6-1.2 0-1.2-2.6-1.9-2.6S11.3 20 10.1 20C8.4 20 7.9 17.2 7 14.4c-.7-2.2-1.6-3.9-2-6C4.5 5.8 5.8 4 8 4z" />
-      </>
-    ),
-  },
-  {
-    label: "healthcare",
-    path: (
-      <>
-        <path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z" />
-        <path d="M9 12h6M12 9v6" />
       </>
     ),
   },
@@ -131,24 +104,6 @@ const ICONS = [
     ),
   },
   {
-    label: "local seo pin",
-    path: (
-      <>
-        <path d="M12 21s6-5.3 6-11a6 6 0 0 0-12 0c0 5.7 6 11 6 11z" />
-        <circle cx="12" cy="10" r="2" />
-      </>
-    ),
-  },
-  {
-    label: "legal seo",
-    path: (
-      <>
-        <path d="M12 4v16M7 20h10M8 7h8" />
-        <path d="M7 7l-3 6h6L7 7zM17 7l-3 6h6l-3-6z" />
-      </>
-    ),
-  },
-  {
     label: "social media",
     path: (
       <>
@@ -156,26 +111,6 @@ const ICONS = [
         <circle cx="17" cy="6" r="3" />
         <circle cx="17" cy="18" r="3" />
         <path d="M9.7 10.7l4.6-3.4M9.7 13.3l4.6 3.4" />
-      </>
-    ),
-  },
-  {
-    label: "conversion target",
-    path: (
-      <>
-        <circle cx="12" cy="12" r="8" />
-        <circle cx="12" cy="12" r="4" />
-        <circle cx="12" cy="12" r="1" />
-        <path d="M16 8l4-4M18 4h2v2" />
-      </>
-    ),
-  },
-  {
-    label: "ai chat",
-    path: (
-      <>
-        <path d="M5 6h14v10H9l-4 4V6z" />
-        <path d="M8 10h.01M12 10h.01M16 10h.01" />
       </>
     ),
   },
@@ -200,96 +135,11 @@ const ICONS = [
     ),
   },
   {
-    label: "backlink",
-    path: (
-      <>
-        <path d="M10 7h-1a5 5 0 0 0 0 10h3" />
-        <path d="M14 7h1a5 5 0 0 1 0 10h-3" />
-        <path d="M8 12h8" />
-      </>
-    ),
-  },
-  {
-    label: "reviews star",
-    path: (
-      <>
-        <path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3z" />
-      </>
-    ),
-  },
-  {
     label: "mobile website",
     path: (
       <>
         <rect x="8" y="3" width="8" height="18" rx="2" />
         <path d="M11 6h2M12 18h.01" />
-      </>
-    ),
-  },
-  {
-    label: "speed performance",
-    path: (
-      <>
-        <path d="M5 16a7 7 0 1 1 14 0" />
-        <path d="M12 16l4-5" />
-        <path d="M8 20h8" />
-      </>
-    ),
-  },
-  {
-    label: "security shield",
-    path: (
-      <>
-        <path d="M12 3l7 3v5c0 4.4-2.8 8.4-7 10-4.2-1.6-7-5.6-7-10V6l7-3z" />
-        <path d="M9 12l2 2 4-4" />
-      </>
-    ),
-  },
-  {
-    label: "strategy lightbulb",
-    path: (
-      <>
-        <path d="M9 18h6M10 21h4" />
-        <path d="M8 11a4 4 0 1 1 8 0c0 2-1.5 3-2.2 4H10.2C9.5 14 8 13 8 11z" />
-        <path d="M12 3V2M5 6l-1-1M19 6l1-1" />
-      </>
-    ),
-  },
-  {
-    label: "video marketing",
-    path: (
-      <>
-        <rect x="4" y="6" width="16" height="12" rx="2" />
-        <path d="M10 9l5 3-5 3V9z" />
-      </>
-    ),
-  },
-  {
-    label: "automation gear",
-    path: (
-      <>
-        <circle cx="12" cy="12" r="3" />
-        <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
-      </>
-    ),
-  },
-  {
-    label: "team users",
-    path: (
-      <>
-        <circle cx="9" cy="8" r="3" />
-        <circle cx="17" cy="10" r="2" />
-        <path d="M4 20c.6-3 2.5-5 5-5s4.4 2 5 5" />
-        <path d="M14 16c1.9.2 3.3 1.6 4 4" />
-      </>
-    ),
-  },
-  {
-    label: "calendar campaign",
-    path: (
-      <>
-        <rect x="4" y="5" width="16" height="15" rx="2" />
-        <path d="M8 3v4M16 3v4M4 10h16M8 14h.01M12 14h.01M16 14h.01" />
       </>
     ),
   },
@@ -307,7 +157,7 @@ export default function FloatingBalls() {
   const icons = useMemo(() => {
     const random = createSeededRandom(42);
 
-    return Array.from({ length: 24 }, (_, index) => {
+    return Array.from({ length: 16 }, (_, index) => {
       const size = 10 + Math.floor(random() * 8);
       const left = `${Math.floor(random() * 100)}%`;
       const startY = `${102 + Math.floor(random() * 28)}%`;
