@@ -35,7 +35,8 @@ export default function DropdownMenu({ items, open }) {
             }}
           >
             {item.subItems ? (
-              <button
+              <Link
+              href={item?.href? item.href :""}
                 onMouseEnter={() => setActiveItem(idx)}
                 onClick={() => setActiveItem(idx)}
                 className={`w-full text-left flex items-center justify-between gap-4 px-5 py-3 text-sm font-medium text-white transition-colors duration-200
@@ -58,7 +59,7 @@ export default function DropdownMenu({ items, open }) {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
-              </button>
+              </Link>
             ) : (
               <Link
                 href={item.href ?? "#"}

@@ -2,10 +2,18 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ContainerWrapper from "../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
+import ContainerWrapper from "../../Container/ContainerWrapper";
+import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 
-export default function HeroSectionEcommerse() {
+export default function HeroSectionServices({
+  bgImag = "",
+  heading1 = "We Turn E-commerce Stores Into",
+  heading2 = "Brands People Trust",
+  description1 = `At Humans of Web, we don’t just run campaigns — we understand your customers, their intent, and what truly makes them click, buy, and come back.`,
+  description2 = `From product discovery to checkout, we design strategies that feel natural, build trust, and turn your store into a growth engine — not just another online shop.`,
+  ctaText = "Get Free Growth Plan",
+  headingSectionWidth="max-w-[600px]"
+}) {
   return (
     <ContainerWrapper
       background="#48179C"
@@ -19,25 +27,20 @@ export default function HeroSectionEcommerse() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-[600px] h-full md:mx-auto md:text-center lg:mx-0 lg:text-left"
+              className={`${headingSectionWidth} h-full md:mx-auto md:text-center lg:mx-0 lg:text-left`}
             >
               {/* Heading */}
               <h1 className="text-h1 font-semibold text-white mb-auto leading-[1.25]">
-                We Turn E-commerce Stores Into{" "}
-                <span className="text-secondary">Brands People Trust</span>
+                {heading1} <span className="text-secondary">{heading2}</span>
               </h1>
 
               {/* Description */}
               <p className="mt-5 p-default text-white max-w-[560px] md:mx-auto lg:mx-0">
-                At Humans of Web, we don’t just run campaigns — we understand
-                your customers, their intent, and what truly makes them click,
-                buy, and come back.
+                {description1}
               </p>
 
               <p className="mt-4 p-default text-white max-w-[560px] md:mx-auto lg:mx-0">
-                From product discovery to checkout, we design strategies that
-                feel natural, build trust, and turn your store into a growth
-                engine — not just another online shop.
+                {description2}
               </p>
 
               {/* CTA */}
@@ -48,7 +51,7 @@ export default function HeroSectionEcommerse() {
                   className="h-[52px] w-full bg-white rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
                 />
                 <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white">
-                  Get Free Growth Plan
+                  {ctaText}
                 </button>
               </div>
             </motion.div>
@@ -69,7 +72,7 @@ export default function HeroSectionEcommerse() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(72,23,156,0.12),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(246,90,117,0.14),_transparent_35%)]" />
 
                 <Image
-                  src="/IndustryExpertise/industryHero.webp"
+                  src={bgImag}
                   alt="Industry Expertise"
                   fill
                   className="object-cover"

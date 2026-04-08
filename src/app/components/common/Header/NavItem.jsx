@@ -69,7 +69,8 @@ export default function NavItem({ item }) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <button
+      <Link
+      href={item?.href? item.href :""}
         onClick={() => setOpen((v) => !v)}
         className={`relative  flex items-center gap-1 text-[15px] font-normal transition-colors duration-600 cursor-pointer ease-in-out px-3 xl:px-4.5 py-3.75
           ${open || hovered ? "text-secondary" : "text-[#2c2c2c]"}`}
@@ -89,7 +90,7 @@ export default function NavItem({ item }) {
           />
         </svg>
         <AnimatedBorder hovered={hovered || open} />
-      </button>
+      </Link>
 
       <DropdownMenu items={item.children} open={open} />
     </div>

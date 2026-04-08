@@ -2,9 +2,11 @@ const NAV_ITEMS = [
   { label: "Home", href: "/" },
   {
     label: "Industry Expertise",
+    href:"/industry-expertise",
     children: [
       {
         label: "Ecommerce",
+        href: "/ecommerce-agency",
         subItems: [
           { label: "E-Commerce SEO", href: "/ecommerce-agency/seo-services" },
           { label: "E-Commerce Website Development", href: "#" },
