@@ -15,8 +15,8 @@ const TESTIMONIALS = [
     name: "Linda Zindroski",
     company: "Purr Glass",
     image: "/Home/thumb1.webp",
-    video: "https://www.youtube.com/watch?v=t2_Q2BRzeEE&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0",
-    avatar: "/Home/image3.webp",
+    video: "/Home/thumbvideo1.mp4",
+    avatar: "/Home/avatar1.webp",
     avatarMarginTop: 0,
   },
   {
@@ -25,8 +25,8 @@ const TESTIMONIALS = [
     name: "Ben Stewart",
     company: "Rusty Rooster Metal",
     image: "/Home/thumb2.webp",
-    video: "https://www.youtube.com/watch?v=UrsmFxEIp5k",
-    avatar: "/Home/image1.webp",
+    video: "/Home/thumbvideo2.mp4",
+    avatar: "/Home/avatar2.webp",
     avatarMarginTop: 0,
   },
   {
@@ -35,8 +35,8 @@ const TESTIMONIALS = [
     name: "Garry Mueller",
     company: "Treasure Coast Metal Detector",
     image: "/Home/thumb3.webp",
-    video: "https://www.youtube.com/watch?v=YZkyL-f-YXY&list=PLsyeobzWxl7omDoEYrrf3oXvXxa6MPgek",
-    avatar: "/Home/image2.webp",
+    video: "/Home/thumbvideo3.mp4",
+    avatar: "/Home/avatar3.webp",
     avatarMarginTop: 0,
   }
 ];
@@ -59,6 +59,7 @@ function getYouTubeEmbedUrl(url) {
 function WorkingWithUs() {
   const [activeVideo, setActiveVideo] = useState(null);
   const activeEmbedUrl = activeVideo ? getYouTubeEmbedUrl(activeVideo.video) : "";
+  const isYouTubeVideo = activeEmbedUrl.includes("youtube.com/embed");
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { align: "start", loop: true },
     [Autoplay({ delay: 2500, stopOnInteraction: false })]
@@ -157,13 +158,23 @@ function WorkingWithUs() {
             >
               x
             </button>
-            <iframe
-              src={`${activeEmbedUrl}?autoplay=1`}
-              title={`${activeVideo.name} video`}
-              className="aspect-video w-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
+            {isYouTubeVideo ? (
+              <iframe
+                src={`${activeEmbedUrl}?autoplay=1`}
+                title={`${activeVideo.name} video`}
+                className="aspect-video w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            ) : (
+              <video
+                src={activeVideo.video}
+                poster={activeVideo.image}
+                className="aspect-video w-full"
+                controls
+                autoPlay
+              />
+            )}
           </div>
         </div>
       )}
