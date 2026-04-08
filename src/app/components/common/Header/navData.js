@@ -6,7 +6,7 @@ const NAV_ITEMS = [
       {
         label: "Ecommerce",
         subItems: [
-          { label: "E-Commerce SEO", href: "#" },
+          { label: "E-Commerce SEO", href: "/ecommerce-agency/seo-services" },
           { label: "E-Commerce Website Development", href: "#" },
           { label: "E-Commerce PPC", href: "#" },
           { label: "E-Commerce GEO Services", href: "#" },
@@ -21,7 +21,11 @@ const NAV_ITEMS = [
         label: "SaaS",
         subItems: [
           { label: "SaaS SEO", href: "#" },
+          { label: "SaaS Website Development", href: "#" },
           { label: "SaaS PPC", href: "#" },
+          { label: "SaaS GEO Services", href: "#" },
+          { label: "SaaS Content Services", href: "#" },
+          { label: "SaaS Link Building", href: "#" },
         ],
       },
       {
