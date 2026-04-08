@@ -32,7 +32,7 @@ const PARTNERS = [
   },
 ];
 
-const LOOPED = [...PARTNERS, ...PARTNERS];
+const LOOPED = [...PARTNERS, ...PARTNERS, ...PARTNERS];
 
 export default function TrustedBy({
   padding = "pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20",
