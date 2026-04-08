@@ -12,6 +12,11 @@ import GraphJan from '../../../../common/Icons/IndustryExpertise/graph-jan.svg'
 import GraphMar from '../../../../common/Icons/IndustryExpertise/graph-mar.svg'
 import WorkWithCards from '../WorkWithCards/WorkWithCards'
 import WORK_WITH_CARDS from './workWithCardsData'
+import ServiceGridSection from '../ServiceGridSection/ServiceGridSection'
+import SERVICE_GRID_ITEMS from './serviceGridData'
+import FaqComponent from '../FaqComponent/FaqComponent'
+import FAQ_DATA from './faqData'
+import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs'
 
 const SEO_GRAPH_IMAGES = [
     { src: GraphJan, alt: 'January SEO performance graph' },
@@ -55,6 +60,27 @@ const SeoServices = () => {
                 ctaText="Get Expert Guidance Today"
                 ctaHref=""
                 backgroundImage="/IndustryExpertise/seo-banner.webp"
+            />
+            <ServiceGridSection
+                title="Everything Your Store Needs To"
+                highlightedTitle="Grow Smarter"
+                description="From visibility to conversions, our eCommerce services work together to help your store attract better traffic and turn more visits into revenue."
+                services={SERVICE_GRID_ITEMS}
+                backgroundImage="/IndustryExpertise/seo-banner.webp"
+                ctaText="Get Expert Guidance Today"
+                ctaHref=""
+            />
+            <FaqComponent
+                title="Frequently asked questions"
+                items={FAQ_DATA}
+                defaultOpen={0}
+            />
+            <ReachWithUs
+                title="MAXIMIZE YOUR ONLINE REACH WITH US"
+                buttonText="SCHEDULE CONSULTATION CALL"
+                buttonHref=""
+                imageSrc="/IndustryExpertise/pretty-women.webp"
+                imageAlt="Consultation support"
             />
         </>
     )
