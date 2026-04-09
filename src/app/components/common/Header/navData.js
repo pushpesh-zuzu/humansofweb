@@ -33,7 +33,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Dental",
-        href: "dental-agency",
+        href: "/dental-agency",
         subItems: [
           { label: "Dental SEO", href: "#" },
           { label: "Dental Web Design", href: "#" },
@@ -41,7 +41,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Healthcare",
-        href: "healthcare-agency",
+        href: "/healthcare-agency",
         subItems: [
           { label: "Healthcare SEO", href: "#" },
           { label: "Healthcare PPC", href: "#" },
@@ -49,7 +49,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Ophthalmology",
-        href: "ophthalmology-agency",
+        href: "/ophthalmology-agency",
         subItems: [
           { label: "Ophthalmology SEO", href: "#" },
           { label: "Ophthalmology Web Design", href: "#" },
@@ -57,7 +57,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Chiropractor",
-        href: "chiropractor-agency",
+        href: "/chiropractor-agency",
         subItems: [{ label: "Chiropractor SEO", href: "#" }],
       },
       {
@@ -67,7 +67,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Legal",
-        href: "legal-agency",
+        href: "/legal-agency",
         subItems: [
           { label: "Legal SEO", href: "#" },
           { label: "Legal PPC", href: "#" },

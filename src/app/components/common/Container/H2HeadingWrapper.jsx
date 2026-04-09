@@ -8,10 +8,11 @@ function H2HeadingWrapper({
   breakLine = false,
   headingColor=false,
   multiParagraph=[],
-  textAlign=""
+  textAlign="",
+  padding='pb-6 md:pb-8.75'
 }) {
   return (
-    <div className={`pb-6 md:pb-8.75 ${textAlign ? textAlign :'text-center'}`}>
+    <div className={`${padding} ${textAlign ? textAlign :'text-center'}`}>
       <h2 className={`text-h2 ${headingColor ? 'text-white' : ''}`}>
         {headdingBlack} {breakLine && <br />}{" "}
         {headingBlue && (
@@ -29,7 +30,7 @@ function H2HeadingWrapper({
           </p>
         ))
       ) : (
-        description && <p className="p-default p-3.75">{description}</p>
+        description && <p className="p-default pt-3.75">{description}</p>
       )}
     </div>
   );
