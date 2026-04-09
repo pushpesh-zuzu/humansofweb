@@ -30,7 +30,8 @@ const SeoServices = () => {
             <HeroSection
                 heading={"E-commerce SEO That"}
                 pinkHeading={"Drives Sales"}
-                description={"We help your products rank higher, reach the right buyers, and turn search visibility into consistent sales."}
+                description1={"We help your products rank higher, reach the right buyers, and turn search visibility into consistent sales."}
+                description2={"Our tailored SEO strategies focus on your unique store, products, and customers to create a growth plan that delivers real results."}
                 bannerImage="/IndustryExpertise/seo-banner.webp"
                 altText={"E-commerce SEO That Drives Sales"}
             />

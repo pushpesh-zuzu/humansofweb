@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 
-export default function HeroSection({ heading, pinkHeading, description, bannerImage, altText }) {
+export default function HeroSection({ heading, pinkHeading, description1, description2, bannerImage, altText }) {
     return (
         <ContainerWrapper background="#48179C" >
             <PaddingWrapper2>
@@ -26,7 +26,11 @@ export default function HeroSection({ heading, pinkHeading, description, bannerI
 
                             {/* Description */}
                             <p className="mt-5 p-default text-white max-w-[560px] md:mx-auto lg:mx-0">
-                                {description}
+                                {description1}
+                            </p>
+
+                            <p className="mt-5 p-default text-white max-w-[560px] md:mx-auto lg:mx-0">
+                                {description2}
                             </p>
 
                             {/* CTA */}
