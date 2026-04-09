@@ -20,7 +20,7 @@ const WebsiteDesign = () => {
                 description1={"Start small or scale big—we design eCommerce websites that are built to adapt as your business grows."}
                 description2={"From design to functionality, we create fast, user-friendly stores that help you sell more and scale with confidence."}
                 bannerImage="/WebsiteDesign/website-banner.webp"
-                altText={""}
+                altText={"e-commerce Websites"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <WorkWithCards
