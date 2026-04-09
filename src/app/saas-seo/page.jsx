@@ -1,10 +1,8 @@
-import React from 'react'
-import Saas from '../components/IndustryExpertise/SaasPage/Saas'
+import React from "react";
+import Saas from "../components/IndustryExpertise/SaasAgency/SaaS";
 
 const page = () => {
-    return (
-        <Saas />
-    )
-}
+  return <Saas />;
+};
 
-export default page
+export default page;
