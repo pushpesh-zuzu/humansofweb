@@ -12,7 +12,8 @@ export default function HeroSectionServices({
   description1 = `At Humans of Web, we don’t just run campaigns — we understand your customers, their intent, and what truly makes them click, buy, and come back.`,
   description2 = `From product discovery to checkout, we design strategies that feel natural, build trust, and turn your store into a growth engine — not just another online shop.`,
   ctaText = "Get Free Growth Plan",
-  headingSectionWidth="max-w-[600px]"
+  headingSectionWidth="max-w-[600px]",
+  altText="Industry Expertise"
 }) {
   return (
     <ContainerWrapper
@@ -73,10 +74,11 @@ export default function HeroSectionServices({
 
                 <Image
                   src={bgImag}
-                  alt="Industry Expertise"
+                  alt={altText}
                   fill
                   className="object-cover"
                   priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
               </div>
             </motion.div>

@@ -8,7 +8,7 @@ function HealthcareAgency() {
       <HeroSectionServices
         heading1="Build a Stronger Healthcare Presence"
         heading2="That Connects With More Patients"
-        bgImag="/IndustryExpertise/saas/saasHero.webp"
+        bgImag="/IndustryExpertise/healthCare/healthCareHero.webp"
         description1="Healthcare today isn’t just about providing the right treatment — it’s about being visible, trustworthy, and easy to reach when patients need you the most."
         description2="At Humans of Web, we help healthcare providers grow by creating meaningful connections with the right audience. From improving your online presence to bringing in more patient inquiries, every strategy is designed to support real, sustainable growth for your practice."
       />
