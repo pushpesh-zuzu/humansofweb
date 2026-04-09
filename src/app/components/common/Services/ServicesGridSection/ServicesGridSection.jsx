@@ -11,9 +11,10 @@ export default function ServicesGridSection({
   description,
   services = [],
   ctaText = "Schedule a Free Consultation",
+  background="#fff"
 }) {
   return (
-    <ContainerWrapper background="#fff">
+    <ContainerWrapper background={background}>
       <PaddingWrapper2>
         {/* Heading */}
         <div className="max-w-3xl mx-auto">

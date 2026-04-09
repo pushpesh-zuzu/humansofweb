@@ -1,3 +1,12 @@
+import AdvertisingLeadGeneration from "../../common/Icons/IndustryExpertise/Dental/AdvertisingLeadGeneration";
+import AnalyticsStrategy from "../../common/Icons/IndustryExpertise/Dental/AnalyticsStrategy";
+import ComplianceSolutions from "../../common/Icons/IndustryExpertise/Dental/ComplianceSolutions";
+import ContentMarketing from "../../common/Icons/IndustryExpertise/Dental/ContentMarketing";
+import EmailCRM from "../../common/Icons/IndustryExpertise/Dental/EmailCRM";
+import Reputation from "../../common/Icons/IndustryExpertise/Dental/Reputation";
+import SeoSearchVisibility from "../../common/Icons/IndustryExpertise/Dental/SeoSearchVisibility";
+import WebsiteDesing from "../../common/Icons/IndustryExpertise/Dental/WebsiteDesing";
+
 export const marketAnalyzerParaDental = [
   "Most dental patients do not walk in because they passed by your clinic. They open their phone, search for a dentist nearby, read a few reviews, check your website, and then they decide. If your practice is not showing up in that moment — someone else's is.",
   "At Humans of Web, we work with dental practices to build a presence that genuinely connects with real people — not just algorithms. Through local SEO, patient-focused content, and smart paid campaigns, we help you reach the people who are already looking for exactly what you offer.",
@@ -9,322 +18,49 @@ export const servicesDental = [
     title: "Ads That Fill Appointment Slots",
     description:
       "We don't just run ads — we run conversations. Every Google and Meta campaign we build is designed around one goal: getting real patients to book, not just scroll past your clinic.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="4"
-          y="10"
-          width="28"
-          height="20"
-          rx="3"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path
-          d="M8 16h12M8 20h8"
-          stroke="#F59E0B"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-        <circle
-          cx="36"
-          cy="34"
-          r="8"
-          fill="#EFF6FF"
-          stroke="#2563EB"
-          strokeWidth="2"
-        />
-        <path
-          d="M33 34l2 2 4-4"
-          stroke="#2563EB"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M32 10l4 4M36 10l-4 4"
-          stroke="#F59E0B"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <AdvertisingLeadGeneration className="h-16 w-16" />,
   },
   {
     title: "Search Visibility That Outlasts Trends",
     description:
       "Your patients are searching right now — the question is whether they find you or your competitor. We build SEO strategies rooted in local intent so your practice stays at the top, consistently.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="20"
-          cy="20"
-          r="12"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path
-          d="M29 29l9 9"
-          stroke="#2563EB"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M15 20h10M20 15v10"
-          stroke="#F59E0B"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <SeoSearchVisibility className="h-16 w-16" />,
   },
   {
     title: "Websites Patients Actually Trust",
     description:
       "A patient decides in under five seconds whether your practice feels right. We design fast, clean, mobile-first websites that make that first impression count — and turn curious visitors into confirmed bookings.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="4"
-          y="8"
-          width="40"
-          height="28"
-          rx="3"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path d="M4 14h40" stroke="#2563EB" strokeWidth="1.5" />
-        <circle cx="9" cy="11" r="1.5" fill="#F59E0B" />
-        <circle cx="14" cy="11" r="1.5" fill="#F59E0B" />
-        <circle cx="19" cy="11" r="1.5" fill="#2563EB" />
-        <rect
-          x="10"
-          y="20"
-          width="12"
-          height="10"
-          rx="2"
-          fill="#EFF6FF"
-          stroke="#2563EB"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M26 22h10M26 26h7"
-          stroke="#F59E0B"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M18 36v4M30 36v4M12 40h24"
-          stroke="#2563EB"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <WebsiteDesing className="h-16 w-16" />,
   },
   {
     title: "A Reputation Worth Talking About",
     description:
       "Word of mouth has moved online. We help you collect honest patient reviews, manage your presence across platforms, and make sure the first thing people see when they search your name is a practice they want to visit.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M24 6l3.5 7 7.5 1-5.5 5.5 1.5 7.5L24 23.5l-7 3.5 1.5-7.5L13 14l7.5-1z"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="#EFF6FF"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M10 34c0-3.3 6.3-6 14-6s14 2.7 14 6"
-          stroke="#F59E0B"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-        <circle cx="24" cy="38" r="1.5" fill="#2563EB" />
-      </svg>
-    ),
+    icon: <ContentMarketing className="h-16 w-16" />,
   },
   {
     title: "Content That Educates Before It Sells",
     description:
       "People choose dentists they already feel they know. We craft blogs, short videos, and social content that answers the questions patients are too shy to ask — building trust long before they book their first appointment.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="8"
-          y="6"
-          width="24"
-          height="32"
-          rx="3"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path
-          d="M13 13h14M13 18h14M13 23h9"
-          stroke="#F59E0B"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-        <circle
-          cx="36"
-          cy="34"
-          r="8"
-          fill="#EFF6FF"
-          stroke="#2563EB"
-          strokeWidth="2"
-        />
-        <path
-          d="M33 34l1.5 1.5 3.5-3.5"
-          stroke="#2563EB"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: <ContentMarketing className="h-16 w-16" />,
   },
   {
     title: "Emails That Bring Patients Back",
     description:
       "The best patient you can get is one you already have. Our email and CRM workflows send the right message at the right time — recall reminders, treatment follow-ups, and re-engagement campaigns that keep your chair occupied.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="6"
-          y="12"
-          width="36"
-          height="26"
-          rx="3"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path
-          d="M6 16l18 12 18-12"
-          stroke="#F59E0B"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-        <path
-          d="M30 30l8 6M18 30l-8 6"
-          stroke="#2563EB"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <EmailCRM className="h-16 w-16" />,
   },
   {
     title: "Numbers That Actually Mean Something",
     description:
       "We don't hide behind vanity metrics. Every campaign we run comes with clear, honest reporting — so you know exactly which channels are bringing in patients, what's working, and where to invest next.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8 36V24M16 36V18M24 36V10M32 36V20M40 36V28"
-          stroke="#2563EB"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M6 38h36"
-          stroke="#F59E0B"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-        <circle
-          cx="40"
-          cy="16"
-          r="4"
-          fill="#EFF6FF"
-          stroke="#2563EB"
-          strokeWidth="1.5"
-        />
-        <path
-          d="M38.5 16l1 1 2-2"
-          stroke="#2563EB"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: <AnalyticsStrategy className="h-16 w-16" />,
   },
   {
     title: "Compliant Marketing, Zero Guesswork",
     description:
       "Healthcare marketing has rules, and breaking them costs more than a campaign ever earns. Every strategy, tool, and automation we build for your practice is HIPAA-aware and compliance-ready — so you grow without risk.",
-    icon: (
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M24 4l14 6v12c0 9-7 16-14 18C17 38 10 31 10 22V10z"
-          stroke="#2563EB"
-          strokeWidth="2"
-          fill="#EFF6FF"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M18 24l4 4 8-8"
-          stroke="#F59E0B"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: <ComplianceSolutions className="h-16 w-16" />,
   },
 ];
 export const marketingServicesParaDental = [
