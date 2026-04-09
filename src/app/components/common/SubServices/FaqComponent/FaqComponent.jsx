@@ -18,7 +18,7 @@ const FaqComponent = ({
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
         <section className="mx-auto max-w-[980px]">
           <div className="text-center">
-            <h2 className="mt-3 text-h2 font-normal leading-[1.15] text-black">{title}</h2>
+            <h2 className="text-h2 font-normal leading-[1.15] text-black">{title}</h2>
           </div>
 
           <div className="mt-8 overflow-hidden rounded-[14px] bg-white shadow-[0_18px_45px_rgba(72,23,156,0.08)]">

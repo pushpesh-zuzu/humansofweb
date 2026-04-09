@@ -14,7 +14,7 @@ const WorkWithCards = ({
   cards = [],
   showCards = 3,
   ctaText = "Schedule A Free Consultation Today",
-  ctaHref = "/contact",
+  ctaHref = "",
   backgroundImage = "/IndustryExpertise/seo-banner.webp",
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -72,15 +72,18 @@ const WorkWithCards = ({
       `}</style>
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
         <section className="relative overflow-hidden rounded-lg bg-[#f2fff8]">
-          <Image
-            src={backgroundImage}
-            alt=""
-            fill
-            sizes="(min-width: 1280px) 1500px, 100vw"
-            className="object-cover opacity-20"
-          />
+          {
+            backgroundImage && (
+              <Image
+                src={backgroundImage}
+                alt=""
+                fill
+                sizes="(min-width: 1280px) 1500px, 100vw"
+                className="object-cover opacity-20"
+              />
+            )
+          }
           <div className="absolute inset-0 bg-gradient-to-b from-white via-[#f4fff9]/90 to-[#f4fff9]" />
-
           <div className="relative z-10 mx-auto max-w-[1120px]">
             <div className="mx-auto max-w-[920px] text-center">
               <h2 className="text-h2 font-normal leading-[1.15] text-black">
@@ -152,12 +155,16 @@ const WorkWithCards = ({
             </div>
 
             <div className="mt-9 flex justify-center">
-              <Link
-                href={ctaHref}
-                className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-secondary"
-              >
-                {ctaText}
-              </Link>
+              {
+                ctaText && (
+                  <Link
+                    href={ctaHref}
+                    className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-secondary"
+                  >
+                    {ctaText}
+                  </Link>
+                )
+              }
             </div>
           </div>
         </section>

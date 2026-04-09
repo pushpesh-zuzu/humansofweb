@@ -9,7 +9,7 @@ const NAV_ITEMS = [
         href: "/ecommerce-agency",
         subItems: [
           { label: "E-Commerce SEO", href: "/ecommerce-agency/seo-services" },
-          { label: "E-Commerce Website Development", href: "#" },
+          { label: "E-Commerce Website Development", href: "/ecommerce-agency/website-design" },
           { label: "E-Commerce PPC", href: "#" },
           { label: "E-Commerce GEO Services", href: "#" },
           { label: "E-Commerce Social Media Marketing", href: "#" },
