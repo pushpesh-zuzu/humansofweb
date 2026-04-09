@@ -59,6 +59,7 @@ export default function TrustedBy({
                     src={partner.src}
                     height={82}
                     width={287}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                     className="h-14 w-auto max-w-[160px] sm:h-12 sm:max-w-none md:h-14 lg:h-16 xl:h-[82px] object-contain"
                   />
                 </div>

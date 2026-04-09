@@ -64,7 +64,8 @@ export default function ServicesTwoGridDescriptionAndImage({
                   alt="industry"
                   width={500}
                   height={380}
-                  className="object-contain rounded-[16px]"
+                  className="object-contain rounded-[16px] h-auto w-auto"
+                  
                 />
               </div>
             </motion.div>

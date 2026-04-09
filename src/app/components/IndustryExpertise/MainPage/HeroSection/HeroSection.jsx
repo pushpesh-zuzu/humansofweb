@@ -78,6 +78,7 @@ export default function IndustryHeroSection() {
                   src="/IndustryExpertise/industryHero.webp"
                   alt="Industry Expertise"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   className="object-cover"
                   priority
                 />
