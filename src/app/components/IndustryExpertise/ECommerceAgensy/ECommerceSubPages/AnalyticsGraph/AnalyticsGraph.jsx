@@ -67,7 +67,7 @@ const AnalyticsGraph = ({
               type="button"
               onClick={goToPrevious}
               aria-label="Previous graph"
-              className="absolute left-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-2xl font-bold leading-none text-primary shadow-md transition hover:bg-secondary hover:text-white"
+              className="absolute left-3 top-[36%] z-20 flex md:h-10 md:w-10 h-5 w-5 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-2xl font-bold leading-none text-primary shadow-md transition hover:bg-secondary hover:text-white md:top-1/2"
             >
               <FaChevronLeft className="h-4 w-4" />
             </button>
@@ -75,7 +75,7 @@ const AnalyticsGraph = ({
               type="button"
               onClick={goToNext}
               aria-label="Next graph"
-              className="absolute right-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-2xl font-bold leading-none text-primary shadow-md transition hover:bg-secondary hover:text-white"
+              className="absolute right-3 top-[36%] z-20 flex md:h-10 md:w-10 h-5 w-5 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-2xl font-bold leading-none text-primary shadow-md transition hover:bg-secondary hover:text-white md:top-1/2"
             >
               <FaChevronRight className="h-4 w-4" />
             </button>

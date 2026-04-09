@@ -43,7 +43,7 @@ const SeoServices = () => {
                 headingHighlight="Humans Of Web Build Winning SEO Strategies"
                 headingEnd="That Put E-commerce Sales Through the Roof?"
                 items={SEO_STRATEGY_ITEMS}
-                ctaText="Build My SEO Growth Plan"
+                ctaText="Get My Growth Plan"
                 ctaHref=""
             />
             <AnalyticsGraph

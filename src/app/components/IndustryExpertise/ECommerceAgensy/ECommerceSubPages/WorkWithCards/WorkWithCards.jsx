@@ -96,12 +96,12 @@ const WorkWithCards = ({
               ) : null}
             </div>
 
-            <div className="relative mt-9">
+            <div className="relative mt-9 px-4 md:px-14">
               <button
                 type="button"
                 onClick={goToPrevious}
                 aria-label="Previous card"
-                className="absolute left-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-primary shadow-md transition hover:bg-secondary hover:text-white"
+                className="absolute left-0 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-primary shadow-md transition hover:bg-secondary hover:text-white md:left-3"
               >
                 <FaChevronLeft className="h-4 w-4" />
               </button>
@@ -109,12 +109,12 @@ const WorkWithCards = ({
                 type="button"
                 onClick={goToNext}
                 aria-label="Next card"
-                className="absolute right-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-primary shadow-md transition hover:bg-secondary hover:text-white"
+                className="absolute right-0 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white text-primary shadow-md transition hover:bg-secondary hover:text-white md:right-3"
               >
                 <FaChevronRight className="h-4 w-4" />
               </button>
 
-              <div className="overflow-hidden px-14">
+              <div className="overflow-hidden">
                 <div
                   className="work-with-track flex"
                   style={{
@@ -125,8 +125,8 @@ const WorkWithCards = ({
                   {sliderCards.map((card, index) => (
                     <article
                       key={`${card.title}-${index}`}
-                      className="min-h-[280px] flex-none px-3"
-                      style={{ flexBasis: `${100 / sliderCards.length}%` }}
+                      className="box-border min-h-[280px] flex-none px-3"
+                      style={{ flex: `0 0 ${100 / sliderCards.length}%` }}
                     >
                       <div className="h-full rounded-[14px] bg-gradient-to-br from-primary to-secondary p-[2px] shadow-[0_18px_45px_rgba(72,23,156,0.16)]">
                         <div className="flex h-full flex-col rounded-[12px] bg-white p-7">

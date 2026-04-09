@@ -1,54 +1,40 @@
-import CompetitorAnalysisIcon from "../../../../common/Icons/IndustryExpertise/competitor-analysis.svg";
-import ContentOptimizationIcon from "../../../../common/Icons/IndustryExpertise/content-optimization.svg";
-import DetailedAuditIcon from "../../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import GuestPostsIcon from "../../../../common/Icons/IndustryExpertise/GuestPosts.svg";
-import KeywordResearchIcon from "../../../../common/Icons/IndustryExpertise/keyword-research.svg";
-import LeadsGenerateIcon from "../../../../common/Icons/IndustryExpertise/LeadsGenerate.svg";
-import SEORevenueIcon from "../../../../common/Icons/IndustryExpertise/SEORevenue.svg";
+import flexibility from "../../../../common/Icons/IndustryExpertise/Flexibilit-the.svg";
+import conversion from "../../../../common/Icons/IndustryExpertise/conversion-focussed-approach.svg";
+import Transparent from "../../../../common/Icons/IndustryExpertise/transparent-operation.svg";
+import InHouse from "../../../../common/Icons/IndustryExpertise/in-house-expertise.svg";
+import Experience from "../../../../common/Icons/IndustryExpertise/experience.svg";
 
 const WORK_WITH_CARDS = [
   {
     title: "Experience",
     description:
       "With deep eCommerce SEO experience, we know how to turn search visibility into stronger traffic, product discovery, and revenue.",
-    icon: SEORevenueIcon,
+    icon: Experience,
   },
   {
     title: "In-House Expertise",
     description:
       "Our team manages strategy, content, technical SEO, and optimization together so your growth plan stays focused and consistent.",
-    icon: DetailedAuditIcon,
+    icon: InHouse,
   },
   {
     title: "Transparent Operation",
     description:
       "You get clear updates, direct priorities, and practical reporting so every decision is easy to understand and act on.",
-    icon: LeadsGenerateIcon,
+    icon: Transparent,
   },
   {
-    title: "Competitor Insights",
+    title: "Conversation Focused Approach",
     description:
-      "We study competing stores and category leaders to find missed keyword, content, and authority opportunities.",
-    icon: CompetitorAnalysisIcon,
+      "We focus on how real people search and interact, creating content that drives meaningful conversations and conversions.",
+    icon: conversion,
   },
   {
-    title: "Revenue Focus",
+    title: "Flexibility The Way You Like It",
     description:
-      "We focus on improvements that support qualified traffic, better buying journeys, and measurable business outcomes.",
-    icon: GuestPostsIcon,
-  },
-  {
-    title: "Content Strategy",
-    description:
-      "We shape product, category, and support content around what your customers search for before they buy.",
-    icon: ContentOptimizationIcon,
-  },
-  {
-    title: "Search Visibility",
-    description:
-      "We build a stronger foundation across keywords, site structure, and on-page signals for long-term organic growth.",
-    icon: KeywordResearchIcon,
-  },
+      "We adapt our approach to fit your goals, workflows, and pace—so everything works the way you need it to.",
+    icon: flexibility,
+  }
 ];
 
 export default WORK_WITH_CARDS;
