@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSectionServices from "../../common/Services/HeroSectionServices/HeroSectionServices";
-import SeoServiceVideo from "../ECommerceAgensy/ECommerceSubPages/SeoServices/SeoServiceVideo";
+import SeoServiceVideo from "../ECommerceAgensy/ECommerceSubPages/SeoServices/SeoServiceVideo/SeoServiceVideo";
 import TrustedBy from "../../common/TrustedBy/TrustedBy";
 
 const SaaS = () => {

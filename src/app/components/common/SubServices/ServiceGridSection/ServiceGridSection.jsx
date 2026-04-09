@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ContainerWrapper from "../../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../../common/Container/PaddingWrapper2";
+import ContainerWrapper from "../../../common/Container/ContainerWrapper";
+import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 
 const ServiceGridSection = ({
   title = "",

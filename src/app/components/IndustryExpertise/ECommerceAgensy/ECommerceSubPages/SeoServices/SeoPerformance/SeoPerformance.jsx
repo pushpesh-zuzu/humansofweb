@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import ContainerWrapper from "../../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../../common/Container/PaddingWrapper2";
-import GuestPostsIcon from "../../../../common/Icons/IndustryExpertise/GuestPosts.svg";
-import LeadsGenerateIcon from "../../../../common/Icons/IndustryExpertise/LeadsGenerate.svg";
-import SEORevenueIcon from "../../../../common/Icons/IndustryExpertise/SEORevenue.svg";
+import ContainerWrapper from "../../../../../common/Container/ContainerWrapper";
+import PaddingWrapper2 from "../../../../../common/Container/PaddingWrapper2";
+import GuestPostsIcon from "../../../../../common/Icons/IndustryExpertise/GuestPosts.svg";
+import LeadsGenerateIcon from "../../../../../common/Icons/IndustryExpertise/LeadsGenerate.svg";
+import SEORevenueIcon from "../../../../../common/Icons/IndustryExpertise/SEORevenue.svg";
 
 const PERFORMANCE_STATS = [
     {

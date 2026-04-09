@@ -1,9 +1,9 @@
-import CompetitorAnalysisIcon from "../../../../common/Icons/IndustryExpertise/competitor-analysis.svg";
-import ContentOptimizationIcon from "../../../../common/Icons/IndustryExpertise/content-optimization.svg";
-import DetailedAuditIcon from "../../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import KeywordResearchIcon from "../../../../common/Icons/IndustryExpertise/keyword-research.svg";
-import OffSiteOptimizationIcon from "../../../../common/Icons/IndustryExpertise/off-site-optimization.svg";
-import OnSiteContentIcon from "../../../../common/Icons/IndustryExpertise/on-Site-content.svg";
+import CompetitorAnalysisIcon from "../../../../../common/Icons/IndustryExpertise/competitor-analysis.svg";
+import ContentOptimizationIcon from "../../../../../common/Icons/IndustryExpertise/content-optimization.svg";
+import DetailedAuditIcon from "../../../../../common/Icons/IndustryExpertise/detailed-audit.svg";
+import KeywordResearchIcon from "../../../../../common/Icons/IndustryExpertise/keyword-research.svg";
+import OffSiteOptimizationIcon from "../../../../../common/Icons/IndustryExpertise/off-site-optimization.svg";
+import OnSiteContentIcon from "../../../../../common/Icons/IndustryExpertise/on-Site-content.svg";
 
 const SEO_STRATEGY_ITEMS = [
   {

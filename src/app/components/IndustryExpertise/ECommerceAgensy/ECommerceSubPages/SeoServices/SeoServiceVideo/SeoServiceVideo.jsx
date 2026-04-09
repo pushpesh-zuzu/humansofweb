@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import ContainerWrapper from "../../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../../common/Container/PaddingWrapper2";
+import ContainerWrapper from "../../../../../common/Container/ContainerWrapper";
+import PaddingWrapper2 from "../../../../../common/Container/PaddingWrapper2";
 
 function getYouTubeEmbedUrl(url) {
   if (!url) return "";

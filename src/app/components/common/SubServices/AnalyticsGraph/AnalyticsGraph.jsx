@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import ContainerWrapper from "../../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../../common/Container/PaddingWrapper2";
+import ContainerWrapper from "../../Container/ContainerWrapper";
+import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 
 const AnalyticsGraph = ({
   title = "Track The SEO Growth That Matters",

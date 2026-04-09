@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import ContainerWrapper from "../../../../common/Container/ContainerWrapper";
-import PaddingWrapper2 from "../../../../common/Container/PaddingWrapper2";
+import ContainerWrapper from "../../../common/Container/ContainerWrapper";
+import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 
 const WorkWithCards = ({
   title = "Why Work With Us",

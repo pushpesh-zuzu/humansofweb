@@ -1,8 +1,8 @@
-import flexibility from "../../../../common/Icons/IndustryExpertise/Flexibilit-the.svg";
-import conversion from "../../../../common/Icons/IndustryExpertise/conversion-focussed-approach.svg";
-import Transparent from "../../../../common/Icons/IndustryExpertise/transparent-operation.svg";
-import InHouse from "../../../../common/Icons/IndustryExpertise/in-house-expertise.svg";
-import Experience from "../../../../common/Icons/IndustryExpertise/experience.svg";
+import flexibility from "../../../../../common/Icons/IndustryExpertise/Flexibilit-the.svg";
+import conversion from "../../../../../common/Icons/IndustryExpertise/conversion-focussed-approach.svg";
+import Transparent from "../../../../../common/Icons/IndustryExpertise/transparent-operation.svg";
+import InHouse from "../../../../../common/Icons/IndustryExpertise/in-house-expertise.svg";
+import Experience from "../../../../../common/Icons/IndustryExpertise/experience.svg";
 
 const WORK_WITH_CARDS = [
   {

@@ -1,7 +1,7 @@
-import BudgetFriendlyIcon from "../../../../common/Icons/IndustryExpertise/budget-friendly.svg";
-import ImprovedBrandIcon from "../../../../common/Icons/IndustryExpertise/improved-brand.svg";
-import IncreasedSalesIcon from "../../../../common/Icons/IndustryExpertise/increased-sales.svg";
-import OrganicWebTrafficIcon from "../../../../common/Icons/IndustryExpertise/organic-web-traffic.svg";
+import BudgetFriendlyIcon from "../../../../../common/Icons/IndustryExpertise/budget-friendly.svg";
+import ImprovedBrandIcon from "../../../../../common/Icons/IndustryExpertise/improved-brand.svg";
+import IncreasedSalesIcon from "../../../../../common/Icons/IndustryExpertise/increased-sales.svg";
+import OrganicWebTrafficIcon from "../../../../../common/Icons/IndustryExpertise/organic-web-traffic.svg";
 
 
 const SERVICE_GRID_ITEMS = [
