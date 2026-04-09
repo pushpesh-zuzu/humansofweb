@@ -10,7 +10,7 @@ function ECommerceGmail() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect width="64" height="64" rx="32" fill="url(#paint0_linear_21_289)" />
-      <g clip-path="url(#clip0_21_289)">
+      <g clipPath="url(#clip0_21_289)">
         <path
           d="M51.2896 47.4284H17.861C15.7268 47.4284 14.0039 45.7056 14.0039 43.5713V20.4284C14.0039 18.2941 15.7268 16.5713 17.861 16.5713H51.2896C53.4239 16.5713 55.1468 18.2941 55.1468 20.4284V43.5713C55.1468 45.7056 53.4239 47.4284 51.2896 47.4284ZM17.861 19.1427C17.141 19.1427 16.5753 19.7084 16.5753 20.4284V43.5713C16.5753 44.2913 17.141 44.857 17.861 44.857H51.2896C52.0096 44.857 52.5753 44.2913 52.5753 43.5713V20.4284C52.5753 19.7084 52.0096 19.1427 51.2896 19.1427H17.861Z"
           fill="white"
@@ -29,8 +29,8 @@ function ECommerceGmail() {
           y2="64"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F65A75" />
-          <stop offset="1" stop-color="#48179C" />
+          <stop stopColor="#F65A75" />
+          <stop offset="1" stopColor="#48179C" />
         </linearGradient>
         <clipPath id="clip0_21_289">
           <rect

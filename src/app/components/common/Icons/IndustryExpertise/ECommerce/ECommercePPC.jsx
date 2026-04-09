@@ -13,16 +13,16 @@ function ECommercePPC() {
       <path
         d="M44 44H20V20"
         stroke="white"
-        stroke-width="2.25"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M20 38.75L32 27.5L36.5 32L43.25 25.25"
         stroke="white"
-        stroke-width="2.25"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -33,8 +33,8 @@ function ECommercePPC() {
           y2="64"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F65A75" />
-          <stop offset="1" stop-color="#48179C" />
+          <stop stopColor="#F65A75" />
+          <stop offset="1" stopColor="#48179C" />
         </linearGradient>
       </defs>
     </svg>
