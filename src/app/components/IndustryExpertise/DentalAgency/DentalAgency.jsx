@@ -68,7 +68,7 @@ function DentalAgency() {
         ctaText="Book A Call Now"
         headdingBlack="Patients Choose Trust"
         headingBlue=" Not Just Clinics"
-        image="/IndustryExpertise/eCommerce/brandTrust.webp"
+        image="/IndustryExpertise/dentalAgency/patienceChoose.webp"
         limit={5}
         paragraphs={dentalTrustPara}
         paragraphTextColor

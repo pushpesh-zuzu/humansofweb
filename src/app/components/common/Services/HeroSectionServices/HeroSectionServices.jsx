@@ -11,7 +11,7 @@ export default function HeroSectionServices({
   heading2 = "Brands People Trust",
   description1 = `At Humans of Web, we don’t just run campaigns — we understand your customers, their intent, and what truly makes them click, buy, and come back.`,
   description2 = `From product discovery to checkout, we design strategies that feel natural, build trust, and turn your store into a growth engine — not just another online shop.`,
-  ctaText = "Get Free Growth Plan",
+  ctaText = "Book Your Free Consultation",
   headingSectionWidth="max-w-[600px]",
   altText="Industry Expertise"
 }) {

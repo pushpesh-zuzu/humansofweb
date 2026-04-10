@@ -62,13 +62,13 @@ export default function ServicesTwoGridDescriptionAndImage({
               transition={{ duration: 0.6 }}
               className="flex justify-center"
             >
-              <div className="relative w-full max-w-[500px] rounded-[16px]">
+              <div className="relative w-full max-w-[500px] rounded-[32px]">
                 <Image
                   src={image}
                   alt="industry"
-                  width={500}
+                  width={540}
                   height={380}
-                  className="object-contain rounded-[16px] h-auto w-auto"
+                  className="object-contain rounded-[32px] h-full max-h-[540px] w-[85%]"
                   
                 />
               </div>

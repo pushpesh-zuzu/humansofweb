@@ -5,7 +5,7 @@ import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 
 const ReachWithUs = ({
   title = "BOOST YOUR DIGITAL REACH WITH US",
-  buttonText = "SCHEDULE CONSULTATION CALL",
+  buttonText = "GET FREE CONSULTATION",
   buttonHref = "",
   imageSrc = "/IndustryExpertise/prettyWoman1.webp",
   imageAlt = "Consultation support",
