@@ -58,7 +58,7 @@ const CONTACT_INFO = [
 const Footer = () => {
   return (
     <footer className="bg-white">
-      <div className="mx-auto max-w-[1350px]">
+      <div className="mx-auto px-4 sm:px-6 lg:px-13">
         <div className="grid overflow-hidden rounded-t-[14px] bg-[#eaf7ff] text-primary lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]">
           <div className="relative grid gap-5 p-5 text-center md:grid-cols-3 md:p-4 lg:text-left">
             {STATS.map((stat) => (
