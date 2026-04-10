@@ -3,7 +3,17 @@ import TrustedBy from "../../common/TrustedBy/TrustedBy";
 import ServicesTwoGridDescriptionAndImage from "../../common/Services/ServicesTwoGridDescriptionAndImage/ServicesTwoGridDescriptionAndImage";
 import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ProcessCarouselSection from "./ProcessCarouselSection/ProcessCarouselSection";
-import { brandTrustPara, businessGrowthPara, marketAnalyzerPara, marketingServicesPara, processSectionContent, processSteps, scaleYourBrandPara, scaleYourBrandParaBottom, services } from "./eCommerceData";
+import {
+  brandTrustPara,
+  businessGrowthPara,
+  marketAnalyzerPara,
+  marketingServicesPara,
+  processSectionContent,
+  processSteps,
+  scaleYourBrandPara,
+  scaleYourBrandParaBottom,
+  services,
+} from "./eCommerceData";
 import HeroSectionServices from "../../common/Services/HeroSectionServices/HeroSectionServices";
 
 function Ecommerce() {
@@ -21,6 +31,7 @@ function Ecommerce() {
         headingBlue="Data Driven eCommerce"
         image="/IndustryExpertise/eCommerce/marketAnalyzer.webp"
         paragraphs={marketAnalyzerPara}
+        paragraphTextColor
       />
       <ServicesTwoGridDescriptionAndImage
         headdingBlack="eCommerce Growth That "
@@ -31,6 +42,7 @@ function Ecommerce() {
         isBackgroundPrimary
         isHeadingInGridSection
         paragraphs={businessGrowthPara}
+        paragraphTextColor
       />
       <ServicesGridSection
         services={services}
@@ -43,12 +55,13 @@ function Ecommerce() {
         background="#fafafa"
         reverse
         breakLine
-        subheading="Strategies That Deliver Real Results"
         headdingBlack="Scale Your Brand With"
         headingBlue="Proven eCommerce Growth"
         image="/IndustryExpertise/eCommerce/scaleYourBrandh.webp"
         paragraphs={scaleYourBrandPara}
         bottomParagraph={scaleYourBrandParaBottom}
+        headingBlueColor="text-primary"
+        paragraphTextColor
       />
       <ProcessCarouselSection
         headdingBlack={processSectionContent.headdingBlack}
@@ -57,7 +70,7 @@ function Ecommerce() {
         steps={processSteps}
       />
       <ServicesTwoGridDescriptionAndImage
-      background="#fafafa"
+        background="#fafafa"
         reverse
         isHeadingInGridSection
         ctaText="Book A Call Now"
@@ -67,6 +80,8 @@ function Ecommerce() {
         limit={5}
         headingColor={false}
         paragraphs={brandTrustPara}
+        headingBlueColor="text-primary"
+        paragraphTextColor
       />
     </>
   );

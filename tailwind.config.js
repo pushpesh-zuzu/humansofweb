@@ -75,14 +75,14 @@ const headingStyles = {
   },
   ".p-default": {
     fontSize: "14px",
-    lineHeight: "16px",
+    lineHeight: "17px",
     "@media (min-width: 768px)": {
       fontSize: "16px",
-      lineHeight: "18px",
+      lineHeight: "19px",
     },
     "@media (min-width: 1280px)": {
       fontSize: "18px",
-      lineHeight: "20px",
+      lineHeight: "23px",
     },
   },
   ".p-small": {

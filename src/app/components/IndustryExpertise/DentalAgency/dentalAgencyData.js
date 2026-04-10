@@ -15,52 +15,34 @@ export const marketAnalyzerParaDental = [
 
 export const servicesDental = [
   {
-    title: "Ads That Fill Appointment Slots",
+    title: "Dental SEO That Brings Real Patients",
     description:
-      "We don't just run ads — we run conversations. Every Google and Meta campaign we build is designed around one goal: getting real patients to book, not just scroll past your clinic.",
-    icon: <AdvertisingLeadGeneration className="h-16 w-16" />,
-  },
-  {
-    title: "Search Visibility That Outlasts Trends",
-    description:
-      "Your patients are searching right now — the question is whether they find you or your competitor. We build SEO strategies rooted in local intent so your practice stays at the top, consistently.",
+      "We optimize your clinic for local search so patients actively looking for dental care can easily find and choose you over competitors.",
     icon: <SeoSearchVisibility className="h-16 w-16" />,
   },
   {
-    title: "Websites Patients Actually Trust",
+    title: "Dental PPC That Fills Appointment Slots",
     description:
-      "A patient decides in under five seconds whether your practice feels right. We design fast, clean, mobile-first websites that make that first impression count — and turn curious visitors into confirmed bookings.",
+      "Targeted Google and Meta ads designed to bring real appointment bookings, not just clicks or empty traffic.",
+    icon: <AdvertisingLeadGeneration className="h-16 w-16" />,
+  },
+  {
+    title: "Dental Website Development That Builds Trust",
+    description:
+      "Fast, mobile-friendly, and patient-focused websites that create the right first impression and turn visitors into booked appointments.",
     icon: <WebsiteDesing className="h-16 w-16" />,
   },
   {
-    title: "A Reputation Worth Talking About",
+    title: "Dental Social Media Marketing That Connects Patients",
     description:
-      "Word of mouth has moved online. We help you collect honest patient reviews, manage your presence across platforms, and make sure the first thing people see when they search your name is a practice they want to visit.",
+      "Engaging content and consistent posting that helps your clinic stay visible, relatable, and trusted across social platforms.",
     icon: <ContentMarketing className="h-16 w-16" />,
   },
   {
-    title: "Content That Educates Before It Sells",
+    title: "Dental Reputation Management That Builds Trust",
     description:
-      "People choose dentists they already feel they know. We craft blogs, short videos, and social content that answers the questions patients are too shy to ask — building trust long before they book their first appointment.",
+      "We help you manage reviews and online presence so patients see your clinic as credible, trusted, and highly recommended.",
     icon: <ContentMarketing className="h-16 w-16" />,
-  },
-  {
-    title: "Emails That Bring Patients Back",
-    description:
-      "The best patient you can get is one you already have. Our email and CRM workflows send the right message at the right time — recall reminders, treatment follow-ups, and re-engagement campaigns that keep your chair occupied.",
-    icon: <EmailCRM className="h-16 w-16" />,
-  },
-  {
-    title: "Numbers That Actually Mean Something",
-    description:
-      "We don't hide behind vanity metrics. Every campaign we run comes with clear, honest reporting — so you know exactly which channels are bringing in patients, what's working, and where to invest next.",
-    icon: <AnalyticsStrategy className="h-16 w-16" />,
-  },
-  {
-    title: "Compliant Marketing, Zero Guesswork",
-    description:
-      "Healthcare marketing has rules, and breaking them costs more than a campaign ever earns. Every strategy, tool, and automation we build for your practice is HIPAA-aware and compliance-ready — so you grow without risk.",
-    icon: <ComplianceSolutions className="h-16 w-16" />,
   },
 ];
 export const marketingServicesParaDental = [
@@ -96,4 +78,24 @@ export const WhyChooseDentalService = [
   `Your practice is not a template. Neither is your plan.`,
   "We help you keep the patients you worked hard to get. Because a full schedule next month matters more than 100 strangers clicking an ad today.",
   `You’ll talk to a human who knows a molar from a marketing metric. No bots. No offshore email chains. Just real people who’ve learned your practice’s rhythm.`,
+];
+
+export const dentalTrustPara = [
+  "Running a dental practice today isn’t just about offering treatments — it’s about earning trust before a patient even walks in. That’s where thoughtful digital presence makes all the difference.",
+
+  "At Humans of Web, we focus on real patient outcomes, not just online metrics. Every strategy is designed to bring you genuine appointment calls, not empty traffic or vanity numbers.",
+
+  "We don’t believe in one-size-fits-all marketing. Every clinic has its own patients, challenges, and reputation — so we take time to understand your practice before building anything.",
+
+  "Our approach blends clarity with consistency. From local search visibility to patient-friendly content and ads, every step is planned to help people choose your clinic with confidence.",
+
+  "Transparency matters in healthcare marketing. You’ll always know what’s being done, why it’s being done, and how it helps your clinic grow — simple and honest communication.",
+
+  "We work like an extended part of your clinic, not just an outside agency. Our goal is to support your practice in attracting, converting, and retaining real patients.",
+
+  "As your clinic grows, your local reputation and patient demand evolve too. We continuously refine your presence to keep you visible where it matters most.",
+
+  "From first search to final appointment, we focus on the full patient journey — making sure people don’t just find you, but actually trust you enough to book.",
+
+  "If you’re looking for a partner who understands both patients and practice growth, you’re in the right place. Let’s build a clinic people genuinely trust."
 ];

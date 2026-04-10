@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
+import { GetYourFreeConsultationButton } from "../../CtaButtons";
 
 export default function ServicesTwoGridDescriptionAndImage({
   headdingBlack,
@@ -21,9 +22,11 @@ export default function ServicesTwoGridDescriptionAndImage({
   seeMore = true,
   limit = 7,
   bottomParagraph = [],
-  breakLine = true,
-  headingColor = true,
-  isImageSmall=false
+  breakLine = false,
+  headingBlueColor = "",
+  headingBlackColor="",
+  isImageSmall=false,
+  paragraphTextColor=false
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -34,15 +37,15 @@ export default function ServicesTwoGridDescriptionAndImage({
     <ContainerWrapper background={isBackgroundPrimary ? "#48179C" : background}>
       <PaddingWrapper2>
         {!isHeadingInGridSection && (
-          <div className="max-w-2xl mx-auto">
             <H2HeadingWrapper
               headdingBlack={headdingBlack}
               headingBlue={headingBlue}
               subHeading={subheading}
               breakLine={breakLine}
               padding="pb-[35px] md:pb-[60px]"
+              headingBlueColor={headingBlueColor}
+              headingBlackColor={headingBlackColor}
             />
-          </div>
         )}
 
         <section className="relative">
@@ -80,11 +83,13 @@ export default function ServicesTwoGridDescriptionAndImage({
             >
               {isHeadingInGridSection && (
                 <H2HeadingWrapper
-                  headingColor={headingColor}
-                  headdingBlack={headdingBlack}
-                  headingBlue={headingBlue}
-                  textAlign="text-left"
-                  breakLine={breakLine}
+              headdingBlack={headdingBlack}
+              headingBlue={headingBlue}
+              subHeading={subheading}
+              breakLine={breakLine}
+              padding="pb-[35px] md:pb-[60px]"
+              headingBlueColor={headingBlueColor}
+              headingBlackColor={headingBlackColor}
                 />
               )}
 
@@ -95,11 +100,15 @@ export default function ServicesTwoGridDescriptionAndImage({
                   seeMore && paragraphs.length > limit && isLast;
 
                 return (
-                  <p
+                  // <p
+                  //   key={i}
+                  //   className={`p-default mb-4 ${
+                  //     isBackgroundPrimary ? "text-white" : ""
+                  //   }`}
+                  // >
+                   <p
                     key={i}
-                    className={`p-default mb-4 ${
-                      isBackgroundPrimary ? "text-white" : ""
-                    }`}
+                    className={`p-default mb-4 ${paragraphTextColor?paragraphTextColor:"text-white"}`}
                   >
                     {para}
 
@@ -125,9 +134,10 @@ export default function ServicesTwoGridDescriptionAndImage({
 
               {/* CTA */}
               {ctaText && (
-                <button className="mt-4 button-primary bg-secondary outline-none  hover:bg-white border-transparent hover:text-secondary text-white hover:border hover:border-secondary ">
-                  {ctaText}
-                </button>
+                // <button className="mt-4 button-primary bg-secondary outline-none  hover:bg-white border-transparent hover:text-secondary text-white hover:border hover:border-secondary ">
+                //   {ctaText}
+                // </button>
+                <GetYourFreeConsultationButton text={ctaText} className="mt-2 md:mt-6"/>
               )}
             </motion.div>
           </div>

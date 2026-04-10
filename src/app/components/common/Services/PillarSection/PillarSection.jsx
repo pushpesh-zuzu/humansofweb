@@ -3,22 +3,24 @@
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
+import { GetYourFreeConsultationButton } from "../../CtaButtons";
 
 const DEFAULT_DATA = {
-  headdingBlack: "Proven Strategies to Scale",
-  headingBlue: "Your Business Online",
-  subHeading:
-    "Built to attract the right audience, boost visibility, and earn lasting trust.",
-  description:
-    "Growing a business in today's market takes more than a basic online presence. You need a proven framework that consistently brings in the right people, turns attention into action, and builds the kind of credibility that keeps customers coming back. We anchor everything around four core pillars.",
+  headdingBlack: "Strategies That",
+  headingBlue: "Grow Dental Practices",
+
   features: [
-    { title: "Precision Audience Targeting" },
-    { title: "Organic & Paid Search Domination" },
-    { title: "High-Converting Web Experiences" },
-    { title: "Reputation & Trust Management" },
+    { title: "Local Patient Targeting" },
+    { title: "Consistent Appointment Growth" },
+    { title: "High-Converting Dental Websites" },
+    { title: "Google & Meta Ads" },
+    { title: "Reputation Management " },
+    { title: "Educates and Converts Patients" },
   ],
+
   footerText:
-    "These four pillars work together as one unified growth engine — turning online interest into real business results, month after month.",
+    "These six pillars work together to help dental clinics attract the right patients, build trust, and achieve consistent appointment growth month after month.",
+
   ctaLabel: "Book a Free Strategy Call",
   ctaHref: "#contact",
 };
@@ -68,8 +70,6 @@ function FeatureCard({ title }) {
 export default function PillarsSection({
   headdingBlack = DEFAULT_DATA.headdingBlack,
   headingBlue = DEFAULT_DATA.headingBlue,
-  subHeading = DEFAULT_DATA.subHeading,
-  description = DEFAULT_DATA.description,
   features = DEFAULT_DATA.features,
   footerText = DEFAULT_DATA.footerText,
   ctaLabel = DEFAULT_DATA.ctaLabel,
@@ -98,34 +98,30 @@ export default function PillarsSection({
           />
 
           {/* Heading — H2HeadingWrapper handles h2 + subheading + description */}
-          <div className="max-w-4xl mx-auto">
             <H2HeadingWrapper
               headdingBlack={headdingBlack}
               headingBlue={headingBlue}
-              subHeading={subHeading}
-              description={description}
-              breakLine
               padding="pb-[35px] md:pb-[60px]"
             />
-          </div>
 
           {/* Feature cards 2×2 */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-5xl mx-auto mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mx-auto mb-10">
             {features.map((f) => (
               <FeatureCard key={f.title} title={f.title} />
             ))}
           </div>
 
           {/* Footer text */}
-          <p className="p-default text-center text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="p-default text-center text-gray-500 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed">
             {footerText}
           </p>
 
           {/* CTA */}
           <div className="flex justify-center">
-            <a href={ctaHref} className="button-primary">
+            {/* <a href={ctaHref} className="button-primary">
               {ctaLabel}
-            </a>
+            </a> */}
+            <GetYourFreeConsultationButton text={ctaLabel}/>
           </div>
         </div>
       </PaddingWrapper2>
