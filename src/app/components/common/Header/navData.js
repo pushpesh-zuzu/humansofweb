@@ -6,7 +6,7 @@ const NAV_ITEMS = [
     children: [
       {
         label: "Ecommerce",
-        href: "/ecommerce-agency",
+        href: "/ecommerce-marketing-agency",
         subItems: [
           { label: "E-Commerce SEO", href: "/ecommerce-agency/seo-services" },
           { label: "E-Commerce Website Development", href: "/ecommerce-agency/website-design" },
@@ -21,7 +21,7 @@ const NAV_ITEMS = [
       },
       {
         label: "SaaS",
-        href: "/saas-agency",
+        href: "/saas-marketing-agency",
         subItems: [
           { label: "SaaS SEO", href: "#" },
           { label: "SaaS Website Development", href: "#" },
@@ -33,7 +33,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Dental",
-        href: "/dental-agency",
+        href: "/dental-digital-marketing-agency",
         subItems: [
           { label: "Dental SEO", href: "#" },
           { label: "Dental Web Design", href: "#" },
@@ -41,7 +41,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Healthcare",
-        href: "/healthcare-agency",
+        href: "/healthcare-marketing-agency",
         subItems: [
           { label: "Healthcare SEO", href: "#" },
           { label: "Healthcare PPC", href: "#" },
@@ -49,7 +49,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Ophthalmology",
-        href: "/ophthalmology-agency",
+        href: "/ophthalmology-digital-marketing-agency",
         subItems: [
           { label: "Ophthalmology SEO", href: "#" },
           { label: "Ophthalmology Web Design", href: "#" },
@@ -57,12 +57,12 @@ const NAV_ITEMS = [
       },
       {
         label: "Chiropractor",
-        href: "/chiropractor-agency",
+        href: "/chiropractor-digital-marketing-agency",
         subItems: [{ label: "Chiropractor SEO", href: "#" }],
       },
       {
         label: "Plastic Surgeon",
-        href: "plastic-surgeon-agency",
+        href: "/plastic-surgeon-digital-marketing-agency",
         subItems: [{ label: "Plastic Surgeon SEO", href: "#" }],
       },
       {
