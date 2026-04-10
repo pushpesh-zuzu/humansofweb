@@ -13,7 +13,8 @@ export default function HeroSectionServices({
   description2 = `From product discovery to checkout, we design strategies that feel natural, build trust, and turn your store into a growth engine — not just another online shop.`,
   ctaText = "Book Your Free Consultation",
   headingSectionWidth="max-w-[600px]",
-  altText="Industry Expertise"
+  altText="Industry Expertise",
+  breakLine=false
 }) {
   return (
     <ContainerWrapper
@@ -32,7 +33,7 @@ export default function HeroSectionServices({
             >
               {/* Heading */}
               <h1 className="text-h1 font-semibold text-white mb-auto leading-[1.25]">
-                {heading1} <span className="text-secondary">{heading2}</span>
+                {heading1} {breakLine && <br/>}<span className="text-secondary">{heading2}</span>
               </h1>
 
               {/* Description */}

@@ -23,7 +23,7 @@ function DentalAgency() {
       <HeroSectionServices
         heading1="Turn Patient Searches "
         heading2="Into Real Appointments"
-        bgImag="/IndustryExpertise/dentalAgency/dentalAgencyHero.webp"
+        bgImag="/IndustryExpertise/dentalAgency/dentalHero.webp"
         description1="Every day people search online for trusted dental care, from checkups to urgent treatments, but success depends on being seen and chosen at the right moment."
         description2="At Humans of Web, we help dental clinics connect with patients through SEO, local optimization, and smart advertising to drive visibility, bookings, and consistent growth."
         altText="dentalAgency Agency"
@@ -34,7 +34,7 @@ function DentalAgency() {
         // ctaText="Behind Every Full Schedule Is a Dental Practice"
         headdingBlack="Full Schedules "
         headingBlue="Start Here"
-        image="/IndustryExpertise/dentalAgency/dentalHero.webp"
+        image="/IndustryExpertise/dentalAgency/dentishSec.webp"
         paragraphs={marketAnalyzerParaDental}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -65,7 +65,7 @@ function DentalAgency() {
       <ServicesTwoGridDescriptionAndImage
         reverse
         isHeadingInGridSection
-        ctaText="Book A Call Now"
+        ctaText="Get Free Proposal"
         headdingBlack="Patients Choose Trust"
         headingBlue=" Not Just Clinics"
         image="/IndustryExpertise/dentalAgency/patienceChoose.webp"

@@ -319,14 +319,6 @@ export const brandTrustPara = [
   "Our approach combines creativity with data. From SEO and paid campaigns to content and customer journeys, every decision is backed by insights that help you move forward with confidence.",
 
   "Transparency is at the core of how we work. You’ll always know what we’re doing, why we’re doing it, and how it’s impacting your growth — no confusion, no guesswork.",
-
-  "We see ourselves as more than just a marketing team. We become an extension of your business, working closely with you to solve challenges, find opportunities, and scale what works.",
-
-  "As your brand grows, your strategy evolves with it. We continuously analyze performance, refine campaigns, and unlock new ways to help you stay ahead in a competitive market.",
-
-  "From attracting new customers to building long-term loyalty, we focus on the complete journey — not just quick wins but sustainable growth.",
-
-  "If you're looking for a partner who understands both the numbers and the people behind them, you’re in the right place. Let’s build something that truly lasts.",
 ];
 
 export const marketingServicesPara = [

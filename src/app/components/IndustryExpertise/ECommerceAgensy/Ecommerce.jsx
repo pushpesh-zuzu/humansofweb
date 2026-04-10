@@ -23,7 +23,7 @@ function Ecommerce() {
   return (
     <>
       <HeroSectionServices
-        bgImag={"/IndustryExpertise/eCommerce/eCommerceHero.webp"}
+        bgImag={"/IndustryExpertise/eCommerce/eCommerceHeroImage.webp"}
         headingSectionWidth="max-w-[586px]"
       />
       <TrustedBy padding={"py-5 px-[35px] px-0 md:py-12 xl:py-15"} />
@@ -31,7 +31,7 @@ function Ecommerce() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Marketing "
         headingBlue="That Feels Human"
-        image="/IndustryExpertise/eCommerce/marketAnalyzer.webp"
+        image="/IndustryExpertise/eCommerce/marketAnalyzerImage.webp"
         paragraphs={marketAnalyzerPara}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -84,10 +84,10 @@ function Ecommerce() {
         background="#fafafa"
         reverse
         isHeadingInGridSection
-        ctaText="Book A Call Now"
-        headdingBlack="Why Brands Trust Us to Grow "
-        headingBlue="Their eCommerce Business"
-        image="/IndustryExpertise/eCommerce/brandTrust.webp"
+        ctaText="Get Free Proposal"
+        headdingBlack="Why Brands Grow With Us"
+        headingBlue="Beyond Just Marketing"
+        image="/IndustryExpertise/eCommerce/brandTrustImage.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustPara}

@@ -3,6 +3,7 @@
 import ContainerWrapper from "../Container/ContainerWrapper";
 import Image from "next/image";
 import PaddingWrapper2 from "../Container/PaddingWrapper2";
+import H2HeadingWrapper from "../Container/H2HeadingWrapper";
 
 const PARTNERS = [
   {
@@ -42,8 +43,9 @@ export default function TrustedBy({
       <PaddingWrapper2 padding={padding}>
         <section className="w-full bg-white">
           {/* Title */}
-          <div className="mx-auto mb-6">
-            <h6 className="text-h6">Trusted by:</h6>
+          <div className="mx-auto">
+            {/* <h6 className="text-h6">Trusted by:</h6> */}
+            <H2HeadingWrapper headdingBlack="Trusted by:"/>
           </div>
 
           {/* Marquee */}

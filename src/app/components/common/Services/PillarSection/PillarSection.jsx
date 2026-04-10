@@ -19,7 +19,7 @@ const DEFAULT_DATA = {
   ],
 
   footerText:
-    "These six pillars work together to help dental clinics attract the right patients, build trust, and achieve consistent appointment growth month after month.",
+    "Each part is focused on how patients choose a dentist — helping you build trust, stand out locally, and turn interest into regular appointments over time.",
 
   ctaLabel: "Book a Free Strategy Call",
   ctaHref: "#contact",
@@ -74,9 +74,10 @@ export default function PillarsSection({
   footerText = DEFAULT_DATA.footerText,
   ctaLabel = DEFAULT_DATA.ctaLabel,
   ctaHref = DEFAULT_DATA.ctaHref,
+  background="#fafafa"
 }) {
   return (
-    <ContainerWrapper>
+    <ContainerWrapper background={background}>
       <PaddingWrapper2>
         <div className="relative">
           {/* Decorative dots */}
@@ -112,7 +113,7 @@ export default function PillarsSection({
           </div>
 
           {/* Footer text */}
-          <p className="p-default text-center text-gray-500 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed">
+          <p className="p-default text-center max-w-3xl mx-auto mb-6 md:mb-10 leading-relaxed">
             {footerText}
           </p>
 

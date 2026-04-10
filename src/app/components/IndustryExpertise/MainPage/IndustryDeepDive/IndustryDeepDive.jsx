@@ -3,6 +3,7 @@ import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
+import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
 import Image from "next/image";
 import React from "react";
 
@@ -571,7 +572,7 @@ function IndustryRow({ industry, reverse, index }) {
         </p>
 
         {/* Service list */}
-        <div className="flex flex-col gap-4 mb-7">
+        <div className="flex flex-col gap-4 mb-6 md:mb-10">
           {services.map((s) => (
             <div key={s.title} className="flex gap-3 items-start">
               <div
@@ -591,14 +592,15 @@ function IndustryRow({ industry, reverse, index }) {
         </div>
 
         {/* CTA */}
-        <button
+        {/* <button
           className="button-primary"
           style={{ background: accentColor, border: "none" }}
           onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.88")}
           onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
         >
           Explore {label.split(" ")[0]} Strategy →
-        </button>
+        </button> */}
+        <GetYourFreeConsultationButton text={ `Explore ${label.split(" ")[0]} Strategy`}/>
       </div>
     </div>
   );

@@ -11,7 +11,6 @@ export default function ServicesGridSection({
   headingBlue,
   description,
   services = [],
-  ctaText = "Schedule a Free Consultation",
   background="#fff"
 }) {
   return (
@@ -25,7 +24,7 @@ export default function ServicesGridSection({
           />
 
         {/* Grid */}
-        <div className="grid gap-5 md:gap-10 mt-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:gap-10 mt-4 md:mt-10 md:grid-cols-2 lg:grid-cols-3">
           {services.map((item, i) => (
             <motion.div
               key={i}
@@ -44,7 +43,7 @@ export default function ServicesGridSection({
               </h3></div>
 
               {/* Description */}
-              <p className="p-default text-[#555] mb-3">{item.description}</p>
+              <p className="p-default mb-3">{item.description}</p>
 
               {/* Link */}
               {/* <button className="text-sm font-semibold text-primary hover:underline">
@@ -53,13 +52,6 @@ export default function ServicesGridSection({
             </motion.div>
           ))}
         </div>
-
-        {/* CTA */}
-        {ctaText && (
-          <div className="text-center mt-6 mt-10">
-            <GetYourFreeConsultationButton text={ctaText}/>
-          </div>
-        )}
       </PaddingWrapper2>
     </ContainerWrapper>
   );

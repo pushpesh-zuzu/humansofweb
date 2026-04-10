@@ -2,6 +2,11 @@ import AdvertisingLeadGeneration from "../../common/Icons/IndustryExpertise/Dent
 import AnalyticsStrategy from "../../common/Icons/IndustryExpertise/Dental/AnalyticsStrategy";
 import ComplianceSolutions from "../../common/Icons/IndustryExpertise/Dental/ComplianceSolutions";
 import ContentMarketing from "../../common/Icons/IndustryExpertise/Dental/ContentMarketing";
+import DentalPPC from "../../common/Icons/IndustryExpertise/Dental/DentalPPC";
+import DentalReputation from "../../common/Icons/IndustryExpertise/Dental/DentalReputation";
+import DentalSEO from "../../common/Icons/IndustryExpertise/Dental/DentalSEO";
+import DentalSocialMedia from "../../common/Icons/IndustryExpertise/Dental/DentalSocialMedia";
+import DentalWebsite from "../../common/Icons/IndustryExpertise/Dental/DentalWebsite";
 import EmailCRM from "../../common/Icons/IndustryExpertise/Dental/EmailCRM";
 import Reputation from "../../common/Icons/IndustryExpertise/Dental/Reputation";
 import SeoSearchVisibility from "../../common/Icons/IndustryExpertise/Dental/SeoSearchVisibility";
@@ -18,31 +23,31 @@ export const servicesDental = [
     title: "Dental SEO That Brings Real Patients",
     description:
       "We optimize your clinic for local search so patients actively looking for dental care can easily find and choose you over competitors.",
-    icon: <SeoSearchVisibility className="h-16 w-16" />,
+    icon: <DentalSEO className="h-16 w-16" />,
   },
   {
     title: "Dental PPC That Fills Appointment Slots",
     description:
       "Targeted Google and Meta ads designed to bring real appointment bookings, not just clicks or empty traffic.",
-    icon: <AdvertisingLeadGeneration className="h-16 w-16" />,
+    icon: <DentalPPC className="h-16 w-16" />,
   },
   {
     title: "Dental Website Development That Builds Trust",
     description:
       "Fast, mobile-friendly, and patient-focused websites that create the right first impression and turn visitors into booked appointments.",
-    icon: <WebsiteDesing className="h-16 w-16" />,
+    icon: <DentalWebsite className="h-16 w-16" />,
   },
   {
     title: "Dental Social Media Marketing That Connects Patients",
     description:
       "Engaging content and consistent posting that helps your clinic stay visible, relatable, and trusted across social platforms.",
-    icon: <ContentMarketing className="h-16 w-16" />,
+    icon: <DentalSocialMedia className="h-16 w-16" />,
   },
   {
     title: "Dental Reputation Management That Builds Trust",
     description:
       "We help you manage reviews and online presence so patients see your clinic as credible, trusted, and highly recommended.",
-    icon: <ContentMarketing className="h-16 w-16" />,
+    icon: <DentalReputation className="h-16 w-16" />,
   },
 ];
 export const marketingServicesParaDental = [
@@ -90,12 +95,4 @@ export const dentalTrustPara = [
   "Our approach blends clarity with consistency. From local search visibility to patient-friendly content and ads, every step is planned to help people choose your clinic with confidence.",
 
   "Transparency matters in healthcare marketing. You’ll always know what’s being done, why it’s being done, and how it helps your clinic grow — simple and honest communication.",
-
-  "We work like an extended part of your clinic, not just an outside agency. Our goal is to support your practice in attracting, converting, and retaining real patients.",
-
-  "As your clinic grows, your local reputation and patient demand evolve too. We continuously refine your presence to keep you visible where it matters most.",
-
-  "From first search to final appointment, we focus on the full patient journey — making sure people don’t just find you, but actually trust you enough to book.",
-
-  "If you’re looking for a partner who understands both patients and practice growth, you’re in the right place. Let’s build a clinic people genuinely trust."
 ];

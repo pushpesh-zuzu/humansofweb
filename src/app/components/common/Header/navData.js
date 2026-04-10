@@ -67,7 +67,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Legal",
-        href: "/legal-agency",
+        href: "/law-firm-digital-marketing",
         subItems: [
           { label: "Legal SEO", href: "#" },
           { label: "Legal PPC", href: "#" },
