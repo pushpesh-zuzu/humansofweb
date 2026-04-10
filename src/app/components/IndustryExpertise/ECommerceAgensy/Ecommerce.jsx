@@ -13,8 +13,11 @@ import {
   scaleYourBrandPara,
   scaleYourBrandParaBottom,
   services,
+  StrategyContentEcommerce,
 } from "./eCommerceData";
 import HeroSectionServices from "../../common/Services/HeroSectionServices/HeroSectionServices";
+import PillarsSection from "../../common/Services/PillarSection/PillarSection";
+import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
 
 function Ecommerce() {
   return (
@@ -25,15 +28,31 @@ function Ecommerce() {
       />
       <TrustedBy padding={"py-5 px-[35px] px-0 md:py-12 xl:py-15"} />
       <ServicesTwoGridDescriptionAndImage
-        background="#fafafa"
-        ctaText=""
-        headdingBlack="Marketing That Feels Human"
-        headingBlue="Data Driven eCommerce"
+        background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
+        headdingBlack="Marketing "
+        headingBlue="That Feels Human"
         image="/IndustryExpertise/eCommerce/marketAnalyzer.webp"
         paragraphs={marketAnalyzerPara}
-        paragraphTextColor
+        headingBlueColor="text-secondary"
+        headingBlackColor="text-white"
+        limit={5}
       />
-      <ServicesTwoGridDescriptionAndImage
+      <PillarsSection
+        headdingBlack={StrategyContentEcommerce.headdingBlack}
+        headingBlue={StrategyContentEcommerce.headingBlue}
+        features={StrategyContentEcommerce.features}
+        footerText={StrategyContentEcommerce.footerText}
+        ctaLabel={StrategyContentEcommerce.ctaLabel}
+        ctaHref={StrategyContentEcommerce.ctaHref}
+      />
+      <ServicesGridSection
+        services={services}
+        headdingBlack={"eCommerce Solutions "}
+        headingBlue={"We Offer"}
+        // description={marketingServicesPara}
+      />
+      {/* //done */}
+      {/* <ServicesTwoGridDescriptionAndImage
         headdingBlack="eCommerce Growth That "
         headingBlue="Builds Real, Lasting Brands"
         image="/IndustryExpertise/eCommerce/businessGrowth.webp"
@@ -43,32 +62,24 @@ function Ecommerce() {
         isHeadingInGridSection
         paragraphs={businessGrowthPara}
         paragraphTextColor
-      />
-      <ServicesGridSection
-        services={services}
-        headdingBlack={"eCommerce Marketing Services"}
-        headingBlue={"That Drive Meaningful Growth"}
-        description={marketingServicesPara}
-      />
-      <ServicesTwoGridDescriptionAndImage
-        ctaText=""
-        background="#fafafa"
-        reverse
-        breakLine
+      /> */}
+
+      {/* <ServicesTwoGridDescriptionAndImage
+        background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Scale Your Brand With"
         headingBlue="Proven eCommerce Growth"
         image="/IndustryExpertise/eCommerce/scaleYourBrandh.webp"
         paragraphs={scaleYourBrandPara}
         bottomParagraph={scaleYourBrandParaBottom}
-        headingBlueColor="text-primary"
-        paragraphTextColor
-      />
-      <ProcessCarouselSection
+        headingBlueColor="text-secondary"
+        headingBlackColor="text-white"
+      /> */}
+      {/* <ProcessCarouselSection
         headdingBlack={processSectionContent.headdingBlack}
         headingBlue={processSectionContent.headingBlue}
         description={processSectionContent.description}
         steps={processSteps}
-      />
+      /> */}
       <ServicesTwoGridDescriptionAndImage
         background="#fafafa"
         reverse
@@ -83,6 +94,7 @@ function Ecommerce() {
         headingBlueColor="text-primary"
         paragraphTextColor
       />
+      <ReachWithUs />
     </>
   );
 }

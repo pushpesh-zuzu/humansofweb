@@ -359,17 +359,29 @@ export const businessGrowthPara = [
 ];
 
 export const marketAnalyzerPara = [
-  "At Humans of Web, we don’t just run campaigns — we understand your customers, their behavior, and what actually drives them to buy.",
+  "At Humans of Web, we don’t just run campaigns — we understand your customers, their behavior, and what actually drives them to buy.E-commerce is not just about traffic, it’s about trust. We focus on creating seamless journeys that turn visitors into loyal customers.From discovery to checkout, every step is optimized to maximize conversions while keeping the experience natural and human.",
 
-  "E-commerce is not just about traffic, it’s about trust. We focus on creating seamless journeys that turn visitors into loyal customers.",
-
-  "From discovery to checkout, every step is optimized to maximize conversions while keeping the experience natural and human.",
-
-  "We dive deep into your products, your audience, and your competitors to uncover opportunities others miss — so your brand doesn’t just compete, it stands out.",
-
-  "Our approach blends data with real human psychology — understanding why people click, hesitate, and finally decide to purchase.",
-
-  "We continuously test, refine, and improve every part of your funnel — from landing pages to product pages — ensuring consistent growth over time.",
+  "We dive deep into your products, your audience, and your competitors to uncover opportunities others miss — so your brand doesn’t just compete, it stands out.Our approach blends data with real human psychology — understanding why people click, hesitate, and finally decide to purchase.We continuously test, refine, and improve every part of your funnel — from landing pages to product pages — ensuring consistent growth over time.",
 
   "Because in the end, it’s not just about selling products — it’s about creating experiences people remember and come back for.",
 ];
+
+export const StrategyContentEcommerce = {
+  headdingBlack: "Strategies That",
+  headingBlue: "Scale eCommerce Brands",
+
+  features: [
+    { title: "Buyer Intent Audience Targeting" },
+    { title: "Revenue-Focused Performance Marketing" },
+    { title: "Conversion-Optimized Store Experiences" },
+    { title: "Paid Ads That Turn Clicks Into Customers" },
+    { title: "Brand Positioning That Builds Trust & Recall" },
+    { title: "Lifecycle Marketing That Increases Repeat Purchases" },
+  ],
+
+  footerText:
+    "These six pillars work together as a unified growth system — helping eCommerce brands turn traffic into customers, customers into repeat buyers, and growth into a consistent outcome.",
+
+  ctaLabel: "Book a Free Strategy Call",
+  ctaHref: "#contact",
+};

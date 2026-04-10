@@ -4,10 +4,10 @@ import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 
 const ReachWithUs = ({
-  title = "MAXIMIZE YOUR ONLINE REACH WITH US",
+  title = "BOOST YOUR DIGITAL REACH WITH US",
   buttonText = "SCHEDULE CONSULTATION CALL",
   buttonHref = "",
-  imageSrc = "/IndustryExpertise/pretty-women.webp",
+  imageSrc = "/IndustryExpertise/prettyWoman1.webp",
   imageAlt = "Consultation support",
   backgroundColor = "#a8dff2",
 }) => {
@@ -47,7 +47,7 @@ const ReachWithUs = ({
               </h1>
               <Link
                 href={buttonHref}
-                className="mt-7 inline-flex min-h-[46px] items-center justify-center rounded-full bg-secondary px-6 text-[12px] font-bold uppercase tracking-[0.02em] text-white transition hover:bg-primary md:px-10 md:text-[14px]"
+                className="mt-6 md:mt-10 inline-flex min-h-[46px] items-center justify-center rounded-full bg-secondary px-6 text-[12px] font-bold uppercase tracking-[0.02em] text-white transition hover:bg-primary md:px-10 md:text-[14px]"
               >
                 {buttonText}
               </Link>

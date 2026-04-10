@@ -35,12 +35,13 @@ export default function ServicesGridSection({
               className="group"
             >
               {/* Icon */}
-              <div className="mb-4">{item.icon}</div>
+              <div className="flex gap-4 items-center">
+                <div className="mb-4">{item.icon}</div>
 
               {/* Title */}
               <h3 className="text-h5 font-semibold mb-2 text-primary group-hover:underline">
                 {item.title}
-              </h3>
+              </h3></div>
 
               {/* Description */}
               <p className="p-default text-[#555] mb-3">{item.description}</p>

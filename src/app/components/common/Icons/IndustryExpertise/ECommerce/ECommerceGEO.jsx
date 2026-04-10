@@ -1,6 +1,6 @@
 import React from "react";
 
-function ECommerceGEO() {
+function ECommerceGEO({className=""}) {
   return (
     <svg
       width="64"
@@ -8,6 +8,8 @@ function ECommerceGEO() {
       viewBox="0 0 64 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+            className={className}
+
     >
       <rect width="64" height="64" rx="32" fill="url(#paint0_linear_21_284)" />
       <g clipPath="url(#clip0_21_284)">

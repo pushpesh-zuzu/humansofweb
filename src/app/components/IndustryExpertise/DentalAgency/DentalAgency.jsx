@@ -36,7 +36,7 @@ function DentalAgency() {
         headingBlue="Start Here"
         image="/IndustryExpertise/dentalAgency/dentalHero.webp"
         paragraphs={marketAnalyzerParaDental}
-        headingBlueColor='text-secondary'
+        headingBlueColor="text-secondary"
         headingBlackColor="text-white"
       />
       {/* <GrowthStrategiesSection /> */}
@@ -63,25 +63,19 @@ function DentalAgency() {
         ctaHref="#contact"
       /> */}
       <ServicesTwoGridDescriptionAndImage
-          reverse
-          isHeadingInGridSection
-          ctaText="Book A Call Now"
-          headdingBlack="Patients Choose Trust"
-          headingBlue=" Not Just Clinics"
-          image="/IndustryExpertise/eCommerce/brandTrust.webp"
-          limit={5}
-          paragraphs={dentalTrustPara}
-          paragraphTextColor
-          headingBlueColor="text-primary"
-          breakLine
-        />
-      <ReachWithUs
-        title="MAXIMIZE YOUR ONLINE REACH WITH US"
-        buttonText="SCHEDULE CONSULTATION CALL"
-        buttonHref=""
-        imageSrc="/IndustryExpertise/pretty-women.webp"
-        imageAlt="Consultation support"
+        reverse
+        isHeadingInGridSection
+        ctaText="Book A Call Now"
+        headdingBlack="Patients Choose Trust"
+        headingBlue=" Not Just Clinics"
+        image="/IndustryExpertise/eCommerce/brandTrust.webp"
+        limit={5}
+        paragraphs={dentalTrustPara}
+        paragraphTextColor
+        headingBlueColor="text-primary"
+        breakLine
       />
+      <ReachWithUs />
       {/* <WhyChooseDentalServce
         background="#fafafa"
         ctaText="Lets Talk"
