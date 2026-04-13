@@ -2,7 +2,6 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import Header from "./components/common/Header/Header";
-import FloatingBalls from "./components/common/Decor/FloatingBalls";
 import Footer from "./components/common/Footer/Footer";
 
 const montserrat = Montserrat({
@@ -55,7 +54,6 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
       <body suppressHydrationWarning className="relative overflow-x-hidden">
-        <FloatingBalls />
         <div className="relative z-10">
           <Header />
           <StoreProvider>{children}</StoreProvider>

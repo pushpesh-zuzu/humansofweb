@@ -11,6 +11,7 @@ import CustomGeneration from "./components/Home/CustomGeneration";
 import IndustryTags from "./components/Home/IndustryTags";
 import OurExport from "./components/Home/OurExport";
 import ServiceSectors from "./components/Home/ServiceSectors";
+import FloatingBalls from "./components/common/Decor/FloatingBalls";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <>
+      <FloatingBalls />
       <HeroSection />
       <TrustedBy />
       <ResultOrientedServices />
