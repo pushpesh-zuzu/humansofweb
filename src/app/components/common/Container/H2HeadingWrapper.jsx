@@ -6,14 +6,14 @@ function H2HeadingWrapper({
   subHeading = "",
   description = "",
   breakLine = false,
-  headingBlueColor="text-primary",
-  headingBlackColor="",
-  multiParagraph=[],
-  textAlign="",
-  padding='pb-6 md:pb-8.75'
+  headingBlueColor = "bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent",
+  headingBlackColor = "",
+  multiParagraph = [],
+  textAlign = "",
+  padding = "pb-6 md:pb-8.75",
 }) {
   return (
-    <div className={`${padding} ${textAlign ? textAlign :'text-left'}`}>
+    <div className={`${padding} ${textAlign ? textAlign : "text-left"}`}>
       <h2 className={`text-h2 ${headingBlackColor}`}>
         {headdingBlack} {breakLine && <br />}{" "}
         {headingBlue && (

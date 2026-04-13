@@ -5,6 +5,7 @@ import PaddingWrapper2 from '../common/Container/PaddingWrapper2'
 import AISearch from "../common/Icons/Home/ai-search.svg"
 import PRPrize from "../common/Icons/Home/pr-prize.svg"
 import Global from "../common/Icons/Home/global.svg"
+import H2HeadingWrapper from '../common/Container/H2HeadingWrapper'
 
 const SERVICES = [
     {
@@ -49,19 +50,13 @@ const ServiceSectors = () => {
         <ContainerWrapper>
             <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
                 <section className="text-center">
-
-                    {/* Heading */}
-                    <div className="mx-auto max-w-[720px] space-y-6 mb-12">
-                        <h2 className="text-h2 font-bold text-[#1c1c1c]">
-                            Win Untapped <span className="text-primary">Growth Channels</span>
-                        </h2>
-                        <p className="p-secondary font-medium text-[#4b4b4b]">
-                            We turn your brand into a scalable growth engine through AI search visibility, authority-driven PR and international SEO.
-                        </p>
-                    </div>
+                        <H2HeadingWrapper
+                        headdingBlack="Win Untapped"
+                        headingBlue="Growth Channels"
+                    />
 
                     {/* Cards */}
-                    <div className="grid gap-6 lg:grid-cols-3">
+                    <div className="grid gap-6 lg:grid-cols-3 lg:pt-2">
                         {SERVICES.map((service, index) => (
                             <article
                                 key={service.title}
@@ -76,13 +71,18 @@ const ServiceSectors = () => {
                                         }`}
                                 >
                                     {/* Icon */}
-                                    <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-primary via-secondary to-secondary text-white shadow-lg">
+                                    <div
+                                        className="mx-auto mb-6 flex justify-center"
+                                        style={{
+                                            width: 68,
+                                            height: 89,
+                                        }}
+                                    >
                                         <Image
                                             src={service.icon}
                                             alt={service.title}
-                                            width={48}
-                                            height={48}
-                                            className="h-12 w-12 object-contain"
+                                            width={72}
+                                            height={72}
                                         />
                                     </div>
 

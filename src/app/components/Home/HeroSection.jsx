@@ -64,13 +64,13 @@ export default function HeroSection() {
             >
               <h1 className="text-h1 font-semibold text-[#1c1c1c]">
                 We Turn{" "}
-                <span className="text-primary">Ideas Into Digital Experiences</span>{" "}
+                <span className="text-secondary">Ideas Into Digital Experiences</span>{" "}
                 That Humans Love
               </h1>
 
               <p className="mt-5 p-tertiary font-semibold text-[#1c1c1c]">
                 Humans of Web helps{" "}
-                <span className="relative inline-flex align-bottom text-primary">
+                <span className="relative inline-flex align-bottom text-secondary">
                   <span className="inline-block">{displayText}</span>
                 </span>{" "}
                 craft human-centered digital experiences that convert.
@@ -82,7 +82,7 @@ export default function HeroSection() {
                   placeholder="Enter your website"
                   className="h-[52px] w-full rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
                 />
-                <button className="h-[52px] cursor-pointer rounded-full bg-primary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-secondary">
+                <button className="h-[52px] cursor-pointer rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-primary">
                   Get Your Free Consultation
                 </button>
               </div>
@@ -114,7 +114,7 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="relative flex items-center justify-center pt-4 md:pt-6 lg:pt-7"
             >
-              <div className="relative h-[250px] w-full max-w-[660px] md:h-[410px] lg:h-[480px] xl:h-[500px]">
+              <div className="relative h-[250px] w-full max-w-[660px] md:h-[410px] lg:h-[480px] xl:h-[440px]">
                 <Image
                   src="/Home/homeherosection.webp"
                   alt="test"

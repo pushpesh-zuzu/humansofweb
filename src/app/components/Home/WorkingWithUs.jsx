@@ -104,7 +104,7 @@ function WorkingWithUs() {
           <H2HeadingWrapper
             headdingBlack="Trusted by Teams"
             headingBlue="That Want to Grow"
-            subHeading="Real experiences from people who partnered with us to scale smarter"
+            subHeading=""
           />
           <div className="relative px-8 xl:px-0">
             <button

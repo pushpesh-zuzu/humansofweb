@@ -95,7 +95,7 @@ const IndustryTags = () => {
                     <H2HeadingWrapper
                         headdingBlack="Industry Expertise"
                         headingBlue="That Keeps Moving"
-                        subHeading="Explore the markets, platforms, and growth channels we help teams improve."
+                        subHeading=""
                     />
 
                     <div className="relative">

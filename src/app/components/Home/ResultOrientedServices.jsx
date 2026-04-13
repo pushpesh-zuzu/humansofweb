@@ -11,7 +11,7 @@ function ResultOrientedServices() {
         <H2HeadingWrapper
           headdingBlack="Performance-Driven"
           headingBlue="Solutions"
-          subHeading="Built to Deliver. Powered by Strategy"
+          subHeading=""
         />
         <ServicesSlider1 />
       </PaddingWrapper2>
