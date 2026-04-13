@@ -78,16 +78,40 @@ export default function MobileMenu({ items, open, onClose }) {
             <div key={idx}>
               {item.children ? (
                 <>
-                  <button
-                    onClick={() => {
-                      setOpenIdx(openIdx === idx ? null : idx);
-                      setOpenSubIdx(null);
-                    }}
-                    className="flex w-full items-center justify-between py-3 text-left text-sm font-medium text-white transition-colors hover:text-[#ffd2c2]"
-                  >
-                    {item.label}
-                    <ToggleIcon expanded={openIdx === idx} />
-                  </button>
+                  <div className="flex items-center justify-between gap-3">
+                    {item.href ? (
+                      <Link
+                        href={item.href}
+                        onClick={handleClose}
+                        className="flex-1 py-3 text-left text-sm font-medium text-white transition-colors hover:text-[#ffd2c2]"
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setOpenIdx(openIdx === idx ? null : idx);
+                          setOpenSubIdx(null);
+                        }}
+                        className="flex-1 py-3 text-left text-sm font-medium text-white transition-colors hover:text-[#ffd2c2]"
+                      >
+                        {item.label}
+                      </button>
+                    )}
+
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setOpenIdx(openIdx === idx ? null : idx);
+                        setOpenSubIdx(null);
+                      }}
+                      className="py-3"
+                      aria-label={`${openIdx === idx ? "Collapse" : "Expand"} ${item.label}`}
+                    >
+                      <ToggleIcon expanded={openIdx === idx} />
+                    </button>
+                  </div>
 
                   {openIdx === idx && (
                     <div className="mt-2 space-y-1 bg-black px-3 py-2">
@@ -95,15 +119,38 @@ export default function MobileMenu({ items, open, onClose }) {
                         <div key={cIdx}>
                           {child.subItems ? (
                             <>
-                              <button
-                                onClick={() =>
-                                  setOpenSubIdx(openSubIdx === cIdx ? null : cIdx)
-                                }
-                                className="flex w-full items-center justify-between py-2 text-left text-sm font-medium text-[#ffd2c2]"
-                              >
-                                {child.label}
-                                <ToggleIcon expanded={openSubIdx === cIdx} />
-                              </button>
+                              <div className="flex items-center justify-between gap-3">
+                                {child.href ? (
+                                  <Link
+                                    href={child.href}
+                                    onClick={handleClose}
+                                    className="flex-1 py-2 text-left text-sm font-medium text-[#ffd2c2] transition-colors hover:text-white"
+                                  >
+                                    {child.label}
+                                  </Link>
+                                ) : (
+                                  <button
+                                    type="button"
+                                    onClick={() =>
+                                      setOpenSubIdx(openSubIdx === cIdx ? null : cIdx)
+                                    }
+                                    className="flex-1 py-2 text-left text-sm font-medium text-[#ffd2c2] transition-colors hover:text-white"
+                                  >
+                                    {child.label}
+                                  </button>
+                                )}
+
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setOpenSubIdx(openSubIdx === cIdx ? null : cIdx)
+                                  }
+                                  className="py-2"
+                                  aria-label={`${openSubIdx === cIdx ? "Collapse" : "Expand"} ${child.label}`}
+                                >
+                                  <ToggleIcon expanded={openSubIdx === cIdx} />
+                                </button>
+                              </div>
 
                               {openSubIdx === cIdx && (
                                 <div className="mt-1 space-y-1 bg-[#3f3e3e] px-3 py-2">

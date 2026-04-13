@@ -23,7 +23,7 @@ const NAV_ITEMS = [
         label: "SaaS",
         href: "/saas-marketing-agency",
         subItems: [
-          { label: "SaaS SEO", href: "#" },
+          { label: "SaaS SEO", href: "/saas-seo" },
           { label: "SaaS Website Development", href: "#" },
           { label: "SaaS PPC", href: "#" },
           { label: "SaaS GEO Services", href: "#" },
@@ -57,7 +57,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Chiropractor",
-        href: "/chiropractor-digital-marketing-agency",
+        href: "/chiropractor-agency",
         subItems: [{ label: "Chiropractor SEO", href: "#" }],
       },
       {
@@ -77,6 +77,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Platform Expertise",
+    href: "/platform-expertise",
     children: [
       {
         label: "WordPress",
