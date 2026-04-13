@@ -102,7 +102,7 @@ const ServiceSectors = () => {
                                     </p>
 
                                     {/* Button */}
-                                    <button className="mt-8 inline-flex h-12 cursor-pointer items-center justify-center rounded-full bg-primary px-6 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-secondary">
+                                    <button className="mt-8 inline-flex h-12 cursor-pointer items-center justify-center rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-primary">
                                         Learn More
                                     </button>
                                 </div>
