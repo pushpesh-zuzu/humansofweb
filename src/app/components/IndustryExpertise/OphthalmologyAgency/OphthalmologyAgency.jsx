@@ -19,7 +19,7 @@ function OphthalmologyAgency() {
   return (
     <>
       <HeroSectionServices
-        heading1="Clear Vision Growth"
+        heading1="Clear Vision Growth "
         heading2="For Modern Clinics"
         bgImag="/IndustryExpertise/ophthalmology/OpthoBanner.webp"
         description1="Every day people search online for trusted eye care, from vision checks to treatments, but success depends on being seen and chosen at the right moment."

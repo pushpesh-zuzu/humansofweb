@@ -36,6 +36,7 @@ function Ecommerce() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        breakLine
       />
       <PillarsSection
         headdingBlack={StrategyContentEcommerce.headdingBlack}
