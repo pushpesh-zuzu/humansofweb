@@ -27,6 +27,7 @@ function DentalAgency() {
         description1="Every day people search online for trusted dental care, from checkups to urgent treatments, but success depends on being seen and chosen at the right moment."
         description2="At Humans of Web, we help dental clinics connect with patients through SEO, local optimization, and smart advertising to drive visibility, bookings, and consistent growth."
         altText="dentalAgency Agency"
+        breakLine
       />
       <TrustedBy padding={"py-5 px-[35px] px-0 md:py-12 xl:py-15"} />
       <ServicesTwoGridDescriptionAndImage

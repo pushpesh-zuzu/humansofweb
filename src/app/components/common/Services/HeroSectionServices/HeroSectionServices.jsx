@@ -7,14 +7,14 @@ import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 
 export default function HeroSectionServices({
   bgImag = "",
-  heading1 = "Build E-commerce",
+  heading1 = "Build E-commerce ",
   heading2 = "Brands People Trust",
   description1 = `At Humans of Web, we don’t just run campaigns — we understand your customers, their intent, and what truly makes them click, buy, and come back.`,
   description2 = `From product discovery to checkout, we design strategies that feel natural, build trust, and turn your store into a growth engine — not just another online shop.`,
   ctaText = "Book Your Free Consultation",
-  headingSectionWidth="max-w-[600px]",
-  altText="Industry Expertise",
-  breakLine=false
+  headingSectionWidth = "max-w-[600px]",
+  altText = "Industry Expertise",
+  breakLine = false,
 }) {
   return (
     <ContainerWrapper
@@ -33,7 +33,8 @@ export default function HeroSectionServices({
             >
               {/* Heading */}
               <h1 className="text-h1 font-semibold text-white mb-auto leading-[1.25]">
-                {heading1} {breakLine && <br/>}<span className="text-secondary">{heading2}</span>
+                {heading1} {breakLine && <br />}
+                <span className="text-secondary">{heading2}</span>
               </h1>
 
               {/* Description */}
