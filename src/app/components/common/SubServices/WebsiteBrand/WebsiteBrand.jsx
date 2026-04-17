@@ -7,6 +7,7 @@ import MagentoIcon from "../../Icons/WebsiteDesign/magneto.svg";
 import WordpressIcon from "../../Icons/WebsiteDesign/wordpress-logo.svg";
 import EcommerceIcon from "../../Icons/WebsiteDesign/ecommerce-logo.svg";
 import PageSpeedIcon from "../../Icons/WebsiteDesign/page-speed.svg";
+import GetCtaButton from "../../CtaButtons/GetCtaButton";
 
 const DEFAULT_FEATURE_CARDS = [
     {
@@ -31,55 +32,33 @@ const DEFAULT_FEATURE_CARDS = [
     },
 ];
 
-const dotPositions = [
-    "left-[6%] top-[10%]",
-    "left-[10%] top-[14%]",
-    "left-[86%] top-[32%]",
-    "left-[80%] top-[72%]",
-    "left-[68%] top-[8%]",
-];
-
-const dotColors = ["bg-secondary", "bg-[#ff72c4]", "bg-[#ffd24a]", "bg-[#ff6b6b]", "bg-[#74e0d3]"];
-
 const WebsiteBrand = ({
-  titleStart = "Build a",
-  highlightedTitle = "Custom eCommerce Website",
-  titleEnd = "That Looks Sharp and Sells Better",
-  description = "Your store should do more than look good. We design custom eCommerce websites that reflect your brand, make shopping effortless, and help turn more visitors into loyal customers.",
-  ctaText = "Book A Call Now",
+    titleStart = "Design a Store That",
+    highlightedTitle = "Looks Great & Sells",
+    description = "Your store should do more than look good. We design custom eCommerce websites that reflect your brand, make shopping effortless, and help turn more visitors into loyal customers.",
+    ctaText = "Book A Call Now",
     ctaHref = "",
     cards = DEFAULT_FEATURE_CARDS,
 }) => {
     return (
         <ContainerWrapper>
             <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
-                <section background="#48179C">
+                <section>
                     <div className="relative overflow-hidden rounded-[24px] bg-primary text-white">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.14),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.08),_transparent_34%)]" />
-
-                        {dotPositions.map((position, index) => (
-                            <span
-                                key={position}
-                                className={`absolute h-2 w-2 rounded-full ${position} ${dotColors[index % dotColors.length]}`}
-                            />
-                        ))}
 
                         <div className="relative z-10 grid items-center gap-8 px-5 py-8 md:px-8 md:py-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.85fr)] lg:gap-12 xl:px-14 xl:pt-12 xl:pb-9">
                             <div className="max-w-[560px]">
                                 <h2 className="text-h2 max-w-[500px] font-normal leading-[1.08] tracking-[-0.03em] text-white">
-                                    {titleStart} <span className="font-bold">{highlightedTitle}</span> {titleEnd}
+                                    {titleStart} <span className="text-secondary font-bold">{highlightedTitle}</span>
                                 </h2>
-                                <p className="p-default mt-5 max-w-[560px] text-white/90">
+                                <p className="p-default mt-[30px] md:mt-10 max-w-[560px] text-white/90">
                                     {description}
                                 </p>
                                 {ctaText ? (
-                                    <div className="mt-6">
-                                        <Link
-                                            href={ctaHref}
-                                            className="inline-flex min-h-11 items-center justify-center rounded-full bg-secondary px-5 text-xs font-bold uppercase tracking-[0.08em] text-white transition hover:bg-white hover:text-primary md:text-sm"
-                                        >
-                                            {ctaText}
-                                        </Link>
+                                    <div className="flex justify-start pt-6 md:pt-[30px] lg:pt-10">
+                                        <GetCtaButton text={ctaText}
+                                            href="" />
                                     </div>
                                 ) : null}
                             </div>

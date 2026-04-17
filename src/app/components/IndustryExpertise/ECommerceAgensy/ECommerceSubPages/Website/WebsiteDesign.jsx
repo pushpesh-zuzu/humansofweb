@@ -5,11 +5,50 @@ import React from 'react'
 import WORK_WITH_CARDS from './SectionsData/workWithCardsData'
 import WebsiteBrand from '@/app/components/common/SubServices/WebsiteBrand/WebsiteBrand'
 import CLIENT_CARDS from './SectionsData/clientData'
-import DriveConversation from '@/app/components/common/SubServices/DriveConversation/DriveConversation'
 import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs'
-import BusineesSell from './BusineesSell/BusineesSell'
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent'
 import FAQ_DATA from './SectionsData/faqData'
+import CustomGeneration from '@/app/components/Home/CustomGeneration'
+import goals from '@/app/components/common/Icons/WebsiteDesign/goals.svg'
+import trust from '@/app/components/common/Icons/WebsiteDesign/trust.svg'
+import speed from '@/app/components/common/Icons/WebsiteDesign/build-speed.svg'
+import launch from '@/app/components/common/Icons/WebsiteDesign/launch.svg'
+import userJourney from '@/app/components/common/Icons/WebsiteDesign/user-journey.svg'
+import BusineesSell from '@/app/components/common/SubServices/BusineesSell/BusineesSell'
+
+
+const STEPS = [
+    {
+        step: "01",
+        title: "Understand Your Brand and Goals",
+        description: "We begin by learning about your business, customers, and growth goals so the website strategy is shaped around what matters most to your brand.",
+        icon: goals,
+    },
+    {
+        step: "02",
+        title: "Plan the User Journey",
+        description: "From homepage flow to product discovery, we map a shopping experience that feels intuitive, reduces friction, and supports better conversions.",
+        icon: userJourney,
+    },
+    {
+        step: "03",
+        title: "Design for Trust and Sales",
+        description: "We craft layouts, visuals, and messaging that make your store feel polished, highly credible, and easy to buy from across every key page.",
+        icon: trust,
+    },
+    {
+        step: "04",
+        title: "Build for Speed and Flexibility",
+        description: "We make sure your website feels fast, responsive, and easy to manage so it supports both a better user experience and future growth.",
+        icon: speed,
+    },
+    {
+        step: "05",
+        title: "Refine and Launch with Confidence",
+        description: "Before launch, we review the final experience carefully, fine-tune key details, and make sure your store is ready to perform from day one.",
+        icon: launch,
+    },
+];
 
 const WebsiteDesign = () => {
     return (
@@ -17,8 +56,8 @@ const WebsiteDesign = () => {
             <HeroSection
                 heading={"E-commerce Websites That"}
                 pinkHeading={"Grow With You"}
-                description1={"Start small or scale big—we design eCommerce websites that are built to adapt as your business grows."}
-                description2={"From design to functionality, we create fast, user-friendly stores that help you sell more and scale with confidence."}
+                description1={"Start small or scale big, we design eCommerce websites that adapt seamlessly as your business grows, ensuring flexibility, performance, and long-term success."}
+                description2={"From design to functionality, we build fast, user-friendly online stores that enhance customer experience, increase conversions, and help you confidently grow your business."}
                 bannerImage="/websiteDesign/website-banner.webp"
                 altText={"websites that grow with you"}
             />
@@ -40,11 +79,17 @@ const WebsiteDesign = () => {
                 description="We build websites that don’t just look good—they perform, convert, and grow with your business. Here’s what makes us different."
                 cards={CLIENT_CARDS}
                 showCards={3}
-                ctaText=""
+                ctaText="Book your free consulation"
                 ctaHref=""
                 backgroundImage=""
             />
-            <DriveConversation />
+            <CustomGeneration
+                headdingBlack="Approach to"
+                headingBlue="High-Converting eCommerce Design"
+                steps={STEPS}
+                showCtaButton={true}
+                ctaText = "get my free website plan"
+            />
             <BusineesSell />
             <FaqComponent
                 title="Frequently asked questions"

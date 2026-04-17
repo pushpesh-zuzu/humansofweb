@@ -1,10 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
 import ContainerWrapper from "../../../../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../../../../common/Container/PaddingWrapper2";
 import GuestPostsIcon from "../../../../../common/Icons/IndustryExpertise/GuestPosts.svg";
 import LeadsGenerateIcon from "../../../../../common/Icons/IndustryExpertise/LeadsGenerate.svg";
 import SEORevenueIcon from "../../../../../common/Icons/IndustryExpertise/SEORevenue.svg";
+import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
+import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
 
 const PERFORMANCE_STATS = [
     {
@@ -29,30 +30,31 @@ const SeoPerformance = () => {
         <ContainerWrapper>
             <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
                 <section>
-                    <div className="mx-auto max-w-[1100px] text-center">
-                        <h2 className="text-h2 font-normal text-black">
-                            <span className="font-bold text-primary">eCommerce SEO for Strong</span>{" "}
-                            Long-Term Growth
-                        </h2>
-                        <p className="p-default mx-auto mt-5 max-w-[1120px] text-left leading-[1.4] text-black">
-                            We help your store get discovered by the right customers and turn visibility into consistent sales. While you focus on running your business, we take care of driving growth.
-                        </p>
-                    </div>
-
-                    <div className="mx-auto mt-8 grid max-w-[1100px] gap-6 md:grid-cols-3">
+                    <H2HeadingWrapper
+                        headdingBlack="E-commerce SEO for Strong"
+                        headingBlue="Long-Term Growth"
+                        subHeading=""
+                        padding="pb-[30px] md:pb-10 lg:pb-15"
+                    />
+                    <div className="mx-auto grid max-w-[1100px] gap-6 md:grid-cols-3">
                         {PERFORMANCE_STATS.map(({ value, label, icon }) => (
                             <div
                                 key={value}
                                 className="rounded-[14px] bg-gradient-to-br from-primary to-secondary p-[2px] shadow-[8px_10px_18px_rgba(0,0,0,0.12)]"
                             >
                                 <div className="flex min-h-[260px] flex-col justify-between rounded-[12px] bg-white p-8">
-                                    <div className="flex h-16 w-16 flex-none items-center justify-center rounded-full bg-secondary p-3 transition-transform duration-300 hover:scale-110">
+                                    <div
+                                        className="flex flex-none justify-center transition-transform duration-300 hover:scale-110"
+                                        style={{
+                                            width: 68,
+                                            height: 89,
+                                        }}
+                                    >
                                         <Image
                                             src={icon}
                                             alt=""
-                                            width={32}
-                                            height={32}
-                                            className="h-full w-full object-contain"
+                                            width={72}
+                                            height={72}
                                         />
                                     </div>
                                     <div>
@@ -64,13 +66,9 @@ const SeoPerformance = () => {
                         ))}
                     </div>
 
-                    <div className="mt-9 flex justify-center">
-                        <Link
-                            href="/contact"
-                            className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-secondary"
-                        >
-                            Get My Growth Plan
-                        </Link>
+                    <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10">
+                        <GetCtaButton text="Book a call now"
+                            href="" />
                     </div>
                 </section>
             </PaddingWrapper2>

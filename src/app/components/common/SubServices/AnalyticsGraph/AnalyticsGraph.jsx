@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
+import H2HeadingWrapper from "../../Container/H2HeadingWrapper";
 
 const AnalyticsGraph = ({
   title = "Track The SEO Growth That Matters",
@@ -53,16 +54,13 @@ const AnalyticsGraph = ({
       `}</style>
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
         <section>
-          <div className="mx-auto max-w-[920px] text-center">
-            <h2 className="text-h2 font-normal leading-[1.15] text-black">
-              {title}{" "}
-              {highlightedTitle ? (
-                <span className="font-bold text-primary">{highlightedTitle}</span>
-              ) : null}
-            </h2>
-          </div>
+          <H2HeadingWrapper
+            headdingBlack={title}
+            headingBlue={highlightedTitle}
+            padding="pb-[30px] md:pb-10 lg:pb-15"
+          />
 
-          <div className="relative mx-auto mt-8 max-w-[1040px]">
+          <div className="relative mx-auto max-w-[1040px]">
             <button
               type="button"
               onClick={goToPrevious}
@@ -100,9 +98,8 @@ const AnalyticsGraph = ({
                   type="button"
                   onClick={() => setActiveIndex(index)}
                   aria-label={`Show graph ${index + 1}`}
-                  className={`h-2.5 w-2.5 cursor-pointer rounded-full transition ${
-                    index === activeIndex ? "bg-secondary" : "bg-primary/20 hover:bg-primary/40"
-                  }`}
+                  className={`h-2.5 w-2.5 cursor-pointer rounded-full transition ${index === activeIndex ? "bg-secondary" : "bg-primary/20 hover:bg-primary/40"
+                    }`}
                 />
               ))}
             </div>

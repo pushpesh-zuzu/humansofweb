@@ -8,6 +8,7 @@ import onboard from "../common/Icons/Home/onboarding.svg";
 import strategy from "../common/Icons/Home/strategy-implementaion.svg";
 import operations from "../common/Icons/Home/operations.svg";
 import reporting from "../common/Icons/Home/reporting.svg";
+import GetCtaButton from "../common/CtaButtons/GetCtaButton";
 
 const STEPS = [
     {
@@ -46,6 +47,8 @@ const CustomGeneration = ({
     headdingBlack = "Invest in Growth That",
     headingBlue = "Actually Brings Real Customers",
     steps = STEPS,
+    showCtaButton = false,
+    ctaText,
 }) => {
     return (
         <ContainerWrapper>
@@ -53,8 +56,17 @@ const CustomGeneration = ({
                 <H2HeadingWrapper
                     headdingBlack={headdingBlack}
                     headingBlue={headingBlue}
+                    padding="pb-[30px] md:pb-10 lg:pb-15"
                 />
                 <StepsCard steps={steps} />
+                {
+                    showCtaButton ? (
+                        <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10">
+                            <GetCtaButton text={ctaText}
+                                href="" />
+                        </div>
+                    ) : null
+                }
             </PaddingWrapper2>
         </ContainerWrapper>)
 }

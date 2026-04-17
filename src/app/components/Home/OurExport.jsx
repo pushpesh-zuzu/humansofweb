@@ -11,6 +11,7 @@ function OurExport() {
                 <H2HeadingWrapper
                     headdingBlack="Real Insights That"
                     headingBlue="Help You Grow"
+                    padding="pb-[30px] md:pb-10 lg:pb-15"
                 />
                 <ExportInsight />
             </PaddingWrapper2>

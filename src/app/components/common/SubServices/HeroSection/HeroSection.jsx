@@ -16,7 +16,7 @@ export default function HeroSection({ heading, pinkHeading, description1, descri
                             initial={{ opacity: 0, x: -30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="flex min-h-[320px] max-w-[600px] flex-col justify-center md:mx-auto md:min-h-[420px] md:text-center lg:mx-0 lg:text-left"
+                            className="max-w-[600px] h-full md:text-center md:text-left"
                         >
                             {/* Heading */}
                             <h1 className="text-h1 font-semibold text-white leading-[1.25]">
@@ -25,23 +25,23 @@ export default function HeroSection({ heading, pinkHeading, description1, descri
                             </h1>
 
                             {/* Description */}
-                            <p className="mt-5 p-default text-white max-w-[560px] md:mx-auto lg:mx-0">
+                            <p className="mt-5 p-default text-white max-w-[560px] md:mx-0 lg:mx-0">
                                 {description1}
                             </p>
 
-                            <p className="mt-5 p-default text-white max-w-[560px] md:mx-auto lg:mx-0">
+                            <p className="mt-5 p-default text-white max-w-[560px] md:mx-0 lg:mx-0">
                                 {description2}
                             </p>
 
                             {/* CTA */}
-                            <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
+                            <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-start">
                                 <input
                                     type="text"
                                     placeholder="Enter your website"
                                     className="h-[52px] w-full bg-white rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
                                 />
                                 <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white">
-                                    Get Free Growth Plan
+                                    Book Your Free consultation
                                 </button>
                             </div>
                         </motion.div>

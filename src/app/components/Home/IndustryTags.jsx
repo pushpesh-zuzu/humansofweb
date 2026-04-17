@@ -96,6 +96,7 @@ const IndustryTags = () => {
                         headdingBlack="Industry Expertise"
                         headingBlue="That Keeps Moving"
                         subHeading=""
+                        padding="pb-[22px] md:pb-8 lg:pb-13"
                     />
 
                     <div className="relative">

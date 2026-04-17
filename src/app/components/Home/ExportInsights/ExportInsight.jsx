@@ -71,7 +71,7 @@ const ExportInsight = () => {
 
               <a
                 href="#"
-                className="inline-flex h-12 w-full items-center justify-center rounded-full bg-secondary text-sm font-bold uppercase tracking-widest text-white transition-colors duration-200 hover:bg-primary"
+                className="mt-1 md:mt-[10px] lg:mt-[20px] inline-flex h-12 w-full items-center justify-center rounded-full bg-secondary text-sm font-bold uppercase tracking-widest text-white transition-colors duration-200 hover:bg-primary"
               >
                 Read More
               </a>

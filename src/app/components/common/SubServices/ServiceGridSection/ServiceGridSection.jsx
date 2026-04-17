@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import ContainerWrapper from "../../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
+import H2HeadingWrapper from "../../Container/H2HeadingWrapper";
+import GetCtaButton from "../../CtaButtons/GetCtaButton";
 
 const ServiceGridSection = ({
   title = "",
@@ -18,30 +20,15 @@ const ServiceGridSection = ({
     <ContainerWrapper>
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
         <section className="relative overflow-hidden bg-white">
-          <Image
-            src={backgroundImage}
-            alt=""
-            fill
-            sizes="(min-width: 1280px) 1500px, 100vw"
-            className="object-cover opacity-5"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-[#f8fbff]/95 to-white" />
-
-          <div className="relative z-10 mx-auto max-w-[980px] text-center">
-            <h2 className="text-h2 font-normal leading-[1.15] text-black">
-              {title}{" "}
-              {highlightedTitle ? (
-                <span className="font-bold text-primary">{highlightedTitle}</span>
-              ) : null}
-            </h2>
-            {description ? (
-              <p className="p-small mx-auto mt-5 max-w-[900px] font-medium leading-[1.8] text-[#303030]">
-                {description}
-              </p>
-            ) : null}
+          <div className="relative z-10 max-w-[980px] text-center">
+            <H2HeadingWrapper
+              headdingBlack={title}
+              headingBlue={highlightedTitle}
+              padding="pb-[30px] md:pb-10 lg:pb-15"
+            />
           </div>
 
-          <div className="relative z-10 mx-auto mt-8 max-w-[980px] bg-white px-4 py-2 md:px-8 md:py-4">
+          <div className="relative z-10 mx-auto max-w-[980px] bg-white px-4 md:px-8">
             <div className="grid gap-x-20 gap-y-16 md:grid-cols-2">
               {services.map((service) => {
                 const Icon = service.icon;
@@ -49,12 +36,18 @@ const ServiceGridSection = ({
                 return (
                   <article
                     key={service.title}
-                    className="bg-white"
+                    className="group bg-white"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="h-12 w-12 flex-none">
+                      <div
+                        className="flex flex-none justify-center transition-transform duration-300 group-hover:scale-110"
+                        style={{
+                          width: 68,
+                          height: 89,
+                        }}
+                      >
                         {typeof Icon === "function" ? <Icon /> : (
-                          <Image src={Icon} alt="" width={48} height={48} className="h-full w-full object-contain" />
+                          <Image src={Icon} alt="" width={72} height={72} className="h-full w-full object-contain" />
                         )}
                       </div>
                       <div>
@@ -71,13 +64,9 @@ const ServiceGridSection = ({
           </div>
 
           {ctaText ? (
-            <div className="relative z-10 mt-10 flex justify-center">
-              <Link
-                href={ctaHref}
-                className="inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-secondary"
-              >
-                {ctaText}
-              </Link>
+            <div className="flex relative z-10 justify-center pt-6 md:pt-[30px] lg:pt-10">
+              <GetCtaButton text={ctaText}
+                href="" />
             </div>
           ) : null}
         </section>

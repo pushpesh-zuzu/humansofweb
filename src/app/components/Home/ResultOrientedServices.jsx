@@ -12,6 +12,7 @@ function ResultOrientedServices() {
           headdingBlack="Performance-Driven"
           headingBlue="Solutions"
           subHeading=""
+          padding="pb-[15px] md:pb-6.50 lg:pb-11.25"
         />
         <ServicesSlider1 />
       </PaddingWrapper2>

@@ -105,6 +105,7 @@ function WorkingWithUs() {
             headdingBlack="Trusted by Teams"
             headingBlue="That Want to Grow"
             subHeading=""
+            padding="pb-[18px] md:pb-7 lg:pb-12"
           />
           <div className="relative px-8 xl:px-0">
             <button

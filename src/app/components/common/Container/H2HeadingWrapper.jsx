@@ -10,7 +10,7 @@ function H2HeadingWrapper({
   headingBlackColor = "",
   multiParagraph = [],
   textAlign = "",
-  padding = "pb-6 md:pb-8.75",
+  padding = "pb-5 md:pb-8.75 lg:pb-15",
 }) {
   return (
     <div className={`${padding} ${textAlign ? textAlign : "text-left"}`}>

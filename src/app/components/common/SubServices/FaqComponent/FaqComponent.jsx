@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ContainerWrapper from "../../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
+import H2HeadingWrapper from "../../Container/H2HeadingWrapper";
 
 const FaqComponent = ({
   title = "Frequently asked questions",
@@ -16,12 +17,14 @@ const FaqComponent = ({
   return (
     <ContainerWrapper>
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
-        <section className="mx-auto max-w-[980px]">
-          <div className="text-center">
-            <h2 className="text-h2 font-normal leading-[1.15] text-black">{title}</h2>
-          </div>
+        <section>
+          <H2HeadingWrapper
+              // headdingBlack={title}
+              headingBlue={title}
+              padding="pb-[30px] md:pb-10 lg:pb-15"
+            />
 
-          <div className="mt-8 overflow-hidden rounded-[14px] bg-white shadow-[0_18px_45px_rgba(72,23,156,0.08)]">
+          <div className="mx-auto max-w-[980px] overflow-hidden rounded-[14px] bg-white shadow-[0_18px_45px_rgba(72,23,156,0.08)]">
             {items.map((item, index) => {
               const isOpen = index === openIndex;
 

@@ -8,7 +8,7 @@ const TalkToOurExpertsButton = ({
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-full border border-primary bg-white px-6 p-small font-bold uppercase tracking-[0.08em] text-primary transition hover:bg-primary hover:text-white ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center rounded-full px-6 p-small font-bold uppercase tracking-[0.08em] bg-primary text-white transition hover:bg-secondary ${className}`}
     >
       {text}
     </Link>

@@ -50,9 +50,10 @@ const ServiceSectors = () => {
         <ContainerWrapper>
             <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
                 <section className="text-center">
-                        <H2HeadingWrapper
+                    <H2HeadingWrapper
                         headdingBlack="Win Untapped"
                         headingBlue="Growth Channels"
+                        padding="pb-[30px] md:pb-10 lg:pb-13"
                     />
 
                     {/* Cards */}
@@ -102,7 +103,7 @@ const ServiceSectors = () => {
                                     </p>
 
                                     {/* Button */}
-                                    <button className="mt-8 inline-flex h-12 cursor-pointer items-center justify-center rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-primary">
+                                    <button className="mt-6 md:mt-[30px] lg:mt-[40px] inline-flex h-12 cursor-pointer items-center justify-center rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-primary">
                                         Learn More
                                     </button>
                                 </div>
