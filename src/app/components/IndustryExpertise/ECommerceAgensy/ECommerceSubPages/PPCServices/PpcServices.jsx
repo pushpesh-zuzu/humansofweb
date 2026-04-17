@@ -11,6 +11,11 @@ import PPC_STRATEGY_ITEMS from './PPCServicesData/ppcStrategyItems';
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent';
 import FAQ_DATA from './PPCServicesData/FaqData';
 import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs';
+import audience from "../../../../common/Icons/ppcServices/audience.svg";
+import keyword from "../../../../common/Icons/ppcServices/Keyword-Platform.svg";
+import converting from "../../../../common/Icons/ppcServices/High-Converting.svg";
+import landingpage from "../../../../common/Icons/ppcServices/Landing-Page.svg";
+import testing from "../../../../common/Icons/ppcServices/Continuous-Testing.svg";
 
 const ppcManagement = [
     "At Humans of Web, PPC (pay-per-click) advertising helps your brand appear exactly where your customers are searching. Instead of waiting for organic traffic, we place your products on platforms like Google, YouTube, and Amazon to drive immediate visibility, targeted traffic, and high-intent visitors ready to buy.",
@@ -24,32 +29,32 @@ const STEPS = [
     {
         step: "01",
         title: "Audience & Intent Research",
-        description: "We identify your ideal customers, analyse their behavior, and understand what drives them to click, engage, and convert.",
-        icon: "",
+        description: "We identify your ideal customers, analyze their behavior, and understand what drives them to click, engage, and convert more effectively.",
+        icon: audience,
     },
     {
         step: "02",
         title: "Keyword & Platform Strategy",
-        description: "We select high-intent keywords and the right platforms to ensure your ads reach users who are ready to take action.",
-        icon: "",
+        description: "We select high-intent keywords and the right platforms to ensure your ads reach users who are ready to take immediate action and convert.",
+        icon: keyword,
     },
     {
         step: "03",
         title: "High-Converting Ad Creation",
-        description: "We craft compelling ad copy and creatives that grab attention, communicate value, and encourage users to click and explore.",
-        icon: "",
+        description: "We craft compelling ad copy and creatives that grab attention, communicate value, and encourage users to click, explore, and take meaningful action.",
+        icon: converting,
     },
     {
         step: "04",
         title: "Landing Page Optimization",
         description: "We align ads with optimized landing pages to reduce drop-offs, improve user experience, and increase conversion rates.",
-        icon: "",
+        icon: landingpage,
     },
     {
         step: "05",
         title: "Continuous Testing & Scaling",
         description: "We monitor performance, test variations, and scale winning campaigns to maximise ROI and drive consistent business growth.",
-        icon: "",
+        icon: testing,
     },
 ];
 
