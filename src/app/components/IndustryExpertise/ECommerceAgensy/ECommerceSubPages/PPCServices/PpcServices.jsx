@@ -61,7 +61,7 @@ const PpcServices = () => {
                 pinkHeading={"Scalable Growth"}
                 description1={"Want to unlock your business potential? Supercharge your sales with effective PPC management services designed to attract high-intent traffic and drive consistent conversions."}
                 description2={"Our expert PPC strategies focus on your audience, campaigns, and goals to maximise ROI, increase visibility, and deliver scalable growth for your business."}
-                bannerImage="/"
+                bannerImage="/ppcServices/ppc-banner.webp"
                 altText={"PPC management services boosting ecommerce sales and ROI through targeted ads"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
@@ -69,7 +69,7 @@ const PpcServices = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="What Does eCommerce "
                 headingBlue="PPC Management Really Do?"
-                image="/"
+                image="/ppcServices/ppc-analytics.webp"
                 imageAltText="ecommerce PPC management process showing ad optimization, keyword targeting, and performance tracking"
                 paragraphs={ppcManagement}
                 headingBlueColor="text-secondary"
