@@ -24,7 +24,7 @@ const FaqComponent = ({
               padding="pb-[30px] md:pb-10 lg:pb-15"
             />
 
-          <div className="mx-auto max-w-[980px] overflow-hidden rounded-[14px] bg-white shadow-[0_18px_45px_rgba(72,23,156,0.08)]">
+          <div className="max-w-[980px] overflow-hidden rounded-[14px] bg-white shadow-[0_18px_45px_rgba(72,23,156,0.08)]">
             {items.map((item, index) => {
               const isOpen = index === openIndex;
 

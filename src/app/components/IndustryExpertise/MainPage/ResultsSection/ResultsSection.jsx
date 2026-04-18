@@ -223,18 +223,18 @@ export default function ResultsSection() {
           </div>
 
           {/* Divider */}
-          <div className="flex items-center gap-4 mb-8">
+          {/* <div className="flex items-center gap-4 mb-8">
             <div className="flex-1 h-px" style={{ background: "rgba(255,255,255,0.07)" }}/>
             <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em" }}>
               Case Snapshots
             </span>
             <div className="flex-1 h-px" style={{ background: "rgba(255,255,255,0.07)" }}/>
-          </div>
+          </div> */}
 
           {/* Case cards */}
-          <div className="flex flex-col lg:flex-row gap-4 mb-12">
+          {/* <div className="flex flex-col lg:flex-row gap-4 mb-12">
             {CASES.map((c) => <CaseCard key={c.brand} c={c} animate={animate} />)}
-          </div>
+          </div> */}
 
           {/* Bottom CTA */}
           <div className="text-center">

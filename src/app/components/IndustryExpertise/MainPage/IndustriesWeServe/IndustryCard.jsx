@@ -59,8 +59,10 @@ function ExtraTagsPopover({
       />
 
       {tags.map((tag, i) => (
-        <span
-          key={tag}
+        <a
+         href={tag.link}
+          key={tag.title}
+
           style={{
             fontSize: "0.72rem",
             fontWeight: 600,
@@ -76,23 +78,20 @@ function ExtraTagsPopover({
                          transform 0.1s ease ${i * 0.4 + 0.04}s`,
           }}
         >
-          {tag}
-        </span>
+          {tag.title}
+        </a>
       ))}
     </div>
   );
 }
 
-function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
+function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link }) {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [cardHover, setCardHover] = useState(false);
 
   const visibleTags = tags.slice(0, VISIBLE_COUNT);
   const extraTags = tags.slice(VISIBLE_COUNT);
 
-  // ── Shared handlers for pill + popover ──────────────────────────────────────
-  // timeout trick: agar mouse pill se popover ki taraf ja raha ho,
-  // toh us beech ka chota gap cross karte waqt close na ho
   let closeTimer = null;
 
   const handleOpen = () => {
@@ -110,8 +109,8 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
         padding: 2,
         background: borderGradient(reverse),
         height: "100%",
-        transition: "transform 0.3s ease",
-        transform: cardHover ? "translateY(-6px)" : "translateY(0)",
+        // transition: "transform 0.3s ease",
+        // transform: cardHover ? "translateY(-6px)" : "translateY(0)",
       }}
       onMouseEnter={() => setCardHover(true)}
       onMouseLeave={() => setCardHover(false)}
@@ -132,27 +131,20 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
       >
         {/* Icon */}
         <div
-          style={{
-            width: 56,
-            height: 56,
-            borderRadius: 14,
-            background: bg,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexShrink: 0,
-          }}
+          className="flex flex-row gap-3 items-center"
         >
           {icon}
-        </div>
 
         {/* Title */}
-        <h3
+        <a href={link}>
+          <h3
           className="text-h5 font-bold leading-snug"
           style={{ color: "#48179C", margin: 0 }}
         >
           {title}
         </h3>
+        </a>
+        </div>
 
         {/* Description */}
         <p
@@ -174,8 +166,9 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
           >
             {/* Visible tags — NO hover handlers here */}
             {visibleTags.map((tag) => (
-              <span
-                key={tag}
+              <a 
+              href={tag.link}
+                key={tag.title}
                 style={{
                   fontSize: "0.72rem",
                   fontWeight: 600,
@@ -187,8 +180,8 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
                   whiteSpace: "nowrap",
                 }}
               >
-                {tag}
-              </span>
+                {tag.title}
+              </a>
             ))}
 
             {/* +N more pill — ONLY this triggers open */}

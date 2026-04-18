@@ -1,6 +1,7 @@
 export const INDUSTRIES = [
   {
     title: "E-commerce",
+    link: "/ecommerce-marketing-agency",
     description:
       "We build growth engines for online stores — from product SEO and Google Shopping to email flows that bring customers back.",
     icon: (
@@ -24,60 +25,47 @@ export const INDUSTRIES = [
       </svg>
     ),
     tags: [
-      "E-Commerce SEO",
-      "E-Commerce PPC",
-      "E-Commerce Website Development",
-      "E-Commerce Social Media Marketing",
-      "E-Commerce CRO",
-      "E-Commerce GEO Services",
-      "E-Commerce Email Marketing",
-      "E-Commerce Content Marketing",
-      "E-Commerce Amazon Marketing",
+      {
+        title: "E-Commerce SEO",
+        link: "/ecommerce-marketing-agency/seo-services",
+      },
+      {
+        title: "E-Commerce PPC",
+        link: "/ecommerce-marketing-agency/ppc-services",
+      },
+      {
+        title: "E-Commerce Website Development",
+        link: "/ecommerce-marketing-agency/website-design",
+      },
+      {
+        title: "E-Commerce Social Media Marketing",
+        link: "/ecommerce-marketing-agency/social-media-marketing",
+      },
+      { title: "E-Commerce CRO", link: "/ecommerce-marketing-agency/cro" },
+      {
+        title: "E-Commerce GEO Services",
+        link: "/ecommerce-marketing-agency/geo-services",
+      },
+      {
+        title: "E-Commerce Email Marketing",
+        link: "/ecommerce-marketing-agency/email-marketing",
+      },
+      {
+        title: "E-Commerce Content Marketing",
+        link: "/ecommerce-marketing-agency/content-marketing",
+      },
+      {
+        title: "Amazon Marketing",
+        link: "/ecommerce-marketing-agency/amazon-marketing",
+      },
     ],
     accent: "#16a34a",
     bg: "#f0fdf4",
   },
 
   {
-    title: "SaaS & Tech",
-    description:
-      "We help SaaS brands rank for high-intent keywords, drive trial signups, and reduce churn through strategic content and paid growth.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#f0f9ff" />
-        <rect
-          x="14"
-          y="20"
-          width="28"
-          height="18"
-          rx="3"
-          stroke="#0284c7"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path d="M14 32h28" stroke="#0284c7" strokeWidth="1.5" />
-        <circle cx="28" cy="42" r="2" fill="#0284c7" />
-        <path
-          d="M22 42h12"
-          stroke="#0284c7"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M20 26l3 3-3 3M27 29h9"
-          stroke="#0284c7"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
-    tags: ["SaaS SEO", "SaaS PPC"],
-    accent: "#0284c7",
-    bg: "#f0f9ff",
-  },
-  {
     title: "Dental",
+    link: "/dental-digital-marketing-agency",
     description:
       "We help dental clinics attract more patients with local SEO, appointment-driven ads, and high-converting websites.",
     icon: (
@@ -97,13 +85,29 @@ export const INDUSTRIES = [
         />
       </svg>
     ),
-    tags: ["Dental SEO", "Dental Web Design"],
+    tags: [
+      { title: "Dental SEO", link: "/dental-digital-marketing-agency/seo" },
+      { title: "Dental PPC", link: "/dental-digital-marketing-agency/ppc" },
+      {
+        title: "Dental Website Development",
+        link: "/dental-digital-marketing-agency/website-development",
+      },
+      {
+        title: "Dental Social Media Marketing",
+        link: "/dental-digital-marketing-agency/social-media-marketing",
+      },
+      {
+        title: "Dental Reputation Management",
+        link: "/dental-digital-marketing-agency/reputation-management",
+      },
+    ],
     accent: "#4f46e5",
     bg: "#eef2ff",
   },
 
   {
     title: "Healthcare",
+    link: "/healthcare-marketing-agency",
     description:
       "We support healthcare providers with compliant marketing strategies that increase visibility, trust, and patient acquisition.",
     icon: (
@@ -117,13 +121,29 @@ export const INDUSTRIES = [
         />
       </svg>
     ),
-    tags: ["Healthcare SEO", "Healthcare PPC"],
+    tags: [
+      { title: "Healthcare SEO", link: "/healthcare-marketing-agency/seo" },
+      { title: "Healthcare PPC", link: "/healthcare-marketing-agency/ppc" },
+      {
+        title: "Healthcare Website Design & Development",
+        link: "/healthcare-marketing-agency/website-design",
+      },
+      {
+        title: "Healthcare Link Building",
+        link: "/healthcare-marketing-agency/link-building",
+      },
+      {
+        title: "Healthcare Social Media Marketing",
+        link: "/healthcare-marketing-agency/social-media-marketing",
+      },
+    ],
     accent: "#0891b2",
     bg: "#ecfeff",
   },
 
   {
     title: "Ophthalmology",
+    link: "/ophthalmology-digital-marketing-agency",
     description:
       "We help eye care specialists grow with targeted campaigns, local SEO, and content that builds patient trust.",
     icon: (
@@ -137,13 +157,27 @@ export const INDUSTRIES = [
         <circle cx="28" cy="28" r="4" stroke="#0d9488" strokeWidth="2" />
       </svg>
     ),
-    tags: ["Ophthalmology SEO", "Ophthalmology Web Design"],
+    tags: [
+      {
+        title: "Ophthalmology SEO",
+        link: "/ophthalmology-digital-marketing-agency/seo",
+      },
+      {
+        title: "Ophthalmology PPC",
+        link: "/ophthalmology-digital-marketing-agency/ppc",
+      },
+      {
+        title: "Ophthalmology Website Design & Development",
+        link: "/ophthalmology-digital-marketing-agency/website-design",
+      },
+    ],
     accent: "#0d9488",
     bg: "#f0fdfa",
   },
 
   {
     title: "Chiropractor",
+    link: "/chiropractor-digital-marketing-agency",
     description:
       "We help chiropractic clinics increase bookings with local search optimization, paid ads, and conversion-focused landing pages.",
     icon: (
@@ -157,13 +191,35 @@ export const INDUSTRIES = [
         />
       </svg>
     ),
-    tags: ["Chiropractor SEO"],
+    tags: [
+      {
+        title: "Chiropractor SEO",
+        link: "/chiropractor-digital-marketing-agency/seo",
+      },
+      {
+        title: "Chiropractor PPC",
+        link: "/chiropractor-digital-marketing-agency/ppc",
+      },
+      {
+        title: "Chiropractor Website Design & Development",
+        link: "/chiropractor-digital-marketing-agency/website-design",
+      },
+      {
+        title: "Chiropractor Social Media Marketing",
+        link: "/chiropractor-digital-marketing-agency/social-media-marketing",
+      },
+      {
+        title: "Chiropractor Reputation Management",
+        link: "/chiropractor-digital-marketing-agency/reputation-management",
+      },
+    ],
     accent: "#dc2626",
     bg: "#fef3f2",
   },
 
   {
     title: "Plastic Surgeon",
+    link: "/plastic-surgeon-digital-marketing-agency",
     description:
       "We help cosmetic clinics attract high-value clients through premium branding, SEO, and targeted ad campaigns.",
     icon: (
@@ -182,13 +238,35 @@ export const INDUSTRIES = [
         />
       </svg>
     ),
-    tags: ["Plastic Surgeon SEO"],
+    tags: [
+      {
+        title: "Plastic Surgeon SEO",
+        link: "/plastic-surgeon-digital-marketing-agency/seo",
+      },
+      {
+        title: "Plastic Surgeon PPC",
+        link: "/plastic-surgeon-digital-marketing-agency/ppc",
+      },
+      {
+        title: "Plastic Surgeon Website Design & Development",
+        link: "/plastic-surgeon-digital-marketing-agency/website-design",
+      },
+      {
+        title: "Plastic Surgeon Social Media Marketing",
+        link: "/plastic-surgeon-digital-marketing-agency/social-media-marketing",
+      },
+      {
+        title: "Plastic Surgeon Reputation Management",
+        link: "/plastic-surgeon-digital-marketing-agency/reputation-management",
+      },
+    ],
     accent: "#e11d48",
     bg: "#fff1f2",
   },
 
   {
     title: "Legal",
+    link: "/law-firm-digital-marketing",
     description:
       "We help law firms generate qualified leads with SEO, paid ads, and authority-driven content strategies.",
     icon: (
@@ -202,7 +280,10 @@ export const INDUSTRIES = [
         />
       </svg>
     ),
-    tags: ["Legal SEO", "Legal PPC"],
+    tags: [
+      { title: "Legal SEO", link: "/law-firm-digital-marketing/seo" },
+      { title: "Legal PPC", link: "/law-firm-digital-marketing/ppc" },
+    ],
     accent: "#374151",
     bg: "#f9fafb",
   },
@@ -247,75 +328,13 @@ export const INDUSTRIES = [
         />
       </svg>
     ),
-    tags: ["Local SEO", "Google Ads", "Reviews"],
+    tags: [
+      { title: "Local SEO", link: "" },
+      { title: "Google Ads", link: "" },
+      { title: "Reviews", link: "" },
+    ],
     accent: "#48179C",
     bg: "#f5f0ff",
-  },
-  {
-    title: "Real Estate",
-    description:
-      "We help agents and developers attract high-intent buyers and sellers with targeted content, paid campaigns, and SEO that converts.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#fff0f3" />
-        <rect
-          x="10"
-          y="24"
-          width="14"
-          height="20"
-          rx="2"
-          stroke="#F65A75"
-          strokeWidth="2"
-          fill="none"
-        />
-        <rect
-          x="28"
-          y="18"
-          width="18"
-          height="26"
-          rx="2"
-          stroke="#F65A75"
-          strokeWidth="2"
-          fill="none"
-        />
-        <rect
-          x="31"
-          y="28"
-          width="5"
-          height="6"
-          rx="1"
-          fill="#F65A75"
-          opacity="0.5"
-        />
-        <rect
-          x="39"
-          y="28"
-          width="4"
-          height="6"
-          rx="1"
-          fill="#F65A75"
-          opacity="0.5"
-        />
-        <rect
-          x="31"
-          y="22"
-          width="5"
-          height="4"
-          rx="1"
-          fill="#F65A75"
-          opacity="0.5"
-        />
-        <path
-          d="M10 44h36"
-          stroke="#F65A75"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-    tags: ["Lead Gen", "Content Marketing", "SEO"],
-    accent: "#F65A75",
-    bg: "#fff0f3",
   },
   {
     title: "Professional Services",
@@ -363,7 +382,20 @@ export const INDUSTRIES = [
         />
       </svg>
     ),
-    tags: ["Authority Building", "Lead Gen", "Content"],
+    tags: [
+      {
+        title: "Authority Building",
+        link: "#",
+      },
+      {
+        title: "Lead Gen",
+        link: "#",
+      },
+      {
+        title: "Content",
+        link: "#",
+      },
+    ],
     accent: "#d97706",
     bg: "#fffbeb",
   },

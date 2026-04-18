@@ -41,7 +41,7 @@ export default function ServicesTwoGridDescriptionAndImage({
               headdingBlack={headdingBlack}
               headingBlue={headingBlue}
               subHeading={subheading}
-              breakLine={breakLine}
+              // breakLine={breakLine}
               padding="pb-[35px] md:pb-[60px]"
               headingBlueColor={headingBlueColor}
               headingBlackColor={headingBlackColor}
@@ -88,7 +88,7 @@ export default function ServicesTwoGridDescriptionAndImage({
               subHeading={subheading}
               breakLine={breakLine}
               padding="pb-[35px] md:pb-[60px]"
-              headingBlueColor={headingBlueColor}
+              // headingBlueColor={headingBlueColor}
               headingBlackColor={headingBlackColor}
                 />
               )}
