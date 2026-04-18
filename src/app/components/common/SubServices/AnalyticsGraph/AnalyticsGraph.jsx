@@ -58,6 +58,7 @@ const AnalyticsGraph = ({
             headdingBlack={title}
             headingBlue={highlightedTitle}
             padding="pb-[30px] md:pb-10 lg:pb-15"
+            textAlign="text-center"
           />
 
           <div className="relative mx-auto max-w-[1040px]">

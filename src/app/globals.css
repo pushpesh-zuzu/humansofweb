@@ -55,3 +55,36 @@ body {
 .animate-marquee-scroll:hover {
   animation-play-state: paused;
 }
+
+/* Remove flag background + border */
+.react-tel-input .flag-dropdown {
+  background: transparent !important;
+  border: none !important;
+}
+
+.react-tel-input .flag-dropdown:hover {
+  background: transparent !important;
+  border: none !important;
+}
+
+.react-tel-input .selected-flag:hover {
+  background: transparent !important;
+}
+
+.react-tel-input .selected-flag:focus {
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Fix focus border like your inputs */
+.react-tel-input .form-control:focus {
+  border-color: #a855f7 !important; /* purple-500 */
+  box-shadow: 0 0 0 2px #f3e8ff !important; /* purple-100 */
+}
+
+/* Optional: dropdown styling */
+.react-tel-input .country-list {
+  border-radius: 10px;
+  border: 1px solid #eee;
+}

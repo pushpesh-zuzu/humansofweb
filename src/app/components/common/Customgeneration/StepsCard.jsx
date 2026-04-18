@@ -21,13 +21,13 @@ const StepsCard = ({
             {steps.map((item, index) => (
                 <article
                     key={item.step ?? item.title}
-                    className="group overflow-hidden p-[2px] transition-transform duration-300 hover:-translate-y-1.5"
+                    className="group overflow-hidden p-[2px]"
                     style={{
                         borderRadius: 16,
                         background: borderGradient(index % 2 !== 0),
                     }}
                 >
-                    <div className="flex min-h-[300px] flex-col bg-[#f5f6ff] p-6 transition-shadow duration-300 group-hover:shadow-[0_12px_36px_rgba(72,23,156,0.2)] rounded-[14px] xl:min-h-[320px]">
+                    <div className="flex min-h-[300px] flex-col bg-[#f5f6ff] p-6 rounded-[14px] xl:min-h-[320px]">
                         <div className="flex items-center gap-4">
                             {item.icon && (
                                 <div

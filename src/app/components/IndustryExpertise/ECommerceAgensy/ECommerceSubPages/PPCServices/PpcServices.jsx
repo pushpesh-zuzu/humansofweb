@@ -66,7 +66,7 @@ const PpcServices = () => {
                 pinkHeading={"Scalable Growth"}
                 description1={"Want to unlock your business potential? Supercharge your sales with effective PPC management services designed to attract high-intent traffic and drive consistent conversions."}
                 description2={"Our expert PPC strategies focus on your audience, campaigns, and goals to maximise ROI, increase visibility, and deliver scalable growth for your business."}
-                bannerImage="/ppcServices/ppc-banner.webp"
+                bannerImage="/ppcServices/ppc-banner.svg"
                 altText={"PPC management services boosting ecommerce sales and ROI through targeted ads"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />

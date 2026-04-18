@@ -137,7 +137,7 @@ const EmailMarketing = () => {
         pinkHeading={"Brings Customers Back"}
         description1={"We build ecommerce email and automation systems that nurture shoppers, recover lost carts, increase repeat purchases, and grow customer lifetime value."}
         description2={"Humans of Web combines strategy, copy, segmentation, flows, campaigns, and reporting so your owned channel becomes a reliable revenue engine."}
-        bannerImage="/"
+        bannerImage="/emailMarketing/email-banner.svg"
         altText={"email marketing strategy increasing customer lifetime value and repeat sales"}
       />
       <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />

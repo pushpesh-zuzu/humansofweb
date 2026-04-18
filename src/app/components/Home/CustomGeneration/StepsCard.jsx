@@ -55,7 +55,7 @@ const StepsCard = () => {
             {STEPS.map((item, index) => (
                 <article
                     key={item.step}
-                    className="group overflow-hidden p-[2px] transition-transform duration-300 hover:-translate-y-1.5"
+                    className="group overflow-hidden p-[2px]"
                     style={{
                         borderRadius: 16,
                         background: borderGradient(index % 2 !== 0),

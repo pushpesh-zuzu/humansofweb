@@ -61,14 +61,14 @@ const ServiceSectors = () => {
                         {SERVICES.map((service, index) => (
                             <article
                                 key={service.title}
-                                className="group overflow-hidden p-[2px] transition-transform duration-300 hover:-translate-y-1.5"
+                                className="overflow-hidden p-[2px]"
                                 style={{
                                     borderRadius: 28,
                                     background: borderGradient(index % 2 !== 0),
                                 }}
                             >
                                 <div
-                                    className={`overflow-hidden rounded-[26px] p-8 transition-all duration-300 group-hover:shadow-[0_12px_36px_rgba(72,23,156,0.2)] ${service.highlight ? 'bg-[#f9f7ff]' : 'bg-white'
+                                    className={`overflow-hidden rounded-[26px] p-8 ${service.highlight ? 'bg-[#f9f7ff]' : 'bg-white'
                                         }`}
                                 >
                                     {/* Icon */}

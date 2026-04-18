@@ -71,7 +71,7 @@ const SeoServices = () => {
                 pinkHeading={"Drives Sales"}
                 description1={"We help your products rank higher, reach the right buyers, and turn search visibility into consistent sales that drive measurable business growth."}
                 description2={"Our tailored SEO strategies focus on your store, products, and customers to build a growth plan that delivers sustainable results and long-term success."}
-                bannerImage="/IndustryExpertise/seo-banner.webp"
+                bannerImage="/seoServices/seo.svg"
                 altText={"E-commerce SEO That Drives Sales"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />

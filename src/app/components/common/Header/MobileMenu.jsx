@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function MobileMenu({ items, open, onClose }) {
+export default function MobileMenu({ items, open, onClose, onProposalClick }) {
   const [openIdx, setOpenIdx] = useState(null);
   const [openSubIdx, setOpenSubIdx] = useState(null);
 
@@ -195,12 +195,16 @@ export default function MobileMenu({ items, open, onClose }) {
         </div>
 
         <div className="border-t border-white/20 p-4">
-          <Link
-            href="#"
+          <button
+            type="button"
+            onClick={() => {
+              handleClose();
+              onProposalClick?.();
+            }}
             className="block w-full rounded border-2 border-secondary bg-secondary px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-transparent hover:text-secondary"
           >
             GET A PROPOSAL
-          </Link>
+          </button>
         </div>
       </div>
     </div>

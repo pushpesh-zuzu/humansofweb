@@ -41,7 +41,7 @@ const ExportInsight = () => {
       {INSIGHTS.map((insight, index) => (
         <article
           key={insight.title}
-          className="group overflow-hidden p-0.5 transition-transform duration-300 hover:-translate-y-1.5"
+          className="group overflow-hidden p-0.5"
           style={{
             borderRadius: 28,
             background: borderGradient(index % 2 !== 0),

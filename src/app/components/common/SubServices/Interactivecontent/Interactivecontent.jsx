@@ -27,6 +27,7 @@ const Interactivecontent = ({
                         headdingBlack={headingStart}
                         headingBlue={headingEnd}
                         padding="pb-[30px] md:pb-10 lg:pb-15"
+                        textAlign="text-center"
                     />
 
                     <div className="mx-auto max-w-[1130px] rounded-[14px] bg-gradient-to-br from-primary to-secondary p-[2px] shadow-[0_14px_34px_rgba(72,23,156,0.15)]">

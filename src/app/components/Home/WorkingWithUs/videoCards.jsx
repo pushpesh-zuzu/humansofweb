@@ -5,7 +5,7 @@ export default function VideoCards({ testimonial, onPlay }) {
 
   return (
     <div
-      className="group relative mx-auto flex h-[275px] w-full max-w-[450px] flex-col overflow-hidden border-2 border-primary bg-primary text-white transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_18px_40px_rgba(72,23,156,0.28)] md:h-[315px] xl:h-[390px]"
+      className="group relative mx-auto flex h-[275px] w-full max-w-[450px] flex-col overflow-hidden border-2 border-primary bg-primary text-white md:h-[315px] xl:h-[390px]"
       style={{
         borderRadius: 18,
       }}

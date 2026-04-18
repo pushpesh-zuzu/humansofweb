@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react";
 import Link from "next/link";
 import {
   FaEnvelope,
@@ -10,6 +13,7 @@ import {
 } from "react-icons/fa6";
 import NAV_ITEMS from "../Header/navData";
 import Logo from "../Icons/Home/Logo";
+import GetProposalModal from "../GetProposalModal/GetProposalModal";
 
 const SOCIAL_LINKS = [
   { label: "Facebook", href: "#", icon: FaFacebookF },
@@ -56,6 +60,8 @@ const CONTACT_INFO = [
 ];
 
 const Footer = () => {
+  const [proposalOpen, setProposalOpen] = useState(false);
+
   return (
     <footer className="bg-white">
       <div className="mx-auto px-4 sm:px-6 lg:px-13">
@@ -110,6 +116,7 @@ const Footer = () => {
               />
               <button
                 type="button"
+                onClick={() => setProposalOpen(true)}
                 className="h-12 w-full cursor-pointer rounded-full bg-secondary px-5 p-small font-bold uppercase tracking-[0.04em] text-white transition hover:bg-white hover:text-primary md:w-auto"
               >
                 Get Your Free Proposal
@@ -157,24 +164,24 @@ const Footer = () => {
               </div>
             </div>
 
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            {visibleNavItems.map((item) => (
-              <div key={item.label}>
-                <h3 className="p-default font-bold text-white">{item.label}</h3>
-                <div className="mt-3 grid gap-2">
-                  {getFooterLinks(item).map((link) => (
-                    <Link
-                      key={link.label}
-                      href={link.href}
-                      className="p-small text-white/75 transition hover:text-secondary"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+            <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+              {visibleNavItems.map((item) => (
+                <div key={item.label}>
+                  <h3 className="p-default font-bold text-white">{item.label}</h3>
+                  <div className="mt-3 grid gap-2">
+                    {getFooterLinks(item).map((link) => (
+                      <Link
+                        key={link.label}
+                        href={link.href}
+                        className="p-small text-white/75 transition hover:text-secondary"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-6 border-t border-white/20 pt-5">
@@ -184,6 +191,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </footer>
   );
 };

@@ -35,6 +35,7 @@ const SeoPerformance = () => {
                         headingBlue="Long-Term Growth"
                         subHeading=""
                         padding="pb-[30px] md:pb-10 lg:pb-15"
+                        textAlign="text-center"
                     />
                     <div className="mx-auto grid max-w-[1100px] gap-6 md:grid-cols-3">
                         {PERFORMANCE_STATS.map(({ value, label, icon }) => (

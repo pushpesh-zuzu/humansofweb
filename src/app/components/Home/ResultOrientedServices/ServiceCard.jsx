@@ -27,13 +27,6 @@ export default function ServiceCard({
         padding: 2,
         background: borderGradient(reverse),
         margin: "0 10px",
-        transition: "transform 0.3s ease",
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.transform = "translateY(-6px)";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.transform = "translateY(0)";
       }}
     >
       <div
@@ -45,14 +38,7 @@ export default function ServiceCard({
           minHeight: 350,
           display: "flex",
           flexDirection: "column",
-          transition: "box-shadow 0.3s ease",
           cursor: "default",
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.boxShadow = "0 12px 36px rgba(72,23,156,0.2)";
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.boxShadow = "none";
         }}
       >
         <div

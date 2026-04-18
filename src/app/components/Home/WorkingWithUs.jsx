@@ -12,7 +12,7 @@ const TESTIMONIALS = [
   {
     brand: "PURE",
     title: "Driving growth through consistent results and real impact.",
-    name: "Linda Zindroski",
+    name: "David Elson",
     company: "Purr Glass",
     image: "/Home/thumb1.webp",
     video: "/Home/thumbvideo1.mp4",
@@ -22,7 +22,7 @@ const TESTIMONIALS = [
   {
     brand: "RUSTY",
     title: "Turning vision into measurable digital success.",
-    name: "Ben Stewart",
+    name: "Stephanie Sharkey",
     company: "Rusty Rooster Metal",
     image: "/Home/thumb2.webp",
     video: "/Home/thumbvideo2.mp4",
@@ -32,7 +32,7 @@ const TESTIMONIALS = [
   {
     brand: "COAST",
     title: "Scaling traffic and sales with the right strategy.",
-    name: "Garry Mueller",
+    name: "Chris Glasser",
     company: "Treasure Coast Metal Detector",
     image: "/Home/thumb3.webp",
     video: "/Home/thumbvideo3.mp4",

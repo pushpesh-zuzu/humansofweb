@@ -195,7 +195,7 @@ const GeoServices = () => {
                 pinkHeading={"Optimization Services"}
                 description1={"As the digital landscape evolves, relying only on traditional SEO is no longer enough to maintain strong online visibility and stay competitive."}
                 description2={"With AI-driven and generative search engines rising, GEO ensures your business stays discoverable, relevant, and visible across modern search experiences."}
-                bannerImage="/geoServices/geo-banner.webp"
+                bannerImage="/geoServices/geo-banner.svg"
                 altText={"ai driven search optimization for ecommerce visibility and discoverability"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />

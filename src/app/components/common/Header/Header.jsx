@@ -8,9 +8,11 @@ import MobileMenu from "./MobileMenu";
 import NAV_ITEMS from "./navData";
 import Logo from "../Icons/Home/Logo";
 import HeaderMotionStrip from "./HeaderMotionStrip";
+import GetProposalModal from "../GetProposalModal/GetProposalModal";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [proposalOpen, setProposalOpen] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -42,12 +44,13 @@ export default function Header() {
 
             {/* CTA + Hamburger */}
             <div className="flex items-center gap-3">
-              <Link
-                href="#"
-                className="hidden md:inline-flex rounded-full items-center button-outline font-bold text-[#4b4b4b] border-1 hover:border-secondary px-4.5 py-3.75 hover:bg-secondary hover:text-white transition-colors duration-200"
+              <button
+                type="button"
+                onClick={() => setProposalOpen(true)}
+                className="hidden md:inline-flex rounded-full items-center button-outline font-bold text-[#4b4b4b] border-1 hover:border-secondary px-4.5 py-3.75 hover:bg-secondary hover:text-white transition-colors duration-200 cursor-pointer"
               >
                 GET A PROPOSAL
-              </Link>
+              </button>
 
               <button
                 onClick={() => setMobileOpen((v) => !v)}
@@ -77,6 +80,14 @@ export default function Header() {
         items={NAV_ITEMS}
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}
+        onProposalClick={() => {
+          setMobileOpen(false);
+          setProposalOpen(true);
+        }}
+      />
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
       />
     </header>
   );

@@ -7,6 +7,17 @@ import ServicesTwoGridSection from "@/app/components/common/SubServices/Services
 import WorkWithCards from "@/app/components/common/SubServices/WorkWithCards/WorkWithCards";
 import TrustedBy from "@/app/components/common/TrustedBy/TrustedBy";
 import CustomGeneration from "@/app/components/Home/CustomGeneration";
+import audit from '../../../../common/Icons/amazon/audit-marketplace.svg'
+import launch from '../../../../common/Icons/amazon/launch-smarter.svg'
+import shopper from '../../../../common/Icons/amazon/map-shopper.svg'
+import measureScale from '../../../../common/Icons/amazon/measure-scale.svg'
+import optimize from '../../../../common/Icons/amazon/optimize-listings.svg'
+import performance from '../../../../common/Icons/amazon/clear-performance.svg'
+import smart from '../../../../common/Icons/amazon/smarter-sponsored.svg'
+import listing from '../../../../common/Icons/amazon/listings-built.svg'
+import market from '../../../../common/Icons/amazon/marketplace-first.svg'
+
+
 
 const serviceParagraph = [
   "Amazon is not just another sales channel. It is a search engine, marketplace, review platform, and conversion funnel working together in one fast-moving environment.",
@@ -20,25 +31,25 @@ const MARKETING_WORK_CARDS = [
     title: "Marketplace-First Strategy",
     description:
       "We shape your Amazon plan around shopper behavior, product economics, category competition, and the search terms that actually influence purchases.",
-    // icon: detailedAuditIcon,
+    icon: market,
   },
   {
     title: "Listings Built to Convert",
     description:
       "We improve titles, bullets, images, A plus content, and product messaging so shoppers understand value faster and move confidently toward checkout.",
-    // icon: contentOptimizationIcon,
+    icon: listing,
   },
   {
     title: "Smarter Sponsored Ads",
     description:
       "We structure campaigns to control wasted spend, test keywords, find profitable segments, and scale the ad groups that produce measurable revenue.",
-    // icon: organicTrafficIcon,
+    icon: smart,
   },
   {
     title: "Clear Performance Tracking",
     description:
       "We monitor rankings, sales trends, conversion rates, and advertising metrics so every optimization has a clear reason behind it.",
-    // icon: revenueIcon,
+    icon: performance,
   },
 ]
 
@@ -84,36 +95,36 @@ const STEPS = [
     step: "01",
     title: "Audit Marketplace Position",
     description:
-      "We review listings, ads, rankings, reviews, competitors, and conversion signals to find the highest-impact opportunities.",
-    // icon: detailedAuditIcon,
+      "We review listings, ads, rankings, reviews, competitors, and conversion signals to find the highest-impact business growth opportunities.",
+    icon: audit,
   },
   {
     step: "02",
     title: "Map Shopper Intent",
     description:
       "We identify search terms, buying questions, and category expectations that shape how customers discover and compare your products.",
-    // icon: keywordResearchIcon,
+    icon: shopper,
   },
   {
     step: "03",
     title: "Optimize Listings",
     description:
-      "We refine content, structure, visuals, and product messaging so every listing is built to earn attention and convert.",
-    // icon: contentOptimizationIcon,
+      "We refine content, structure, visuals, and product messaging so every listing is built to earn strong customer attention and convert effectively into real sales consistently.",
+    icon: optimize,
   },
   {
     step: "04",
     title: "Launch Smarter Campaigns",
     description:
       "We build paid campaigns with clean targeting, testing logic, and budget controls to improve sales without losing margin discipline.",
-    // icon: organicTrafficIcon,
+    icon: launch,
   },
   {
     step: "05",
     title: "Measure and Scale",
     description:
-      "We track what works, cut what wastes budget, and scale the products, keywords, and campaigns with the strongest return.",
-    // icon: revenueIcon,
+      "We track what works, cut what wastes budget, and scale the products, keywords, and campaigns with the strongest return consistently and profitably.",
+    icon: measureScale,
   },
 ]
 
@@ -172,7 +183,7 @@ const AmazonMarketing = () => {
         pinkHeading={"Turns Searches Into Sales"}
         description1={"We help ecommerce brands win more visibility, clicks, and conversions on Amazon with marketplace strategies built around real shopper intent."}
         description2={"From listing optimization to sponsored ads and performance reporting, Humans of Web helps your products stand out where customers are ready to buy."}
-        bannerImage="/"
+        bannerImage="/amazonMarketing/amazon.svg"
         altText={"amazon listing optimization and ads driving ecommerce conversions"}
       />
       <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />

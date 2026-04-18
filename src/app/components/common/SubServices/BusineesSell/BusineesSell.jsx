@@ -39,6 +39,7 @@ const BusineesSell = ({
             headdingBlack={titleStart}
             headingBlue={highlightedTitle}
             padding="pb-[30px] md:pb-10 lg:pb-15"
+            textAlign="text-center"
           />
           <div className="relative z-10 mx-auto max-w-[1180px]">
             <div className="mx-auto flex max-w-[1040px] flex-col gap-4">

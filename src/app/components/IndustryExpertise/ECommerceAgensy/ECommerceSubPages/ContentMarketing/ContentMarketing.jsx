@@ -143,7 +143,7 @@ const ContentMarketing = () => {
         pinkHeading={"Builds Demand"}
         description1={"We create ecommerce content that attracts qualified visitors, answers buying questions, and moves customers closer to purchase."}
         description2={"From product education to SEO content and campaign assets, Humans of Web turns content into a practical growth channel for your brand."}
-        bannerImage="/"
+        bannerImage="/contentMarketing/content-banner.svg"
         altText={"content marketing strategy driving ecommerce traffic and customer demand"}
       />
       <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />

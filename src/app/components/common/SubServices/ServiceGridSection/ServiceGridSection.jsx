@@ -20,11 +20,12 @@ const ServiceGridSection = ({
     <ContainerWrapper>
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
         <section className="relative overflow-hidden bg-white">
-          <div className="relative z-10 max-w-[980px] text-center">
+          <div className="relative z-10 max-w-[980px] mx-auto text-center">
             <H2HeadingWrapper
               headdingBlack={title}
               headingBlue={highlightedTitle}
               padding="pb-[30px] md:pb-10 lg:pb-15"
+              textAlign="text-center"
             />
           </div>
 
