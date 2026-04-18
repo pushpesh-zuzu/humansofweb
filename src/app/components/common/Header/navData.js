@@ -36,7 +36,11 @@ const NAV_ITEMS = [
         href: "/dental-digital-marketing-agency",
         subItems: [
           { label: "Dental SEO", href: "#" },
-          { label: "Dental Web Design", href: "#" },
+          { label: "Dental PPC", href: "#" },
+          { label: "Dental Website Development", href: "#" },
+          { label: "Dental Social Media Marketing", href: "#" },
+          { label: "Dental Reputation Management", href: "#" },
+
         ],
       },
       {
