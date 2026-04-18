@@ -18,7 +18,7 @@ function CRMAgency() {
       <HeroSectionServices
         heading1="Smarter System Growth"
         heading2="For Modern Businesses"
-        bgImag="/IndustryExpertise/crm/crmHero.webp"
+        bgImag="/PlatformExpertise/CRMAgency/CRMHero.svg"
         description1="Every day businesses struggle with scattered data, missed follow-ups, and inefficient workflows, but growth depends on having systems that are clear, connected, and easy to manage."
         description2="At Humans of Web, we help businesses streamline operations through CRM customization, automation, and smart integrations to improve efficiency and drive consistent growth."
         altText="CRM Customisation Agency"
@@ -31,7 +31,7 @@ function CRMAgency() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="System First"
         headingBlue="CRM Optimization"
-        image="/IndustryExpertise/crm/crmMarketing.webp"
+        image="/PlatformExpertise/CRMAgency/crmMarketing.svg"
         paragraphs={marketAnalyzerParaCRM}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -60,7 +60,7 @@ function CRMAgency() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses Choose Us"
         headingBlue="For Better System Efficiency"
-        image="/IndustryExpertise/crm/crmTrust.webp"
+        image="/PlatformExpertise/CRMAgency/crmTrust.svg"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaCRM}

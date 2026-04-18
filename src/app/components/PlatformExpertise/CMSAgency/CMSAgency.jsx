@@ -18,7 +18,7 @@ function CMSAgency() {
       <HeroSectionServices
         heading1="Flexible Website Growth"
         heading2="With Smart CMS Systems"
-        bgImag="/IndustryExpertise/cms/cmsHero.webp"
+        bgImag="/PlatformExpertise/CMSAgency/CMSHero.svg"
         description1="Every day users explore websites for information, services, and products, but growth depends on how easily content is managed, updated, and presented."
         description2="At Humans of Web, we help businesses build and optimize CMS platforms that improve visibility, simplify management, and support long-term digital growth."
         altText="CMS Marketing Agency"
@@ -31,7 +31,7 @@ function CMSAgency() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Content First"
         headingBlue="CMS Marketing"
-        image="/IndustryExpertise/cms/cmsMarketing.webp"
+        image="/PlatformExpertise/CMSAgency/cmsMarketing.svg"
         paragraphs={marketAnalyzerParaCMS}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -60,7 +60,7 @@ function CMSAgency() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses "
         headingBlue="Prefer Us"
-        image="/IndustryExpertise/cms/cmsTrust.webp"
+        image="/PlatformExpertise/CMSAgency/cmsMarketing.svg"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaCMS}

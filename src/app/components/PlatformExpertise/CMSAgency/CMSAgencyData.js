@@ -1,4 +1,6 @@
 import ECommerceSeoIcon from "../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
+import Shopify from "../../common/Icons/PlatFormExpert/Shopify";
+import WordpressIcon from "../../common/Icons/PlatFormExpert/WordpressIcon";
 
 export const marketAnalyzerParaCMS = [
   "Managing a website today is not just about design, but how easily content can be updated, structured, and scaled over time. Businesses need systems that give them control without adding complexity.",
@@ -33,13 +35,13 @@ export const CMSServices = [
     title: "Shopify",
     description:
       "We help you optimize Shopify as a CMS for managing products, content, and user experience, making it easier to update your store and keep everything running smoothly.",
-    icon: <ECommerceSeoIcon />,
+    icon: <Shopify />,
   },
   {
     title: "WordPress",
     description:
       "We customize WordPress to give you full control over your website, allowing you to manage content easily, improve performance, and scale your site as your business grows.",
-    icon: <ECommerceSeoIcon />,
+    icon: <WordpressIcon />,
   },
 ];
 

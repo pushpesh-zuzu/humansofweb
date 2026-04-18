@@ -1,4 +1,7 @@
 import ECommerceSeoIcon from "../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
+import HubSpotIcon from "../../common/Icons/PlatFormExpert/HubSpotIcon";
+import Shopify from "../../common/Icons/PlatFormExpert/Shopify";
+import VTiger from "../../common/Icons/PlatFormExpert/VTiger";
 
 export const marketAnalyzerParaCRM = [
   "As businesses grow, managing leads, customer data, and follow-ups becomes more complex. Many teams struggle with disconnected tools, manual work, and systems that slow down productivity instead of supporting it.",
@@ -33,19 +36,19 @@ export const CRMServices = [
     title: "Zoho",
     description:
       "We help businesses get the most out of Zoho by customizing workflows, automating tasks, and connecting tools so teams can manage leads, sales, and operations more efficiently in one place.",
-    icon: <ECommerceSeoIcon />,
+    icon: <Shopify />,
   },
   {
     title: "Vtiger CRM",
     description:
       "We optimize Vtiger CRM to simplify customer management, improve follow-ups, and streamline daily processes, helping your team stay organized and focused on building better client relationships.",
-    icon: <ECommerceSeoIcon />,
+    icon: <VTiger />,
   },
   {
     title: "Hubspot CRM",
     description:
       "We tailor HubSpot CRM to support your marketing and sales efforts, creating systems that track interactions, nurture leads, and help your team move prospects smoothly through the pipeline.",
-    icon: <ECommerceSeoIcon />,
+    icon: <HubSpotIcon />,
   },
 ];
 
