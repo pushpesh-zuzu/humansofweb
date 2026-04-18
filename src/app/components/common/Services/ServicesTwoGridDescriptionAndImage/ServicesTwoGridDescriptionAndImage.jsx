@@ -41,7 +41,7 @@ export default function ServicesTwoGridDescriptionAndImage({
               headdingBlack={headdingBlack}
               headingBlue={headingBlue}
               subHeading={subheading}
-              breakLine={breakLine}
+              // breakLine={breakLine}
               padding="pb-[35px] md:pb-[60px]"
               headingBlueColor={headingBlueColor}
               headingBlackColor={headingBlackColor}
@@ -68,7 +68,7 @@ export default function ServicesTwoGridDescriptionAndImage({
                   alt="industry"
                   width={540}
                   height={380}
-                  className="object-contain rounded-[32px] h-full max-h-[540px] w-[85%]"
+                  className="object-contain rounded-[32px] h-full max-h-[540px] md:w-[85%]"
                   
                 />
               </div>
@@ -88,7 +88,7 @@ export default function ServicesTwoGridDescriptionAndImage({
               subHeading={subheading}
               breakLine={breakLine}
               padding="pb-[35px] md:pb-[60px]"
-              headingBlueColor={headingBlueColor}
+              // headingBlueColor={headingBlueColor}
               headingBlackColor={headingBlackColor}
                 />
               )}

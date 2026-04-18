@@ -147,8 +147,8 @@ const Footer = () => {
         <div className="mx-auto max-w-[1500px] px-[4%] py-7 md:py-9 xl:py-10">
           <div className="grid gap-7 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
             <div>
-              <p className="p-small max-w-[420px] font-medium text-white">
-                We Are A Value-Driven Marketing Agency Working Exclusively For Ecomm, SaaS And More.
+              <p className="p-small max-w-[420px] font-medium text-white leading-relaxed">
+                Your trusted partner in digital transformation. Specializing in Ecommerce, SaaS, and enterprise solutions with proven expertise across industries.
               </p>
               <div className="mt-5 flex items-center gap-3">
                 {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
@@ -156,7 +156,7 @@ const Footer = () => {
                     key={label}
                     href={href}
                     aria-label={label}
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-primary transition hover:bg-secondary hover:text-white"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-primary transition hover:bg-secondary hover:text-white hover:scale-110"
                   >
                     <Icon className="h-4 w-4" />
                   </a>
@@ -164,21 +164,21 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-              {visibleNavItems.map((item) => (
-                <div key={item.label}>
-                  <h3 className="p-default font-bold text-white">{item.label}</h3>
-                  <div className="mt-3 grid gap-2">
-                    {getFooterLinks(item).map((link) => (
-                      <Link
-                        key={link.label}
-                        href={link.href}
-                        className="p-small text-white/75 transition hover:text-secondary"
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
-                  </div>
+          <div className="grid grid-cols-2 gap-6 md:gap-10 xl:gap-20 md:grid-cols-3">
+            {visibleNavItems.map((item) => (
+              <div key={item.label}>
+                <h3 className="p-default font-bold text-white">{item.label}</h3>
+                <div className="mt-3 grid gap-3">
+                  {getFooterLinks(item).map((link) => (
+                    <Link
+                      key={link.label}
+                      href={link.href}
+                      className="p-small text-white/75 transition hover:text-secondary"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
                 </div>
               ))}
             </div>
@@ -186,7 +186,7 @@ const Footer = () => {
 
           <div className="mt-6 border-t border-white/20 pt-5">
             <p className="p-small text-center text-white/65">
-              Copyright 2026 Humans of Web. All rights reserved.
+              © 2026 Humans of Web. All rights reserved.
             </p>
           </div>
         </div>

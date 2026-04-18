@@ -12,6 +12,7 @@ import { INDUSTRIES } from "./IndustriesWeServe/IndustriesWeServerData";
 import FaqComponent from "../../common/SubServices/FaqComponent/FaqComponent";
 import ContainerWrapper from "../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../common/Container/PaddingWrapper2";
+import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
 
 export const FREQUENTLY_QUESTION = [
   {
@@ -49,6 +50,7 @@ function IndustryExpertise() {
           <FaqComponent items={FREQUENTLY_QUESTION} />
         </PaddingWrapper2>
       </ContainerWrapper>
+      <ReachWithUs />
       {/* <CTASection/> */}
     </>
   );

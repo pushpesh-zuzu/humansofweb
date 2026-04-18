@@ -1,3 +1,8 @@
+import ChiropractorPPC from "../../common/Icons/IndustryExpertise/Chiropractor/ChiropractorPPC";
+import ChiropractorReputationManagement from "../../common/Icons/IndustryExpertise/Chiropractor/ChiropractorReputationManagement";
+import ChiropractorSEO from "../../common/Icons/IndustryExpertise/Chiropractor/ChiropractorSEO";
+import ChiropractorSocialMediaMarketing from "../../common/Icons/IndustryExpertise/Chiropractor/ChiropractorSocialMediaMarketing";
+import ChiropractorWebsiteDesignDevelopment from "../../common/Icons/IndustryExpertise/Chiropractor/ChiropractorWebsiteDesignDevelopment";
 import ECommerceSeoIcon from "../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
 
 export const marketAnalyzerParaChiropractor = [
@@ -30,20 +35,32 @@ export const ChiropractorServices = [
   {
     title: "Chiropractor SEO",
     description:
-      "We help your clinic appear when people search for pain relief, posture correction, or chiropractic care, bringing in patients actively looking for help.",
-    icon: <ECommerceSeoIcon />,
+      "We help your clinic appear when people search for pain relief, posture correction, or chiropractic care, bringing in patients who are actively looking for treatment.",
+    icon: <ChiropractorSEO />,
   },
   {
     title: "Chiropractor PPC",
     description:
-      "We run targeted campaigns that connect you with patients ready to book appointments, focusing on real inquiries rather than just clicks.",
-    icon: <ECommerceSeoIcon />,
+      "We run targeted ad campaigns that connect you with patients ready to book, focusing on generating real appointment inquiries instead of just clicks.",
+    icon: <ChiropractorPPC />,
   },
   {
     title: "Chiropractor Website Design & Development",
     description:
-      "We create websites that feel simple and reassuring, helping patients understand your treatments and feel confident choosing your clinic.",
-    icon: <ECommerceSeoIcon />,
+      "We build websites that feel clear and reassuring, helping patients understand your treatments and feel comfortable choosing your clinic.",
+    icon: <ChiropractorWebsiteDesignDevelopment />,
+  },
+  {
+    title: "Chiropractor Social Media Marketing",
+    description:
+      "We create content that educates and engages your audience, helping you stay connected with patients and build trust through consistent visibility.",
+    icon: <ChiropractorSocialMediaMarketing />,
+  },
+  {
+    title: "Chiropractor Reputation Management",
+    description:
+      "We help you strengthen your online reputation by managing reviews and patient feedback, building trust that encourages more people to choose your clinic.",
+    icon: <ChiropractorReputationManagement />,
   },
 ];
 export const brandTrustParaChiropractor = [

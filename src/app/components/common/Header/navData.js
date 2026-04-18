@@ -43,18 +43,7 @@ const NAV_ITEMS = [
           },
         ],
       },
-      {
-        label: "SaaS",
-        href: "/saas-marketing-agency",
-        subItems: [
-          { label: "SaaS SEO", href: "/saas-seo" },
-          { label: "SaaS Website Development", href: "#" },
-          { label: "SaaS PPC", href: "#" },
-          { label: "SaaS GEO Services", href: "#" },
-          { label: "SaaS Content Services", href: "#" },
-          { label: "SaaS Link Building", href: "#" },
-        ],
-      },
+
       {
         label: "Dental",
         href: "/dental-digital-marketing-agency",
@@ -88,7 +77,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Chiropractor",
-        href: "/chiropractor-agency",
+        href: "/chiropractor-digital-marketing-agency",
         subItems: [
           { label: "Chiropractor SEO", href: "#" },
           { label: "Chiropractor PPC", href: "#" },
@@ -122,32 +111,34 @@ const NAV_ITEMS = [
     label: "Platform Expertise",
     href: "/platform-expertise",
     children: [
-      // {
-      //   label: "WordPress",
-      //   subItems: [{ label: "WordPress Development", href: "#" }],
-      // },
-      {
-        label: "Shopify",
-        subItems: [
-          { label: "Shopify SEO", href: "#" },
-          { label: "Shopify Website Design", href: "#" },
-          { label: "Shopify PPC", href: "#" },
-        ],
-      },
-      // {
-      //   label: "WooCommerce",
-      //   subItems: [{ label: "WooCommerce Setup", href: "#" }],
-      // },
+       {
+    label: "CMS",
+    href: "/cms-digital-marketing-agency",
+    subItems: [
+      { label: "Shopify", href: "#" },
+      { label: "Wordpress", href: "#" },
     ],
   },
   {
-    label: "Company",
-    children: [
-      { label: "About Us", href: "#" },
-      { label: "Our Team", href: "#" },
-      { label: "Case Studies", href: "#" },
-      { label: "Blog", href: "#" },
+    label: "CRM Customisation Services",
+    href: "/crm-customisation-digital-marketing-agency",
+    subItems: [
+      { label: "Zoho", href: "#" },
+      { label: "Vtiger CRM", href: "#" },
+      { label: "Hubspot CRM", href: "#" },
     ],
+  },
+  {
+    label: "AI Services",
+    href: "#",
+    subItems: [
+      { label: "Claude", href: "#" },
+      { label: "Kilocode", href: "#" },
+      { label: "ChatGPT", href: "#" },
+      { label: "Bolt", href: "#" },
+    ],
+  },
+     ],
   },
   { label: "Contact us", href: "/contact" },
 ];

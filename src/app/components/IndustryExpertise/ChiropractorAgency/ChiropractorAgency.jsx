@@ -18,7 +18,7 @@ function ChiropractorAgency() {
       <HeroSectionServices
         heading1="Pain Relief Growth"
         heading2="For Local Clinics"
-        bgImag="/IndustryExpertise/chiropractor/chiropractorHero.webp"
+        bgImag="/IndustryExpertise/chiropractor/chiropractorHero1.svg"
         description1="Every day people search online for relief from pain, stiffness, and mobility issues, but success depends on being visible and trusted when they need help most."
         description2="At Humans of Web, we help chiropractic clinics connect with patients through SEO, local visibility, and smart campaigns to drive bookings and steady growth."
         altText="Chiropractor Marketing Agency"
@@ -31,7 +31,7 @@ function ChiropractorAgency() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Patient First"
         headingBlue="Chiropractic Marketing"
-        image="/IndustryExpertise/chiropractor/chiropractorMarketing.webp"
+        image="/IndustryExpertise/chiropractor/chiropractorMarketing.svg"
         paragraphs={marketAnalyzerParaChiropractor}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -60,7 +60,7 @@ function ChiropractorAgency() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Clinics Grow With Us"
         headingBlue="Through Consistent Bookings"
-        image="/IndustryExpertise/chiropractor/chiropractorTrust.webp"
+        image="/IndustryExpertise/chiropractor/chiropractorTrust.svg"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaChiropractor}

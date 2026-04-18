@@ -4,8 +4,8 @@ const VISIBLE_COUNT = 3;
 
 const borderGradient = (reverse) => `linear-gradient(
   to ${reverse ? "top" : "bottom"},
-  #48179C 0%, #48179C 50%, #7c3aed 60%,
-  #a78bfa 70%, #ddd6fe 80%, #ede9fe 90%, transparent 100%
+  #48179C 0%, #48179C 50%, #F65A75 60%,
+  #F65A75 70%, #ddd6fe 80%, #ede9fe 90%, transparent 100%
 )`;
 
 function ExtraTagsPopover({
@@ -59,8 +59,10 @@ function ExtraTagsPopover({
       />
 
       {tags.map((tag, i) => (
-        <span
-          key={tag}
+        tag.link ? (<a
+         href={tag.link}
+          key={tag.title}
+
           style={{
             fontSize: "0.72rem",
             fontWeight: 600,
@@ -76,23 +78,39 @@ function ExtraTagsPopover({
                          transform 0.1s ease ${i * 0.4 + 0.04}s`,
           }}
         >
-          {tag}
-        </span>
+          {tag.title}
+        </a>) :
+        (<span
+          key={tag.title}
+          style={{
+            fontSize: "0.72rem",
+            fontWeight: 600,
+            padding: "4px 10px",
+            borderRadius: 999,
+            background: bg,
+            color: accent,
+            border: `1px solid ${accent}30`,
+            whiteSpace: "nowrap",
+            opacity: open ? 1 : 0,
+            transform: open ? "translateY(0)" : "translateY(4px)",
+            transition: `opacity 0.18s ease ${i * 0.1 + 0.2}s,
+                         transform 0.1s ease ${i * 0.4 + 0.04}s`,
+          }}
+        >
+          {tag.title}
+        </span>)
       ))}
     </div>
   );
 }
 
-function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
+function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link }) {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [cardHover, setCardHover] = useState(false);
 
   const visibleTags = tags.slice(0, VISIBLE_COUNT);
   const extraTags = tags.slice(VISIBLE_COUNT);
 
-  // ── Shared handlers for pill + popover ──────────────────────────────────────
-  // timeout trick: agar mouse pill se popover ki taraf ja raha ho,
-  // toh us beech ka chota gap cross karte waqt close na ho
   let closeTimer = null;
 
   const handleOpen = () => {
@@ -110,8 +128,8 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
         padding: 2,
         background: borderGradient(reverse),
         height: "100%",
-        transition: "transform 0.3s ease",
-        transform: cardHover ? "translateY(-6px)" : "translateY(0)",
+        // transition: "transform 0.3s ease",
+        // transform: cardHover ? "translateY(-6px)" : "translateY(0)",
       }}
       onMouseEnter={() => setCardHover(true)}
       onMouseLeave={() => setCardHover(false)}
@@ -132,27 +150,20 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
       >
         {/* Icon */}
         <div
-          style={{
-            width: 56,
-            height: 56,
-            borderRadius: 14,
-            background: bg,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexShrink: 0,
-          }}
+          className="flex flex-row gap-3 items-center"
         >
           {icon}
-        </div>
 
         {/* Title */}
-        <h3
+        <a href={link}>
+          <h3
           className="text-h5 font-bold leading-snug"
           style={{ color: "#48179C", margin: 0 }}
         >
           {title}
         </h3>
+        </a>
+        </div>
 
         {/* Description */}
         <p
@@ -174,8 +185,9 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
           >
             {/* Visible tags — NO hover handlers here */}
             {visibleTags.map((tag) => (
-              <span
-                key={tag}
+              tag.link ?(<a 
+              href={tag.link}
+                key={tag.title}
                 style={{
                   fontSize: "0.72rem",
                   fontWeight: 600,
@@ -187,8 +199,23 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse }) {
                   whiteSpace: "nowrap",
                 }}
               >
-                {tag}
-              </span>
+                {tag.title}
+              </a>) : 
+              (<span
+                key={tag.title}
+                style={{
+                  fontSize: "0.72rem",
+                  fontWeight: 600,
+                  padding: "4px 10px",
+                  borderRadius: 999,
+                  background: bg,
+                  color: accent,
+                  border: `1px solid ${accent}30`,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {tag.title}
+              </span>)
             ))}
 
             {/* +N more pill — ONLY this triggers open */}
