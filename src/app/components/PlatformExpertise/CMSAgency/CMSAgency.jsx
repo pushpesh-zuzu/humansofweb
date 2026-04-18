@@ -60,7 +60,7 @@ function CMSAgency() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses "
         headingBlue="Prefer Us"
-        image="/PlatformExpertise/CMSAgency/cmsMarketing.svg"
+        image="/PlatformExpertise/CMSAgency/cmsTrust.svg"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaCMS}
