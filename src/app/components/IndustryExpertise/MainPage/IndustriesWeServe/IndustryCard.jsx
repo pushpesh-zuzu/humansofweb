@@ -4,8 +4,8 @@ const VISIBLE_COUNT = 3;
 
 const borderGradient = (reverse) => `linear-gradient(
   to ${reverse ? "top" : "bottom"},
-  #48179C 0%, #48179C 50%, #7c3aed 60%,
-  #a78bfa 70%, #ddd6fe 80%, #ede9fe 90%, transparent 100%
+  #48179C 0%, #48179C 50%, #F65A75 60%,
+  #F65A75 70%, #ddd6fe 80%, #ede9fe 90%, transparent 100%
 )`;
 
 function ExtraTagsPopover({
@@ -59,7 +59,7 @@ function ExtraTagsPopover({
       />
 
       {tags.map((tag, i) => (
-        <a
+        tag.link ? (<a
          href={tag.link}
           key={tag.title}
 
@@ -79,7 +79,26 @@ function ExtraTagsPopover({
           }}
         >
           {tag.title}
-        </a>
+        </a>) :
+        (<span
+          key={tag.title}
+          style={{
+            fontSize: "0.72rem",
+            fontWeight: 600,
+            padding: "4px 10px",
+            borderRadius: 999,
+            background: bg,
+            color: accent,
+            border: `1px solid ${accent}30`,
+            whiteSpace: "nowrap",
+            opacity: open ? 1 : 0,
+            transform: open ? "translateY(0)" : "translateY(4px)",
+            transition: `opacity 0.18s ease ${i * 0.1 + 0.2}s,
+                         transform 0.1s ease ${i * 0.4 + 0.04}s`,
+          }}
+        >
+          {tag.title}
+        </span>)
       ))}
     </div>
   );
@@ -166,7 +185,7 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link
           >
             {/* Visible tags — NO hover handlers here */}
             {visibleTags.map((tag) => (
-              <a 
+              tag.link ?(<a 
               href={tag.link}
                 key={tag.title}
                 style={{
@@ -181,7 +200,22 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link
                 }}
               >
                 {tag.title}
-              </a>
+              </a>) : 
+              (<span
+                key={tag.title}
+                style={{
+                  fontSize: "0.72rem",
+                  fontWeight: 600,
+                  padding: "4px 10px",
+                  borderRadius: 999,
+                  background: bg,
+                  color: accent,
+                  border: `1px solid ${accent}30`,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {tag.title}
+              </span>)
             ))}
 
             {/* +N more pill — ONLY this triggers open */}

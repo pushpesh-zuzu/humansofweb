@@ -385,15 +385,15 @@ export const INDUSTRIES = [
     tags: [
       {
         title: "Authority Building",
-        link: "#",
+        link: "",
       },
       {
         title: "Lead Gen",
-        link: "#",
+        link: "",
       },
       {
         title: "Content",
-        link: "#",
+        link: "",
       },
     ],
     accent: "#d97706",

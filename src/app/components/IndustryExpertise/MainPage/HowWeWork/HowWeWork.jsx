@@ -200,7 +200,7 @@ export default function HowWeWork() {
         `}</style>
 
         {/* Bottom CTA strip */}
-        <div
+        {/* <div
           className="mt-12 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4"
           style={{
             background: "linear-gradient(135deg, #48179C 0%, #6d28d9 60%, #F65A75 100%)",
@@ -220,7 +220,7 @@ export default function HowWeWork() {
           >
             Get Your Free Strategy Call →
           </button>
-        </div>
+        </div> */}
       </PaddingWrapper2>
     </ContainerWrapper>
   );

@@ -68,7 +68,7 @@ export default function ServicesTwoGridDescriptionAndImage({
                   alt="industry"
                   width={540}
                   height={380}
-                  className="object-contain rounded-[32px] h-full max-h-[540px] w-[85%]"
+                  className="object-contain rounded-[32px] h-full max-h-[540px] md:w-[85%]"
                   
                 />
               </div>
