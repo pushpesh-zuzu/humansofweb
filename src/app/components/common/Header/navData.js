@@ -8,15 +8,39 @@ const NAV_ITEMS = [
         label: "Ecommerce",
         href: "/ecommerce-marketing-agency",
         subItems: [
-          { label: "E-Commerce SEO", href: "/ecommerce-marketing-agency/seo-services" },
-          { label: "E-Commerce Website Development", href: "/ecommerce-marketing-agency/website-design" },
-          { label: "E-Commerce PPC", href: "/ecommerce-marketing-agency/ppc-services" },
-          { label: "E-Commerce GEO Services", href: "/ecommerce-marketing-agency/geo-services" },
-          { label: "E-Commerce Social Media Marketing", href: "/ecommerce-marketing-agency/social-media-marketing" },
+          {
+            label: "E-Commerce SEO",
+            href: "/ecommerce-marketing-agency/seo-services",
+          },
+          {
+            label: "E-Commerce Website Development",
+            href: "/ecommerce-marketing-agency/website-design",
+          },
+          {
+            label: "E-Commerce PPC",
+            href: "/ecommerce-marketing-agency/ppc-services",
+          },
+          {
+            label: "E-Commerce GEO Services",
+            href: "/ecommerce-marketing-agency/geo-services",
+          },
+          {
+            label: "E-Commerce Social Media Marketing",
+            href: "/ecommerce-marketing-agency/social-media-marketing",
+          },
           { label: "E-Commerce CRO", href: "/ecommerce-marketing-agency/cro" },
-          { label: "E-Commerce Email Marketing", href: "/ecommerce-marketing-agency/email-marketing" },
-          { label: "E-Commerce Content Marketing", href: "/ecommerce-marketing-agency/content-marketing" },
-          { label: "Amazon Marketing", href: "/ecommerce-marketing-agency/amazon-marketing" },
+          {
+            label: "E-Commerce Email Marketing",
+            href: "/ecommerce-marketing-agency/email-marketing",
+          },
+          {
+            label: "E-Commerce Content Marketing",
+            href: "/ecommerce-marketing-agency/content-marketing",
+          },
+          {
+            label: "Amazon Marketing",
+            href: "/ecommerce-marketing-agency/amazon-marketing",
+          },
         ],
       },
       {
@@ -40,7 +64,6 @@ const NAV_ITEMS = [
           { label: "Dental Website Development", href: "#" },
           { label: "Dental Social Media Marketing", href: "#" },
           { label: "Dental Reputation Management", href: "#" },
-
         ],
       },
       {
@@ -49,6 +72,9 @@ const NAV_ITEMS = [
         subItems: [
           { label: "Healthcare SEO", href: "#" },
           { label: "Healthcare PPC", href: "#" },
+          { label: "Healthcare Website Design & Development", href: "#" },
+          { label: "Healthcare Link Building", href: "#" },
+          { label: "Healthcare Social Media Marketing", href: "#" },
         ],
       },
       {
@@ -56,18 +82,31 @@ const NAV_ITEMS = [
         href: "/ophthalmology-digital-marketing-agency",
         subItems: [
           { label: "Ophthalmology SEO", href: "#" },
-          { label: "Ophthalmology Web Design", href: "#" },
+          { label: "Ophthalmology PPC", href: "#" },
+          { label: "Ophthalmology Website Design & Development", href: "#" },
         ],
       },
       {
         label: "Chiropractor",
         href: "/chiropractor-agency",
-        subItems: [{ label: "Chiropractor SEO", href: "#" }],
+        subItems: [
+          { label: "Chiropractor SEO", href: "#" },
+          { label: "Chiropractor PPC", href: "#" },
+          { label: "Chiropractor Website Design & Development", href: "#" },
+          { label: "Chiropractor Social Media Marketing", href: "#" },
+          { label: "Chiropractor Reputation Management", href: "#" },
+        ],
       },
       {
         label: "Plastic Surgeon",
         href: "/plastic-surgeon-digital-marketing-agency",
-        subItems: [{ label: "Plastic Surgeon SEO", href: "#" }],
+        subItems: [
+          { label: "Plastic Surgeon SEO", href: "#" },
+          { label: "Plastic Surgeon PPC", href: "#" },
+          { label: "Plastic Surgeon Website Design & Development", href: "#" },
+          { label: "Plastic Surgeon Social Media Marketing", href: "#" },
+          { label: "Plastic Surgeon Reputation Management", href: "#" },
+        ],
       },
       {
         label: "Legal",
@@ -83,18 +122,22 @@ const NAV_ITEMS = [
     label: "Platform Expertise",
     href: "/platform-expertise",
     children: [
-      {
-        label: "WordPress",
-        subItems: [{ label: "WordPress Development", href: "#" }],
-      },
+      // {
+      //   label: "WordPress",
+      //   subItems: [{ label: "WordPress Development", href: "#" }],
+      // },
       {
         label: "Shopify",
-        subItems: [{ label: "Shopify Development", href: "#" }],
+        subItems: [
+          { label: "Shopify SEO", href: "#" },
+          { label: "Shopify Website Design", href: "#" },
+          { label: "Shopify PPC", href: "#" },
+        ],
       },
-      {
-        label: "WooCommerce",
-        subItems: [{ label: "WooCommerce Setup", href: "#" }],
-      },
+      // {
+      //   label: "WooCommerce",
+      //   subItems: [{ label: "WooCommerce Setup", href: "#" }],
+      // },
     ],
   },
   {
