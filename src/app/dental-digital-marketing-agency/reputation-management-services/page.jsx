@@ -1,8 +1,9 @@
+import ReputationManagement from '@/app/components/IndustryExpertise/DentalAgency/DentalSubPages/ReputationManagement/ReputationManagement'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <ReputationManagement />
   )
 }
 
