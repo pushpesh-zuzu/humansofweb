@@ -8,49 +8,23 @@ import ServicesTwoGridSection from '@/app/components/common/SubServices/Services
 import CustomGeneration from '@/app/components/Home/CustomGeneration'
 import BusineesSell from '@/app/components/common/SubServices/BusineesSell/BusineesSell'
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent'
-// import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent'
-// import FAQ_DATA from './SectionsData/faqData'
-// import CustomGeneration from '@/app/components/Home/CustomGeneration'
-// import goals from '@/app/components/common/Icons/WebsiteDesign/goals.svg'
-// import trust from '@/app/components/common/Icons/WebsiteDesign/trust.svg'
-// import speed from '@/app/components/common/Icons/WebsiteDesign/build-speed.svg'
-// import launch from '@/app/components/common/Icons/WebsiteDesign/launch.svg'
-// import userJourney from '@/app/components/common/Icons/WebsiteDesign/user-journey.svg'
-// import BusineesSell from '@/app/components/common/SubServices/BusineesSell/BusineesSell'
+import trustBuilding from '@/app/components/common/Icons/WebsiteDesign/trust-building.svg'
+import easyAppointmentBooking from '@/app/components/common/Icons/WebsiteDesign/easy-appointment-booking.svg'
+import fastPerformance from '@/app/components/common/Icons/WebsiteDesign/fast-performance-driven.svg'
+import mobileOptimized from '@/app/components/common/Icons/WebsiteDesign/mobile-optimized.svg'
+import patientFocused from '@/app/components/common/Icons/WebsiteDesign/patient-focused-design.svg'
+import scalableGrowth from '@/app/components/common/Icons/WebsiteDesign/scalable-for-growth.svg'
+import customDentalDesign from '@/app/components/common/Icons/WebsiteDesign/customDentalDesign.svg'
+import easyAppointment from '@/app/components/common/Icons/WebsiteDesign/easyOpointment.svg'
+import fastLoading from '@/app/components/common/Icons/WebsiteDesign/fastLoadingPerformance.svg'
+import mobileOptimizeDesign from '@/app/components/common/Icons/WebsiteDesign/mobileOptimizeDesign.svg'
+import patientFocussed from '@/app/components/common/Icons/WebsiteDesign/patentFocused.svg'
 
-
-// const STEPS = [
-//     {
-//         step: "01",
-//         title: "Understand Your Brand and Goals",
-//         description: "We begin by learning about your business, customers, and growth goals so the website strategy is shaped around what matters most to your brand.",
-//         icon: goals,
-//     },
-//     {
-//         step: "02",
-//         title: "Plan the User Journey",
-//         description: "From homepage flow to product discovery, we map a shopping experience that feels intuitive, reduces friction, and supports better conversions.",
-//         icon: userJourney,
-//     },
-//     {
-//         step: "03",
-//         title: "Design for Trust and Sales",
-//         description: "We craft layouts, visuals, and messaging that make your store feel polished, highly credible, and easy to buy from across every key page.",
-//         icon: trust,
-//     },
-//     {
-//         step: "04",
-//         title: "Build for Speed and Flexibility",
-//         description: "We make sure your website feels fast, responsive, and easy to manage so it supports both a better user experience and future growth.",
-//         icon: speed,
-//     },
-//     {
-//         step: "05",
-//         title: "Refine and Launch with Confidence",
-//         description: "Before launch, we review the final experience carefully, fine-tune key details, and make sure your store is ready to perform from day one.",
-//         icon: launch,
-//     },
-// ];
+import discoveryPlanning from '@/app/components/common/Icons/WebsiteDesign/discoverPlanning.svg'
+import launchOnging from '@/app/components/common/Icons/WebsiteDesign/launchOnging.svg'
+import mocksupDesign from '@/app/components/common/Icons/WebsiteDesign/mockupsDesign.svg'
+import testingOptimization from '@/app/components/common/Icons/WebsiteDesign/testingOptimization.svg'
+import websiteDevelopment from '@/app/components/common/Icons/WebsiteDesign/websiteDevelopment.svg'
 
 
 const WORK_WITH_CARDS = [
@@ -58,54 +32,60 @@ const WORK_WITH_CARDS = [
         title: "Patient-Focused Design",
         description:
             "We design websites that make it easy for patients to explore your services, understand treatments, and confidently choose your clinic.",
+        icon: patientFocused
     },
     {
         title: "Trust-Building Layouts",
         description:
             "From testimonials to service clarity, we structure your website to build credibility and reassure patients at every step.",
+        icon: trustBuilding
     },
     {
         title: "Mobile-Optimized Experience",
         description:
             "Your website works seamlessly across all devices, ensuring patients can browse and book appointments easily on mobile or desktop.",
+        icon: mobileOptimized
     },
     {
         title: "Fast & Performance-Driven",
         description:
             "We build fast-loading websites that reduce drop-offs, improve user experience, and help keep potential patients engaged.",
+        icon: fastPerformance
     },
     {
         title: "Easy Appointment Booking",
         description:
             "We simplify the booking process with clear calls-to-action and user-friendly forms that encourage more patient inquiries.",
+        icon: easyAppointmentBooking
     },
     {
         title: "Scalable for Growth",
         description:
             "Our websites are built to grow with your clinic, making it easy to add services, locations, and features as your practice expands.",
+        icon: scalableGrowth
     }
 ];
 
 const DENTAL_FEATURE_CARDS = [
     {
         title: "Custom Dental Website Design",
-        // icon: ShopifyIcon,
+        icon: customDentalDesign,
     },
     {
         title: "Patient-Focused User Experience",
-        // icon: EcommerceIcon,
+        icon: patientFocussed,
     },
     {
         title: "Mobile-Optimized Design",
-        // icon: MagentoIcon,
+        icon: mobileOptimizeDesign,
     },
     {
         title: "Fast Loading & Performance",
-        // icon: PageSpeedIcon,
+        icon: fastLoading,
     },
     {
         title: "Easy Appointment Integration",
-        // icon: WordpressIcon,
+        icon: easyAppointment,
     },
 ];
 
@@ -122,26 +102,31 @@ const STEPS = [
         step: "01",
         title: "Discovery & Planning",
         description: "We understand your clinic, services, and goals to create a clear plan for building a website that attracts and converts patients.",
+        icon: discoveryPlanning
     },
     {
         step: "02",
         title: "Mockups & Design Concepts",
-        description: "We create modern design concepts and layouts that reflect your brand, build trust, and deliver a seamless patient experience.",
+        description: "We create modern design concepts and layouts that reflect your brand, build trust, and deliver a seamless and engaging patient experience.",
+        icon: mocksupDesign
     },
     {
         step: "03",
         title: "Website Development",
-        description: "We turn designs into a fast, responsive, and fully functional website optimized for performance across all devices.",
+        description: "We turn designs into a fast, responsive, and fully functional website optimized for performance and smooth experience across all devices.",
+        icon: websiteDevelopment
     },
     {
         step: "04",
         title: "Testing & Optimization",
-        description: "We test your website across devices and browsers, optimizing speed, usability, and functionality to ensure a smooth experience.",
+        description: "We test your website across devices and browsers, optimizing speed, usability, and functionality to ensure a smooth user experience.",
+        icon: testingOptimization
     },
     {
         step: "05",
         title: "Launch & Ongoing Support",
         description: "After launch, we provide continuous support, updates, and improvements to keep your website secure, updated, and performing at its best.",
+        icon: launchOnging
     },
 ];
 
@@ -206,7 +191,7 @@ const WebsiteDesign = () => {
                 pinkHeading={"Build Patient Trust"}
                 description1={"Your website is often the first impression patients have of your clinic, so we design websites that build trust, highlight your expertise, and encourage visitors to book appointments."}
                 description2={"From design to functionality, we create fast, user-friendly dental websites that enhance patient experience, improve credibility, and help your practice grow with confidence."}
-                bannerImage="/"
+                bannerImage="/websiteDesign/dental-website-banner.svg"
                 altText={"dental websites that build patient trust"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
@@ -214,7 +199,7 @@ const WebsiteDesign = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Modern Websites for"
                 headingBlue="Growing Dental Practices"
-                image="/"
+                image="/websiteDesign/dentalPractice.svg"
                 imageAltText="modern dental website design showing mobile responsiveness and patient experience"
                 paragraphs={DENTAL_POINTS}
                 headingBlueColor="text-secondary"

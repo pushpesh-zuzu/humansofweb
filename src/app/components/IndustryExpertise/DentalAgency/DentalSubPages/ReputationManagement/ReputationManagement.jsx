@@ -141,7 +141,7 @@ const ReputationManagement = () => {
                 pinkHeading={"Grows Your Clinic"}
                 description1={"We help dental clinics strengthen their online reputation, collect positive reviews, and build credibility that attracts new patients and trust."}
                 description2={"From review management to patient feedback strategies, Humans of Web helps you maintain a strong, trustworthy online presence that supports long-term clinic growth."}
-                bannerImage="/"
+                bannerImage="/ReputationManagement/dental-reputation-banner.svg"
                 altText={"dental reputation management building trust and positive online presence"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
@@ -149,7 +149,7 @@ const ReputationManagement = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Build a Reputation That"
                 headingBlue="Patients Trust Online"
-                image="/"
+                image="/ReputationManagement/dental-reputation-patient.svg"
                 paragraphs={REPUTATION_DESCRIPTION}
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"

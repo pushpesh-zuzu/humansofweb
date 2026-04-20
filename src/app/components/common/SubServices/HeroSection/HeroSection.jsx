@@ -69,7 +69,7 @@ export default function HeroSection({ heading, pinkHeading, description1, descri
                                     src={bannerImage}
                                     alt={altText}
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                     priority
                                 />
                             </div>

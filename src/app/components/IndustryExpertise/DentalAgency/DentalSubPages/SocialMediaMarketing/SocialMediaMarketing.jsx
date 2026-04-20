@@ -158,7 +158,7 @@ const SocialMediaMarketing = () => {
                 pinkHeading={"Builds Patient Trust"}
                 description1={"We help dental clinics grow their reach, build brand awareness, and attract new patients through engaging content and targeted social media strategies."}
                 description2={"From consistent posting to paid campaigns, Humans of Web creates social media strategies that keep your clinic visible, build trust, and drive patient engagement."}
-                bannerImage="/"
+                bannerImage="/SocialMediaMarketing/dental-socialMedia-banner.svg"
                 altText={"dental social media marketing building patient trust and engagement"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
@@ -166,7 +166,7 @@ const SocialMediaMarketing = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Social Media That Expands"
                 headingBlue="Your Dental Reach"
-                image="/"
+                image="/SocialMediaMarketing/dental-social-expand.svg"
                 paragraphs={DENTAL_MEDIA_DESCRIPTION}
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"
@@ -179,7 +179,7 @@ const SocialMediaMarketing = () => {
                 description1="Your patients are already exploring dental services on social media and looking for trusted clinics."
                 description2="We help you create engaging content, run targeted campaigns, and turn your social media into a channel that builds trust and drives patient inquiries."
                 ctaText="Book a Call"
-                image="/"
+                image="/SocialMediaMarketing/dental-social-campaign.svg"
                 imageAlt="dental social media marketing growth and engagement illustration"
             />
             <WorkWithCards
