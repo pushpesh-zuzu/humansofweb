@@ -7,6 +7,15 @@ import ServiceGridSection from "@/app/components/common/SubServices/ServiceGridS
 import ServicesTwoGridSection from "@/app/components/common/SubServices/ServicesTwoGridSection/ServicesTwoGridSection";
 import WorkWithCards from "@/app/components/common/SubServices/WorkWithCards/WorkWithCards";
 import TrustedBy from "@/app/components/common/TrustedBy/TrustedBy";
+import fb from '@/app/components/common/Icons/socialMedia/fb.svg'
+import googleBusinees from '@/app/components/common/Icons/socialMedia/google-businees.svg'
+import Instagram from '@/app/components/common/Icons/socialMedia/Instagram.svg'
+import Linkedin from '@/app/components/common/Icons/socialMedia/Linkedin.svg'
+import whatsapp from '@/app/components/common/Icons/socialMedia/Whatsapp.svg'
+import youtube from '@/app/components/common/Icons/socialMedia/Youtube.svg'
+import paidSocial from '@/app/components/common/Icons/socialMedia/paid-social-campaign.svg'
+
+
 
 
 
@@ -25,31 +34,37 @@ const MARKETING_WORK_CARDS = [
         title: "Facebook for Patient Engagement",
         description:
             "Connect with local patients through posts, reviews, and updates, making it easy for them to engage with your clinic and build trust.",
+        icon: fb
     },
     {
         title: "Instagram for Visual Trust",
         description:
             "Showcase before-and-after results, clinic moments, and patient stories to build credibility and attract attention through visual content.",
+        icon: Instagram
     },
     {
         title: "YouTube for Patient Education",
         description:
             "Share informative videos about treatments and dental care to educate patients, build authority, and influence decision-making.",
+        icon: youtube
     },
     {
         title: "Google Business Profile",
         description:
             "Improve your local visibility with reviews, updates, and accurate information so patients can easily find and contact your clinic.",
+        icon: googleBusinees
     },
     {
         title: "LinkedIn for Professional Presence",
         description:
             "Strengthen your clinic’s professional image by sharing expertise, updates, and achievements within a trusted business network.",
+        icon: Linkedin
     },
     {
         title: "WhatsApp for Direct Communication",
         description:
             "Enable quick conversations, appointment inquiries, and support, making it easy for patients to reach your clinic instantly.",
+        icon: whatsapp
     }
 ];
 
@@ -58,31 +73,37 @@ const DENTAL_SOCIAL_ITEMS = [
         title: "Social Media Strategy",
         description:
             "Platform selection, audience targeting, content planning, and campaign direction to give your dental clinic a clear and consistent social presence.",
+        icon: "/socialMediaMarketing/social-media-strategy.svg"
     },
     {
         title: "Content Planning",
         description:
             "Monthly content ideas including treatment education, patient stories, before-and-after results, and engaging posts tailored for dental audiences.",
+        icon: "/socialMediaMarketing/content-planning.svg"
     },
     {
         title: "Paid Social Campaigns",
         description:
             "Targeted ad campaigns with the right messaging and creatives to attract local patients and drive appointment inquiries across platforms.",
+        icon: "/socialMediaMarketing/paid-social-campaign.svg"
     },
     {
         title: "Appointment-Driven Campaigns",
         description:
             "Campaigns designed to promote offers, treatments, and seasonal services while encouraging patients to take action and book consultations.",
+        icon: "/socialMediaMarketing/appointment-driven.svg"
     },
     {
         title: "Patient Engagement & Trust",
         description:
             "Strategies to build credibility through reviews, comments, patient interactions, and consistent communication that strengthens trust.",
+        icon: "/socialMediaMarketing/patient-engagement-trust.svg"
     },
     {
         title: "Performance Tracking",
         description:
             "Clear reporting on reach, engagement, inquiries, and campaign results to continuously improve your social media performance.",
+        icon: "/socialMediaMarketing/performance-tracking.svg"
     },
 ];
 
