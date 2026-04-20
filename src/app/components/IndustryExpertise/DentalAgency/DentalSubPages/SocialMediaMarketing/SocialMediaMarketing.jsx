@@ -73,37 +73,37 @@ const DENTAL_SOCIAL_ITEMS = [
         title: "Social Media Strategy",
         description:
             "Platform selection, audience targeting, content planning, and campaign direction to give your dental clinic a clear and consistent social presence.",
-        icon: "/socialMediaMarketing/social-media-strategy.svg"
+        icon: "/SocialMediaMarketing/social-media-strategy.svg"
     },
     {
         title: "Content Planning",
         description:
             "Monthly content ideas including treatment education, patient stories, before-and-after results, and engaging posts tailored for dental audiences.",
-        icon: "/socialMediaMarketing/content-planning.svg"
+        icon: "/SocialMediaMarketing/content-planning.svg"
     },
     {
         title: "Paid Social Campaigns",
         description:
             "Targeted ad campaigns with the right messaging and creatives to attract local patients and drive appointment inquiries across platforms.",
-        icon: "/socialMediaMarketing/paid-social-campaign.svg"
+        icon: "/SocialMediaMarketing/paid-social-campaign.svg"
     },
     {
         title: "Appointment-Driven Campaigns",
         description:
             "Campaigns designed to promote offers, treatments, and seasonal services while encouraging patients to take action and book consultations.",
-        icon: "/socialMediaMarketing/appointment-driven.svg"
+        icon: "/SocialMediaMarketing/appointment-driven.svg"
     },
     {
         title: "Patient Engagement & Trust",
         description:
             "Strategies to build credibility through reviews, comments, patient interactions, and consistent communication that strengthens trust.",
-        icon: "/socialMediaMarketing/patient-engagement-trust.svg"
+        icon: "/SocialMediaMarketing/patient-engagement-trust.svg"
     },
     {
         title: "Performance Tracking",
         description:
             "Clear reporting on reach, engagement, inquiries, and campaign results to continuously improve your social media performance.",
-        icon: "/socialMediaMarketing/performance-tracking.svg"
+        icon: "/SocialMediaMarketing/performance-tracking.svg"
     },
 ];
 
