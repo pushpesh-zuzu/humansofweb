@@ -17,6 +17,13 @@ import smart from '../../../../common/Icons/amazon/smarter-sponsored.svg'
 import listing from '../../../../common/Icons/amazon/listings-built.svg'
 import market from '../../../../common/Icons/amazon/marketplace-first.svg'
 
+import amazonSeo from '../../../../common/Icons/amazon/amazon-seo.svg'
+import compitetor from '../../../../common/Icons/amazon/compitetor.svg'
+import productListing from '../../../../common/Icons/amazon/product-listing.svg'
+import reporting from '../../../../common/Icons/amazon/reporting-scalling.svg'
+import reviews from '../../../../common/Icons/amazon/reviews.svg'
+import sponsered from '../../../../common/Icons/amazon/sponsered.svg'
+
 
 
 const serviceParagraph = [
@@ -57,37 +64,37 @@ const SERVICE_GRID_ITEMS = [{
   title: "Amazon SEO",
   description:
     "Keyword research, listing structure, backend terms, and category alignment that help your products appear for searches with stronger buying intent.",
-  // icon: keywordResearchIcon,
+  icon: amazonSeo,
 },
 {
   title: "Product Listing Optimization",
   description:
     "Conversion-focused titles, bullets, descriptions, image direction, and A plus content that make your products easier to compare and trust.",
-  // icon: contentOptimizationIcon,
+  icon: productListing,
 },
 {
   title: "Sponsored Ads Management",
   description:
     "Sponsored Products, Sponsored Brands, and Sponsored Display campaigns planned around visibility, efficiency, and sales growth.",
-  // icon: organicTrafficIcon,
+  icon: sponsered,
 },
 {
   title: "Competitor and Category Research",
   description:
     "A practical review of pricing, messaging, ranking opportunities, and customer expectations across your Amazon category.",
-  // icon: competitorAnalysisIcon,
+  icon: compitetor,
 },
 {
   title: "Review and Trust Signals",
   description:
     "Guidance to improve product credibility, answer shopper questions, and strengthen the trust signals that influence Amazon conversion rates.",
-  // icon: detailedAuditIcon,
+  icon: reviews,
 },
 {
   title: "Reporting and Scale Planning",
   description:
     "Clear performance reporting that highlights what is driving sales, where spend is leaking, and how to scale with better control.",
-  // icon: revenueIcon,
+  icon: reporting,
 }]
 
 const STEPS = [

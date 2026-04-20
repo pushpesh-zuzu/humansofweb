@@ -16,6 +16,12 @@ import contentPerformance from '../../../../common/Icons/contentMarketing/conten
 import emailContent from '../../../../common/Icons/contentMarketing/email-social-content.svg'
 import landingPage from '../../../../common/Icons/contentMarketing/landing-page.svg'
 import productCategory from '../../../../common/Icons/contentMarketing/product-category.svg'
+import contentCreation from '../../../../common/Icons/contentMarketing/content-creation.svg'
+import contentDistribution from '../../../../common/Icons/contentMarketing/content-distribution.svg'
+import contentPlanning from '../../../../common/Icons/contentMarketing/content-planning.svg'
+import contentResearch from '../../../../common/Icons/contentMarketing/content-research.svg'
+import performanceTracking from '../../../../common/Icons/contentMarketing/performance-tracking.svg'
+
 
 const serviceParagraph = [
   "Good ecommerce content does more than fill a blog. It answers real questions, builds trust, supports search visibility, and gives customers reasons to buy from your brand.",
@@ -117,31 +123,31 @@ const CONTENT_STRATEGY_ITEMS = [
     title: "Content Planning",
     description:
       "We analyze your content performance against competitors to identify gaps and opportunities. This helps us build a strategy aligned with your business goals and audience needs.",
-    // icon: DetailedAuditIcon,
+    icon: contentPlanning,
   },
   {
     title: "Content Research",
     description:
       "We dive deep into your brand and audience to uncover search intent and relevant keywords. This ensures your content connects with users at every stage of their journey.",
-    // icon: CompetitorAnalysisIcon,
+    icon: contentResearch,
   },
   {
     title: "Content Creation",
     description:
       "Our team creates engaging, conversion-focused content including web copy, blogs, and visual assets. Every piece is designed to attract, inform, and drive action.",
-    // icon: KeywordResearchIcon,
+    icon: contentCreation,
   },
   {
     title: "Content Distribution",
     description:
       "We publish and promote your content across multiple channels, including SEO, social media, email, and partnerships. This maximizes reach and visibility.",
-    // icon: OnSiteContentIcon,
+    icon: contentDistribution,
   },
   {
     title: "Performance Tracking & Optimization",
     description:
       "We track key metrics like traffic, engagement, and conversions. Continuous analysis helps us refine the strategy and improve results over time.",
-    // icon: ContentOptimizationIcon,
+    icon: performanceTracking,
   }
 ]
 

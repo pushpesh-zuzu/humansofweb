@@ -1,11 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 export default function HeroSection({ heading, pinkHeading, description1, description2, bannerImage, altText }) {
+    const [proposalOpen, setProposalOpen] = useState(false);
+
+
+
     return (
         <ContainerWrapper background="#48179C" >
             <PaddingWrapper2>
@@ -40,7 +46,7 @@ export default function HeroSection({ heading, pinkHeading, description1, descri
                                     placeholder="Enter your website"
                                     className="h-[52px] w-full bg-white rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
                                 />
-                                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white">
+                                <button type="button" onClick={() => setProposalOpen(true)} className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white">
                                     Book Your Free consultation
                                 </button>
                             </div>
@@ -71,6 +77,10 @@ export default function HeroSection({ heading, pinkHeading, description1, descri
                     </div>
                 </section>
             </PaddingWrapper2>
+            <GetProposalModal
+                isOpen={proposalOpen}
+                onClose={() => setProposalOpen(false)}
+            />
         </ContainerWrapper>
     );
 }

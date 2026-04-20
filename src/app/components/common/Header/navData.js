@@ -48,11 +48,11 @@ const NAV_ITEMS = [
         label: "Dental",
         href: "/dental-digital-marketing-agency",
         subItems: [
-          { label: "Dental SEO", href: "#" },
-          { label: "Dental PPC", href: "#" },
-          { label: "Dental Website Development", href: "#" },
-          { label: "Dental Social Media Marketing", href: "#" },
-          { label: "Dental Reputation Management", href: "#" },
+          { label: "Dental SEO", href: "/dental-digital-marketing-agency/seo-services" },
+          { label: "Dental PPC", href: "/dental-digital-marketing-agency/ppc-services" },
+          { label: "Dental Website Development", href: "/dental-digital-marketing-agency/website-design" },
+          { label: "Dental Social Media Marketing", href: "/dental-digital-marketing-agency/social-media-marketing" },
+          { label: "Dental Reputation Management", href: "/dental-digital-marketing-agency/reputation-management-services" },
         ],
       },
       {
@@ -111,34 +111,34 @@ const NAV_ITEMS = [
     label: "Platform Expertise",
     href: "/platform-expertise",
     children: [
-       {
-    label: "CMS",
-    href: "/cms-digital-marketing-agency",
-    subItems: [
-      { label: "Shopify", href: "#" },
-      { label: "Wordpress", href: "#" },
+      {
+        label: "CMS",
+        href: "/cms-digital-marketing-agency",
+        subItems: [
+          { label: "Shopify", href: "#" },
+          { label: "Wordpress", href: "#" },
+        ],
+      },
+      {
+        label: "CRM Customisation Services",
+        href: "/crm-customisation-digital-marketing-agency",
+        subItems: [
+          { label: "Zoho", href: "#" },
+          { label: "Vtiger CRM", href: "#" },
+          { label: "Hubspot CRM", href: "#" },
+        ],
+      },
+      {
+        label: "AI Services",
+        href: "#",
+        subItems: [
+          { label: "Claude", href: "#" },
+          { label: "Kilocode", href: "#" },
+          { label: "ChatGPT", href: "#" },
+          { label: "Bolt", href: "#" },
+        ],
+      },
     ],
-  },
-  {
-    label: "CRM Customisation Services",
-    href: "/crm-customisation-digital-marketing-agency",
-    subItems: [
-      { label: "Zoho", href: "#" },
-      { label: "Vtiger CRM", href: "#" },
-      { label: "Hubspot CRM", href: "#" },
-    ],
-  },
-  {
-    label: "AI Services",
-    href: "#",
-    subItems: [
-      { label: "Claude", href: "#" },
-      { label: "Kilocode", href: "#" },
-      { label: "ChatGPT", href: "#" },
-      { label: "Bolt", href: "#" },
-    ],
-  },
-     ],
   },
   { label: "Contact us", href: "/contact" },
 ];
