@@ -161,7 +161,7 @@ const SocialMediaMarketing = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Social Media Built for"
                 headingBlue=" Ecommerce Growth"
-                image="/IndustryExpertise/eCommerce/marketAnalyzerImage.webp"
+                image="/SocialMediaMarketing/socialmedia-growth.svg"
                 paragraphs={mediaDescription}
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"

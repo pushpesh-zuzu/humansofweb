@@ -167,7 +167,7 @@ const ContentMarketing = () => {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Content That Helps"
         headingBlue="Customers Choose You"
-        image="/IndustryExpertise/eCommerce/marketAnalyzerImage.webp"
+        image="/contentMarketing/content-marketing.svg"
         paragraphs={serviceParagraph}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"

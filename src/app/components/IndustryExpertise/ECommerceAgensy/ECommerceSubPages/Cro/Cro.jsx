@@ -164,7 +164,7 @@ const Cro = () => {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Conversion Rate Optimization"
         headingBlue="for Serious Growth"
-        image="/IndustryExpertise/eCommerce/marketAnalyzerImage.webp"
+        image="/cro/cro-purchase.svg"
         paragraphs={serviceParagraph}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"

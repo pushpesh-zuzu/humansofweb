@@ -50,12 +50,12 @@ const WebsiteDesign = () => {
     return (
         <>
             <HeroSection
-                heading={"E-commerce Websites That"}
-                pinkHeading={"Grow With You"}
-                description1={"Start small or scale big, we design eCommerce websites that adapt seamlessly as your business grows, ensuring flexibility, performance, and long-term success."}
-                description2={"From design to functionality, we build fast, user-friendly online stores that enhance customer experience, increase conversions, and help you confidently grow your business."}
+                heading={"Dental Websites That"}
+                pinkHeading={"Build Patient Trust"}
+                description1={"Your website is often the first impression patients have of your clinic, so we design websites that build trust, highlight your expertise, and encourage visitors to book appointments."}
+                description2={"From design to functionality, we create fast, user-friendly dental websites that enhance patient experience, improve credibility, and help your practice grow with confidence."}
                 bannerImage="/"
-                altText={"websites that grow with you"}
+                altText={"dental websites that build patient trust"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             {/* <WorkWithCards

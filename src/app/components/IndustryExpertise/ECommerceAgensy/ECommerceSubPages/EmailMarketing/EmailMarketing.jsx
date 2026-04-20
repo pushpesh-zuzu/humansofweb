@@ -156,7 +156,7 @@ const EmailMarketing = () => {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Email Marketing Built for"
         headingBlue="Retention and Revenue"
-        image="/IndustryExpertise/eCommerce/marketAnalyzerImage.webp"
+        image="/emailMarketing/email-marketing.svg"
         paragraphs={serviceParagraph}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
