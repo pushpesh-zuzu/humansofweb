@@ -203,7 +203,7 @@ const GeoServices = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Future-Ready eCommerce"
                 headingBlue="GEO Services"
-                image="/geoServices/geo-engine.webp"
+                image="/geoServices/geo-service.svg"
                 paragraphs={geoService}
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"

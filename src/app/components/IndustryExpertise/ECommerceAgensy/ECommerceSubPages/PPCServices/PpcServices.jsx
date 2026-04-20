@@ -74,7 +74,7 @@ const PpcServices = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="What Does eCommerce "
                 headingBlue="PPC Management Really Do?"
-                image="/ppcServices/ppc-analytics.webp"
+                image="/ppcServices/ppcManagement.svg"
                 imageAltText="ecommerce PPC management process showing ad optimization, keyword targeting, and performance tracking"
                 paragraphs={ppcManagement}
                 headingBlueColor="text-secondary"
