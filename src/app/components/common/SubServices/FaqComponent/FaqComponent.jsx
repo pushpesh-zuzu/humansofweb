@@ -9,6 +9,7 @@ const FaqComponent = ({
   title = "Frequently asked questions",
   items = [],
   defaultOpen = 0,
+  position = ""
 }) => {
   const [openIndex, setOpenIndex] = useState(items.length ? defaultOpen : null);
 
@@ -25,7 +26,7 @@ const FaqComponent = ({
             textAlign="text-center"
           />
 
-          <div className="max-w-[980px] overflow-hidden rounded-[14px] bg-white shadow-[0_18px_45px_rgba(72,23,156,0.08)]">
+          <div className={`max-w-[980px] ${position} overflow-hidden rounded-[14px] bg-white shadow-[0_18px_45px_rgba(72,23,156,0.08)]`}>
             {items.map((item, index) => {
               const isOpen = index === openIndex;
 
@@ -46,8 +47,8 @@ const FaqComponent = ({
                       {item.question}
                     </span>
                     <span className={`mt-1 flex h-9 w-9 flex-none items-center justify-center rounded-full border text-xl font-semibold leading-none transition ${isOpen
-                        ? "border-secondary bg-secondary text-white"
-                        : "border-primary/15 bg-white text-primary"
+                      ? "border-secondary bg-secondary text-white"
+                      : "border-primary/15 bg-white text-primary"
                       }`}>
                       <span
                         className="block leading-none"

@@ -6,6 +6,23 @@ import ServicesTwoGridSection from "@/app/components/common/SubServices/Services
 import WorkWithCards from "@/app/components/common/SubServices/WorkWithCards/WorkWithCards";
 import TrustedBy from "@/app/components/common/TrustedBy/TrustedBy";
 import CustomGeneration from "@/app/components/Home/CustomGeneration";
+import customerJourney from '../../../../common/Icons/cro/customer-journey.svg'
+import conversionFocused from '../../../../common/Icons/cro/conversion-focused.svg'
+import dataDiagnosis from '../../../../common/Icons/cro/data-diagnosis.svg'
+import testingItration from '../../../../common/Icons/cro/testing-iteration.svg'
+import conversationFunnel from '../../../../common/Icons/cro/conversion-funnel.svg'
+import ecommerceConsulting from '../../../../common/Icons/cro/ecommerce-consulting.svg'
+import uxDesign from '../../../../common/Icons/cro/ux-design.svg'
+import contentPersonalisation from '../../../../common/Icons/cro/content-personalisation.svg'
+import bTesting from '../../../../common/Icons/cro/b-testing.svg'
+import testingOptimization from '../../../../common/Icons/cro/testing-optimization.svg'
+import audit from '../../../../common/Icons/cro/cro-audit.svg'
+import croStrategy from '../../../../common/Icons/cro/cro-strategy.svg'
+import miniAudit from '../../../../common/Icons/cro/quick-mini-audit.svg'
+import speedOptimization from '../../../../common/Icons/cro/speed-optimization.svg'
+
+
+
 
 const serviceParagraph = [
   "More traffic is useful only when your store is ready to convert it. CRO helps you get more value from the visitors you already attract.",
@@ -18,25 +35,25 @@ const CRO_WORK_CARDS = [{
   title: "Data-Led Diagnosis",
   description:
     "We review analytics, behavior patterns, funnels, and page performance to find the friction that is costing your store sales.",
-  // icon: analyticsIcon,
+  icon: dataDiagnosis,
 },
 {
   title: "Customer Journey Clarity",
   description:
     "We make browsing, product discovery, comparison, and checkout easier so customers understand what to do next.",
-  // icon: userJourneyIcon,
+  icon: customerJourney,
 },
 {
   title: "Conversion-Focused UX",
   description:
     "We improve layouts, copy, trust elements, calls to action, and mobile usability to support confident buying decisions.",
-  // icon: conversionIcon,
+  icon: conversionFocused,
 },
 {
   title: "Testing and Iteration",
   description:
     "We prioritize changes, measure impact, and keep refining the experience so CRO becomes a repeatable growth process.",
-  // icon: detailedAuditIcon,
+  icon: testingItration,
 },
 ]
 
@@ -45,31 +62,31 @@ const CRO_STRATEGY_ITEMS = [
     title: "UX Design & Development",
     description:
       "We design and develop seamless user experiences that guide customers effortlessly through their buying journey. From intuitive navigation to mobile responsiveness, every element is crafted to engage users and improve conversions.",
-    // icon: DetailedAuditIcon,
+    icon: uxDesign,
   },
   {
     title: "Content Personalization",
     description:
       "We create personalized experiences based on user behavior, preferences, and purchase history. This helps deliver relevant content that not only improves engagement but also encourages repeat visits and conversions.",
-    // icon: CompetitorAnalysisIcon,
+    icon: contentPersonalisation,
   },
   {
     title: "A/B Testing",
     description:
       "We test different versions of key elements like headlines, visuals, and CTAs to identify what works best. This data-driven approach helps continuously improve performance and maximize conversion rates.",
-    // icon: KeywordResearchIcon,
+    icon: bTesting,
   },
   {
     title: "eCommerce Consulting & Strategy",
     description:
       "We build tailored CRO strategies based on your business goals and challenges. Our approach focuses on long-term growth by aligning optimization efforts with your brand and market dynamics.",
-    // icon: OnSiteContentIcon,
+    icon: ecommerceConsulting,
   },
   {
     title: "Conversion Funnel Optimization",
     description:
       "We analyze and optimize every stage of your sales funnel to reduce drop-offs and improve conversions. From landing pages to checkout, we identify friction points and streamline the journey to turn more visitors into customers.",
-    // icon: ContentOptimizationIcon,
+    icon: conversationFunnel,
   }
 ]
 
@@ -77,32 +94,32 @@ const STEPS = [
   {
     step: "01",
     title: "CRO Audit",
-    description: "We start with a deep audit of your store, analyzing user behavior, funnels, and key pages. This helps uncover hidden issues and opportunities, giving you a clear roadmap for improving conversions.",
-    icon: "",
+    description: "We start with a deep audit of your store, analyzing user behavior, funnels, and key pages. This helps uncover hidden issues and opportunities, giving you a clear roadmap for improving conversions effectively.",
+    icon: audit,
   },
   {
     step: "02",
     title: "Custom CRO Strategy (Scope)",
-    description: "Every business is different, so we build a tailored CRO strategy aligned with your goals. Our approach focuses on what will drive the most impact for your brand and audience.",
-    icon: "",
+    description: "Every business is different, so we build a tailored CRO strategy aligned with your goals. Our approach focuses on what will drive the most impact for your brand and audience growth.",
+    icon: croStrategy,
   },
   {
     step: "03",
     title: "Quick-Win Mini Audit",
     description: "We identify fast, high-impact improvements that can deliver immediate results. This ensures you start seeing conversion gains quickly while building toward long-term optimization.",
-    icon: "",
+    icon: miniAudit,
   },
   {
     step: "04",
     title: "Testing & Optimization",
-    description: "We run continuous A/B and multivariate tests on key elements like headlines, layouts, and CTAs. This data-driven process helps refine your store for maximum performance.",
-    icon: "",
+    description: "We run continuous A/B and multivariate tests on key elements like headlines, layouts, and CTAs. This data-driven process helps refine your store for maximum performance results consistently.",
+    icon: testingOptimization,
   },
   {
     step: "05",
     title: "Site Speed Optimization",
     description: "We improve your website speed by optimizing assets and performance. Faster load times create a smoother user experience and directly boost conversions.",
-    icon: "",
+    icon: speedOptimization,
   },
 ];
 
@@ -180,6 +197,7 @@ const Cro = () => {
         title="Frequently asked questions"
         items={FAQ_DATA}
         defaultOpen={0}
+        position="mx-auto"
       />
       <ReachWithUs />
     </>

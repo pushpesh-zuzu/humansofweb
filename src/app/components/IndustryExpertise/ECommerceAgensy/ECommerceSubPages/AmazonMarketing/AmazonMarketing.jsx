@@ -233,6 +233,7 @@ const AmazonMarketing = () => {
         title="Frequently asked questions"
         items={FaqData}
         defaultOpen={0}
+        position="mx-auto"
       />
       <ReachWithUs />
     </>

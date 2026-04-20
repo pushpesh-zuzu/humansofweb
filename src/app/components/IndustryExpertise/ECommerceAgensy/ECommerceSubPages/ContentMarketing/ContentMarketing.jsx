@@ -6,6 +6,16 @@ import ServiceGridSection from "@/app/components/common/SubServices/ServiceGridS
 import ServicesTwoGridSection from "@/app/components/common/SubServices/ServicesTwoGridSection/ServicesTwoGridSection";
 import WorkWithCards from "@/app/components/common/SubServices/WorkWithCards/WorkWithCards";
 import TrustedBy from "@/app/components/common/TrustedBy/TrustedBy";
+import buyerStrategy from '../../../../common/Icons/contentMarketing/buyer-strategy.svg'
+import conversationAware from '../../../../common/Icons/contentMarketing/conversion-aware.svg'
+import measurableGrowth from '../../../../common/Icons/contentMarketing/measurable-growth.svg'
+import seoBrand from '../../../../common/Icons/contentMarketing/seo-brand.svg'
+import seoContent from '../../../../common/Icons/contentMarketing/seo-content-strategy.svg'
+import blogContent from '../../../../common/Icons/contentMarketing/blog-content.svg'
+import contentPerformance from '../../../../common/Icons/contentMarketing/content-performance.svg'
+import emailContent from '../../../../common/Icons/contentMarketing/email-social-content.svg'
+import landingPage from '../../../../common/Icons/contentMarketing/landing-page.svg'
+import productCategory from '../../../../common/Icons/contentMarketing/product-category.svg'
 
 const serviceParagraph = [
   "Good ecommerce content does more than fill a blog. It answers real questions, builds trust, supports search visibility, and gives customers reasons to buy from your brand.",
@@ -18,62 +28,62 @@ const CONTENT_WORK_CARDS = [{
   title: "Buyer-Led Strategy",
   description:
     "We map content to customer intent, pain points, objections, and buying moments so every topic has a reason to exist.",
-  // icon: strategyIcon,
+  icon: buyerStrategy,
 },
 {
   title: "SEO and Brand Balance",
   description:
     "We combine search visibility with a clear brand voice, helping your content rank while still sounding credible and human.",
-  // icon: searchVisibilityIcon,
+  icon: seoBrand,
 },
 {
   title: "Conversion-Aware Copy",
   description:
     "We create content that guides action, supports product pages, improves trust, and helps visitors take the next meaningful step.",
-  // icon: contentMarketingIcon,
+  icon: conversationAware,
 },
 {
   title: "Measurable Content Growth",
   description:
     "We track rankings, engagement, assisted conversions, and content opportunities so your strategy keeps improving over time.",
-  // icon: analyticsIcon,
+  icon: measurableGrowth,
 }]
 
 const SERVICE_GRID_ITEMS = [{
   title: "SEO Content Strategy",
   description:
     "Topic planning, keyword mapping, and content architecture designed to improve visibility for searches your customers actually make.",
-  // icon: keywordIcon,
+  icon: seoContent,
 },
 {
   title: "Blog and Guide Content",
   description:
     "Helpful articles, buying guides, comparisons, and educational pages that attract traffic and support product discovery.",
-  // icon: contentMarketingIcon,
+  icon: blogContent,
 },
 {
   title: "Product and Category Copy",
   description:
     "Clear product, collection, and category content that improves search relevance while helping customers understand value faster.",
-  // icon: searchVisibilityIcon,
+  icon: productCategory,
 },
 {
   title: "Landing Page Copy",
   description:
     "Campaign and service landing pages written to communicate value, reduce friction, and guide visitors toward conversion.",
-  // icon: strategyIcon,
+  icon: landingPage,
 },
 {
   title: "Email and Social Content Support",
   description:
     "Reusable content angles, campaign copy, and storylines that keep your audience engaged across owned and social channels.",
-  // icon: trustIcon,
+  icon: emailContent,
 },
 {
   title: "Content Performance Reporting",
   description:
     "Regular reporting on visibility, engagement, and content opportunities so your publishing plan is guided by performance data.",
-  // icon: analyticsIcon,
+  icon: contentPerformance,
 }]
 
 const faqData = [{
@@ -187,6 +197,7 @@ const ContentMarketing = () => {
         title="Frequently asked questions"
         items={faqData}
         defaultOpen={0}
+        position="mx-auto"
       />
       <ReachWithUs />
     </>

@@ -7,6 +7,20 @@ import ServiceGridSection from "@/app/components/common/SubServices/ServiceGridS
 import BusineesSell from "@/app/components/common/SubServices/BusineesSell/BusineesSell";
 import FaqComponent from "@/app/components/common/SubServices/FaqComponent/FaqComponent";
 import ReachWithUs from "@/app/components/common/Services/ReachWithUs/ReachWithUs";
+import strategy from "../../../../common/Icons/socialMedia/strategy-posting.svg";
+import brand from "../../../../common/Icons/socialMedia/brand-consistency.svg";
+import content from "../../../../common/Icons/socialMedia/content-purpose.svg";
+import conversion from "../../../../common/Icons/socialMedia/conversion-focused.svg";
+import learning from "../../../../common/Icons/socialMedia/performance-learning.svg";
+
+import socialStrategy from "../../../../common/Icons/socialMedia/social-strategy.svg";
+import socialReporting from "../../../../common/Icons/socialMedia/social-reporting.svg";
+import paidSocial from "../../../../common/Icons/socialMedia/paid-social.svg";
+import conversionCampaigns from "../../../../common/Icons/socialMedia/conversion-campaigns.svg";
+import contentPlanning from "../../../../common/Icons/socialMedia/content-planning.svg";
+import communityTrust from "../../../../common/Icons/socialMedia/community-trust.svg";
+
+
 
 const mediaDescription = [
     "Social media is where customers discover brands, compare products, ask questions, save ideas, and decide who feels trustworthy enough to buy from.",
@@ -19,27 +33,27 @@ const Marketing_WORK_CARDS = [
     {
         title: "Strategy Before Posting",
         description: "We define your audience, platforms, content pillars, offers, and goals before building a social plan.",
-        // icon: detailedAuditIcon,
+        icon: strategy,
     },
     {
         title: "Content With a Purpose",
         description: "We create content angles that educate, inspire, answer objections, show product value, and move customers closer to action.",
-        // icon: competitorAnalysisIcon,
+        icon: content,
     },
     {
         title: "Brand Consistency",
         description: "We keep your social content aligned with your website, email, ads, and customer experience so the brand feels clear everywhere.",
-        // icon: keywordResearchIcon,
+        icon: brand,
     },
     {
         title: "Performance Learning",
         description: "We review engagement, reach, clicks, content themes, and conversion signals to keep improving the social plan.",
-        // icon: technicalSeoIcon,
+        icon: learning,
     },
     {
         title: "Conversion-Focused Execution",
         description: "We optimize posts, CTAs, and campaigns to turn engagement into leads, sales, and measurable business outcomes.",
-        // icon: contentOptimizationIcon,
+        icon: conversion,
     }
 ];
 
@@ -48,37 +62,37 @@ const serviceSocialItems = [
         title: "Social Strategy",
         description:
             "Platform, audience, content pillar, posting, and campaign planning that gives your social presence a clear direction.",
-        // icon: strategyIcon,
+        icon: socialStrategy,
     },
     {
         title: "Content Planning",
         description:
             "Monthly content themes, product stories, educational ideas, launch support, and creative angles designed for ecommerce audiences.",
-        // icon: contentIcon,
+        icon: contentPlanning,
     },
     {
         title: "Paid Social Support",
         description:
             "Ad messaging, creative direction, audience thinking, and performance insights to support campaigns across platforms like Meta.",
-        // icon: paidMediaIcon,
+        icon: paidSocial,
     },
     {
         title: "Conversion-Focused Campaigns",
         description:
             "Social campaigns designed to support product launches, offers, seasonal moments, lead generation, and sales-focused journeys.",
-        // icon: conversionIcon,
+        icon: conversionCampaigns,
     },
     {
         title: "Community and Trust Signals",
         description:
             "Guidance for social proof, comments, UGC-style content, reviews, and brand conversations that make your presence feel credible.",
-        // icon: brandIcon,
+        icon: communityTrust,
     },
     {
         title: "Social Reporting",
         description:
             "Clear reports on reach, engagement, traffic, campaign response, and content learning so each month becomes smarter than the last.",
-        // icon: analyticsIcon,
+        icon: socialReporting,
     },
 ]
 
@@ -105,31 +119,31 @@ const sellPoints = [
 
 const faqData = [
     {
-      question: "What platforms do you support?",
-      answer:
-        "We can plan ecommerce social strategies for platforms such as Instagram, Facebook, TikTok, LinkedIn, Pinterest, and YouTube depending on your audience and goals.",
+        question: "What platforms do you support?",
+        answer:
+            "We can plan ecommerce social strategies for platforms such as Instagram, Facebook, TikTok, LinkedIn, Pinterest, and YouTube depending on your audience and goals.",
     },
     {
-      question: "Do you create social media content?",
-      answer:
-        "We provide strategy, content planning, copy, creative direction, campaign angles, and performance insights to support social execution.",
+        question: "Do you create social media content?",
+        answer:
+            "We provide strategy, content planning, copy, creative direction, campaign angles, and performance insights to support social execution.",
     },
     {
-      question: "Can social media drive ecommerce sales?",
-      answer:
-        "Yes. Social media can support discovery, trust, product education, retargeting, campaign traffic, and repeat customer engagement.",
+        question: "Can social media drive ecommerce sales?",
+        answer:
+            "Yes. Social media can support discovery, trust, product education, retargeting, campaign traffic, and repeat customer engagement.",
     },
     {
-      question: "Do you help with paid social campaigns?",
-      answer:
-        "Yes. We can support paid social strategy, ad messaging, creative direction, campaign planning, and performance learning.",
+        question: "Do you help with paid social campaigns?",
+        answer:
+            "Yes. We can support paid social strategy, ad messaging, creative direction, campaign planning, and performance learning.",
     },
     {
-      question: "How do you measure social media success?",
-      answer:
-        "We look at reach, engagement, traffic, audience growth, content learnings, assisted conversions, campaign response, and how social supports wider ecommerce goals.",
+        question: "How do you measure social media success?",
+        answer:
+            "We look at reach, engagement, traffic, audience growth, content learnings, assisted conversions, campaign response, and how social supports wider ecommerce goals.",
     },
-  ]
+]
 
 const SocialMediaMarketing = () => {
     return (
@@ -181,6 +195,7 @@ const SocialMediaMarketing = () => {
                 title="Frequently asked questions"
                 items={faqData}
                 defaultOpen={0}
+                position="mx-auto"
             />
             <ReachWithUs />
         </>

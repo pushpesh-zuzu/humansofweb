@@ -116,6 +116,7 @@ const PpcServices = () => {
                 title="Frequently asked questions"
                 items={FAQ_DATA}
                 defaultOpen={0}
+                position="mx-auto"
             />
             <ReachWithUs />
         </>

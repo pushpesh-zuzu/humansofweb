@@ -6,6 +6,17 @@ import ServiceGridSection from "@/app/components/common/SubServices/ServiceGridS
 import ServicesTwoGridSection from "@/app/components/common/SubServices/ServicesTwoGridSection/ServicesTwoGridSection";
 import WorkWithCards from "@/app/components/common/SubServices/WorkWithCards/WorkWithCards";
 import TrustedBy from "@/app/components/common/TrustedBy/TrustedBy";
+import buildsTrust from '../../../../common/Icons/emailMarketing/copy-builds.svg'
+import lifecycle from '../../../../common/Icons/emailMarketing/lifecycle-strategy.svg'
+import revenue from '../../../../common/Icons/emailMarketing/revenue-reporting.svg'
+import segmentation from '../../../../common/Icons/emailMarketing/segmentation-matters.svg'
+import performanceReporting from '../../../../common/Icons/emailMarketing/performance-reporting.svg'
+import listGrowth from '../../../../common/Icons/emailMarketing/list-growth.svg'
+import emailStrategy from '../../../../common/Icons/emailMarketing/email-strategy.svg'
+import campaignCreative from '../../../../common/Icons/emailMarketing/campaign-creative.svg'
+import automatedEmail from '../../../../common/Icons/emailMarketing/automated-email.svg'
+import audience from '../../../../common/Icons/emailMarketing/audience.svg'
+
 
 const serviceParagraph = [
   "Email is one of the strongest owned channels for ecommerce because it lets you reach customers without depending only on ads or algorithms.",
@@ -19,25 +30,25 @@ const EMAIL_WORK_CARDS = [
     title: "Lifecycle Strategy",
     description:
       "We plan emails around customer stages such as welcome, browse, cart, purchase, repeat order, winback, and loyalty.",
-    // icon: onboardingIcon,
+    icon: lifecycle,
   },
   {
     title: "Segmentation That Matters",
     description:
       "We group audiences by behavior, purchase history, engagement, and intent so your campaigns feel more relevant.",
-    // icon: operationsIcon,
+    icon: segmentation,
   },
   {
     title: "Copy That Builds Trust",
     description:
       "We write clear, helpful, conversion-aware emails that communicate value without exhausting your audience.",
-    // icon: contentIcon,
+    icon: buildsTrust,
   },
   {
     title: "Revenue-Focused Reporting",
     description:
       "We monitor flow revenue, campaign performance, list health, engagement, and customer behavior so the channel keeps improving.",
-    // icon: analyticsIcon,
+    icon: revenue,
   },
 ]
 
@@ -46,37 +57,37 @@ const SERVICE_GRID_ITEMS = [
     title: "Email Strategy and Planning",
     description:
       "A clear roadmap for campaigns, automations, segments, offers, and messaging based on your goals and customer journey.",
-    // icon: onboardingIcon,
+    icon: emailStrategy,
   },
   {
     title: "Automated Email Flows",
     description:
       "Welcome, abandoned cart, browse abandonment, post-purchase, replenishment, review, winback, and loyalty flows built to recover revenue.",
-    // icon: operationsIcon,
+    icon: automatedEmail,
   },
   {
     title: "Campaign Copy and Creative Direction",
     description:
       "Email copy, content angles, subject lines, and creative guidance that make campaigns useful, clear, and conversion-focused.",
-    // icon: contentIcon,
+    icon: campaignCreative,
   },
   {
     title: "Audience Segmentation",
     description:
       "Behavior and purchase-based audience groups that help you send more relevant messages to subscribers and customers.",
-    // icon: trustIcon,
+    icon: audience,
   },
   {
     title: "List Growth Optimization",
     description:
       "Popup, form, incentive, and lead capture improvements designed to grow your list with better-fit subscribers.",
-    // icon: revenueIcon,
+    icon: listGrowth,
   },
   {
     title: "Performance Reporting",
     description:
       "Reporting on revenue, engagement, deliverability indicators, and flow opportunities so your email channel keeps getting stronger.",
-    // icon: analyticsIcon,
+    icon: performanceReporting,
   },
 ]
 
@@ -180,6 +191,7 @@ const EmailMarketing = () => {
         title="Frequently asked questions"
         items={faqData}
         defaultOpen={0}
+        position="mx-auto"
       />
       <ReachWithUs />
     </>

@@ -88,13 +88,14 @@ const WebsiteDesign = () => {
                 headingBlue="High-Converting eCommerce Design"
                 steps={STEPS}
                 showCtaButton={true}
-                ctaText = "get my free website plan"
+                ctaText="get my free website plan"
             />
             <BusineesSell />
             <FaqComponent
                 title="Frequently asked questions"
                 items={FAQ_DATA}
                 defaultOpen={0}
+                position="mx-auto"
             />
             <ReachWithUs />
         </>
