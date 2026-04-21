@@ -6,6 +6,21 @@ import FaqComponent from "@/app/components/common/SubServices/FaqComponent/FaqCo
 import ServiceGridSection from "@/app/components/common/SubServices/ServiceGridSection/ServiceGridSection";
 import ServicesTwoGridSection from "@/app/components/common/SubServices/ServicesTwoGridSection/ServicesTwoGridSection";
 import WorkWithCards from "@/app/components/common/SubServices/WorkWithCards/WorkWithCards";
+import reviewGeneration from '@/app/components/common/Icons/ReputationManagement/review-generation.svg'
+import reviewMonitoring from '@/app/components/common/Icons/ReputationManagement/review-monitoring.svg'
+import localReputation from '@/app/components/common/Icons/ReputationManagement/local-reputation.svg'
+import negativeFeedback from '@/app/components/common/Icons/ReputationManagement/negative-feedback.svg'
+import patientEngagement from '@/app/components/common/Icons/ReputationManagement/patient-engagement.svg'
+import reputationReporting from '@/app/components/common/Icons/ReputationManagement/reputation-reporting.svg'
+
+import localReputationBoost from '@/app/components/common/Icons/ReputationManagement/local-reputation-boost.svg'
+import patients from '@/app/components/common/Icons/ReputationManagement/patients.svg'
+import positiveReview from '@/app/components/common/Icons/ReputationManagement/positiveReview.svg'
+import reputationInsight from '@/app/components/common/Icons/ReputationManagement/reputationInsights.svg'
+import reviewMonitoringDetails from '@/app/components/common/Icons/ReputationManagement/reviewMonitoringdetails.svg'
+import smartReviewResponse from '@/app/components/common/Icons/ReputationManagement/smartReviewResponse.svg'
+
+
 
 
 const REPUTATION_DESCRIPTION = [
@@ -23,31 +38,37 @@ const MARKETING_WORK_CARDS = [
         title: "Review Generation Strategy",
         description:
             "We help you collect more positive reviews from satisfied patients, improving your ratings and building stronger trust online.",
+        icon: reviewGeneration
     },
     {
         title: "Review Monitoring & Management",
         description:
             "We track and manage your reviews across platforms, ensuring every patient feedback is addressed professionally and on time.",
+        icon: reviewMonitoring
     },
     {
         title: "Negative Feedback Handling",
         description:
             "We respond to negative reviews with the right approach, helping protect your reputation and maintain patient confidence.",
+        icon: negativeFeedback
     },
     {
         title: "Local Reputation Optimization",
         description:
             "We enhance your presence on Google and local platforms, improving visibility and making your clinic more discoverable to nearby patients.",
+        icon: localReputation
     },
     {
         title: "Patient Engagement & Response",
         description:
             "We engage with patient queries and feedback, creating a positive communication channel that builds loyalty and trust.",
+        icon: patientEngagement
     },
     {
         title: "Reputation Reporting & Insights",
         description:
             "We provide clear insights into ratings, reviews, and patient sentiment to help you continuously improve your clinic’s reputation.",
+        icon: reputationReporting
     }
 ];
 
@@ -56,31 +77,37 @@ const DENTAL_REPUTATION_ITEMS = [
         title: "Positive Review Generation",
         description:
             "We help you consistently collect genuine positive reviews from happy patients, improving your ratings and building strong trust online.",
+        icon: positiveReview
     },
     {
         title: "Review Monitoring",
         description:
             "We track your reviews across platforms, ensuring you stay updated on patient feedback and maintain a strong digital presence.",
+        icon: reviewMonitoringDetails
     },
     {
         title: "Smart Review Responses",
         description:
             "We craft professional responses to both positive and negative reviews, helping you build credibility and show patients you care.",
+        icon: smartReviewResponse
     },
     {
         title: "Local Reputation Boost",
         description:
             "We optimize your presence on Google and local listings so your clinic stands out when patients search for dental services nearby.",
+        icon: localReputationBoost
     },
     {
         title: "Patient Engagement",
         description:
             "We help you engage with patients through feedback and queries, strengthening relationships and improving overall satisfaction.",
+        icon: patients
     },
     {
         title: "Reputation Insights & Growth",
         description:
             "We provide clear reports and insights into your reviews and ratings to help you continuously improve and grow your clinic’s reputation.",
+        icon: reputationInsight
     },
 ];
 
