@@ -13,7 +13,7 @@ import Instagram from '@/app/components/common/Icons/socialMedia/Instagram.svg'
 import Linkedin from '@/app/components/common/Icons/socialMedia/Linkedin.svg'
 import whatsapp from '@/app/components/common/Icons/socialMedia/Whatsapp.svg'
 import youtube from '@/app/components/common/Icons/socialMedia/Youtube.svg'
-import paidSocial from '@/app/components/common/Icons/socialMedia/paid-social-campaign.svg'
+// import paidSocial from '@/app/components/common/Icons/socialMedia/paid-social-campaign.svg'
 
 
 

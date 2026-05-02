@@ -1,3 +1,4 @@
+import React from 'react'
 import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs';
 import BusineesSell from '@/app/components/common/SubServices/BusineesSell/BusineesSell';
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent';
@@ -7,7 +8,12 @@ import ServiceGridSection from '@/app/components/common/SubServices/ServiceGridS
 import ServicesTwoGridSection from '@/app/components/common/SubServices/ServicesTwoGridSection/ServicesTwoGridSection'
 import WorkWithCards from '@/app/components/common/SubServices/WorkWithCards/WorkWithCards';
 import TrustedBy from '@/app/components/common/TrustedBy/TrustedBy'
-import React from 'react'
+import youtube from "../../../../common/Icons/healthcare/youtube.svg";
+import fb from "../../../../common/Icons/healthcare/fb.svg";
+import googleBusinees from "../../../../common/Icons/healthcare/google-businees.svg";
+import instagram from "../../../../common/Icons/healthcare/instagram.svg";
+import linkdin from "../../../../common/Icons/healthcare/linkdin.svg";
+import whatsapp from "../../../../common/Icons/healthcare/whatsapp.svg";
 
 
 const HEALTHCARE_MEDIA_DESCRIPTION = [
@@ -25,31 +31,37 @@ const MARKETING_WORK_CARDS = [
         title: "Facebook for Patient Engagement",
         description:
             "Engage with local patients through updates, reviews, and community-driven content that builds trust and keeps your healthcare brand top-of-mind.",
+        icon: fb
     },
     {
         title: "Instagram for Visual Storytelling",
         description:
             "Showcase your services, patient journeys, and clinic environment through engaging visuals that strengthen credibility and attract attention.",
+        icon: instagram
     },
     {
         title: "YouTube for Patient Education",
         description:
             "Create informative videos about treatments, procedures, and healthcare tips to educate patients and position your practice as a trusted authority.",
+        icon: youtube
     },
     {
         title: "Google Business Profile",
         description:
             "Boost local visibility with optimized listings, patient reviews, and regular updates so patients can easily discover and contact your practice.",
+        icon: googleBusinees
     },
     {
         title: "LinkedIn for Professional Branding",
         description:
             "Enhance your professional presence by sharing insights, achievements, and industry updates to build credibility within the healthcare community.",
+        icon: linkdin
     },
     {
         title: "WhatsApp for Instant Patient Connect",
         description:
             "Enable quick communication for inquiries, support, and appointment coordination, making it easier for patients to reach your practice instantly.",
+        icon: whatsapp
     }
 ];
 
