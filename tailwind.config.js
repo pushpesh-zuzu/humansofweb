@@ -234,8 +234,8 @@ module.exports = {
         heading: ["var(--font-montserrat)", "sans-serif"],
       },
       colors: {
-        primary: "#48179C",   // Blue
-        secondary: "#F65A75", // Orange
+        primary: "#48179C", 
+        secondary: "#F65A75",
       },
       animation: {
       "marquee-scroll": "marquee-scroll 12s linear infinite",

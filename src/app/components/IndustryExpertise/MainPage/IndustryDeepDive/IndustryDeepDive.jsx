@@ -4,6 +4,21 @@ import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper
 import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
+import ConversionPages from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/ConversionPages";
+import LeadGeneration from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LeadGeneration";
+import LocalSEO from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LocalSEO";
+import HighValueProcedureAds from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/HighValueProcedureAds";
+import SpecialtyEyeCareSEO from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/SpecialtyEyeCareSEO";
+import TrustBuildingContentReviews from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/TrustBuildingContentReviews";
+import EmailandSMSRetention from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/EmailandSMSRetention";
+import MetaandGooglePerformanceAds from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/MetaandGooglePerformanceAds";
+import ShoppingSEOandProductFeeds from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/ShoppingSEOandProductFeeds";
+import HealthcareLocalSEO from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/HealthcareLocalSEO";
+import PatientAcquisitionAds from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/PatientAcquisitionAds";
+import PatientRetentionAndFollowup from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/PatientRetentionAndFollowup";
+import AppointmentFocusedGoogleAds from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/AppointmentFocusedGoogleAds";
+import LocalSEOGoogleMaps from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/LocalSEOGoogleMaps";
+import ReviewReputationManagement from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/ReviewReputationManagement";
 import Image from "next/image";
 import React from "react";
 
@@ -18,30 +33,17 @@ const INDUSTRIES = [
       "Most local service businesses lose jobs to competitors not because they're worse — but because they're invisible online. We fix that.",
     services: [
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
-          </svg>
-        ),
+        icon: <LocalSEO/>,
         title: "Local SEO",
         desc: "Rank in Google Maps & the top 3 pack for high-intent searches like 'plumber near me'.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" />
-            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-          </svg>
-        ),
+        icon: <LeadGeneration/>,
         title: "Lead Generation",
         desc: "Google Ads & Meta campaigns targeting homeowners actively looking for your service.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" />
-          </svg>
-        ),
+        icon: <ConversionPages/>,
         title: "Conversion Pages",
         desc: "Landing pages built to turn visitors into booked jobs — not just traffic.",
       },
@@ -96,32 +98,17 @@ const INDUSTRIES = [
       "Traffic without conversions is just an expense. We build full-funnel strategies that bring buyers to your store and keep them coming back — profitably.",
     services: [
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
-            <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
-          </svg>
-        ),
+        icon: <ShoppingSEOandProductFeeds/>,
         title: "Shopping SEO & Product Feeds",
         desc: "Optimised product listings and Google Shopping feeds that rank where buyers are searching.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" />
-            <path d="M7 8h10M7 12h4" />
-          </svg>
-        ),
+        icon: <MetaandGooglePerformanceAds/>,
         title: "Meta & Google Performance Ads",
         desc: "Retargeting and prospecting campaigns with creative that converts browsers into buyers.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-        ),
+        icon:<EmailandSMSRetention/>,
         title: "Email & SMS Retention",
         desc: "Abandoned cart, post-purchase, and win-back flows that maximise lifetime value.",
       },
@@ -190,29 +177,17 @@ const INDUSTRIES = [
       "Most dental clinics rely on walk-ins and word-of-mouth. We add a predictable digital engine that books appointments on autopilot — every single month.",
     services: [
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
-          </svg>
-        ),
+        icon: <LocalSEOGoogleMaps/>,
         title: "Local SEO & Google Maps",
         desc: "Rank #1 when someone searches 'dentist near me' or 'teeth whitening in [city]'.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
-          </svg>
-        ),
+        icon: <AppointmentFocusedGoogleAds/>,
         title: "Appointment-Focused Google Ads",
         desc: "Search campaigns targeting high-intent patients ready to book — not just browse.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-          </svg>
-        ),
+        icon: <ReviewReputationManagement/>,
         title: "Review & Reputation Management",
         desc: "Automated follow-ups that generate 5-star Google reviews and build patient trust.",
       },
@@ -283,30 +258,17 @@ const INDUSTRIES = [
       "Patients choose healthcare providers they trust — and trust starts online. We build your digital presence with HIPAA-safe content and strategies that convert.",
     services: [
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
-          </svg>
-        ),
+        icon: <HealthcareLocalSEO/>,
         title: "Healthcare Local SEO",
         desc: "Rank for 'doctor near me', speciality searches, and symptom-based queries in your city.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" />
-            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-          </svg>
-        ),
+        icon: <PatientAcquisitionAds/>,
         title: "Patient Acquisition Ads",
         desc: "Google Search & Display ads targeting people actively looking for your specialty.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#48179C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.98 1.18 2 2 0 012.96 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91" />
-          </svg>
-        ),
+        icon: <PatientRetentionAndFollowup/>,
         title: "Patient Retention & Follow-up",
         desc: "Automated WhatsApp & email reminders that reduce no-shows and drive repeat visits.",
       },
@@ -367,29 +329,17 @@ const INDUSTRIES = [
       "Eye care decisions are high-consideration. Patients research before they book. We ensure your clinic dominates search, earns trust, and fills slots consistently.",
     services: [
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" />
-          </svg>
-        ),
+        icon: <SpecialtyEyeCareSEO/>,
         title: "Specialty Eye Care SEO",
         desc: "Rank for high-intent searches like 'LASIK surgeon near me' and 'cataract specialist [city]'.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-          </svg>
-        ),
+        icon: <HighValueProcedureAds/>,
         title: "High-Value Procedure Ads",
         desc: "Google & Meta campaigns targeting patients researching LASIK, cataract, retina, and dry eye treatments.",
       },
       {
-        icon: (
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F65A75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-          </svg>
-        ),
+        icon: <TrustBuildingContentReviews/>,
         title: "Trust-Building Content & Reviews",
         desc: "Patient education content and review generation that positions your clinic as the trusted expert.",
       },

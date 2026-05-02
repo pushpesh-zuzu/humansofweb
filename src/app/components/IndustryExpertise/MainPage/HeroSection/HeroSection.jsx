@@ -75,7 +75,7 @@ export default function IndustryHeroSection() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(72,23,156,0.12),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(246,90,117,0.14),_transparent_35%)]" />
 
                 <Image
-                  src="/IndustryExpertise/industryHero.webp"
+                  src="/IndustryExpertise/industryHero1.svg"
                   alt="Industry Expertise"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"

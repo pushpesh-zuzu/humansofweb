@@ -1,29 +1,20 @@
+import Chiropractor from "@/app/components/common/Icons/industryExpert/Chiropractor";
+import Dental from "@/app/components/common/Icons/industryExpert/Dental";
+import EcommerceInd from "@/app/components/common/Icons/industryExpert/EcommerceInd";
+import Healthcare from "@/app/components/common/Icons/industryExpert/Healthcare";
+import HomeImprovement from "@/app/components/common/Icons/industryExpert/HomeImprovement";
+import Legal from "@/app/components/common/Icons/industryExpert/Legal";
+import Ophthalmology from "@/app/components/common/Icons/industryExpert/Ophthalmology";
+import PlasticSurgeon from "@/app/components/common/Icons/industryExpert/PlasticSurgeon";
+import ProfessionalServices from "@/app/components/common/Icons/industryExpert/ProfessionalServices";
+
 export const INDUSTRIES = [
   {
     title: "E-commerce",
     link: "/ecommerce-marketing-agency",
     description:
       "We build growth engines for online stores — from product SEO and Google Shopping to email flows that bring customers back.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#f0fdf4" />
-        <path
-          d="M12 16h4l3 16h18l3-10H18"
-          stroke="#16a34a"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <circle cx="27" cy="38" r="2.5" stroke="#16a34a" strokeWidth="2" />
-        <circle cx="37" cy="38" r="2.5" stroke="#16a34a" strokeWidth="2" />
-        <path
-          d="M26 22h8M28 26h4"
-          stroke="#16a34a"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <EcommerceInd/>,
     tags: [
       {
         title: "E-Commerce SEO",
@@ -68,23 +59,7 @@ export const INDUSTRIES = [
     link: "/dental-digital-marketing-agency",
     description:
       "We help dental clinics attract more patients with local SEO, appointment-driven ads, and high-converting websites.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#eef2ff" />
-        <path
-          d="M28 14c6 0 10 4 10 9 0 8-6 19-10 19s-10-11-10-19c0-5 4-9 10-9z"
-          stroke="#4f46e5"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path
-          d="M24 26c1 2 3 3 4 3s3-1 4-3"
-          stroke="#4f46e5"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <Dental/>,
     tags: [
       { title: "Dental SEO", link: "/dental-digital-marketing-agency/seo" },
       { title: "Dental PPC", link: "/dental-digital-marketing-agency/ppc" },
@@ -110,17 +85,7 @@ export const INDUSTRIES = [
     link: "/healthcare-marketing-agency",
     description:
       "We support healthcare providers with compliant marketing strategies that increase visibility, trust, and patient acquisition.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#ecfeff" />
-        <path
-          d="M28 16v24M16 28h24"
-          stroke="#0891b2"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <Healthcare/>,
     tags: [
       { title: "Healthcare SEO", link: "/healthcare-marketing-agency/seo" },
       { title: "Healthcare PPC", link: "/healthcare-marketing-agency/ppc" },
@@ -146,17 +111,7 @@ export const INDUSTRIES = [
     link: "/ophthalmology-digital-marketing-agency",
     description:
       "We help eye care specialists grow with targeted campaigns, local SEO, and content that builds patient trust.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#f0fdfa" />
-        <path
-          d="M6 28s8-10 22-10 22 10 22 10-8 10-22 10S6 28 6 28z"
-          stroke="#0d9488"
-          strokeWidth="2"
-        />
-        <circle cx="28" cy="28" r="4" stroke="#0d9488" strokeWidth="2" />
-      </svg>
-    ),
+    icon: <Ophthalmology/>,
     tags: [
       {
         title: "Ophthalmology SEO",
@@ -180,17 +135,7 @@ export const INDUSTRIES = [
     link: "/chiropractor-digital-marketing-agency",
     description:
       "We help chiropractic clinics increase bookings with local search optimization, paid ads, and conversion-focused landing pages.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#fef3f2" />
-        <path
-          d="M28 14v28M20 22c0-4 3-6 8-6s8 2 8 6-3 6-8 6-8 2-8 6 3 6 8 6 8-2 8-6"
-          stroke="#dc2626"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <Chiropractor/>,
     tags: [
       {
         title: "Chiropractor SEO",
@@ -222,22 +167,7 @@ export const INDUSTRIES = [
     link: "/plastic-surgeon-digital-marketing-agency",
     description:
       "We help cosmetic clinics attract high-value clients through premium branding, SEO, and targeted ad campaigns.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#fff1f2" />
-        <path
-          d="M28 18c4 0 6 3 6 6s-2 6-6 6-6-3-6-6 2-6 6-6z"
-          stroke="#e11d48"
-          strokeWidth="2"
-        />
-        <path
-          d="M20 36c2-3 6-4 8-4s6 1 8 4"
-          stroke="#e11d48"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <PlasticSurgeon/>,
     tags: [
       {
         title: "Plastic Surgeon SEO",
@@ -269,17 +199,7 @@ export const INDUSTRIES = [
     link: "/law-firm-digital-marketing",
     description:
       "We help law firms generate qualified leads with SEO, paid ads, and authority-driven content strategies.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#f9fafb" />
-        <path
-          d="M20 22h16M24 22v-4h8v4M22 22l-6 10h12l-6-10zm12 0l-6 10h12l-6-10z"
-          stroke="#374151"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <Legal/>,
     tags: [
       { title: "Legal SEO", link: "/law-firm-digital-marketing/seo" },
       { title: "Legal PPC", link: "/law-firm-digital-marketing/ppc" },
@@ -291,43 +211,7 @@ export const INDUSTRIES = [
     title: "Home Improvement & Local Services",
     description:
       "From plumbers to painters, we help local service businesses get found first — driving more calls, bookings, and reviews in their area.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#f5f0ff" />
-        <path
-          d="M12 28L28 14L44 28"
-          stroke="#48179C"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <rect
-          x="20"
-          y="28"
-          width="16"
-          height="16"
-          rx="2"
-          stroke="#48179C"
-          strokeWidth="2"
-          fill="none"
-        />
-        <rect
-          x="24"
-          y="34"
-          width="8"
-          height="10"
-          rx="1"
-          fill="#F65A75"
-          opacity="0.7"
-        />
-        <path
-          d="M22 28v-4a2 2 0 014 0v4"
-          stroke="#48179C"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <HomeImprovement/>,
     tags: [
       { title: "Local SEO", link: "" },
       { title: "Google Ads", link: "" },
@@ -340,48 +224,7 @@ export const INDUSTRIES = [
     title: "Professional Services",
     description:
       "Law firms, consultants, and agencies trust us to build authority, generate qualified leads, and grow their client base consistently.",
-    icon: (
-      <svg viewBox="0 0 56 56" fill="none" width="52" height="52">
-        <rect width="56" height="56" rx="14" fill="#fffbeb" />
-        <rect
-          x="14"
-          y="18"
-          width="28"
-          height="22"
-          rx="3"
-          stroke="#d97706"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path
-          d="M20 26h16M20 30h10"
-          stroke="#d97706"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-        <path
-          d="M24 18v-3a4 4 0 018 0v3"
-          stroke="#d97706"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-        <circle
-          cx="40"
-          cy="40"
-          r="7"
-          fill="#fffbeb"
-          stroke="#d97706"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M37.5 40l2 2 3.5-3.5"
-          stroke="#d97706"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: <ProfessionalServices/>,
     tags: [
       {
         title: "Authority Building",
