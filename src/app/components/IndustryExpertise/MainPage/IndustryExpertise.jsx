@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import IndustryHeroSection from "./HeroSection/HeroSection";
 import TrustedBy from "../../common/TrustedBy/TrustedBy";
@@ -13,6 +14,11 @@ import FaqComponent from "../../common/SubServices/FaqComponent/FaqComponent";
 import ContainerWrapper from "../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../common/Container/PaddingWrapper2";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import CustomGeneration from "../../Home/CustomGeneration";
+import IndustryResearch from "../../common/Icons/industryExpert/howWeWork/IndustryResearch";
+import StrategyPlanning from "../../common/Icons/industryExpert/howWeWork/StrategyPlanning";
+import Execution from "../../common/Icons/industryExpert/howWeWork/Execution";
+import Optimisation from "../../common/Icons/industryExpert/howWeWork/Optimisation";
 
 export const FREQUENTLY_QUESTION = [
   {
@@ -35,6 +41,36 @@ export const FREQUENTLY_QUESTION = [
     The timeline depends on the scope and type of project. Some improvements can be seen within a few weeks, while long-term strategies may take a few months to deliver measurable results. We always focus on sustainable growth rather than quick fixes.`,
   },
 ];
+const STEPS = [
+  {
+    step: "01",
+    title: "Industry Research",
+    description:
+      "We dig deep into your market — competitors, keywords, audience intent, and gaps nobody else is targeting.",
+    icon: <IndustryResearch className="w-full h-full" />,
+  },
+  {
+    step: "02",
+    title: "Strategy Planning",
+    description:
+      "Every brand gets a custom growth blueprint — channels, timelines, budgets, and KPIs mapped to your actual goals.",
+    icon: <StrategyPlanning className="w-full h-full" />,
+  },
+  {
+    step: "03",
+    title: "Execution",
+    description:
+      "Our team moves fast — content live, ads running, pages ranking. No long waiting periods, no fluff deliverables.",
+    icon: <Execution className="w-full h-full" />,
+  },
+  {
+    step: "04",
+    title: "Optimisation",
+    description:
+      "We analyse what's working, double down on it, and cut what isn't. Growth compounds every single month.",
+    icon: <Optimisation className="w-full h-full" />,
+  },
+];
 function IndustryExpertise() {
   return (
     <>
@@ -42,12 +78,12 @@ function IndustryExpertise() {
       <TrustedBy padding={"py-5 md:py-12 xl:py-15"} />
       <IndustriesWeServe INDUSTRIES={INDUSTRIES} />
       <IndustryDeepDive />
-      <HowWeWork />
+      <HowWeWork cards={STEPS} />
       <ResultsSection />
       {/* <WhyHOW/> */}
       <ContainerWrapper>
         <PaddingWrapper2 padding="pt-10 md:pt-14  xl:pt-18 ">
-          <FaqComponent items={FREQUENTLY_QUESTION} />
+          <FaqComponent position="mx-auto" items={FREQUENTLY_QUESTION} />
         </PaddingWrapper2>
       </ContainerWrapper>
       <ReachWithUs />

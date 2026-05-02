@@ -130,7 +130,7 @@ const NAV_ITEMS = [
       },
       {
         label: "AI Services",
-        href: "#",
+        href: "/artificial-digital-services-agency",
         subItems: [
           { label: "Claude", href: "#" },
           { label: "Kilocode", href: "#" },
@@ -140,7 +140,7 @@ const NAV_ITEMS = [
       },
     ],
   },
-  { label: "Contact us", href: "/contact" },
+  { label: "Contact us", href: "/contact-us" },
 ];
 
 export default NAV_ITEMS;
