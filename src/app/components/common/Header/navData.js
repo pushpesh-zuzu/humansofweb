@@ -59,9 +59,9 @@ const NAV_ITEMS = [
         label: "Healthcare",
         href: "/healthcare-marketing-agency",
         subItems: [
-          { label: "Healthcare SEO", href: "#" },
-          { label: "Healthcare PPC", href: "#" },
-          { label: "Healthcare Website Design & Development", href: "#" },
+          { label: "Healthcare SEO", href: "/healthcare-marketing-agency/seo-services" },
+          { label: "Healthcare PPC", href: "/healthcare-marketing-agency/ppc-services" },
+          { label: "Healthcare Website Design & Development", href: "/healthcare-marketing-agency/website-design" },
           { label: "Healthcare Link Building", href: "#" },
           { label: "Healthcare Social Media Marketing", href: "#" },
         ],

@@ -268,6 +268,7 @@ const SeoServices = () => {
                 items={DENTAL_SEO_STRATEGY_ITEMS}
                 ctaText="Book a free consultation"
                 ctaHref=""
+                padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
             />
             <CustomGeneration
                 headdingBlack="Build Dental Pages That"

@@ -21,8 +21,6 @@ import reviewMonitoringDetails from '@/app/components/common/Icons/ReputationMan
 import smartReviewResponse from '@/app/components/common/Icons/ReputationManagement/smartReviewResponse.svg'
 
 
-
-
 const REPUTATION_DESCRIPTION = [
     "In today’s digital world, your clinic’s reputation plays a major role in attracting and retaining patients. We help you build a strong online presence that reflects trust, quality care, and patient satisfaction.",
 

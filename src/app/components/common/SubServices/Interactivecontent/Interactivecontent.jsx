@@ -13,6 +13,7 @@ const Interactivecontent = ({
     items = [],
     ctaText = "Speak With An Expert Now",
     ctaHref = "/contact",
+    padding = "pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20"
 }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const activeItem = items[activeIndex] ?? items[0];
@@ -21,7 +22,7 @@ const Interactivecontent = ({
 
     return (
         <ContainerWrapper>
-            <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
+            <PaddingWrapper2 padding={`${padding}`}>
                 <section>
                     <H2HeadingWrapper
                         headdingBlack={headingStart}
