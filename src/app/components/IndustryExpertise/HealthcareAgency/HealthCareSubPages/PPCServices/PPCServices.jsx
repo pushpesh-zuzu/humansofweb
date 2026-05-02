@@ -156,7 +156,7 @@ const PPCServices = () => {
                 pinkHeading={"Patient Growth"}
                 description1={"Struggling to get consistent patient inquiries? Our PPC strategies are built to attract high-intent patients and convert clicks into steady appointment bookings."}
                 description2={"We focus on your services, location, and audience to run targeted campaigns that boost visibility, improve ROI, and drive reliable growth for your healthcare practice."}
-                bannerImage="/"
+                bannerImage="/ppcServices/health-ppc-banner.svg"
                 altText={"Healthcare PPC services driving patient leads and practice growth through targeted advertising"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
@@ -164,7 +164,7 @@ const PPCServices = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Partner With Experts In "
                 headingBlue="Healthcare PPC Growth"
-                image="/"
+                image="/ppcServices/health-ppc-growth.svg"
                 imageAltText="healthcare PPC campaign strategy showing patient targeting, lead generation, and ROI optimization"
                 paragraphs={HEALTHCARE_PPC_MANAGEMENT}
                 headingBlueColor="text-secondary"

@@ -163,7 +163,7 @@ const WebsiteDesign = () => {
                 pinkHeading={"Build Patient Trust"}
                 description1={"Your website is often the first impression patients have of your practice, so we design websites that build trust, highlight your expertise, and encourage visitors to book appointments."}
                 description2={"From design to functionality, we build user-friendly healthcare websites that improve patient experience, strengthen credibility, and support your practice’s long-term growth."}
-                bannerImage="/"
+                bannerImage="/websiteDesign/healthcare-website-banner.svg"
                 altText={"healthcare websites that build patient trust"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
@@ -171,7 +171,7 @@ const WebsiteDesign = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Healthcare Website Design &"
                 headingBlue="Development That Scales"
-                image="/"
+                image="/websiteDesign/healthcare-website-design.svg"
                 imageAltText="healthcare website design and development showing responsive layout and patient-friendly experience"
                 paragraphs={HEALTHCARE_POINTS}
                 headingBlueColor="text-secondary"

@@ -164,7 +164,7 @@ const SocialMediaMarketing = () => {
                 pinkHeading={"That Converts Patients"}
                 description1={"We help healthcare providers boost their online presence, increase brand visibility, and attract new patients through strategic content and targeted social media campaigns."}
                 description2={"From regular content to paid promotions, Humans of Web builds social media strategies that keep your practice visible, strengthen trust, and drive consistent patient engagement."}
-                bannerImage="/"
+                bannerImage="/SocialMediaMarketing/healthcare-media-banner.svg"
                 altText={"healthcare social media marketing driving patient growth and engagement"}
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
@@ -172,7 +172,7 @@ const SocialMediaMarketing = () => {
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Social Media That Grows"
                 headingBlue="Your Healthcare Brand"
-                image="/"
+                image="/SocialMediaMarketing/healthcare-brand.svg"
                 paragraphs={HEALTHCARE_MEDIA_DESCRIPTION}
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"
@@ -185,7 +185,7 @@ const SocialMediaMarketing = () => {
                 description1="Patients are actively searching for healthcare providers on social media and engaging with trusted brands."
                 description2="We help you manage content, run targeted campaigns, and turn your social platforms into channels that build trust and generate patient inquiries."
                 ctaText="Book a Call"
-                image="/"
+                image="/SocialMediaMarketing/healthcare-strategy-banner.svg"
                 imageAlt="healthcare social media marketing growth and patient engagement illustration"
             />
             <WorkWithCards
