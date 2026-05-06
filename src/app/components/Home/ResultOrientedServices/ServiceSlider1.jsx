@@ -35,7 +35,7 @@ const SERVICES = [
     icon: <IconAsset src={digitalPRIcon} alt="" />,
     title: "Digital PR",
     subtitle: "Earn Attention That Matters",
-    description: "We craft and place stories that build trust, boost credibility, and get your brand noticed.",
+    description: "We craft and place compelling stories that build trust, strengthen credibility, increase visibility, and help your business reach the right audience.",
     warm: false,
   },
   {

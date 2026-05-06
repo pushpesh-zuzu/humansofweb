@@ -73,7 +73,7 @@ export default function HeroSection() {
                 </h1>
 
                 <p className="mt-5 p-tertiary font-semibold text-[#1c1c1c]">
-                  We helps{" "}
+                  We help{" "}
                   <span className="relative inline-block text-secondary">
                     <span className="absolute left-0 top-0">
                       {displayText}
@@ -83,14 +83,14 @@ export default function HeroSection() {
                     </span>
                   </span>
                   {" "}
-                  craft human-centered digital experiences that convert.
+                  craft human-centered <span className="md:block">digital experiences that convert.</span>
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
                   <input
                     type="text"
-                    placeholder="Enter your website"
-                    className="h-[52px] w-full rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
+                    placeholder="Enter your Whatsapp Number"
+                    className="h-[52px] w-full rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[260px]"
                   />
                   <button type="button" onClick={() => setProposalOpen(true)} className="h-[52px] cursor-pointer rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-primary">
                     Get Your Free Consultation

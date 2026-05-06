@@ -30,14 +30,11 @@ export default function ServiceCard({
       }}
     >
       <div
-        className="px-5 py-6"
+        className="px-5 py-6 h-full flex flex-col"
         style={{
           background: warm ? "#fffdf4" : "#f5f6ff",
           borderRadius: 14,
-
           minHeight: 350,
-          display: "flex",
-          flexDirection: "column",
           cursor: "default",
         }}
       >
@@ -59,9 +56,14 @@ export default function ServiceCard({
         </h5>
 
         {subtitle && (
-          <h6 className="text-h6 text-center font-bold pt-2.5">{subtitle}</h6>
+          <h6 className="text-h6 text-center font-bold pt-2.5">
+            {subtitle}
+          </h6>
         )}
-        <p className="text-base font-normal text-center">{description}</p>
+
+        <p className="text-base font-normal text-center mt-auto">
+          {description}
+        </p>
       </div>
     </div>
   );

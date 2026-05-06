@@ -14,6 +14,13 @@ import googleBusinees from "../../../../common/Icons/healthcare/google-businees.
 import instagram from "../../../../common/Icons/healthcare/instagram.svg";
 import linkdin from "../../../../common/Icons/healthcare/linkdin.svg";
 import whatsapp from "../../../../common/Icons/healthcare/whatsapp.svg";
+import AnalyticsPerformance from "../../../../common/Icons/healthcare/analytics-performance-insights.svg";
+import CommunityBuilding from "../../../../common/Icons/healthcare/community-building-engagement.svg";
+import HealthCareContent from "../../../../common/Icons/healthcare/healthcare-content-creation.svg";
+import LeadGeneration from "../../../../common/Icons/healthcare/lead-generation-campaigns.svg";
+import SocialMedia from "../../../../common/Icons/healthcare/social-media-growth-strategy.svg";
+import TargetedAdvertising from "../../../../common/Icons/healthcare/targeted-advertising-campaigns.svg";
+
 
 
 const HEALTHCARE_MEDIA_DESCRIPTION = [
@@ -70,37 +77,37 @@ const HEALTHCARE_SOCIAL_ITEMS = [
         title: "Social Media Growth Strategy",
         description:
             "We create tailored strategies based on your services, audience behavior, and goals to build a strong and consistent healthcare brand presence.",
-        // icon: "/SocialMediaMarketing/social-media-strategy.svg"
+        icon: SocialMedia
     },
     {
         title: "Healthcare Content Creation",
         description:
             "We produce engaging and informative content, including health tips, awareness posts, and service highlights that connect with your audience.",
-        // icon: "/SocialMediaMarketing/content-planning.svg"
+        icon: HealthCareContent
     },
     {
         title: "Targeted Advertising Campaigns",
         description:
             "We run data-driven social media ads to reach the right audience, increase visibility, and generate high-quality patient inquiries.",
-        // icon: "/SocialMediaMarketing/paid-social-campaign.svg"
+        icon: TargetedAdvertising
     },
     {
         title: "Lead Generation Campaigns",
         description:
             "We design campaigns focused on driving patient inquiries, promoting services, and encouraging users to take action through optimized funnels.",
-        // icon: "/SocialMediaMarketing/appointment-driven.svg"
+        icon: LeadGeneration
     },
     {
         title: "Community Building & Engagement",
         description:
             "We manage interactions, respond to queries, and build relationships that strengthen trust and keep your healthcare brand active and approachable.",
-        // icon: "/SocialMediaMarketing/patient-engagement-trust.svg"
+        icon: CommunityBuilding
     },
     {
         title: "Analytics & Performance Insights",
         description:
             "We track key metrics like reach, engagement, and leads, providing actionable insights to continuously refine and improve campaign performance.",
-        // icon: "/SocialMediaMarketing/performance-tracking.svg"
+        icon: AnalyticsPerformance
     },
 ];
 

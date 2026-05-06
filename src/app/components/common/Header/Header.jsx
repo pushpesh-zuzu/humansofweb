@@ -25,16 +25,16 @@ export default function Header() {
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <HeaderMotionStrip />
-      <div className="mx-auto px-4 sm:px-6 py-[10px] lg:px-7 lg:py-5">
+      <div className="mx-auto px-4 sm:px-6 py-[10px] lg:px-18 lg:py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0 h-11">
             <span className="text-2xl font-black tracking-tight text-gray-900">
-              <Logo className="h-7.25 w-30 md:h-11 md:w-61 lg:pr-8 md:pr-13" />
+              <Logo className="h-7.25 w-30 md:h-11 md:w-61 lg:pr-8 md:pr-5 pl-5 md:pl-0" />
             </span>
           </Link>
 
-          <div className="flex">
+          <div className="flex lg:mr-5 mr-2">
             {/* Desktop Nav */}
             <nav className="hidden xl:flex items-center gap-6 lg:gap-1">
               {NAV_ITEMS.map((item, idx) => (

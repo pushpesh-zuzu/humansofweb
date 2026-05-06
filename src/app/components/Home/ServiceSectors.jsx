@@ -98,14 +98,14 @@ const ServiceSectors = () => {
                                     </p>
 
                                     {/* Description */}
-                                    <p className="mt-4 p-small text-[#4b4b4b]">
+                                    <p className="mt-4 md:mb-2 p-small text-[#4b4b4b]">
                                         {service.description}
                                     </p>
 
                                     {/* Button */}
-                                    <button className="mt-6 md:mt-[30px] lg:mt-[40px] inline-flex h-12 cursor-pointer items-center justify-center rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-primary">
+                                    {/* <button className="mt-6 md:mt-[30px] lg:mt-[40px] inline-flex h-12 cursor-pointer items-center justify-center rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-widest text-white transition hover:bg-primary">
                                         Learn More
-                                    </button>
+                                    </button> */}
                                 </div>
                             </article>
                         ))}

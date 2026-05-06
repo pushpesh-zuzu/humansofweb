@@ -8,8 +8,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaLocationDot,
-  FaPhone,
   FaXTwitter,
+  FaWhatsapp,
 } from "react-icons/fa6";
 import NAV_ITEMS from "../Header/navData";
 import Logo from "../Icons/Home/Logo";
@@ -41,8 +41,8 @@ const getFooterLinks = (item) => {
 const CONTACT_INFO = [
   {
     label: "Address",
-    value: "India",
-    href: "https://www.google.com/maps/search/?api=1&query=India",
+    value: "United Kingdom • Dubai • India",
+    href: "https://www.google.com/maps/search/?api=1&query=United+Kingdom+Dubai+India",
     icon: FaLocationDot,
   },
   {
@@ -52,10 +52,10 @@ const CONTACT_INFO = [
     icon: FaEnvelope,
   },
   {
-    label: "Phone",
-    value: "+91 88888 88888",
-    href: "tel:+918888888888",
-    icon: FaPhone,
+    label: "WhatsApp",
+    value: "+44 7897 024186",
+    href: "https://wa.me/447897024186",
+    icon: FaWhatsapp,
   },
 ];
 
@@ -81,11 +81,11 @@ const Footer = () => {
                 Ready To Speak With A Marketing Expert?
               </p>
               <a
-                href="tel:+918888888888"
+                href="https://wa.me/447897024186"
                 className="inline-flex items-center gap-3 text-h5 font-bold text-secondary transition hover:text-primary lg:whitespace-nowrap"
               >
-                <FaPhone className="h-4 w-4 text-primary" />
-                +91 88888 88888
+                <FaWhatsapp className="h-6 w-6 text-[#25D366] group-hover:text-[#25D366]" />
+                +44 7897 024186
               </a>
             </div>
           </div>
@@ -95,23 +95,20 @@ const Footer = () => {
       <div className="mt-0 bg-primary text-white">
         <div className="mx-auto grid max-w-[1500px] gap-6 px-[4%] py-7 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center">
           <div className="md:self-center">
-            <div className="inline-flex rounded-full bg-white px-3 py-2">
-              <Logo className="h-8 w-32 md:h-10 md:w-44" />
-            </div>
+            <h2 className="text-h5 font-bold text-white">
+              Still Thinking? Connect With US.
+            </h2>
           </div>
 
           <div className="md:ml-auto md:max-w-[720px] md:self-center">
-            <h2 className="text-h5 font-bold text-white">
-              Still Thinking? Let Us Show You What Is Working
-            </h2>
             <p className="p-small mt-3 font-bold text-white">
               No pitch. Just real strategies we have used to grow ecommerce, SaaS, and more.
             </p>
 
             <form className="mt-4 flex w-full max-w-[320px] flex-col gap-3 md:max-w-none md:flex-row">
               <input
-                type="url"
-                placeholder="Enter website address"
+                type="text"
+                placeholder="Enter your Whatsapp Number"
                 className="h-12 w-full py-3.5 md:py-0 min-w-0 flex-1 rounded-full border border-white bg-white px-4 p-small font-medium text-[#1c1c1c] outline-none transition placeholder:text-[#6b6b6b] focus:border-secondary"
               />
               <button
@@ -136,7 +133,12 @@ const Footer = () => {
               rel={label === "Address" ? "noreferrer" : undefined}
               className="group flex items-center gap-3 text-h6 font-medium text-primary transition hover:text-secondary"
             >
-              <Icon className="h-5 w-5 flex-none text-primary transition group-hover:text-secondary" />
+              <Icon
+                className={`flex-none transition ${label === "WhatsApp"
+                  ? "h-6 w-6 text-[#25D366] group-hover:text-[#25D366]"
+                  : "h-5 w-5 text-primary group-hover:text-secondary"
+                  }`}
+              />
               <span>{value}</span>
             </a>
           ))}
@@ -147,38 +149,27 @@ const Footer = () => {
         <div className="mx-auto max-w-[1500px] px-[4%] py-7 md:py-9 xl:py-10">
           <div className="grid gap-7 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
             <div>
-              <p className="p-small max-w-[420px] font-medium text-white leading-relaxed">
-                Your trusted partner in digital transformation. Specializing in Ecommerce, SaaS, and enterprise solutions with proven expertise across industries.
-              </p>
-              <div className="mt-5 flex items-center gap-3">
-                {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    aria-label={label}
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-primary transition hover:bg-secondary hover:text-white hover:scale-110"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </a>
-                ))}
+              <div className="inline-flex rounded-full bg-white px-3 py-2">
+                <Logo className="h-8 w-32 md:h-10 md:w-44" />
               </div>
             </div>
 
-          <div className="grid grid-cols-2 gap-6 md:gap-10 xl:gap-20 md:grid-cols-3">
-            {visibleNavItems.map((item) => (
-              <div key={item.label}>
-                <h3 className="p-default font-bold text-white">{item.label}</h3>
-                <div className="mt-3 grid gap-3">
-                  {getFooterLinks(item).map((link) => (
-                    <Link
-                      key={link.label}
-                      href={link.href}
-                      className="p-small text-white/75 transition hover:text-secondary"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
+
+            <div className="grid grid-cols-2 gap-6 md:gap-10 xl:gap-20 md:grid-cols-3">
+              {visibleNavItems.map((item) => (
+                <div key={item.label}>
+                  <h3 className="p-default font-bold text-white">{item.label}</h3>
+                  <div className="mt-3 grid gap-3">
+                    {getFooterLinks(item).map((link) => (
+                      <Link
+                        key={link.label}
+                        href={link.href}
+                        className="p-small text-white/75 transition hover:text-secondary"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>

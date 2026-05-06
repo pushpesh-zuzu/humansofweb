@@ -8,6 +8,23 @@ import CustomGeneration from '@/app/components/Home/CustomGeneration';
 import BusineesSell from '@/app/components/common/SubServices/BusineesSell/BusineesSell';
 import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs';
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent';
+import SecureScalable from "../../../../common/Icons/healthcare/secure-scalable-development.svg";
+import ConversionDriven from "../../../../common/Icons/healthcare/conversion-driven-website-strategy.svg";
+import IntegratedPatient from "../../../../common/Icons/healthcare/integrated-patient-inquiry-systems.svg";
+import IntutivePatient from "../../../../common/Icons/healthcare/intuitive-patient-journey-design.svg";
+import RespnsiveDevice from "../../../../common/Icons/healthcare/responsive-device-optimized-layouts.svg";
+import SeamlessAppointment from "../../../../common/Icons/healthcare/seamless-appointment-experience.svg";
+import BuiltForScalable from "../../../../common/Icons/healthcare/built-for-scalable-growth.svg";
+import Credibility from "../../../../common/Icons/healthcare/credibility-driven-layouts.svg";
+import FastTechnically from "../../../../common/Icons/healthcare/fast-technically-optimized.svg";
+import PatientCentered from "../../../../common/Icons/healthcare/Patient-centered-design.svg";
+import ResponsiveAcross from "../../../../common/Icons/healthcare/responsive-across-all-devices.svg";
+import StrategyRequirment from "../../../../common/Icons/healthcare/strategy-requirement-mapping.svg";
+import DeploymentContinuous from "../../../../common/Icons/healthcare/deployment-continuous-improvement.svg";
+import ExperienceInterface from "../../../../common/Icons/healthcare/experience-interface-design.svg";
+import PerformanceConversion from "../../../../common/Icons/healthcare/performance-conversion-optimization.svg";
+import ScalableWebsite from "../../../../common/Icons/healthcare/scalable-website-development.svg";
+
 
 const HEALTHCARE_POINTS = [
     "We design and develop modern healthcare websites that create a strong first impression, helping your practice stand out while building trust with patients from the moment they land on your site.",
@@ -22,49 +39,60 @@ const WORK_WITH_CARDS = [
         title: "Patient-Centered Design",
         description:
             "We create intuitive designs that help patients easily explore your services, understand treatments, and confidently choose your healthcare practice.",
+        icon: PatientCentered
     },
     {
         title: "Credibility-Driven Layouts",
         description:
             "We structure your website with clear content, testimonials, and trust signals that build confidence and guide patients toward taking action.",
+        icon: Credibility
     },
     {
         title: "Responsive Across All Devices",
         description:
             "Your website is fully optimized for mobile, tablet, and desktop, ensuring a smooth experience for patients on any device.",
+        icon: ResponsiveAcross
     },
     {
         title: "Fast & Technically Optimized",
         description:
             "We develop high-performance websites with clean code, fast load times, and secure architecture to improve user experience and retention.",
+        icon: FastTechnically
     },
     {
         title: "Seamless Appointment Experience",
         description:
             "We design user-friendly booking flows with clear calls-to-action, making it simple for patients to schedule appointments quickly.",
+        Icon: SeamlessAppointment
     },
     {
         title: "Built for Scalable Growth",
         description:
             "Our websites are designed to grow with your practice, allowing easy updates, new services, and future expansions without limitations.",
+        icon: BuiltForScalable
     }
 ];
 
 const HEALTHCARE_FEATURE_CARDS = [
     {
         title: "Conversion-Driven Website Strategy",
+        icon: ConversionDriven
     },
     {
         title: "Intuitive Patient Journey Design",
+        icon: IntutivePatient
     },
     {
         title: "Responsive & Device-Optimized Layouts",
+        icon: RespnsiveDevice
     },
     {
         title: "Secure & Scalable Development",
+        icon: SecureScalable
     },
     {
         title: "Integrated Patient Inquiry Systems",
+        icon: IntegratedPatient
     },
 ];
 
@@ -73,31 +101,36 @@ const STEPS = [
         step: "01",
         title: "Strategy & Requirement Mapping",
         description:
-            "We analyze your services, target audience, and business goals to define a clear website strategy focused on patient acquisition and long-term growth.",
+            "We analyze your services, target audience, and business goals to define a clear website strategy focused on patient acquisition and growth.",
+        icon: StrategyRequirment
     },
     {
         step: "02",
-        title: "Experience & Interface Design",
+        title: "Advanced Experience & Interface Design",
         description:
-            "We design intuitive layouts and user flows that guide patients seamlessly through your services while building trust and improving engagement.",
+            "We design intuitive layouts and user flows that guide patients through your services while building trust and improving engagement.",
+        icon: ExperienceInterface
     },
     {
         step: "03",
         title: "Scalable Website Development",
         description:
             "We develop secure, high-performance websites using scalable architecture, ensuring fast loading, reliability, and smooth functionality across all devices.",
+        icon: ScalableWebsite
     },
     {
         step: "04",
         title: "Performance & Conversion Optimization",
         description:
             "We optimize speed, usability, and conversion elements like CTAs and forms to ensure your website effectively turns visitors into patient inquiries.",
+        icon: PerformanceConversion
     },
     {
         step: "05",
         title: "Deployment & Continuous Improvement",
         description:
             "After launch, we monitor performance, implement updates, and refine your website to keep it secure, optimized, and aligned with your growth goals.",
+        icon: DeploymentContinuous
     },
 ];
 

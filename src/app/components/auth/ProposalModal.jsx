@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Logo from "../common/Icons/Home/Logo";
+import { FaWhatsapp } from "react-icons/fa6";
 
 function Input({ type = "text", name, placeholder, value, onChange }) {
   return (
@@ -119,7 +119,7 @@ export default function ProposalModal({ isOpen, onClose }) {
         {/* ── MOBILE top strip ── */}
         <div
           className="md:hidden px-5 pt-5 pb-4 flex-shrink-0 bg-white"
-          // style={{ background: "linear-gradient(135deg, #48179C 0%, #6d28d9 60%, #F65A75 100%)" }}
+        // style={{ background: "linear-gradient(135deg, #48179C 0%, #6d28d9 60%, #F65A75 100%)" }}
         >
           <div className="mb-4">
             <span
@@ -300,27 +300,14 @@ export default function ProposalModal({ isOpen, onClose }) {
                 style={{ borderTop: "1px solid #F65A75" }}
               >
                 <p className="text-xs text-gray-500 mb-1">
-                  Prefer to speak directly?
+                  Prefer to connect with us on WhatsApp?
                 </p>
                 <a
-                  href="tel:+918888888888"
-                  className="flex items-center gap-2 font-bold text-secondary text-sm hover:text-gray-600 transition-colors"
+                  href="https://wa.me/447897024186"
+                  className="flex items-center gap-2 font-bold text-secondary text-sm hover:text-primary transition-colors"
                 >
-                  <svg
-                    width="14"
-                    height="14"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                  +91 88888 88888
+                  <FaWhatsapp className="h-5 w-5 text-[#25D366] group-hover:text-[#25D366]" />
+                  +44 7897 024186
                 </a>
               </div>
             </div>
@@ -343,7 +330,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                   Ready to Think Big?
                 </h3>
                 <p className="p-default text-gray-400 mt-1">
-                  Tell us about your brand — we&apos;ll do the rest.
+                  Don&apos;t have a website? We&apos;ll design and develop it for you.
                 </p>
               </div>
 
@@ -378,7 +365,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                 <Input
                   name="webUrl"
                   type="url"
-                  placeholder="Your Website URL *"
+                  placeholder="Enter Your Desired Domain *"
                   value={form.webUrl}
                   onChange={handleChange}
                 />
@@ -464,27 +451,14 @@ export default function ProposalModal({ isOpen, onClose }) {
 
             {/* Mobile phone bar */}
             <div className="md:hidden border-t border-purple-100 px-5 py-3 flex items-center justify-center gap-2 flex-wrap flex-shrink-0">
-              <span className="text-xs text-gray-500">Prefer to talk?</span>
+              <span className="text-xs text-gray-500">Prefer to connect with us on WhatsApp?</span>
               <a
-                href="tel:+918888888888"
+                href="https://wa.me/447897024186"
                 className="flex items-center gap-1.5 font-bold text-sm"
                 style={{ color: "#F65A75" }}
               >
-                <svg
-                  width="13"
-                  height="13"
-                  fill="none"
-                  stroke="#F65A75"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                +91 88888 88888
+                <FaWhatsapp className="h-5 w-5 text-[#25D366] group-hover:text-[#25D366]" />
+                +44 7897 024186
               </a>
             </div>
           </div>

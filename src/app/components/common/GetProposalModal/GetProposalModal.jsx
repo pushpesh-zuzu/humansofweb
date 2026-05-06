@@ -184,7 +184,7 @@ const GetProposalModal = ({
               {heading}
             </h2>
             <p className="p-small mt-2 text-gray-500">
-              Tell us about your brand - we&apos;ll do the rest.
+              Don&apos;t have a website? We&apos;ll design and develop it for you.
             </p>
           </div>
 
@@ -223,6 +223,9 @@ const GetProposalModal = ({
                   dropdownClass="!rounded-md"
                   enableSearch={true}
                 />
+                <p className="mt-1 text-xs text-gray-500">
+                  Please ensure this is a WhatsApp number.
+                </p>
                 {errors.phone && (
                   <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
                 )}
@@ -245,7 +248,7 @@ const GetProposalModal = ({
               <InputField
                 name="websiteUrl"
                 type="url"
-                placeholder="Your Website URL *"
+                placeholder="Enter Your Desired Domain *"
                 value={form.websiteUrl}
                 onChange={handleChange}
               />

@@ -1,5 +1,5 @@
 const NAV_ITEMS = [
-  { label: "Home", href: "/" },
+  // { label: "Home", href: "/" },
   {
     label: "Industry Expertise",
     href: "/industry-expertise",

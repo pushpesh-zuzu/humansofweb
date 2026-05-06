@@ -50,10 +50,10 @@ export default function HeroSectionServices({
               <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
                 <input
                   type="text"
-                  placeholder="Enter your website"
-                  className="h-[52px] w-full bg-white rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[210px]"
+                  placeholder="Enter Your Whatsapp Number"
+                  className="h-[52px] w-full bg-white rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[250px]"
                 />
-                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white">
+                <button className="h-[52px] cursor-pointer rounded-full bg-white px-4 text-[13px] font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white">
                   {ctaText}
                 </button>
               </div>
