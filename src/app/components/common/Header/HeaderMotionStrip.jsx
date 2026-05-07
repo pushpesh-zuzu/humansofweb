@@ -54,7 +54,7 @@ export default function HeaderMotionStrip() {
           </button>
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex justify-end pr-4 md:pr-5 lg:pr-15">
           <button
             type="button"
             onClick={handleClose}

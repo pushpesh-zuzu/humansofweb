@@ -64,7 +64,7 @@ export default function HeroSection({ heading, pinkHeading, description1, descri
                             <div className="absolute left-[0%] bottom-[12%] h-24 w-24 rounded-full border border-dashed border-[#1d1d1d]/20" />
 
                             {/* Image Card */}
-                            <div className="relative h-[320px] w-full max-w-full overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(72,23,156,0.15)] md:h-[380px]">
+                            <div className="relative h-[320px] w-full max-w-full overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(72,23,156,0.15)] md:h-[373px]">
                                 <Image
                                     src={bannerImage}
                                     alt={altText}
