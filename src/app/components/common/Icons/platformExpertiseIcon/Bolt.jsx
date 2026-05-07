@@ -19,7 +19,7 @@ function Bolt() {
         <path
           d="M23.2109 15.4219H40.7891C45.0883 15.4219 48.5781 18.9116 48.5781 23.2109V40.7891C48.5781 45.0883 45.0883 48.578 40.7891 48.5781H23.2109C18.9119 48.5781 15.422 45.0883 15.4219 40.7891V23.2109C15.4219 18.9118 18.9116 15.4219 23.2109 15.4219Z"
           stroke="white"
-          stroke-width="2"
+          strokeWidth="2"
         />
         <path
           fill-rule="evenodd"
@@ -37,8 +37,8 @@ function Bolt() {
           y2="64"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F65A75" />
-          <stop offset="1" stop-color="#48179C" />
+          <stop stopColor="#F65A75" />
+          <stop offset="1" stopColor="#48179C" />
         </linearGradient>
         <clipPath id="clip0_205_4833">
           <rect
