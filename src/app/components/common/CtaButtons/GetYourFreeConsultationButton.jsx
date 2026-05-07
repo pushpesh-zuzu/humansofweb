@@ -8,7 +8,7 @@ const GetYourFreeConsultationButton = ({
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-full bg-secondary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-primary ${className}`}
+      className={`text-center inline-flex min-h-11 items-center justify-center rounded-full bg-secondary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-primary ${className}`}
     >
       {text}
     </Link>

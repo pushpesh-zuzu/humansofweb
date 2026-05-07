@@ -1,9 +1,9 @@
 import React from 'react'
-import ShopifyAgency from '../components/IndustryExpertise/ShopifyAgency/ShopifyAgency'
+import ShopifyCMSAgency from '../components/PlatformExpertise/CMSAgency/ShopifyCMSAgency/ShopifyCMSAgency'
 
 function page() {
   return (
-    <ShopifyAgency/>
+    <ShopifyCMSAgency/>
   )
 }
 

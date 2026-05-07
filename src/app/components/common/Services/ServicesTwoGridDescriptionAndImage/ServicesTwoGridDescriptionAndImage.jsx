@@ -108,7 +108,7 @@ export default function ServicesTwoGridDescriptionAndImage({
                   // >
                    <p
                     key={i}
-                    className={`p-default mb-4 ${paragraphTextColor?paragraphTextColor:"text-white"}`}
+                    className={`p-default mb-4 ${paragraphTextColor ? paragraphTextColor:"text-white"}`}
                   >
                     {para}
 

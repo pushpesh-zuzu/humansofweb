@@ -24,12 +24,7 @@ function useCountUp(target, duration = 1800, start = false) {
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
-const STATS = [
-  { value: 312, suffix: "%", label: "Average increase in organic leads", sub: "across client portfolio", color: "#732cee" },
-  { value: 850, suffix: "+", label: "Keywords ranked on Page 1", sub: "Google & Bing combined", color: "#F65A75" },
-  { value: 4.8, suffix: "x", label: "Average ROAS on paid campaigns", sub: "within first 90 days", color: "#34d399", isFloat: true },
-  { value: 60, suffix: "%", label: "Reduction in cost per lead", sub: "vs. industry benchmark", color: "#732cee" },
-];
+
 
 // ── Case Studies ──────────────────────────────────────────────────────────────
 const CASES = [
@@ -183,7 +178,7 @@ function StatNumber({ stat, animate }) {
 }
 
 // ── Main Export ───────────────────────────────────────────────────────────────
-export default function ResultsSection() {
+export default function ResultsSection({STATS =[]}) {
   const ref = useRef(null);
   const [animate, setAnimate] = useState(false);
 

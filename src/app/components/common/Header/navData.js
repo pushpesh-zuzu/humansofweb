@@ -115,8 +115,8 @@ const NAV_ITEMS = [
         label: "CMS",
         href: "/cms-digital-marketing-agency",
         subItems: [
-          { label: "Shopify", href: "#" },
-          { label: "Wordpress", href: "#" },
+          { label: "Shopify", href: "/cms-digital-marketing-agency/shopify" },
+          { label: "Wordpress", href: "/cms-digital-marketing-agency/wordpress" },
         ],
       },
       {
