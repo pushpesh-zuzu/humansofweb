@@ -62,7 +62,7 @@ const NAV_ITEMS = [
           { label: "Healthcare SEO", href: "/healthcare-marketing-agency/seo-services" },
           { label: "Healthcare PPC", href: "/healthcare-marketing-agency/ppc-services" },
           { label: "Healthcare Website Design & Development", href: "/healthcare-marketing-agency/website-design" },
-          { label: "Healthcare Link Building", href: "" },
+          { label: "Healthcare Link Building", href: "/healthcare-marketing-agency/link-building-services" },
           { label: "Healthcare Social Media Marketing", href: "/healthcare-marketing-agency/social-media-marketing" },
         ],
       },
@@ -70,9 +70,9 @@ const NAV_ITEMS = [
         label: "Ophthalmology",
         href: "/ophthalmology-digital-marketing-agency",
         subItems: [
-          { label: "Ophthalmology SEO", href: "#" },
-          { label: "Ophthalmology PPC", href: "#" },
-          { label: "Ophthalmology Website Design & Development", href: "#" },
+          { label: "Ophthalmology SEO", href: "/ophthalmology-digital-marketing-agency/seo-services" },
+          { label: "Ophthalmology PPC", href: "/ophthalmology-digital-marketing-agency/ppc-services" },
+          { label: "Ophthalmology Website Design & Development", href: "/ophthalmology-digital-marketing-agency/website-design-services" },
         ],
       },
       {
