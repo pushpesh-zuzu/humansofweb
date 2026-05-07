@@ -26,7 +26,7 @@ const ContactForm = () => {
             </p>
 
             {[
-              { label: "Phone:", val: "(888) 273-1887766" },
+              { label: "Whatsapp:", val: "+44 7897 024186" },
               { label: "Send Email:", val: "hello@how.com" },
               {
                 label: "Address:",
@@ -67,7 +67,7 @@ const ContactForm = () => {
                 "Your Name *",
                 "Email *",
                 "Phone *",
-                "Website *",
+                "Enter Your Desired Domain *",
                 "Designation *",
                 "How Did You Find Us?",
               ].map((ph) => (
