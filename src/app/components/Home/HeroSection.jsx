@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
 import GetProposalModal from "../common/GetProposalModal/GetProposalModal";
+import { useRouter } from "next/navigation";
 
 const ROTATING_TEXTS = [
   "startups",
@@ -14,6 +15,7 @@ const ROTATING_TEXTS = [
 ];
 
 export default function HeroSection() {
+  const navigate = useRouter()
   const [activeTextIndex, setActiveTextIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -50,6 +52,8 @@ export default function HeroSection() {
       top: 0,
       behavior: "smooth",
     });
+    navigate.push('/industry-expertise')
+
   };
 
   return (
@@ -72,7 +76,7 @@ export default function HeroSection() {
                   That Humans Love
                 </h1>
 
-                <p className="mt-5 p-tertiary font-semibold text-[#1c1c1c]">
+                {/* <p className="mt-5 p-tertiary font-semibold text-[#1c1c1c]">
                   We help{" "}
                   <span className="relative inline-block text-secondary">
                     <span className="absolute left-0 top-0">
@@ -84,14 +88,14 @@ export default function HeroSection() {
                   </span>
                   {" "}
                   craft human-centered <span className="md:block">digital experiences that convert.</span>
-                </p>
+                </p> */}
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
-                  <input
+                  {/* <input
                     type="text"
                     placeholder="Enter your Whatsapp Number"
                     className="h-[52px] w-full rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[260px]"
-                  />
+                  /> */}
                   <button type="button" onClick={() => setProposalOpen(true)} className="h-[52px] cursor-pointer rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-primary">
                     Get Your Free Consultation
                   </button>
@@ -102,7 +106,7 @@ export default function HeroSection() {
                 </p>
 
                 <a
-                  href="#"
+                  href="/industry-expertise"
                   onClick={handleExploreClick}
                   className="group mt-7 flex w-full items-center justify-center gap-3 text-[14px] font-bold uppercase tracking-[0.08em] text-primary transition-all duration-500 ease-out md:mx-auto md:w-fit md:text-[20px] lg:mx-0 lg:justify-start"
                 >

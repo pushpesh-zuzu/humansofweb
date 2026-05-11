@@ -26,7 +26,7 @@ function Ecommerce() {
         bgImag={"/IndustryExpertise/eCommerce/eCommerceHeroImage.webp"}
         headingSectionWidth="max-w-[586px]"
       />
-      <TrustedBy padding={"py-5 px-[35px] px-0 md:py-12 xl:py-15"} />
+      <TrustedBy padding={""} />
       <ServicesTwoGridDescriptionAndImage
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Marketing "

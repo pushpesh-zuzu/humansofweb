@@ -57,7 +57,7 @@ function IndustryRow({ industry, reverse, index }) {
       </div>
 
       {/* Text */}
-      <div className="w-full md:w-1/2 mb-4 md:mb-0">
+      <div className="w-full md:w-1/2 mb-10 md:mb-0">
         <span
           className={`${accentTextColor} inline-block text-xs font-bold px-3 py-1 rounded-full mb-4`}
           style={{

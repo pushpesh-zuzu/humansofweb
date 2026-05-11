@@ -32,7 +32,7 @@ const SeoServiceVideo = ({
     <ContainerWrapper>
       <PaddingWrapper2 padding="pt-5 pb-10 px-8.75 md:pb-14 md:pt-2 md:px-12.5 xl:pt-5 xl:pb-18 xl:px-20">
         <div className="mx-auto max-w-[1135px]">
-          <div className="relative aspect-[1135/553] w-full overflow-hidden rounded-lg bg-[#f7f7f7]">
+          <div className="relative aspect-[1135/553] w-full overflow-hidden rounded-lg bg-[#fafafa]">
             {isPlaying && videoSrc ? (
               <>
                 <button

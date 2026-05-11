@@ -3,6 +3,7 @@ import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import Header from "./components/common/Header/Header";
 import ConditionalFooter from "./components/common/Footer/ConditionalFooter";
+import CookieBanner from "./components/common/CookiesBanner/CookiesBanner";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -14,8 +15,8 @@ export const metadata = {
   description:
     "A trusted digital marketing agency in San Jose, How offer bespoke digital marketing services that turn website visitors into paying customers. Call us now!",
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
   },
   openGraph: {
     title: "Boost Your SaaS & eCommerce Growth | How Digital Marketing Experts",
@@ -63,6 +64,7 @@ export default function RootLayout({ children }) {
             <ConditionalFooter />
           </StoreProvider>
         </div>
+        <CookieBanner/>
       </body>
     </html>
   );

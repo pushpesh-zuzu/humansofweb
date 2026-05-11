@@ -13,7 +13,7 @@ const SaaS = () => {
         description1="Building a successful SaaS product is just the beginning — real growth comes from reaching the right audience and guiding them through a journey that converts. At Humans of Web, we work closely with you to understand your product, your users, and the challenges you face in scaling."
         description2=""
       />
-      <TrustedBy padding={"py-5 px-[35px] px-0 md:py-12 xl:py-15"} />
+      <TrustedBy padding={""} />
 
       <SeoServiceVideo />
     </>

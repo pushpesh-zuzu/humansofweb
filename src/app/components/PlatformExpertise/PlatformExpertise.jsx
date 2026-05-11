@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 // import IndustryHeroSection from "../HeroSection/HeroSection";
 // import TrustedBy from "../common/TrustedBy/TrustedBy";
 // import IndustriesWeServe from "./IndustriesWeServe/IndustriesWeServe";
@@ -374,6 +374,8 @@ const STATS = [
 ];
 
 function PlatformExpertise() {
+    const deepDiveRef = useRef(null);
+  
   return (
     <>
       <IndustryHeroSection
@@ -382,9 +384,10 @@ function PlatformExpertise() {
         headingPink="Real Growth"
         description1="We build platform-focused strategies that improve workflows, automate operations, and help businesses scale faster."
         description2="From CMS and CRM systems to AI-powered workflows, we create solutions designed around performance, efficiency, and long-term growth."
+        deepDiveRef={deepDiveRef}
       />
 
-      <TrustedBy padding={"py-5 md:py-12 xl:py-15"} />
+      <TrustedBy padding={""} />
 
       <IndustriesWeServe
         INDUSTRIES={PLATFORMS}
@@ -392,13 +395,14 @@ function PlatformExpertise() {
         headdingBlue="We Specialise In"
         description="We work across leading CMS, CRM, and AI platforms — building solutions tailored to your workflows, operations, and growth goals."
       />
-
+      <div ref={deepDiveRef}>
       <IndustryDeepDive
         INDUSTRIESDEEPDIVEDATA={INDUSTRIESDEEPDIVEDATA}
         headingBlack="Platform"
         headingBlue="Deep Dive"
         description="Every platform requires a different strategy. We customise systems around performance, automation, scalability, and user experience."
-      />
+        />
+        </div>
 
       <HowWeWork cards={STEPS} />
 

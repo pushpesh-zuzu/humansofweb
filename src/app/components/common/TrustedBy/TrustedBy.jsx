@@ -36,12 +36,15 @@ const PARTNERS = [
 const LOOPED = [...PARTNERS, ...PARTNERS, ...PARTNERS];
 
 export default function TrustedBy({
-  padding = "pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20",
+  padding = "pb-10 px-8.75 md:pb-[50px] md:px-12.5 xl:pb-18 xl:px-20",
+  bg='#fff'
 }) {
   return (
-    <ContainerWrapper maxWidth="max-w-[1440px] w-[100%] md:w-[92%] lg:w-[95%]">
+    <ContainerWrapper background={bg} 
+    // maxWidth="max-w-[1440px] w-[100%] md:w-[92%] lg:w-[95%]"
+    >
       <PaddingWrapper2 padding={padding}>
-        <section className="w-full bg-white">
+        <section className="w-full ">
           {/* Title */}
           <div className="mx-auto">
             {/* <h6 className="text-h6">Trusted by:</h6> */}

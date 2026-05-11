@@ -15,13 +15,13 @@ export default function VideoCards({ testimonial, onPlay }) {
         alt=""
         className="absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-500 group-hover:opacity-100"
       />
-      <div className="absolute inset-0 bg-primary/0 transition-colors duration-500 group-hover:bg-primary/45" />
+      <div className="absolute inset-0 bg-primary/0 transition-all duration-700 group-hover:bg-black/35" />
 
       <div className="relative z-10 aspect-video w-full flex-none overflow-hidden xl:aspect-auto xl:h-[67%]">
         <img
           src={testimonial.image}
           alt={testimonial.name}
-          className="h-full w-full object-contain object-center transition-all duration-500 group-hover:scale-105 group-hover:opacity-0 xl:object-cover"
+          className="h-full w-full object-contain object-center transition-all duration-700 ease-out group-hover:scale-110 group-hover:blur-[2px] xl:object-cover"
         />
 
         <button
@@ -34,7 +34,7 @@ export default function VideoCards({ testimonial, onPlay }) {
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{ height: 80, width: 80 }}
           >
-            <div className="h-full w-full transition-transform duration-300 group-hover:animate-[playDrop_0.55s_ease-out] group-hover:scale-110">
+            <div className="h-full w-full opacity-90 transition-all duration-500 ease-out group-hover:scale-110 group-hover:opacity-100">
               <img
                 src={playOutlineIcon.src}
                 alt="play"
