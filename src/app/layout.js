@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import Header from "./components/common/Header/Header";
-import Footer from "./components/common/Footer/Footer";
+import ConditionalFooter from "./components/common/Footer/ConditionalFooter";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -54,10 +54,14 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
       <body suppressHydrationWarning className="relative overflow-x-hidden">
-        <div className="relative z-10">
-          <Header />
-          <StoreProvider>{children}</StoreProvider>
-          <Footer/>
+        <div className="relative z-10 flex min-h-svh flex-col">
+          <StoreProvider>
+            <Header />
+            <main className="flex min-h-0 flex-1 flex-col">
+              {children}
+            </main>
+            <ConditionalFooter />
+          </StoreProvider>
         </div>
       </body>
     </html>

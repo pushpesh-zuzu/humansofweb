@@ -2,6 +2,12 @@
 
 import { useState, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa6";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { useDispatch } from "react-redux";
+import { useRouter } from "next/navigation";
+import { submitEnquiry } from "@/lib/store/enquirySlice";
+import Loader from "../common/Loader/Loader";
 
 function Input({ type = "text", name, placeholder, value, onChange }) {
   return (
@@ -64,6 +70,13 @@ export default function ProposalModal({ isOpen, onClose }) {
     terms: false,
   });
 
+  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
+  const router = useRouter();
+
+
+
   useEffect(() => {
     const handler = (e) => {
       if (e.key === "Escape") onClose();
@@ -84,11 +97,89 @@ export default function ProposalModal({ isOpen, onClose }) {
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setForm((p) => ({ ...p, [name]: type === "checkbox" ? checked : value }));
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "",
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(form);
+
+    const newErrors = {};
+
+    if (!form.firstName.trim()) {
+      newErrors.firstName = "First name is required";
+    }
+
+    if (!form.phone || !/^\d{8,15}$/.test(form.phone)) {
+      newErrors.phone = "Please enter a valid phone number";
+    }
+
+    if (!form.email.trim()) {
+      newErrors.email = "Email address is required";
+    }
+
+    if (!form.webUrl.trim()) {
+      newErrors.webUrl = "Domain is required";
+    }
+
+    if (!form.service) {
+      newErrors.service = "Please select a service";
+    }
+
+    if (!form.budget) {
+      newErrors.budget = "Please select a budget";
+    }
+
+    if (!form.terms) {
+      newErrors.terms = "Please accept terms & conditions";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const response = await dispatch(
+        submitEnquiry({
+          name: form.firstName,
+          email: form.email,
+          phone: `+${form.phone}`,
+          website_url: form.webUrl,
+          service_intrested: form.service,
+          monthly_budget: form.budget,
+          about: form.about,
+        })
+      );
+
+      if (response?.meta?.requestStatus === "fulfilled") {
+        onClose?.();
+      const message = `New Proposal Request
+
+● Name: ${form.firstName}
+● Phone: +${form.phone}
+● Email: ${form.email}
+● Domain: ${form.webUrl}
+● Service Interested: ${form.service}
+● Monthly Budget: ${form.budget}
+● About Business: ${form.about || "N/A"}
+
+- Humans of Web`;
+
+        const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
+          message
+        )}`;
+
+        window.open(whatsappUrl, "_blank");
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -340,64 +431,128 @@ export default function ProposalModal({ isOpen, onClose }) {
                 className="flex flex-col flex-1 gap-3"
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Input
-                    name="firstName"
-                    placeholder="First Name *"
-                    value={form.firstName}
-                    onChange={handleChange}
-                  />
-                  <Input
-                    name="phone"
-                    type="tel"
-                    placeholder="Phone Number *"
-                    value={form.phone}
-                    onChange={handleChange}
-                  />
+                  <div>
+                    <Input
+                      name="firstName"
+                      placeholder="First Name *"
+                      value={form.firstName}
+                      onChange={handleChange}
+                    />
+                    {errors.firstName && (
+                      <p className="text-red-500 text-xs mt-1">
+                        {errors.firstName}
+                      </p>
+                    )}
+                  </div>
+                  <div>
+                    <PhoneInput
+                      country={"in"}
+                      value={form.phone}
+                      onChange={(phone) => {
+                        setForm((prev) => ({
+                          ...prev,
+                          phone,
+                        }));
+
+                        setErrors((prev) => ({
+                          ...prev,
+                          phone: "",
+                        }));
+                      }}
+                      inputProps={{
+                        name: "phone",
+                        required: true,
+                      }}
+                      inputClass="!w-full !h-[42px] !pl-14 !rounded-none !border !border-gray-200 focus:!border-purple-500 focus:!ring-2 focus:!ring-purple-100"
+                      buttonClass="!bg-transparent !border-0"
+                      containerClass="w-full"
+                      dropdownClass="!rounded-md"
+                      enableSearch={true}
+                    />
+
+                    <p className="mt-1 text-xs text-gray-500">
+                      Please ensure this is a WhatsApp number.
+                    </p>
+
+                    {errors.phone && (
+                      <p className="text-red-500 text-xs mt-1">
+                        {errors.phone}
+                      </p>
+                    )}
+                  </div>
                 </div>
 
-                <Input
-                  name="email"
-                  type="email"
-                  placeholder="Email Address *"
-                  value={form.email}
-                  onChange={handleChange}
-                />
-                <Input
-                  name="webUrl"
-                  type="url"
-                  placeholder="Enter Your Desired Domain *"
-                  value={form.webUrl}
-                  onChange={handleChange}
-                />
+                <div>
+                  <Input
+                    name="email"
+                    type="email"
+                    placeholder="Email Address *"
+                    value={form.email}
+                    onChange={handleChange}
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.email}
+                    </p>
+                  )}
+                </div>
+                <div>
+                  <Input
+                    name="webUrl"
+                    type="url"
+                    placeholder="Enter Your Desired Domain *"
+                    value={form.webUrl}
+                    onChange={handleChange}
+                  />
+                  {errors.webUrl && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.webUrl}
+                    </p>
+                  )}
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Select
-                    name="service"
-                    value={form.service}
-                    onChange={handleChange}
-                    placeholder="Service Interested In"
-                    options={[
-                      "SEO",
-                      "Performance Marketing",
-                      "Content Strategy",
-                      "Digital PR",
-                      "Social Media",
-                      "Full Growth Package",
-                    ]}
-                  />
-                  <Select
-                    name="budget"
-                    value={form.budget}
-                    onChange={handleChange}
-                    placeholder="Monthly Budget"
-                    options={[
-                      "Under ₹50K",
-                      "₹50K – ₹1L",
-                      "₹1L – ₹5L",
-                      "₹5L – ₹10L",
-                      "₹10L+",
-                    ]}
-                  />
+                  <div>
+                    <Select
+                      name="service"
+                      value={form.service}
+                      onChange={handleChange}
+                      placeholder="Service Interested In"
+                      options={[
+                        "SEO",
+                        "Performance Marketing",
+                        "Content Strategy",
+                        "Digital PR",
+                        "Social Media",
+                        "Full Growth Package",
+                      ]}
+                    />
+                    {errors.service && (
+                      <p className="text-red-500 text-xs mt-1">
+                        {errors.service}
+                      </p>
+                    )}
+                  </div>
+                  <div>
+                    <Select
+                      name="budget"
+                      value={form.budget}
+                      onChange={handleChange}
+                      placeholder="Monthly Budget"
+                      options={[
+                        "Under ₹50K",
+                        "₹50K – ₹1L",
+                        "₹1L – ₹5L",
+                        "₹5L – ₹10L",
+                        "₹10L+",
+                      ]}
+                    />
+                    {errors.budget && (
+                      <p className="text-red-500 text-xs mt-1">
+                        {errors.budget}
+                      </p>
+                    )}
+                  </div>
                 </div>
 
                 {/* Textarea — flex-1 se baaki space fill karta hai */}
@@ -409,28 +564,37 @@ export default function ProposalModal({ isOpen, onClose }) {
                   className="w-full flex-1 min-h-[80px] px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 transition-all resize-none"
                 />
 
-                <label className="text-xs text-gray-500 cursor-pointer leading-relaxed">
-                  <input
-                    type="checkbox"
-                    name="terms"
-                    checked={form.terms}
-                    onChange={handleChange}
-                    className="mt-0.5 mr-1 flex-shrink-0 accent-secondary"
-                  />
-                  I agree to the{" "}
-                  <a
-                    href="/terms"
-                    className="underline"
-                    style={{ color: "#48179C" }}
-                  >
-                    terms & conditions
-                  </a>
-                  . I consent to receiving communication from HOW — Humans of
-                  Web.
-                </label>
+                <div>
+                  <label className="text-xs text-gray-500 cursor-pointer leading-relaxed">
+                    <input
+                      type="checkbox"
+                      name="terms"
+                      checked={form.terms}
+                      onChange={handleChange}
+                      className="mt-0.5 mr-1 flex-shrink-0 accent-secondary"
+                    />
+                    I agree to the{" "}
+                    <a
+                      href="/terms"
+                      className="underline"
+                      style={{ color: "#48179C" }}
+                    >
+                      terms & conditions
+                    </a>
+                    . I consent to receiving communication from HOW — Humans of
+                    Web.
+                  </label>
+
+                  {errors.terms && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.terms}
+                    </p>
+                  )}
+                </div>
 
                 <button
                   type="submit"
+                  disabled={loading}
                   className="button-primary w-full transition-all duration-200"
                   style={{ background: "#48179C", border: "none" }}
                   onMouseEnter={(e) =>
@@ -440,7 +604,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                     (e.currentTarget.style.background = "#48179C")
                   }
                 >
-                  Send My Free Proposal →
+                  {loading ? <Loader label="Sending..." /> : "Send My Free Proposal →"}
                 </button>
 
                 <p className="text-xs text-center text-gray-400 pb-1">

@@ -3,6 +3,10 @@
 import { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useDispatch } from "react-redux";
+import { useRouter } from "next/navigation";
+import { submitEnquiry } from "@/lib/store/enquirySlice";
+import Loader from "../Loader/Loader";
 
 const initialForm = {
   fullName: "",
@@ -67,6 +71,10 @@ const GetProposalModal = ({
 }) => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+
+  const dispatch = useDispatch();
+  const router = useRouter();
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -101,7 +109,7 @@ const GetProposalModal = ({
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const newErrors = {};
@@ -134,12 +142,44 @@ const GetProposalModal = ({
       return;
     }
 
-    if (onSubmit) {
-      onSubmit(form);
-      return;
+    try {
+      setLoading(true);
+
+      const response = await dispatch(
+        submitEnquiry({
+          name: form.fullName,
+          email: form.email,
+          phone: `+${form.phone}`,
+          website_url: form.websiteUrl,
+        })
+      );
+
+      if (response?.meta?.requestStatus === "fulfilled") {
+        setForm(initialForm);
+        setErrors({});
+        onClose?.();
+
+        const message = `New Proposal Request
+
+● Name: ${form.fullName}
+● Phone: +${form.phone}
+● Email: ${form.email}
+● Domain: ${form.websiteUrl}
+
+- Humans of Web`;
+
+        const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
+          message
+        )}`;
+
+        window.open(whatsappUrl, "_blank");
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
     }
 
-    console.log(form);
   };
 
   const handleClose = () => {
@@ -266,10 +306,11 @@ const GetProposalModal = ({
 
             <button
               type="submit"
+              disabled={loading}
               className="button-primary rounded-full w-full bg-secondary hover:bg-primary transition-all duration-200"
               style={{ border: "none" }}
             >
-              Get Free Proposal
+              {loading ? <Loader label="Sending..." /> : "Get Free Proposal"}
             </button>
 
             <p className="pb-1 text-center text-xs text-gray-400">

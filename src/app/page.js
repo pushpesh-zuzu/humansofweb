@@ -12,13 +12,18 @@ import IndustryTags from "./components/Home/IndustryTags";
 import OurExport from "./components/Home/OurExport";
 import ServiceSectors from "./components/Home/ServiceSectors";
 
+let hasAutoOpenedProposalModal = false;
+
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    const timer = null;
-    setTimeout(() => {
+    if (hasAutoOpenedProposalModal) return;
+
+    const timer = setTimeout(() => {
       setIsOpen(true);
+      hasAutoOpenedProposalModal = true;
     }, 5000);
+
     return () => {
       clearTimeout(timer);
     };
