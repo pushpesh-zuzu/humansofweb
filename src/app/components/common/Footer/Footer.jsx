@@ -38,6 +38,8 @@ const getFooterLinks = (item) => {
   }));
 };
 
+console.log("getFooterLinks", getFooterLinks)
+
 const CONTACT_INFO = [
   {
     label: "Address",
@@ -147,19 +149,26 @@ const Footer = () => {
 
       <div className="bg-primary text-white">
         <div className="mx-auto max-w-[1500px] px-[4%] py-7 md:py-9 xl:py-10">
-          <div className="grid gap-7 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,0.55fr)_minmax(0,1.45fr)]">
             <div>
               <div className="inline-flex rounded-full bg-white px-3 py-2">
-                <Logo className="h-8 w-32 md:h-10 md:w-44" />
+                <Logo className="h-8 w-32 md:h-10 md:w-44 lg:w-38" />
               </div>
             </div>
 
 
-            <div className="grid grid-cols-2 gap-6 md:gap-10 xl:gap-20 md:grid-cols-3">
+            <div className="grid grid-cols-2 gap-6 md:gap-20 xl:gap-20 md:grid-cols-3">
               {visibleNavItems.map((item) => (
-                <div key={item.label}>
-                  <h3 className="p-default font-bold text-white">{item.label}</h3>
-                  <div className="mt-3 grid gap-3">
+                <div
+                  key={item.label}
+                  className={item.label === "Industry Expertise" ? "lg:-ml-4 xl:-ml-14" : ""}
+                >
+                  <h3 className={`p-default font-bold text-white ${item.label === "Industry Expertise" ? "text-left" : ""
+                    }`}>{item.label}</h3>
+                    <div className={`mt-3 ${item.label === "Industry Expertise"
+                      ? "grid gap-y-3 text-left sm:grid-cols-2 sm:gap-x-10"
+                      : "grid gap-3"
+                    }`}>
                     {getFooterLinks(item).map((link) => (
                       <Link
                         key={link.label}
