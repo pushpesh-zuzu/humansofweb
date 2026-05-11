@@ -249,6 +249,7 @@ const SeoServices = () => {
                 description2={"Our tailored SEO strategies focus on your services, location, and audience to build a growth plan that delivers lasting results and long-term success."}
                 bannerImage="/seoServices/dental-seo-banner.svg"
                 altText={"Dental SEO That Drives Patients"}
+                imageHeight="h-[180px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

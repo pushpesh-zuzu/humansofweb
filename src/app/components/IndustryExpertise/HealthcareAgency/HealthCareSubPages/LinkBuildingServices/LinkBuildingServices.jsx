@@ -119,6 +119,7 @@ const LinkBuildingServices = () => {
                 description2={"Our team secures high-quality backlinks from trusted websites to increase organic visibility, drive targeted traffic, and support long-term growth for your healthcare practice."}
                 bannerImage="/healthcare/link_building_banner.webp"
                 altText={"Healthcare link building services improving SEO rankings and patient acquisition through quality backlinks"}
+                imageHeight="h-[180px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

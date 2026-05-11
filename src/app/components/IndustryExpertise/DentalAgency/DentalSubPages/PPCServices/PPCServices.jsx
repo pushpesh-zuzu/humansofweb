@@ -187,6 +187,7 @@ const PPCServices = () => {
                 description2={"We focus on your services, location, and audience to run targeted campaigns that increase visibility, maximize ROI, and drive reliable growth for your dental practice."}
                 bannerImage="/ppcServices/dental-ppc-banner.svg"
                 altText={"Dental PPC services driving patient leads and clinic growth through targeted advertising"}
+                imageHeight="h-[290px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

@@ -237,6 +237,7 @@ const SeoServices = () => {
                 description2={"Our customized SEO strategies are designed to increase your reach, build trust, and turn search traffic into consistent patient appointments."}
                 bannerImage="/seoServices/healthcare-banner.svg"
                 altText={"Medical SEO Services for Patient Growth"}
+                imageHeight="h-[230px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

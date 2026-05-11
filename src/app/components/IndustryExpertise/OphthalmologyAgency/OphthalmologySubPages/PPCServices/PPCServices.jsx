@@ -171,6 +171,7 @@ const PPCServices = () => {
                 description2={"Our data-driven Google Ads strategies focus on improving visibility, maximizing ad performance, and generating consistent growth for your eye care practice."}
                 bannerImage="/ophthalmology/ophthalmology-ppc-banner.webp"
                 altText={"Ophthalmology PPC services driving patient leads and practice growth through targeted advertising"}
+                imageHeight="h-[180px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

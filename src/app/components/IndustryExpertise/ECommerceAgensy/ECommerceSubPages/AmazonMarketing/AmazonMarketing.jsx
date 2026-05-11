@@ -192,6 +192,7 @@ const AmazonMarketing = () => {
         description2={"From listing optimization to sponsored ads and performance reporting, Humans of Web helps your products stand out where customers are ready to buy."}
         bannerImage="/amazonMarketing/amazon.svg"
         altText={"amazon listing optimization and ads driving ecommerce conversions"}
+        imageHeight="h-[240px] md:h-[373px]"
       />
       <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
       <ServicesTwoGridSection

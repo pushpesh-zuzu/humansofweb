@@ -161,6 +161,7 @@ const ContentMarketing = () => {
         description2={"From product education to SEO content and campaign assets, Humans of Web turns content into a practical growth channel for your brand."}
         bannerImage="/contentMarketing/content-banner.svg"
         altText={"content marketing strategy driving ecommerce traffic and customer demand"}
+        imageHeight="h-[190px] md:h-[373px]"
       />
       <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
       <ServicesTwoGridSection

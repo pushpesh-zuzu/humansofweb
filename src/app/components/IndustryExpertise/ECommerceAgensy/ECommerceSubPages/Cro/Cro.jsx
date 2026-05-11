@@ -158,6 +158,7 @@ const Cro = () => {
         description2={"Humans of Web combines analytics, UX thinking, and persuasive messaging to help more visitors become customers without simply spending more on traffic."}
         bannerImage="/cro/cro.svg"
         altText={"conversion rate optimization dashboard and ecommerce website improving user experience"}
+        imageHeight="h-[240px] md:h-[373px]"
       />
       <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
       <ServicesTwoGridSection

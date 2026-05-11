@@ -198,6 +198,7 @@ const WebsiteDesign = () => {
                 description2={"From design to functionality, we build user-friendly healthcare websites that improve patient experience, strengthen credibility, and support your practice’s long-term growth."}
                 bannerImage="/websiteDesign/healthcare-website-banner.svg"
                 altText={"healthcare websites that build patient trust"}
+                imageHeight="h-[220px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection
