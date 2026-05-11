@@ -8,6 +8,24 @@ import WorkWithCards from '@/app/components/common/SubServices/WorkWithCards/Wor
 import ServiceGridSection from '@/app/components/common/SubServices/ServiceGridSection/ServiceGridSection';
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent';
 import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs';
+import HealthcareSeoAudit from "../../../../common/Icons/healthcare/healthcare-seo-audit.svg";
+import LocalCompetitor from "../../../../common/Icons/healthcare/local-competitor-analysis.svg";
+import PatientIntentKeyword from "../../../../common/Icons/healthcare/patient-intent-keyword.svg";
+import ServicePageOptimization from "../../../../common/Icons/healthcare/service-page-optimization.svg";
+import WebsiteOptimization from "../../../../common/Icons/healthcare/content-website-optimization.svg";
+import SeoAuthority from "../../../../common/Icons/healthcare/seo-authority-growth.svg";
+import UrologySeo from "../../../../common/Icons/healthcare/urology-seo.svg";
+import ChiropracticSeo from "../../../../common/Icons/healthcare/chiropractic-seo.svg";
+import DentalSeo from "../../../../common/Icons/healthcare/dental-seo.svg";
+import DermatologySeo from "../../../../common/Icons/healthcare/dermatology-seo.svg";
+import OphthalmologySeo from "../../../../common/Icons/healthcare/ophthalmology-seo.svg";
+import PlasticSurgerySeo from "../../../../common/Icons/healthcare/plastic-surgery-seo.svg";
+import SustainableCost from "../../../../common/Icons/healthcare/sustainable-cost-effective-growth.svg";
+import ConsistentOrganic from "../../../../common/Icons/healthcare/consistent-organic-traffic.svg";
+import EnhancedPatient from "../../../../common/Icons/healthcare/enhanced-patient-trust-credibility.svg";
+import ImprovedLocal from "../../../../common/Icons/healthcare/improved-local-discoverability.svg";
+import MorePatient from "../../../../common/Icons/healthcare/more-patient-appointments.svg";
+import StrongerPractice from "../../../../common/Icons/healthcare/stronger-practice-visibility.svg";
 
 
 const seoService = [
@@ -25,36 +43,43 @@ const OPHTHALMOLOGY_SEO_STRATEGY_ITEMS = [
         title: "Local Search Optimization",
         description:
             "We optimize your ophthalmology practice for local search visibility, helping nearby patients discover your services through targeted local SEO strategies.",
+        icon: HealthcareSeoAudit
     },
     {
         title: "Technical SEO Enhancements",
         description:
             "Our technical SEO improvements focus on website speed, mobile responsiveness, crawlability, and overall performance to support stronger search rankings.",
+        icon: LocalCompetitor
     },
     {
         title: "Competitive Market Research",
         description:
             "We study competing ophthalmology practices to identify SEO opportunities and build strategies that help your clinic gain a competitive advantage online.",
+        icon: PatientIntentKeyword
     },
     {
         title: "On-Page SEO Improvements",
         description:
             "We refine your website content, titles, meta descriptions, and page structure to improve keyword relevance, user experience, and patient engagement.",
+        icon: ServicePageOptimization
     },
     {
         title: "Strategic Keyword Planning",
         description:
             "Our team researches high-value ophthalmology keywords that align with patient search intent and increase your chances of attracting qualified traffic.",
+        icon: WebsiteOptimization
     },
     {
         title: "Authority Building Strategies",
         description:
             "We strengthen your website authority through ethical off-page SEO and link-building methods that improve credibility and long-term online growth.",
+        icon: SeoAuthority
     },
     {
         title: "SEO Content Development",
         description:
             "We create optimized content and service pages that improve search visibility, answer patient questions, and encourage appointment inquiries.",
+        icon: ServicePageOptimization
     },
 ];
 
@@ -101,37 +126,37 @@ const OPHTHALMOLOGY_WORK_WITH_CARDS = [
         title: "Local Ophthalmology SEO",
         description:
             "We optimize your eye care practice for local search results so patients nearby can easily find your ophthalmology services online.",
-        // icon: OphthalmologySeo
+        icon: OphthalmologySeo
     },
     {
         title: "Technical SEO Optimization",
         description:
             "Our team improves website performance, mobile responsiveness, and technical SEO to support stronger rankings and better patient experiences.",
-        // icon: DentalSeo
+        icon: DentalSeo
     },
     {
         title: "Ophthalmology Keyword Research",
         description:
             "We identify high-intent eye care keywords that help your website attract qualified patients searching for ophthalmology treatments and services.",
-        // icon: DermatologySeo
+        icon: DermatologySeo
     },
     {
         title: "On-Page SEO Enhancements",
         description:
             "We optimize titles, service pages, metadata, and content structure to improve visibility and increase patient engagement across your website.",
-        // icon: ChiropracticSeo
+        icon: ChiropracticSeo
     },
     {
         title: "Authority & Link Building",
         description:
             "We strengthen your website authority through strategic link-building and SEO practices designed to improve trust and long-term search growth.",
-        // icon: UrologySeo
+        icon: UrologySeo
     },
     {
         title: "SEO Content Strategy",
         description:
             "We create optimized ophthalmology content that improves search rankings, educates patients, and drives more appointment inquiries.",
-        // icon: PlasticSurgerySeo
+        icon: PlasticSurgerySeo
     },
 ];
 
@@ -140,37 +165,37 @@ const OPHTHALMOLOGY_SERVICE_GRID_ITEMS = [
         title: "Strategic SEO Planning",
         description:
             "We create a customized ophthalmology SEO strategy focused on your services, patient audience, and growth goals to improve rankings and online visibility.",
-        // icon: StrongerPractice
+        icon: StrongerPractice
     },
     {
         title: "Smooth SEO Onboarding",
         description:
             "Our onboarding process reviews your current SEO performance, website structure, and analytics setup to build a strong foundation for long-term success.",
-        // icon: MorePatient
+        icon: MorePatient
     },
     {
         title: "Actionable SEO Recommendations",
         description:
             "We provide targeted recommendations for technical SEO, content optimization, keyword improvements, and authority growth to strengthen your search performance.",
-        // icon: ConsistentOrganic
+        icon: ConsistentOrganic
     },
     {
         title: "SEO Execution & Optimization",
         description:
             "Our team implements on-page SEO, local optimization, and link-building strategies designed to increase traffic, rankings, and patient inquiries.",
-        // icon: SustainableCost
+        icon: SustainableCost
     },
     {
         title: "Local Search Visibility",
         description:
             "We improve your presence across Google search, maps, and local listings so nearby patients can easily discover your ophthalmology services.",
-        // icon: ImprovedLocal
+        icon: ImprovedLocal
     },
     {
         title: "Performance Tracking & Reporting",
         description:
             "We continuously monitor rankings, traffic, and SEO performance while providing transparent reports to support consistent practice growth.",
-        // icon: EnhancedPatient
+        icon: EnhancedPatient
     },
 ];
 
