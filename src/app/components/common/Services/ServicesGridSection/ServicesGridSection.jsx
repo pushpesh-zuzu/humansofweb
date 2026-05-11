@@ -24,7 +24,7 @@ export default function ServicesGridSection({
           />
 
         {/* Grid */}
-        <div className="grid gap-5 md:gap-10 mt-4 md:mt-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:gap-10  md:grid-cols-2 lg:grid-cols-3">
           {services.map((item, i) => (
             <motion.div
               key={i}

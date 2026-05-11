@@ -5,14 +5,19 @@ import H2HeadingWrapper from "../../../common/Container/H2HeadingWrapper";
 import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 import IndustryCard from "./IndustryCard";
 
-export default function IndustriesWeServe({ INDUSTRIES = [] }) {
+export default function IndustriesWeServe({
+  INDUSTRIES = [],
+  headdingBlack = "Industries",
+  headdingBlue = "We Serve",
+  description = "We work with businesses across verticals — each with unique challenges, and each deserving a strategy built specifically for them.",
+}) {
   return (
     <ContainerWrapper background="#fafafa">
       <PaddingWrapper2>
         <H2HeadingWrapper
-          headdingBlack="Industries"
-          headingBlue="We Serve"
-          description="We work with businesses across verticals — each with unique challenges, and each deserving a strategy built specifically for them."
+          headdingBlack={headdingBlack}
+          headingBlue={headdingBlue}
+          description={description}
         />
 
         <div className="flex flex-wrap justify-center gap-6 md:pt-5">
