@@ -387,7 +387,7 @@ function PlatformExpertise() {
         deepDiveRef={deepDiveRef}
       />
 
-      <TrustedBy padding={"py-5 md:py-12 xl:py-15"} />
+      <TrustedBy padding={""} />
 
       <IndustriesWeServe
         INDUSTRIES={PLATFORMS}
