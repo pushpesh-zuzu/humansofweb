@@ -15,8 +15,8 @@ export const metadata = {
   description:
     "A trusted digital marketing agency in San Jose, How offer bespoke digital marketing services that turn website visitors into paying customers. Call us now!",
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
+    icon: "/logoIcon.svg",
+    shortcut: "/logoIcon.svg",
   },
   openGraph: {
     title: "Boost Your SaaS & eCommerce Growth | How Digital Marketing Experts",
