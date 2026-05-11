@@ -150,11 +150,12 @@ const SocialMediaMarketing = () => {
         <>
             <HeroSection
                 heading={"Social Media Marketing That"}
-                pinkHeading={"Builds Brand Demand"}
+                pinkHeading={"Builds Demand"}
                 description1={"We help ecommerce brands turn social attention into trust, traffic, and sales with content and campaigns built around real customer behavior."}
                 description2={"From organic storytelling to paid social support, Humans of Web creates social strategies that keep your brand visible, useful, and conversion-ready."}
                 bannerImage="/SocialMediaMarketing/social-media.svg"
                 altText={"websites that grow with you"}
+                imageHeight="h-[280px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

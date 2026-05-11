@@ -7,10 +7,8 @@ import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
-export default function HeroSection({ heading, pinkHeading, description1, description2, bannerImage, altText }) {
+export default function HeroSection({ heading, pinkHeading, description1, description2, bannerImage, altText, imageHeight = "h-[330px] md:h-[373px]", }) {
     const [proposalOpen, setProposalOpen] = useState(false);
-
-
 
     return (
         <ContainerWrapper background="#48179C" >
@@ -64,12 +62,12 @@ export default function HeroSection({ heading, pinkHeading, description1, descri
                             <div className="absolute left-[0%] bottom-[12%] h-24 w-24 rounded-full border border-dashed border-[#1d1d1d]/20" />
 
                             {/* Image Card */}
-                            <div className="relative h-[320px] w-full max-w-full overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(72,23,156,0.15)] md:h-[373px]">
+                            <div className={`relative w-full overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(72,23,156,0.15)] ${imageHeight}`}>
                                 <Image
                                     src={bannerImage}
                                     alt={altText}
                                     fill
-                                    className="object-contain"
+                                    className="object-cover object-center md:object-contain"
                                     priority
                                 />
                             </div>
