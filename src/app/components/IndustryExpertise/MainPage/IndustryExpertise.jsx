@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import IndustryHeroSection from "./HeroSection/HeroSection";
 import TrustedBy from "../../common/TrustedBy/TrustedBy";
 import IndustriesWeServe from "./IndustriesWeServe/IndustriesWeServe";
@@ -729,6 +729,7 @@ const STATS = [
 ];
 
 function IndustryExpertise() {
+  const deepDiveRef = useRef(null);
   return (
     <>
       <IndustryHeroSection
@@ -740,6 +741,7 @@ function IndustryExpertise() {
         description2=" We combine deep industry understanding with data-driven
                 marketing to help businesses grow sustainably, generate
                 qualified leads, and dominate search rankings."
+                deepDiveRef={deepDiveRef}
       />
       <TrustedBy padding={"py-5 md:py-12 xl:py-15"} />
       <IndustriesWeServe
@@ -748,12 +750,14 @@ function IndustryExpertise() {
         headdingBlue="We Serve"
         description="We work with businesses across verticals — each with unique challenges, and each deserving a strategy built specifically for them."
       />
+      <div ref={deepDiveRef}>
       <IndustryDeepDive
         INDUSTRIESDEEPDIVEDATA={INDUSTRIESDEEPDIVEDATA}
         headingBlack="Industry"
         headingBlue="Deep Dive"
         description="A tailored approach for every vertical — because cookie-cutter strategies don't build category leaders."
       />
+      </div>
       <HowWeWork cards={STEPS} />
       <ResultsSection STATS ={STATS}/>
       {/* <WhyHOW/> */}

@@ -170,6 +170,7 @@ const Cro = () => {
         headingBlackColor="text-white"
         limit={5}
         ctaText='Improve My Conversion Rate'
+        imageAltText={'conversion rate optimization'}
       />
       <WorkWithCards
         title="Why Businesses Rely On"

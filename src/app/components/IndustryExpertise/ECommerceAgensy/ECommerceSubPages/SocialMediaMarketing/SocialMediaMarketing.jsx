@@ -168,6 +168,7 @@ const SocialMediaMarketing = () => {
                 headingBlackColor="text-white"
                 limit={5}
                 ctaText='Grow My Social Presence'
+                imageAltText={'social media agency'}
             />
             <SaveTimeEffort />
             <WorkWithCards

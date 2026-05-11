@@ -210,6 +210,7 @@ const GeoServices = () => {
                 headingBlackColor="text-white"
                 limit={5}
                 ctaText='Upgrade to GEO Today'
+                imageAltText={'Geo service'}
             />
             <WorkWithCards
                 title="Why GEO Matters"

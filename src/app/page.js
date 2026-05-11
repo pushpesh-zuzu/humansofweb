@@ -38,7 +38,7 @@ export default function Home() {
       <ServiceSectors />
       <WorkingWithUs />
       <CustomGeneration />
-      <OurExport />
+      {/* <OurExport /> */}
       {/* <BlogSection /> */}
       <ProposalModal
         isOpen={isOpen}

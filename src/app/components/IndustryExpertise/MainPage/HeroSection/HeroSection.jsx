@@ -1,18 +1,33 @@
-"use client";
 
+"use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ContainerWrapper from "../../../common/Container/ContainerWrapper";
 import PaddingWrapper from "../../../common/Container/PaddingWrapper";
 import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
+import GetProposalModal from "@/app/components/common/GetProposalModal/GetProposalModal";
+import { useState } from "react";
 
 export default function IndustryHeroSection({
   headingWhite = "",
   headingPink = "",
   description1="",
   description2="",
-  banner='/IndustryExpertise/industryHero1.svg'
+  banner='/IndustryExpertise/industryHero1.svg',
+  deepDiveRef,
 }) {
+    const [proposalOpen, setProposalOpen] = useState(false);
+    const onViewIndustries = () => {
+      const element = deepDiveRef?.current;
+    //   console.log(
+    //   "industry/platform top",
+    //   deepDiveRef.current?.getBoundingClientRect().top
+    // );
+      if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY - 80; // 80px upar
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+};
   return (
     <ContainerWrapper
       background="#48179C"
@@ -45,11 +60,11 @@ export default function IndustryHeroSection({
 
               {/* CTA */}
               <div className="mt-8 md:mt-12 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
-                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary hover:text-white">
+                <button onClick={() => setProposalOpen(true)} className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary hover:text-white">
                   Get Free Strategy
                 </button>
 
-                <button className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary hover:text-white">
+                <button onClick={onViewIndustries} className="h-[52px] cursor-pointer rounded-full bg-white px-6 text-sm font-bold uppercase tracking-[0.04em] text-primary transition hover:bg-secondary hover:text-white">
                   View Industries
                 </button>
               </div>
@@ -83,6 +98,10 @@ export default function IndustryHeroSection({
             </motion.div>
           </div>
         </section>
+        <GetProposalModal
+                isOpen={proposalOpen}
+                onClose={() => setProposalOpen(false)}
+              />
       </PaddingWrapper2>
     </ContainerWrapper>
   );

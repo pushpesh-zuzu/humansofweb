@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import {
   FaEnvelope,
   FaFacebookF,
@@ -14,6 +16,7 @@ import {
 import NAV_ITEMS from "../Header/navData";
 import Logo from "../Icons/Home/Logo";
 import GetProposalModal from "../GetProposalModal/GetProposalModal";
+import PaddingWrapper2 from "../Container/PaddingWrapper2";
 
 const SOCIAL_LINKS = [
   { label: "Facebook", href: "#", icon: FaFacebookF },
@@ -61,14 +64,16 @@ const CONTACT_INFO = [
 
 const Footer = () => {
   const [proposalOpen, setProposalOpen] = useState(false);
+  const [phone, setPhone] = useState("");
 
   return (
     <footer className="bg-white">
-      <div className="mx-auto px-4 sm:px-6 lg:px-13">
-        <div className="grid overflow-hidden rounded-t-[14px] bg-[#eaf7ff] text-primary lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]">
-          <div className="relative grid gap-5 p-5 text-center md:grid-cols-3 md:p-4 lg:text-left">
+      <PaddingWrapper2 padding=" px-8.75 md:px-12.5 xl:px-20">
+      <div className="mx-auto ">
+        <div className="grid overflow-hidden rounded-t-[14px] bg-[#eaf7ff] text-primary lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+          <div className="relative grid  gap-5 p-5 text-center md:grid-cols-3 md:p-4 lg:text-left">
             {STATS.map((stat) => (
-              <div key={stat.value} className="border-primary/15 md:border-r md:last:border-r-0 md:pr-5">
+              <div key={stat.value}  className="border-primary/15 md:border-r md:last:border-r-0 md:pr-5">
                 <p className="text-h5 font-bold leading-none text-primary">{stat.value}</p>
                 <p className="text-xs mt-1 font-medium text-primary">{stat.label}</p>
               </div>
@@ -91,6 +96,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      </PaddingWrapper2>
 
       <div className="mt-0 bg-primary text-white">
         <div className="mx-auto grid max-w-[1500px] gap-6 px-[4%] py-7 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center">
@@ -106,17 +112,25 @@ const Footer = () => {
             </p>
 
             <form className="mt-4 flex w-full max-w-[320px] flex-col gap-3 md:max-w-none md:flex-row">
-              <input
-                type="text"
-                placeholder="Enter your Whatsapp Number"
-                className="h-12 w-full py-3.5 md:py-0 min-w-0 flex-1 rounded-full border border-white bg-white px-4 p-small font-medium text-[#1c1c1c] outline-none transition placeholder:text-[#6b6b6b] focus:border-secondary"
-              />
+              {/* PhoneInput styled to match the original rounded-full input */}
+              <div className="h-12 flex-1 [&_.react-tel-input]:h-full [&_.react-tel-input_.form-control]:!h-full [&_.react-tel-input_.form-control]:!w-full [&_.react-tel-input_.form-control]:!rounded-full [&_.react-tel-input_.form-control]:!border [&_.react-tel-input_.form-control]:!border-white [&_.react-tel-input_.form-control]:!bg-white [&_.react-tel-input_.form-control]:!pl-14 [&_.react-tel-input_.form-control]:!pr-4 [&_.react-tel-input_.form-control]:!text-sm [&_.react-tel-input_.form-control]:!font-medium [&_.react-tel-input_.form-control]:!text-[#1c1c1c] [&_.react-tel-input_.form-control]:!outline-none [&_.react-tel-input_.form-control]:placeholder:!text-[#6b6b6b] [&_.react-tel-input_.form-control:focus]:!border-secondary [&_.react-tel-input_.flag-dropdown]:!rounded-l-full [&_.react-tel-input_.flag-dropdown]:!border [&_.react-tel-input_.flag-dropdown]:!border-white [&_.react-tel-input_.flag-dropdown]:!bg-white [&_.react-tel-input_.flag-dropdown]:!px-2 [&_.react-tel-input_.flag-dropdown.open]:!rounded-l-full [&_.react-tel-input_.selected-flag]:!rounded-l-full [&_.react-tel-input_.selected-flag]:!pl-3 [&_.react-tel-input_.country-list]:!bg-white [&_.react-tel-input_.country-list]:!text-[#48179C] [&_.react-tel-input_.country-list_.country-name]:!text-[#48179C] [&_.react-tel-input_.country-list_.dial-code]:!text-[#48179C] [&_.react-tel-input_.country-list_.country:hover]:!bg-[#eaf7ff] [&_.react-tel-input_.country-list_.country.highlight]:!bg-[#eaf7ff] [&_.react-tel-input_.country-list_.search]:!bg-white [&_.react-tel-input_.country-list_.search-box]:!text-[#48179C] [&_.react-tel-input_.country-list_.search-box]:!border-[#48179C]/30 [&_.react-tel-input_.country-list_.search-box]:placeholder:!text-[#48179C]/50 [&_.react-tel-input_.country-list_.search-box]:!outline-none [&_.react-tel-input_.country-list_.no-entries-message]:!text-[#48179C]">
+                <PhoneInput
+                  country="gb"
+                  value={phone}
+                  onChange={(val) => setPhone(val)}
+                  placeholder="Enter your WhatsApp Number"
+                  enableSearch
+                  inputClass="h-12"
+                  containerClass="h-full w-full"
+                />
+              </div>
+
               <button
                 type="button"
                 onClick={() => setProposalOpen(true)}
                 className="h-12 w-full cursor-pointer rounded-full bg-secondary px-5 p-small font-bold uppercase tracking-[0.04em] text-white transition hover:bg-white hover:text-primary md:w-auto"
               >
-                Get Your Free Proposal
+                Chat With Us On Whatsapp
               </button>
             </form>
           </div>
@@ -154,7 +168,6 @@ const Footer = () => {
               </div>
             </div>
 
-
             <div className="grid grid-cols-2 gap-6 md:gap-10 xl:gap-20 md:grid-cols-3">
               {visibleNavItems.map((item) => (
                 <div key={item.label}>
@@ -182,6 +195,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <GetProposalModal
         isOpen={proposalOpen}
         onClose={() => setProposalOpen(false)}
