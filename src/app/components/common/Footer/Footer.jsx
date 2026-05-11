@@ -41,8 +41,6 @@ const getFooterLinks = (item) => {
   }));
 };
 
-console.log("getFooterLinks", getFooterLinks)
-
 const CONTACT_INFO = [
   {
     label: "Address",
@@ -67,6 +65,17 @@ const CONTACT_INFO = [
 const Footer = () => {
   const [proposalOpen, setProposalOpen] = useState(false);
   const [phone, setPhone] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
+  const handleProposalOpen = () => {
+    if (!phone || phone.length < 8) {
+      setPhoneError("Please enter your WhatsApp number.");
+      return;
+    }
+
+    setPhoneError("");
+    setProposalOpen(true);
+  };
 
   return (
     <footer className="bg-white">
@@ -115,21 +124,29 @@ const Footer = () => {
 
             <form className="mt-4 flex w-full max-w-[320px] flex-col gap-3 md:max-w-none md:flex-row">
               {/* PhoneInput styled to match the original rounded-full input */}
-              <div className="h-12 flex-1 [&_.react-tel-input]:h-full [&_.react-tel-input_.form-control]:!h-full [&_.react-tel-input_.form-control]:!w-full [&_.react-tel-input_.form-control]:!rounded-full [&_.react-tel-input_.form-control]:!border [&_.react-tel-input_.form-control]:!border-white [&_.react-tel-input_.form-control]:!bg-white [&_.react-tel-input_.form-control]:!pl-14 [&_.react-tel-input_.form-control]:!pr-4 [&_.react-tel-input_.form-control]:!text-sm [&_.react-tel-input_.form-control]:!font-medium [&_.react-tel-input_.form-control]:!text-[#1c1c1c] [&_.react-tel-input_.form-control]:!outline-none [&_.react-tel-input_.form-control]:placeholder:!text-[#6b6b6b] [&_.react-tel-input_.form-control:focus]:!border-secondary [&_.react-tel-input_.flag-dropdown]:!rounded-l-full [&_.react-tel-input_.flag-dropdown]:!border [&_.react-tel-input_.flag-dropdown]:!border-white [&_.react-tel-input_.flag-dropdown]:!bg-white [&_.react-tel-input_.flag-dropdown]:!px-2 [&_.react-tel-input_.flag-dropdown.open]:!rounded-l-full [&_.react-tel-input_.selected-flag]:!rounded-l-full [&_.react-tel-input_.selected-flag]:!pl-3 [&_.react-tel-input_.country-list]:!bg-white [&_.react-tel-input_.country-list]:!text-[#48179C] [&_.react-tel-input_.country-list_.country-name]:!text-[#48179C] [&_.react-tel-input_.country-list_.dial-code]:!text-[#48179C] [&_.react-tel-input_.country-list_.country:hover]:!bg-[#eaf7ff] [&_.react-tel-input_.country-list_.country.highlight]:!bg-[#eaf7ff] [&_.react-tel-input_.country-list_.search]:!bg-white [&_.react-tel-input_.country-list_.search-box]:!text-[#48179C] [&_.react-tel-input_.country-list_.search-box]:!border-[#48179C]/30 [&_.react-tel-input_.country-list_.search-box]:placeholder:!text-[#48179C]/50 [&_.react-tel-input_.country-list_.search-box]:!outline-none [&_.react-tel-input_.country-list_.no-entries-message]:!text-[#48179C]">
+              <div className="h-12 flex-1 [&_.react-tel-input]:h-12 [&_.react-tel-input_.form-control]:!h-12 [&_.react-tel-input_.form-control]:!w-full [&_.react-tel-input_.form-control]:!rounded-full [&_.react-tel-input_.form-control]:!border [&_.react-tel-input_.form-control]:!border-white [&_.react-tel-input_.form-control]:!bg-white [&_.react-tel-input_.form-control]:!pl-14 [&_.react-tel-input_.form-control]:!pr-4 [&_.react-tel-input_.form-control]:!text-sm [&_.react-tel-input_.form-control]:!font-medium [&_.react-tel-input_.form-control]:!leading-[48px] [&_.react-tel-input_.form-control]:!text-[#1c1c1c] [&_.react-tel-input_.form-control]:!outline-none [&_.react-tel-input_.form-control]:placeholder:!text-[#6b6b6b] [&_.react-tel-input_.flag-dropdown]:!h-12 [&_.react-tel-input_.flag-dropdown]:!rounded-l-full [&_.react-tel-input_.flag-dropdown]:!border [&_.react-tel-input_.flag-dropdown]:!border-white [&_.react-tel-input_.flag-dropdown]:!bg-white [&_.react-tel-input_.flag-dropdown]:!px-2 [&_.react-tel-input_.flag-dropdown.open]:!rounded-l-full [&_.react-tel-input_.selected-flag]:!h-12 [&_.react-tel-input_.selected-flag]:!rounded-l-full [&_.react-tel-input_.selected-flag]:!pl-3 [&_.react-tel-input_.country-list]:!bg-white [&_.react-tel-input_.country-list]:!text-[#48179C] [&_.react-tel-input_.country-list_.country-name]:!text-[#48179C] [&_.react-tel-input_.country-list_.dial-code]:!text-[#48179C] [&_.react-tel-input_.country-list_.country:hover]:!bg-[#eaf7ff] [&_.react-tel-input_.country-list_.country.highlight]:!bg-[#eaf7ff] [&_.react-tel-input_.country-list_.search]:!bg-white [&_.react-tel-input_.country-list_.search-box]:!text-[#48179C] [&_.react-tel-input_.country-list_.search-box]:!border-[#48179C]/30 [&_.react-tel-input_.country-list_.search-box]:placeholder:!text-[#48179C]/50 [&_.react-tel-input_.country-list_.search-box]:!outline-none [&_.react-tel-input_.country-list_.no-entries-message]:!text-[#48179C]">
                 <PhoneInput
                   country="gb"
                   value={phone}
-                  onChange={(val) => setPhone(val)}
+                  onChange={(val) => {
+                    setPhone(val);
+                    setPhoneError("");
+                  }}
                   placeholder="Enter your WhatsApp Number"
                   enableSearch
                   inputClass="h-12"
                   containerClass="h-full w-full"
                 />
+                {phoneError && (
+                  <p className="mt-1 text-xs font-medium text-red-500">
+                    {phoneError}
+                  </p>
+                )}
               </div>
 
               <button
                 type="button"
-                onClick={() => setProposalOpen(true)}
+                onClick={handleProposalOpen}
                 className="h-12 w-full cursor-pointer rounded-full bg-secondary px-5 p-small font-bold uppercase tracking-[0.04em] text-white transition hover:bg-white hover:text-primary md:w-auto"
               >
                 Chat With Us On Whatsapp
@@ -209,6 +226,7 @@ const Footer = () => {
       <GetProposalModal
         isOpen={proposalOpen}
         onClose={() => setProposalOpen(false)}
+        initialPhone={phone}
       />
     </footer>
   );

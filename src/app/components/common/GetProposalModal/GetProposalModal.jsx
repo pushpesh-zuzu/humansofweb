@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useDispatch } from "react-redux";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { submitEnquiry } from "@/lib/store/enquirySlice";
 import Loader from "../Loader/Loader";
 
@@ -68,13 +68,23 @@ const GetProposalModal = ({
   onClose,
   onSubmit,
   heading = "Get Your Free Proposal",
+  initialPhone = "",
 }) => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
   const dispatch = useDispatch();
-  const router = useRouter();
+  // const router = useRouter();
+
+  useEffect(() => {
+    if (!isOpen || !initialPhone) return;
+
+    setForm((current) => ({
+      ...current,
+      phone: initialPhone,
+    }));
+  }, [initialPhone, isOpen]);
 
   useEffect(() => {
     if (!isOpen) return undefined;
