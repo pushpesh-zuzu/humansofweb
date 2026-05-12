@@ -4,7 +4,7 @@ function TrustBuildingContentReviews() {
   return (
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="64" height="64" rx="32" fill="url(#paint0_linear_203_4743)"/>
-<path d="M32 40.6249L22.742 45.4924L24.5105 35.1829L17.0105 27.8824L27.3605 26.3824L31.9895 17.0029L36.6185 26.3824L46.9685 27.8824L39.4685 35.1829L41.237 45.4924L32 40.6249Z" stroke="white" stroke-width="3" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M32 40.6249L22.742 45.4924L24.5105 35.1829L17.0105 27.8824L27.3605 26.3824L31.9895 17.0029L36.6185 26.3824L46.9685 27.8824L39.4685 35.1829L41.237 45.4924L32 40.6249Z" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_203_4743" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F65A75"/>

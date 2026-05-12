@@ -8,12 +8,15 @@ import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 // import GetCtaButton from "../../CtaButtons/GetCtaButton";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import GetProposalModal from "@/app/components/common/GetProposalModal/GetProposalModal";
+import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
 
 
 const HowWeWork = ({
   title = "How We ",
   highlightedTitle = "Work",
   description = "",
+  ctaHref = "",
   cards = [],
   showCards = 3,
   ctaText = "Schedule A Free Consultation Today",
@@ -166,6 +169,10 @@ const HowWeWork = ({
                 >
                   {ctaText}
                 </button>
+                <GetYourFreeConsultationButton
+                  text={ctaText}
+                  href={ctaHref}
+                />
               </div>
             </div>
           </div>

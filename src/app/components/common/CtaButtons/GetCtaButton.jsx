@@ -8,7 +8,7 @@ const GetCtaButton = ({
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-full px-6 p-small font-bold uppercase tracking-[0.08em] bg-secondary text-white transition hover:bg-primary ${className}`}
+      className={`inline-flex min-h-11 text-center items-center justify-center rounded-full px-6 p-small font-bold uppercase tracking-[0.08em] bg-secondary text-white transition hover:bg-primary ${className}`}
     >
       {text}
     </Link>
