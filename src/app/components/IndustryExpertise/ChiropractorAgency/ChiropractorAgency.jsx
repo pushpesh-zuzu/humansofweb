@@ -37,6 +37,7 @@ function ChiropractorAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        marginBottom="lg:mb-20"
       />
 
       <PillarsSection
@@ -74,6 +75,7 @@ function ChiropractorAgency() {
         paragraphs={brandTrustParaChiropractor}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-18"
       />
 
       <ReachWithUs />

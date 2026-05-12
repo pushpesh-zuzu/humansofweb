@@ -205,6 +205,7 @@ const AmazonMarketing = () => {
         headingBlackColor="text-white"
         limit={5}
         ctaText='Grow Your Amazon Sales'
+        marginBottom="lg:mb-19"
       />
       <WorkWithCards
         title="Win More Sales on Amazon With"

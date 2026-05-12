@@ -37,6 +37,7 @@ function CMSAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        marginBottom="lg:mb-15"
       />
 
       <PillarsSection
@@ -73,6 +74,7 @@ function CMSAgency() {
         paragraphs={brandTrustParaCMS}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-20"
       />
 
       <ReachWithUs />

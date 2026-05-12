@@ -38,6 +38,7 @@ function Ecommerce() {
         headingBlackColor="text-white"
         limit={5}
         breakLine
+        marginBottom="lg:mb-19"
       />
       <PillarsSection
         headdingBlack={StrategyContentEcommerce.headdingBlack}
@@ -101,6 +102,7 @@ function Ecommerce() {
         paragraphs={brandTrustPara}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-24"
       />
       <ReachWithUs />
     </>

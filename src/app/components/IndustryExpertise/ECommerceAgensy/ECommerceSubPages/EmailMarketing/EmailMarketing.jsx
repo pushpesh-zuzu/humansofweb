@@ -163,6 +163,7 @@ const EmailMarketing = () => {
         headingBlackColor="text-white"
         limit={5}
         ctaText='Grow My Email Revenue'
+        marginBottom="lg:mb-18"
       />
       <WorkWithCards
         title="What Makes Humans Of Web Different"

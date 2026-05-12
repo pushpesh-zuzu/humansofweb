@@ -262,6 +262,7 @@ const SeoServices = () => {
                 headingBlackColor="text-white"
                 limit={5}
                 ctaText='Start Growing Your Clinic'
+                marginBottom="lg:mb-18"
             />
             <Interactivecontent
                 headingStart="SEO That Grows"

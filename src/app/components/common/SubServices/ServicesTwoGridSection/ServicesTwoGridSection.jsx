@@ -28,7 +28,8 @@ export default function ServicesTwoGridSection({
   headingBlueColor = "",
   headingBlackColor = "",
   isImageSmall = false,
-  paragraphTextColor = false
+  paragraphTextColor = false,
+  marginBottom = ""
 }) {
   const [expanded, setExpanded] = useState(false);
   const [proposalOpen, setProposalOpen] = useState(false);
@@ -65,7 +66,7 @@ export default function ServicesTwoGridSection({
               transition={{ duration: 0.6 }}
               className="flex justify-center"
             >
-              <div className="relative w-full max-w-[500px] rounded-[32px]">
+              <div className={`relative w-full max-w-[500px] ${marginBottom} rounded-[32px]`}>
                 <Image
                   src={image}
                   alt={imageAltText}

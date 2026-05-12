@@ -211,6 +211,7 @@ const GeoServices = () => {
                 limit={5}
                 ctaText='Upgrade to GEO Today'
                 imageAltText={'Geo service'}
+                marginBottom="lg:mb-18"
             />
             <WorkWithCards
                 title="Why GEO Matters"

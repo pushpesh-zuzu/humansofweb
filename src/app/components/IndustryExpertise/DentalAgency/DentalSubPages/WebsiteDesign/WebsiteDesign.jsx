@@ -206,6 +206,7 @@ const WebsiteDesign = () => {
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"
                 limit={5}
+                marginBottom="lg:mb-20"
             />
             <WorkWithCards
                 title="Trusted Dental Website Design"

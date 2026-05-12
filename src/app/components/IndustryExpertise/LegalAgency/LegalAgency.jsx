@@ -36,6 +36,7 @@ function LegalAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        marginBottom="lg:mb-18"
       />
 
       <PillarsSection
@@ -73,6 +74,7 @@ function LegalAgency() {
         paragraphs={brandTrustParaLegal}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-19"
       />
 
       <ReachWithUs />

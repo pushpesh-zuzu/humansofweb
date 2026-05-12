@@ -174,6 +174,7 @@ const ContentMarketing = () => {
         headingBlackColor="text-white"
         limit={5}
         ctaText='Build My Content Plan'
+        marginBottom="lg:mb-18"
       />
       <WorkWithCards
         title="What Makes Humans Of Web Different"

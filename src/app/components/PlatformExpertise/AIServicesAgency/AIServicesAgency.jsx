@@ -37,6 +37,7 @@ function AIServicesAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        marginBottom="lg:mb-17"
       />
 
       <PillarsSection
@@ -74,6 +75,7 @@ function AIServicesAgency() {
         paragraphs={brandTrustParaAI}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-28"
       />
 
       <ReachWithUs />

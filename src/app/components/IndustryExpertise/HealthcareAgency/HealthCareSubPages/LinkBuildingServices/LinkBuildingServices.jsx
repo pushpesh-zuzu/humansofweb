@@ -133,6 +133,7 @@ const LinkBuildingServices = () => {
                 headingBlackColor="text-white"
                 ctaText="Boost Healthcare SEO"
                 limit={5}
+                marginBottom="lg:mb-19"
             />
             <WorkWithCards
                 title="Why Healthcare Brands Choose"

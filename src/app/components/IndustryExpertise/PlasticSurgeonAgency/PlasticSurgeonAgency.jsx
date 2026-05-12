@@ -35,6 +35,7 @@ function PlasticSurgeonAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        marginBottom="lg:mb-19"
       />
       <PillarsSection
         headdingBlack={StrategyContentPlasticSurgeon.headdingBlack}
@@ -68,6 +69,7 @@ function PlasticSurgeonAgency() {
         paragraphs={brandTrustPara}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-20"
       />
       <ReachWithUs />
     </>

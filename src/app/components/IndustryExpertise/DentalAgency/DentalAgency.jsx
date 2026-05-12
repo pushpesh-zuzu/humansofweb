@@ -40,6 +40,7 @@ function DentalAgency() {
         paragraphs={marketAnalyzerParaDental}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
+        marginBottom="lg:mb-19"
       />
       {/* <GrowthStrategiesSection /> */}
       <PillarsSection />
@@ -82,6 +83,7 @@ function DentalAgency() {
         paragraphTextColor
         headingBlueColor="text-primary"
         breakLine
+        marginBottom="lg:mb-22"
       />
       <ReachWithUs />
       {/* <WhyChooseDentalServce

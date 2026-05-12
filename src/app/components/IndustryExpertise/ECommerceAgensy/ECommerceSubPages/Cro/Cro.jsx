@@ -172,6 +172,7 @@ const Cro = () => {
         limit={5}
         ctaText='Improve My Conversion Rate'
         imageAltText={'conversion rate optimization'}
+        marginBottom="lg:mb-18"
       />
       <WorkWithCards
         title="Why Businesses Rely On"

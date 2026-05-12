@@ -198,6 +198,7 @@ const SocialMediaMarketing = () => {
                 headingBlackColor="text-white"
                 limit={5}
                 ctaText='Grow My Social Presence'
+                marginBottom="lg:mb-19"
             />
             <MediaTimeEfforts
                 title="Boost Your Healthcare Visibility"

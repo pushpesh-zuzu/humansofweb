@@ -184,6 +184,7 @@ const PPCServices = () => {
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"
                 limit={5}
+                marginBottom="lg:mb-19"
             />
             <WorkWithCards
                 title="Why Ophthalmology Practices Choose"

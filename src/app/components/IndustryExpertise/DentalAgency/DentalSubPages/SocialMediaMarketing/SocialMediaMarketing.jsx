@@ -194,6 +194,7 @@ const SocialMediaMarketing = () => {
                 headingBlackColor="text-white"
                 limit={5}
                 ctaText='Grow My Social Presence'
+                marginBottom="lg:mb-20"
             />
             <MediaTimeEfforts
                 title="Grow Your Dental Presence"

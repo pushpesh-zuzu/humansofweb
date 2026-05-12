@@ -181,6 +181,7 @@ const ReputationManagement = () => {
                 headingBlackColor="text-white"
                 limit={5}
                 ctaText='Strengthen My Reputation'
+                marginBottom="lg:mb-19"
             />
             <WorkWithCards
                 title="Our Reputation Management"

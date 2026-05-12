@@ -37,6 +37,7 @@ function CRMAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        marginBottom="lg:mb-20"
       />
 
       <PillarsSection
@@ -74,6 +75,7 @@ function CRMAgency() {
         paragraphs={brandTrustParaCRM}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-22"
       />
 
       <ReachWithUs />

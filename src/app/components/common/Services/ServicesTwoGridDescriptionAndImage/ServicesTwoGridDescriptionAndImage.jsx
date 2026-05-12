@@ -29,6 +29,7 @@ export default function ServicesTwoGridDescriptionAndImage({
   isImageSmall = false,
   paragraphTextColor = false,
   href = "",
+  marginBottom = ""
 }) {
   const [expanded, setExpanded] = useState(false);
   const [proposalOpen, setProposalOpen] = useState(false);
@@ -64,16 +65,17 @@ export default function ServicesTwoGridDescriptionAndImage({
               initial={{ opacity: 0, x: reverse ? 30 : -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="flex justify-center"
+              className={`flex justify-center lg:self-stretch lg:items-center ${
+                isHeadingInGridSection ? "lg:translate-y-[70px]" : ""
+              }`}
             >
-              <div className="relative w-full max-w-[500px] rounded-[32px]">
+              <div className={`relative w-full max-w-[500px] ${marginBottom} rounded-[32px]`}>
                 <Image
                   src={image}
                   alt="industry"
                   width={540}
                   height={380}
                   className="object-contain rounded-[32px] h-full max-h-[540px] md:w-[85%]"
-
                 />
               </div>
             </motion.div>
