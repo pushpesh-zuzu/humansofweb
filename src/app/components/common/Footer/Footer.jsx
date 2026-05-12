@@ -26,9 +26,9 @@ const SOCIAL_LINKS = [
 ];
 
 const STATS = [
-  { value: "1.6 Million", label: "Hours Of Expertise" },
-  { value: "250+", label: "Digital Marketing Masters On Staff" },
-  { value: "1128", label: "Websites Launched" },
+  { value: "1.8 Million", label: "Hours Of Expertise" },
+  { value: "325+", label: "Digital Marketing Masters On Staff" },
+  { value: "1368", label: "Websites Launched" },
 ];
 
 const visibleNavItems = NAV_ITEMS.filter((item) => item.label !== "Home");

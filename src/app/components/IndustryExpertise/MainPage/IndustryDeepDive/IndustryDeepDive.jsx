@@ -38,8 +38,8 @@ function IndustryRow({ industry, reverse, index }) {
 
   return (
     <div
-      className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-12 xl:gap-14 items-center md:py-5`}
-      style={{ borderBottom: "1px solid #f0f0f0" }}
+      className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-12 xl:gap-14 items-center`}
+      // style={{ borderBottom: "1px solid #f0f0f0" }}
     >
       {/* Visual */}
       <div className="w-full md:w-1/2 flex-shrink-0 rounded-[30px]">
@@ -57,7 +57,7 @@ function IndustryRow({ industry, reverse, index }) {
       </div>
 
       {/* Text */}
-      <div className="w-full md:w-1/2 mb-10 md:mb-0">
+      <div className="w-full md:w-1/2 mb-10 md:mb-15 xl:mb-18">
         <span
           className={`${accentTextColor} inline-block text-xs font-bold px-3 py-1 rounded-full mb-4`}
           style={{
@@ -115,7 +115,7 @@ export default function IndustryDeepDive({
 }) {
   return (
     <ContainerWrapper background="#fff">
-      <PaddingWrapper2>
+      <PaddingWrapper2 padding="pt-10 px-8.75 md:pt-[50px] md:px-12.5 xl:pt-18 xl:px-20">
         <H2HeadingWrapper
           headdingBlack={headingBlack}
           headingBlue={headingBlue}
