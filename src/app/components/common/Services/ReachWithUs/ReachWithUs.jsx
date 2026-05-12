@@ -1,16 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { useState } from "react";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 const ReachWithUs = ({
   title = "BOOST YOUR DIGITAL REACH WITH US",
   buttonText = "GET FREE CONSULTATION",
-  buttonHref = "",
   imageSrc = "/IndustryExpertise/prettyWoman1.webp",
   imageAlt = "Consultation support",
   backgroundColor = "#a8dff2",
 }) => {
+  const [proposalOpen, setProposalOpen] = useState(false);
   const normalizedTitle = String(title);
   const titleLines = normalizedTitle.includes("\n")
     ? normalizedTitle.split("\n")
@@ -45,16 +48,22 @@ const ReachWithUs = ({
                   </span>
                 ))}
               </h1>
-              <Link
-                href={buttonHref}
-                className="mt-6 md:mt-10 inline-flex min-h-[46px] items-center justify-center rounded-full bg-secondary px-6 text-[12px] font-bold uppercase tracking-[0.02em] text-white transition hover:bg-primary md:px-10 md:text-[14px]"
+              <button
+                type="button"
+                onClick={() => setProposalOpen(true)}
+                className="mt-6 inline-flex min-h-[46px] cursor-pointer items-center justify-center rounded-full bg-secondary px-6 text-[12px] font-bold uppercase tracking-[0.02em] text-white transition hover:bg-primary md:mt-10 md:px-10 md:text-[14px]"
               >
                 {buttonText}
-              </Link>
+              </button>
             </div>
           </div>
         </section>
       </PaddingWrapper2>
+
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 };

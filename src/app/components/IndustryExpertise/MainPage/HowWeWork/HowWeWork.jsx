@@ -7,7 +7,7 @@ import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 // import H2HeadingWrapper from "../../Container/H2HeadingWrapper";
 // import GetCtaButton from "../../CtaButtons/GetCtaButton";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
-import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+import GetProposalModal from "@/app/components/common/GetProposalModal/GetProposalModal";
 
 
 const HowWeWork = ({
@@ -17,11 +17,11 @@ const HowWeWork = ({
   cards = [],
   showCards = 3,
   ctaText = "Schedule A Free Consultation Today",
-  ctaHref = "",
   padding = "pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20"
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(1);
+  const [proposalOpen, setProposalOpen] = useState(false);
 
   const desktopVisibleCount = Math.min(
     Math.max(showCards, 1),
@@ -159,16 +159,23 @@ const HowWeWork = ({
               </div>
 
               <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10 pb-4">
-                <GetCtaButton
-                  text={ctaText}
-                  href={ctaHref}
-                />
+                <button
+                  type="button"
+                  onClick={() => setProposalOpen(true)}
+                  className="inline-flex min-h-11 cursor-pointer items-center justify-center rounded-full bg-secondary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-primary"
+                >
+                  {ctaText}
+                </button>
               </div>
-
             </div>
           </div>
         </section>
       </PaddingWrapper2>
+
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 };

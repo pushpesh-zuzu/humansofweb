@@ -1,8 +1,99 @@
+"use client";
+
+import { useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
-import PaddingWrapper from "../common/Container/PaddingWrapper";
 import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
 
+const initialForm = {
+  name: "",
+  email: "",
+  phone: "",
+  domain: "",
+  designation: "",
+  message: "",
+  terms: false,
+};
+
 const ContactForm = () => {
+  const [form, setForm] = useState(initialForm);
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (event) => {
+    const { name, type, value, checked } = event.target;
+
+    setForm((current) => ({
+      ...current,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+
+    setErrors((current) => ({
+      ...current,
+      [name]: "",
+    }));
+  };
+
+  const handlePhoneChange = (phone) => {
+    setForm((current) => ({
+      ...current,
+      phone,
+    }));
+
+    setErrors((current) => ({
+      ...current,
+      phone: "",
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const nextErrors = {};
+
+    if (!form.name.trim()) nextErrors.name = "Name is required";
+    if (!form.email.trim()) {
+      nextErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      nextErrors.email = "Invalid email address";
+    }
+    if (!form.phone.trim()) {
+      nextErrors.phone = "Phone number is required";
+    } else if (form.phone.length < 10) {
+      nextErrors.phone = "Enter a valid phone number";
+    }
+    if (!form.domain.trim()) nextErrors.domain = "Domain is required";
+    if (!form.designation.trim()) {
+      nextErrors.designation = "Designation is required";
+    }
+    if (!form.terms) {
+      nextErrors.terms = "You must agree to the terms & conditions";
+    }
+
+    setErrors(nextErrors);
+
+    if (Object.keys(nextErrors).length > 0) return;
+
+    const whatsappMessage = `New Contact Form Enquiry
+
+● Name: ${form.name}
+● Phone: +${form.phone}
+● Email: ${form.email}
+● Domain: ${form.domain}
+● Designation: ${form.designation}
+● Message: ${form.message || "N/A"}
+
+- Humans of Web`;
+
+    const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+    setForm(initialForm);
+    setErrors({});
+  };
+
   return (
     <ContainerWrapper>
       <PaddingWrapper2 padding="py-10 px-8.75 md:py-[50px] md:px-12.5 xl:py-18 xl:px-20">
@@ -10,12 +101,12 @@ const ContactForm = () => {
           {/* LEFT CARD */}
           <div className="bg-white border border-gray-200 rounded-2xl p-10 rounded-[36px]">
             <p className="text-[11px] font-bold tracking-widest text-gray-400 uppercase mb-4">
-              Let's Grow Together
+              Let&apos;s Grow Together
             </p>
             <h2 className="text-[28px] font-light text-gray-900 leading-snug mb-4">
               Success is a team effort{" "}
               <span style={{ color: "#48179C" }} className="font-bold">
-                let's achieve
+                let&apos;s achieve
               </span>{" "}
               it together
             </h2>
@@ -59,48 +150,142 @@ const ContactForm = () => {
               Drop Us a Line
             </h3>
             <p className="text-[13px] text-gray-700 mb-6">
-              Have Any Questions Or Second Thoughts? Let's Talk.
+              Have Any Questions Or Second Thoughts? Let&apos;s Talk.
             </p>
 
-            <div className="grid grid-cols-2 gap-x-6">
-              {[
-                "Your Name *",
-                "Email *",
-                "Phone *",
-                "Enter Your Desired Domain *",
-                "Designation *",
-                "How Did You Find Us?",
-              ].map((ph) => (
-                <div key={ph} className="border-b border-[#48179C] mb-5 pb-1.5">
+            <form onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 gap-x-6 md:grid-cols-2">
+                <div className="mb-5 border-b border-[#48179C] pb-1.5">
                   <input
                     type="text"
-                    placeholder={ph}
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    placeholder="Your Name *"
                     className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
                   />
+                  {errors.name && (
+                    <p className="mt-1 text-xs text-red-500">{errors.name}</p>
+                  )}
                 </div>
-              ))}
 
-              <div className="col-span-2 border-b border-[#48179C] mb-5 pb-1.5">
-                <textarea
-                  placeholder="How Can We Help You?"
-                  rows={3}
-                  className="w-full bg-transparent border-none outline-none text-[16px] text-gray-700 placeholder:text-secondary resize-none"
-                />
+                <div className="md:mb-5 mb-4 border-b border-[#48179C] pb-1.5">
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="Email *"
+                    className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
+                  />
+                  {errors.email && (
+                    <p className="mt-1 text-xs text-red-500">{errors.email}</p>
+                  )}
+                </div>
+
+                <div className="md:mb-1 mb-2 pb-1.5">
+                  <PhoneInput
+                    country="in"
+                    value={form.phone}
+                    onChange={handlePhoneChange}
+                    inputClass="!w-full !h-[56px] !pl-14 !border-0 !border-b !border-[#48179C] !rounded-none !bg-transparent !text-[16px] !text-gray-700 focus:!shadow-none"
+                    buttonClass="!bg-transparent !border-0 !border-b !border-[#48179C] !rounded-none"
+                    containerClass="w-full"
+                    dropdownClass="!rounded-md"
+                    enableSearch={true}
+                  />
+                  <p className="mt-1 text-xs text-gray-500 md:hidden">
+                    Please ensure this is a WhatsApp number.
+                  </p>
+                  {errors.phone && (
+                    <p className="mt-1 text-xs text-red-500">{errors.phone}</p>
+                  )}
+                </div>
+
+                <div className="mb-5 border-b border-[#48179C] pb-1.5">
+                  <input
+                    type="text"
+                    name="domain"
+                    value={form.domain}
+                    onChange={handleChange}
+                    placeholder="Enter Your Desired Domain *"
+                    className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
+                  />
+                  {errors.domain && (
+                    <p className="mt-1 text-xs text-red-500">{errors.domain}</p>
+                  )}
+                </div>
+
+                <p className="-mt-4 mb-5 hidden text-xs text-gray-500 md:col-span-2 md:block">
+                  Please ensure this is a WhatsApp number.
+                </p>
+
+                <div className="mb-5 border-b border-[#48179C] pb-1.5 md:col-span-2">
+                  <input
+                    type="text"
+                    name="designation"
+                    value={form.designation}
+                    onChange={handleChange}
+                    placeholder="Designation *"
+                    className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
+                  />
+                  {errors.designation && (
+                    <p className="mt-1 text-xs text-red-500">
+                      {errors.designation}
+                    </p>
+                  )}
+                </div>
+
+                <div className="col-span-1 mb-5 border-b border-[#48179C] pb-3.5 md:col-span-2">
+                  <textarea
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    onInput={(e) => {
+                      e.target.style.height = "auto";
+
+                      if (e.target.scrollHeight <= 100) {
+                        e.target.style.height = `${e.target.scrollHeight}px`;
+                        e.target.style.overflowY = "hidden";
+                      } else {
+                        e.target.style.height = "100px";
+                        e.target.style.overflowY = "auto";
+                      }
+                    }}
+                    placeholder="How Can We Help You?"
+                    rows={1}
+                    className="w-full bg-transparent border-none outline-none text-[16px] text-gray-700 placeholder:text-secondary resize-none"
+                  />
+                </div>
+
+                <div className="col-span-1 mb-5 md:col-span-2">
+                  <label className="flex items-start gap-2.5 text-[11.5px] leading-relaxed text-gray-600">
+                    <input
+                      type="checkbox"
+                      name="terms"
+                      checked={form.terms}
+                      onChange={handleChange}
+                      className="mt-0.5 accent-[#48179C]"
+                    />
+                    <span>
+                      I Agree To Terms & Conditions Provided By The Company. By
+                      Providing My Phone Number, I Agree To Receive Text Messages
+                      From The Business.
+                    </span>
+                  </label>
+                  {errors.terms && (
+                    <p className="mt-1 text-xs text-red-500">{errors.terms}</p>
+                  )}
+                </div>
               </div>
 
-              <div className="col-span-2 flex items-start gap-2.5 mb-5">
-                <input type="checkbox" className="mt-0.5 accent-[#48179C]" />
-                <label className="text-[11.5px] text-gray-600 leading-relaxed">
-                  I Agree To Terms & Conditions Provided By The Company. By
-                  Providing My Phone Number, I Agree To Receive Text Messages
-                  From The Business.
-                </label>
-              </div>
-            </div>
-
-            <button className="h-[52px] cursor-pointer rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-white hover:text-primary">
-              Send Message
-            </button>
+              <button
+                type="submit"
+                className="h-[52px] cursor-pointer rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-primary"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </PaddingWrapper2>
