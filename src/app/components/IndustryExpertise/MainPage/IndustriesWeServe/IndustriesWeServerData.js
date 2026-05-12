@@ -18,7 +18,7 @@ export const INDUSTRIES = [
     tags: [
       {
         title: "E-Commerce SEO",
-        link: "/ecommerce-marketing-agency/seo-services",
+        link: "/ecommerce-seo-services",
       },
       {
         title: "E-Commerce PPC",

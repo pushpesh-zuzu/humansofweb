@@ -10,36 +10,36 @@ const NAV_ITEMS = [
         subItems: [
           {
             label: "E-Commerce SEO",
-            href: "/ecommerce-marketing-agency/seo-services",
+            href: "/ecommerce-seo-services",
           },
           {
             label: "E-Commerce Website Development",
-            href: "/ecommerce-marketing-agency/website-design",
+            href: "/ecommerce-website-design",
           },
           {
             label: "E-Commerce PPC",
-            href: "/ecommerce-marketing-agency/ppc-services",
+            href: "/ecommerce-ppc-services",
           },
           {
             label: "E-Commerce GEO Services",
-            href: "/ecommerce-marketing-agency/geo-services",
+            href: "/ecommerce-geo-services",
           },
           {
             label: "E-Commerce Social Media Marketing",
-            href: "/ecommerce-marketing-agency/social-media-marketing",
+            href: "/ecommerce-social-media-marketing",
           },
-          { label: "E-Commerce CRO", href: "/ecommerce-marketing-agency/cro" },
+          { label: "E-Commerce CRO", href: "/ecommerce-cro" },
           {
             label: "E-Commerce Email Marketing",
-            href: "/ecommerce-marketing-agency/email-marketing",
+            href: "/ecommerce-email-marketing",
           },
           {
             label: "E-Commerce Content Marketing",
-            href: "/ecommerce-marketing-agency/content-marketing",
+            href: "/ecommerce-content-marketing",
           },
           {
             label: "Amazon Marketing",
-            href: "/ecommerce-marketing-agency/amazon-marketing",
+            href: "/amazon-marketing",
           },
         ],
       },
@@ -48,31 +48,31 @@ const NAV_ITEMS = [
         label: "Dental",
         href: "/dental-digital-marketing-agency",
         subItems: [
-          { label: "Dental SEO", href: "/dental-digital-marketing-agency/seo-services" },
-          { label: "Dental PPC", href: "/dental-digital-marketing-agency/ppc-services" },
-          { label: "Dental Website Development", href: "/dental-digital-marketing-agency/website-design" },
-          { label: "Dental Social Media Marketing", href: "/dental-digital-marketing-agency/social-media-marketing" },
-          { label: "Dental Reputation Management", href: "/dental-digital-marketing-agency/reputation-management-services" },
+          { label: "Dental SEO", href: "/dental-seo-services" },
+          { label: "Dental PPC", href: "/dental-ppc-services" },
+          { label: "Dental Website Development", href: "/dental-website-design-development-services" },
+          { label: "Dental Social Media Marketing", href: "/dental-social-media-marketing-services" },
+          { label: "Dental Reputation Management", href: "/dental-reputation-management-services" },
         ],
       },
       {
         label: "Healthcare",
         href: "/healthcare-marketing-agency",
         subItems: [
-          { label: "Healthcare SEO", href: "/healthcare-marketing-agency/seo-services" },
-          { label: "Healthcare PPC", href: "/healthcare-marketing-agency/ppc-services" },
-          { label: "Healthcare Website Design & Development", href: "/healthcare-marketing-agency/website-design" },
-          { label: "Healthcare Link Building", href: "/healthcare-marketing-agency/link-building-services" },
-          { label: "Healthcare Social Media Marketing", href: "/healthcare-marketing-agency/social-media-marketing" },
+          { label: "Healthcare SEO", href: "/healthcare-seo-services" },
+          { label: "Healthcare PPC", href: "/healthcare-ppc-services" },
+          { label: "Healthcare Website Design & Development", href: "/healthcare-website-design-development-services" },
+          { label: "Healthcare Link Building", href: "/healthcare-link-building-services" },
+          { label: "Healthcare Social Media Marketing", href: "/healthcare-social-media-marketing-services" },
         ],
       },
       {
         label: "Ophthalmology",
         href: "/ophthalmology-digital-marketing-agency",
         subItems: [
-          { label: "Ophthalmology SEO", href: "/ophthalmology-digital-marketing-agency/seo-services" },
-          { label: "Ophthalmology PPC", href: "/ophthalmology-digital-marketing-agency/ppc-services" },
-          { label: "Ophthalmology Website Design & Development", href: "/ophthalmology-digital-marketing-agency/website-design-services" },
+          { label: "Ophthalmology SEO", href: "/ophthalmology-seo-services" },
+          { label: "Ophthalmology PPC", href: "/ophthalmology-ppc-services" },
+          { label: "Ophthalmology Website Design & Development", href: "/ophthalmology-website-design-services" },
         ],
       },
       {
@@ -115,8 +115,8 @@ const NAV_ITEMS = [
         label: "CMS",
         href: "/cms-digital-marketing-agency",
         subItems: [
-          { label: "Shopify", href: "/cms-digital-marketing-agency/shopify" },
-          { label: "Wordpress", href: "/cms-digital-marketing-agency/wordpress" },
+          { label: "Shopify", href: "/cms-shopify" },
+          { label: "Wordpress", href: "/cms-wordpress" },
         ],
       },
       {
