@@ -97,6 +97,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // CMS
   {
     label: "CMS Platforms",
+    href:"/cms-digital-marketing-agency",
     heading: "Smarter Websites.",
     headingBlue: "Better Conversions.",
     description:
@@ -178,6 +179,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // CRM
   {
     label: "CRM Customisation Services",
+    href:"/crm-customisation-digital-marketing-agency,",
     heading: "Better Systems.",
     headingBlue: "Stronger Relationships.",
     description:
@@ -259,6 +261,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // AI
   {
     label: "AI Services",
+    href:"/artificial-digital-services-agency",
     heading: "Smarter Automation.",
     headingBlue: "Faster Execution.",
     description:

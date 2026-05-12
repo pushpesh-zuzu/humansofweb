@@ -32,10 +32,11 @@ function IndustryRow({ industry, reverse, index }) {
     services,
     visual,
     isImage,
+    href
   } = industry;
   const accentColor = index % 2 === 0 ? "#48179C" : "#F65A75";
   const accentTextColor = index % 2 === 0 ? "text-primary" : "text-secondary";
-
+  console.log(href,'frefff')
   return (
     <div
       className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-12 xl:gap-14 items-center`}
@@ -99,6 +100,7 @@ function IndustryRow({ industry, reverse, index }) {
         </div>
 
         <GetYourFreeConsultationButton
+          href={href}
           text={`Explore ${label.split(" ")[0]} Strategy`}
         />
       </div>

@@ -92,6 +92,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // ── 1. Home Improvement ───────────────────────────────────────────────────
   {
     label: "Home Improvement & Local Services",
+    href:'',
     heading: "Get More Calls.",
     headingBlue: "Own Your Local Market.",
     description:
@@ -173,6 +174,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // ── 3. Ecommerce ──────────────────────────────────────────────────────────
   {
     label: "Ecommerce",
+    href:"/ecommerce-marketing-agency",
     heading: "More Orders.",
     headingBlue: "Higher Returns.",
     description:
@@ -317,6 +319,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   {
     label: "Dental Clinics",
     heading: "More Patients.",
+    href:"/dental-digital-marketing-agency",
     headingBlue: "Fuller Chairs.",
     description:
       "Most dental clinics rely on walk-ins and word-of-mouth. We add a predictable digital engine that books appointments on autopilot — every single month.",
@@ -460,6 +463,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // ── 5. Healthcare ─────────────────────────────────────────────────────────
   {
     label: "Healthcare & Clinics",
+    href:"/healthcare-marketing-agency",
     heading: "More Patients.",
     headingBlue: "Built on Trust.",
     description:
@@ -598,6 +602,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   {
     label: "Ophthalmology & Eye Care",
     heading: "More Consultations.",
+    href:"/ophthalmology-digital-marketing-agency",
     headingBlue: "Clearer Growth.",
     description:
       "Eye care decisions are high-consideration. Patients research before they book. We ensure your clinic dominates search, earns trust, and fills slots consistently.",
