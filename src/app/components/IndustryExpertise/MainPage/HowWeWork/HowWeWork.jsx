@@ -8,8 +8,8 @@ import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 // import GetCtaButton from "../../CtaButtons/GetCtaButton";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import GetProposalModal from "@/app/components/common/GetProposalModal/GetProposalModal";
-import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
-import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
+// import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+// import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
 
 
 const HowWeWork = ({
@@ -169,10 +169,10 @@ const HowWeWork = ({
                 >
                   {ctaText}
                 </button>
-                <GetYourFreeConsultationButton
+                {/* <GetYourFreeConsultationButton
                   text={ctaText}
                   href={ctaHref}
-                />
+                /> */}
               </div>
             </div>
           </div>
