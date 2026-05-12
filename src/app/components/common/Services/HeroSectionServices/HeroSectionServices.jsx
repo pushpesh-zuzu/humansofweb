@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 export default function HeroSectionServices({
   bgImag = "",
@@ -16,10 +18,12 @@ export default function HeroSectionServices({
   altText = "Industry Expertise",
   breakLine = false,
 }) {
+  const [proposalOpen, setProposalOpen] = useState(false);
+
   return (
     <ContainerWrapper
       background="#48179C"
-      // maxWidth="max-w-[1440px] w-[92%]"
+    // maxWidth="max-w-[1440px] w-[92%]"
     >
       <PaddingWrapper2>
         <section className="relative rounded-[34px] ">
@@ -48,12 +52,16 @@ export default function HeroSectionServices({
 
               {/* CTA */}
               <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
-                <input
+                {/* <input
                   type="text"
                   placeholder="Enter Your Whatsapp Number"
                   className="h-[52px] w-full bg-white rounded-full border border-primary px-4 text-sm text-[#111111] outline-none transition focus:border-primary sm:max-w-[250px]"
-                />
-                <button className="h-[52px] cursor-pointer rounded-full bg-white px-4 text-[13px] font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white">
+                /> */}
+                <button
+                  type="button"
+                  onClick={() => setProposalOpen(true)}
+                  className="h-[52px] cursor-pointer rounded-full bg-white px-4 text-[13px] font-bold uppercase tracking-[0.04em] text-secondary transition hover:bg-secondary hover:text-white"
+                >
                   {ctaText}
                 </button>
               </div>
@@ -89,6 +97,11 @@ export default function HeroSectionServices({
           </div>
         </section>
       </PaddingWrapper2>
+
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 }
