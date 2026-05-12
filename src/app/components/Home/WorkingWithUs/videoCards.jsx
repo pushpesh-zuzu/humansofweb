@@ -10,18 +10,25 @@ export default function VideoCards({ testimonial, onPlay }) {
         borderRadius: 18,
       }}
     >
+      {/* Hover Background Image */}
       <img
         src={testimonial.avatar}
         alt=""
-        className="absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        className="absolute inset-0 h-full w-full object-cover object-center 
+        translate-y-full scale-100 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] 
+        group-hover:translate-y-0 group-hover:scale-100"
       />
-      <div className="absolute inset-0 bg-primary/0 transition-all duration-700 group-hover:bg-black/35" />
 
+      <div className="absolute inset-0 bg-primary/0 transition-all duration-700 group-hover:bg-primary/50" />
+
+      {/* Top Image */}
       <div className="relative z-10 aspect-video w-full flex-none overflow-hidden xl:aspect-auto xl:h-[67%]">
         <img
           src={testimonial.image}
           alt={testimonial.name}
-          className="h-full w-full object-contain object-center transition-all duration-700 ease-out group-hover:scale-110 group-hover:blur-[2px] xl:object-cover"
+          className="h-full w-full object-contain object-center 
+          transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] 
+          group-hover:scale-90 group-hover:opacity-0 xl:object-cover"
         />
 
         <button
@@ -34,7 +41,10 @@ export default function VideoCards({ testimonial, onPlay }) {
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{ height: 80, width: 80 }}
           >
-            <div className="h-full w-full opacity-90 transition-all duration-500 ease-out group-hover:scale-110 group-hover:opacity-100">
+            <div
+              className="h-full w-full transition-all duration-500 
+              group-hover:scale-125 group-hover:rotate-12"
+            >
               <img
                 src={playOutlineIcon.src}
                 alt="play"
@@ -43,15 +53,25 @@ export default function VideoCards({ testimonial, onPlay }) {
             </div>
           </div>
         </button>
-
       </div>
-      <div className="relative z-10 flex min-h-0 flex-1 w-full flex-col px-4 py-4 transition-colors duration-500 group-hover:bg-transparent xl:h-[50%]">
-        <p className="p-default overflow-hidden font-bold text-white">{description}</p>
-        <div
-          className="flex items-center gap-6 mt-3"
+
+      {/* Content */}
+      <div
+        className="relative z-10 flex min-h-0 flex-1 w-full flex-col px-4 py-4 
+        transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] 
+        group-hover:bg-transparent group-hover:-translate-y-2"
+      >
+        <p
+          className="p-default overflow-hidden font-bold text-white 
+          transition-all duration-500 group-hover:translate-y-1"
         >
+          {description}
+        </p>
+
+        <div className="mt-3 flex items-center gap-6">
           <div
-            className="flex flex-none items-center justify-center overflow-hidden rounded-full bg-white p-1"
+            className="flex flex-none items-center justify-center overflow-hidden rounded-full bg-white p-1
+            transition-all duration-500 group-hover:scale-110"
             style={{ height: 40, width: 40 }}
           >
             <img
@@ -61,19 +81,12 @@ export default function VideoCards({ testimonial, onPlay }) {
               style={{ height: "100%", width: "100%" }}
             />
           </div>
-          <p className="truncate font-medium text-white">{testimonial.name}</p>
+
+          <p className="truncate font-medium text-white transition-all duration-500 group-hover:translate-x-1">
+            {testimonial.name}
+          </p>
         </div>
       </div>
-      <style>{`
-        @keyframes playDrop {
-          0% {
-            transform: translateY(-120px);
-          }
-          100% {
-            transform: translateY(0) scale(1.1);
-          }
-        }
-      `}</style>
     </div>
   );
 }
