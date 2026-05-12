@@ -1,9 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ContainerWrapper from "../../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 import H2HeadingWrapper from "../../Container/H2HeadingWrapper";
 import GetCtaButton from "../../CtaButtons/GetCtaButton";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
+
 
 const ServiceGridSection = ({
   title = "",
@@ -15,6 +20,8 @@ const ServiceGridSection = ({
   ctaHref = "",
 }) => {
   if (!services.length) return null;
+  const [proposalOpen, setProposalOpen] = useState(false);
+
 
   return (
     <ContainerWrapper>
@@ -67,11 +74,18 @@ const ServiceGridSection = ({
           {ctaText ? (
             <div className="flex relative z-10 justify-center pt-6 md:pt-[30px] lg:pt-10">
               <GetCtaButton text={ctaText}
-                href="" />
+                href=""
+                onClick={() => setProposalOpen(true)}
+                className="cursor-pointer"
+              />
             </div>
           ) : null}
         </section>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 };

@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
+import { useState } from "react";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import ShopifyIcon from "../../Icons/WebsiteDesign/shopify.svg";
@@ -8,6 +11,7 @@ import WordpressIcon from "../../Icons/WebsiteDesign/wordpress-logo.svg";
 import EcommerceIcon from "../../Icons/WebsiteDesign/ecommerce-logo.svg";
 import PageSpeedIcon from "../../Icons/WebsiteDesign/page-speed.svg";
 import GetCtaButton from "../../CtaButtons/GetCtaButton";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 const DEFAULT_FEATURE_CARDS = [
     {
@@ -40,6 +44,8 @@ const WebsiteBrand = ({
     ctaHref = "",
     cards = DEFAULT_FEATURE_CARDS,
 }) => {
+    const [proposalOpen, setProposalOpen] = useState(false);
+
     return (
         <ContainerWrapper>
             <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
@@ -58,7 +64,9 @@ const WebsiteBrand = ({
                                 {ctaText ? (
                                     <div className="flex justify-start pt-6 md:pt-[30px] lg:pt-10">
                                         <GetCtaButton text={ctaText}
-                                            href="" />
+                                            href=""
+                                            onClick={() => setProposalOpen(true)}
+                                            className="hover:bg-white hover:text-secondary" />
                                     </div>
                                 ) : null}
                             </div>
@@ -91,6 +99,10 @@ const WebsiteBrand = ({
                     </div>
                 </section>
             </PaddingWrapper2>
+            <GetProposalModal
+                isOpen={proposalOpen}
+                onClose={() => setProposalOpen(false)}
+            />
         </ContainerWrapper>
     );
 };

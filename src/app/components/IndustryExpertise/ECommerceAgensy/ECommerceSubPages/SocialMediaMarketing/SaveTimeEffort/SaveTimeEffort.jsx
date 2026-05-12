@@ -1,7 +1,11 @@
+'use client';
+
+import { useState } from "react";
 import { FaArrowTrendUp, FaClock, FaCoins } from "react-icons/fa6";
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+import GetProposalModal from "@/app/components/common/GetProposalModal/GetProposalModal";
 
 const BENEFITS = [
   {
@@ -19,6 +23,8 @@ const BENEFITS = [
 ];
 
 const SaveTimeEffort = () => {
+  const [proposalOpen, setProposalOpen] = useState(false);
+
   return (
     <ContainerWrapper background="">
       <PaddingWrapper2 padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20">
@@ -42,6 +48,7 @@ const SaveTimeEffort = () => {
                 <GetCtaButton
                   text="Book a Call"
                   href=""
+                  onClick={() => setProposalOpen(true)}
                 />
               </div>
             </div>
@@ -128,6 +135,10 @@ const SaveTimeEffort = () => {
           </div>
         </section>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 };

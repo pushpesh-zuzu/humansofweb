@@ -7,6 +7,7 @@ import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import GetCtaButton from "../../CtaButtons/GetCtaButton";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 export default function ServicesTwoGridSection({
   headdingBlack,
@@ -30,6 +31,7 @@ export default function ServicesTwoGridSection({
   paragraphTextColor = false
 }) {
   const [expanded, setExpanded] = useState(false);
+  const [proposalOpen, setProposalOpen] = useState(false);
 
   const visibleParagraphs =
     seeMore && !expanded ? paragraphs.slice(0, limit) : paragraphs;
@@ -128,7 +130,9 @@ export default function ServicesTwoGridSection({
               {ctaText && (
                 <div className="flex justify-start mt-2 md:mt-[14px] lg:pt-6">
                   <GetCtaButton text={ctaText}
-                    href="" />
+                    href=""
+                    onClick={() => setProposalOpen(true)}
+                  />
                 </div>)}
             </motion.div>
           </div>
@@ -141,6 +145,10 @@ export default function ServicesTwoGridSection({
             ))}
         </section>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 }

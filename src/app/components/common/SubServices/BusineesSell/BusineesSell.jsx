@@ -1,7 +1,12 @@
+'use client';
+
+import React, { useState } from "react";
 import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
+
 
 const DEFAULT_POINTS = [
   {
@@ -31,6 +36,8 @@ const BusineesSell = ({
   ctaText = "Speak With An Expert Now",
   ctaHref = "",
 }) => {
+  const [proposalOpen, setProposalOpen] = useState(false);
+
   return (
     <ContainerWrapper>
       <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
@@ -67,12 +74,17 @@ const BusineesSell = ({
             {ctaText ? (
               <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10 pb-4">
                 <GetCtaButton text={ctaText}
-                  href="" />
+                  href=""
+                  onClick={() => setProposalOpen(true)} />
               </div>
             ) : null}
           </div>
         </section>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 };

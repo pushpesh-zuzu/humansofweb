@@ -6,6 +6,7 @@ import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import H2HeadingWrapper from "../../Container/H2HeadingWrapper";
 import GetCtaButton from "../../CtaButtons/GetCtaButton";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 const Interactivecontent = ({
     headingStart = "How Humans of Web Drives",
@@ -14,10 +15,12 @@ const Interactivecontent = ({
     ctaText = "Speak With An Expert Now",
     ctaHref = "/contact",
     padding = "pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20",
-    background='#fff'
+    background = '#fff'
 }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const activeItem = items[activeIndex] ?? items[0];
+    const [proposalOpen, setProposalOpen] = useState(false);
+
 
     if (!activeItem) return null;
 
@@ -86,10 +89,17 @@ const Interactivecontent = ({
 
                     <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10">
                         <GetCtaButton text={ctaText}
-                            href="" />
+                            href=""
+                            onClick={() => setProposalOpen(true)}
+                            className="cursor-pointer"
+                        />
                     </div>
                 </section>
             </PaddingWrapper2>
+            <GetProposalModal
+                isOpen={proposalOpen}
+                onClose={() => setProposalOpen(false)}
+            />
         </ContainerWrapper>
     );
 };

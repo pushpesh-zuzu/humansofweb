@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
 import H2HeadingWrapper from "../common/Container/H2HeadingWrapper";
 import StepsCard from "../common/Customgeneration/StepsCard";
@@ -9,6 +11,7 @@ import strategy from "../common/Icons/Home/strategy-implementaion.svg";
 import operations from "../common/Icons/Home/operations.svg";
 import reporting from "../common/Icons/Home/reporting.svg";
 import GetCtaButton from "../common/CtaButtons/GetCtaButton";
+import GetProposalModal from "../common/GetProposalModal/GetProposalModal";
 
 const STEPS = [
     {
@@ -50,6 +53,7 @@ const CustomGeneration = ({
     showCtaButton = false,
     ctaText,
 }) => {
+    const [proposalOpen, setProposalOpen] = useState(false);
     return (
         <ContainerWrapper>
             <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
@@ -63,11 +67,16 @@ const CustomGeneration = ({
                     showCtaButton ? (
                         <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10">
                             <GetCtaButton text={ctaText}
-                                href="" />
+                                href=""
+                                onClick={() => setProposalOpen(true)} />
                         </div>
                     ) : null
                 }
             </PaddingWrapper2>
+            <GetProposalModal
+                isOpen={proposalOpen}
+                onClose={() => setProposalOpen(false)}
+            />
         </ContainerWrapper>)
 }
 

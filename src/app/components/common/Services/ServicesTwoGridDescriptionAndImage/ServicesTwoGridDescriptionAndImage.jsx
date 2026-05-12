@@ -7,6 +7,7 @@ import ContainerWrapper from "../../Container/ContainerWrapper";
 import PaddingWrapper2 from "../../Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import { GetYourFreeConsultationButton } from "../../CtaButtons";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 export default function ServicesTwoGridDescriptionAndImage({
   headdingBlack,
@@ -24,11 +25,14 @@ export default function ServicesTwoGridDescriptionAndImage({
   bottomParagraph = [],
   breakLine = false,
   headingBlueColor = "",
-  headingBlackColor="",
-  isImageSmall=false,
-  paragraphTextColor=false
+  headingBlackColor = "",
+  isImageSmall = false,
+  paragraphTextColor = false,
+  href = "",
 }) {
   const [expanded, setExpanded] = useState(false);
+  const [proposalOpen, setProposalOpen] = useState(false);
+
 
   const visibleParagraphs =
     seeMore && !expanded ? paragraphs.slice(0, limit) : paragraphs;
@@ -37,15 +41,15 @@ export default function ServicesTwoGridDescriptionAndImage({
     <ContainerWrapper background={isBackgroundPrimary ? "#48179C" : background}>
       <PaddingWrapper2>
         {!isHeadingInGridSection && (
-            <H2HeadingWrapper
-              headdingBlack={headdingBlack}
-              headingBlue={headingBlue}
-              subHeading={subheading}
-              // breakLine={breakLine}
-              padding="pb-[35px] md:pb-[60px]"
-              headingBlueColor={headingBlueColor}
-              headingBlackColor={headingBlackColor}
-            />
+          <H2HeadingWrapper
+            headdingBlack={headdingBlack}
+            headingBlue={headingBlue}
+            subHeading={subheading}
+            // breakLine={breakLine}
+            padding="pb-[35px] md:pb-[60px]"
+            headingBlueColor={headingBlueColor}
+            headingBlackColor={headingBlackColor}
+          />
         )}
 
         <section className="relative">
@@ -69,7 +73,7 @@ export default function ServicesTwoGridDescriptionAndImage({
                   width={540}
                   height={380}
                   className="object-contain rounded-[32px] h-full max-h-[540px] md:w-[85%]"
-                  
+
                 />
               </div>
             </motion.div>
@@ -79,17 +83,17 @@ export default function ServicesTwoGridDescriptionAndImage({
               initial={{ opacity: 0, x: reverse ? -30 : 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className={`${isImageSmall ? 'max-w-full' :'max-w-[700px]'}`}
+              className={`${isImageSmall ? 'max-w-full' : 'max-w-[700px]'}`}
             >
               {isHeadingInGridSection && (
                 <H2HeadingWrapper
-              headdingBlack={headdingBlack}
-              headingBlue={headingBlue}
-              subHeading={subheading}
-              breakLine={breakLine}
-              padding="pb-[35px] md:pb-[60px]"
-              // headingBlueColor={headingBlueColor}
-              headingBlackColor={headingBlackColor}
+                  headdingBlack={headdingBlack}
+                  headingBlue={headingBlue}
+                  subHeading={subheading}
+                  breakLine={breakLine}
+                  padding="pb-[35px] md:pb-[60px]"
+                  // headingBlueColor={headingBlueColor}
+                  headingBlackColor={headingBlackColor}
                 />
               )}
 
@@ -106,9 +110,9 @@ export default function ServicesTwoGridDescriptionAndImage({
                   //     isBackgroundPrimary ? "text-white" : ""
                   //   }`}
                   // >
-                   <p
+                  <p
                     key={i}
-                    className={`p-default mb-4 ${paragraphTextColor ? paragraphTextColor:"text-white"}`}
+                    className={`p-default mb-4 ${paragraphTextColor ? paragraphTextColor : "text-white"}`}
                   >
                     {para}
 
@@ -118,11 +122,10 @@ export default function ServicesTwoGridDescriptionAndImage({
                         {" "}
                         <span
                           onClick={() => setExpanded(!expanded)}
-                          className={`cursor-pointer font-bold ${
-                            isBackgroundPrimary
-                              ? "text-white hover:text-secondary"
-                              : "text-primary hover:text-secondary"
-                          }`}
+                          className={`cursor-pointer font-bold ${isBackgroundPrimary
+                            ? "text-white hover:text-secondary"
+                            : "text-primary hover:text-secondary"
+                            }`}
                         >
                           {expanded ? "Show Less" : "Read More"}
                         </span>
@@ -137,7 +140,11 @@ export default function ServicesTwoGridDescriptionAndImage({
                 // <button className="mt-4 button-primary bg-secondary outline-none  hover:bg-white border-transparent hover:text-secondary text-white hover:border hover:border-secondary ">
                 //   {ctaText}
                 // </button>
-                <GetYourFreeConsultationButton text={ctaText} className="mt-2 md:mt-6"/>
+                <GetYourFreeConsultationButton
+                  href={href}
+                  onClick={!href ? () => setProposalOpen(true) : undefined}
+                  text={ctaText}
+                  className="mt-2 md:mt-6 cursor-pointer" />
               )}
             </motion.div>
           </div>
@@ -150,6 +157,10 @@ export default function ServicesTwoGridDescriptionAndImage({
             ))}
         </section>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 }

@@ -4,8 +4,9 @@ const GetYourFreeConsultationButton = ({
   text = "Get Your Free Consultation",
   href = "",
   className = "",
+  onClick,
 }) => {
-  return href  ? (
+  return href ? (
     <Link
       href={href}
       className={`text-center inline-flex min-h-11 items-center justify-center rounded-full bg-secondary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-primary ${className}`}
@@ -14,7 +15,8 @@ const GetYourFreeConsultationButton = ({
     </Link>
   ) : (
     <button
-      href={href}
+      type="button"
+      onClick={onClick}
       className={`text-center inline-flex min-h-11 items-center justify-center rounded-full bg-secondary px-6 p-small font-bold uppercase tracking-[0.08em] text-white transition hover:bg-primary ${className}`}
     >
       {text}

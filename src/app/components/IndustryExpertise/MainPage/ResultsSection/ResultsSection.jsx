@@ -1,10 +1,11 @@
 "use client";
 
+import React, { useEffect, useRef, useState } from "react";
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
-import React, { useEffect, useRef, useState } from "react";
+import GetProposalModal from "@/app/components/common/GetProposalModal/GetProposalModal";
 
 // ── Count-up hook ─────────────────────────────────────────────────────────────
 function useCountUp(target, duration = 1800, start = false) {
@@ -90,10 +91,10 @@ function Bar({ label, before, after, color, reverse = false, animate }) {
               background: "rgba(255,255,255,0.2)",
               borderRadius: 99,
               transition: "width 1s ease 0.2s",
-            }}/>
+            }} />
           </div>
           <span style={{ fontSize: 10, color: "rgba(255,255,255,0.3)", width: 28, textAlign: "right", flexShrink: 0 }}>
-            {before > 999 ? `${(before/1000).toFixed(1)}k` : before}
+            {before > 999 ? `${(before / 1000).toFixed(1)}k` : before}
           </span>
         </div>
         {/* After */}
@@ -106,10 +107,10 @@ function Bar({ label, before, after, color, reverse = false, animate }) {
               background: color,
               borderRadius: 99,
               transition: "width 1.2s ease 0.4s",
-            }}/>
+            }} />
           </div>
           <span style={{ fontSize: 10, color, width: 28, textAlign: "right", flexShrink: 0, fontWeight: 600 }}>
-            {after > 999 ? `${(after/1000).toFixed(1)}k` : after}
+            {after > 999 ? `${(after / 1000).toFixed(1)}k` : after}
           </span>
         </div>
       </div>
@@ -179,9 +180,11 @@ function StatNumber({ stat, animate }) {
 }
 
 // ── Main Export ───────────────────────────────────────────────────────────────
-export default function ResultsSection({STATS =[]}) {
+export default function ResultsSection({ STATS = [] }) {
   const ref = useRef(null);
   const [animate, setAnimate] = useState(false);
+  const [proposalOpen, setProposalOpen] = useState(false);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -242,10 +245,18 @@ export default function ResultsSection({STATS =[]}) {
             >
               
             </button> */}
-            <GetYourFreeConsultationButton text="See If We're the Right Fit"/>
+            <GetYourFreeConsultationButton
+              href=""
+              onClick={() => setProposalOpen(true)}
+              className="cursor-pointer"
+              text="See If We're the Right Fit" />
           </div>
         </div>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 }

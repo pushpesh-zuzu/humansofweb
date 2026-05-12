@@ -7,6 +7,7 @@ import ContainerWrapper from "../../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 import H2HeadingWrapper from "../../Container/H2HeadingWrapper";
 import GetCtaButton from "../../CtaButtons/GetCtaButton";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 const WorkWithCards = ({
   title = "Why Work With Us",
@@ -20,6 +21,8 @@ const WorkWithCards = ({
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(1);
+  const [proposalOpen, setProposalOpen] = useState(false);
+
   const desktopVisibleCount = Math.min(Math.max(showCards, 1), Math.max(cards.length, 1));
 
   useEffect(() => {
@@ -147,12 +150,19 @@ const WorkWithCards = ({
 
               <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10 pb-4">
                 <GetCtaButton text={ctaText}
-                  href="" />
+                  href=""
+                  onClick={() => setProposalOpen(true)}
+                  className="cursor-pointer"
+                />
               </div>
             </div>
           </div>
         </section>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 };

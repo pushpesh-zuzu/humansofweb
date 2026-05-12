@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import ContainerWrapper from "../../../../../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../../../../../common/Container/PaddingWrapper2";
@@ -6,6 +9,7 @@ import LeadsGenerateIcon from "../../../../../common/Icons/IndustryExpertise/Lea
 import SEORevenueIcon from "../../../../../common/Icons/IndustryExpertise/SEORevenue.svg";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+import GetProposalModal from "@/app/components/common/GetProposalModal/GetProposalModal";
 
 const PERFORMANCE_STATS = [
     {
@@ -26,6 +30,8 @@ const PERFORMANCE_STATS = [
 ];
 
 const SeoPerformance = () => {
+    const [proposalOpen, setProposalOpen] = useState(false);
+
     return (
         <ContainerWrapper>
             <PaddingWrapper2 padding="pb-10 px-8.75 md:pb-14 md:px-12.5 xl:pb-18 xl:px-20">
@@ -69,10 +75,17 @@ const SeoPerformance = () => {
 
                     <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10">
                         <GetCtaButton text="Book a call now"
-                            href="" />
+                            href=""
+                            onClick={() => setProposalOpen(true)}
+                            className="cursor-pointer"
+                        />
                     </div>
                 </section>
             </PaddingWrapper2>
+            <GetProposalModal
+                isOpen={proposalOpen}
+                onClose={() => setProposalOpen(false)}
+            />
         </ContainerWrapper>
     );
 };

@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import { GetYourFreeConsultationButton } from "../../CtaButtons";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 const DEFAULT_DATA = {
   headdingBlack: "Strategies That",
@@ -74,8 +76,11 @@ export default function PillarsSection({
   footerText = DEFAULT_DATA.footerText,
   ctaLabel = DEFAULT_DATA.ctaLabel,
   ctaHref = DEFAULT_DATA.ctaHref,
-  background="#fafafa"
+  background = "#fafafa",
+  href = "",
 }) {
+  const [proposalOpen, setProposalOpen] = useState(false);
+
   return (
     <ContainerWrapper background={background}>
       <PaddingWrapper2>
@@ -99,11 +104,11 @@ export default function PillarsSection({
           />
 
           {/* Heading — H2HeadingWrapper handles h2 + subheading + description */}
-            <H2HeadingWrapper
-              headdingBlack={headdingBlack}
-              headingBlue={headingBlue}
-              padding="pb-[35px] md:pb-[60px]"
-            />
+          <H2HeadingWrapper
+            headdingBlack={headdingBlack}
+            headingBlue={headingBlue}
+            padding="pb-[35px] md:pb-[60px]"
+          />
 
           {/* Feature cards 2×2 */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mx-auto mb-10">
@@ -122,10 +127,19 @@ export default function PillarsSection({
             {/* <a href={ctaHref} className="button-primary">
               {ctaLabel}
             </a> */}
-            <GetYourFreeConsultationButton text={ctaLabel}/>
+            <GetYourFreeConsultationButton
+              href={href}
+              onClick={!href ? () => setProposalOpen(true) : undefined}
+              text={ctaLabel}
+              className="cursor-pointer"
+            />
           </div>
         </div>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 }
