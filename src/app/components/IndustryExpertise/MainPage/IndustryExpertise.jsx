@@ -34,6 +34,8 @@ import ShoppingSEOandProductFeeds from "../../common/Icons/industryExpert/MoreOr
 import ConversionPages from "../../common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/ConversionPages";
 import LeadGeneration from "../../common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LeadGeneration";
 import LocalSEO from "../../common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LocalSEO";
+import HowItWorkIndustryExpert from "./HowWeWork/HowWeWorkIndustryExpert";
+import CreativeContentDevelopment from "../../common/Icons/industryExpert/howWeWork/CreativeContentDevelopment";
 
 export const FREQUENTLY_QUESTION = [
   {
@@ -71,15 +73,25 @@ const STEPS = [
       "Every brand gets a custom growth blueprint — channels, timelines, budgets, and KPIs mapped to your actual goals.",
     icon: <StrategyPlanning className="w-full h-full" />,
   },
+
+  // NEW STEP
   {
     step: "03",
+    title: "Creative Content",
+    description:
+      "We craft high-converting creatives, landing pages, ad copy, and content designed specifically for your audience and industry.",
+    icon: <CreativeContentDevelopment className="w-full h-full" />,
+  },
+
+  {
+    step: "04",
     title: "Execution",
     description:
       "Our team moves fast — content live, ads running, pages ranking. No long waiting periods, no fluff deliverables.",
     icon: <Execution className="w-full h-full" />,
   },
   {
-    step: "04",
+    step: "05",
     title: "Optimisation",
     description:
       "We analyse what's working, double down on it, and cut what isn't. Growth compounds every single month.",
@@ -763,7 +775,7 @@ function IndustryExpertise() {
         description="A tailored approach for every vertical — because cookie-cutter strategies don't build category leaders."
       />
       </div>
-      <HowWeWork cards={STEPS} />
+      <HowItWorkIndustryExpert steps={STEPS} />
       <ResultsSection STATS ={STATS}/>
       {/* <WhyHOW/> */}
       <ContainerWrapper>
