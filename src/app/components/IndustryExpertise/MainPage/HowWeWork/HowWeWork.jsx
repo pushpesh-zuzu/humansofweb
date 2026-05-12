@@ -8,6 +8,7 @@ import PaddingWrapper2 from "../../../common/Container/PaddingWrapper2";
 // import GetCtaButton from "../../CtaButtons/GetCtaButton";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
 import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
 
 
 const HowWeWork = ({
@@ -159,7 +160,7 @@ const HowWeWork = ({
               </div>
 
               <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10 pb-4">
-                <GetCtaButton
+                <GetYourFreeConsultationButton
                   text={ctaText}
                   href={ctaHref}
                 />

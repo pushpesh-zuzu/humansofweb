@@ -3,6 +3,7 @@
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
+import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
 import React, { useEffect, useRef, useState } from "react";
 
 // ── Count-up hook ─────────────────────────────────────────────────────────────
@@ -205,7 +206,7 @@ export default function ResultsSection({STATS =[]}) {
             </span>
             <h2 className="text-h2 font-extrabold text-white leading-tight">
               Numbers That{" "}
-              <span style={{ color: "#732cee" }}>Actually Matter</span>
+              <span className="text-primary">Actually Matter</span>
             </h2>
             <p className="p-default mt-3 mx-auto" style={{ color: "rgba(255,255,255,0.5)", maxWidth: 520 }}>
               Real results from real brands — no cherry-picked outliers, no inflated claims.
@@ -233,14 +234,15 @@ export default function ResultsSection({STATS =[]}) {
 
           {/* Bottom CTA */}
           <div className="text-center">
-            <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 13, marginBottom: 16 }}>
+            <p className="text-white text-sm pb-6 md:pb-[30px] lg:pb-10">
               *Results vary by industry, budget, and baseline. All figures are real client data.
             </p>
-            <button
+            {/* <button
               className="button-primary hover:text-secondary hover:bg-white!"
             >
-              See If We're the Right Fit
-            </button>
+              
+            </button> */}
+            <GetYourFreeConsultationButton text="See If We're the Right Fit"/>
           </div>
         </div>
       </PaddingWrapper2>
