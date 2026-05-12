@@ -33,8 +33,9 @@ function ExtraTagsPopover({
         flexWrap: "wrap",
         gap: 6,
         zIndex: 10,
-        width: "max-content",
-        maxWidth: 260,
+        width: "min-content",
+        minWidth:"260px",
+        maxWidth: '100%',
         pointerEvents: open ? "auto" : "none",
         opacity: open ? 1 : 0,
         transform: open
@@ -62,6 +63,7 @@ function ExtraTagsPopover({
         tag.link ? (<a
          href={tag.link}
           key={tag.title}
+          className='md:whitespace-nowrap'
 
           style={{
             fontSize: "0.72rem",
@@ -71,7 +73,7 @@ function ExtraTagsPopover({
             background: bg,
             color: accent,
             border: `1px solid ${accent}30`,
-            whiteSpace: "nowrap",
+            // whiteSpace: "nowrap",
             opacity: open ? 1 : 0,
             transform: open ? "translateY(0)" : "translateY(4px)",
             transition: `opacity 0.18s ease ${i * 0.1 + 0.2}s,
@@ -90,7 +92,7 @@ function ExtraTagsPopover({
             background: bg,
             color: accent,
             border: `1px solid ${accent}30`,
-            whiteSpace: "nowrap",
+            // whiteSpace: "nowrap",
             opacity: open ? 1 : 0,
             transform: open ? "translateY(0)" : "translateY(4px)",
             transition: `opacity 0.18s ease ${i * 0.1 + 0.2}s,
@@ -196,7 +198,7 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link
                   background: bg,
                   color: accent,
                   border: `1px solid ${accent}30`,
-                  whiteSpace: "nowrap",
+                  // whiteSpace: "nowrap",
                 }}
               >
                 {tag.title}
@@ -211,7 +213,7 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link
                   background: bg,
                   color: accent,
                   border: `1px solid ${accent}30`,
-                  whiteSpace: "nowrap",
+                  // whiteSpace: "nowrap",
                 }}
               >
                 {tag.title}
