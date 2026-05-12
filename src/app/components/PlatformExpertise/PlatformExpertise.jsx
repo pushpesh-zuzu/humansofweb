@@ -9,7 +9,6 @@ import React, { useRef } from "react";
 import FaqComponent from "../common/SubServices/FaqComponent/FaqComponent";
 import ReachWithUs from "../common/Services/ReachWithUs/ReachWithUs";
 
-
 // temporary icons (same as industry page for now)
 import IndustryResearch from "../common/Icons/industryExpert/howWeWork/IndustryResearch";
 import StrategyPlanning from "../common/Icons/industryExpert/howWeWork/StrategyPlanning";
@@ -37,6 +36,8 @@ import TrustedBy from "../common/TrustedBy/TrustedBy";
 import IndustryDeepDive from "../IndustryExpertise/MainPage/IndustryDeepDive/IndustryDeepDive";
 import ResultsSection from "../IndustryExpertise/MainPage/ResultsSection/ResultsSection";
 import { PLATFORMS } from "./plateformExpertiseData";
+import HowItWorkIndustryExpert from "../IndustryExpertise/MainPage/HowWeWork/HowWeWorkIndustryExpert";
+import CreativeContentDevelopment from "../common/Icons/industryExpert/howWeWork/CreativeContentDevelopment";
 
 export const FREQUENTLY_QUESTION = [
   {
@@ -74,30 +75,37 @@ const STEPS = [
     step: "02",
     title: "Solution Mapping",
     description:
-      "We create platform-specific strategies tailored to your operations, customer journey, and long-term business goals.",
+      "We create platform-specific strategies tailored to your operations, customer journey, and long-term sustainable business growth goals.",
     icon: <StrategyPlanning className="w-full h-full" />,
   },
   {
     step: "03",
+    title: "Automation",
+    description:
+      "We build custom automations, integrations, and scalable workflows that simplify operations and improve team efficiency.",
+    icon: <CreativeContentDevelopment className="w-full h-full" />,
+  },
+
+  {
+    step: "04",
     title: "Implementation",
     description:
       "From CRM customisation to CMS optimisation and AI integrations — our team executes without slowing your business down.",
     icon: <Execution className="w-full h-full" />,
   },
   {
-    step: "04",
-    title: "Performance Optimisation",
+    step: "05",
+    title: "Optimisation",
     description:
       "We continuously improve workflows, automations, and user experiences to maximise efficiency and growth.",
     icon: <Optimisation className="w-full h-full" />,
   },
 ];
-
 const INDUSTRIESDEEPDIVEDATA = [
   // CMS
   {
     label: "CMS Platforms",
-    href:"/cms-digital-marketing-agency",
+    href: "/cms-digital-marketing-agency",
     heading: "Smarter Websites.",
     headingBlue: "Better Conversions.",
     description:
@@ -156,9 +164,7 @@ const INDUSTRIESDEEPDIVEDATA = [
         </div>
 
         <div className="px-4 pb-4">
-          <div className="text-xs text-gray-400 mb-2">
-            Weekly Performance
-          </div>
+          <div className="text-xs text-gray-400 mb-2">Weekly Performance</div>
 
           <div className="h-20 flex items-end gap-1">
             {[35, 50, 40, 70, 65, 80, 100].map((h, i) => (
@@ -179,7 +185,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // CRM
   {
     label: "CRM Customisation Services",
-    href:"/crm-customisation-digital-marketing-agency,",
+    href: "/crm-customisation-digital-marketing-agency,",
     heading: "Better Systems.",
     headingBlue: "Stronger Relationships.",
     description:
@@ -208,9 +214,7 @@ const INDUSTRIESDEEPDIVEDATA = [
         <div className="p-4 border-b border-white/10 flex items-center justify-between">
           <div>
             <div className="text-xs opacity-60">CRM Dashboard</div>
-            <div className="text-sm font-bold mt-0.5">
-              Sales & Automation
-            </div>
+            <div className="text-sm font-bold mt-0.5">Sales & Automation</div>
           </div>
 
           <div className="text-xs font-semibold bg-white/10 px-2 py-1 rounded-full">
@@ -261,7 +265,7 @@ const INDUSTRIESDEEPDIVEDATA = [
   // AI
   {
     label: "AI Services",
-    href:"/artificial-digital-services-agency",
+    href: "/artificial-digital-services-agency",
     heading: "Smarter Automation.",
     headingBlue: "Faster Execution.",
     description:
@@ -377,8 +381,8 @@ const STATS = [
 ];
 
 function PlatformExpertise() {
-    const deepDiveRef = useRef(null);
-  
+  const deepDiveRef = useRef(null);
+
   return (
     <>
       <IndustryHeroSection
@@ -399,24 +403,21 @@ function PlatformExpertise() {
         description="We work across leading CMS, CRM, and AI platforms — building solutions tailored to your workflows, operations, and growth goals."
       />
       <div ref={deepDiveRef}>
-      <IndustryDeepDive
-        INDUSTRIESDEEPDIVEDATA={INDUSTRIESDEEPDIVEDATA}
-        headingBlack="Platform"
-        headingBlue="Deep Dive"
-        description="Every platform requires a different strategy. We customise systems around performance, automation, scalability, and user experience."
+        <IndustryDeepDive
+          INDUSTRIESDEEPDIVEDATA={INDUSTRIESDEEPDIVEDATA}
+          headingBlack="Platform"
+          headingBlue="Deep Dive"
+          description="Every platform requires a different strategy. We customise systems around performance, automation, scalability, and user experience."
         />
-        </div>
+      </div>
 
-      <HowWeWork cards={STEPS} />
+      <HowItWorkIndustryExpert steps={STEPS} />
 
       <ResultsSection STATS={STATS} />
 
       <ContainerWrapper>
         <PaddingWrapper2 padding="pt-10 md:pt-14 xl:pt-18">
-          <FaqComponent
-            position="mx-auto"
-            items={FREQUENTLY_QUESTION}
-          />
+          <FaqComponent position="mx-auto" items={FREQUENTLY_QUESTION} />
         </PaddingWrapper2>
       </ContainerWrapper>
 
