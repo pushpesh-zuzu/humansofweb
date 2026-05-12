@@ -10,12 +10,13 @@ import {
   smarterWayData,
   WhyChooseDentalService,
 } from "./dentalAgencyData";
-import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
+// import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
-import GrowthStrategiesSection from "./GrowthStrategiesSection";
+// import GrowthStrategiesSection from "./GrowthStrategiesSection";
 import PillarsSection from "../../common/Services/PillarSection/PillarSection";
-import WhyChooseDentalServce from "./WhyChooseDentalServce";
-import WorkingWithUs from "../../Home/WorkingWithUs";
+// import WhyChooseDentalServce from "./WhyChooseDentalServce";
+// import WorkingWithUs from "../../Home/WorkingWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function DentalAgency() {
   return (
@@ -42,11 +43,17 @@ function DentalAgency() {
       />
       {/* <GrowthStrategiesSection /> */}
       <PillarsSection />
-      <ServicesGridSection
+      {/* <ServicesGridSection
         background="#fafafa"
         services={servicesDental}
         headdingBlack={"Industries "}
         headingBlue={"We Serve"}
+      /> */}
+      <ServicesLinks
+        services={servicesDental}
+        headdingBlack={"Industries "}
+        headingBlue={"We Serve"}
+        padding="pt-10 px-8.75 md:pt-14 md:px-12.5 xl:pt-18 xl:px-20"
       />
       {/* <ServicesTwoGridDescriptionAndImage
         // ctaText="Behind Every Full Schedule Is a Dental Practice"

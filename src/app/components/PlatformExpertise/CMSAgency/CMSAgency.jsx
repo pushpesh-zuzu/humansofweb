@@ -9,8 +9,9 @@ import {
   CMSServices,
   StrategyContentCMS,
 } from "./CMSAgencyData";
-import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
+// import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function CMSAgency() {
   return (
@@ -47,10 +48,16 @@ function CMSAgency() {
         ctaHref={StrategyContentCMS.ctaHref}
       />
 
-      <ServicesGridSection
+      {/* <ServicesGridSection
         services={CMSServices}
         headdingBlack={"CMS Platform"}
         headingBlue={"Growth Services"}
+      /> */}
+      <ServicesLinks
+        services={CMSServices}
+        headdingBlack={"CMS Platform"}
+        headingBlue={"Growth Services"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
 
       <ServicesTwoGridDescriptionAndImage

@@ -11,6 +11,7 @@ import {
 } from "./HealthcareAgencyData";
 import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function HealthcareAgency() {
   return (
@@ -47,10 +48,16 @@ function HealthcareAgency() {
         ctaHref={StrategyContentHealthcare.ctaHref}
       />
 
-      <ServicesGridSection
+      {/* <ServicesGridSection
         services={HealthcareServices}
         headdingBlack={"Better Patient"}
         headingBlue={"Growth Services"}
+      /> */}
+      <ServicesLinks
+        services={HealthcareServices}
+        headdingBlack={"Industries "}
+        headingBlue={"We Serve"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
 
       <ServicesTwoGridDescriptionAndImage

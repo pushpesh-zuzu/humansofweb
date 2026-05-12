@@ -12,8 +12,9 @@ import {
   // PlasticSurgeonServices,
   // brandTrustPara,
 } from "./OphthalmologyAgencyData";
-import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
+// import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function OphthalmologyAgency() {
   return (
@@ -47,10 +48,16 @@ function OphthalmologyAgency() {
         ctaLabel={StrategyContentOphthalmology.ctaLabel}
         ctaHref={StrategyContentOphthalmology.ctaHref}
       />
-      <ServicesGridSection
+      {/* <ServicesGridSection
         services={OphthalmologyServices}
         headdingBlack={"Eye Care"}
         headingBlue={"Growth Services"}
+      /> */}
+      <ServicesLinks
+        services={OphthalmologyServices}
+        headdingBlack={"Eye Care"}
+        headingBlue={"Growth Services"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
       <ServicesTwoGridDescriptionAndImage
         background="#fafafa"

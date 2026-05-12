@@ -34,18 +34,35 @@ export const HealthcareServices = [
     description:
       "We help your practice appear when patients search for care, treatments, or specialists. Our focus is on bringing people who are actively looking for trusted healthcare services.",
     icon: <ECommerceSeoIcon />,
+    link: "/healthcare-seo-services",
   },
   {
     title: "Healthcare PPC",
     description:
       "We run targeted campaigns that connect you with patients ready to book appointments. Every campaign is designed to drive meaningful inquiries, not just traffic.",
     icon: <ECommerceSeoIcon />,
+    link: "/healthcare-ppc-services",
   },
   {
     title: "Healthcare Website Design & Development",
     description:
       "We create websites that feel clear, accessible, and reassuring. Every detail is designed to help patients understand your services and feel confident choosing your care.",
     icon: <ECommerceSeoIcon />,
+    link: "/healthcare-website-design-development-services",
+  },
+  {
+    title: "Healthcare Link Building",
+    description:
+      "We strengthen your online authority with high-quality healthcare backlinks that improve search visibility and help more patients discover your practice online.",
+    icon: <ECommerceSeoIcon />,
+    link: "/healthcare-link-building-services",
+  },
+  {
+    title: "Healthcare Social Media Marketing",
+    description:
+      "We help healthcare brands build trust and engage patients through meaningful social media strategies that increase awareness, credibility, and patient connections.",
+    icon: <ECommerceSeoIcon />,
+    link: "/healthcare-social-media-marketing-services",
   },
 ];
 export const brandTrustParaHealthcare = [

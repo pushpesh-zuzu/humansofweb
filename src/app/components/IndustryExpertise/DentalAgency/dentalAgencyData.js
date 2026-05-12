@@ -24,30 +24,35 @@ export const servicesDental = [
     description:
       "We optimize your clinic for local search so patients actively looking for dental care can easily find and choose you over competitors.",
     icon: <DentalSEO className="h-16 w-16" />,
+    link: "/dental-seo-services",
   },
   {
     title: "Dental PPC That Fills Appointment Slots",
     description:
       "Targeted Google and Meta ads designed to bring real appointment bookings, not just clicks or empty traffic.",
     icon: <DentalPPC className="h-16 w-16" />,
+    link: "/dental-ppc-services",
   },
   {
     title: "Dental Website Development That Builds Trust",
     description:
       "Fast, mobile-friendly, and patient-focused websites that create the right first impression and turn visitors into booked appointments.",
     icon: <DentalWebsite className="h-16 w-16" />,
+    link: "/dental-website-design-development-services",
   },
   {
     title: "Dental Social Media Marketing That Connects Patients",
     description:
       "Engaging content and consistent posting that helps your clinic stay visible, relatable, and trusted across social platforms.",
     icon: <DentalSocialMedia className="h-16 w-16" />,
+    link: "/dental-social-media-marketing-services",
   },
   {
     title: "Dental Reputation Management That Builds Trust",
     description:
       "We help you manage reviews and online presence so patients see your clinic as credible, trusted, and highly recommended.",
     icon: <DentalReputation className="h-16 w-16" />,
+    link: "/dental-reputation-management-services",
   },
 ];
 export const marketingServicesParaDental = [

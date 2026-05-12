@@ -9,8 +9,9 @@ import {
   CRMServices,
   StrategyContentCRM,
 } from "./CRMAgencyData";
-import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
+// import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function CRMAgency() {
   return (
@@ -47,10 +48,17 @@ function CRMAgency() {
         ctaHref={StrategyContentCRM.ctaHref}
       />
 
-      <ServicesGridSection
+      {/* <ServicesGridSection
         services={CRMServices}
         headdingBlack={"Business Process"}
         headingBlue={"Growth Services"}
+      /> */}
+
+      <ServicesLinks
+        services={CRMServices}
+        headdingBlack={"Business Process"}
+        headingBlue={"Growth Services"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
 
       <ServicesTwoGridDescriptionAndImage

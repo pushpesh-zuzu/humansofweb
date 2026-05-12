@@ -31,54 +31,63 @@ export const services = [
     description:
       "We help your products get discovered by the right people at the right time. Our SEO approach focuses on real search intent, so your store attracts visitors who are ready to buy — not just browse.",
     icon: <ECommerceSeoIcon />,
+    link: "/ecommerce-seo-services",
   },
   {
     title: "E-Commerce Website Development",
     description:
       "We create online stores that feel effortless to use. From smooth navigation to fast-loading pages, every detail is designed to make shopping simple and enjoyable for your customers.",
     icon: <ECommerceDevelopment />,
+    link: "/ecommerce-website-design",
   },
   {
     title: "E-Commerce PPC",
     description:
       "We run highly targeted ad campaigns that don’t just bring traffic — they bring buyers. Every campaign is optimized to maximize returns and make your ad spend work smarter.",
     icon: <ECommercePPC />,
+    link: "/ecommerce-ppc-services",
   },
   {
     title: "E-Commerce GEO Services",
     description:
       "We help your business reach customers in the locations that matter most. Whether local or global, we tailor strategies that connect your store with the right audience geographically.",
     icon: <ECommerceGEO />,
+    link: "/ecommerce-geo-services",
   },
   {
     title: "E-Commerce Social Media Marketing",
     description:
       "We turn your brand into conversations people want to be part of. By creating relatable and engaging content, we help you build trust and stay connected with your audience daily.",
     icon: <ECommerceSocial />,
+    link: "/ecommerce-social-media-marketing",
   },
   {
     title: "E-Commerce CRO",
     description:
       "We improve how your visitors interact with your store — removing friction, simplifying decisions, and guiding them toward completing purchases with confidence.",
     icon: <ECommerceCRO />,
+    link: "/ecommerce-cro",
   },
   {
     title: "E-Commerce Email Marketing",
     description:
       "We create email experiences that feel personal, not promotional. From welcome flows to re-engagement campaigns, we help you stay connected and bring customers back.",
     icon: <ECommerceGmail />,
+    link: "/ecommerce-email-marketing",
   },
   {
     title: "E-Commerce Content Marketing",
     description:
       "We tell your brand’s story in a way that connects. Our content builds trust, answers questions, and helps customers feel confident about choosing you.",
     icon: <ECommerceContentMarketing />,
+    link: "/ecommerce-content-marketing",
   },
   {
     title: "Amazon Marketing",
     description:
       "We help your products stand out in crowded marketplaces like Amazon. From listings to ads, we make sure your brand gets noticed and chosen.",
     icon: <ECommerceAmazon />,
+    link: "/amazon-marketing",
   },
 ];
 

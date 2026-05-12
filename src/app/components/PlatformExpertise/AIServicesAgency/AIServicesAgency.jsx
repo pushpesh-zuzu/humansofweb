@@ -9,8 +9,9 @@ import {
   AIServices,
   StrategyContentAI,
 } from "./AIServicesAgencyData";
-import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
+// import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function AIServicesAgency() {
   return (
@@ -47,10 +48,17 @@ function AIServicesAgency() {
         ctaHref={StrategyContentAI.ctaHref}
       />
 
-      <ServicesGridSection
+      {/* <ServicesGridSection
+          services={AIServices}
+          headdingBlack={"AI Powered"}
+          headingBlue={"Growth Services"}
+      /> */}
+
+      <ServicesLinks
         services={AIServices}
         headdingBlack={"AI Powered"}
         headingBlue={"Growth Services"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
 
       <ServicesTwoGridDescriptionAndImage

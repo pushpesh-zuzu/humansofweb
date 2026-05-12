@@ -18,6 +18,7 @@ import {
 import HeroSectionServices from "../../common/Services/HeroSectionServices/HeroSectionServices";
 import PillarsSection from "../../common/Services/PillarSection/PillarSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function Ecommerce() {
   return (
@@ -46,11 +47,17 @@ function Ecommerce() {
         ctaLabel={StrategyContentEcommerce.ctaLabel}
         ctaHref={StrategyContentEcommerce.ctaHref}
       />
-      <ServicesGridSection
+      {/* <ServicesGridSection
         services={services}
         headdingBlack={"eCommerce Solutions "}
         headingBlue={"We Offer"}
-        // description={marketingServicesPara}
+      // description={marketingServicesPara}
+      /> */}
+      <ServicesLinks
+        services={services}
+        headdingBlack={"eCommerce Solutions "}
+        headingBlue={"We Offer"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
       {/* //done */}
       {/* <ServicesTwoGridDescriptionAndImage

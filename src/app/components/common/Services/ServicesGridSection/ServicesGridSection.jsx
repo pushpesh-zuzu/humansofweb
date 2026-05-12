@@ -11,17 +11,17 @@ export default function ServicesGridSection({
   headingBlue,
   description,
   services = [],
-  background="#fff"
+  background = "#fff"
 }) {
   return (
     <ContainerWrapper background={background}>
       <PaddingWrapper2>
         {/* Heading */}
-          <H2HeadingWrapper
-            headdingBlack={headdingBlack}
-            headingBlue={headingBlue}
-            multiParagraph={description}
-          />
+        <H2HeadingWrapper
+          headdingBlack={headdingBlack}
+          headingBlue={headingBlue}
+          multiParagraph={description}
+        />
 
         {/* Grid */}
         <div className="grid gap-5 md:gap-10  md:grid-cols-2 lg:grid-cols-3">
@@ -37,10 +37,11 @@ export default function ServicesGridSection({
               <div className="flex gap-4 items-center">
                 <div className="mb-4">{item.icon}</div>
 
-              {/* Title */}
-              <h3 className="text-h5 font-semibold mb-2 text-primary group-hover:underline">
-                {item.title}
-              </h3></div>
+                {/* Title */}
+                <h3 className="text-h5 font-semibold mb-2 text-primary group-hover:underline">
+                  {item.title}
+                </h3>
+              </div>
 
               {/* Description */}
               <p className="p-default mb-3">{item.description}</p>

@@ -9,8 +9,9 @@ import {
   PlasticSurgeonServices,
   brandTrustPara,
 } from "./plasticSurgeonAgencyData";
-import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
+// import ServicesGridSection from "../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../common/Services/ReachWithUs/ReachWithUs";
+import ServicesLinks from "../../common/ServicesLinks/ServicesLinks";
 
 function PlasticSurgeonAgency() {
   return (
@@ -43,10 +44,16 @@ function PlasticSurgeonAgency() {
         ctaLabel={StrategyContentPlasticSurgeon.ctaLabel}
         ctaHref={StrategyContentPlasticSurgeon.ctaHref}
       />
-      <ServicesGridSection
+      {/* <ServicesGridSection
         services={PlasticSurgeonServices}
         headdingBlack={"Patient First  "}
         headingBlue={"We Offer Services"}
+      /> */}
+      <ServicesLinks
+        services={PlasticSurgeonServices}
+        headdingBlack={"Patient First  "}
+        headingBlue={"We Offer Services"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
       <ServicesTwoGridDescriptionAndImage
         background="#fafafa"

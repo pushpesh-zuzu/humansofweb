@@ -32,6 +32,7 @@ const SERVICES = [
         highlight: false,
         icon: Global,
     },
+    
 ]
 
 const borderGradient = (reverse) => `linear-gradient(

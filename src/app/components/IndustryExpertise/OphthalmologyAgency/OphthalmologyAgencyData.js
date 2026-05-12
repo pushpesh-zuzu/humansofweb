@@ -36,18 +36,21 @@ export const OphthalmologyServices = [
     description:
       "We help your clinic appear when patients search for eye care, from vision problems to treatments. Our focus is on bringing people who are actively looking for trusted ophthalmology services.",
     icon: <OphthalmologySeoIcon />,
+    link: "/ophthalmology-seo-services",
   },
   {
     title: "Ophthalmology PPC",
     description:
       "We run targeted campaigns that connect you with patients ready to book consultations. Every campaign is designed to bring real inquiries, not just clicks or traffic.",
     icon: <OphthalmologyPPCIcon />,
+    link: "/ophthalmology-ppc-services",
   },
   {
     title: "Ophthalmology Website Design & Development",
     description:
       "We create websites that feel clear, simple, and reassuring. Every detail is designed to help patients understand your services and feel confident choosing your clinic.",
     icon: <OphthalmologyWebsitIcon />,
+    link: "/ophthalmology-website-design-services",
   },
 ];
 
