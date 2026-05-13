@@ -99,7 +99,7 @@ const NAV_ITEMS = [
       },
       {
         label: "Legal",
-        href: "/law-firm-digital-marketing",
+        href: "/law-firm-digital-Zohomarketing",
         subItems: [
           { label: "Legal SEO", href: "#" },
           { label: "Legal PPC", href: "#" },
@@ -123,9 +123,9 @@ const NAV_ITEMS = [
         label: "CRM Customisation Services",
         href: "/crm-customisation-digital-marketing-agency",
         subItems: [
-          { label: "Zoho", href: "#" },
-          { label: "Vtiger CRM", href: "#" },
-          { label: "Hubspot CRM", href: "#" },
+          { label: "Zoho", href: "/crm-zoho" },
+          { label: "Vtiger CRM", href: "/crm-vtiger" },
+          { label: "Hubspot CRM", href: "/crm-hubspot" },
         ],
       },
       {
