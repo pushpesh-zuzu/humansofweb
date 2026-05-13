@@ -25,7 +25,7 @@ function HubspotCRMCustomization() {
       <HeroSectionServices
         heading1="Custom HubSpot CRM"
         heading2="Solutions For Growth"
-        bgImag="/CRMCustomization/HubspotCRM/hubspotHero.webp"
+        bgImag="/PlatformExpertise/HubspotCRM/hubspotHero.webp"
         description1="HubSpot CRM helps businesses manage marketing, sales, and customer relationships, but every company follows different processes, reporting structures, and automation requirements."
         description2="At Humans of Web, we customize HubSpot CRM around your business operations, helping teams automate workflows, improve lead management, and scale customer engagement."
         altText="HubSpot CRM Customization Agency"
@@ -38,7 +38,7 @@ function HubspotCRMCustomization() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%, rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Growth Focused"
         headingBlue="HubSpot CRM Customization"
-        image="/CRMCustomization/HubspotCRM/hubspot1.webp"
+        image="/PlatformExpertise/HubspotCRM/hubspot1.webp"
         paragraphs={marketAnalyzerParaHubspot}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -82,7 +82,7 @@ function HubspotCRMCustomization() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses Choose Us"
         headingBlue="For HubSpot CRM"
-        image="/CRMCustomization/HubspotCRM/hubspot2.webp"
+        image="/PlatformExpertise/HubspotCRM/hubspot2.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaHubspot}

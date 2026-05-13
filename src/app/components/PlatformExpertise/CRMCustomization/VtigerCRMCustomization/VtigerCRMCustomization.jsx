@@ -25,7 +25,7 @@ function VtigerCRMCustomization() {
       <HeroSectionServices
         heading1="Custom Vtiger CRM"
         heading2="Solutions For Teams"
-        bgImag="/CRMCustomization/VtigerCRM/vtigerHero.webp"
+        bgImag="/PlatformExpertise/VtigerCRM/vtigerHero.webp"
         description1="Vtiger CRM helps businesses manage leads, sales, support, and customer communication, but every business follows a different workflow and operational process."
         description2="At Humans of Web, we customize Vtiger CRM around your business operations, helping teams automate tasks, improve visibility, and streamline customer management."
         altText="Vtiger CRM Customization Agency"
@@ -38,7 +38,7 @@ function VtigerCRMCustomization() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%, rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Workflow Focused"
         headingBlue="Vtiger CRM Customization"
-        image="/CRMCustomization/VtigerCRM/vtiger1.webp"
+        image="/PlatformExpertise/VtigerCRM/vtiger1.webp"
         paragraphs={marketAnalyzerParaVtiger}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -81,7 +81,7 @@ function VtigerCRMCustomization() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses Choose Us"
         headingBlue="For Vtiger CRM"
-        image="/CRMCustomization/VtigerCRM/vtiger2.webp"
+        image="/PlatformExpertise/VtigerCRM/vtiger2.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaVtiger}
