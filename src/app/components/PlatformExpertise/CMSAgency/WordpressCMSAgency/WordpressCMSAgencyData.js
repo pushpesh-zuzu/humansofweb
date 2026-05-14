@@ -45,9 +45,9 @@ export const brandTrustParaWordpress = [
 
   "We build WordPress websites that feel clean, intuitive, and easy to navigate — helping visitors focus on your content, products, or services without distractions.",
 
-  "Our focus is not only on bringing traffic to your website, but also on creating experiences that encourage users to stay longer, explore more pages, and take meaningful action.",
+  // "Our focus is not only on bringing traffic to your website, but also on creating experiences that encourage users to stay longer, explore more pages, and take meaningful action.",
 
-  "The result is a faster, more reliable website experience that supports visibility, trust, and consistent business growth."
+  // "The result is a faster, more reliable website experience that supports visibility, trust, and consistent business growth."
 ];
 
 // ─────────────────────────────────────────────────────────────

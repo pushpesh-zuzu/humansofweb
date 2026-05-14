@@ -43,6 +43,8 @@ function ShopifyCMSAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
+
       />
       <ScrollTimeline
         items={SHOPIFY_PPC_TIMELINE}
@@ -88,6 +90,8 @@ function ShopifyCMSAgency() {
         paragraphs={brandTrustParaShopify}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
+
       />
       <FaqComponent
         title="Frequently asked questions"

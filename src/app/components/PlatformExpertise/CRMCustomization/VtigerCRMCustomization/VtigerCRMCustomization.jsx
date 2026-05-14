@@ -43,6 +43,7 @@ function VtigerCRMCustomization() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <ScrollTimeline
@@ -87,6 +88,7 @@ function VtigerCRMCustomization() {
         paragraphs={brandTrustParaVtiger}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent

@@ -42,6 +42,7 @@ function ZohoCRMCustomizationAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <ScrollTimeline
@@ -50,6 +51,7 @@ function ZohoCRMCustomizationAgency() {
         headingBlue="Zoho CRM Systems"
         buttonText="Schedule A Free Consultation"
         background="#fafafa"
+        
       />
 
       <Interactivecontent
@@ -88,6 +90,7 @@ function ZohoCRMCustomizationAgency() {
         paragraphs={brandTrustParaZoho}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent

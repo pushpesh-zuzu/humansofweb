@@ -1,6 +1,7 @@
 
 import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
 import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
+import { AICodingIntegrationIcon, AIDocumentationIcon, AITestingIcon, AIWorkflowOptimizationIcon, CustomDevWorkflowIcon, DevProductivityIcon } from "./Kilocodeaiserviceicons";
 
 export const KILOCODE_MARKET_PARA = [
   "Modern development teams need to ship features faster while maintaining clean architecture, scalability, and code quality across projects.",
@@ -89,37 +90,37 @@ export const KILOCODE_FEATURES = [
     title: "AI Coding Integration",
     description:
       "We integrate AI coding systems into modern development environments to improve software engineering productivity.",
-    icon: <ECommerceSeoIcon />,
+    icon: <AICodingIntegrationIcon />,
   },
   {
     title: "Custom Development Workflows",
     description:
       "We build AI-assisted workflows tailored to your team's coding standards, project requirements, and development stack.",
-    icon: <ECommerceSeoIcon />,
+    icon: <CustomDevWorkflowIcon />,
   },
   {
     title: "AI Documentation Systems",
     description:
       "We automate technical documentation generation and internal engineering knowledge management using AI workflows.",
-    icon: <ECommerceSeoIcon />,
+    icon: <AIDocumentationIcon />,
   },
   {
     title: "Developer Productivity Automation",
     description:
       "We help engineering teams reduce repetitive work and accelerate development cycles using AI-assisted systems.",
-    icon: <ECommerceSeoIcon />,
+    icon: <DevProductivityIcon />,
   },
   {
     title: "AI Testing Assistance",
     description:
       "We implement AI-supported testing workflows that help improve software quality and reduce manual QA effort.",
-    icon: <ECommerceSeoIcon />,
+    icon: <AITestingIcon />,
   },
   {
     title: "AI Workflow Optimization",
     description:
       "We optimize AI development systems to improve efficiency, maintain consistency, and support scalable engineering operations.",
-    icon: <ECommerceSeoIcon />,
+    icon: <AIWorkflowOptimizationIcon />,
   },
 ];
 

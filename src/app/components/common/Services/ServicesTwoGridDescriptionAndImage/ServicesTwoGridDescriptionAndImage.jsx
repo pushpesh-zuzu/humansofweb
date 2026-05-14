@@ -29,7 +29,8 @@ export default function ServicesTwoGridDescriptionAndImage({
   isImageSmall = false,
   paragraphTextColor = false,
   href = "",
-  marginBottom = ""
+  marginBottom = "",
+  imageClass='h-full max-h-[540px] md:w-[85%]'
 }) {
   const [expanded, setExpanded] = useState(false);
   const [proposalOpen, setProposalOpen] = useState(false);
@@ -65,7 +66,7 @@ export default function ServicesTwoGridDescriptionAndImage({
               initial={{ opacity: 0, x: reverse ? 30 : -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className={`flex justify-center lg:self-stretch lg:items-center ${
+              className={`flex justify-center lg:self-stretch ${reverse ? 'lg:items-startś': 'lg:items-center'} ${
                 isHeadingInGridSection ? "lg:translate-y-[70px]" : ""
               }`}
             >
@@ -75,7 +76,7 @@ export default function ServicesTwoGridDescriptionAndImage({
                   alt="industry"
                   width={540}
                   height={380}
-                  className="object-contain rounded-[32px] h-full max-h-[540px] md:w-[85%]"
+                  className={`object-contain rounded-[32px] ${imageClass} `}
                 />
               </div>
             </motion.div>
@@ -92,7 +93,7 @@ export default function ServicesTwoGridDescriptionAndImage({
                   headdingBlack={headdingBlack}
                   headingBlue={headingBlue}
                   subHeading={subheading}
-                  breakLine={breakLine}
+                  breakLine={true}
                   padding="pb-[35px] md:pb-[60px]"
                   // headingBlueColor={headingBlueColor}
                   headingBlackColor={headingBlackColor}
@@ -138,16 +139,21 @@ export default function ServicesTwoGridDescriptionAndImage({
               })}
 
               {/* CTA */}
+
+             
               {ctaText && (
-                // <button className="mt-4 button-primary bg-secondary outline-none  hover:bg-white border-transparent hover:text-secondary text-white hover:border hover:border-secondary ">
+             <div className='flex justify-center md:justify-start'>
+                {/* // <button className="mt-4 button-primary bg-secondary outline-none  hover:bg-white border-transparent hover:text-secondary text-white hover:border hover:border-secondary ">
                 //   {ctaText}
-                // </button>
+                // </button> */}
+                  
                 <GetYourFreeConsultationButton
                   href={href}
                   onClick={!href ? () => setProposalOpen(true) : undefined}
                   text={ctaText}
                   className="mt-2 md:mt-6 cursor-pointer" />
-              )}
+                </div>
+                )}
             </motion.div>
           </div>
           {bottomParagraph &&

@@ -23,7 +23,7 @@ function ChatGPTAI() {
       <HeroSectionServices
         heading1="AI Automation Solutions"
         heading2="Powered By ChatGPT"
-        bgImag="/PlatformExpertise/AI/chatgptHero.webp"
+        bgImag="/PlatformExpertise/ArtificialIntelligencyAgency/chatgptHero.webp"
         description1="Businesses use ChatGPT to automate support, streamline workflows, generate content, and improve customer communication across multiple channels."
         description2="At Humans of Web, we help brands integrate ChatGPT solutions that improve productivity, reduce manual work, and create scalable AI-driven experiences."
         altText="ChatGPT AI Solutions"
@@ -36,11 +36,13 @@ function ChatGPTAI() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Smart Automation With"
         headingBlue="ChatGPT AI"
-        image="/PlatformExpertise/AI/chatgpt1.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/chatgpt1.webp"
         paragraphs={CHATGPT_MARKET_PARA}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
+        
       />
 
       <ScrollTimeline
@@ -73,12 +75,13 @@ function ChatGPTAI() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses Choose"
         headingBlue="ChatGPT Automation"
-        image="/PlatformExpertise/AI/chatgpt2.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/chatgpt2.webp"
         limit={5}
         headingColor={false}
         paragraphs={CHATGPT_TRUST_PARA}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent
