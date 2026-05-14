@@ -34,9 +34,9 @@ export default function DropdownMenu({ items, open }) {
               itemRefs.current[idx] = element;
             }}
           >
-            {item.subItems ? (
+            {item.subItems?.length > 0 ? (
               <Link
-              href={item?.href? item.href :""}
+                href={item?.href ? item.href : ""}
                 onMouseEnter={() => setActiveItem(idx)}
                 onClick={() => setActiveItem(idx)}
                 className={`w-full text-left flex items-center justify-between gap-4 px-5 py-3 text-sm font-medium text-white transition-colors duration-200
@@ -63,6 +63,7 @@ export default function DropdownMenu({ items, open }) {
             ) : (
               <Link
                 href={item.href ?? "#"}
+                onMouseEnter={() => setActiveIndex(null)}
                 className="block px-5 py-3 text-sm font-medium text-white hover:bg-[#f4758a]"
               >
                 {item.label}

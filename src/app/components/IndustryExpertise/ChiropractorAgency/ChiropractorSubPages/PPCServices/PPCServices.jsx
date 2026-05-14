@@ -7,6 +7,21 @@ import ServicesTwoGridSection from '@/app/components/common/SubServices/Services
 import WorkWithCards from '@/app/components/common/SubServices/WorkWithCards/WorkWithCards'
 import TrustedBy from '@/app/components/common/TrustedBy/TrustedBy'
 import CustomGeneration from '@/app/components/Home/CustomGeneration'
+import TailoredPPC from "../../../../common/Icons/healthcare/tailored-ppc-growth-strategies.svg";
+import ABBetterPerformance from "../../../../common/Icons/healthcare/ab-better-performance.svg";
+import CompellingCopy from "../../../../common/Icons/healthcare/compelling-ad-copy-creation.svg";
+import ConversionFocused from "../../../../common/Icons/healthcare/conversion-focused-landing-pages.svg";
+import DataDriven from "../../../../common/Icons/healthcare/data-driven-campaign-optimization.svg";
+import StrategicKeyword from "../../../../common/Icons/healthcare/strategic-keyword-targeting.svg";
+import HighIntentMedical from "../../../../common/Icons/healthcare/high-intent-medical-ads.svg";
+import KeywordDriven from "../../../../common/Icons/healthcare/keyword-driven-search-campaigns.svg";
+import MultiformPlatformAd from "../../../../common/Icons/healthcare/multi-platform-ad-reach.svg";
+import TargetedSocial from "../../../../common/Icons/healthcare/targeted-social-media-campaigns.svg";
+import EngagingDisplay from "../../../../common/Icons/healthcare/engaging-display.svg";
+import ScalePerformance from "../../../../common/Icons/healthcare/scale-performance-with-data.svg";
+import OptimizeConversion from "../../../../common/Icons/healthcare/optimize-conversion-pathways.svg";
+import BuildTargeting from "../../../../common/Icons/healthcare/build-precision-targeting-strategy.svg";
+import UnderstandPatient from "../../../../common/Icons/healthcare/understand-your-patient-audience.svg";
 
 
 const CHIROPRACTOR_PPC_MANAGEMENT = [
@@ -22,31 +37,37 @@ const WORK_WITH_CARDS = [
     title: "Local PPC Campaign Strategies",
     description:
       "We create targeted PPC campaigns that help chiropractic clinics reach nearby patients searching for chiropractic treatments and wellness services.",
+      icon: StrategicKeyword,
   },
   {
     title: "High-Intent Audience Targeting",
     description:
       "Our PPC specialists focus on reaching users actively looking for chiropractic care, helping generate qualified leads and stronger conversion opportunities.",
+      icon: HighIntentMedical,
   },
   {
     title: "Conversion-Focused Landing Pages",
     description:
       "We optimize landing pages to improve user engagement, encourage appointment bookings, and turn ad traffic into real patient inquiries.",
+      icon: ConversionFocused,
   },
   {
     title: "Advanced Ad Performance Optimization",
     description:
       "We continuously refine ad creatives, bidding strategies, and targeting settings to improve campaign performance and maximize advertising results.",
+      icon: EngagingDisplay,
   },
   {
     title: "Transparent PPC Reporting",
     description:
       "Our detailed reporting helps chiropractic clinics track leads, conversions, and campaign growth with clear insights into advertising performance.",
+      icon: ABBetterPerformance,
   },
   {
     title: "Long-Term Patient Acquisition",
     description:
       "We build scalable PPC strategies designed to increase patient appointments, strengthen online visibility, and support sustainable clinic growth.",
+      icon: TailoredPPC,
   }
 ];
 
@@ -55,31 +76,37 @@ const SERVICE_GRID_ITEMS = [
     title: "Local Chiropractic Ad Campaigns",
     description:
       "We create highly targeted PPC campaigns that help chiropractic clinics reach nearby patients searching for pain relief and wellness treatments.",
+      icon: TargetedSocial,
   },
   {
     title: "Patient-Intent Keyword Targeting",
     description:
       "Our PPC specialists focus on high-converting search terms that connect your clinic with people actively looking for chiropractic care services.",
+        icon: KeywordDriven,
   },
   {
     title: "Lead-Driven Landing Page Optimization",
     description:
       "We optimize landing pages to improve user engagement, build trust, and increase appointment inquiries from paid advertising traffic.",
+      icon: ConversionFocused,
   },
   {
     title: "Geo-Targeted PPC Advertising",
     description:
       "Our location-based ad strategies help chiropractic clinics appear in front of potential patients within targeted service areas and local communities.",
+      icon: TargetedSocial,
   },
   {
     title: "Campaign Performance Management",
     description:
       "We continuously monitor ad performance, optimize bidding strategies, and improve targeting to maximize lead generation and advertising ROI.",
+      icon: DataDriven,
   },
   {
     title: "Remarketing & Patient Retargeting",
     description:
       "We use retargeting campaigns to reconnect with interested visitors and encourage them to return and book chiropractic appointments.",
+      icon: MultiformPlatformAd,
   },
 ];
 
@@ -89,30 +116,35 @@ const STEPS = [
     title: "Identify Local Patient Search Trends",
     description:
       "We research chiropractic-related search behavior and local keywords to help your ads reach patients actively looking for chiropractic care services.",
+      icon: UnderstandPatient,
   },
   {
     step: "02",
     title: "Build High-Converting PPC Campaigns",
     description:
-      "Our team creates customized PPC campaigns focused on chiropractic treatments, local targeting, and patient acquisition to improve lead quality and campaign performance.",
+      "Our team creates customized PPC campaigns focused on chiropractic treatments, local targeting, and patient acquisition to improve lead quality and performance.",
+      icon: BuildTargeting,
   },
   {
     step: "03",
     title: "Create Persuasive Ad Copy",
     description:
       "We develop engaging ad messaging that highlights your chiropractic expertise, treatment benefits, and patient-focused services to drive more clicks and inquiries.",
+      icon: CompellingCopy,
   },
   {
     step: "04",
     title: "Enhance Landing Page User Experience",
     description:
-      "We optimize landing pages with strong calls-to-action, faster performance, engaging patient-focused content, and user-friendly layouts designed to increase appointment bookings.",
+      "We optimize landing pages with strong calls-to-action, faster performance, patient-focused content, and user-friendly layouts designed to increase appointment bookings.",
+      icon: OptimizeConversion,
   },
   {
     step: "05",
     title: "Track Results & Refine Campaigns",
     description:
       "We continuously monitor campaign metrics, improve targeting strategies, and optimize ad performance to maximize ROI and support long-term clinic growth.",
+      icon: ScalePerformance,
   },
 ];
 

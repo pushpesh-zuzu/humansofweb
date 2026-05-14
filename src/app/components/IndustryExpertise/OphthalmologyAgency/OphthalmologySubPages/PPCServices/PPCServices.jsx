@@ -211,14 +211,12 @@ const PPCServices = () => {
                 showCards={3}
                 ctaText="Start Growing With PPC"
                 ctaHref=""
-                backgroundImage="/IndustryExpertise/seo-banner.webp"
                 padding='py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20'
             />
             <ServiceGridSection
                 title="Essential Strategies For"
                 highlightedTitle="Ophthalmology PPC Success"
                 services={SERVICE_GRID_ITEMS}
-                backgroundImage="/IndustryExpertise/seo-banner.webp"
                 ctaText="Increase Eye Care Appointments"
                 ctaHref=""
             />

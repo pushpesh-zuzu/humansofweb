@@ -37,30 +37,35 @@ export const ChiropractorServices = [
     description:
       "We help your clinic appear when people search for pain relief, posture correction, or chiropractic care, bringing in patients who are actively looking for treatment.",
     icon: <ChiropractorSEO />,
+    link: "/chiropractor-seo-services",
   },
   {
     title: "Chiropractor PPC",
     description:
       "We run targeted ad campaigns that connect you with patients ready to book, focusing on generating real appointment inquiries instead of just clicks.",
     icon: <ChiropractorPPC />,
+    link: "/chiropractor-ppc-services",
   },
   {
     title: "Chiropractor Website Design & Development",
     description:
       "We build websites that feel clear and reassuring, helping patients understand your treatments and feel comfortable choosing your clinic.",
     icon: <ChiropractorWebsiteDesignDevelopment />,
+    link: "/chiropractor-website-design-development-services",
   },
   {
     title: "Chiropractor Social Media Marketing",
     description:
       "We create content that educates and engages your audience, helping you stay connected with patients and build trust through consistent visibility.",
     icon: <ChiropractorSocialMediaMarketing />,
+    link: "/chiropractor-social-media-marketing-services",
   },
   {
     title: "Chiropractor Reputation Management",
     description:
       "We help you strengthen your online reputation by managing reviews and patient feedback, building trust that encourages more people to choose your clinic.",
     icon: <ChiropractorReputationManagement />,
+    link: "/chiropractor-reputation-management-services",
   },
 ];
 export const brandTrustParaChiropractor = [

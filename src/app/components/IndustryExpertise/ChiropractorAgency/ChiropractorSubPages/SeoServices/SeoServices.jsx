@@ -14,6 +14,11 @@ import PatientIntentKeyword from "../../../../common/Icons/healthcare/patient-in
 import ServicePageOptimization from "../../../../common/Icons/healthcare/service-page-optimization.svg";
 import WebsiteOptimization from "../../../../common/Icons/healthcare/content-website-optimization.svg";
 import SeoAuthority from "../../../../common/Icons/healthcare/seo-authority-growth.svg";
+import AnalyzeYourPresence from "../../../../common/Icons/healthcare/analyze-your-online-presence.svg";
+import ImprovePatientExperience from "../../../../common/Icons/healthcare/improve-patient-experience.svg";
+import MatchPatient from "../../../../common/Icons/healthcare/match-patient-search-intent.svg";
+import MeasureScale from "../../../../common/Icons/healthcare/measure-scale-growth.svg";
+import OptimizeService from "../../../../common/Icons/healthcare/optimize-service-visibility.svg";
 import UrologySeo from "../../../../common/Icons/healthcare/urology-seo.svg";
 import ChiropracticSeo from "../../../../common/Icons/healthcare/chiropractic-seo.svg";
 import DentalSeo from "../../../../common/Icons/healthcare/dental-seo.svg";
@@ -89,35 +94,35 @@ const CHIROPRACTOR_STEPS = [
         title: "Analyze Your Online Presence",
         description:
             "We evaluate your chiropractic website, local search visibility, and SEO performance to identify growth opportunities and improve online reach.",
-        icon: ""
+        icon: AnalyzeYourPresence
     },
     {
         step: "02",
-        title: "Optimize Chiropractic Service Pages",
+        title: "Optimize Service Pages",
         description:
             "We enhance your service pages, metadata, and website structure to help search engines better understand your chiropractic treatments and services.",
-        icon: ""
+        icon: OptimizeService
     },
     {
         step: "03",
         title: "Target Local Patient Searches",
         description:
             "Our SEO strategies focus on high-intent local keywords that help your practice connect with patients searching for chiropractic care nearby.",
-        icon: ""
+        icon: MatchPatient
     },
     {
         step: "04",
         title: "Improve Website Experience",
         description:
-            "We optimize website speed, mobile responsiveness, and navigation to create a smooth user experience that encourages patient inquiries.",
-        icon: ""
+            "We optimize website speed, mobile responsiveness, and navigation to create a smooth and engaging user experience that encourages patient inquiries.",
+        icon: ImprovePatientExperience
     },
     {
         step: "05",
         title: "Monitor Growth & Rankings",
         description:
             "We continuously track rankings, traffic, and conversions to refine SEO strategies and support long-term growth for your chiropractic practice.",
-        icon: ""
+        icon: MeasureScale
     },
 ];
 

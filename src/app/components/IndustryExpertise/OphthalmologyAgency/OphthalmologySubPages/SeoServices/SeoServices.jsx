@@ -279,13 +279,11 @@ const SeoServices = () => {
                 showCards={3}
                 ctaText="Increase Your Patient Reach"
                 ctaHref=""
-                backgroundImage="/IndustryExpertise/seo-banner.webp"
             />
             <ServiceGridSection
                 title="Our Proven SEO Process For"
                 highlightedTitle="Ophthalmology Growth"
                 services={OPHTHALMOLOGY_SERVICE_GRID_ITEMS}
-                backgroundImage="/IndustryExpertise/seo-banner.webp"
                 ctaText="Grow Your Ophthalmology Practice"
                 ctaHref=""
             />
