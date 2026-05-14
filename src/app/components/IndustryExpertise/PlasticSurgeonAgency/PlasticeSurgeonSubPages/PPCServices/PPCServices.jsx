@@ -189,19 +189,18 @@ const PPCServices = () => {
                 description2={
                     "Our performance-focused advertising strategies improve brand visibility, maximize campaign ROI, and help your clinic reach patients searching for cosmetic procedures."
                 }
-                bannerImage="/plasticSurgeon/plastic-surgeon-ppc-banner.webp"
+                bannerImage="/plasticSurgeon/hair-treatmen-bannert.webp"
                 altText={
                     "Plastic surgeon PPC services generating consultation leads and clinic growth through targeted advertising"
                 }
                 imageHeight="h-[180px] md:h-[373px]"
-                imageClass="object-cover object-center"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection
                 background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
                 headdingBlack="Work With PPC Specialists For"
                 headingBlue="Plastic Surgery Growth"
-                image="/plasticSurgeon/ppc-plastic-surgeon.webp"
+                image="/plasticSurgeon/surgeon-explaining.webp"
                 imageAltText="plastic surgeon PPC campaign strategy increasing consultation leads and online visibility"
                 paragraphs={PLASTIC_SURGEON_PPC_MANAGEMENT}
                 headingBlueColor="text-secondary"
