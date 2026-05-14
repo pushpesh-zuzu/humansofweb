@@ -150,7 +150,8 @@ const EmailMarketing = () => {
         description2={"Humans of Web combines strategy, copy, segmentation, flows, campaigns, and reporting so your owned channel becomes a reliable revenue engine."}
         bannerImage="/emailMarketing/email-banner.svg"
         altText={"email marketing strategy increasing customer lifetime value and repeat sales"}
-        imageHeight="h-[200px] md:h-[373px]"
+        imageHeight="h-[160px] md:h-[373px]"
+        imageClass="object-cover object-center lg:min-h-[405px]"
       />
       <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
       <ServicesTwoGridSection
@@ -158,6 +159,7 @@ const EmailMarketing = () => {
         headdingBlack="Email Marketing Built for"
         headingBlue="Retention and Revenue"
         image="/emailMarketing/email-marketing.svg"
+        imageAltText="ecommerce email marketing strategy and automation system"
         paragraphs={serviceParagraph}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"

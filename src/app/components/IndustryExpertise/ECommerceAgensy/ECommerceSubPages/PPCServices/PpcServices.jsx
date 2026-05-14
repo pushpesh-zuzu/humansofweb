@@ -68,7 +68,7 @@ const PpcServices = () => {
                 description2={"Our expert PPC strategies focus on your audience, campaigns, and goals to maximise ROI, increase visibility, and deliver scalable growth for your business."}
                 bannerImage="/ppcServices/ppc-banner.svg"
                 altText={"PPC management services boosting ecommerce sales and ROI through targeted ads"}
-                imageHeight="h-[210px] md:h-[373px]"
+                imageHeight="h-[200px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

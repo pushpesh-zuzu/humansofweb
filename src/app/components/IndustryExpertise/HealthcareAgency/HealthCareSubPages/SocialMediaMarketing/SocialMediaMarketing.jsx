@@ -185,7 +185,8 @@ const SocialMediaMarketing = () => {
                 description2={"From regular content to paid promotions, Humans of Web builds social media strategies that keep your practice visible, strengthen trust, and drive consistent patient engagement."}
                 bannerImage="/SocialMediaMarketing/healthcare-media-banner.svg"
                 altText={"healthcare social media marketing driving patient growth and engagement"}
-                imageHeight="h-[260px] md:h-[373px]"
+                imageHeight="h-[200px] md:h-[373px]"
+                imageClass="object-contain object-center"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

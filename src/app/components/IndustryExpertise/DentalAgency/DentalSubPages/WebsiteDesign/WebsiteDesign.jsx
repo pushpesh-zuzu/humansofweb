@@ -193,7 +193,7 @@ const WebsiteDesign = () => {
                 description2={"From design to functionality, we create fast, user-friendly dental websites that enhance patient experience, improve credibility, and help your practice grow with confidence."}
                 bannerImage="/websiteDesign/dental-website-banner.svg"
                 altText={"dental websites that build patient trust"}
-                imageHeight="h-[270px] md:h-[373px]"
+                imageHeight="h-[180px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

@@ -73,6 +73,7 @@ const SeoServices = () => {
                 description2={"Our tailored SEO strategies focus on your store, products, and customers to build a growth plan that delivers sustainable results and long-term success."}
                 bannerImage="/seoServices/seo.svg"
                 altText={"E-commerce SEO That Drives Sales"}
+                imageHeight="h-[200px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <SeoPerformance />

@@ -7,6 +7,22 @@ import ServicesTwoGridSection from '@/app/components/common/SubServices/Services
 import WorkWithCards from '@/app/components/common/SubServices/WorkWithCards/WorkWithCards'
 import TrustedBy from '@/app/components/common/TrustedBy/TrustedBy'
 import CustomGeneration from '@/app/components/Home/CustomGeneration'
+import TailoredPPC from "../../../../common/Icons/healthcare/tailored-ppc-growth-strategies.svg";
+import ABBetterPerformance from "../../../../common/Icons/healthcare/ab-better-performance.svg";
+import CompellingCopy from "../../../../common/Icons/healthcare/compelling-ad-copy-creation.svg";
+import ConversionFocused from "../../../../common/Icons/healthcare/conversion-focused-landing-pages.svg";
+import DataDriven from "../../../../common/Icons/healthcare/data-driven-campaign-optimization.svg";
+import StrategicKeyword from "../../../../common/Icons/healthcare/strategic-keyword-targeting.svg";
+import HighIntentMedical from "../../../../common/Icons/healthcare/high-intent-medical-ads.svg";
+import KeywordDriven from "../../../../common/Icons/healthcare/keyword-driven-search-campaigns.svg";
+import MultiformPlatformAd from "../../../../common/Icons/healthcare/multi-platform-ad-reach.svg";
+import TargetedSocial from "../../../../common/Icons/healthcare/targeted-social-media-campaigns.svg";
+import EngagingDisplay from "../../../../common/Icons/healthcare/engaging-display.svg";
+import ScalePerformance from "../../../../common/Icons/healthcare/scale-performance-with-data.svg";
+import OptimizeConversion from "../../../../common/Icons/healthcare/optimize-conversion-pathways.svg";
+import CraftHighImpact from "../../../../common/Icons/healthcare/craft-high-impact-ad-creatives.svg";
+import BuildTargeting from "../../../../common/Icons/healthcare/build-precision-targeting-strategy.svg";
+import UnderstandPatient from "../../../../common/Icons/healthcare/understand-your-patient-audience.svg";
 
 
 const OPHTHALMOLOGY_PPC_MANAGEMENT = [
@@ -22,37 +38,37 @@ const WORK_WITH_CARDS = [
         title: "Targeted PPC Campaign Setup",
         description:
             "We create customized Google Ads campaigns focused on eye care services, patient intent, and local targeting to generate high-quality leads for your practice.",
-        // icon: StrategicKeyword
+        icon: StrategicKeyword
     },
     {
         title: "Smart Keyword & Audience Targeting",
         description:
             "Our PPC specialists research high-converting keywords and audience behaviors to help your ophthalmology ads reach the right patients at the right time.",
-        // icon: CompellingCopy
+        icon: CompellingCopy
     },
     {
         title: "Landing Page Optimization",
         description:
             "We optimize landing pages for better user experience and stronger conversions, helping turn ad clicks into appointment inquiries and patient bookings.",
-        // icon: ConversionFocused
+        icon: ConversionFocused
     },
     {
         title: "Continuous Campaign Optimization",
         description:
             "We regularly refine ad copy, bidding strategies, and targeting settings to improve campaign performance and maximize your advertising ROI.",
-        // icon: DataDriven
+        icon: DataDriven
     },
     {
         title: "Performance Tracking & Reporting",
         description:
             "Our detailed PPC reports provide insights into leads, conversions, and campaign growth so you can clearly measure your marketing success.",
-        // icon: ABBetterPerformance
+        icon: ABBetterPerformance
     },
     {
         title: "Scalable PPC Growth Strategies",
         description:
             "We build long-term PPC strategies designed to increase patient acquisition, improve visibility, and support sustainable growth for your ophthalmology practice.",
-        // icon: TailoredPPC
+        icon: TailoredPPC
     }
 ];
 
@@ -61,37 +77,37 @@ const SERVICE_GRID_ITEMS = [
         title: "Targeted Eye Care Ads",
         description:
             "We create focused PPC ads for ophthalmology services that reach patients actively searching for eye exams, LASIK, cataract treatment, and vision care solutions.",
-        // icon: HighIntentMedical
+        icon: HighIntentMedical
     },
     {
         title: "High-Intent Keyword Campaigns",
         description:
             "Our keyword-driven campaigns target patients with strong search intent, helping your ophthalmology practice attract qualified traffic and appointment-ready leads.",
-        // icon: KeywordDriven
+        icon: KeywordDriven
     },
     {
         title: "Conversion-Focused Landing Pages",
         description:
             "We optimize landing pages to improve patient experience, increase trust, and convert ad clicks into consultation requests and booked appointments.",
-        // icon: EngagingDisplay
+        icon: ConversionFocused
     },
     {
         title: "Local PPC Advertising",
         description:
             "Our local targeting strategies help your eye care practice appear in front of nearby patients searching for ophthalmology services in your service area.",
-        // icon: VideoBased
+        icon: TargetedSocial
     },
     {
         title: "Google Ads Performance Optimization",
         description:
             "We continuously monitor and refine bids, ad copy, and targeting settings to improve campaign performance and maximize your advertising ROI.",
-        // icon: MultiformPlatformAd
+        icon: EngagingDisplay
     },
     {
         title: "Patient Retargeting Campaigns",
         description:
             "We re-engage interested visitors through retargeting ads that keep your ophthalmology services visible and encourage patients to return and book appointments.",
-        // icon: TargetedSocial
+        icon: MultiformPlatformAd
     },
 ];
 
@@ -101,35 +117,35 @@ const STEPS = [
         title: "Research High-Intent Eye Care Keywords",
         description:
             "We identify ophthalmology search terms patients use for treatments, helping your ads attract qualified and appointment-ready patients.",
-        // icon: UnderstandPatient
+        icon: UnderstandPatient
     },
     {
         step: "02",
         title: "Create Targeted PPC Campaigns",
         description:
-            "Our team builds customized Google Ads campaigns focused on your ophthalmology services, location, and patient demographics to improve lead quality and increase patient conversions consistently. ghdvfh",
-        // icon: BuildTargeting
+            "Our team builds customized Google Ads campaigns focused on your ophthalmology services, location, and patient demographics to improve lead quality and increase patient conversions consistently.",
+        icon: BuildTargeting
     },
     {
         step: "03",
         title: "Develop Engaging Ad Messaging",
         description:
-            "We craft compelling ad copy that highlights your expertise, eye care treatments, and patient benefits to increase clicks and drive more inquiries.",
-        // icon: CraftHighImpact
+            "We craft compelling ad copy that highlights your expertise, eye care treatments, and patient benefits to increase clicks and generate more qualified patient inquiries consistently online.",
+        icon: CraftHighImpact
     },
     {
         step: "04",
         title: "Optimize Landing Page Conversions",
         description:
             "We design and optimize landing pages with clear calls-to-action that encourage visitors to schedule consultations and ophthalmology appointments with greater confidence and engagement.",
-        // icon: OptimizeConversion
+        icon: OptimizeConversion
     },
     {
         step: "05",
         title: "Monitor & Improve Campaign Performance",
         description:
             "We continuously analyze PPC performance, test campaign variations, and refine strategies to maximize ROI and support long-term patient growth.",
-        // icon: ScalePerformance
+        icon: ScalePerformance
     },
 ];
 
@@ -172,6 +188,7 @@ const PPCServices = () => {
                 bannerImage="/ophthalmology/ophthalmology-ppc-banner.webp"
                 altText={"Ophthalmology PPC services driving patient leads and practice growth through targeted advertising"}
                 imageHeight="h-[180px] md:h-[373px]"
+                imageClass="lg:min-h-[392px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

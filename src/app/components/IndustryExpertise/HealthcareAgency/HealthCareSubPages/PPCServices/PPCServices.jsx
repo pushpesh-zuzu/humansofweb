@@ -193,7 +193,8 @@ const PPCServices = () => {
                 description2={"We focus on your services, location, and audience to run targeted campaigns that boost visibility, improve ROI, and drive reliable growth for your healthcare practice."}
                 bannerImage="/ppcServices/health-ppc-banner.svg"
                 altText={"Healthcare PPC services driving patient leads and practice growth through targeted advertising"}
-                imageHeight="h-[240px] md:h-[373px]"
+                imageHeight="h-[200px] md:h-[373px]"
+                imageClass="object-cover object-center"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

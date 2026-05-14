@@ -14,18 +14,23 @@ import PatientIntentKeyword from "../../../../common/Icons/healthcare/patient-in
 import ServicePageOptimization from "../../../../common/Icons/healthcare/service-page-optimization.svg";
 import WebsiteOptimization from "../../../../common/Icons/healthcare/content-website-optimization.svg";
 import SeoAuthority from "../../../../common/Icons/healthcare/seo-authority-growth.svg";
-import UrologySeo from "../../../../common/Icons/healthcare/urology-seo.svg";
-import ChiropracticSeo from "../../../../common/Icons/healthcare/chiropractic-seo.svg";
+import AnalyzeYourPresence from "../../../../common/Icons/healthcare/analyze-your-online-presence.svg";
+import ImprovePatientExperience from "../../../../common/Icons/healthcare/improve-patient-experience.svg";
+import MatchPatient from "../../../../common/Icons/healthcare/match-patient-search-intent.svg";
+import MeasureScale from "../../../../common/Icons/healthcare/measure-scale-growth.svg";
+import OptimizeService from "../../../../common/Icons/healthcare/optimize-service-visibility.svg";
+import OphthalmologySeo from "../../../../common/Icons/healthcare/ophthalmology-seo.svg";
 import DentalSeo from "../../../../common/Icons/healthcare/dental-seo.svg";
 import DermatologySeo from "../../../../common/Icons/healthcare/dermatology-seo.svg";
-import OphthalmologySeo from "../../../../common/Icons/healthcare/ophthalmology-seo.svg";
+import ChiropracticSeo from "../../../../common/Icons/healthcare/chiropractic-seo.svg";
+import UrologySeo from "../../../../common/Icons/healthcare/urology-seo.svg";
 import PlasticSurgerySeo from "../../../../common/Icons/healthcare/plastic-surgery-seo.svg";
-import SustainableCost from "../../../../common/Icons/healthcare/sustainable-cost-effective-growth.svg";
-import ConsistentOrganic from "../../../../common/Icons/healthcare/consistent-organic-traffic.svg";
-import EnhancedPatient from "../../../../common/Icons/healthcare/enhanced-patient-trust-credibility.svg";
-import ImprovedLocal from "../../../../common/Icons/healthcare/improved-local-discoverability.svg";
-import MorePatient from "../../../../common/Icons/healthcare/more-patient-appointments.svg";
 import StrongerPractice from "../../../../common/Icons/healthcare/stronger-practice-visibility.svg";
+import MorePatient from "../../../../common/Icons/healthcare/more-patient-appointments.svg";
+import ConsistentOrganic from "../../../../common/Icons/healthcare/consistent-organic-traffic.svg";
+import SustainableCost from "../../../../common/Icons/healthcare/sustainable-cost-effective-growth.svg";
+import ImprovedLocal from "../../../../common/Icons/healthcare/improved-local-discoverability.svg";
+import EnhancedPatient from "../../../../common/Icons/healthcare/enhanced-patient-trust-credibility.svg";
 
 
 const seoService = [
@@ -89,35 +94,35 @@ const OPHTHALMOLOGY_STEPS = [
         title: "Evaluate Website Performance",
         description:
             "We review your ophthalmology website’s SEO health, search visibility, and local presence to identify opportunities for stronger rankings and patient growth.",
-        // icon: AnalyzeYourPresence
+        icon: AnalyzeYourPresence
     },
     {
         step: "02",
         title: "Optimize Eye Care Services",
         description:
-            "We improve service pages, metadata, and keyword targeting so your ophthalmology treatments appear in relevant patient search results.",
-        // icon: OptimizeService
+            "We improve service pages, metadata, and keyword targeting so your ophthalmology treatments appear in relevant patient searches and attract more qualified patients.",
+        icon: OptimizeService
     },
     {
         step: "03",
         title: "Target High-Intent Searches",
         description:
-            "Our SEO strategies focus on matching your content with the keywords and search intent patients use when looking for eye care services online.",
-        // icon: MatchPatient
+            "Our SEO strategies focus on matching your content with the keywords and search intent patients commonly use when looking for eye care services online.",
+        icon: MatchPatient
     },
     {
         step: "04",
         title: "Enhance User Experience",
         description:
-            "We optimize website structure, mobile responsiveness, and navigation to create a seamless experience that encourages appointment inquiries.",
-        // icon: ImprovePatientExperience
+            "We optimize website structure, mobile responsiveness, and navigation to create a seamless browsing experience that encourages appointment inquiries.",
+        icon: ImprovePatientExperience
     },
     {
         step: "05",
         title: "Track SEO Performance",
         description:
             "We monitor rankings, traffic, and patient engagement to continuously refine strategies and support long-term growth for your ophthalmology practice.",
-        // icon: MeasureScale
+        icon: MeasureScale
     },
 ];
 
@@ -237,7 +242,8 @@ const SeoServices = () => {
                 description2={"Our customized ophthalmology SEO strategies are designed to boost rankings, increase website traffic, and drive more patient appointments for your practice."}
                 bannerImage="/ophthalmology/seo-banner.webp"
                 altText={"Ophthalmology SEO services improving search visibility and patient growth"}
-                imageHeight="h-[180px] md:h-[373px]"
+                imageHeight="h-[200px] md:h-[373px]"
+                imageClass="object-contain object-center lg:min-h-[450px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

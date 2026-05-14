@@ -79,11 +79,11 @@ const NAV_ITEMS = [
         label: "Chiropractor",
         href: "/chiropractor-digital-marketing-agency",
         subItems: [
-          { label: "Chiropractor SEO", href: "#" },
-          { label: "Chiropractor PPC", href: "#" },
-          { label: "Chiropractor Website Design & Development", href: "#" },
-          { label: "Chiropractor Social Media Marketing", href: "#" },
-          { label: "Chiropractor Reputation Management", href: "#" },
+          { label: "Chiropractor SEO", href: "/chiropractor-seo-services" },
+          { label: "Chiropractor PPC", href: "/chiropractor-ppc-services" },
+          { label: "Chiropractor Website Design & Development", href: "/chiropractor-website-design-development-services" },
+          { label: "Chiropractor Social Media Marketing", href: "/chiropractor-social-media-marketing-services" },
+          { label: "Chiropractor Reputation Management", href: "/chiropractor-reputation-management-services" },
         ],
       },
       {

@@ -20,31 +20,37 @@ const WORK_WITH_CARDS = [
         title: "High-Authority Backlink Building",
         description:
             "We secure quality backlinks from trusted and relevant healthcare websites to strengthen your domain authority and improve search engine visibility.",
+        icon: ""
     },
     {
         title: "Targeted Outreach Strategies",
         description:
             "Our outreach campaigns focus on niche-relevant platforms that help your healthcare business connect with the right audience and generate valuable organic traffic.",
+        icon: ""
     },
     {
         title: "Improved Organic Search Rankings",
         description:
             "We implement effective link-building strategies that help your healthcare website rank higher in search results and increase online discoverability.",
+        icon: ""
     },
     {
         title: "Customized SEO Link Strategies",
         description:
             "Our team creates tailored healthcare link-building plans designed around your services, goals, and target market for long-term SEO success.",
+        icon: ""
     },
     {
         title: "Stronger Online Brand Credibility",
         description:
             "By earning backlinks from reputable sources, we help build trust, authority, and credibility for your healthcare practice across search engines.",
+        icon: ""
     },
     {
         title: "Long-Term Healthcare SEO Growth",
         description:
             "We focus on sustainable link-building methods that improve online visibility, drive qualified traffic, and support consistent business growth.",
+        icon: ""
     }
 ];
 
@@ -53,31 +59,37 @@ const LINK_BUILDING_ITEMS = [
         title: "SEO Discovery & Strategy",
         description:
             "We analyze your healthcare website, backlink profile, and SEO goals to create a customized link-building strategy focused on long-term search growth.",
+        icon: ""
     },
     {
         title: "Authority Website Research",
         description:
             "Our team identifies trusted and relevant healthcare websites that can provide high-quality backlinks to improve your online authority and rankings.",
+        icon: ""
     },
     {
         title: "Content Creation & Outreach",
         description:
             "We develop engaging SEO-friendly content and perform targeted outreach to secure valuable backlinks from reputable industry-related websites.",
+        icon: ""
     },
     {
         title: "Content Review & Approval",
         description:
             "Before publishing, we share all backlink content for your approval to ensure it aligns with your healthcare brand, services, and SEO objectives.",
+        icon: ""
     },
     {
         title: "High-Quality Link Placement",
         description:
             "We publish backlinks on authoritative platforms that help strengthen your website credibility, improve rankings, and increase organic traffic.",
+        icon: ""
     },
     {
         title: "Performance Tracking & Reports",
         description:
             "Our team provides detailed reporting and SEO insights so you can monitor backlink performance, keyword improvements, and overall growth.",
+        icon: ""
     },
 ];
 

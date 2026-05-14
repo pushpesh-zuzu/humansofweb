@@ -168,7 +168,8 @@ const ReputationManagement = () => {
                 description2={"From review management to patient feedback strategies, Humans of Web helps you maintain a strong, trustworthy online presence that supports long-term clinic growth."}
                 bannerImage="/ReputationManagement/dental-reputation-banner.svg"
                 altText={"dental reputation management building trust and positive online presence"}
-                imageHeight="h-[250px] md:h-[373px]"
+                imageHeight="h-[200px] md:h-[373px]"
+                imageClass="object-contain object-center"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection
@@ -182,6 +183,7 @@ const ReputationManagement = () => {
                 limit={5}
                 ctaText='Strengthen My Reputation'
                 marginBottom="lg:mb-19"
+                imageAltText="dental reputation management strategy for building trust and attracting patients online"
             />
             <WorkWithCards
                 title="Our Reputation Management"

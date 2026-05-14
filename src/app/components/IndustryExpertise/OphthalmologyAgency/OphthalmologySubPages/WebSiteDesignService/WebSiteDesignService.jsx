@@ -8,6 +8,22 @@ import CustomGeneration from '@/app/components/Home/CustomGeneration';
 import BusineesSell from '@/app/components/common/SubServices/BusineesSell/BusineesSell';
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent';
 import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs';
+import SecureScalable from "../../../../common/Icons/healthcare/secure-scalable-development.svg";
+import ConversionDriven from "../../../../common/Icons/healthcare/conversion-driven-website-strategy.svg";
+import IntegratedPatient from "../../../../common/Icons/healthcare/integrated-patient-inquiry-systems.svg";
+import IntutivePatient from "../../../../common/Icons/healthcare/intuitive-patient-journey-design.svg";
+import RespnsiveDevice from "../../../../common/Icons/healthcare/responsive-device-optimized-layouts.svg";
+import SeamlessAppointment from "../../../../common/Icons/healthcare/seamless-appointment-experience.svg";
+import BuiltForScalable from "../../../../common/Icons/healthcare/built-for-scalable-growth.svg";
+import Credibility from "../../../../common/Icons/healthcare/credibility-driven-layouts.svg";
+import FastTechnically from "../../../../common/Icons/healthcare/fast-technically-optimized.svg";
+import PatientCentered from "../../../../common/Icons/healthcare/Patient-centered-design.svg";
+import ResponsiveAcross from "../../../../common/Icons/healthcare/responsive-across-all-devices.svg";
+import StrategyRequirment from "../../../../common/Icons/healthcare/strategy-requirement-mapping.svg";
+import DeploymentContinuous from "../../../../common/Icons/healthcare/deployment-continuous-improvement.svg";
+import ExperienceInterface from "../../../../common/Icons/healthcare/experience-interface-design.svg";
+import PerformanceConversion from "../../../../common/Icons/healthcare/performance-conversion-optimization.svg";
+import ScalableWebsite from "../../../../common/Icons/healthcare/scalable-website-development.svg";
 
 const OPHTHALMOLOGY_POINTS = [
     "At Humans of Web, we create professional ophthalmology websites designed to improve online visibility, attract new patients, and strengthen trust in your eye care practice.",
@@ -22,60 +38,60 @@ const WORK_WITH_CARDS = [
         title: "Strategic Website Planning",
         description:
             "We begin by understanding your ophthalmology services, patient audience, and business goals to create a website strategy tailored to your practice.",
-        // icon: PatientCentered
+        icon: PatientCentered,
     },
     {
         title: "Custom UI/UX Design",
         description:
             "Our team designs visually engaging and user-friendly ophthalmology websites that reflect your brand identity and improve patient interaction.",
-        // icon: Credibility
+        icon: Credibility,
     },
     {
         title: "Responsive Website Development",
         description:
             "We develop fully responsive websites that provide a seamless browsing experience across desktop, tablet, and mobile devices.",
-        // icon: ResponsiveAcross
+        icon: ResponsiveAcross,
     },
     {
         title: "SEO & Performance Optimization",
         description:
             "Every website is optimized for speed, search engines, and technical performance to improve online visibility and patient engagement.",
-        // icon: FastTechnically
+        icon: FastTechnically,
     },
     {
         title: "Appointment & Patient Features",
         description:
             "We integrate essential features like appointment forms, patient resources, and clear calls-to-action to support better patient conversions.",
-        // Icon: SeamlessAppointment
+        icon: SeamlessAppointment,
     },
     {
         title: "Ongoing Support & Improvements",
         description:
             "Our team provides continuous website support, updates, and optimization to ensure your ophthalmology website stays secure, modern, and effective.",
-        // icon: BuiltForScalable
+        icon: BuiltForScalable,
     }
 ];
 
 const OPHTHALMOLOGY_FEATURE_CARDS = [
     {
         title: "Custom Ophthalmology Web Design",
-        // icon: ConversionDriven
+        icon: ConversionDriven,
     },
     {
         title: "Fast & Responsive Website Development",
-        // icon: IntutivePatient
+        icon: IntutivePatient,
     },
     {
         title: "Patient-Focused Conversion Optimization",
-        // icon: RespnsiveDevice
+        icon: RespnsiveDevice,
     },
     {
         title: "SEO-Friendly Content & Speed Optimization",
-        // icon: SecureScalable
+        icon: SecureScalable,
     },
     {
         title: "Website Automation & Ongoing Support",
-        // icon: IntegratedPatient
+        icon: IntegratedPatient,
     },
 ];
 
@@ -84,36 +100,36 @@ const STEPS = [
         step: "01",
         title: "Practice Discovery & Planning",
         description:
-            "We learn about your ophthalmology services, patient audience, and business goals to create a website strategy tailored to your practice needs.",
-        // icon: StrategyRequirment
+            "We learn about your ophthalmology services, patient audience, and goals to create a website strategy tailored to your practice needs.",
+        icon: StrategyRequirment,
     },
     {
         step: "02",
         title: "Custom UI/UX Design Creation",
         description:
             "Our team designs modern website layouts and patient-friendly experiences that strengthen trust and encourage visitors to explore your services.",
-        // icon: ExperienceInterface
+        icon: ExperienceInterface,
     },
     {
         step: "03",
         title: "Responsive Website Development",
         description:
-            "We develop fast, secure, and responsive ophthalmology websites that perform smoothly across desktop, tablet, and mobile devices.",
-        // icon: ScalableWebsite
+            "We develop fast, secure, and responsive ophthalmology websites that perform smoothly across desktop, tablet,",
+        icon: ScalableWebsite,
     },
     {
         step: "04",
         title: "SEO & Conversion Optimization",
         description:
             "We optimize website speed, search visibility, appointment flows, and calls-to-action to improve engagement and increase patient inquiries.",
-        // icon: PerformanceConversion
+        icon: PerformanceConversion,
     },
     {
         step: "05",
         title: "Launch, Support & Improvements",
         description:
-            "After launch, we provide ongoing updates, monitoring, and performance improvements to keep your ophthalmology website secure and growth-focused.",
-        // icon: DeploymentContinuous
+            "After launch, we provide ongoing updates, monitoring, and performance improvements to keep your ophthalmology website.",
+        icon: DeploymentContinuous,
     },
 ];
 
@@ -177,6 +193,7 @@ const WebSiteDesignService = () => {
                 bannerImage="/ophthalmology/ophthalmology-design-banner.webp"
                 altText={"ophthalmology website design services focused on patient growth and online visibility"}
                 imageHeight="h-[200px] md:h-[373px]"
+                imageClass="object-contain object-center lg:min-h-[390px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

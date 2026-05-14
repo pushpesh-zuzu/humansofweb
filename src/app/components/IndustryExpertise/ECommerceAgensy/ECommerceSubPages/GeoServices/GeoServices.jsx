@@ -197,7 +197,7 @@ const GeoServices = () => {
                 description2={"With AI-driven and generative search engines rising, GEO ensures your business stays discoverable, relevant, and visible across modern search experiences."}
                 bannerImage="/geoServices/geo-banner.svg"
                 altText={"ai driven search optimization for ecommerce visibility and discoverability"}
-                imageHeight="h-[250px] md:h-[373px]"
+                imageHeight="h-[200px] md:h-[373px]"
             />
             <TrustedBy padding={'py-5 md:py-12 xl:py-15 px-8.75 md:px-12.5 xl:px-13.5'} />
             <ServicesTwoGridSection

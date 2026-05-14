@@ -263,6 +263,7 @@ const SeoServices = () => {
                 limit={5}
                 ctaText='Start Growing Your Clinic'
                 marginBottom="lg:mb-18"
+                imageAltText="dental SEO strategy for growing your practice"
             />
             <Interactivecontent
                 headingStart="SEO That Grows"
