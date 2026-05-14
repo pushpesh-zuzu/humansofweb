@@ -38,12 +38,14 @@ export const PlasticSurgeonServices = [
     description:
       "We help patients find you when they’re actively looking for procedures. Our approach focuses on intent-driven searches, bringing in people who are ready to take the next step.",
     icon: <PLasticSurgerySeo />,
+    link: "/plastic-surgeon-seo-services",
   },
   {
     title: "Plastic Surgeon PPC",
     description:
       "We run carefully targeted ad campaigns that connect you with high-intent patients. Every click is optimized to bring meaningful consultations, not just traffic.",
     icon: <PLasticSurgeryPPC />,
+    link: "/plastic-surgeon-ppc-services",
   },
   {
     title: "Plastic Surgeon Website Design & Development",
