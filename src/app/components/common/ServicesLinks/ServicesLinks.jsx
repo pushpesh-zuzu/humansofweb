@@ -31,11 +31,12 @@ const ServicesLinks = ({
     headdingBlack = "Explore Our",
     headingBlue = "Services",
     padding = "py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20",
+    background='#fff'
 }) => {
     if (!services.length) return null;
 
     return (
-        <ContainerWrapper>
+        <ContainerWrapper background={background}>
             <PaddingWrapper2 padding={padding}>
                 <section className="text-center">
                     <H2HeadingWrapper

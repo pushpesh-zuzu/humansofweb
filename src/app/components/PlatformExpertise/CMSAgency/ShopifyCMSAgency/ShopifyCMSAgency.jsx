@@ -17,6 +17,7 @@ import ReachWithUs from "../../../common/Services/ReachWithUs/ReachWithUs";
 import ScrollTimeline from "@/app/components/common/ScrollTimeLine/ScrollTimeLine";
 import Interactivecontent from "@/app/components/common/SubServices/Interactivecontent/Interactivecontent";
 import FaqComponent from "@/app/components/common/SubServices/FaqComponent/FaqComponent";
+import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
 
 function ShopifyCMSAgency() {
   return (
@@ -59,14 +60,21 @@ function ShopifyCMSAgency() {
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
-      <ServicesGridSection
+      {/* <ServicesGridSection
         services={SHOPIFY_DEV_SERVICES}
         headdingBlack={"We Offer "}
         headingBlue={"Shopify Development"}
         // description={marketingServicesPara}
         background="#fafafa"
-      />
-     
+      /> */}
+     <ServicesLinks
+          services={SHOPIFY_DEV_SERVICES}
+        headdingBlack={"We Offer "}
+        headingBlue={"Shopify Development"}
+        
+           padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+           background="#fafafa"    
+           />
       <ServicesTwoGridDescriptionAndImage
         
         reverse

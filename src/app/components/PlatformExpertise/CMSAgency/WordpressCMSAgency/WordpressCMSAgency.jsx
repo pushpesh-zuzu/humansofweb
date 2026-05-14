@@ -16,6 +16,7 @@ import {
   WORDPRESS_PPC_TIMELINE,
   WORDPRESS_SEO_STRATEGY_ITEMS,
 } from "./WordpressCMSAgencyData";
+import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
 
 function WordpressCMSAgency() {
   return (
@@ -60,12 +61,14 @@ function WordpressCMSAgency() {
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
 
-      <ServicesGridSection
+      <ServicesLinks
       background="#fafafa"
         services={WORDPRESS_DEV_SERVICES}
         headdingBlack={"We Offer "}
         headingBlue={"WordPress Development"}
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
+      
 
       <ServicesTwoGridDescriptionAndImage
         
