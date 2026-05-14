@@ -194,6 +194,7 @@ const SocialMediaMarketing = () => {
                 headdingBlack="Social Media That Grows"
                 headingBlue="Your Healthcare Brand"
                 image="/SocialMediaMarketing/healthcare-brand.svg"
+                imageAltText={"healthcare social media marketing increasing patient engagement and online visibility"}
                 paragraphs={HEALTHCARE_MEDIA_DESCRIPTION}
                 headingBlueColor="text-secondary"
                 headingBlackColor="text-white"

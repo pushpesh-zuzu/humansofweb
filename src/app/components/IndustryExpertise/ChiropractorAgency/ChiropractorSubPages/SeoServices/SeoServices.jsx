@@ -89,30 +89,35 @@ const CHIROPRACTOR_STEPS = [
         title: "Analyze Your Online Presence",
         description:
             "We evaluate your chiropractic website, local search visibility, and SEO performance to identify growth opportunities and improve online reach.",
+        icon: ""
     },
     {
         step: "02",
         title: "Optimize Chiropractic Service Pages",
         description:
             "We enhance your service pages, metadata, and website structure to help search engines better understand your chiropractic treatments and services.",
+        icon: ""
     },
     {
         step: "03",
         title: "Target Local Patient Searches",
         description:
             "Our SEO strategies focus on high-intent local keywords that help your practice connect with patients searching for chiropractic care nearby.",
+        icon: ""
     },
     {
         step: "04",
         title: "Improve Website Experience",
         description:
             "We optimize website speed, mobile responsiveness, and navigation to create a smooth user experience that encourages patient inquiries.",
+        icon: ""
     },
     {
         step: "05",
         title: "Monitor Growth & Rankings",
         description:
             "We continuously track rankings, traffic, and conversions to refine SEO strategies and support long-term growth for your chiropractic practice.",
+        icon: ""
     },
 ];
 
@@ -270,13 +275,11 @@ const SeoServices = () => {
                 showCards={3}
                 ctaText="Grow Your Chiropractic Practice"
                 ctaHref=""
-                backgroundImage="/IndustryExpertise/seo-banner.webp"
             />
             <ServiceGridSection
                 title="Our Growth-Driven SEO Approach For"
                 highlightedTitle="Chiropractic Services"
                 services={CHIROPRACTOR_SERVICE_GRID_ITEMS}
-                // backgroundImage="/IndustryExpertise/seo-banner.webp"
                 ctaText="Expand Your Chiropractic Reach"
                 ctaHref=""
             />
