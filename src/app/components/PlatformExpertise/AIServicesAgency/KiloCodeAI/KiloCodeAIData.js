@@ -1,7 +1,15 @@
-
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import { AICodingIntegrationIcon, AIDocumentationIcon, AITestingIcon, AIWorkflowOptimizationIcon, CustomDevWorkflowIcon, DevProductivityIcon } from "./Kilocodeaiserviceicons";
+import {
+  AICodeGenerationIcon,
+  AICodingIntegrationIcon,
+  AIDebuggingIcon,
+  AIDocumentationIcon,
+  AIEngineeringSupportIcon,
+  AITestingIcon,
+  AIWorkflowOptimizationIcon,
+  CustomDevWorkflowIcon,
+  DevProductivityIcon,
+  WorkflowAutomationIcon,
+} from "./Kilocodeaiserviceicons";
 
 export const KILOCODE_MARKET_PARA = [
   "Modern development teams need to ship features faster while maintaining clean architecture, scalability, and code quality across projects.",
@@ -63,25 +71,33 @@ export const KILOCODE_SEO_ITEMS = [
     title: "AI Code Generation",
     description:
       "We implement AI coding workflows that help developers generate boilerplate code, repetitive structures, and faster feature implementations.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <AICodeGenerationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "AI Debugging Assistance",
     description:
       "We build AI-assisted debugging systems that help identify issues, improve troubleshooting speed, and support development efficiency.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <AIDebuggingIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Development Workflow Automation",
     description:
       "We automate repetitive engineering tasks including documentation, testing workflows, and development operations.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <WorkflowAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "AI Engineering Support",
     description:
       "We help teams use AI development systems for code explanations, architecture guidance, and internal engineering support.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <AIEngineeringSupportIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 
@@ -131,7 +147,8 @@ export const KILOCODE_FAQ_DATA = [
       "Yes. AI coding systems help automate repetitive tasks, generate code suggestions, improve debugging speed, and streamline development workflows.",
   },
   {
-    question: "Can AI coding systems integrate with existing development tools?",
+    question:
+      "Can AI coding systems integrate with existing development tools?",
     answer:
       "Absolutely. AI-assisted coding workflows can integrate with IDEs, repositories, CI/CD systems, and engineering platforms already used by your team.",
   },
@@ -146,4 +163,3 @@ export const KILOCODE_FAQ_DATA = [
       "Yes. AI systems can assist with technical documentation, code explanations, internal knowledge sharing, and workflow documentation generation.",
   },
 ];
-

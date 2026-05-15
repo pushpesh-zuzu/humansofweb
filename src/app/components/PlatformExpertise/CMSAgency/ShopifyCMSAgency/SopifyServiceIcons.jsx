@@ -1,14 +1,19 @@
 import React from "react";
 
-const GRADIENT_ID = "timeline-grad";
+const GID = "timeline-grad";
 
-const IconWrapper = ({ children }) => (
-  <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-    <rect width="64" height="64" rx="32" fill={`url(#${GRADIENT_ID})`} />
+const IconWrapper = ({ children, className = "" }) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <rect width="64" height="64" rx="32" fill={`url(#${GID})`} />
 
     <defs>
       <linearGradient
-        id={GRADIENT_ID}
+        id={GID}
         x1="64"
         y1="0"
         x2="0"
@@ -23,8 +28,6 @@ const IconWrapper = ({ children }) => (
     {children}
   </svg>
 );
-
-
 
 // 1. Store Design
 export const StoreDesignIcon = () => (
@@ -44,8 +47,6 @@ export const StoreDesignIcon = () => (
   </IconWrapper>
 );
 
-
-
 // 2. Theme Development
 export const ThemeDevelopmentIcon = () => (
   <IconWrapper>
@@ -64,18 +65,10 @@ export const ThemeDevelopmentIcon = () => (
   </IconWrapper>
 );
 
-
-
 // 3. Store Setup
 export const StoreSetupIcon = () => (
   <IconWrapper>
-    <circle
-      cx="32"
-      cy="32"
-      r="8"
-      stroke="white"
-      strokeWidth="2.4"
-    />
+    <circle cx="32" cy="32" r="8" stroke="white" strokeWidth="2.4" />
     <path
       d="M32 18V22M32 42V46M18 32H22M42 32H46"
       stroke="white"
@@ -84,8 +77,6 @@ export const StoreSetupIcon = () => (
     />
   </IconWrapper>
 );
-
-
 
 // 4. Migration
 export const MigrationIcon = () => (
@@ -104,8 +95,6 @@ export const MigrationIcon = () => (
     />
   </IconWrapper>
 );
-
-
 
 // 5. App Development
 export const AppDevelopmentIcon = () => (
@@ -127,36 +116,14 @@ export const AppDevelopmentIcon = () => (
   </IconWrapper>
 );
 
-
-
 // 6. Headless Commerce
 export const HeadlessIcon = () => (
   <IconWrapper>
-    <rect
-      x="22"
-      y="22"
-      width="8"
-      height="8"
-      stroke="white"
-      strokeWidth="2.4"
-    />
-    <rect
-      x="34"
-      y="34"
-      width="8"
-      height="8"
-      stroke="white"
-      strokeWidth="2.4"
-    />
-    <path
-      d="M30 30L34 34"
-      stroke="white"
-      strokeWidth="2.4"
-    />
+    <rect x="22" y="22" width="8" height="8" stroke="white" strokeWidth="2.4" />
+    <rect x="34" y="34" width="8" height="8" stroke="white" strokeWidth="2.4" />
+    <path d="M30 30L34 34" stroke="white" strokeWidth="2.4" />
   </IconWrapper>
 );
-
-
 
 // 7. Integrations
 export const IntegrationIcon = () => (
@@ -173,8 +140,6 @@ export const IntegrationIcon = () => (
     />
   </IconWrapper>
 );
-
-
 
 // 8. Performance
 export const PerformanceIcon = () => (
@@ -193,8 +158,6 @@ export const PerformanceIcon = () => (
   </IconWrapper>
 );
 
-
-
 // 9. Conversion
 export const ConversionIcon = () => (
   <IconWrapper>
@@ -204,6 +167,131 @@ export const ConversionIcon = () => (
       strokeWidth="2.4"
       strokeLinecap="round"
       strokeLinejoin="round"
+    />
+  </IconWrapper>
+);
+
+export const ShopifyTechnicalAuditIcon = () => (
+  <IconWrapper>
+    <rect
+      x="20"
+      y="18"
+      width="20"
+      height="28"
+      rx="3"
+      stroke="white"
+      strokeWidth="2.5"
+    />
+    <path
+      d="M26 26H34M26 32H34"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+    <circle cx="42" cy="42" r="6" stroke="white" strokeWidth="2.5" />
+    <path
+      d="M46 46L50 50"
+      stroke="white"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+  </IconWrapper>
+);
+
+export const ShopifyCompetitorAnalysisIcon = () => (
+  <IconWrapper>
+    <path
+      d="M18 42L26 32L34 36L46 22"
+      stroke="white"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M46 22V30H38"
+      stroke="white"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <circle cx="18" cy="42" r="3" fill="white" />
+    <circle cx="26" cy="32" r="3" fill="white" />
+    <circle cx="34" cy="36" r="3" fill="white" />
+    <circle cx="46" cy="22" r="3" fill="white" />
+  </IconWrapper>
+);
+
+export const ShopifyKeywordResearchIcon = () => (
+  <IconWrapper>
+    <circle cx="28" cy="28" r="10" stroke="white" strokeWidth="2.5" />
+    <path
+      d="M36 36L46 46"
+      stroke="white"
+      strokeWidth="3"
+      strokeLinecap="round"
+    />
+    <path d="M24 28H32" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path d="M28 24V32" stroke="white" strokeWidth="2" strokeLinecap="round" />
+  </IconWrapper>
+);
+
+export const ShopifyPageOptimizationIcon = () => (
+  <IconWrapper>
+    <rect
+      x="18"
+      y="18"
+      width="28"
+      height="30"
+      rx="3"
+      stroke="white"
+      strokeWidth="2.5"
+    />
+    <path d="M24 28H40" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path d="M24 34H36" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path d="M24 40H32" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path
+      d="M42 22L46 26"
+      stroke="white"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+  </IconWrapper>
+);
+
+export const ShopifySpeedOptimizationIcon = () => (
+  <IconWrapper>
+    <circle cx="32" cy="32" r="12" stroke="white" strokeWidth="2.5" />
+    <path
+      d="M32 32L40 26"
+      stroke="white"
+      strokeWidth="3"
+      strokeLinecap="round"
+    />
+    <path
+      d="M32 20V16M32 48V44M20 32H16M48 32H44"
+      stroke="white"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+  </IconWrapper>
+);
+
+export const ShopifyReportingGrowthIcon = () => (
+  <IconWrapper>
+    <path d="M20 44V30" stroke="white" strokeWidth="3" strokeLinecap="round" />
+    <path d="M32 44V24" stroke="white" strokeWidth="3" strokeLinecap="round" />
+    <path d="M44 44V18" stroke="white" strokeWidth="3" strokeLinecap="round" />
+    <path
+      d="M18 44H46"
+      stroke="white"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M20 30L32 24L44 18"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
   </IconWrapper>
 );

@@ -1,6 +1,20 @@
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import { ConversionIcon, CustomWebsiteIcon, HeadlessIcon, MigrationIcon, OptimizationIcon, PluginIcon, SecurityIcon, ThemeDevelopmentIcon, WooCommerceIcon } from "./WordpressServiceIcons";
+import {
+  ConversionIcon,
+  CustomWebsiteIcon,
+  HeadlessIcon,
+  MigrationIcon,
+  OptimizationIcon,
+  PluginIcon,
+  SecurityIcon,
+  ThemeDevelopmentIcon,
+  WooCommerceIcon,
+  WordPressCompetitorAnalysisIcon,
+  WordPressCoreVitalsIcon,
+  WordPressKeywordResearchIcon,
+  WordPressOnPageSEOIcon,
+  WordPressReportingIcon,
+  WordPressTechnicalAuditIcon,
+} from "./WordpressServiceIcons";
 
 // ─────────────────────────────────────────────────────────────
 // WORDPRESS HERO CONTENT
@@ -11,7 +25,7 @@ export const marketAnalyzerParaWordpress = [
 
   "Slow pages, poor structure, and inconsistent user experience often reduce engagement even when traffic is strong. Small technical and content gaps can quietly affect conversions over time.",
 
-  "We help businesses improve WordPress performance, visibility, and usability together — creating websites that attract the right audience and support long-term growth."
+  "We help businesses improve WordPress performance, visibility, and usability together — creating websites that attract the right audience and support long-term growth.",
 ];
 
 export const StrategyContentWordpress = {
@@ -131,38 +145,50 @@ export const WORDPRESS_SEO_STRATEGY_ITEMS = [
   {
     title: "WordPress Technical SEO Audit",
     description:
-      "We conduct a complete technical audit of your WordPress website — analyzing crawlability, indexation, site structure, broken links, duplicate pages, schema markup, XML sitemaps, and technical issues affecting search visibility.",
-    icon: DetailedAuditIcon,
+      "We conduct a complete technical audit of your WordPress website — analyzing crawlability, indexation, site structure, broken links, schema markup, XML sitemaps, and technical issues affecting search visibility.",
+    icon: (
+      <WordPressTechnicalAuditIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Competitor SEO Analysis",
     description:
-      "We analyze your top competitors’ keyword rankings, backlink profiles, content strategy, and page structure to identify opportunities that strengthen your organic visibility.",
-    icon: DetailedAuditIcon,
+      "We analyze competitor keyword rankings, backlink profiles, content strategy, and page structures to uncover opportunities that improve your organic visibility.",
+    icon: (
+      <WordPressCompetitorAnalysisIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Keyword Research Strategy",
     description:
-      "We identify high-intent keywords your audience actively searches for — targeting service pages, blog content, local searches, and transactional opportunities that drive qualified traffic.",
-    icon: DetailedAuditIcon,
+      "We identify high-intent keywords for service pages, blogs, local SEO, and transactional searches that attract qualified traffic to your website.",
+    icon: (
+      <WordPressKeywordResearchIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "On-Page SEO Optimization",
     description:
-      "We optimize titles, headings, metadata, internal linking, images, and content structure across your WordPress website to improve rankings and user experience.",
-    icon: DetailedAuditIcon,
+      "We optimize headings, metadata, internal linking, images, URLs, and content structure across your WordPress website to improve rankings and usability.",
+    icon: (
+      <WordPressOnPageSEOIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Core Web Vitals Optimization",
     description:
-      "We improve loading speed, responsiveness, and visual stability by optimizing assets, caching, image delivery, plugins, and overall WordPress performance.",
-    icon: DetailedAuditIcon,
+      "We improve loading speed, responsiveness, caching, image delivery, plugin performance, and overall WordPress stability for better SEO and user experience.",
+    icon: (
+      <WordPressCoreVitalsIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "SEO Reporting & Tracking",
+    title: "SEO Reporting & Growth Tracking",
     description:
-      "Every month you receive detailed SEO reports covering rankings, traffic growth, technical improvements, and upcoming optimization opportunities.",
-    icon: DetailedAuditIcon,
+      "We provide detailed SEO reports covering keyword rankings, traffic growth, technical improvements, and future optimization opportunities.",
+    icon: (
+      <WordPressReportingIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 

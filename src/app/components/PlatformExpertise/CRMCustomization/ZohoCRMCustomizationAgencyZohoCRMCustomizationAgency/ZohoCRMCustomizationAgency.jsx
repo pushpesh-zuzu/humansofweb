@@ -61,6 +61,7 @@ function ZohoCRMCustomizationAgency() {
         ctaText="Book a free strategy call"
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        isJSXIcon
       />
 
       {/* <ServicesGridSection

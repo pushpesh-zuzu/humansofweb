@@ -1,7 +1,15 @@
-
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import { AIChatbotDevelopmentIcon, AIContentAutomationIcon, AISupportSystemsIcon, BusinessProcessAutomationIcon, ChatGPTAPIIntegrationIcon, CustomGPTWorkflowIcon } from "./Chatgptaiserviceicons";
+import {
+  AIChatbotDevelopmentIcon,
+  AIContentAutomationIcon,
+  AIContentGenerationIcon,
+  AISupportSystemsIcon,
+  BusinessProcessAutomationIcon,
+  ChatGPTAPIIntegrationIcon,
+  CRMIntegrationIcon,
+  CustomerSupportAutomationIcon,
+  CustomGPTWorkflowIcon,
+  KnowledgeBaseAIIcon,
+} from "./Chatgptaiserviceicons";
 
 export const CHATGPT_MARKET_PARA = [
   "Businesses today handle large volumes of customer communication, repetitive tasks, and content creation every single day. Manual workflows slow teams down and reduce overall efficiency.",
@@ -69,25 +77,33 @@ export const CHATGPT_SEO_ITEMS = [
     title: "AI Content Generation",
     description:
       "We build AI-assisted content workflows that help businesses create blogs, emails, product descriptions, and support content faster while maintaining quality and consistency.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <AIContentGenerationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Customer Support Automation",
     description:
       "We implement ChatGPT-powered support systems that answer common customer questions, reduce response time, and improve user satisfaction across digital channels.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <CustomerSupportAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "CRM & Business Tool Integration",
     description:
       "We connect ChatGPT with CRMs, project management systems, and business platforms to automate workflows and improve operational efficiency.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <CRMIntegrationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "AI Knowledge Base Systems",
     description:
       "We create AI-powered internal knowledge systems that help teams access information faster and improve decision-making across departments.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <KnowledgeBaseAIIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 

@@ -2,14 +2,30 @@
 
 import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
 import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import { VtigerApiIcon, VtigerDashboardIcon, VtigerMigrationIcon, VtigerModuleIcon, VtigerPerformanceIcon, VtigerSalesIcon, VtigerSetupIcon, VtigerSupportIcon, VtigerWorkflowIcon } from "./VtigerCRMCustomizationIcon";
+import {
+  VtigerApiIcon,
+  VtigerAutomationIcon,
+  VtigerCustomModuleIcon,
+  VtigerDashboardIcon,
+  VtigerIntegrationStrategyIcon,
+  VtigerMigrationIcon,
+  VtigerModuleIcon,
+  VtigerPerformanceIcon,
+  VtigerPipelineIcon,
+  VtigerReportingIcon,
+  VtigerSalesIcon,
+  VtigerSetupIcon,
+  VtigerSupportIcon,
+  VtigerWorkflowIcon,
+  VtigerWorkflowPlanningIcon,
+} from "./VtigerCRMCustomizationIcon";
 
 export const marketAnalyzerParaVtiger = [
   "Vtiger CRM helps businesses manage sales, customer communication, support, and workflows from one centralized platform.",
 
   "But every business handles leads, follow-ups, reporting, and internal processes differently. Generic CRM setups often create friction instead of improving efficiency.",
 
-  "We customize Vtiger CRM around your operations, helping your team automate repetitive tasks, organize customer data, and improve day-to-day productivity."
+  "We customize Vtiger CRM around your operations, helping your team automate repetitive tasks, organize customer data, and improve day-to-day productivity.",
 ];
 
 export const brandTrustParaVtiger = [
@@ -17,7 +33,7 @@ export const brandTrustParaVtiger = [
 
   "A properly customized Vtiger CRM helps teams manage customer relationships more efficiently while improving visibility across sales, support, and operations.",
 
-  "We focus on building CRM systems that fit naturally into your business process, making adoption easier and improving overall team performance."
+  "We focus on building CRM systems that fit naturally into your business process, making adoption easier and improving overall team performance.",
 ];
 
 export const VTIGER_CRM_TIMELINE = [
@@ -85,40 +101,52 @@ export const VTIGER_CRM_TIMELINE = [
 
 export const VTIGER_CRM_STRATEGY_ITEMS = [
   {
-    title: "Custom CRM Workflow Planning",
+    title: "CRM Workflow Architecture Planning",
     description:
-      "We design Vtiger CRM workflows based on your internal operations, ensuring lead management, follow-ups, support handling, and sales activities align with your business process.",
-    icon: DetailedAuditIcon,
+      "We plan structured Vtiger CRM workflows that align sales operations, customer communication, support activities, and internal business processes.",
+    icon: (
+      <VtigerWorkflowPlanningIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Lead & Sales Pipeline Optimization",
+    title: "Lead Pipeline & Conversion Strategy",
     description:
-      "We structure your Vtiger sales pipeline to improve lead tracking, automate deal stages, and give your sales team better visibility into conversions and opportunities.",
-    icon: DetailedAuditIcon,
+      "We design optimized lead pipelines, deal movement strategies, and conversion workflows that improve sales visibility and customer tracking.",
+    icon: (
+      <VtigerPipelineIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Custom Fields & Module Development",
+    title: "Custom CRM Structure Planning",
     description:
-      "Our team develops custom modules, layouts, fields, and CRM functionalities that support the way your business collects and manages customer data.",
-    icon: DetailedAuditIcon,
+      "We plan custom CRM structures including modules, fields, layouts, and operational flows based on how your business manages customer data.",
+    icon: (
+      <VtigerCustomModuleIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Automation & Task Management",
+    title: "Workflow Automation Strategy",
     description:
-      "We automate repetitive CRM tasks including reminders, notifications, follow-up sequences, task assignment, and approval workflows to reduce manual effort.",
-    icon: DetailedAuditIcon,
+      "We design automation strategies for repetitive CRM operations including follow-ups, reminders, approvals, notifications, and task routing.",
+    icon: (
+      <VtigerAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Reporting & Performance Dashboards",
+    title: "Analytics & Reporting Framework",
     description:
-      "We build real-time reporting dashboards that help management monitor KPIs, team performance, lead progress, customer activity, and operational efficiency.",
-    icon: DetailedAuditIcon,
+      "We structure reporting systems and KPI dashboards that help management monitor sales performance, operations, and customer engagement.",
+    icon: (
+      <VtigerReportingIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "CRM Integration Strategy",
+    title: "Business System Integration Planning",
     description:
-      "We connect Vtiger CRM with the platforms your business already uses — creating a centralized system that improves communication and operational visibility.",
-    icon: DetailedAuditIcon,
+      "We plan how Vtiger CRM connects with your existing tools, platforms, and operational systems to create a centralized workflow ecosystem.",
+    icon: (
+      <VtigerIntegrationStrategyIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 

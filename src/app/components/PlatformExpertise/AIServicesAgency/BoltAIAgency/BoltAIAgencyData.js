@@ -1,13 +1,27 @@
-
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
+import {
+  AIProductArchitectureIcon,
+  AIProductDevelopmentIcon,
+  APIAIIntegrationsIcon,
+  BackendSystemDevelopmentIcon,
+  CustomAIIntegrationsIcon,
+  CustomDashboardDevelopmentIcon,
+  GrowthMaintenanceIcon,
+  OngoingProductSupportIcon,
+  PerformanceOptimizationIcon,
+  PerformanceOptimizationServiceIcon,
+  RapidMVPDevelopmentIcon,
+  RapidMVPDevelopmentServiceIcon,
+  ScalableFrontendDevelopmentIcon,
+  WorkflowAutomationIcon,
+  WorkflowAutomationServiceIcon,
+} from "./BoltAIAgencyIcon";
 
 export const marketAnalyzerParaBoltAI = [
   "Businesses today need to build products faster, automate workflows efficiently, and reduce development bottlenecks without sacrificing scalability or performance.",
 
   "Bolt AI helps teams accelerate development with AI-assisted coding, rapid prototyping, workflow automation, and streamlined product iteration across modern applications.",
 
-  "We help businesses implement Bolt AI solutions that improve development speed, optimize workflows, and support scalable digital product growth."
+  "We help businesses implement Bolt AI solutions that improve development speed, optimize workflows, and support scalable digital product growth.",
 ];
 
 export const brandTrustParaBoltAI = [
@@ -15,7 +29,7 @@ export const brandTrustParaBoltAI = [
 
   "We help businesses build reliable Bolt AI solutions focused on performance, usability, automation, and efficient product delivery.",
 
-  "From MVP development to advanced AI workflows, our focus stays on helping your team move faster while maintaining product quality and operational stability."
+  "From MVP development to advanced AI workflows, our focus stays on helping your team move faster while maintaining product quality and operational stability.",
 ];
 
 export const BOLT_AI_TIMELINE = [
@@ -65,40 +79,52 @@ export const BOLT_AI_TIMELINE = [
 
 export const BOLT_AI_STRATEGY_ITEMS = [
   {
-    title: "AI Product Architecture",
+    title: "AI Product Architecture Strategy",
     description:
-      "We build scalable product architecture that supports AI-assisted workflows, automation, rapid development, and future feature expansion.",
-    icon: DetailedAuditIcon,
+      "We design scalable AI product structures focused on long-term architecture planning, modular systems, and future-ready development paths.",
+    icon: (
+      <AIProductArchitectureIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Workflow Automation",
+    title: "Workflow Strategy & Design",
     description:
-      "We streamline repetitive business operations with AI-powered automation systems designed to improve efficiency and reduce manual work.",
-    icon: DetailedAuditIcon,
+      "We define intelligent workflow systems that improve efficiency, reduce friction, and structure how AI-driven processes should operate.",
+    icon: (
+      <WorkflowAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Rapid MVP Development",
+    title: "Rapid MVP Strategy Planning",
     description:
-      "Our team uses Bolt AI workflows to accelerate MVP development, helping startups launch products faster and validate ideas efficiently.",
-    icon: DetailedAuditIcon,
+      "We plan fast execution strategies for MVP development, helping teams validate ideas quickly with structured AI-assisted workflows.",
+    icon: (
+      <RapidMVPDevelopmentIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Custom AI Integrations",
+    title: "AI Integration Strategy",
     description:
-      "We integrate AI APIs, automation tools, data systems, and modern frameworks into your Bolt AI development environment.",
-    icon: DetailedAuditIcon,
+      "We design integration strategies for APIs, AI tools, and systems to ensure seamless connectivity across your digital ecosystem.",
+    icon: (
+      <CustomAIIntegrationsIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Performance Optimization",
+    title: "Performance Strategy Planning",
     description:
-      "We optimize application performance, workflow execution, scalability, and user experience across your AI-powered product ecosystem.",
-    icon: DetailedAuditIcon,
+      "We define optimization strategies focused on speed, scalability, and long-term system efficiency across AI applications.",
+    icon: (
+      <PerformanceOptimizationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Growth & Maintenance",
+    title: "Growth Strategy & Maintenance Planning",
     description:
-      "We provide continuous support, workflow improvements, feature scaling, and long-term optimization for your Bolt AI products.",
-    icon: DetailedAuditIcon,
+      "We create long-term growth strategies to scale AI products with continuous improvement, updates, and system evolution.",
+    icon: (
+      <GrowthMaintenanceIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 
@@ -106,56 +132,74 @@ export const BOLT_AI_DEV_SERVICES = [
   {
     title: "AI Product Development",
     description:
-      "We build AI-powered applications, SaaS products, automation tools, and scalable digital platforms using modern Bolt AI workflows.",
-    icon: <ECommerceSeoIcon />,
+      "We build real-world AI applications, SaaS platforms, and digital products using modern Bolt AI development workflows.",
+    icon: (
+      <AIProductDevelopmentIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Rapid MVP Development",
     description:
-      "Our team helps startups quickly build MVPs, validate ideas, and launch scalable products with faster development cycles.",
-    icon: <ECommerceSeoIcon />,
+      "We quickly develop MVPs and prototypes so startups can launch faster and validate product ideas in real markets.",
+    icon: (
+      <RapidMVPDevelopmentServiceIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Workflow Automation",
+    title: "Workflow Automation Development",
     description:
-      "We automate repetitive workflows, operational systems, and internal business processes using AI-driven development strategies.",
-    icon: <ECommerceSeoIcon />,
+      "We implement automation systems that eliminate manual work and streamline business operations using AI-driven logic.",
+    icon: (
+      <WorkflowAutomationServiceIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Custom Dashboard Development",
     description:
-      "We create custom dashboards, analytics systems, and AI-powered admin panels designed for business intelligence and operational visibility.",
-    icon: <ECommerceSeoIcon />,
+      "We build analytics dashboards and admin panels that give real-time insights and control over business operations.",
+    icon: (
+      <CustomDashboardDevelopmentIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "API & AI Integrations",
+    title: "API & AI Integration Services",
     description:
-      "We integrate third-party APIs, AI tools, CRMs, payment systems, and automation platforms into your Bolt AI ecosystem.",
-    icon: <ECommerceSeoIcon />,
+      "We connect AI tools, APIs, CRMs, and third-party platforms into your system for a fully integrated digital ecosystem.",
+    icon: (
+      <APIAIIntegrationsIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Scalable Frontend Development",
+    title: "Frontend Development",
     description:
-      "We build responsive frontend interfaces optimized for performance, usability, scalability, and modern AI-powered user experiences.",
-    icon: <ECommerceSeoIcon />,
+      "We create fast, responsive, and modern UI experiences optimized for usability and AI-powered interactions.",
+    icon: (
+      <ScalableFrontendDevelopmentIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Backend System Development",
     description:
-      "We develop secure and scalable backend systems that support AI workflows, data processing, and modern application architecture.",
-    icon: <ECommerceSeoIcon />,
+      "We develop secure backend systems, APIs, and databases that power scalable AI applications.",
+    icon: (
+      <BackendSystemDevelopmentIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Performance Optimization",
+    title: "Performance Optimization Services",
     description:
-      "We optimize your AI-powered application for faster loading, smoother workflows, better scalability, and long-term reliability.",
-    icon: <ECommerceSeoIcon />,
+      "We improve speed, scalability, and reliability of applications for smooth AI-driven user experiences.",
+    icon: (
+      <PerformanceOptimizationServiceIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Ongoing Product Support",
+    title: "Ongoing Support & Maintenance",
     description:
-      "Our team provides continuous support, updates, feature improvements, and technical maintenance for your Bolt AI projects.",
-    icon: <ECommerceSeoIcon />,
+      "We provide continuous updates, bug fixes, monitoring, and long-term support for AI-powered products.",
+    icon: (
+      <OngoingProductSupportIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 
@@ -176,7 +220,8 @@ export const BOLT_AI_FAQ_DATA = [
       "Yes. We build custom Bolt AI solutions tailored to your product goals, workflows, scalability requirements, and business operations.",
   },
   {
-    question: "Can you integrate APIs and automation tools into Bolt AI projects?",
+    question:
+      "Can you integrate APIs and automation tools into Bolt AI projects?",
     answer:
       "Absolutely. We integrate APIs, AI systems, CRMs, automation platforms, analytics tools, and custom third-party services into Bolt AI applications.",
   },

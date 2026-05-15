@@ -3,9 +3,15 @@ import React from "react";
 // ─── Shared gradient wrapper ──────────────────────────────────────────────────
 const GID = "chatgpt-grad";
 
-const IconWrapper = ({ children }) => (
-  <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+const IconWrapper = ({ children, className = "" }) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
     <rect width="64" height="64" rx="32" fill={`url(#${GID})`} />
+
     <defs>
       <linearGradient
         id={GID}
@@ -15,10 +21,11 @@ const IconWrapper = ({ children }) => (
         y2="64"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#00C896" />
-        <stop offset="1" stopColor="#0066FF" />
+        <stop stopColor="#F65A75" />
+        <stop offset="1" stopColor="#48179C" />
       </linearGradient>
     </defs>
+
     {children}
   </svg>
 );
@@ -247,4 +254,39 @@ export const BusinessProcessAutomationIcon = () => (
   </IconWrapper>
 );
 
-// ─── Updated Features Array ──────────────────────────────────────────────────
+export const AIContentGenerationIcon = ({ className = "" }) => (
+  <IconWrapper className={className}>
+    <path d="M18 26H46" stroke="white" strokeWidth="3" strokeLinecap="round" />
+    <path d="M18 34H38" stroke="white" strokeWidth="3" strokeLinecap="round" />
+    <circle cx="44" cy="42" r="3" fill="white" />
+  </IconWrapper>
+);
+
+export const CustomerSupportAutomationIcon = ({ className = "" }) => (
+  <IconWrapper className={className}>
+    <circle cx="32" cy="26" r="8" fill="white" opacity="0.9" />
+    <path d="M20 46C22 38 42 38 44 46" stroke="white" strokeWidth="3" />
+  </IconWrapper>
+);
+
+export const CRMIntegrationIcon = ({ className = "" }) => (
+  <IconWrapper className={className}>
+    <rect
+      x="16"
+      y="22"
+      width="32"
+      height="20"
+      rx="4"
+      fill="white"
+      opacity="0.3"
+    />
+    <path d="M20 30H44" stroke="white" strokeWidth="3" />
+  </IconWrapper>
+);
+
+export const KnowledgeBaseAIIcon = ({ className = "" }) => (
+  <IconWrapper className={className}>
+    <circle cx="32" cy="30" r="6" fill="white" />
+    <path d="M24 44H40" stroke="white" strokeWidth="3" />
+  </IconWrapper>
+);

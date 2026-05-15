@@ -3,15 +3,29 @@ import React from "react";
 // ─── Shared gradient wrapper (same as Shopify icons) ──────────────────────────
 const GID = "claude-grad";
 
-const IconWrapper = ({ children }) => (
-  <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+const IconWrapper = ({ children, className = "" }) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
     <rect width="64" height="64" rx="32" fill={`url(#${GID})`} />
+
     <defs>
-      <linearGradient id={GID} x1="64" y1="0" x2="0" y2="64" gradientUnits="userSpaceOnUse">
+      <linearGradient
+        id={GID}
+        x1="64"
+        y1="0"
+        x2="0"
+        y2="64"
+        gradientUnits="userSpaceOnUse"
+      >
         <stop stopColor="#F65A75" />
         <stop offset="1" stopColor="#48179C" />
       </linearGradient>
     </defs>
+
     {children}
   </svg>
 );
@@ -21,15 +35,47 @@ const IconWrapper = ({ children }) => (
 export const ClaudeIntegrationIcon = () => (
   <IconWrapper>
     {/* Left block (system A) */}
-    <rect x="18" y="28" width="10" height="8" rx="1.5" stroke="white" strokeWidth="2.2" />
+    <rect
+      x="18"
+      y="28"
+      width="10"
+      height="8"
+      rx="1.5"
+      stroke="white"
+      strokeWidth="2.2"
+    />
     {/* Right block (system B) */}
-    <rect x="36" y="28" width="10" height="8" rx="1.5" stroke="white" strokeWidth="2.2" />
+    <rect
+      x="36"
+      y="28"
+      width="10"
+      height="8"
+      rx="1.5"
+      stroke="white"
+      strokeWidth="2.2"
+    />
     {/* Connector bridge */}
-    <path d="M28 32H36" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeDasharray="2 2" />
+    <path
+      d="M28 32H36"
+      stroke="white"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeDasharray="2 2"
+    />
     {/* Plug prongs on left */}
-    <path d="M22 28V24M26 28V24" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path
+      d="M22 28V24M26 28V24"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
     {/* Socket slots on right */}
-    <path d="M40 36V40M44 36V40" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path
+      d="M40 36V40M44 36V40"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
   </IconWrapper>
 );
 
@@ -51,7 +97,12 @@ export const WorkflowAutomationIcon = () => (
       strokeLinecap="round"
     />
     {/* Top arrowhead */}
-    <path d="M39 19L42 22L45 19" stroke="white" strokeWidth="2" strokeLinejoin="round" />
+    <path
+      d="M39 19L42 22L45 19"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinejoin="round"
+    />
     {/* Lightning bolt center */}
     <path
       d="M33.5 27L30 32.5H34L30.5 38"
@@ -86,15 +137,52 @@ export const ChatbotDevelopmentIcon = () => (
 export const ContentAutomationIcon = () => (
   <IconWrapper>
     {/* Back page */}
-    <rect x="24" y="20" width="18" height="22" rx="2" stroke="white" strokeWidth="2" strokeDasharray="3 2" />
+    <rect
+      x="24"
+      y="20"
+      width="18"
+      height="22"
+      rx="2"
+      stroke="white"
+      strokeWidth="2"
+      strokeDasharray="3 2"
+    />
     {/* Front page */}
-    <rect x="20" y="24" width="18" height="22" rx="2" stroke="white" strokeWidth="2.2" />
+    <rect
+      x="20"
+      y="24"
+      width="18"
+      height="22"
+      rx="2"
+      stroke="white"
+      strokeWidth="2.2"
+    />
     {/* Lines of text */}
-    <path d="M24 30H34" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M24 34H34" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M24 38H30" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+    <path
+      d="M24 30H34"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+    <path
+      d="M24 34H34"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+    <path
+      d="M24 38H30"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
     {/* Sparkle top-right */}
-    <path d="M42 18V22M40 20H44" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path
+      d="M42 18V22M40 20H44"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
     <circle cx="42" cy="20" r="1.2" fill="white" />
   </IconWrapper>
 );
@@ -111,10 +199,30 @@ export const ThirdPartyIntegrationIcon = () => (
     <circle cx="20" cy="42" r="3" stroke="white" strokeWidth="2" />
     <circle cx="44" cy="42" r="3" stroke="white" strokeWidth="2" />
     {/* Spokes */}
-    <path d="M23 25L29 29" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M41 25L35 29" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M23 39L29 35" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M41 39L35 35" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+    <path
+      d="M23 25L29 29"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+    <path
+      d="M41 25L35 29"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+    <path
+      d="M23 39L29 35"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+    <path
+      d="M41 39L35 35"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
   </IconWrapper>
 );
 
@@ -123,11 +231,29 @@ export const ThirdPartyIntegrationIcon = () => (
 export const PromptEngineeringIcon = () => (
   <IconWrapper>
     {/* Left bracket */}
-    <path d="M24 24L18 32L24 40" stroke="white" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M24 24L18 32L24 40"
+      stroke="white"
+      strokeWidth="2.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
     {/* Right bracket */}
-    <path d="M40 24L46 32L40 40" stroke="white" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M40 24L46 32L40 40"
+      stroke="white"
+      strokeWidth="2.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
     {/* Cursor line inside */}
-    <path d="M30 29L34 32L30 35" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path
+      d="M30 29L34 32L30 35"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
     {/* Underscore cursor blink */}
     <path d="M34 35H38" stroke="white" strokeWidth="2" strokeLinecap="round" />
   </IconWrapper>
@@ -155,7 +281,12 @@ export const KnowledgeSystemIcon = () => (
     />
     {/* Magnifying glass overlay top-right */}
     <circle cx="41" cy="22" r="4" stroke="white" strokeWidth="2" />
-    <path d="M44 25L47 28" stroke="white" strokeWidth="2" strokeLinecap="round" />
+    <path
+      d="M44 25L47 28"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
   </IconWrapper>
 );
 
@@ -171,11 +302,31 @@ export const PerformanceOptimizationIcon = () => (
       strokeLinecap="round"
     />
     {/* Tick marks */}
-    <path d="M21 34L23.5 35.4" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M32 24V27" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M43 34L40.5 35.4" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+    <path
+      d="M21 34L23.5 35.4"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+    <path
+      d="M32 24V27"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+    <path
+      d="M43 34L40.5 35.4"
+      stroke="white"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
     {/* Needle pointing upper-right (high performance) */}
-    <path d="M32 38L40 28" stroke="white" strokeWidth="2.2" strokeLinecap="round" />
+    <path
+      d="M32 38L40 28"
+      stroke="white"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+    />
     {/* Pivot dot */}
     <circle cx="32" cy="38" r="2.5" fill="white" />
   </IconWrapper>
@@ -261,3 +412,102 @@ export const CLAUDE_AI_DEV_SERVICES = [
     icon: <SupportMaintenanceIcon />,
   },
 ];
+
+// ─── 1. AI Workflow Planning ─────────────────────────────
+export const ClaudeWorkflowPlanningIcon = () => (
+  <IconWrapper>
+    <circle cx="20" cy="24" r="3" fill="white" />
+    <circle cx="32" cy="18" r="3" fill="white" />
+    <circle cx="44" cy="24" r="3" fill="white" />
+    <circle cx="32" cy="38" r="3" fill="white" />
+
+    <path d="M20 24L32 18L44 24L32 38Z" stroke="white" strokeWidth="2" />
+  </IconWrapper>
+);
+
+// ─── 2. Customer Support Automation ───────────────────────
+export const ClaudeSupportAutomationIcon = () => (
+  <IconWrapper>
+    <path d="M20 26H44V38H32L26 44V38H20V26Z" stroke="white" strokeWidth="2" />
+
+    <circle cx="26" cy="32" r="1.5" fill="white" />
+    <circle cx="32" cy="32" r="1.5" fill="white" />
+    <circle cx="38" cy="32" r="1.5" fill="white" />
+  </IconWrapper>
+);
+
+// ─── 3. AI Content Generation Systems ─────────────────────
+export const ClaudeContentGenerationIcon = () => (
+  <IconWrapper>
+    <rect
+      x="20"
+      y="20"
+      width="24"
+      height="28"
+      rx="3"
+      stroke="white"
+      strokeWidth="2"
+    />
+
+    <path d="M24 26H40" stroke="white" strokeWidth="2" />
+    <path d="M24 31H38" stroke="white" strokeWidth="2" />
+    <path d="M24 36H36" stroke="white" strokeWidth="2" />
+
+    <circle cx="42" cy="22" r="2" fill="white" />
+  </IconWrapper>
+);
+
+// ─── 4. Internal Knowledge Automation ─────────────────────
+export const ClaudeKnowledgeAutomationIcon = () => (
+  <IconWrapper>
+    <rect
+      x="22"
+      y="20"
+      width="20"
+      height="28"
+      rx="3"
+      stroke="white"
+      strokeWidth="2"
+    />
+
+    <path d="M26 26H38" stroke="white" strokeWidth="2" />
+    <path d="M26 31H38" stroke="white" strokeWidth="2" />
+    <path d="M26 36H34" stroke="white" strokeWidth="2" />
+
+    <circle cx="32" cy="16" r="3" fill="white" />
+  </IconWrapper>
+);
+
+// ─── 5. Business Process Automation ───────────────────────
+export const ClaudeBusinessAutomationIcon = () => (
+  <IconWrapper>
+    <circle cx="26" cy="28" r="5" stroke="white" strokeWidth="2" />
+    <circle cx="38" cy="28" r="5" stroke="white" strokeWidth="2" />
+    <circle cx="32" cy="40" r="5" stroke="white" strokeWidth="2" />
+
+    <path d="M26 28L38 28L32 40Z" stroke="white" strokeWidth="2" />
+  </IconWrapper>
+);
+
+// ─── 6. AI Integration Strategy ───────────────────────────
+export const ClaudeIntegrationStrategyIcon = () => (
+  <IconWrapper>
+    <rect
+      x="22"
+      y="22"
+      width="20"
+      height="20"
+      rx="3"
+      stroke="white"
+      strokeWidth="2"
+    />
+
+    <path
+      d="M32 18V22M32 42V46M18 32H22M42 32H46"
+      stroke="white"
+      strokeWidth="2"
+    />
+
+    <circle cx="32" cy="32" r="3" fill="white" />
+  </IconWrapper>
+);
