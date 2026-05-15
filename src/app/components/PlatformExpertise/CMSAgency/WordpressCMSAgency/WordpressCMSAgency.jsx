@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSectionServices from "../../../common/Services/HeroSectionServices/HeroSectionServices";
 import TrustedBy from "../../../common/TrustedBy/TrustedBy";
-import ServicesTwoGridDescriptionAndImage from "../../../common/Services/ServicesTwoGridDescriptionAndImage/ServicesTwoGridDescriptionAndImage";
 import ServicesGridSection from "../../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../../common/Services/ReachWithUs/ReachWithUs";
 import ScrollTimeline from "@/app/components/common/ScrollTimeLine/ScrollTimeLine";
@@ -17,6 +16,7 @@ import {
   WORDPRESS_SEO_STRATEGY_ITEMS,
 } from "./WordpressCMSAgencyData";
 import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
+import ServiceTwoGridForPlatFormSubPage from "@/app/components/common/Services/ServicesTwoGridDescriptionAndImage/ServiceTwoGridForPlatFormSubPage";
 
 function WordpressCMSAgency() {
   return (
@@ -33,7 +33,7 @@ function WordpressCMSAgency() {
 
       <TrustedBy padding={""} />
 
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Performance Focused"
         headingBlue="WordPress Marketing"
@@ -50,7 +50,7 @@ function WordpressCMSAgency() {
         headdingBlack="We Use WordPress PPC"
         headingBlue="For Your Growth"
         buttonText="Schedule A Free Consultation"
-        background='#fafafa'
+        background="#fafafa"
       />
 
       <Interactivecontent
@@ -64,15 +64,14 @@ function WordpressCMSAgency() {
       />
 
       <ServicesLinks
-      background="#fafafa"
+        background="#fafafa"
         services={WORDPRESS_DEV_SERVICES}
         headdingBlack={"We Offer "}
         headingBlue={"WordPress Development"}
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
-      
 
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         reverse
         isHeadingInGridSection
         ctaText="Get Free Proposal"

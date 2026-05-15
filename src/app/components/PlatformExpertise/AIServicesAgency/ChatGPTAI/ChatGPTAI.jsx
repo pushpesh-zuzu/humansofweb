@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSectionServices from "../../../common/Services/HeroSectionServices/HeroSectionServices";
 import TrustedBy from "../../../common/TrustedBy/TrustedBy";
-import ServicesTwoGridDescriptionAndImage from "../../../common/Services/ServicesTwoGridDescriptionAndImage/ServicesTwoGridDescriptionAndImage";
 import {
   CHATGPT_FAQ_DATA,
   CHATGPT_FEATURES,
@@ -16,6 +15,7 @@ import ScrollTimeline from "@/app/components/common/ScrollTimeLine/ScrollTimeLin
 import Interactivecontent from "@/app/components/common/SubServices/Interactivecontent/Interactivecontent";
 import FaqComponent from "@/app/components/common/SubServices/FaqComponent/FaqComponent";
 import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
+import ServicesTwoGridDescriptionAndImage from "@/app/components/common/Services/ServicesTwoGridDescriptionAndImage/ServicesTwoGridDescriptionAndImage";
 
 function ChatGPTAI() {
   return (

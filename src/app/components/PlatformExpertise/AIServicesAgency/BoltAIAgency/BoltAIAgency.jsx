@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSectionServices from "../../../common/Services/HeroSectionServices/HeroSectionServices";
 import TrustedBy from "../../../common/TrustedBy/TrustedBy";
-import ServicesTwoGridDescriptionAndImage from "../../../common/Services/ServicesTwoGridDescriptionAndImage/ServicesTwoGridDescriptionAndImage";
 import {
   brandTrustParaBoltAI,
   marketAnalyzerParaBoltAI,
@@ -16,6 +15,7 @@ import ScrollTimeline from "@/app/components/common/ScrollTimeLine/ScrollTimeLin
 import Interactivecontent from "@/app/components/common/SubServices/Interactivecontent/Interactivecontent";
 import FaqComponent from "@/app/components/common/SubServices/FaqComponent/FaqComponent";
 import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
+import ServiceTwoGridForPlatFormSubPage from "@/app/components/common/Services/ServicesTwoGridDescriptionAndImage/ServiceTwoGridForPlatFormSubPage";
 
 function BoltAIAgency() {
   return (
@@ -32,7 +32,7 @@ function BoltAIAgency() {
 
       <TrustedBy padding={""} />
 
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="AI Powered"
         headingBlue="Bolt AI Solutions"
@@ -69,7 +69,7 @@ function BoltAIAgency() {
         background="#fafafa"
       />
 
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         reverse
         isHeadingInGridSection
         ctaText="Get Free Proposal"

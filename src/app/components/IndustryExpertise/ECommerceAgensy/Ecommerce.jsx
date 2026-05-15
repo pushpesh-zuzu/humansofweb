@@ -39,6 +39,7 @@ function Ecommerce() {
         limit={5}
         breakLine
         marginBottom="lg:mb-19"
+        imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
       <PillarsSection
         headdingBlack={StrategyContentEcommerce.headdingBlack}
@@ -103,6 +104,7 @@ function Ecommerce() {
         headingBlueColor="text-primary"
         paragraphTextColor
         marginBottom="lg:mb-24"
+         imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
       <ReachWithUs />
     </>

@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSectionServices from "../../../common/Services/HeroSectionServices/HeroSectionServices";
 import TrustedBy from "../../../common/TrustedBy/TrustedBy";
-import ServicesTwoGridDescriptionAndImage from "../../../common/Services/ServicesTwoGridDescriptionAndImage/ServicesTwoGridDescriptionAndImage";
 import ServicesGridSection from "../../../common/Services/ServicesGridSection/ServicesGridSection";
 import ReachWithUs from "../../../common/Services/ReachWithUs/ReachWithUs";
 import ScrollTimeline from "@/app/components/common/ScrollTimeLine/ScrollTimeLine";
@@ -17,6 +16,7 @@ import {
   ZOHO_AUTOMATION_STRATEGY_ITEMS,
 } from "./ZohoCRMCustomizationData";
 import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
+import ServiceTwoGridForPlatFormSubPage from "@/app/components/common/Services/ServicesTwoGridDescriptionAndImage/ServiceTwoGridForPlatFormSubPage";
 
 function ZohoCRMCustomizationAgency() {
   return (
@@ -33,7 +33,7 @@ function ZohoCRMCustomizationAgency() {
 
       <TrustedBy padding={""} />
 
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Workflow Focused"
         headingBlue="Zoho CRM Customization"
@@ -79,7 +79,7 @@ function ZohoCRMCustomizationAgency() {
               
             />
 
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         reverse
         isHeadingInGridSection
         ctaText="Get Free Proposal"

@@ -38,6 +38,7 @@ function AIServicesAgency() {
         headingBlackColor="text-white"
         limit={5}
         marginBottom="lg:mb-17"
+         imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
 
       <PillarsSection
@@ -76,6 +77,7 @@ function AIServicesAgency() {
         headingBlueColor="text-primary"
         paragraphTextColor
         marginBottom="lg:mb-28"
+         imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
 
       <ReachWithUs />

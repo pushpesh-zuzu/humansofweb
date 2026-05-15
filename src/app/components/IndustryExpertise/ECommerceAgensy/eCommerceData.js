@@ -321,13 +321,13 @@ export const processSectionContent = {
 export const brandTrustPara = [
   "Growing an eCommerce brand today isn’t just about running ads or ranking on search — it’s about building a system that consistently brings the right customers to your store. That’s where we come in.",
 
-  "At Humans of Web, we focus on outcomes, not just activity. Every strategy we create is designed to generate measurable growth — whether it’s increasing traffic, improving conversions, or boosting repeat purchases.",
+  "At Humans of Web, we focus on outcomes, not just activity. Every strategy we create is designed to generate measurable growth — whether it’s increasing traffic, improving conversions.",
 
   "We don’t follow templates. Every business is different, and we take the time to understand your products, your audience, and your goals before crafting a plan that actually fits your brand.",
 
   "Our approach combines creativity with data. From SEO and paid campaigns to content and customer journeys, every decision is backed by insights that help you move forward with confidence.",
 
-  "Transparency is at the core of how we work. You’ll always know what we’re doing, why we’re doing it, and how it’s impacting your growth — no confusion, no guesswork.",
+  " You’ll always know what we’re doing, why we’re doing it, and how it’s impacting your growth — no confusion, no guesswork.",
 ];
 
 export const marketingServicesPara = [
