@@ -37,6 +37,7 @@ function LegalAgency() {
         headingBlackColor="text-white"
         limit={5}
         marginBottom="lg:mb-18"
+         imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
 
       <PillarsSection
@@ -75,6 +76,7 @@ function LegalAgency() {
         headingBlueColor="text-primary"
         paragraphTextColor
         marginBottom="lg:mb-19"
+         imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
 
       <ReachWithUs />

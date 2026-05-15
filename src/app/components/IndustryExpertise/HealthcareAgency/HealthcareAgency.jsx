@@ -37,6 +37,7 @@ function HealthcareAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
 
       <PillarsSection
@@ -66,13 +67,15 @@ function HealthcareAgency() {
         isHeadingInGridSection
         ctaText="Get Free Proposal"
         headdingBlack="Why Providers Work With Us"
-        headingBlue="For Sustainable Patient Growth"
+        headingBlue="For Sustainable Growth"
         image="/IndustryExpertise/healthcare/healthcareTrust.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaHealthcare}
         headingBlueColor="text-primary"
         paragraphTextColor
+        marginBottom="lg:mb-24"
+        imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
       />
 
       <ReachWithUs />

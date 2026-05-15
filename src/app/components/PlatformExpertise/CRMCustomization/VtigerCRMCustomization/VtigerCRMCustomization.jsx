@@ -3,7 +3,6 @@
 import React from "react";
 import HeroSectionServices from "../../../common/Services/HeroSectionServices/HeroSectionServices";
 import TrustedBy from "../../../common/TrustedBy/TrustedBy";
-import ServicesTwoGridDescriptionAndImage from "../../../common/Services/ServicesTwoGridDescriptionAndImage/ServicesTwoGridDescriptionAndImage";
 import {
   brandTrustParaVtiger,
   marketAnalyzerParaVtiger,
@@ -18,6 +17,7 @@ import ScrollTimeline from "@/app/components/common/ScrollTimeLine/ScrollTimeLin
 import Interactivecontent from "@/app/components/common/SubServices/Interactivecontent/Interactivecontent";
 import FaqComponent from "@/app/components/common/SubServices/FaqComponent/FaqComponent";
 import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
+import ServiceTwoGridForPlatFormSubPage from "@/app/components/common/Services/ServicesTwoGridDescriptionAndImage/ServiceTwoGridForPlatFormSubPage";
 
 function VtigerCRMCustomization() {
   return (
@@ -34,7 +34,7 @@ function VtigerCRMCustomization() {
 
       <TrustedBy padding={""} />
 
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%, rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Workflow Focused"
         headingBlue="Vtiger CRM Customization"
@@ -77,7 +77,7 @@ function VtigerCRMCustomization() {
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
         background="#fafafa"
       />
-      <ServicesTwoGridDescriptionAndImage
+      <ServiceTwoGridForPlatFormSubPage
         reverse
         isHeadingInGridSection
         ctaText="Get Free Proposal"

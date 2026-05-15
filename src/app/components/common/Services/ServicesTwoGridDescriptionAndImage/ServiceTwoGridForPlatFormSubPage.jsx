@@ -9,7 +9,7 @@ import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper
 import { GetYourFreeConsultationButton } from "../../CtaButtons";
 import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
-export default function ServicesTwoGridDescriptionAndImage({
+export default function ServiceTwoGridForPlatFormSubPage({
   headdingBlack,
   headingBlue,
   subheading = "",
@@ -66,11 +66,11 @@ export default function ServicesTwoGridDescriptionAndImage({
               initial={{ opacity: 0, x: reverse ? 30 : -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className={`flex justify-center  ${reverse  ? 'lg:items-start my-0 md:my-[50px]  xl:my-18': 'lg:items-center'} ${
+              className={`flex justify-center lg:self-stretch ${reverse ? 'lg:items-startś': 'lg:items-center'} ${
                 isHeadingInGridSection ? "lg:translate-y-[70px]" : ""
               }`}
             >
-              <div className={`relative w-full max-w-[400px] max-h-[340px] ${marginBottom} rounded-[32px]`}>
+              <div className={`relative w-full max-w-[500px] ${marginBottom} rounded-[32px]`}>
                 <Image
                   src={image}
                   alt="industry"
