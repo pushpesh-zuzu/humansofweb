@@ -19,7 +19,7 @@ function HealthcareAgency() {
       <HeroSectionServices
         heading1="Care Driven Growth"
         heading2="For Healthcare Providers"
-        bgImag="/IndustryExpertise/healthcare/healthcareHero.webp"
+        bgImag="/IndustryExpertise/healthCare/healthCareHero.webp"
         description1="Every day people search online for reliable healthcare, from routine care to urgent needs, but success depends on being visible and trusted at the right moment."
         description2="At Humans of Web, we help healthcare providers connect with patients through SEO, local visibility, and smart campaigns to drive appointments and steady growth."
         altText="Healthcare Marketing Agency"
@@ -32,7 +32,7 @@ function HealthcareAgency() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Patient Focused"
         headingBlue="Healthcare Marketing"
-        image="/IndustryExpertise/healthcare/healthcareMarketing.webp"
+        image="/IndustryExpertise/healthCare/healthcareMarketing.webp"
         paragraphs={marketAnalyzerParaHealthcare}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
@@ -68,7 +68,7 @@ function HealthcareAgency() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Providers Work With Us"
         headingBlue="For Sustainable Growth"
-        image="/IndustryExpertise/healthcare/healthcareTrust.webp"
+        image="/IndustryExpertise/healthCare/healthcareTrust.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaHealthcare}
