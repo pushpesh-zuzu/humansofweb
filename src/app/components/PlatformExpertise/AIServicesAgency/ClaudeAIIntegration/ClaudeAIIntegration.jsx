@@ -26,7 +26,7 @@ function ClaudeAIIntegration() {
         heading1="Custom Claude AI"
         heading2="Solutions For Businesses"
         // bgImag="/AIIntegration/ClaudeAI/claudeHero.webp"
-        bgImag="/PlatformExpertise/ArtificialIntelligencyAgency/aiHero.svg"
+        bgImag="/PlatformExpertise/ArtificialIntelligencyAgency/claudeHero.webp"
         description1="Claude AI helps businesses automate workflows, process information, generate content, and improve operational efficiency through advanced AI capabilities."
         description2="At Humans of Web, we integrate Claude AI into your business systems, helping teams streamline operations, automate repetitive tasks, and improve decision-making."
         altText="Claude AI Integration Agency"
@@ -39,11 +39,12 @@ function ClaudeAIIntegration() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%, rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Business Focused"
         headingBlue="Claude AI Integration"
-        image="/AIIntegration/ClaudeAI/claude1.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/claude1.webp"
         paragraphs={marketAnalyzerParaClaude}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <ScrollTimeline
@@ -61,6 +62,7 @@ function ClaudeAIIntegration() {
         ctaText="Book a free strategy call"
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        isJSXIcon
       />
 
       <ServicesLinks
@@ -76,12 +78,13 @@ function ClaudeAIIntegration() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses Choose Us"
         headingBlue="For Claude AI"
-        image="/AIIntegration/ClaudeAI/claude2.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/claude2.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaClaude}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent

@@ -1,6 +1,15 @@
-
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
+import {
+  AIChatbotDevelopmentIcon,
+  AIContentAutomationIcon,
+  AIContentGenerationIcon,
+  AISupportSystemsIcon,
+  BusinessProcessAutomationIcon,
+  ChatGPTAPIIntegrationIcon,
+  CRMIntegrationIcon,
+  CustomerSupportAutomationIcon,
+  CustomGPTWorkflowIcon,
+  KnowledgeBaseAIIcon,
+} from "./Chatgptaiserviceicons";
 
 export const CHATGPT_MARKET_PARA = [
   "Businesses today handle large volumes of customer communication, repetitive tasks, and content creation every single day. Manual workflows slow teams down and reduce overall efficiency.",
@@ -68,25 +77,33 @@ export const CHATGPT_SEO_ITEMS = [
     title: "AI Content Generation",
     description:
       "We build AI-assisted content workflows that help businesses create blogs, emails, product descriptions, and support content faster while maintaining quality and consistency.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <AIContentGenerationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Customer Support Automation",
     description:
       "We implement ChatGPT-powered support systems that answer common customer questions, reduce response time, and improve user satisfaction across digital channels.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <CustomerSupportAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "CRM & Business Tool Integration",
     description:
       "We connect ChatGPT with CRMs, project management systems, and business platforms to automate workflows and improve operational efficiency.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <CRMIntegrationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "AI Knowledge Base Systems",
     description:
       "We create AI-powered internal knowledge systems that help teams access information faster and improve decision-making across departments.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <KnowledgeBaseAIIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 
@@ -95,37 +112,37 @@ export const CHATGPT_FEATURES = [
     title: "AI Chatbot Development",
     description:
       "We build intelligent AI chatbots using ChatGPT that improve customer engagement, automate conversations, and support business growth.",
-    icon: <ECommerceSeoIcon />,
+    icon: <AIChatbotDevelopmentIcon />,
   },
   {
     title: "Custom GPT Workflows",
     description:
       "We develop custom ChatGPT workflows tailored to your business processes, helping automate repetitive tasks and improve team productivity.",
-    icon: <ECommerceSeoIcon />,
+    icon: <CustomGPTWorkflowIcon />,
   },
   {
     title: "ChatGPT API Integration",
     description:
       "We integrate ChatGPT APIs into websites, applications, and internal systems to create scalable AI-powered digital experiences.",
-    icon: <ECommerceSeoIcon />,
+    icon: <ChatGPTAPIIntegrationIcon />,
   },
   {
     title: "AI Content Automation",
     description:
       "We build systems that streamline content creation for blogs, emails, product descriptions, and customer communication.",
-    icon: <ECommerceSeoIcon />,
+    icon: <AIContentAutomationIcon />,
   },
   {
     title: "AI Support Systems",
     description:
       "We create AI-powered customer support systems that improve response speed while reducing manual support workload.",
-    icon: <ECommerceSeoIcon />,
+    icon: <AISupportSystemsIcon />,
   },
   {
     title: "Business Process Automation",
     description:
       "We automate internal business operations using ChatGPT to improve workflow efficiency, accuracy, and scalability.",
-    icon: <ECommerceSeoIcon />,
+    icon: <BusinessProcessAutomationIcon />,
   },
 ];
 

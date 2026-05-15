@@ -1,15 +1,29 @@
 // HubspotCRMCustomizationData.jsx
 
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import { CRMSetupIcon, DashboardIcon, IntegrationIcon, MarketingAutomationIcon, MigrationIcon, PerformanceIcon, SalesPipelineIcon, SupportIcon, WorkflowAutomationIcon } from "./HubSpotCRMServiceIcon";
+import {
+  CRMSetupIcon,
+  DashboardIcon,
+  HubspotDashboardStrategyIcon,
+  HubspotIntegrationStrategyIcon,
+  HubspotLeadManagementIcon,
+  HubspotMarketingAutomationIcon,
+  HubspotSalesAutomationIcon,
+  HubspotWorkflowPlanningIcon,
+  IntegrationIcon,
+  MarketingAutomationIcon,
+  MigrationIcon,
+  PerformanceIcon,
+  SalesPipelineIcon,
+  SupportIcon,
+  WorkflowAutomationIcon,
+} from "./HubSpotCRMServiceIcon";
 
 export const marketAnalyzerParaHubspot = [
   "HubSpot CRM helps businesses manage marketing, sales, customer communication, and reporting from a centralized platform.",
 
   "But every company manages leads, customer journeys, automation, and internal workflows differently. Generic CRM setups often create limitations instead of improving efficiency.",
 
-  "We customize HubSpot CRM around your operations, helping teams automate processes, organize customer data, and improve visibility across the entire customer lifecycle."
+  "We customize HubSpot CRM around your operations, helping teams automate processes, organize customer data, and improve visibility across the entire customer lifecycle.",
 ];
 
 export const brandTrustParaHubspot = [
@@ -17,7 +31,7 @@ export const brandTrustParaHubspot = [
 
   "A properly customized HubSpot CRM improves lead management, sales visibility, marketing automation, and reporting while reducing manual work across your organization.",
 
-  "We build HubSpot CRM systems that fit naturally into your business workflow, making adoption easier and helping teams operate more efficiently."
+  "We build HubSpot CRM systems that fit naturally into your business workflow, making adoption easier and helping teams operate more efficiently.",
 ];
 
 export const HUBSPOT_CRM_TIMELINE = [
@@ -85,40 +99,52 @@ export const HUBSPOT_CRM_TIMELINE = [
 
 export const HUBSPOT_CRM_STRATEGY_ITEMS = [
   {
-    title: "Custom CRM Workflow Planning",
+    title: "CRM Workflow Architecture Planning",
     description:
-      "We design HubSpot CRM workflows around your internal business process, ensuring sales, marketing, and support teams work efficiently together.",
-    icon: DetailedAuditIcon,
+      "We plan structured HubSpot CRM workflows that align sales, marketing, customer communication, and internal business operations.",
+    icon: (
+      <HubspotWorkflowPlanningIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Lead Management Optimization",
+    title: "Lead Funnel & Conversion Strategy",
     description:
-      "We structure lead pipelines, lifecycle stages, lead scoring systems, and deal management workflows to improve conversion tracking and sales visibility.",
-    icon: DetailedAuditIcon,
+      "We design optimized lead pipelines, lifecycle stages, scoring systems, and conversion workflows to improve sales visibility and customer tracking.",
+    icon: (
+      <HubspotLeadManagementIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Marketing Automation Setup",
+    title: "Marketing Automation Strategy",
     description:
-      "Our team builds automated email sequences, nurturing workflows, customer journeys, and engagement campaigns inside HubSpot CRM.",
-    icon: DetailedAuditIcon,
+      "We create automation strategies for email nurturing, engagement workflows, customer journeys, and marketing campaign management inside HubSpot.",
+    icon: (
+      <HubspotMarketingAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Custom Dashboard Development",
+    title: "Analytics & Dashboard Framework",
     description:
-      "We create custom HubSpot dashboards and reporting systems that help businesses track KPIs, customer activity, sales growth, and marketing performance.",
-    icon: DetailedAuditIcon,
+      "We structure reporting systems and dashboard frameworks that help businesses monitor KPIs, sales performance, and marketing growth.",
+    icon: (
+      <HubspotDashboardStrategyIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "CRM Integration Strategy",
+    title: "Business System Integration Planning",
     description:
-      "We connect HubSpot CRM with the tools your business already uses, creating a centralized ecosystem that improves operational efficiency.",
-    icon: DetailedAuditIcon,
+      "We plan how HubSpot CRM connects with your business tools, marketing platforms, APIs, and operational systems for a centralized workflow ecosystem.",
+    icon: (
+      <HubspotIntegrationStrategyIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Sales Process Automation",
+    title: "Sales Automation Strategy",
     description:
-      "We automate repetitive sales activities including lead assignment, reminders, follow-ups, notifications, and reporting workflows.",
-    icon: DetailedAuditIcon,
+      "We design automation systems for lead assignment, follow-ups, reminders, notifications, and repetitive sales operations to improve team efficiency.",
+    icon: (
+      <HubspotSalesAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 

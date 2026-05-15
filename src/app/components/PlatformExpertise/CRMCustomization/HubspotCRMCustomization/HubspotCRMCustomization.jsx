@@ -38,11 +38,12 @@ function HubspotCRMCustomization() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%, rgba(246, 90, 117, 1) 100%)"
         headdingBlack="Growth Focused"
         headingBlue="HubSpot CRM Customization"
-        image="/PlatformExpertise/HubspotCRM/hubspot1.webp"
+        image="/PlatformExpertise/HubspotCRM/hubspot11.webp"
         paragraphs={marketAnalyzerParaHubspot}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[300px] m-auto"
       />
 
       <ScrollTimeline
@@ -60,6 +61,7 @@ function HubspotCRMCustomization() {
         ctaText="Book a free strategy call"
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        isJSXIcon
       />
 
       {/* <ServicesGridSection
@@ -82,12 +84,13 @@ function HubspotCRMCustomization() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Businesses Choose Us"
         headingBlue="For HubSpot CRM"
-        image="/PlatformExpertise/HubspotCRM/hubspot2.webp"
+        image="/PlatformExpertise/HubspotCRM/hubspot22.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaHubspot}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent

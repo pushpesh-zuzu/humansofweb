@@ -42,6 +42,7 @@ function ZohoCRMCustomizationAgency() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <ScrollTimeline
@@ -50,6 +51,7 @@ function ZohoCRMCustomizationAgency() {
         headingBlue="Zoho CRM Systems"
         buttonText="Schedule A Free Consultation"
         background="#fafafa"
+        
       />
 
       <Interactivecontent
@@ -59,6 +61,7 @@ function ZohoCRMCustomizationAgency() {
         ctaText="Book a free strategy call"
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        isJSXIcon
       />
 
       {/* <ServicesGridSection
@@ -88,6 +91,7 @@ function ZohoCRMCustomizationAgency() {
         paragraphs={brandTrustParaZoho}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent

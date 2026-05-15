@@ -43,6 +43,7 @@ function VtigerCRMCustomization() {
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <ScrollTimeline
@@ -60,6 +61,7 @@ function VtigerCRMCustomization() {
         ctaText="Book a free strategy call"
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        isJSXIcon
       />
 
       {/* <ServicesGridSection
@@ -68,12 +70,12 @@ function VtigerCRMCustomization() {
         headingBlue={"Vtiger CRM Services"}
         background="#fafafa"
       /> */}
-<ServicesLinks
-      services={VTIGER_CRM_DEV_SERVICES}
+      <ServicesLinks
+        services={VTIGER_CRM_DEV_SERVICES}
         headdingBlack={"We Offer "}
         headingBlue={"Vtiger CRM Services"}
-      padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
-      background="#fafafa"    
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        background="#fafafa"
       />
       <ServicesTwoGridDescriptionAndImage
         reverse
@@ -87,6 +89,7 @@ function VtigerCRMCustomization() {
         paragraphs={brandTrustParaVtiger}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent

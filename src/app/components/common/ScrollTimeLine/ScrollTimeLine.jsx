@@ -5,6 +5,7 @@ import PaddingWrapper2 from "../Container/PaddingWrapper2";
 import H2HeadingWrapper from "../Container/H2HeadingWrapper";
 import { GetYourFreeConsultationButton } from "../CtaButtons";
 import TimelineIcon from "./TimeLineIcon";
+import GetProposalModal from "../GetProposalModal/GetProposalModal";
 
 export default function ScrollTimeline({
   items = [],
@@ -19,6 +20,7 @@ export default function ScrollTimeline({
   isBackgroundPrimary = false,
 }) {
   const containerRef = useRef(null);
+  const [proposalOpen, setProposalOpen] = useState(false);
 
   // FIXED
   const mobileIconRefs = useRef([]);
@@ -76,7 +78,7 @@ export default function ScrollTimeline({
 
       const percentage = Math.min(
         Math.max((filled / lineHeight) * 100, 0),
-        100
+        100,
       );
 
       setFillHeight(percentage);
@@ -126,7 +128,6 @@ export default function ScrollTimeline({
 
               return (
                 <div key={index}>
-
                   {/* Mobile */}
                   <div className="flex items-start gap-4 py-5 md:hidden">
                     <div
@@ -179,7 +180,6 @@ export default function ScrollTimeline({
                       )}
                     </div>
                   </div>
-
                 </div>
               );
             })}
@@ -188,10 +188,19 @@ export default function ScrollTimeline({
 
         {buttonText && (
           <div className="flex justify-center mt-6 md:mt-10">
-            <GetYourFreeConsultationButton text={buttonText} />
+            <GetYourFreeConsultationButton
+              onClick={() => {
+                setProposalOpen(true);
+              }}
+              text={buttonText}
+            />
           </div>
         )}
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 }

@@ -1,7 +1,20 @@
-
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import { ZohoDashboardIcon, ZohoIntegrationIcon, ZohoMigrationIcon, ZohoModuleIcon, ZohoPermissionIcon, ZohoPipelineIcon, ZohoSetupIcon, ZohoSupportIcon, ZohoWorkflowIcon } from "./ZohoCRMCustomizationAgencyIcon";
+import {
+  ZohoAuditIcon,
+  ZohoDashboardIcon,
+  ZohoIntegrationIcon,
+  ZohoLifecycleIcon,
+  ZohoMigrationIcon,
+  ZohoModuleIcon,
+  ZohoPermissionIcon,
+  ZohoPipelineIcon,
+  ZohoRevenueIcon,
+  ZohoScaleIcon,
+  ZohoSetupIcon,
+  ZohoStrategyIcon,
+  ZohoSupportIcon,
+  ZohoWorkflowIcon,
+  ZohoWorkflowMapIcon,
+} from "./ZohoCRMCustomizationAgencyIcon";
 
 export const marketAnalyzerParaZoho = [
   "Zoho CRM works best when it reflects how your business actually manages leads, sales, follow-ups, and customer communication instead of relying on default workflows.",
@@ -84,96 +97,108 @@ export const ZOHO_IMPLEMENTATION_TIMELINE = [
 
 export const ZOHO_AUTOMATION_STRATEGY_ITEMS = [
   {
-    title: "CRM Workflow Audit",
+    title: "CRM Process Audit & Gap Analysis",
     description:
-      "We review your existing processes, sales stages, lead handling systems, and operational gaps to identify automation opportunities inside Zoho CRM.",
-    icon: DetailedAuditIcon,
+      "We deeply analyze your existing Zoho CRM workflows, identify inefficiencies, and map automation opportunities to improve overall business performance.",
+    icon: (
+      <ZohoAuditIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Sales Pipeline Optimization",
+    title: "Sales Funnel Strategy Design",
     description:
-      "We structure pipelines, lead stages, and deal tracking systems that improve sales visibility and reduce operational friction.",
-    icon: DetailedAuditIcon,
+      "We design optimized sales funnels with structured lead stages, conversion paths, and decision flow improvements for better revenue outcomes.",
+    icon: (
+      <ZohoStrategyIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Lead Automation Systems",
+    title: "Lead Lifecycle Automation Planning",
     description:
-      "We automate lead assignments, reminders, task creation, and follow-up workflows to reduce manual work across teams.",
-    icon: DetailedAuditIcon,
+      "We plan end-to-end lead handling systems including capture, scoring, nurturing, and conversion automation strategies.",
+    icon: (
+      <ZohoLifecycleIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Custom Reporting Dashboards",
+    title: "CRM Scalability Architecture",
     description:
-      "We build reporting dashboards that help businesses monitor sales performance, lead quality, team productivity, and revenue trends.",
-    icon: DetailedAuditIcon,
+      "We structure Zoho CRM systems that scale with your business growth, team expansion, and increasing data complexity.",
+    icon: (
+      <ZohoScaleIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "CRM Integrations",
+    title: "Cross-Platform Workflow Mapping",
     description:
-      "We integrate Zoho CRM with websites, email tools, marketing platforms, payment systems, and external software tools.",
-    icon: DetailedAuditIcon,
+      "We map how Zoho CRM connects with marketing, sales, and external tools to create a unified business automation ecosystem.",
+    icon: (
+      <ZohoWorkflowMapIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Operational Scalability Planning",
+    title: "Revenue Optimization Strategy",
     description:
-      "We structure CRM systems that support future business growth, additional users, automation expansion, and process improvements.",
-    icon: DetailedAuditIcon,
+      "We optimize CRM-driven processes to improve conversions, reduce leakage, and increase overall revenue efficiency.",
+    icon: (
+      <ZohoRevenueIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 
 export const ZOHO_CRM_CUSTOMIZATION_SERVICES = [
   {
-    title: "Zoho CRM Setup & Configuration",
+    title: "Zoho CRM Setup & System Configuration",
     description:
-      "We configure Zoho CRM around your business workflows, user structure, lead stages, and operational requirements.",
+      "We configure Zoho CRM from scratch based on your business structure, roles, pipelines, and operational requirements.",
     icon: <ZohoSetupIcon />,
   },
   {
-    title: "Custom Module Development",
+    title: "Custom Modules & Data Structure Development",
     description:
-      "We create custom modules, fields, layouts, and workflows tailored to your sales and operational processes.",
+      "We build custom modules, fields, and data models tailored to your sales and customer management processes.",
     icon: <ZohoModuleIcon />,
   },
   {
-    title: "Sales Pipeline Customization",
+    title: "Sales Pipeline Implementation",
     description:
-      "We structure lead pipelines, deal stages, automation rules, and task systems for smoother sales management.",
+      "We implement structured pipelines, deal stages, automation rules, and tracking systems inside Zoho CRM.",
     icon: <ZohoPipelineIcon />,
   },
   {
-    title: "Workflow Automation",
+    title: "Workflow Automation Implementation",
     description:
-      "We automate repetitive CRM processes including follow-ups, notifications, approvals, assignments, and reminders.",
+      "We build automated workflows for tasks, follow-ups, approvals, notifications, and CRM triggers.",
     icon: <ZohoWorkflowIcon />,
   },
   {
-    title: "Zoho CRM Integrations",
+    title: "Third-Party Integrations",
     description:
-      "We integrate Zoho CRM with websites, email platforms, payment gateways, marketing tools, and external software systems.",
+      "We integrate Zoho CRM with websites, email systems, payment gateways, and external business tools.",
     icon: <ZohoIntegrationIcon />,
   },
   {
-    title: "Custom Dashboard & Reporting",
+    title: "Dashboards & Reporting Systems",
     description:
-      "We build custom dashboards and reports that provide actionable insights across sales, operations, and customer management.",
+      "We build real-time dashboards and reporting systems for sales, performance tracking, and business insights.",
     icon: <ZohoDashboardIcon />,
   },
   {
-    title: "CRM Data Migration",
+    title: "Data Migration & CRM Transition",
     description:
-      "We migrate customer data, leads, activities, and workflows from spreadsheets or other CRM systems into Zoho CRM.",
+      "We migrate your data from spreadsheets or other CRMs into Zoho safely without data loss or disruption.",
     icon: <ZohoMigrationIcon />,
   },
   {
-    title: "Role Management & Permissions",
+    title: "Role-Based Access & Security Setup",
     description:
-      "We configure user roles, permissions, and access levels to improve workflow organization and data security.",
+      "We configure user roles, permissions, and security rules to ensure structured access control inside CRM.",
     icon: <ZohoPermissionIcon />,
   },
   {
-    title: "Zoho CRM Maintenance & Support",
+    title: "Ongoing CRM Optimization & Support",
     description:
-      "We provide ongoing optimization, troubleshooting, workflow improvements, and support as your business evolves.",
+      "We continuously improve your CRM workflows, fix issues, and optimize performance as your business grows.",
     icon: <ZohoSupportIcon />,
   },
 ];

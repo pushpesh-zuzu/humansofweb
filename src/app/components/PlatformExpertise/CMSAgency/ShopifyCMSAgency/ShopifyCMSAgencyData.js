@@ -1,11 +1,26 @@
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
-
+import {
+  AppDevelopmentIcon,
+  ConversionIcon,
+  HeadlessIcon,
+  IntegrationIcon,
+  MigrationIcon,
+  PerformanceIcon,
+  ShopifyCompetitorAnalysisIcon,
+  ShopifyKeywordResearchIcon,
+  ShopifyPageOptimizationIcon,
+  ShopifyReportingGrowthIcon,
+  ShopifySpeedOptimizationIcon,
+  ShopifyTechnicalAuditIcon,
+  StoreDesignIcon,
+  StoreSetupIcon,
+  ThemeDevelopmentIcon,
+} from "./SopifyServiceIcons";
 export const marketAnalyzerParaShopify = [
   "Running a Shopify store is more than just listing products. Customers explore collections, compare options, and expect a smooth experience before they decide to make a purchase.",
 
   "Every step matters, from how easily products are discovered to how simple the checkout feels. Small gaps in this journey can lead to drop-offs, even when there is strong interest in what you offer.",
 
-  "We help you optimize your store experience and marketing approach together. So customers find your products faster, trust your brand, and move through the buying process with confidence."
+  "We help you optimize your store experience and marketing approach together. So customers find your products faster, trust your brand, and move through the buying process with confidence.",
 ];
 
 export const StrategyContentShopify = {
@@ -134,54 +149,60 @@ export const SHOPIFY_PPC_TIMELINE = [
 ];
 
 
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import { AppDevelopmentIcon, ConversionIcon, HeadlessIcon, IntegrationIcon, MigrationIcon, PerformanceIcon, StoreDesignIcon, StoreSetupIcon, ThemeDevelopmentIcon } from "./SopifyServiceIcons";
 
-
-// constants/shopifySeoStrategy.js
 
 export const SHOPIFY_SEO_STRATEGY_ITEMS = [
   {
     title: "Shopify Technical SEO Audit",
     description:
-      "We conduct a full technical audit of your Shopify store — crawling source code, checking canonical tags, fixing duplicate content from Shopify's default URL structure (e.g. /collections/*/products/*), auditing robots.txt, sitemap.xml, and resolving crawl errors that block Google from indexing your store properly.",
-    icon: DetailedAuditIcon,
+      "We conduct a full technical audit of your Shopify store — crawling source code, checking canonical tags, fixing duplicate content from Shopify's default URL structure, auditing robots.txt and sitemap.xml, and resolving indexing issues that affect search visibility.",
+    icon: (
+      <ShopifyTechnicalAuditIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Competitor Analysis",
+    title: "Competitor SEO Analysis",
     description:
-      "We deep-dive into your top Shopify competitors — analyzing their keyword rankings, collection page structure, product page SEO, backlink profiles, and content strategy. These insights shape a data-driven plan to outrank them across every product and category that matters to your business.",
-    icon: DetailedAuditIcon,
+      "We analyze top Shopify competitors to understand their keyword rankings, collection page structure, backlink profiles, and content strategy so your store can compete more effectively in search results.",
+    icon: (
+      <ShopifyCompetitorAnalysisIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Shopify Keyword Research",
     description:
-      "We identify high-intent, buyer-ready keywords for your product pages, collection pages, blog posts, and landing pages. We target transactional terms like 'buy [product] online', category-level searches, comparison queries, and long-tail keywords that drive qualified shoppers to your Shopify store at every stage of the purchase funnel.",
-    icon: DetailedAuditIcon,
+      "We identify high-intent search terms for product pages, collection pages, blogs, and landing pages to attract qualified traffic throughout the customer buying journey.",
+    icon: (
+      <ShopifyKeywordResearchIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Product & Collection Page Optimization",
+    title: "Product & Collection Page SEO",
     description:
-      "We optimize every product title, meta description, URL slug, alt text, and page heading across your Shopify catalog. Collection pages — often the highest-traffic pages on a Shopify store — receive dedicated SEO copy, structured headings, and internal linking to maximize their ranking potential.",
-    icon: DetailedAuditIcon,
+      "We optimize product titles, meta descriptions, collection content, headings, alt text, and internal linking structures to improve rankings and user experience.",
+    icon: (
+      <ShopifyPageOptimizationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "Site Speed & Core Web Vitals",
+    title: "Core Web Vitals & Speed Optimization",
     description:
-      "Page speed is a direct ranking factor and a conversion killer. We optimize your Shopify store's LCP, FID, and CLS scores by compressing images, deferring unused JavaScript, minimizing Shopify app bloat, enabling lazy loading, and leveraging Shopify's CDN — ensuring your store passes Google's Core Web Vitals.",
-    icon: DetailedAuditIcon,
+      "We improve Shopify store performance by optimizing images, reducing unnecessary scripts, minimizing app bloat, and improving Core Web Vitals for better rankings and conversions.",
+    icon: (
+      <ShopifySpeedOptimizationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
-    title: "SEO Reporting & Growth Tracking",
+    title: "SEO Reporting & Growth Monitoring",
     description:
-      "Every month you receive a detailed Shopify SEO report covering keyword ranking movements, organic traffic growth, revenue attributed to SEO, technical health scores, and a clear roadmap of upcoming optimizations — so you always know exactly where your store stands and what we're doing next.",
-    icon: DetailedAuditIcon,
+      "We provide ongoing SEO reporting that tracks keyword rankings, organic traffic, technical health, and growth opportunities so you always understand store performance.",
+    icon: (
+      <ShopifyReportingGrowthIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 
-
 // constants/shopifyDevServices.js
-
 
 export const SHOPIFY_DEV_SERVICES = [
   {
@@ -274,7 +295,8 @@ export const SHOPIFY_FAQ_DATA = [
       "A fully custom Shopify store typically takes 4 to 10 weeks depending on complexity — number of pages, custom features, and integrations. We give you a clear timeline before we start and keep you updated throughout so there are no surprises at launch.",
   },
   {
-    question: "Can you migrate my existing store to Shopify without losing SEO rankings?",
+    question:
+      "Can you migrate my existing store to Shopify without losing SEO rankings?",
     answer:
       "Yes. We handle the full migration — products, collections, customer data, and all existing URLs. We implement proper 301 redirects, carry over metadata, and submit updated sitemaps so your SEO rankings are protected through the transition.",
   },

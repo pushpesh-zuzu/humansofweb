@@ -1,4 +1,3 @@
-
 import React from "react";
 import HeroSectionServices from "../../../common/Services/HeroSectionServices/HeroSectionServices";
 import TrustedBy from "../../../common/TrustedBy/TrustedBy";
@@ -24,7 +23,7 @@ function KiloCodeAI() {
       <HeroSectionServices
         heading1="AI Coding Automation"
         heading2="With KiloCode"
-        bgImag="/PlatformExpertise/AI/kilocodeHero.webp"
+        bgImag="/PlatformExpertise/ArtificialIntelligencyAgency/kilocodeHero.webp"
         description1="Development teams use AI coding assistants to speed up development, reduce repetitive work, and improve overall engineering productivity."
         description2="At Humans of Web, we help businesses implement KiloCode workflows that improve coding efficiency, automation, and development scalability."
         altText="KiloCode AI Solutions"
@@ -37,11 +36,12 @@ function KiloCodeAI() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="AI Assisted"
         headingBlue="Development Workflow"
-        image="/PlatformExpertise/AI/kilocode1.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/kilocode1.webp"
         paragraphs={KILOCODE_MARKET_PARA}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <ScrollTimeline
@@ -59,6 +59,7 @@ function KiloCodeAI() {
         ctaText="Book a free strategy call"
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        isJSXIcon
       />
 
       <ServicesLinks
@@ -74,12 +75,13 @@ function KiloCodeAI() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Teams Use"
         headingBlue="AI Coding Automation"
-        image="/PlatformExpertise/AI/kilocode2.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/kilocode2.webp"
         limit={5}
         headingColor={false}
         paragraphs={KILOCODE_TRUST_PARA}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent

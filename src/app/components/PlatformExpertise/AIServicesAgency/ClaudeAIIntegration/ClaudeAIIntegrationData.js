@@ -1,14 +1,27 @@
-// ClaudeAIIntegrationData.jsx
-
-import DetailedAuditIcon from "../../../common/Icons/IndustryExpertise/detailed-audit.svg";
-import ECommerceSeoIcon from "../../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
+import {
+  ChatbotDevelopmentIcon,
+  ClaudeBusinessAutomationIcon,
+  ClaudeContentGenerationIcon,
+  ClaudeIntegrationIcon,
+  ClaudeIntegrationStrategyIcon,
+  ClaudeKnowledgeAutomationIcon,
+  ClaudeSupportAutomationIcon,
+  ClaudeWorkflowPlanningIcon,
+  ContentAutomationIcon,
+  KnowledgeSystemIcon,
+  PerformanceOptimizationIcon,
+  PromptEngineeringIcon,
+  SupportMaintenanceIcon,
+  ThirdPartyIntegrationIcon,
+  WorkflowAutomationIcon,
+} from "./Claudeaiserviceicons";
 
 export const marketAnalyzerParaClaude = [
   "Claude AI helps businesses automate content generation, customer support, research, internal workflows, and information processing through advanced AI capabilities.",
 
   "But every business uses AI differently depending on workflows, customer interactions, operational systems, and automation requirements. Generic AI implementations often fail to deliver practical business value.",
 
-  "We integrate Claude AI into your existing systems and workflows, helping teams improve productivity, automate repetitive tasks, and streamline business operations."
+  "We integrate Claude AI into your existing systems and workflows, helping teams improve productivity, automate repetitive tasks, and streamline business operations.",
 ];
 
 export const brandTrustParaClaude = [
@@ -16,7 +29,7 @@ export const brandTrustParaClaude = [
 
   "A properly integrated Claude AI system helps businesses automate communication, organize information, improve customer experiences, and reduce manual workload across departments.",
 
-  "We build Claude AI solutions that align with your operational workflow, making AI adoption easier while helping teams work more efficiently."
+  "We build Claude AI solutions that align with your operational workflow, making AI adoption easier while helping teams work more efficiently.",
 ];
 
 export const CLAUDE_AI_TIMELINE = [
@@ -87,37 +100,49 @@ export const CLAUDE_AI_STRATEGY_ITEMS = [
     title: "AI Workflow Planning",
     description:
       "We design Claude AI workflows around your business operations, helping teams automate repetitive processes and improve productivity.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <ClaudeWorkflowPlanningIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Customer Support Automation",
     description:
       "We integrate Claude AI into customer communication systems to improve response handling, ticket management, and support efficiency.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <ClaudeSupportAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "AI Content Generation Systems",
     description:
       "Our team develops AI-powered systems for content writing, summaries, reports, internal documentation, and business communication.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <ClaudeContentGenerationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Internal Knowledge Automation",
     description:
       "We help businesses organize and retrieve information faster by building AI-powered internal knowledge and documentation systems.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <ClaudeKnowledgeAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "Business Process Automation",
     description:
       "We automate operational workflows including reporting, lead processing, task management, approvals, and repetitive administrative tasks.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <ClaudeBusinessAutomationIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
   {
     title: "AI Integration Strategy",
     description:
       "We connect Claude AI with your CRM, internal systems, APIs, and business tools to create a seamless operational ecosystem.",
-    icon: DetailedAuditIcon,
+    icon: (
+      <ClaudeIntegrationStrategyIcon className="h-[110px] w-[110px] md:h-[132px] md:w-[132px]" />
+    ),
   },
 ];
 
@@ -126,55 +151,55 @@ export const CLAUDE_AI_DEV_SERVICES = [
     title: "Claude AI Integration",
     description:
       "We integrate Claude AI into websites, CRMs, internal tools, support systems, and operational workflows for business automation.",
-    icon: <ECommerceSeoIcon />,
+    icon: <ClaudeIntegrationIcon />,
   },
   {
     title: "AI Workflow Automation",
     description:
       "We automate repetitive business tasks, reporting workflows, customer communication, and operational processes using Claude AI.",
-    icon: <ECommerceSeoIcon />,
+    icon: <WorkflowAutomationIcon />,
   },
   {
     title: "Custom AI Chatbot Development",
     description:
       "Our team develops Claude AI-powered chatbots for customer support, lead generation, internal assistance, and workflow management.",
-    icon: <ECommerceSeoIcon />,
+    icon: <ChatbotDevelopmentIcon />,
   },
   {
     title: "AI Content Automation",
     description:
       "We build systems that generate content, summaries, documentation, reports, and communication workflows using Claude AI.",
-    icon: <ECommerceSeoIcon />,
+    icon: <ContentAutomationIcon />,
   },
   {
     title: "Third-Party System Integrations",
     description:
       "We integrate Claude AI with CRMs, ERPs, APIs, support systems, communication tools, and custom business applications.",
-    icon: <ECommerceSeoIcon />,
+    icon: <ThirdPartyIntegrationIcon />,
   },
   {
     title: "AI Prompt Engineering",
     description:
       "We create structured prompt systems and AI response frameworks that improve output quality, consistency, and workflow efficiency.",
-    icon: <ECommerceSeoIcon />,
+    icon: <PromptEngineeringIcon />,
   },
   {
     title: "Internal AI Knowledge Systems",
     description:
       "We develop AI-powered internal knowledge bases that help teams access information, processes, and documentation faster.",
-    icon: <ECommerceSeoIcon />,
+    icon: <KnowledgeSystemIcon />,
   },
   {
     title: "AI Performance Optimization",
     description:
       "We optimize AI workflows, prompts, automations, and integrations to improve business efficiency and operational performance.",
-    icon: <ECommerceSeoIcon />,
+    icon: <PerformanceOptimizationIcon />,
   },
   {
     title: "Claude AI Support & Maintenance",
     description:
       "We provide ongoing AI optimization, troubleshooting, workflow improvements, and technical support after deployment.",
-    icon: <ECommerceSeoIcon />,
+    icon: <SupportMaintenanceIcon />,
   },
 ];
 

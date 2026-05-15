@@ -15,6 +15,7 @@ import ReachWithUs from "../../../common/Services/ReachWithUs/ReachWithUs";
 import ScrollTimeline from "@/app/components/common/ScrollTimeLine/ScrollTimeLine";
 import Interactivecontent from "@/app/components/common/SubServices/Interactivecontent/Interactivecontent";
 import FaqComponent from "@/app/components/common/SubServices/FaqComponent/FaqComponent";
+import ServicesLinks from "@/app/components/common/ServicesLinks/ServicesLinks";
 
 function BoltAIAgency() {
   return (
@@ -22,7 +23,7 @@ function BoltAIAgency() {
       <HeroSectionServices
         heading1="Build Faster With"
         heading2="Bolt AI Development"
-        bgImag="/PlatformExpertise/BoltAI/boltAIHero.webp"
+        bgImag="/PlatformExpertise/ArtificialIntelligencyAgency/boltAIHero.webp"
         description1="Modern startups and product teams use Bolt AI to rapidly build, test, and launch applications with AI-assisted workflows and faster development cycles."
         description2="At Humans of Web, we help businesses use Bolt AI for scalable product development, workflow automation, rapid prototyping, and AI-powered digital experiences."
         altText="Bolt AI Development Agency"
@@ -35,11 +36,12 @@ function BoltAIAgency() {
         background="linear-gradient(90deg, rgba(72, 23, 156, 1) 20%,rgba(246, 90, 117, 1) 100%)"
         headdingBlack="AI Powered"
         headingBlue="Bolt AI Solutions"
-        image="/PlatformExpertise/BoltAI/boltAI1.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/boltAI1.webp"
         paragraphs={marketAnalyzerParaBoltAI}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"
         limit={5}
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <ScrollTimeline
@@ -51,18 +53,19 @@ function BoltAIAgency() {
       />
 
       <Interactivecontent
-        headingStart="AI Workflows That Improve"
-        headingEnd="Product Development"
+        headingStart="Our Approach To Building"
+        headingEnd="AI-Powered Products"
         items={BOLT_AI_STRATEGY_ITEMS}
         ctaText="Book a free strategy call"
         ctaHref=""
         padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
+        isJSXIcon
       />
 
-      <ServicesGridSection
+      <ServicesLinks
         services={BOLT_AI_DEV_SERVICES}
-        headdingBlack={"We Offer "}
-        headingBlue={"Bolt AI Development"}
+        headdingBlack="Complete "
+        headingBlue="Bolt AI Solutions We Offer"
         background="#fafafa"
       />
 
@@ -72,12 +75,13 @@ function BoltAIAgency() {
         ctaText="Get Free Proposal"
         headdingBlack="Why Teams Choose Us"
         headingBlue="For Bolt AI Projects"
-        image="/PlatformExpertise/BoltAI/boltAI2.webp"
+        image="/PlatformExpertise/ArtificialIntelligencyAgency/boltAI2.webp"
         limit={5}
         headingColor={false}
         paragraphs={brandTrustParaBoltAI}
         headingBlueColor="text-primary"
         paragraphTextColor
+        imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
       />
 
       <FaqComponent
