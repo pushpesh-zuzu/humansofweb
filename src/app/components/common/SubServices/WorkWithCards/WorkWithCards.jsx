@@ -85,7 +85,7 @@ const WorkWithCards = ({
               textAlign="text-center"
             />
             <div className="mx-auto max-w-[1120px]">
-              <div className="relative px-4 md:px-14">
+              <div className="relative md:px-5">
                 <button
                   type="button"
                   onClick={goToPrevious}

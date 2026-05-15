@@ -52,18 +52,21 @@ export const PlasticSurgeonServices = [
     description:
       "We design websites that feel welcoming, clear, and trustworthy. Every element is built to help patients feel confident and comfortable reaching out.",
     icon: <PLasticSurgeryWebDevlopment />,
+    link: "/plastic-surgeon-website-design-development-services",
   },
   {
     title: "Plastic Surgeon Social Media Marketing",
     description:
       "We create content that builds trust and keeps you connected with your audience. From education to transformation stories, we make your brand relatable and credible.",
     icon: <PLasticSurgerySocialMedia />,
+    link: "/plastic-surgeon-social-media-marketing-services",
   },
   {
     title: "Plastic Surgeon Reputation Management",
     description:
       "We help you build and maintain a strong, trustworthy online presence. By managing reviews and patient feedback, we strengthen confidence in your practice.",
     icon: <PlasticSurgeryManagement />,
+    link: "/plastic-surgeon-reputation-management-services",
   },
 ];
 export const brandTrustPara = [
