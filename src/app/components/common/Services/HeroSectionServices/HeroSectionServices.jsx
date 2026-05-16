@@ -23,7 +23,7 @@ export default function HeroSectionServices({
   return (
     <ContainerWrapper
       background="#48179C"
-    // maxWidth="max-w-[1440px] w-[92%]"
+      // maxWidth="max-w-[1440px] w-[92%]"
     >
       <PaddingWrapper2>
         <section className="relative rounded-[34px] ">
@@ -74,20 +74,14 @@ export default function HeroSectionServices({
               transition={{ duration: 0.7, delay: 0.15 }}
               className="relative flex items-center justify-center"
             >
-              {/* Decorative elements */}
-              <div className="absolute right-[12%] top-[10%] h-14 w-14 rounded-full border border-dashed border-[#1d1d1d]/30" />
-              <div className="absolute left-[0%] bottom-[12%] h-24 w-24 rounded-full border border-dashed border-[#1d1d1d]/20" />
-
-              {/* Image Card */}
-              <div className="relative h-[250px] w-full max-w-full overflow-hidden rounded-[32px] bg-[#f5f7ff] shadow-[0_20px_60px_rgba(72,23,156,0.15)] md:h-[370px] lg:h-[388px] xl:h-[370px]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(72,23,156,0.12),_transparent_40%),radial-gradient(circle_at_bottom_left,_rgba(246,90,117,0.14),_transparent_35%)]" />
+              <div className="relative h-[250px] w-full max-w-full overflow-hidden rounded-[32px] md:h-[370px] lg:h-[388px] xl:h-[370px]">
 
                 <Image
                   src={bgImag}
                   alt={altText}
                   fill
                   // height={380}
-                  // width={500}        
+                  // width={500}
                   className="object-cover"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"

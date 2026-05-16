@@ -76,6 +76,7 @@ export default function ServicesTwoGridDescriptionAndImage({
                   alt="industry"
                   width={540}
                   height={380}
+                  loading='eager'
                   className={`object-contain rounded-[32px] ${imageClass} `}
                 />
               </div>

@@ -47,7 +47,7 @@ const ServicesLinks = ({
 
                     <div className="grid gap-6 lg:grid-cols-3 lg:pt-2">
                         {services.map((service, index) => {
-                            const href = service.link || service.href || service.pageLink || "#";
+                            const href = service.link || service.href || service.pageLink || "";
 
                             return (
                                 <article
@@ -74,9 +74,12 @@ const ServicesLinks = ({
 
                                         <div className="lg:min-h-[72px] lg:flex lg:items-center lg:justify-center">
                                             <h3 className="text-h4 font-bold text-primary">
-                                                <Link href={href} className="transition hover:text-secondary">
+                                                { href ==='' || !href ? <span href={href} className="transition hover:text-secondary">
                                                     {service.title}
-                                                </Link>
+                                                </span> 
+                                                : <Link href={href} className="transition hover:text-secondary">
+                                                    {service.title}
+                                                </Link>}
                                             </h3>
                                         </div>
 

@@ -10,8 +10,8 @@ function ContainerWrapper({
 }) {
   return (
     <div
-      className={`w-full mx-auto ${className} ${secondaryClass} ${background ? styles.bgResponsive : ""}`}
-      style={background ? { "--wrapper-bg": background } : {}}
+      className={`w-full mx-auto ${className} ${secondaryClass} ${background}`}
+      // style={background ? { "--wrapper-bg": background } : {}}
     >
       <div className={`${maxWidth} mx-auto `}>{children}</div>
     </div>
