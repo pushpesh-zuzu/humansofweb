@@ -2,9 +2,9 @@ import React from 'react'
 import SeoServices from '../components/IndustryExpertise/PlasticSurgeonAgency/PlasticeSurgeonSubPages/SeoServices/SeoServices';
 
 export const metadata = {
-    title: "Plastic Surgeon SEO Services | Increase Online Visibility",
+    title: "Plastic Surgeon Search Engine Optimization",
     description:
-        "Increase your plastic surgery clinic’s online visibility with SEO services focused on improving search rankings, attracting qualified patients, and driving consultation inquiries.",
+        "Improve rankings with plastic surgeon search engine optimization. Attract qualified patients with proven SEO strategies.",
 };
 
 const page = () => {

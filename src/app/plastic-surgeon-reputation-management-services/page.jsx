@@ -2,9 +2,9 @@ import React from 'react'
 import ReputationManagement from '../components/IndustryExpertise/PlasticSurgeonAgency/PlasticeSurgeonSubPages/ReputationManagement/ReputationManagement'
 
 export const metadata = {
-    title: "Plastic Surgeon Reputation Management Services | Build Patient Trust",
+    title: "Plastic Surgeon Reputation Management",
     description:
-        "Strengthen your plastic surgery clinic’s online reputation with strategies focused on managing reviews, improving credibility, and building patient trust across digital platforms.",
+        "Protect your brand with plastic surgeon reputation management. Improve reviews, trust, and patient confidence online.",
 };
 
 const page = () => {

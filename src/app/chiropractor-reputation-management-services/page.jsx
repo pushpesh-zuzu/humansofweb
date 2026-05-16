@@ -2,9 +2,9 @@ import React from 'react'
 import ReputationManagement from '../components/IndustryExpertise/ChiropractorAgency/ChiropractorSubPages/ReputationManagement/ReputationManagement';
 
 export const metadata = {
-  title: "Chiropractor Reputation Management Services",
+  title: "Chiropractor Reputation Management",
   description:
-    "Enhance your chiropractic clinic’s online reputation with reputation management services focused on building trust, improving patient reviews, and strengthening your brand credibility online.",
+    "Protect your clinic with chiropractor reputation management. Improve reviews, trust, and patient confidence online.",
 };
 
 const page = () => {

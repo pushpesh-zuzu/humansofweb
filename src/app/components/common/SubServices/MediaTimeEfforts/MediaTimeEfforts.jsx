@@ -16,9 +16,9 @@ const MediaTimeEfforts = ({
     <ContainerWrapper>
       <PaddingWrapper2 padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20">
         <section className="relative overflow-hidden rounded-[20px] bg-[linear-gradient(135deg,#48179C_0%,#34106f_48%,#F65A75_145%)] px-5 py-10 text-white md:px-10 md:py-14 xl:px-16 xl:py-18">
-          
+
           <div className="grid items-center gap-10 lg:grid-cols-2 xl:gap-16">
-            
+
             {/* LEFT CONTENT */}
             <div className="max-w-[760px]">
               <h2 className="text-h2 font-semibold leading-tight text-secondary">
@@ -37,7 +37,7 @@ const MediaTimeEfforts = ({
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <GetCtaButton text={ctaText} href="" />
+                <GetCtaButton text={ctaText} href="" className="hover:bg-white hover:text-secondary" />
               </div>
             </div>
 
@@ -45,7 +45,7 @@ const MediaTimeEfforts = ({
             <div className="w-full flex justify-center">
               <img
                 src={image}
-                alt={imageAlt} // ✅ dynamic alt text
+                alt={imageAlt}
                 className="w-full max-w-[450px] rounded-xl object-cover"
               />
             </div>

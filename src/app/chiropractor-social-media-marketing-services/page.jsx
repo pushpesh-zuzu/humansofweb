@@ -2,9 +2,9 @@ import React from 'react'
 import SocialMediaMarketing from '../components/IndustryExpertise/ChiropractorAgency/ChiropractorSubPages/SocialMediaMarketing/SocialMediaMarketing'
 
 export const metadata = {
-    title: "Chiropractor Social Media Marketing Services",
+    title: "Chiropractor Social Media Marketing",
     description:
-        "Grow your chiropractic clinic with social media marketing services designed to increase brand visibility, attract local patients, boost engagement, and drive appointment inquiries online.",
+        "Grow your clinic with chiropractor social media marketing. Increase engagement, trust, and patient inquiries.",
 };
 
 const page = () => {

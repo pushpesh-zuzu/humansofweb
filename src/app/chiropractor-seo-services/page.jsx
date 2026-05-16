@@ -1,9 +1,9 @@
 import React from 'react'
 import SeoServices from '../components/IndustryExpertise/ChiropractorAgency/ChiropractorSubPages/SeoServices/SeoServices';
 export const metadata = {
-    title: "Chiropractor SEO Services | Grow Your Chiropractic Practice Online",
+    title: "Chiropractor Search Engine Optimization",
     description:
-        "Boost your chiropractic practice with expert SEO services designed to improve search rankings, attract local patients, increase website traffic, and grow your online visibility.",
+        "Improve rankings with chiropractor search engine optimization. Attract more patients with proven SEO strategies.",
 };
 const page = () => {
     return (

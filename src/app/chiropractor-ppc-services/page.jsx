@@ -2,9 +2,9 @@ import React from 'react'
 import PPCServices from '../components/IndustryExpertise/ChiropractorAgency/ChiropractorSubPages/PPCServices/PPCServices';
 
 export const metadata = {
-    title: "Chiropractor PPC Services | Drive More Patient Appointments",
+    title: "Chiropractor Pay Per Click Services",
     description:
-        "Increase patient leads and grow your chiropractic practice with targeted PPC services. Our chiropractor PPC campaigns help boost visibility, attract local patients, and maximize ROI.",
+        "Generate patient leads with chiropractor pay per click services. Run targeted ad campaigns for better conversions.",
 };
 
 const page = () => {
