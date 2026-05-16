@@ -52,7 +52,7 @@ const ServicesLinks = ({
                             return (
                                 <article
                                     key={service.title}
-                                    className="overflow-hidden p-[2px]"
+                                    className="overflow-hidden p-[2.5px]"
                                     style={{
                                         borderRadius: 28,
                                         background: borderGradient(index % 2 !== 0),
