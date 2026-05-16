@@ -67,8 +67,8 @@ function CMSAgency() {
         reverse
         isHeadingInGridSection
         ctaText="Get Free Proposal"
-        headdingBlack="Why Businesses "
-        headingBlue="Prefer Us"
+        headdingBlack="Why Brands Grow With Us"
+        headingBlue="Beyond Just Marketing"
         image="/PlatformExpertise/CMSAgency/cmsTrust.svg"
         limit={5}
         headingColor={false}
