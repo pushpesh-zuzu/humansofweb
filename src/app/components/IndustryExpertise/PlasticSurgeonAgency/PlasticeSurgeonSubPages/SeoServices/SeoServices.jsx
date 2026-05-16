@@ -257,6 +257,7 @@ const SeoServices = () => {
         headdingBlack="Strategic Plastic Surgery SEO"
         headingBlue="For Clinic Growth"
         image="/plasticSurgeon/plastice-surgeon-women.webp"
+        imageAltText = "SEO strategies for plastic surgery clinics to improve online visibility and attract patients"
         paragraphs={seoService}
         headingBlueColor="text-secondary"
         headingBlackColor="text-white"

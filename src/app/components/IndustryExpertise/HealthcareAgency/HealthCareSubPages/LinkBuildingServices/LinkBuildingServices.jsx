@@ -6,6 +6,15 @@ import WorkWithCards from '@/app/components/common/SubServices/WorkWithCards/Wor
 import TrustedBy from '@/app/components/common/TrustedBy/TrustedBy'
 import FaqComponent from '@/app/components/common/SubServices/FaqComponent/FaqComponent';
 import ReachWithUs from '@/app/components/common/Services/ReachWithUs/ReachWithUs';
+import AnalyticsPerformance from '../../../../common/Icons/healthcare/analytics-performance-insights.svg';
+import BuildPrecision from '../../../../common/Icons/healthcare/build-precision-targeting-strategy.svg';
+import HealthcareContentCreation from '../../../../common/Icons/healthcare/healthcare-content-creation.svg';
+import CommunityBuilding from '../../../../common/Icons/healthcare/community-building-engagement.svg';
+import SeoAuthority from '../../../../common/Icons/healthcare/seo-authority-growth.svg';
+import StrategicKeywordTargeting from '../../../../common/Icons/healthcare/strategic-keyword-targeting.svg';
+import AnalyzeYourPresence from '../../../../common/Icons/healthcare/analyze-your-online-presence.svg';
+import ServicePageOptimization from '../../../../common/Icons/healthcare/service-page-optimization.svg';
+import SustainableCost from '../../../../common/Icons/healthcare/sustainable-cost-effective-growth.svg';
 
 const HEALTHCARE_MANAGEMENT = [
     "At Humans of Web, our healthcare link-building expertise helps strengthen your website authority and improve visibility across search engines. We focus on securing quality backlinks that connect your healthcare practice with the right target audience.",
@@ -20,37 +29,37 @@ const WORK_WITH_CARDS = [
         title: "High-Authority Backlink Building",
         description:
             "We secure quality backlinks from trusted and relevant healthcare websites to strengthen your domain authority and improve search engine visibility.",
-        icon: ""
+        icon: SeoAuthority
     },
     {
         title: "Targeted Outreach Strategies",
         description:
             "Our outreach campaigns focus on niche-relevant platforms that help your healthcare business connect with the right audience and generate valuable organic traffic.",
-        icon: ""
+        icon: BuildPrecision
     },
     {
         title: "Improved Organic Search Rankings",
         description:
             "We implement effective link-building strategies that help your healthcare website rank higher in search results and increase online discoverability.",
-        icon: ""
+        icon: AnalyticsPerformance
     },
     {
         title: "Customized SEO Link Strategies",
         description:
             "Our team creates tailored healthcare link-building plans designed around your services, goals, and target market for long-term SEO success.",
-        icon: ""
+        icon: StrategicKeywordTargeting
     },
     {
         title: "Stronger Online Brand Credibility",
         description:
             "By earning backlinks from reputable sources, we help build trust, authority, and credibility for your healthcare practice across search engines.",
-        icon: ""
+        icon: CommunityBuilding
     },
     {
         title: "Long-Term Healthcare SEO Growth",
         description:
             "We focus on sustainable link-building methods that improve online visibility, drive qualified traffic, and support consistent business growth.",
-        icon: ""
+        icon: SustainableCost
     }
 ];
 
@@ -59,37 +68,37 @@ const LINK_BUILDING_ITEMS = [
         title: "SEO Discovery & Strategy",
         description:
             "We analyze your healthcare website, backlink profile, and SEO goals to create a customized link-building strategy focused on long-term search growth.",
-        icon: ""
+        icon: AnalyzeYourPresence
     },
     {
         title: "Authority Website Research",
         description:
             "Our team identifies trusted and relevant healthcare websites that can provide high-quality backlinks to improve your online authority and rankings.",
-        icon: ""
+        icon: SeoAuthority
     },
     {
         title: "Content Creation & Outreach",
         description:
             "We develop engaging SEO-friendly content and perform targeted outreach to secure valuable backlinks from reputable industry-related websites.",
-        icon: ""
+        icon: HealthcareContentCreation
     },
     {
         title: "Content Review & Approval",
         description:
             "Before publishing, we share all backlink content for your approval to ensure it aligns with your healthcare brand, services, and SEO objectives.",
-        icon: ""
+        icon: ServicePageOptimization
     },
     {
         title: "High-Quality Link Placement",
         description:
             "We publish backlinks on authoritative platforms that help strengthen your website credibility, improve rankings, and increase organic traffic.",
-        icon: ""
+        icon: CommunityBuilding
     },
     {
         title: "Performance Tracking & Reports",
         description:
             "Our team provides detailed reporting and SEO insights so you can monitor backlink performance, keyword improvements, and overall growth.",
-        icon: ""
+        icon: AnalyticsPerformance
     },
 ];
 

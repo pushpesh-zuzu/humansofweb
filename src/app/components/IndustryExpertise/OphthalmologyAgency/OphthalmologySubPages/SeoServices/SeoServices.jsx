@@ -257,6 +257,7 @@ const SeoServices = () => {
                 limit={5}
                 ctaText='Grow Your Eye Care Practice'
                 marginBottom="lg:mb-21"
+                imageAltText = "Advanced ophthalmology SEO strategies to improve search rankings and attract patients"
             />
             <Interactivecontent
                 headingStart="SEO Solutions For"

@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import GetCtaButton from "@/app/components/common/CtaButtons/GetCtaButton";
+import GetProposalModal from "../../GetProposalModal/GetProposalModal";
 
 const MediaTimeEfforts = ({
   title,
@@ -12,6 +15,8 @@ const MediaTimeEfforts = ({
   image,
   imageAlt,
 }) => {
+  const [proposalOpen, setProposalOpen] = useState(false);
+
   return (
     <ContainerWrapper>
       <PaddingWrapper2 padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20">
@@ -37,7 +42,11 @@ const MediaTimeEfforts = ({
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <GetCtaButton text={ctaText} href="" className="hover:bg-white hover:text-secondary" />
+                <GetCtaButton
+                  text={ctaText}
+                  onClick={() => setProposalOpen(true)}
+                  className="hover:bg-white hover:text-secondary"
+                />
               </div>
             </div>
 
@@ -53,6 +62,10 @@ const MediaTimeEfforts = ({
           </div>
         </section>
       </PaddingWrapper2>
+      <GetProposalModal
+        isOpen={proposalOpen}
+        onClose={() => setProposalOpen(false)}
+      />
     </ContainerWrapper>
   );
 };
