@@ -1,4 +1,7 @@
 import EcommerceInd from "../common/Icons/industryExpert/EcommerceInd";
+import AiInd from "../common/Icons/PlatFormExpert/AiInd";
+import CmsInd from "../common/Icons/PlatFormExpert/CmsInd";
+import CrmInd from "../common/Icons/PlatFormExpert/CrmInd";
 
 export const PLATFORMS = [
   {
@@ -6,15 +9,15 @@ export const PLATFORMS = [
     link: "/cms-digital-marketing-agency",
     description:
       "We build scalable CMS ecosystems that make publishing, SEO, and growth easier for modern brands.",
-    icon: <EcommerceInd/>,
+    icon: <CmsInd />,
     tags: [
       {
         title: "Shopify Development",
-        link: "/cms-digital-marketing-agency/shopify",
+        link: "/cms-shopify",
       },
       {
         title: "WordPress Development",
-        link: "/cms-digital-marketing-agency/wordpress",
+        link: "/cms-wordpress",
       },
     ],
     accent: "#16a34a",
@@ -26,19 +29,19 @@ export const PLATFORMS = [
     link: "/crm-customisation-digital-marketing-agency",
     description:
       "We customise CRM systems around your workflows — helping sales, automation, and reporting run smoothly.",
-    icon: <EcommerceInd />,
+    icon: <CrmInd />,
     tags: [
       {
         title: "Zoho CRM",
-        link: "/crm-customisation-digital-marketing-agency/zoho",
+        link: "/crm-zoho",
       },
       {
         title: "Vtiger CRM",
-        link: "/crm-customisation-digital-marketing-agency/vtiger",
+        link: "/crm-vtiger",
       },
       {
         title: "Hubspot CRM",
-        link: "/crm-customisation-digital-marketing-agency/hubspot",
+        link: "/crm-hubspot",
       },
     ],
     accent: "#4f46e5",
@@ -50,23 +53,23 @@ export const PLATFORMS = [
     link: "/artificial-digital-services-agency",
     description:
       "We integrate modern AI workflows that improve productivity, content operations, automation, and customer experience.",
-    icon: <EcommerceInd />,
+    icon: <AiInd />,
     tags: [
       {
         title: "Claude Integration",
-        link: "/artificial-digital-services-agency/claude",
+        link: "/claude",
       },
       {
         title: "Kilocode Solutions",
-        link: "/artificial-digital-services-agency/kilocode",
+        link: "/kilocode",
       },
       {
         title: "ChatGPT Integration",
-        link: "/artificial-digital-services-agency/chatgpt",
+        link: "/chatgpt",
       },
       {
         title: "Bolt AI Workflows",
-        link: "/artificial-digital-services-agency/bolt",
+        link: "/bolt",
       },
     ],
     accent: "#7c3aed",
