@@ -14,41 +14,29 @@ export const INDUSTRIES = [
     link: "/ecommerce-marketing-agency",
     description:
       "We build growth engines for online stores — from product SEO and Google Shopping to email flows that bring customers back.",
-    icon: <EcommerceInd/>,
+    icon: <EcommerceInd />,
     tags: [
-      {
-        title: "E-Commerce SEO",
-        link: "/ecommerce-seo-services",
-      },
-      {
-        title: "E-Commerce PPC",
-        link: "/ecommerce-marketing-agency/ppc-services",
-      },
+      { title: "E-Commerce SEO", link: "/ecommerce-seo-services" },
       {
         title: "E-Commerce Website Development",
-        link: "/ecommerce-marketing-agency/website-design",
+        link: "/ecommerce-website-design",
       },
+      { title: "E-Commerce PPC", link: "/ecommerce-ppc-services" },
+      { title: "E-Commerce GEO Services", link: "/ecommerce-geo-services" },
       {
         title: "E-Commerce Social Media Marketing",
-        link: "/ecommerce-marketing-agency/social-media-marketing",
+        link: "/ecommerce-social-media-marketing",
       },
-      { title: "E-Commerce CRO", link: "/ecommerce-marketing-agency/cro" },
-      {
-        title: "E-Commerce GEO Services",
-        link: "/ecommerce-marketing-agency/geo-services",
-      },
+      { title: "E-Commerce CRO", link: "/ecommerce-cro" },
       {
         title: "E-Commerce Email Marketing",
-        link: "/ecommerce-marketing-agency/email-marketing",
+        link: "/ecommerce-email-marketing",
       },
       {
         title: "E-Commerce Content Marketing",
-        link: "/ecommerce-marketing-agency/content-marketing",
+        link: "/ecommerce-content-marketing",
       },
-      {
-        title: "Amazon Marketing",
-        link: "/ecommerce-marketing-agency/amazon-marketing",
-      },
+      { title: "Amazon Marketing", link: "/amazon-marketing" },
     ],
     accent: "#16a34a",
     bg: "#f0fdf4",
@@ -59,21 +47,21 @@ export const INDUSTRIES = [
     link: "/dental-digital-marketing-agency",
     description:
       "We help dental clinics attract more patients with local SEO, appointment-driven ads, and high-converting websites.",
-    icon: <Dental/>,
+    icon: <Dental />,
     tags: [
-      { title: "Dental SEO", link: "/dental-digital-marketing-agency/seo" },
-      { title: "Dental PPC", link: "/dental-digital-marketing-agency/ppc" },
+      { title: "Dental SEO", link: "/dental-seo-services" },
+      { title: "Dental PPC", link: "/dental-ppc-services" },
       {
         title: "Dental Website Development",
-        link: "/dental-digital-marketing-agency/website-development",
+        link: "/dental-website-design-development-services",
       },
       {
         title: "Dental Social Media Marketing",
-        link: "/dental-digital-marketing-agency/social-media-marketing",
+        link: "/dental-social-media-marketing-services",
       },
       {
         title: "Dental Reputation Management",
-        link: "/dental-digital-marketing-agency/reputation-management",
+        link: "/dental-reputation-management-services",
       },
     ],
     accent: "#4f46e5",
@@ -85,21 +73,21 @@ export const INDUSTRIES = [
     link: "/healthcare-marketing-agency",
     description:
       "We support healthcare providers with compliant marketing strategies that increase visibility, trust, and patient acquisition.",
-    icon: <Healthcare/>,
+    icon: <Healthcare />,
     tags: [
-      { title: "Healthcare SEO", link: "/healthcare-marketing-agency/seo" },
-      { title: "Healthcare PPC", link: "/healthcare-marketing-agency/ppc" },
+      { title: "Healthcare SEO", link: "/healthcare-seo-services" },
+      { title: "Healthcare PPC", link: "/healthcare-ppc-services" },
       {
         title: "Healthcare Website Design & Development",
-        link: "/healthcare-marketing-agency/website-design",
+        link: "/healthcare-website-design-development-services",
       },
       {
         title: "Healthcare Link Building",
-        link: "/healthcare-marketing-agency/link-building",
+        link: "/healthcare-link-building-services",
       },
       {
         title: "Healthcare Social Media Marketing",
-        link: "/healthcare-marketing-agency/social-media-marketing",
+        link: "/healthcare-social-media-marketing-services",
       },
     ],
     accent: "#0891b2",
@@ -111,19 +99,13 @@ export const INDUSTRIES = [
     link: "/ophthalmology-digital-marketing-agency",
     description:
       "We help eye care specialists grow with targeted campaigns, local SEO, and content that builds patient trust.",
-    icon: <Ophthalmology/>,
+    icon: <Ophthalmology />,
     tags: [
-      {
-        title: "Ophthalmology SEO",
-        link: "/ophthalmology-digital-marketing-agency/seo",
-      },
-      {
-        title: "Ophthalmology PPC",
-        link: "/ophthalmology-digital-marketing-agency/ppc",
-      },
+      { title: "Ophthalmology SEO", link: "/ophthalmology-seo-services" },
+      { title: "Ophthalmology PPC", link: "/ophthalmology-ppc-services" },
       {
         title: "Ophthalmology Website Design & Development",
-        link: "/ophthalmology-digital-marketing-agency/website-design",
+        link: "/ophthalmology-website-design-services",
       },
     ],
     accent: "#0d9488",
@@ -135,27 +117,21 @@ export const INDUSTRIES = [
     link: "/chiropractor-digital-marketing-agency",
     description:
       "We help chiropractic clinics increase bookings with local search optimization, paid ads, and conversion-focused landing pages.",
-    icon: <Chiropractor/>,
+    icon: <Chiropractor />,
     tags: [
-      {
-        title: "Chiropractor SEO",
-        link: "/chiropractor-digital-marketing-agency/seo",
-      },
-      {
-        title: "Chiropractor PPC",
-        link: "/chiropractor-digital-marketing-agency/ppc",
-      },
+      { title: "Chiropractor SEO", link: "/chiropractor-seo-services" },
+      { title: "Chiropractor PPC", link: "/chiropractor-ppc-services" },
       {
         title: "Chiropractor Website Design & Development",
-        link: "/chiropractor-digital-marketing-agency/website-design",
+        link: "/chiropractor-website-design-development-services",
       },
       {
         title: "Chiropractor Social Media Marketing",
-        link: "/chiropractor-digital-marketing-agency/social-media-marketing",
+        link: "/chiropractor-social-media-marketing-services",
       },
       {
         title: "Chiropractor Reputation Management",
-        link: "/chiropractor-digital-marketing-agency/reputation-management",
+        link: "/chiropractor-reputation-management-services",
       },
     ],
     accent: "#dc2626",
@@ -167,27 +143,21 @@ export const INDUSTRIES = [
     link: "/plastic-surgeon-digital-marketing-agency",
     description:
       "We help cosmetic clinics attract high-value clients through premium branding, SEO, and targeted ad campaigns.",
-    icon: <PlasticSurgeon/>,
+    icon: <PlasticSurgeon />,
     tags: [
-      {
-        title: "Plastic Surgeon SEO",
-        link: "/plastic-surgeon-digital-marketing-agency/seo",
-      },
-      {
-        title: "Plastic Surgeon PPC",
-        link: "/plastic-surgeon-digital-marketing-agency/ppc",
-      },
+      { title: "Plastic Surgeon SEO", link: "/plastic-surgeon-seo-services" },
+      { title: "Plastic Surgeon PPC", link: "/plastic-surgeon-ppc-services" },
       {
         title: "Plastic Surgeon Website Design & Development",
-        link: "/plastic-surgeon-digital-marketing-agency/website-design",
+        link: "/plastic-surgeon-website-design-development-services",
       },
       {
         title: "Plastic Surgeon Social Media Marketing",
-        link: "/plastic-surgeon-digital-marketing-agency/social-media-marketing",
+        link: "/plastic-surgeon-social-media-marketing-services",
       },
       {
         title: "Plastic Surgeon Reputation Management",
-        link: "/plastic-surgeon-digital-marketing-agency/reputation-management",
+        link: "/plastic-surgeon-reputation-management-services",
       },
     ],
     accent: "#e11d48",
@@ -199,46 +169,30 @@ export const INDUSTRIES = [
     link: "/law-firm-digital-marketing",
     description:
       "We help law firms generate qualified leads with SEO, paid ads, and authority-driven content strategies.",
-    icon: <Legal/>,
-    tags: [
-      // { title: "Legal SEO", link: "/law-firm-digital-marketing/seo" },
-      // { title: "Legal PPC", link: "/law-firm-digital-marketing/ppc" },
-    ],
+    icon: <Legal />,
+    tags: [],
     accent: "#374151",
     bg: "#f9fafb",
   },
+
   {
     title: "Home Improvement & Local Services",
+    link: "/home-improvement-local-services",
     description:
       "From plumbers to painters, we help local service businesses get found first — driving more calls, bookings, and reviews in their area.",
-    icon: <HomeImprovement/>,
-    tags: [
-      // { title: "Local SEO", link: "" },
-      // { title: "Google Ads", link: "" },
-      // { title: "Reviews", link: "" },
-    ],
+    icon: <HomeImprovement />,
+    tags: [],
     accent: "#48179C",
     bg: "#f5f0ff",
   },
+
   {
     title: "Professional Services",
+    link: "/professional-services",
     description:
       "Law firms, consultants, and agencies trust us to build authority, generate qualified leads, and grow their client base consistently.",
-    icon: <ProfessionalServices/>,
-    tags: [
-      // {
-      //   title: "Authority Building",
-      //   link: "",
-      // },
-      // {
-      //   title: "Lead Gen",
-      //   link: "",
-      // },
-      // {
-      //   title: "Content",
-      //   link: "",
-      // },
-    ],
+    icon: <ProfessionalServices />,
+    tags: [],
     accent: "#d97706",
     bg: "#fffbeb",
   },

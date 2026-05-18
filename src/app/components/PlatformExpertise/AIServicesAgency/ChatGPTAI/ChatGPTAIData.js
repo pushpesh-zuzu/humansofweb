@@ -12,11 +12,11 @@ import {
 } from "./Chatgptaiserviceicons";
 
 export const CHATGPT_MARKET_PARA = [
-  "Businesses today handle large volumes of customer communication, repetitive tasks, and content creation every single day. Manual workflows slow teams down and reduce overall efficiency.",
+  "Most businesses today deal with a high volume of customer messages, content needs, and repetitive internal tasks. When these processes are handled manually, they slow down teams and reduce overall efficiency.",
 
-  "ChatGPT helps businesses automate conversations, generate content faster, and streamline internal operations without sacrificing quality or customer experience.",
+  "At Humans of Web, we help businesses integrate ChatGPT into their day-to-day workflows to automate conversations, speed up content creation, and simplify internal operations without affecting quality or consistency.",
 
-  "We help companies integrate ChatGPT into their workflows so teams can save time, improve productivity, and scale operations with smarter AI-powered systems.",
+  "We believe AI should make work easier, not complicated. When ChatGPT is properly integrated into business systems, teams can save time, improve productivity, and scale operations more effectively with less manual effort."
 ];
 
 export const CHATGPT_TRUST_PARA = [

@@ -16,11 +16,11 @@ import {
   ThemeDevelopmentIcon,
 } from "./SopifyServiceIcons";
 export const marketAnalyzerParaShopify = [
-  "Running a Shopify store is more than just listing products. Customers explore collections, compare options, and expect a smooth experience before they decide to make a purchase.",
+  "Most online shoppers do not buy from the first store they visit. They compare products, read reviews, explore shipping options, and decide based on how easy your store feels to trust and navigate. If your Shopify store creates friction during that process — customers leave and buy elsewhere.",
 
-  "Every step matters, from how easily products are discovered to how simple the checkout feels. Small gaps in this journey can lead to drop-offs, even when there is strong interest in what you offer.",
+  "At Humans of Web, we help Shopify brands create shopping experiences that feel simple, trustworthy, and easy to explore. Through SEO, paid campaigns, and conversion-focused improvements, we help you reach customers who are already searching for the products you offer.",
 
-  "We help you optimize your store experience and marketing approach together. So customers find your products faster, trust your brand, and move through the buying process with confidence.",
+  "We believe growth comes from improving the full customer journey — not just increasing traffic. When shoppers can discover products quickly, trust your brand, and move smoothly through checkout, your store creates the kind of experience that drives long-term growth."
 ];
 
 export const StrategyContentShopify = {

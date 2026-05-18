@@ -17,11 +17,11 @@ import {
 } from "./BoltAIAgencyIcon";
 
 export const marketAnalyzerParaBoltAI = [
-  "Businesses today need to build products faster, automate workflows efficiently, and reduce development bottlenecks without sacrificing scalability or performance.",
+  "Most modern teams need to build and iterate products faster while still maintaining scalability, performance, and code quality. As development cycles grow, bottlenecks in coding, testing, and deployment often slow down overall delivery.",
 
-  "Bolt AI helps teams accelerate development with AI-assisted coding, rapid prototyping, workflow automation, and streamlined product iteration across modern applications.",
+  "At Humans of Web, we help businesses implement Bolt AI to speed up development through AI-assisted coding, rapid prototyping, and workflow automation. Our focus is on building practical systems that fit into real product development processes.",
 
-  "We help businesses implement Bolt AI solutions that improve development speed, optimize workflows, and support scalable digital product growth.",
+  "We believe development tools should reduce effort instead of adding complexity. When Bolt AI is properly integrated, teams can move faster, improve collaboration, and scale digital products with greater efficiency."
 ];
 
 export const brandTrustParaBoltAI = [

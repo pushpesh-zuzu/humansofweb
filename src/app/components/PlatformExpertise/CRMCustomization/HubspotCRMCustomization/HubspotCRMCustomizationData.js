@@ -19,11 +19,11 @@ import {
 } from "./HubSpotCRMServiceIcon";
 
 export const marketAnalyzerParaHubspot = [
-  "HubSpot CRM helps businesses manage marketing, sales, customer communication, and reporting from a centralized platform.",
+  "Most growing businesses need more than a standard CRM setup to manage marketing, sales, and customer communication efficiently. As teams scale operations, disconnected workflows and manual processes often begin creating delays, visibility gaps, and inconsistent customer experiences.",
 
-  "But every company manages leads, customer journeys, automation, and internal workflows differently. Generic CRM setups often create limitations instead of improving efficiency.",
+  "At Humans of Web, we help businesses customize HubSpot CRM around the way their teams actually manage leads, automation, reporting, and customer journeys. Through tailored workflows, process optimization, and CRM customization, we help businesses improve operational efficiency across departments.",
 
-  "We customize HubSpot CRM around your operations, helping teams automate processes, organize customer data, and improve visibility across the entire customer lifecycle.",
+  "We believe a CRM should simplify how teams work together instead of adding complexity. When your HubSpot CRM is properly aligned with your business processes, teams gain better visibility, improve collaboration, and create smoother customer experiences at every stage."
 ];
 
 export const brandTrustParaHubspot = [

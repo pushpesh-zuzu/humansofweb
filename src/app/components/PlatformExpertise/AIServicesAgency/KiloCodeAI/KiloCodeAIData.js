@@ -12,11 +12,11 @@ import {
 } from "./Kilocodeaiserviceicons";
 
 export const KILOCODE_MARKET_PARA = [
-  "Modern development teams need to ship features faster while maintaining clean architecture, scalability, and code quality across projects.",
+  "Most development teams are under constant pressure to ship features faster without sacrificing scalability, maintainability, or code quality. As projects grow, repetitive development work and inefficient workflows often slow down delivery across teams.",
 
-  "AI-assisted coding helps reduce repetitive development work, speed up implementation, and improve productivity throughout the software development lifecycle.",
+  "At Humans of Web, we help businesses implement KiloCode AI workflows that improve development speed, streamline coding processes, and support better collaboration across projects. From AI-assisted coding to workflow optimization, we build systems focused on practical development efficiency.",
 
-  "We help businesses implement KiloCode AI workflows that support faster coding, better collaboration, and more efficient software delivery.",
+  "We believe AI should help development teams work smarter instead of creating unnecessary complexity. When KiloCode AI is integrated into the right workflows, teams can reduce repetitive tasks, improve productivity, and deliver software more efficiently at scale."
 ];
 
 export const KILOCODE_TRUST_PARA = [

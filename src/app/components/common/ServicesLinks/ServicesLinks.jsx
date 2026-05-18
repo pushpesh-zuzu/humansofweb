@@ -74,7 +74,7 @@ const ServicesLinks = ({
 
                                         <div className="lg:min-h-[72px] lg:flex lg:items-center lg:justify-center">
                                             <h3 className="text-h4 font-bold text-primary">
-                                                { href ==='' || !href ? <span href={href} className="transition hover:text-secondary">
+                                                { href ==='' || !href ? <span className="transition hover:text-secondary">
                                                     {service.title}
                                                 </span> 
                                                 : <Link href={href} className="transition hover:text-secondary">

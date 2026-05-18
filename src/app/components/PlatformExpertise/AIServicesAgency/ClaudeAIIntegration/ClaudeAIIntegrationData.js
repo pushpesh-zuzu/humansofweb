@@ -17,11 +17,11 @@ import {
 } from "./Claudeaiserviceicons";
 
 export const marketAnalyzerParaClaude = [
-  "Claude AI helps businesses automate content generation, customer support, research, internal workflows, and information processing through advanced AI capabilities.",
+  "Most businesses are exploring AI to improve productivity, automate repetitive work, and streamline internal operations. But without the right workflows and implementation strategy, AI tools often create confusion instead of delivering practical business value.",
 
-  "But every business uses AI differently depending on workflows, customer interactions, operational systems, and automation requirements. Generic AI implementations often fail to deliver practical business value.",
+  "At Humans of Web, we help businesses integrate Claude AI into the way their teams already work. From content generation and research workflows to customer support and operational automation, we build AI systems designed around real business processes and everyday efficiency.",
 
-  "We integrate Claude AI into your existing systems and workflows, helping teams improve productivity, automate repetitive tasks, and streamline business operations.",
+  "We believe AI should support people instead of complicating operations. When Claude AI is implemented with the right workflows, businesses can improve productivity, reduce repetitive tasks, and create smoother systems that support long-term growth."
 ];
 
 export const brandTrustParaClaude = [

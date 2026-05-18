@@ -17,11 +17,11 @@ import {
 } from "./ZohoCRMCustomizationAgencyIcon";
 
 export const marketAnalyzerParaZoho = [
-  "Zoho CRM works best when it reflects how your business actually manages leads, sales, follow-ups, and customer communication instead of relying on default workflows.",
+  "Most businesses outgrow default CRM setups faster than expected. As sales processes become more complex, disconnected workflows, manual updates, and inconsistent reporting start slowing teams down and reducing operational visibility.",
 
-  "As teams grow, disconnected processes, manual updates, and inconsistent reporting can slow down operations and create visibility gaps across departments.",
+  "At Humans of Web, we help businesses customize Zoho CRM around how their teams actually manage leads, follow-ups, sales pipelines, and customer communication. Through automation, workflow optimization, and tailored CRM configurations, we help teams work more efficiently every day.",
 
-  "We help businesses customize Zoho CRM around their workflows, automations, and reporting needs so teams can work faster, improve visibility, and scale operations more efficiently.",
+  "We believe a CRM should simplify operations instead of creating extra work. When your Zoho CRM reflects real business processes, teams gain better visibility, improve collaboration, and scale operations with far greater consistency and control."
 ];
 
 export const brandTrustParaZoho = [

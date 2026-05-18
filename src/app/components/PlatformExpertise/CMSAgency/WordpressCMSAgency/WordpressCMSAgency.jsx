@@ -43,6 +43,7 @@ function WordpressCMSAgency() {
         headingBlackColor="text-white"
         limit={5}
         imageClass="h-full max-h-[323px] md:w-[71%] m-auto"
+        marginBottom="lg:mb-20"
       />
 
       <ScrollTimeline
@@ -84,6 +85,9 @@ function WordpressCMSAgency() {
         headingBlueColor="text-primary"
         paragraphTextColor
         imageClass="h-full max-h-[323px] md:w-[71%] m-auto"
+        marginBottom="lg:mb-20"
+
+        
       />
 
       <FaqComponent

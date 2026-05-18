@@ -44,6 +44,7 @@ function VtigerCRMCustomization() {
         headingBlackColor="text-white"
         limit={5}
         imageClass="h-full max-h-[300px] md:w-[71%] m-auto"
+        marginBottom="lg:mb-20"
       />
 
       <ScrollTimeline

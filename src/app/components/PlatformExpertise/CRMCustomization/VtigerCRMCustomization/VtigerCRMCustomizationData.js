@@ -21,11 +21,11 @@ import {
 } from "./VtigerCRMCustomizationIcon";
 
 export const marketAnalyzerParaVtiger = [
-  "Vtiger CRM helps businesses manage sales, customer communication, support, and workflows from one centralized platform.",
+  "Most businesses need more than a basic CRM setup to manage growing operations efficiently. As teams handle more leads, customer communication, and reporting, disconnected workflows and manual processes quickly begin slowing everything down.",
 
-  "But every business handles leads, follow-ups, reporting, and internal processes differently. Generic CRM setups often create friction instead of improving efficiency.",
+  "At Humans of Web, we help businesses customize Vtiger CRM around the way their teams actually work. Through workflow automation, pipeline optimization, and tailored CRM configurations, we help businesses manage sales, support, and customer communication more efficiently.",
 
-  "We customize Vtiger CRM around your operations, helping your team automate repetitive tasks, organize customer data, and improve day-to-day productivity.",
+  "We believe a CRM should reduce operational friction instead of adding complexity. When your Vtiger CRM is properly customized around your business processes, teams can improve visibility, save time, and operate with greater consistency every day."
 ];
 
 export const brandTrustParaVtiger = [

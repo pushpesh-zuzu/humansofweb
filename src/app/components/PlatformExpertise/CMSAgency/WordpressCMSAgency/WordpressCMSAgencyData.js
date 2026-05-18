@@ -21,11 +21,11 @@ import {
 // ─────────────────────────────────────────────────────────────
 
 export const marketAnalyzerParaWordpress = [
-  "A WordPress website should do more than just look good. It should help visitors find information quickly, build trust, and guide them toward taking action.",
+  "Most visitors do not stay on a website that feels slow, confusing, or difficult to navigate. They explore a few pages, compare options, and quickly decide whether your business feels trustworthy and professional.",
 
-  "Slow pages, poor structure, and inconsistent user experience often reduce engagement even when traffic is strong. Small technical and content gaps can quietly affect conversions over time.",
+  "At Humans of Web, we help businesses build WordPress websites that are faster, easier to manage, and designed around real user experience. Through SEO, performance optimization, and conversion-focused improvements, we help your website support both visibility and business growth.",
 
-  "We help businesses improve WordPress performance, visibility, and usability together — creating websites that attract the right audience and support long-term growth.",
+  "We believe a good website should do more than simply exist online. When visitors can easily find information, trust your brand, and move through your website without friction, your WordPress site becomes a stronger tool for long-term growth."
 ];
 
 export const StrategyContentWordpress = {
