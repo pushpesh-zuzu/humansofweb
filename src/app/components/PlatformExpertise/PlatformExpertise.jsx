@@ -38,6 +38,7 @@ import ResultsSection from "../IndustryExpertise/MainPage/ResultsSection/Results
 import { PLATFORMS } from "./plateformExpertiseData";
 import HowItWorkIndustryExpert from "../IndustryExpertise/MainPage/HowWeWork/HowWeWorkIndustryExpert";
 import CreativeContentDevelopment from "../common/Icons/industryExpert/howWeWork/CreativeContentDevelopment";
+import HeroSectionServices from "../common/Services/HeroSectionServices/HeroSectionServices";
 
 export const FREQUENTLY_QUESTION = [
   {
@@ -385,13 +386,15 @@ function PlatformExpertise() {
 
   return (
     <>
-      <IndustryHeroSection
-        banner="/PlatformExpertise/platformExpertHero.webp"
+      <HeroSectionServices
+        bgImag="/PlatformExpertise/platformExpertHero.webp"
         headingWhite="Platform Expertise That Drives"
         headingPink="Real Growth"
-        description1="We build platform-focused strategies that improve workflows, automate operations, and help businesses scale faster."
+        description1="We build platform-focused strategies that improve workflows, automate operations, and help businesses scale faster for your business."
         description2="From CMS and CRM systems to AI-powered workflows, we create solutions designed around performance, efficiency, and long-term growth."
         deepDiveRef={deepDiveRef}
+        altText="Platform Expertise"
+
       />
 
       <TrustedBy padding={""} />

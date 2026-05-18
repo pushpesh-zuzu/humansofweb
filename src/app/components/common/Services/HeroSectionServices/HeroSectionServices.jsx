@@ -74,7 +74,7 @@ export default function HeroSectionServices({
               transition={{ duration: 0.7, delay: 0.15 }}
               className="relative flex items-center justify-center"
             >
-              <div className="relative h-[250px] w-full max-w-full overflow-hidden rounded-[32px] md:h-[370px] lg:h-[388px] xl:h-[370px]">
+              <div className="relative h-[250px] w-full max-w-full overflow-hidden rounded-[32px] md:h-[370px] lg:h-[325px] xl:h-[370px]">
 
                 <Image
                   src={bgImag}

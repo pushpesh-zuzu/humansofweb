@@ -36,6 +36,7 @@ import LeadGeneration from "../../common/Icons/industryExpert/GetMoreCallsOwnYou
 import LocalSEO from "../../common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LocalSEO";
 import HowItWorkIndustryExpert from "./HowWeWork/HowWeWorkIndustryExpert";
 import CreativeContentDevelopment from "../../common/Icons/industryExpert/howWeWork/CreativeContentDevelopment";
+import HeroSectionServices from "../../common/Services/HeroSectionServices/HeroSectionServices";
 
 export const FREQUENTLY_QUESTION = [
   {
@@ -749,16 +750,18 @@ function IndustryExpertise() {
   const deepDiveRef = useRef(null);
   return (
     <>
-      <IndustryHeroSection
+      <HeroSectionServices
         headingWhite="Industry Expertise That Drives"
         headingPink="Real Growth"
         description1="We craft data-driven strategies tailored to your industry,
                 helping you generate leads, increase visibility, and scale
-                faster."
+                faster to place in industry."
         description2=" We combine deep industry understanding with data-driven
                 marketing to help businesses grow sustainably, generate
                 qualified leads, and dominate search rankings."
                 deepDiveRef={deepDiveRef}
+            altText="industry expertise"
+            bgImag="/IndustryExpertise/industryHero1.webp"
       />
       <TrustedBy padding={""} />
       <IndustriesWeServe
