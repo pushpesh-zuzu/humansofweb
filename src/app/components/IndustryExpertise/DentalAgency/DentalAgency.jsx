@@ -55,7 +55,7 @@ function DentalAgency() {
         services={servicesDental}
         headdingBlack={"Industries "}
         headingBlue={"We Serve"}
-        padding="pt-10 px-8.75 md:pt-14 md:px-12.5 xl:pt-18 xl:px-20"
+        padding="py-10 px-8.75 md:py-14 md:px-12.5 xl:py-18 xl:px-20"
       />
       {/* <ServicesTwoGridDescriptionAndImage
         // ctaText="Behind Every Full Schedule Is a Dental Practice"
@@ -86,6 +86,7 @@ function DentalAgency() {
         breakLine
          marginBottom="lg:mb-22"
         imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
+        background="#fafafa"
       />
       <ReachWithUs />
       {/* <WhyChooseDentalServce

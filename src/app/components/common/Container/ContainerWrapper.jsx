@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./ContainerWrapper.module.css";
 
 function ContainerWrapper({
   children,
@@ -10,10 +9,10 @@ function ContainerWrapper({
 }) {
   return (
     <div
-      className={`w-full mx-auto ${className} ${secondaryClass} ${background ? styles.bgResponsive : ""}`}
-      style={background ? { "--wrapper-bg": background } : {}}
+      className={`w-full mx-auto ${className} ${secondaryClass}`}
+      style={{ background: background || undefined }}  // ✅ direct inline style
     >
-      <div className={`${maxWidth} mx-auto `}>{children}</div>
+      <div className={`${maxWidth} mx-auto`}>{children}</div>
     </div>
   );
 }
