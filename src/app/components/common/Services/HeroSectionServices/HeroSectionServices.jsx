@@ -17,6 +17,7 @@ export default function HeroSectionServices({
   headingSectionWidth = "max-w-[600px]",
   altText = "Industry Expertise",
   breakLine = false,
+  objectType='object-cover'
 }) {
   const [proposalOpen, setProposalOpen] = useState(false);
 
@@ -82,7 +83,7 @@ export default function HeroSectionServices({
                   fill
                   // height={380}
                   // width={500}
-                  className="object-cover"
+                  className={`${objectType}`}
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />

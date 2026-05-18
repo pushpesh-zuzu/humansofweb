@@ -24,6 +24,7 @@ function HealthcareAgency() {
         description2="At Humans of Web, we help healthcare providers connect with patients through SEO, local visibility, and smart campaigns to drive appointments and steady growth."
         altText="Healthcare Marketing Agency"
         breakLine
+        objectType="object-contain md:object-cover"
       />
 
       <TrustedBy padding={""} />
@@ -38,6 +39,7 @@ function HealthcareAgency() {
         headingBlackColor="text-white"
         limit={5}
         imageClass="h-full max-h-[341px] md:w-[100%] m-auto"
+        
       />
 
       <PillarsSection

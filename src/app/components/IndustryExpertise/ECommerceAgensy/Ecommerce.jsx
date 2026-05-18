@@ -26,6 +26,7 @@ function Ecommerce() {
       <HeroSectionServices
         bgImag={"/IndustryExpertise/eCommerce/eCommerceHeroImage.webp"}
         headingSectionWidth="max-w-[586px]"
+        objectType="object-contain md:object-cover lg:object-contain"
       />
       <TrustedBy padding={""} />
       <ServicesTwoGridDescriptionAndImage

@@ -19,11 +19,12 @@ function CRMAgency() {
       <HeroSectionServices
         heading1="Smarter System Growth"
         heading2="For Modern Businesses"
-        bgImag="/PlatformExpertise/CRMAgency/CRMHero.svg"
-        description1="Every day businesses struggle with scattered data, missed follow-ups, and inefficient workflows, but growth depends on having systems that are clear, connected, and easy to manage."
-        description2="At Humans of Web, we help businesses streamline operations through CRM customization, automation, and smart integrations to improve efficiency and drive consistent growth."
+        bgImag="/PlatformExpertise/CRMAgency/CRMHero.webp"
+        description1="Every day businesses struggle with scattered data, missed follow-ups, and inefficient workflows, but growth depends on having systems that are clear, connected."
+        description2="At Humans of Web, we help businesses streamline operations through CRM customization, automation, and smart integrations to improve efficiency."
         altText="CRM Customisation Agency"
         breakLine
+        // objectType="object-contain md:object-cover lg:object-contain"
       />
 
       <TrustedBy padding={""} />
