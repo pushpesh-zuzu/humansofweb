@@ -201,8 +201,8 @@ export const INDUSTRIES = [
       "We help law firms generate qualified leads with SEO, paid ads, and authority-driven content strategies.",
     icon: <Legal/>,
     tags: [
-      { title: "Legal SEO", link: "/law-firm-digital-marketing/seo" },
-      { title: "Legal PPC", link: "/law-firm-digital-marketing/ppc" },
+      // { title: "Legal SEO", link: "/law-firm-digital-marketing/seo" },
+      // { title: "Legal PPC", link: "/law-firm-digital-marketing/ppc" },
     ],
     accent: "#374151",
     bg: "#f9fafb",
@@ -213,9 +213,9 @@ export const INDUSTRIES = [
       "From plumbers to painters, we help local service businesses get found first — driving more calls, bookings, and reviews in their area.",
     icon: <HomeImprovement/>,
     tags: [
-      { title: "Local SEO", link: "" },
-      { title: "Google Ads", link: "" },
-      { title: "Reviews", link: "" },
+      // { title: "Local SEO", link: "" },
+      // { title: "Google Ads", link: "" },
+      // { title: "Reviews", link: "" },
     ],
     accent: "#48179C",
     bg: "#f5f0ff",
@@ -226,18 +226,18 @@ export const INDUSTRIES = [
       "Law firms, consultants, and agencies trust us to build authority, generate qualified leads, and grow their client base consistently.",
     icon: <ProfessionalServices/>,
     tags: [
-      {
-        title: "Authority Building",
-        link: "",
-      },
-      {
-        title: "Lead Gen",
-        link: "",
-      },
-      {
-        title: "Content",
-        link: "",
-      },
+      // {
+      //   title: "Authority Building",
+      //   link: "",
+      // },
+      // {
+      //   title: "Lead Gen",
+      //   link: "",
+      // },
+      // {
+      //   title: "Content",
+      //   link: "",
+      // },
     ],
     accent: "#d97706",
     bg: "#fffbeb",
