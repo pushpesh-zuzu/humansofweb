@@ -1,4 +1,10 @@
+import IndustryResearch from "../../common/Icons/industryExpert/howWeWork/IndustryResearch";
+import StrategyPlanning from "../../common/Icons/industryExpert/howWeWork/StrategyPlanning";
+import PPCHealthcareIcon from "../../common/Icons/industryExpert/PPCHealthcareIcon";
+import SocialMediaIcon from "../../common/Icons/industryExpert/SocialMediaIcon";
 import ECommerceSeoIcon from "../../common/Icons/IndustryExpertise/ECommerce/ECommerceSeoIcon";
+import LegalSeoIcon from "../../common/Icons/IndustryExpertise/Legal/LegalSeoIcon";
+import { OptimizationIcon } from "../../PlatformExpertise/CMSAgency/WordpressCMSAgency/WordpressServiceIcons";
 
 export const marketAnalyzerParaHealthcare = [
   "Healthcare decisions are often personal and time-sensitive. People look for providers they can rely on, take time to understand options, and choose care that feels safe and trustworthy.",
@@ -40,28 +46,28 @@ export const HealthcareServices = [
     title: "Healthcare PPC",
     description:
       "We run targeted campaigns that connect you with patients ready to book appointments. Every campaign is designed to drive meaningful inquiries, not just traffic.",
-    icon: <ECommerceSeoIcon />,
+    icon: <PPCHealthcareIcon />,
     link: "/healthcare-ppc-services",
   },
   {
     title: "Healthcare Website Design & Development",
     description:
       "We create websites that feel clear, accessible, and reassuring. Every detail is designed to help patients understand your services and feel confident choosing your care.",
-    icon: <ECommerceSeoIcon />,
+    icon: <OptimizationIcon />,
     link: "/healthcare-website-design-development-services",
   },
   {
     title: "Healthcare Link Building",
     description:
       "We strengthen your online authority with high-quality healthcare backlinks that improve search visibility and help more patients discover your practice online.",
-    icon: <ECommerceSeoIcon />,
+    icon: <StrategyPlanning />,
     link: "/healthcare-link-building-services",
   },
   {
     title: "Healthcare Social Media Marketing",
     description:
       "We help healthcare brands build trust and engage patients through meaningful social media strategies that increase awareness, credibility, and patient connections.",
-    icon: <ECommerceSeoIcon />,
+    icon: <SocialMediaIcon />,
     link: "/healthcare-social-media-marketing-services",
   },
 ];
