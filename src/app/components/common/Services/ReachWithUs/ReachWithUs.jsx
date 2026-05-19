@@ -41,7 +41,7 @@ const ReachWithUs = ({
             </div>
 
             <div className="order-2 flex flex-col items-center px-6 py-5 text-center md:px-6 md:py-8 xl:order-2 xl:items-start xl:px-2 xl:text-left">
-              <h1 className="text-h1 max-w-[580px] font-bold uppercase leading-[1.08] text-white">
+              <h1 className="text-h1 max-w-[611px] lg:max-w-[580px] font-bold uppercase leading-[1.08] text-white">
                 {titleLines.map((line) => (
                   <span key={line} className="block xl:text-left">
                     {line}
