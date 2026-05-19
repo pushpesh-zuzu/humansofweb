@@ -27,7 +27,7 @@ function OphthalmologyAgency() {
         description2="At Humans of Web, we help ophthalmology clinics connect with patients through SEO, local visibility, and smart campaigns to drive appointments and consistent growth."
         altText="Ophthalmology Agency"
         breakLine
-        objectType="object-fill md:object-cover"
+        objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
 

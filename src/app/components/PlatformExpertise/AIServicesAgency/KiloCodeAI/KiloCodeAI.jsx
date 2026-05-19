@@ -28,7 +28,7 @@ function KiloCodeAI() {
         description2="At Humans of Web, we help businesses implement KiloCode workflows that improve coding efficiency, automation, and development scalability."
         altText="KiloCode AI Solutions"
         breakLine
-       objectType="object-fill md:object-cover"
+       objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
 

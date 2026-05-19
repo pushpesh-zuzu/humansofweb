@@ -394,7 +394,7 @@ function PlatformExpertise() {
         description2="From CMS and CRM systems to AI-powered workflows, we create solutions designed around performance, efficiency, and long-term growth."
         deepDiveRef={deepDiveRef}
         altText="Platform Expertise"
-        objectType="object-fill md:object-cover"
+        objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
 
       />

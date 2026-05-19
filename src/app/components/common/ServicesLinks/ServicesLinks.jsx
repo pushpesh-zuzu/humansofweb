@@ -45,7 +45,7 @@ const ServicesLinks = ({
                         padding="pb-[30px] md:pb-10 lg:pb-13"
                     />
 
-                    <div className="grid gap-6 lg:grid-cols-3 lg:pt-2">
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:pt-2">
                         {services.map((service, index) => {
                             const href = service.link || service.href || service.pageLink || "";
 

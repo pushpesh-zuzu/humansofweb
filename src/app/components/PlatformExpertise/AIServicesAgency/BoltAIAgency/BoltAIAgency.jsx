@@ -28,7 +28,7 @@ function BoltAIAgency() {
         description2="At Humans of Web, we help businesses use Bolt AI for scalable product development, workflow automation, rapid prototyping, and AI-powered digital experiences."
         altText="Bolt AI Development Agency"
         breakLine
-        objectType="object-fill md:object-cover"
+        objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
 

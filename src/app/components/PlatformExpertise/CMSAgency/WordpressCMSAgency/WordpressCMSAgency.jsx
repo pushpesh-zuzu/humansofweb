@@ -29,7 +29,7 @@ function WordpressCMSAgency() {
         description2="At Humans of Web, we help WordPress businesses improve visibility, optimize user experience, and drive growth through SEO, ads, and conversion-focused strategies."
         altText="WordPress Marketing Agency"
         breakLine
-        objectType="object-fill md:object-cover"
+        objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
 

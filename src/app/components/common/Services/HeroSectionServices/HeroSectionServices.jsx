@@ -17,7 +17,7 @@ export default function HeroSectionServices({
   headingSectionWidth = "max-w-[600px]",
   altText = "Industry Expertise",
   breakLine = false,
-  objectType='object-cover',
+  objectType='object-fill lg:object-cover',
   mobileHeight='h-[250px]'
 }) {
   const [proposalOpen, setProposalOpen] = useState(false);
@@ -29,13 +29,13 @@ export default function HeroSectionServices({
     >
       <PaddingWrapper2>
         <section className="relative rounded-[34px] ">
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+          <div className="grid items-left gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,.8fr)] lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
             {/* LEFT CONTENT */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className={`${headingSectionWidth} h-full md:mx-auto md:text-center lg:mx-0 lg:text-left`}
+              className={`${headingSectionWidth} h-full md:mx-auto lg:mx-0 md:text-left`}
             >
               {/* Heading */}
               <h1 className="text-h1 font-semibold text-white mb-auto leading-[1.25]">
@@ -53,7 +53,7 @@ export default function HeroSectionServices({
               </p>
 
               {/* CTA */}
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:justify-center lg:justify-start">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row justify-center md:justify-start">
                 {/* <input
                   type="text"
                   placeholder="Enter Your Whatsapp Number"
@@ -76,7 +76,7 @@ export default function HeroSectionServices({
               transition={{ duration: 0.7, delay: 0.15 }}
               className="relative flex items-center justify-center"
             >
-              <div className={`relative ${mobileHeight} w-full max-w-full overflow-hidden rounded-[32px] md:h-[370px] lg:h-[325px] xl:h-[370px]`}>
+              <div className={`relative ${mobileHeight} w-full max-w-full overflow-hidden rounded-[32px] md:h-[250px] lg:h-[325px] xl:h-[370px]`}>
 
                 <Image
                   src={bgImag}

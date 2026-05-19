@@ -24,7 +24,7 @@ function AIServicesAgency() {
         description2="At Humans of Web, we help companies use AI tools and systems to streamline workflows, improve decision-making, and create smarter, more efficient operations."
         altText="AI Services Agency"
         breakLine
-        // objectType="object-fill md:object-cover"
+        // objectType="object-fill lg:object-cover"
         mobileHeight="h-[180px]"
       />
 

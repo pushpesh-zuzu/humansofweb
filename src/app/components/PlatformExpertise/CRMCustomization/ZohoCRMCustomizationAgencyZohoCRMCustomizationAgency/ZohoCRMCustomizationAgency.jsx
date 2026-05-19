@@ -29,7 +29,7 @@ function ZohoCRMCustomizationAgency() {
         description2="At Humans of Web, we help businesses customize Zoho CRM for automation, reporting, lead management, and scalable operational efficiency."
         altText="Zoho CRM Customization Services"
         breakLine
-        objectType="object-fill md:object-cover"
+        objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
 

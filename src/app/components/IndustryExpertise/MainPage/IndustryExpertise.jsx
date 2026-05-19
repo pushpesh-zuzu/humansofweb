@@ -762,7 +762,7 @@ function IndustryExpertise() {
                 deepDiveRef={deepDiveRef}
             altText="industry expertise"
             bgImag="/IndustryExpertise/industryHero1.webp"
-            objectType="object-fill md:object-cover"
+            objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
       <TrustedBy padding={""} />

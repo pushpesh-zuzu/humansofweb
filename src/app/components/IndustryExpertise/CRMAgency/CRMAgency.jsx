@@ -24,7 +24,7 @@ function CRMAgency() {
         description2="At Humans of Web, we help businesses streamline operations through CRM customization, automation, and smart integrations to improve efficiency."
         altText="CRM Customisation Agency"
         breakLine
-       objectType="object-fill md:object-cover"
+       objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
 

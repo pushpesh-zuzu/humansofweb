@@ -5,6 +5,10 @@ const headingStyles = {
     fontSize: "22px",
     lineHeight: "24px",
     "@media (min-width: 768px)": {
+      fontSize: "30px",
+      lineHeight: "38px",
+    },
+    "@media (min-width: 1024px)": {
       fontSize: "36px",
       lineHeight: "38px",
     },

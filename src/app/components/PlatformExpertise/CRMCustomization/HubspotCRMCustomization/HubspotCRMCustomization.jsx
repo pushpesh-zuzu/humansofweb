@@ -30,7 +30,7 @@ function HubspotCRMCustomization() {
         description2="At Humans of Web, we customize HubSpot CRM around your business operations, helping teams automate workflows, improve lead management, and scale customer engagement."
         altText="HubSpot CRM Customization Agency"
         breakLine
-        objectType="object-fill md:object-cover"
+        objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
 

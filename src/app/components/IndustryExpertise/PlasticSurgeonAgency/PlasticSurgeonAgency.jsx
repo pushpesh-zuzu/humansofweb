@@ -24,7 +24,7 @@ function PlasticSurgeonAgency() {
         bgImag="/IndustryExpertise/plasticSurgery/PlasticSurgeryBanner.webp"
         altText="Plastic surgery or surgeons Agency"
         breakLine
-        objectType="object-fill md:object-cover"
+        objectType="object-fill lg:object-cover"
         mobileHeight="h-[200px]"
       />
       <TrustedBy padding={""} />
