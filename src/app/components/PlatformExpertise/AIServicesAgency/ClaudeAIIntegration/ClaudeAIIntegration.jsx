@@ -31,8 +31,8 @@ function ClaudeAIIntegration() {
         description2="At Humans of Web, we integrate Claude AI into your business systems, helping teams streamline operations, automate repetitive tasks, and improve decision-making."
         altText="Claude AI Integration Agency"
         breakLine
-        objectType="object-contain md:object-cover"
-        mobileHeight="h-[150px]"
+        objectType="object-fill md:object-cover"
+        mobileHeight="h-[200px]"
 
       />
 

@@ -29,8 +29,8 @@ function DentalAgency() {
         description2="At Humans of Web, we help dental clinics connect with patients through SEO, local optimization, and smart advertising to drive visibility, bookings, and consistent growth."
         altText="dentalAgency Agency"
         breakLine
-        objectType="object-contain md:object-cover"
-        mobileHeight="h-[150px]"
+        objectType="object-fill md:object-cover"
+        mobileHeight="h-[200px]"
       />
       <TrustedBy padding={""} />
       <ServicesTwoGridDescriptionAndImage
