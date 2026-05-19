@@ -23,6 +23,8 @@ function LegalAgency() {
         description2="At Humans of Web, we help law firms connect with clients through SEO, local visibility, and smart campaigns to drive inquiries and consistent case growth."
         altText="Law Firm Marketing Agency"
         breakLine
+        objectType="object-contain md:object-cover"
+        mobileHeight="h-[150px]"
       />
 
       <TrustedBy padding={""} />

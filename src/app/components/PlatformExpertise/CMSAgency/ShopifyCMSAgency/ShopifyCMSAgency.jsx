@@ -30,6 +30,8 @@ function ShopifyCMSAgency() {
         description2="At Humans of Web, we help Shopify brands improve visibility, optimize store experience, and drive conversions through SEO, ads, and data-driven strategies."
         altText="Shopify Marketing Agency"
         breakLine
+        objectType="object-contain md:object-cover"
+        mobileHeight="h-[150px]"
       />
 
       <TrustedBy padding={""} />

@@ -24,6 +24,7 @@ function CMSAgency() {
         description2="At Humans of Web, we help businesses build and optimize CMS platforms that improve visibility, simplify management, and support long-term digital growth."
         altText="CMS Marketing Agency"
         breakLine
+        mobileHeight="h-[200px]"
       />
 
       <TrustedBy padding={""} />

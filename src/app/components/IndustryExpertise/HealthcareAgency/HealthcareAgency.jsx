@@ -25,6 +25,7 @@ function HealthcareAgency() {
         altText="Healthcare Marketing Agency"
         breakLine
         objectType="object-contain md:object-cover"
+        mobileHeight="h-[150px]"
       />
 
       <TrustedBy padding={""} />

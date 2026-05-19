@@ -24,6 +24,8 @@ function ChiropractorAgency() {
         description2="At Humans of Web, we help chiropractic clinics connect with patients through SEO, local visibility, and smart campaigns to drive bookings and steady growth."
         altText="Chiropractor Marketing Agency"
         breakLine
+        objectType="object-contain md:object-cover"
+        mobileHeight="h-[150px]"
       />
 
       <TrustedBy padding={""} />

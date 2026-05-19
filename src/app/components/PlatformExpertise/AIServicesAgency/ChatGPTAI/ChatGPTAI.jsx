@@ -28,6 +28,9 @@ function ChatGPTAI() {
         description2="At Humans of Web, we help brands integrate ChatGPT solutions that improve productivity, reduce manual work, and create scalable AI-driven experiences."
         altText="ChatGPT AI Solutions"
         breakLine
+        objectType="object-contain md:object-cover"
+        mobileHeight="h-[150px]"
+
       />
 
       <TrustedBy padding={""} />

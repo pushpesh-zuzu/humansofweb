@@ -26,11 +26,14 @@ function ClaudeAIIntegration() {
         heading1="Custom Claude AI"
         heading2="Solutions For Businesses"
         // bgImag="/AIIntegration/ClaudeAI/claudeHero.webp"
-        bgImag="/PlatformExpertise/ArtificialIntelligencyAgency/claudeHero.webp"
+        bgImag="/PlatformExpertise/ArtificialIntelligencyAgency/claudeHero1.webp"
         description1="Claude AI helps businesses automate workflows, process information, generate content, and improve operational efficiency through advanced AI capabilities."
         description2="At Humans of Web, we integrate Claude AI into your business systems, helping teams streamline operations, automate repetitive tasks, and improve decision-making."
         altText="Claude AI Integration Agency"
         breakLine
+        objectType="object-contain md:object-cover"
+        mobileHeight="h-[150px]"
+
       />
 
       <TrustedBy padding={""} />

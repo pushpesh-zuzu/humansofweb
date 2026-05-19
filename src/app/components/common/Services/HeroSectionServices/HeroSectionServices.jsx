@@ -17,7 +17,8 @@ export default function HeroSectionServices({
   headingSectionWidth = "max-w-[600px]",
   altText = "Industry Expertise",
   breakLine = false,
-  objectType='object-cover'
+  objectType='object-cover',
+  mobileHeight='h-[250px]'
 }) {
   const [proposalOpen, setProposalOpen] = useState(false);
 
@@ -75,7 +76,7 @@ export default function HeroSectionServices({
               transition={{ duration: 0.7, delay: 0.15 }}
               className="relative flex items-center justify-center"
             >
-              <div className="relative h-[250px] w-full max-w-full overflow-hidden rounded-[32px] md:h-[370px] lg:h-[325px] xl:h-[370px]">
+              <div className={`relative ${mobileHeight} w-full max-w-full overflow-hidden rounded-[32px] md:h-[370px] lg:h-[325px] xl:h-[370px]`}>
 
                 <Image
                   src={bgImag}

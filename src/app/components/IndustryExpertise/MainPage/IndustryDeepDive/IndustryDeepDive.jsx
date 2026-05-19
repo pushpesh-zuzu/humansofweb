@@ -99,10 +99,18 @@ function IndustryRow({ industry, reverse, index }) {
           ))}
         </div>
 
-        <GetYourFreeConsultationButton
+        <div className='hidden md:flex justify-start'>
+          <GetYourFreeConsultationButton
           href={href}
           text={`Explore ${label.split(" ")[0]} Strategy`}
         />
+        </div>
+        <div className='flex md:hidden justify-center'>
+          <GetYourFreeConsultationButton
+          href={href}
+          text={`${label.split(" ")[0]} Strategy`}
+        />
+        </div>
       </div>
     </div>
   );
