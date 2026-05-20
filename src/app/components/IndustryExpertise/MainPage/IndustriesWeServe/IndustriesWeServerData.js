@@ -177,7 +177,7 @@ export const INDUSTRIES = [
 
   {
     title: "Home Improvement & Local Services",
-    link: "/home-improvement-local-services",
+    link: "",
     description:
       "From plumbers to painters, we help local service businesses get found first — driving more calls, bookings, and reviews in their area.",
     icon: <HomeImprovement />,
@@ -188,7 +188,7 @@ export const INDUSTRIES = [
 
   {
     title: "Professional Services",
-    link: "/professional-services",
+    link: "",
     description:
       "Law firms, consultants, and agencies trust us to build authority, generate qualified leads, and grow their client base consistently.",
     icon: <ProfessionalServices />,

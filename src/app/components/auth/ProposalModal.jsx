@@ -298,7 +298,7 @@ export default function ProposalModal({ isOpen, onClose }) {
             </div>
 
             {/* Content — flex-1 stretch karo */}
-            <div className="flex flex-col justify-between flex-1 p-8">
+            <div className="flex flex-col flex-1 p-8">
               <div>
                 <span
                   className="inline-block px-3 py-1 rounded-full text-xs font-700 mb-4 text-white"
@@ -387,10 +387,10 @@ export default function ProposalModal({ isOpen, onClose }) {
 
               {/* Bottom phone — always at bottom */}
               <div
-                className="mt-6 pt-0"
+                className="pt-0"
                 style={{ borderTop: "1px solid #F65A75" }}
               >
-                <p className="text-xs text-gray-500 mb-1">
+                <p className="text-xs text-gray-500 my-3">
                   Prefer to connect with us on WhatsApp?
                 </p>
                 <a

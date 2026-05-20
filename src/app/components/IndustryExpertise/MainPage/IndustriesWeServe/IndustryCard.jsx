@@ -157,7 +157,7 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link
           {icon}
 
         {/* Title */}
-        <a href={link}>
+        {link !=="" ? <a href={link}>
           <h3
           className="text-h5 font-bold leading-snug"
           style={{ color: "#48179C", margin: 0 }}
@@ -165,6 +165,16 @@ function IndustryCard({ icon, title, description, tags, accent, bg, reverse,link
           {title}
         </h3>
         </a>
+        :
+        <span>
+          <h3
+          className="text-h5 font-bold leading-snug"
+          style={{ color: "#48179C", margin: 0 }}
+        >
+          {title}
+        </h3>
+        </span>
+        }
         </div>
 
         {/* Description */}
