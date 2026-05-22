@@ -198,12 +198,12 @@ const ContactForm = () => {
                     dropdownClass="!rounded-md"
                     enableSearch={true}
                   />
-                  <p className="mt-1 text-xs text-gray-500 md:hidden">
-                    Please ensure this is a WhatsApp number.
-                  </p>
                   {errors.phone && (
                     <p className="mt-1 text-xs text-red-500">{errors.phone}</p>
                   )}
+                  <p className="mt-1 text-xs text-gray-500 whitespace-nowrap">
+                    Please ensure this is a WhatsApp number.
+                  </p>
                 </div>
 
                 {/* Domain */}
@@ -224,9 +224,9 @@ const ContactForm = () => {
                 </div>
 
                 {/* WhatsApp note — desktop only */}
-                <p className="-mt-4 mb-5 hidden text-xs text-gray-500 md:col-span-2 md:block">
+                {/* <p className="-mt-4 mb-5 hidden text-xs text-gray-500 md:col-span-2 md:block">
                   Please ensure this is a WhatsApp number.
-                </p>
+                </p> */}
                 <div className="mb-3 md:mb-5 col-span-1 md:col-span-2">
                   <div className=" border-b border-[#48179C]  ">
                     <input
