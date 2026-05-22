@@ -52,7 +52,13 @@ function TermsField({ checked, onChange }) {
 
 function CloseIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         d="m6 6 12 12M18 6 6 18"
         stroke="currentColor"
@@ -73,7 +79,9 @@ const GetProposalModal = ({
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
-
+  const [phoneCountry, setPhoneCountry] = useState({
+    dialCode: "971",
+  });
   const dispatch = useDispatch();
   // const router = useRouter();
 
@@ -140,7 +148,8 @@ const GetProposalModal = ({
     if (!form.websiteUrl.trim()) {
       newErrors.websiteUrl = "Website URL is required";
     } else if (!/^https?:\/\/.+/.test(form.websiteUrl)) {
-      newErrors.websiteUrl = "Invalid URL (must start with http:// or https://)";
+      newErrors.websiteUrl =
+        "Invalid URL (must start with http:// or https://)";
     }
     if (!form.terms) {
       newErrors.terms = "You must agree to the terms & conditions";
@@ -161,7 +170,7 @@ const GetProposalModal = ({
           email: form.email,
           phone: `+${form.phone}`,
           website_url: form.websiteUrl,
-        })
+        }),
       );
 
       if (response?.meta?.requestStatus === "fulfilled") {
@@ -179,7 +188,7 @@ const GetProposalModal = ({
 - Humans of Web`;
 
         const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
-          message
+          message,
         )}`;
 
         window.open(whatsappUrl, "_blank");
@@ -189,21 +198,21 @@ const GetProposalModal = ({
     } finally {
       setLoading(false);
     }
-
   };
 
   const handleClose = () => {
     setErrors({});
     setForm(initialForm);
     onClose?.();
-    onClose
-  }
+    onClose;
+  };
 
   return (
     <div
       className="fixed inset-0 z-[9999] flex items-center justify-center p-3 md:p-5"
       style={{ background: "rgba(15,5,30,0.75)", backdropFilter: "blur(4px)" }}
-      onClick={handleClose}>
+      onClick={handleClose}
+    >
       <div
         className="relative w-full overflow-hidden border border-secondary"
         style={{
@@ -234,7 +243,8 @@ const GetProposalModal = ({
               {heading}
             </h2>
             <p className="p-small mt-2 text-gray-500">
-              Don&apos;t have a website? We&apos;ll design and develop it for you.
+              Don&apos;t have a website? We&apos;ll design and develop it for
+              you.
             </p>
           </div>
 
@@ -248,34 +258,63 @@ const GetProposalModal = ({
                   onChange={handleChange}
                 />
                 {errors.fullName && (
-                  <p className="text-red-500 text-xs mt-1 ml-2">{errors.fullName}</p>
+                  <p className="text-red-500 text-xs mt-1 ml-2">
+                    {errors.fullName}
+                  </p>
                 )}
               </div>
               <div>
                 <PhoneInput
-                  country={"in"} // default India 🇮🇳
+                  country={"ae"}
                   value={form.phone}
-                  onChange={(phone) => {
-                    setForm((prev) => ({
-                      ...prev,
-                      phone,
-                    }));
-
+                  onChange={(phone, country) => {
+                    setPhoneCountry(country); // format automatically aata hai
+                    setForm((prev) => ({ ...prev, phone }));
                     setErrors((prev) => {
                       const newErrors = { ...prev };
                       delete newErrors.phone;
                       return newErrors;
                     });
                   }}
-                  inputClass="!w-full !h-[42px] !pl-11 !rounded-[10px] !border !border-gray-200 focus:!border-purple-500 focus:!ring-2 focus:!ring-purple-100"
-                  buttonClass="!bg-transparent !border-0"
+                  inputProps={{
+                    onKeyDown: (e) => {
+                      const dialCode = phoneCountry?.dialCode || "971";
+                      const cursorPos = e.target.selectionStart;
+
+                      // +1 because "+" sign is also in the input display
+                      if (
+                        e.key === "Backspace" &&
+                        cursorPos <= dialCode.length + 1
+                      ) {
+                        e.preventDefault();
+                      }
+                      if (
+                        e.key === "Delete" &&
+                        cursorPos < dialCode.length + 1
+                      ) {
+                        e.preventDefault();
+                      }
+                    },
+                  }}
+                  inputStyle={{
+                    width: "100%",
+                    height: "42px",
+                    paddingLeft: "48px",
+                    borderRadius: "10px",
+                    border: "1px solid #e5e7eb",
+                    color: "#1f2937",
+                    backgroundColor: "#ffffff",
+                    fontSize: "14px",
+                  }}
+                  buttonStyle={{ background: "transparent", border: "none" }}
                   containerClass="w-full"
                   dropdownClass="!rounded-md"
                   enableSearch={true}
-                  style={{color: "#1f2937", }}
                 />
                 {errors.phone && (
-                  <p className="text-red-500 text-xs mt-1 ml-2">{errors.phone}</p>
+                  <p className="text-red-500 text-xs mt-1 ml-2">
+                    {errors.phone}
+                  </p>
                 )}
                 <p className="mt-1 text-xs text-gray-500 ml-2">
                   Please ensure this is a WhatsApp number.
@@ -304,7 +343,9 @@ const GetProposalModal = ({
                 onChange={handleChange}
               />
               {errors.websiteUrl && (
-                <p className="text-red-500 text-xs mt-1 ml-2">{errors.websiteUrl}</p>
+                <p className="text-red-500 text-xs mt-1 ml-2">
+                  {errors.websiteUrl}
+                </p>
               )}
             </div>
 

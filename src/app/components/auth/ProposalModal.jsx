@@ -72,10 +72,11 @@ export default function ProposalModal({ isOpen, onClose }) {
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
+  const [phoneCountry, setPhoneCountry] = useState({
+    dialCode: "971",
+  });
   const dispatch = useDispatch();
   const router = useRouter();
-
-
 
   useEffect(() => {
     const handler = (e) => {
@@ -112,16 +113,22 @@ export default function ProposalModal({ isOpen, onClose }) {
       newErrors.firstName = "First name is required";
     }
 
-    if (!form.phone || !/^\d{8,15}$/.test(form.phone)) {
-      newErrors.phone = "Please enter a valid phone number";
+    if (!form.phone.trim()) {
+      newErrors.phone = "Phone Number is required";
+    } else if (form.phone.length < 10) {
+      newErrors.phone = "Enter valid phone number";
     }
 
     if (!form.email.trim()) {
-      newErrors.email = "Email address is required";
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      newErrors.email = "Invalid email address";
     }
 
     if (!form.webUrl.trim()) {
-      newErrors.webUrl = "Domain is required";
+      newErrors.webUrl = "Website URL is required";
+    } else if (!/^https?:\/\/.+/.test(form.webUrl)) {
+      newErrors.webUrl = "Invalid URL (must start with http:// or https://)";
     }
 
     if (!form.service) {
@@ -152,12 +159,12 @@ export default function ProposalModal({ isOpen, onClose }) {
           service_intrested: form.service,
           monthly_budget: form.budget,
           about: form.about,
-        })
+        }),
       );
 
       if (response?.meta?.requestStatus === "fulfilled") {
         onClose?.();
-      const message = `New Proposal Request
+        const message = `New Proposal Request
 
 ● Name: ${form.firstName}
 ● Phone: +${form.phone}
@@ -170,7 +177,7 @@ export default function ProposalModal({ isOpen, onClose }) {
 - Humans of Web`;
 
         const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
-          message
+          message,
         )}`;
 
         window.open(whatsappUrl, "_blank");
@@ -210,7 +217,7 @@ export default function ProposalModal({ isOpen, onClose }) {
         {/* ── MOBILE top strip ── */}
         <div
           className="md:hidden px-5 pt-5 pb-4 flex-shrink-0 bg-white"
-        // style={{ background: "linear-gradient(135deg, #48179C 0%, #6d28d9 60%, #F65A75 100%)" }}
+          // style={{ background: "linear-gradient(135deg, #48179C 0%, #6d28d9 60%, #F65A75 100%)" }}
         >
           <div className="mb-4">
             <span
@@ -386,10 +393,7 @@ export default function ProposalModal({ isOpen, onClose }) {
               </div>
 
               {/* Bottom phone — always at bottom */}
-              <div
-                className="pt-0"
-                style={{ borderTop: "1px solid #F65A75" }}
-              >
+              <div className="pt-0" style={{ borderTop: "1px solid #F65A75" }}>
                 <p className="text-xs text-gray-500 my-3">
                   Prefer to connect with us on WhatsApp?
                 </p>
@@ -421,7 +425,8 @@ export default function ProposalModal({ isOpen, onClose }) {
                   Ready to Think Big?
                 </h3>
                 <p className="p-default text-gray-400 mt-1">
-                  Don&apos;t have a website? We&apos;ll design and develop it for you.
+                  Don&apos;t have a website? We&apos;ll design and develop it
+                  for you.
                 </p>
               </div>
 
@@ -446,22 +451,43 @@ export default function ProposalModal({ isOpen, onClose }) {
                   </div>
                   <div>
                     <PhoneInput
-                      country={"in"}
+                      country={"ae"}
                       value={form.phone}
-                      onChange={(phone) => {
+                      onChange={(phone, country) => {
+                        setPhoneCountry(country);
+
                         setForm((prev) => ({
                           ...prev,
                           phone,
                         }));
 
-                        setErrors((prev) => ({
-                          ...prev,
-                          phone: "",
-                        }));
+                        setErrors((prev) => {
+                          const newErrors = { ...prev };
+                          delete newErrors.phone;
+                          return newErrors;
+                        });
                       }}
                       inputProps={{
                         name: "phone",
                         required: true,
+                        onKeyDown: (e) => {
+                          const dialCode = phoneCountry?.dialCode || "971";
+                          const cursorPos = e.target.selectionStart;
+
+                          if (
+                            e.key === "Backspace" &&
+                            cursorPos <= dialCode.length + 1
+                          ) {
+                            e.preventDefault();
+                          }
+
+                          if (
+                            e.key === "Delete" &&
+                            cursorPos < dialCode.length + 1
+                          ) {
+                            e.preventDefault();
+                          }
+                        },
                       }}
                       inputClass="!w-full !h-[42px] !pl-14 !rounded-none !border !border-gray-200 focus:!border-purple-500 focus:!ring-2 focus:!ring-purple-100"
                       buttonClass="!bg-transparent !border-0"
@@ -491,9 +517,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                     onChange={handleChange}
                   />
                   {errors.email && (
-                    <p className="text-red-500 text-xs mt-1">
-                      {errors.email}
-                    </p>
+                    <p className="text-red-500 text-xs mt-1">{errors.email}</p>
                   )}
                 </div>
                 <div>
@@ -505,9 +529,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                     onChange={handleChange}
                   />
                   {errors.webUrl && (
-                    <p className="text-red-500 text-xs mt-1">
-                      {errors.webUrl}
-                    </p>
+                    <p className="text-red-500 text-xs mt-1">{errors.webUrl}</p>
                   )}
                 </div>
 
@@ -586,9 +608,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                   </label>
 
                   {errors.terms && (
-                    <p className="text-red-500 text-xs mt-1">
-                      {errors.terms}
-                    </p>
+                    <p className="text-red-500 text-xs mt-1">{errors.terms}</p>
                   )}
                 </div>
 
@@ -604,7 +624,11 @@ export default function ProposalModal({ isOpen, onClose }) {
                     (e.currentTarget.style.background = "#48179C")
                   }
                 >
-                  {loading ? <Loader label="Sending..." /> : "Send My Free Proposal →"}
+                  {loading ? (
+                    <Loader label="Sending..." />
+                  ) : (
+                    "Send My Free Proposal →"
+                  )}
                 </button>
 
                 <p className="text-xs text-center text-gray-400 pb-1">
@@ -615,7 +639,9 @@ export default function ProposalModal({ isOpen, onClose }) {
 
             {/* Mobile phone bar */}
             <div className="md:hidden border-t border-purple-100 px-5 py-3 flex items-center justify-center gap-2 flex-wrap flex-shrink-0">
-              <span className="text-xs text-gray-500">Prefer to connect with us on WhatsApp?</span>
+              <span className="text-xs text-gray-500">
+                Prefer to connect with us on WhatsApp?
+              </span>
               <a
                 href="https://wa.me/447897024186"
                 className="flex items-center gap-1.5 font-bold text-sm"
@@ -631,4 +657,3 @@ export default function ProposalModal({ isOpen, onClose }) {
     </div>
   );
 }
-

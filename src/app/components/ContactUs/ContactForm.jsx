@@ -19,7 +19,9 @@ const initialForm = {
 const ContactForm = () => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
-
+  const [phoneCountry, setPhoneCountry] = useState({
+    dialCode: "91",
+  });
   const handleChange = (event) => {
     const { name, type, value, checked } = event.target;
 
@@ -34,7 +36,9 @@ const ContactForm = () => {
     }));
   };
 
-  const handlePhoneChange = (phone) => {
+  const handlePhoneChange = (phone, country) => {
+    setPhoneCountry(country);
+
     setForm((current) => ({
       ...current,
       phone,
@@ -118,7 +122,7 @@ const ContactForm = () => {
 
             {[
               { label: "Whatsapp:", val: "+44 7897 024186" },
-              { label: "Send Email:", val: "hello@how.com" },
+              { label: "Send Email:", val: "hello@humansofweb.com" },
               {
                 label: "Address:",
                 val: "99 South Almaden UAE, 95113",
@@ -192,6 +196,26 @@ const ContactForm = () => {
                     country="in"
                     value={form.phone}
                     onChange={handlePhoneChange}
+                    inputProps={{
+                      onKeyDown: (e) => {
+                        const dialCode = phoneCountry?.dialCode || "91";
+                        const cursorPos = e.target.selectionStart;
+
+                        if (
+                          e.key === "Backspace" &&
+                          cursorPos <= dialCode.length + 1
+                        ) {
+                          e.preventDefault();
+                        }
+
+                        if (
+                          e.key === "Delete" &&
+                          cursorPos < dialCode.length + 1
+                        ) {
+                          e.preventDefault();
+                        }
+                      },
+                    }}
                     inputClass="!w-full !h-[52px] !pl-11 !border-0 !border-b !border-[#48179C] !rounded-none !bg-transparent !text-[16px] !text-gray-700 focus:!shadow-none"
                     buttonClass="!bg-transparent !border-0 !border-b !border-[#48179C] !rounded-none"
                     containerClass="w-full"
