@@ -205,6 +205,8 @@ const Footer = () => {
                         key={link.label}
                         href={link.href}
                         className="p-small text-white/75 transition hover:text-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         {link.label}
                       </Link>

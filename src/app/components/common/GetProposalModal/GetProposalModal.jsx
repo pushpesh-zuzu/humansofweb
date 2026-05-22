@@ -272,6 +272,7 @@ const GetProposalModal = ({
                   containerClass="w-full"
                   dropdownClass="!rounded-md"
                   enableSearch={true}
+                  style={{color: "#1f2937", }}
                 />
                 <p className="mt-1 text-xs text-gray-500">
                   Please ensure this is a WhatsApp number.

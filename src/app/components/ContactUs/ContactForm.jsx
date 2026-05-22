@@ -86,7 +86,7 @@ const ContactForm = () => {
 - Humans of Web`;
 
     const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
-      whatsappMessage
+      whatsappMessage,
     )}`;
 
     window.open(whatsappUrl, "_blank");
@@ -155,40 +155,44 @@ const ContactForm = () => {
 
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-x-6 md:grid-cols-2">
-                <div className="mb-5 border-b border-[#48179C] pb-1.5">
-                  <input
-                    type="text"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder="Your Name *"
-                    className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
-                  />
+                <div className="mb-3 md:mb-5">
+                  <div className=" border-b border-[#48179C] ">
+                    <input
+                      type="text"
+                      name="name"
+                      value={form.name}
+                      onChange={handleChange}
+                      placeholder="Your Name *"
+                      className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
+                    />
+                  </div>
                   {errors.name && (
                     <p className="mt-1 text-xs text-red-500">{errors.name}</p>
                   )}
                 </div>
-
-                <div className="md:mb-5 mb-4 border-b border-[#48179C] pb-1.5">
-                  <input
-                    type="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder="Email *"
-                    className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
-                  />
+                <div className="mb-3 md:mb-5">
+                  <div className=" border-b border-[#48179C] ">
+                    <input
+                      type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      placeholder="Email *"
+                      className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
+                    />
+                  </div>
                   {errors.email && (
                     <p className="mt-1 text-xs text-red-500">{errors.email}</p>
                   )}
                 </div>
 
-                <div className="md:mb-1 mb-2 pb-1.5">
+                {/* Phone */}
+                <div className="mb-3 md:mb-1">
                   <PhoneInput
                     country="in"
                     value={form.phone}
                     onChange={handlePhoneChange}
-                    inputClass="!w-full !h-[56px] !pl-14 !border-0 !border-b !border-[#48179C] !rounded-none !bg-transparent !text-[16px] !text-gray-700 focus:!shadow-none"
+                    inputClass="!w-full !h-[52px] !pl-11 !border-0 !border-b !border-[#48179C] !rounded-none !bg-transparent !text-[16px] !text-gray-700 focus:!shadow-none"
                     buttonClass="!bg-transparent !border-0 !border-b !border-[#48179C] !rounded-none"
                     containerClass="w-full"
                     dropdownClass="!rounded-md"
@@ -202,33 +206,38 @@ const ContactForm = () => {
                   )}
                 </div>
 
-                <div className="mb-5 border-b border-[#48179C] pb-1.5">
-                  <input
-                    type="text"
-                    name="domain"
-                    value={form.domain}
-                    onChange={handleChange}
-                    placeholder="Enter Your Desired Domain *"
-                    className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
-                  />
+                {/* Domain */}
+                <div className="mb-3 md:mb-5">
+                  <div className="border-b border-[#48179C]">
+                    <input
+                      type="text"
+                      name="domain"
+                      value={form.domain}
+                      onChange={handleChange}
+                      placeholder="Enter Your Desired Domain *"
+                      className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
+                    />
+                  </div>
                   {errors.domain && (
                     <p className="mt-1 text-xs text-red-500">{errors.domain}</p>
                   )}
                 </div>
 
+                {/* WhatsApp note — desktop only */}
                 <p className="-mt-4 mb-5 hidden text-xs text-gray-500 md:col-span-2 md:block">
                   Please ensure this is a WhatsApp number.
                 </p>
-
-                <div className="mb-5 border-b border-[#48179C] pb-1.5 md:col-span-2">
-                  <input
-                    type="text"
-                    name="designation"
-                    value={form.designation}
-                    onChange={handleChange}
-                    placeholder="Designation *"
-                    className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
-                  />
+                <div className="mb-3 md:mb-5 col-span-1 md:col-span-2">
+                  <div className=" border-b border-[#48179C]  ">
+                    <input
+                      type="text"
+                      name="designation"
+                      value={form.designation}
+                      onChange={handleChange}
+                      placeholder="Designation *"
+                      className="w-full bg-transparent border-none py-3.25 outline-none text-[16px] text-gray-700 placeholder:text-secondary"
+                    />
+                  </div>
                   {errors.designation && (
                     <p className="mt-1 text-xs text-red-500">
                       {errors.designation}
@@ -236,7 +245,7 @@ const ContactForm = () => {
                   )}
                 </div>
 
-                <div className="col-span-1 mb-5 border-b border-[#48179C] pb-3.5 md:col-span-2">
+                <div className="col-span-1 mb-5 border-b border-[#48179C]  md:col-span-2">
                   <textarea
                     name="message"
                     value={form.message}
@@ -254,28 +263,33 @@ const ContactForm = () => {
                     }}
                     placeholder="How Can We Help You?"
                     rows={1}
-                    className="w-full bg-transparent border-none outline-none text-[16px] text-gray-700 placeholder:text-secondary resize-none"
+                    className="pt-[13px] pb-[8px] w-full bg-transparent border-none outline-none text-[16px] text-gray-700 placeholder:text-secondary resize-none"
                   />
                 </div>
-
-                <div className="col-span-1 mb-5 md:col-span-2">
-                  <label className="flex items-start gap-2.5 text-[11.5px] leading-relaxed text-gray-600">
-                    <input
-                      type="checkbox"
-                      name="terms"
-                      checked={form.terms}
-                      onChange={handleChange}
-                      className="mt-0.5 accent-[#48179C]"
-                    />
-                    <span>
-                      I Agree To Terms & Conditions Provided By The Company. By
-                      Providing My Phone Number, I Agree To Receive Text Messages
-                      From The Business.
-                    </span>
-                  </label>
-                  {errors.terms && (
-                    <p className="mt-1 text-xs text-red-500">{errors.terms}</p>
-                  )}
+                <div className="mb-5 md:mb-8 col-span-1 md:col-span-2">
+                  <div className="">
+                    <label className="flex items-start gap-2.5 text-[11.5px] leading-relaxed text-gray-600">
+                      <input
+                        type="checkbox"
+                        name="terms"
+                        checked={form.terms}
+                        onChange={handleChange}
+                        className="mt-0.5 accent-[#48179C]"
+                      />
+                      <span>
+                        I Agree To Terms & Conditions Provided By The Company.
+                        By Providing My Phone Number, I Agree To Receive Text
+                        Messages From The Business.
+                      </span>
+                    </label>
+                  </div>
+                  <div className="col-span-1 md:col-span-2">
+                    {errors.terms && (
+                      <p className="mt-1 text-xs text-red-500">
+                        {errors.terms}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
 
