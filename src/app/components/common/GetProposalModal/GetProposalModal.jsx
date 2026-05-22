@@ -37,7 +37,7 @@ function TermsField({ checked, onChange }) {
         name="terms"
         checked={checked}
         onChange={onChange}
-        className="mr-1 flex-shrink-0 accent-secondary"
+        className="mr-1 flex-shrink-0 accent-secondary mr-3"
       />
       <span>
         I agree to the{" "}
@@ -248,7 +248,7 @@ const GetProposalModal = ({
                   onChange={handleChange}
                 />
                 {errors.fullName && (
-                  <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>
+                  <p className="text-red-500 text-xs mt-1 ml-2">{errors.fullName}</p>
                 )}
               </div>
               <div>
@@ -267,19 +267,19 @@ const GetProposalModal = ({
                       return newErrors;
                     });
                   }}
-                  inputClass="!w-full !h-[42px] !pl-14 !rounded-[10px] !border !border-gray-200 focus:!border-purple-500 focus:!ring-2 focus:!ring-purple-100"
+                  inputClass="!w-full !h-[42px] !pl-11 !rounded-[10px] !border !border-gray-200 focus:!border-purple-500 focus:!ring-2 focus:!ring-purple-100"
                   buttonClass="!bg-transparent !border-0"
                   containerClass="w-full"
                   dropdownClass="!rounded-md"
                   enableSearch={true}
                   style={{color: "#1f2937", }}
                 />
-                <p className="mt-1 text-xs text-gray-500">
+                {errors.phone && (
+                  <p className="text-red-500 text-xs mt-1 ml-2">{errors.phone}</p>
+                )}
+                <p className="mt-1 text-xs text-gray-500 ml-2">
                   Please ensure this is a WhatsApp number.
                 </p>
-                {errors.phone && (
-                  <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
-                )}
               </div>
             </div>
 
@@ -292,7 +292,7 @@ const GetProposalModal = ({
                 onChange={handleChange}
               />
               {errors.email && (
-                <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+                <p className="text-red-500 text-xs mt-1 ml-2">{errors.email}</p>
               )}
             </div>
             <div>
@@ -304,14 +304,14 @@ const GetProposalModal = ({
                 onChange={handleChange}
               />
               {errors.websiteUrl && (
-                <p className="text-red-500 text-xs mt-1">{errors.websiteUrl}</p>
+                <p className="text-red-500 text-xs mt-1 ml-2">{errors.websiteUrl}</p>
               )}
             </div>
 
             <div>
               <TermsField checked={form.terms} onChange={handleChange} />
               {errors.terms && (
-                <p className="text-red-500 text-xs mt-1">{errors.terms}</p>
+                <p className="text-red-500 text-xs mt-1 ml-2">{errors.terms}</p>
               )}
             </div>
 
