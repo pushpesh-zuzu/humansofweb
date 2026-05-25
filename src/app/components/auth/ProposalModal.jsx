@@ -17,7 +17,7 @@ function Input({ type = "text", name, placeholder, value, onChange }) {
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      className="w-full px-4 py-2.5 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 transition-all duration-200"
+      className="w-full rounded-[6px] px-4 py-2.5 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 transition-all duration-200"
     />
   );
 }
@@ -29,7 +29,7 @@ function Select({ name, value, onChange, placeholder, options }) {
         name={name}
         value={value}
         onChange={onChange}
-        className="w-full px-4 py-2.5 rounded-lg border border-gray-200 bg-white text-sm outline-none appearance-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 transition-all duration-200 cursor-pointer"
+        className="rounded-[6px] w-full px-4 py-2.5 rounded-lg border border-gray-200 bg-white text-sm outline-none appearance-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 transition-all duration-200 cursor-pointer"
         style={{ color: value ? "#1f2937" : "#9ca3af" }}
       >
         <option value="">{placeholder}</option>
@@ -112,8 +112,7 @@ export default function ProposalModal({ isOpen, onClose }) {
     if (!form.firstName.trim()) {
       newErrors.firstName = "First name is required";
     }
-
-    if (!form.phone.trim()) {
+    if (!form.phone.trim() || form.phone.trim().length <= 3 ) {
       newErrors.phone = "Phone Number is required";
     } else if (form.phone.length < 10) {
       newErrors.phone = "Enter valid phone number";
@@ -221,10 +220,10 @@ export default function ProposalModal({ isOpen, onClose }) {
         >
           <div className="mb-4">
             <span
-              className=" ml-auto text-xs text-gray-600  px-3 py-1 rounded-full font-medium"
+              className=" ml-auto text-xs text-white  px-3 py-1 rounded-full font-medium"
               style={{ background: "#F65A75" }}
             >
-              Limited Offer
+              Limited-Time Offer
             </span>
           </div>
 
@@ -349,19 +348,19 @@ export default function ProposalModal({ isOpen, onClose }) {
                   {["Month 1", "Month 2"].map((m) => (
                     <div
                       key={m}
-                      className="flex-1 rounded-xl px-3 py-3 text-center"
+                      className={`flex-1 rounded-xl px-3 py-3 text-center rounded-[16px] shadow-lg ${m==="Month 1" ? "shadow-secondary/60" : "shadow-primary/60"}`}
                       style={{
                         background: "rgba(255,255,255,0.12)",
-                        border: "1px solid #48179C",
+                        // border: "1px solid #48179C",
                       }}
                     >
                       <div
-                        className="text-h4 font-extrabold"
-                        style={{ color: "#48179C" }}
+                        className={`text-h4 font-extrabold ${m === "Month 1" ? "text-secondary" : "text-primary"}`}
+                        // style={{ color: "#48179C" }}
                       >
                         50% off
                       </div>
-                      <div className="text-sm text-gray-500 mt-0.5">In {m}</div>
+                      <div className={`text-sm text-gray-500 mt-0.5 ${m === "Month 1" ? "text-secondary" : "text-primary"}`}>In {m}</div>
                     </div>
                   ))}
                 </div>
@@ -393,13 +392,13 @@ export default function ProposalModal({ isOpen, onClose }) {
               </div>
 
               {/* Bottom phone — always at bottom */}
-              <div className="pt-0" style={{ borderTop: "1px solid #F65A75" }}>
-                <p className="text-xs text-gray-500 my-3">
+              <div className="pt-0 mt-3" style={{ borderTop: "1px solid #F65A75" }}>
+                <p className="text-xs text-gray-500 mt-3 mb-2">
                   Prefer to connect with us on WhatsApp?
                 </p>
                 <a
                   href="https://wa.me/447897024186"
-                  className="flex items-center gap-2 font-bold text-secondary text-sm hover:text-primary transition-colors"
+                  className="flex items-center gap-2 font-bold max-w-fit text-secondary text-sm hover:text-primary transition-colors"
                 >
                   <FaWhatsapp className="h-5 w-5 text-[#25D366] group-hover:text-[#25D366]" />
                   +44 7897 024186
@@ -489,16 +488,16 @@ export default function ProposalModal({ isOpen, onClose }) {
                           }
                         },
                       }}
-                      inputClass="!w-full !h-[42px] !pl-14 !rounded-none !border !border-gray-200 focus:!border-purple-500 focus:!ring-2 focus:!ring-purple-100"
+                      inputClass="!w-full !rounded-[6px] !h-[42px] !pl-11 !border !border-gray-200 focus:!border-purple-500 focus:!ring-2 focus:!ring-purple-100"
                       buttonClass="!bg-transparent !border-0"
                       containerClass="w-full"
                       dropdownClass="!rounded-md"
                       enableSearch={true}
                     />
 
-                    <p className="mt-1 text-xs text-gray-500">
+                    {!errors.phone && <p className="mt-1 text-[11px] text-gray-500 whitespace-nowrap">
                       Please ensure this is a WhatsApp number.
-                    </p>
+                    </p>}
 
                     {errors.phone && (
                       <p className="text-red-500 text-xs mt-1">
@@ -583,7 +582,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                   placeholder="Tell us about your business & goals..."
                   value={form.about}
                   onChange={handleChange}
-                  className="w-full flex-1 min-h-[80px] px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 transition-all resize-none"
+                  className="w-full flex-1 min-h-[80px] px-4 py-3 rounded-[6px] border border-gray-200 bg-white text-gray-800 placeholder-gray-400 text-sm outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-100 transition-all resize-none"
                 />
 
                 <div>

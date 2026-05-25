@@ -27,7 +27,7 @@ const HowItWorkStepCardIndustryExpert = ({
                         background: borderGradient(index % 2 !== 0),
                     }}
                 >
-                    <div className="flex min-h-[300px] flex-col bg-[#f5f6ff] p-6 rounded-[14px] xl:min-h-[320px]">
+                    <div style={{minHeight:'stretch'}} className="flex min-h-[300px] flex-col bg-[#f5f6ff] p-6 rounded-[14px] lg:min-h-[320px]">
                         <div className="flex items-center gap-4">
                             {item.icon && (
                                 <div

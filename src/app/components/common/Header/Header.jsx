@@ -54,7 +54,7 @@ export default function Header() {
 
               <button
                 onClick={() => setMobileOpen((v) => !v)}
-                className="flex xl:hidden p-2 rounded text-gray-700 hover:text-secondary"
+                className="flex xl:hidden p-2 rounded cursor-pointer text-gray-700 hover:text-secondary"
                 aria-label="Toggle menu"
               >
                 <svg

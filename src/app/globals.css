@@ -88,3 +88,26 @@ body {
   border-radius: 10px;
   border: 1px solid #eee;
 }
+
+.react-tel-input .country-list {
+  background: #fff !important;
+}
+
+.react-tel-input .country-list .country {
+  color: #000 !important;
+}
+
+.react-tel-input .country-list .country .dial-code {
+  color: #000 !important;
+}
+@media (max-width: 767px) {
+  .react-tel-input .form-control,
+  .react-tel-input .form-control::placeholder,
+  input,
+  input::placeholder,
+  textarea,
+  textarea::placeholder,
+  select {
+    font-size: 16px !important;
+  }
+}

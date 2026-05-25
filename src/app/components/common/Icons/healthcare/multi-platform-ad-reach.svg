@@ -1,12 +1,12 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="64" height="64" rx="32" fill="url(#paint0_linear_216_14024)"/>
-<path d="M14.75 43.25H22.25M22.25 34.25H14.75V46.25H22.25V34.25Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.75 31.247V26.75H29.75V43.25H25.25" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20.75 23.7485V19.25H47.75V40.25H32.75M29.75 40.25H25.25M47.75 35.75H32.75M34.25 40.25V46.25M28.25 46.25H40.25M39.5 22.9985L44 27.5M43.25 22.2485L44.75 23.7485" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.75 43.25H22.25M22.25 34.25H14.75V46.25H22.25V34.25Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M17.75 31.247V26.75H29.75V43.25H25.25" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M20.75 23.7485V19.25H47.75V40.25H32.75M29.75 40.25H25.25M47.75 35.75H32.75M34.25 40.25V46.25M28.25 46.25H40.25M39.5 22.9985L44 27.5M43.25 22.2485L44.75 23.7485" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" strokeLinejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_216_14024" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F65A75"/>
-<stop offset="1" stop-color="#48179C"/>
+<stop stopColor="#F65A75"/>
+<stop offset="1" stopColor="#48179C"/>
 </linearGradient>
 </defs>
 </svg>

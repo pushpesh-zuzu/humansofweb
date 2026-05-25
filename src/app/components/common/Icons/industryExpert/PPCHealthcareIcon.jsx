@@ -20,7 +20,7 @@ function PPCHealthcareIcon() {
         stroke="white"
         stroke-width="2.25"
         stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -31,8 +31,8 @@ function PPCHealthcareIcon() {
           y2="64"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F65A75" />
-          <stop offset="1" stop-color="#48179C" />
+          <stop stopColor="#F65A75" />
+          <stop offset="1" stopColor="#48179C" />
         </linearGradient>
       </defs>
     </svg>

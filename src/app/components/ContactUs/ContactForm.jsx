@@ -20,7 +20,7 @@ const ContactForm = () => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [phoneCountry, setPhoneCountry] = useState({
-    dialCode: "91",
+    dialCode: "971",
   });
   const handleChange = (event) => {
     const { name, type, value, checked } = event.target;
@@ -193,7 +193,7 @@ const ContactForm = () => {
                 {/* Phone */}
                 <div className="mb-3 md:mb-1">
                   <PhoneInput
-                    country="in"
+                    country={"ae"}
                     value={form.phone}
                     onChange={handlePhoneChange}
                     inputProps={{
@@ -225,9 +225,9 @@ const ContactForm = () => {
                   {errors.phone && (
                     <p className="mt-1 text-xs text-red-500">{errors.phone}</p>
                   )}
-                  <p className="mt-1 text-xs text-gray-500 whitespace-nowrap">
+                  {!errors.phone && <p className="mt-1 text-xs text-gray-500 whitespace-nowrap">
                     Please ensure this is a WhatsApp number.
-                  </p>
+                  </p>}
                 </div>
 
                 {/* Domain */}

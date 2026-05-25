@@ -4,8 +4,8 @@
 <path d="M47.75 38.0919L46.1593 36.5L42.125 40.5354L38.0907 36.5L36.5 38.0919L40.5343 42.125L36.5 46.1593L38.0907 47.75L42.125 43.7157L46.1593 47.75L47.75 46.1593L43.7157 42.125L47.75 38.0919Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear_164_4884" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F65A75"/>
-<stop offset="1" stop-color="#48179C"/>
+<stop stopColor="#F65A75"/>
+<stop offset="1" stopColor="#48179C"/>
 </linearGradient>
 </defs>
 </svg>

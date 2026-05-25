@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       className={`${montserrat.variable} h-full antialiased`}
     >
       <head>
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/LogoIcon.svg" type="image/svg+xml" />
       </head>
       <body suppressHydrationWarning className="relative overflow-x-hidden">
         <div className="relative z-10 flex min-h-svh flex-col">

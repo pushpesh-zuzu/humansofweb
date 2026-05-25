@@ -10,8 +10,8 @@ function EmailandSMSRetention() {
 </g>
 <defs>
 <linearGradient id="paint0_linear_203_4676" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F65A75"/>
-<stop offset="1" stop-color="#48179C"/>
+<stop stopColor="#F65A75"/>
+<stop offset="1" stopColor="#48179C"/>
 </linearGradient>
 <clipPath id="clip0_203_4676">
 <rect width="41.15" height="36" fill="white" transform="translate(14 14)"/>

@@ -316,9 +316,9 @@ const GetProposalModal = ({
                     {errors.phone}
                   </p>
                 )}
-                <p className="mt-1 text-xs text-gray-500 ml-2">
+                {!errors.phone && <p className="mt-1 text-xs text-gray-500 ml-2">
                   Please ensure this is a WhatsApp number.
-                </p>
+                </p>}
               </div>
             </div>
 
