@@ -100,6 +100,19 @@ body {
 .react-tel-input .country-list .country .dial-code {
   color: #000 !important;
 }
+/* Search input text color fix */
+.react-tel-input .country-list .search-box {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.react-tel-input .country-list .search {
+  background-color: #fff !important;
+}
+
+.react-tel-input .country-list input.search-box::placeholder {
+  color: #000 !important;
+}
 @media (max-width: 767px) {
   .react-tel-input .form-control,
   .react-tel-input .form-control::placeholder,
