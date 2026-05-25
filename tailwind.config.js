@@ -190,7 +190,7 @@ const headingStyles = {
     letterSpacing: "0.046875em;",
     transition: "all 0.3s ease",
     "&:hover": {
-      backgroundColor: "#000000",
+      backgroundColor: "#48179C",
       color: "#fff",
     },
     "@media (min-width: 768px)": {
