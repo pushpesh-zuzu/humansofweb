@@ -5,6 +5,8 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import ContainerWrapper from "../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
+import { submitEnquiry } from "@/lib/store/enquirySlice";
+import { useDispatch } from "react-redux";
 
 const initialForm = {
   name: "",
@@ -17,6 +19,8 @@ const initialForm = {
 };
 
 const ContactForm = () => {
+  const dispatch = useDispatch();
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [phoneCountry, setPhoneCountry] = useState({
@@ -50,7 +54,7 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const nextErrors = {};
@@ -75,10 +79,24 @@ const ContactForm = () => {
     }
 
     setErrors(nextErrors);
-
     if (Object.keys(nextErrors).length > 0) return;
 
-    const whatsappMessage = `New Contact Form Enquiry
+    try {
+      setLoading(true);
+
+      const response = await dispatch(
+        submitEnquiry({
+          name: form.name,
+          email: form.email,
+          phone: `+${form.phone}`,
+          website_url: form.domain,
+          designation: form.designation,
+          about: form.message,
+        }),
+      );
+
+      if (response?.meta?.requestStatus === "fulfilled") {
+        const whatsappMessage = `New Contact Form Enquiry
 
 ● Name: ${form.name}
 ● Phone: +${form.phone}
@@ -89,13 +107,19 @@ const ContactForm = () => {
 
 - Humans of Web`;
 
-    const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
-      whatsappMessage,
-    )}`;
+        const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
+          whatsappMessage,
+        )}`;
 
-    window.open(whatsappUrl, "_blank");
-    setForm(initialForm);
-    setErrors({});
+        window.open(whatsappUrl, "_blank");
+        setForm(initialForm);
+        setErrors({});
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -225,9 +249,11 @@ const ContactForm = () => {
                   {errors.phone && (
                     <p className="mt-1 text-xs text-red-500">{errors.phone}</p>
                   )}
-                  {!errors.phone && <p className="mt-1 text-xs text-gray-500 whitespace-nowrap">
-                    Please ensure this is a WhatsApp number.
-                  </p>}
+                  {!errors.phone && (
+                    <p className="mt-1 text-xs text-gray-500 whitespace-nowrap">
+                      Please ensure this is a WhatsApp number.
+                    </p>
+                  )}
                 </div>
 
                 {/* Domain */}
@@ -319,9 +345,10 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                className="h-[52px] cursor-pointer rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-primary"
+                disabled={loading}
+                className="h-[52px] cursor-pointer rounded-full bg-secondary px-6 text-sm font-bold uppercase tracking-[0.04em] text-white transition hover:bg-primary disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
