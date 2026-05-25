@@ -270,7 +270,7 @@ export default function ProposalModal({ isOpen, onClose }) {
         </div>
 
         {/* ── DESKTOP + MOBILE form body ── */}
-        <div className="flex flex-col md:flex-row flex-1 min-h-0 max-[767px]:max-h-[550px] ">
+        <div className="flex flex-col md:flex-row flex-1 min-h-0 max-[767px]:max-h-[600px] ">
           {/* LEFT — desktop only */}
           <div
             className="hidden md:flex flex-col relative overflow-hidden flex-shrink-0 bg-white"
