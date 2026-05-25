@@ -9,6 +9,25 @@ import { useRouter } from "next/navigation";
 import { submitEnquiry } from "@/lib/store/enquirySlice";
 import Loader from "../common/Loader/Loader";
 
+function CloseIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="m6 6 12 12M18 6 6 18"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 function Input({ type = "text", name, placeholder, value, onChange }) {
   return (
     <input
@@ -205,12 +224,14 @@ export default function ProposalModal({ isOpen, onClose }) {
         }}
       >
         {/* Close */}
-        <button
+        
+         <button
+          type="button"
+          aria-label="Close modal"
           onClick={onClose}
-          aria-label="Close"
-          className="absolute cursor-pointer top-3 right-3 z-20 w-10 h-10 rounded-full flex items-center justify-center text-gray-500 hover:text-gray-500 hover:bg-white/20 transition-all text-2xl font-light"
+          className="absolute right-3 top-3 z-20 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-2xl font-light bg-primary text-white transition-all"
         >
-          ×
+          <CloseIcon />
         </button>
 
         {/* ── MOBILE top strip ── */}
@@ -249,7 +270,7 @@ export default function ProposalModal({ isOpen, onClose }) {
         </div>
 
         {/* ── DESKTOP + MOBILE form body ── */}
-        <div className="flex flex-col md:flex-row flex-1 min-h-0 ">
+        <div className="flex flex-col md:flex-row flex-1 min-h-0 max-[767px]:max-h-[450px] ">
           {/* LEFT — desktop only */}
           <div
             className="hidden md:flex flex-col relative overflow-hidden flex-shrink-0 bg-white"
@@ -614,8 +635,8 @@ export default function ProposalModal({ isOpen, onClose }) {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="button-primary w-full transition-all duration-200"
-                  style={{ background: "#48179C", border: "none" }}
+                  className="button-primary rounded-full w-full bg-secondary hover:bg-primary transition-all duration-200"
+                  style={{ border: "none" }}
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.background = "#2d0e6e")
                   }
@@ -626,7 +647,7 @@ export default function ProposalModal({ isOpen, onClose }) {
                   {loading ? (
                     <Loader label="Sending..." />
                   ) : (
-                    "Send My Free Proposal →"
+                    "Send My Free Proposal"
                   )}
                 </button>
 
