@@ -8,8 +8,8 @@ function SpecialtyEyeCareSEO() {
 <path d="M32 36.5C34.4853 36.5 36.5 34.4853 36.5 32C36.5 29.5147 34.4853 27.5 32 27.5C29.5147 27.5 27.5 29.5147 27.5 32C27.5 34.4853 29.5147 36.5 32 36.5Z" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_203_4733" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F65A75"/>
-<stop offset="1" stopColor="#48179C"/>
+<stop stop-color="#F65A75"/>
+<stop offset="1" stop-color="#48179C"/>
 </linearGradient>
 </defs>
 </svg>

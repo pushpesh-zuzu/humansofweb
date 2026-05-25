@@ -300,19 +300,19 @@
 <path opacity="0.15" d="M313.838 227.029C324.839 220.136 328.169 205.63 321.276 194.628C314.383 183.627 299.877 180.296 288.876 187.19C277.875 194.082 274.544 208.589 281.437 219.59C288.339 230.578 302.834 233.906 313.838 227.029Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear_157_48494" x1="435.105" y1="416.842" x2="435.073" y2="416.462" gradientUnits="userSpaceOnUse">
-<stop stopColor="white"/>
-<stop offset="1" stopColor="#A5CBFA"/>
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#A5CBFA"/>
 </linearGradient>
 <linearGradient id="paint1_linear_157_48494" x1="487.442" y1="411.85" x2="487.41" y2="411.47" gradientUnits="userSpaceOnUse">
-<stop stopColor="white"/>
-<stop offset="1" stopColor="#A5CBFA"/>
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#A5CBFA"/>
 </linearGradient>
 <linearGradient id="paint2_linear_157_48494" x1="461.657" y1="429.818" x2="461.611" y2="429.205" gradientUnits="userSpaceOnUse">
-<stop stopColor="white"/>
-<stop offset="1" stopColor="#A5CBFA"/>
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#A5CBFA"/>
 </linearGradient>
 <linearGradient id="paint3_linear_157_48494" x1="235.921" y1="466.095" x2="235.844" y2="466.539" gradientUnits="userSpaceOnUse">
-<stop stopColor="white"/>
+<stop stop-color="white"/>
 <stop offset="1"/>
 </linearGradient>
 </defs>

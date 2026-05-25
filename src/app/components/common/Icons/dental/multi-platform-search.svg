@@ -9,8 +9,8 @@
 <path d="M10.9633 40.5411C12.5998 40.5411 13.9265 39.2144 13.9265 37.5779C13.9265 35.9413 12.5998 34.6146 10.9633 34.6146C9.3267 34.6146 8 35.9413 8 37.5779C8 39.2144 9.3267 40.5411 10.9633 40.5411Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear_189_25060" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F65A75"/>
-<stop offset="1" stopColor="#48179C"/>
+<stop stop-color="#F65A75"/>
+<stop offset="1" stop-color="#48179C"/>
 </linearGradient>
 </defs>
 </svg>

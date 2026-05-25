@@ -163,60 +163,60 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear_219_416" x1="144.229" y1="325.331" x2="105.893" y2="270.026" gradientUnits="userSpaceOnUse">
-<stop stopColor="#005A7C"/>
-<stop offset="1" stopColor="#49C6B4"/>
+<stop stop-color="#005A7C"/>
+<stop offset="1" stop-color="#49C6B4"/>
 </linearGradient>
 <linearGradient id="paint1_linear_219_416" x1="150.778" y1="315.936" x2="109.113" y2="265.932" gradientUnits="userSpaceOnUse">
-<stop stopColor="#025E7C"/>
-<stop offset="1" stopColor="#48C8B8"/>
+<stop stop-color="#025E7C"/>
+<stop offset="1" stop-color="#48C8B8"/>
 </linearGradient>
 <linearGradient id="paint2_linear_219_416" x1="150.848" y1="286.789" x2="113.414" y2="207.184" gradientUnits="userSpaceOnUse">
-<stop stopColor="#0B6F7D"/>
-<stop offset="1" stopColor="#58CFC0"/>
+<stop stop-color="#0B6F7D"/>
+<stop offset="1" stop-color="#58CFC0"/>
 </linearGradient>
 <linearGradient id="paint3_linear_219_416" x1="168.192" y1="271.15" x2="151.719" y2="196.131" gradientUnits="userSpaceOnUse">
-<stop stopColor="#167E85"/>
-<stop offset="1" stopColor="#4CC2B6"/>
+<stop stop-color="#167E85"/>
+<stop offset="1" stop-color="#4CC2B6"/>
 </linearGradient>
 <linearGradient id="paint4_linear_219_416" x1="501.149" y1="124.046" x2="385.439" y2="55.7597" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F79747"/>
-<stop offset="1" stopColor="#F6B56A"/>
+<stop stop-color="#F79747"/>
+<stop offset="1" stop-color="#F6B56A"/>
 </linearGradient>
 <linearGradient id="paint5_linear_219_416" x1="435.309" y1="78.5604" x2="430.853" y2="45.3504" gradientUnits="userSpaceOnUse">
-<stop stopColor="#254094"/>
-<stop offset="1" stopColor="#4763B8"/>
+<stop stop-color="#254094"/>
+<stop offset="1" stop-color="#4763B8"/>
 </linearGradient>
 <linearGradient id="paint6_linear_219_416" x1="186.153" y1="327.084" x2="185.148" y2="288.772" gradientUnits="userSpaceOnUse">
-<stop stopColor="#06567E"/>
-<stop offset="1" stopColor="#168590"/>
+<stop stop-color="#06567E"/>
+<stop offset="1" stop-color="#168590"/>
 </linearGradient>
 <linearGradient id="paint7_linear_219_416" x1="188.267" y1="294.929" x2="202.365" y2="276.747" gradientUnits="userSpaceOnUse">
-<stop stopColor="#1C8B8D"/>
-<stop offset="1" stopColor="#54D2BC"/>
+<stop stop-color="#1C8B8D"/>
+<stop offset="1" stop-color="#54D2BC"/>
 </linearGradient>
 <linearGradient id="paint8_linear_219_416" x1="505.063" y1="222.47" x2="472.79" y2="318.94" gradientUnits="userSpaceOnUse">
-<stop stopColor="#BFD9FB"/>
-<stop offset="1" stopColor="#F4F5FB"/>
+<stop stop-color="#BFD9FB"/>
+<stop offset="1" stop-color="#F4F5FB"/>
 </linearGradient>
 <linearGradient id="paint9_linear_219_416" x1="481.043" y1="304.83" x2="502.697" y2="243.64" gradientUnits="userSpaceOnUse">
-<stop stopColor="#22958D"/>
-<stop offset="1" stopColor="#7FD4AD"/>
+<stop stop-color="#22958D"/>
+<stop offset="1" stop-color="#7FD4AD"/>
 </linearGradient>
 <linearGradient id="paint10_linear_219_416" x1="488.927" y1="308.564" x2="506.908" y2="245.19" gradientUnits="userSpaceOnUse">
-<stop stopColor="#25908D"/>
-<stop offset="1" stopColor="#77D0AB"/>
+<stop stop-color="#25908D"/>
+<stop offset="1" stop-color="#77D0AB"/>
 </linearGradient>
 <linearGradient id="paint11_linear_219_416" x1="480.744" y1="230.922" x2="450.295" y2="200.897" gradientUnits="userSpaceOnUse">
-<stop stopColor="#0F7789"/>
-<stop offset="1" stopColor="#35A7A5"/>
+<stop stop-color="#0F7789"/>
+<stop offset="1" stop-color="#35A7A5"/>
 </linearGradient>
 <linearGradient id="paint12_linear_219_416" x1="182.371" y1="292.697" x2="185.019" y2="220.326" gradientUnits="userSpaceOnUse">
-<stop stopColor="#0F7082"/>
-<stop offset="1" stopColor="#3BA8A0"/>
+<stop stop-color="#0F7082"/>
+<stop offset="1" stop-color="#3BA8A0"/>
 </linearGradient>
 <linearGradient id="paint13_linear_219_416" x1="402.794" y1="266.363" x2="301.992" y2="413.911" gradientUnits="userSpaceOnUse">
-<stop stopColor="#0E286D"/>
-<stop offset="1" stopColor="#344BB0"/>
+<stop stop-color="#0E286D"/>
+<stop offset="1" stop-color="#344BB0"/>
 </linearGradient>
 <clipPath id="clip0_219_416">
 <rect width="538" height="390" fill="white" transform="translate(43)"/>

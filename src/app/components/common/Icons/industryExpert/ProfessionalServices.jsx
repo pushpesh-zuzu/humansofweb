@@ -29,8 +29,8 @@ function ProfessionalServices({ className = "" }) {
           y2="64"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#F65A75" />
-          <stop offset="1" stopColor="#48179C" />
+          <stop stop-color="#F65A75" />
+          <stop offset="1" stop-color="#48179C" />
         </linearGradient>
       </defs>
     </svg>

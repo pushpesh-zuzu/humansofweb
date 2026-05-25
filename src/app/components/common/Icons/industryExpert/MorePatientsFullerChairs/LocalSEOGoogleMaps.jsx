@@ -8,8 +8,8 @@ function LocalSEOGoogleMaps() {
 <path d="M18.5 36.782C17.5146 35.0844 16.9971 33.1559 17 31.193C17 25.0115 22.037 20 28.25 20H35.75C41.963 20 47 25.0115 47 31.193C47 36.068 43.8695 40.214 39.5 41.75" stroke="white" strokeWidth="2.25" strokeLinecap="round"/>
 <defs>
 <linearGradient id="paint0_linear_203_4660" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F65A75"/>
-<stop offset="1" stopColor="#48179C"/>
+<stop stop-color="#F65A75"/>
+<stop offset="1" stop-color="#48179C"/>
 </linearGradient>
 </defs>
 </svg>

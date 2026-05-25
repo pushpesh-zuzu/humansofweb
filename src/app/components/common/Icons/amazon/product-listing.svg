@@ -14,8 +14,8 @@
 <path d="M40.1112 41.7196H31.9719C31.82 41.7196 31.6963 41.5959 31.6963 41.444C31.6963 41.2921 31.82 41.1684 31.9719 41.1684H40.1056C40.2574 41.1684 40.3812 41.2921 40.3812 41.444C40.3812 41.5959 40.2631 41.7196 40.1112 41.7196Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear_165_5619" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F65A75"/>
-<stop offset="1" stopColor="#48179C"/>
+<stop stop-color="#F65A75"/>
+<stop offset="1" stop-color="#48179C"/>
 </linearGradient>
 </defs>
 </svg>

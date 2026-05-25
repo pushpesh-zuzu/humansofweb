@@ -5,8 +5,8 @@
 <path d="M17.5996 19.4V43.7C17.5996 43.9387 17.6944 44.1676 17.8632 44.3364C18.032 44.5052 18.2609 44.6 18.4996 44.6H46.3996" stroke="white" stroke-width="1.8" stroke-linecap="round" strokeLinejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_189_27085" x1="64" y1="7.62939e-06" x2="7.62939e-06" y2="64" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F65A75"/>
-<stop offset="1" stopColor="#48179C"/>
+<stop stop-color="#F65A75"/>
+<stop offset="1" stop-color="#48179C"/>
 </linearGradient>
 </defs>
 </svg>
