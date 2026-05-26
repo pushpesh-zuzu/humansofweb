@@ -114,7 +114,7 @@ const WorkWithCards = ({
                     {sliderCards.map((card, index) => (
                       <article
                         key={`${card.title}-${index}`}
-                        className="group box-border min-h-[280px] flex-none lg:px-3"
+                        className="group box-border min-h-[280px] flex-none px-2 lg:px-3"
                         style={{ flex: `0 0 ${100 / sliderCards.length}%` }}
                       >
                         <div className="h-full rounded-[14px] bg-gradient-to-br from-primary to-secondary p-[2px] shadow-[0_18px_45px_rgba(72,23,156,0.16)]">
