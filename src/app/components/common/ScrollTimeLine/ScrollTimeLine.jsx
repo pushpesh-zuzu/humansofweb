@@ -102,7 +102,7 @@ export default function ScrollTimeline({
           headdingBlack={headdingBlack}
           headingBlue={headingBlue}
           subHeading={subheading}
-          padding="pb-[35px] md:pb-[60px]"
+          padding="pb-[30px] md:pb-[60px]"
           headingBlueColor={headingBlueColor}
           headingBlackColor={headingBlackColor}
         />

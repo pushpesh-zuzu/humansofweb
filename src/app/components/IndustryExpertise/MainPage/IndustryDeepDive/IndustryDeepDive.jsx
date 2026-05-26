@@ -1,24 +1,24 @@
 "use client";
 import ContainerWrapper from "@/app/components/common/Container/ContainerWrapper";
 import H2HeadingWrapper from "@/app/components/common/Container/H2HeadingWrapper";
-import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
+// import PaddingWrapper from "@/app/components/common/Container/PaddingWrapper";
 import PaddingWrapper2 from "@/app/components/common/Container/PaddingWrapper2";
 import { GetYourFreeConsultationButton } from "@/app/components/common/CtaButtons";
-import ConversionPages from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/ConversionPages";
-import LeadGeneration from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LeadGeneration";
-import LocalSEO from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LocalSEO";
-import HighValueProcedureAds from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/HighValueProcedureAds";
-import SpecialtyEyeCareSEO from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/SpecialtyEyeCareSEO";
-import TrustBuildingContentReviews from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/TrustBuildingContentReviews";
-import EmailandSMSRetention from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/EmailandSMSRetention";
-import MetaandGooglePerformanceAds from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/MetaandGooglePerformanceAds";
-import ShoppingSEOandProductFeeds from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/ShoppingSEOandProductFeeds";
-import HealthcareLocalSEO from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/HealthcareLocalSEO";
-import PatientAcquisitionAds from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/PatientAcquisitionAds";
-import PatientRetentionAndFollowup from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/PatientRetentionAndFollowup";
-import AppointmentFocusedGoogleAds from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/AppointmentFocusedGoogleAds";
-import LocalSEOGoogleMaps from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/LocalSEOGoogleMaps";
-import ReviewReputationManagement from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/ReviewReputationManagement";
+// import ConversionPages from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/ConversionPages";
+// import LeadGeneration from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LeadGeneration";
+// import LocalSEO from "@/app/components/common/Icons/industryExpert/GetMoreCallsOwnYourLocalMarket/LocalSEO";
+// import HighValueProcedureAds from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/HighValueProcedureAds";
+// import SpecialtyEyeCareSEO from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/SpecialtyEyeCareSEO";
+// import TrustBuildingContentReviews from "@/app/components/common/Icons/industryExpert/MoreConsultationsClearerGrowth/TrustBuildingContentReviews";
+// import EmailandSMSRetention from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/EmailandSMSRetention";
+// import MetaandGooglePerformanceAds from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/MetaandGooglePerformanceAds";
+// import ShoppingSEOandProductFeeds from "@/app/components/common/Icons/industryExpert/MoreOrdersHigherReturns/ShoppingSEOandProductFeeds";
+// import HealthcareLocalSEO from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/HealthcareLocalSEO";
+// import PatientAcquisitionAds from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/PatientAcquisitionAds";
+// import PatientRetentionAndFollowup from "@/app/components/common/Icons/industryExpert/MorePatientsBuiltonTrust/PatientRetentionAndFollowup";
+// import AppointmentFocusedGoogleAds from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/AppointmentFocusedGoogleAds";
+// import LocalSEOGoogleMaps from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/LocalSEOGoogleMaps";
+// import ReviewReputationManagement from "@/app/components/common/Icons/industryExpert/MorePatientsFullerChairs/ReviewReputationManagement";
 import Image from "next/image";
 import React from "react";
 
@@ -39,7 +39,7 @@ function IndustryRow({ industry, reverse, index }) {
   // console.log(href,'frefff')
   return (
     <div
-      className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-12 xl:gap-14 items-center`}
+      className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-10 xl:gap-14 items-center`}
       // style={{ borderBottom: "1px solid #f0f0f0" }}
     >
       {/* Visual */}
@@ -70,7 +70,7 @@ function IndustryRow({ industry, reverse, index }) {
         </span>
 
         <h3
-          className="text-h3 font-extrabold leading-tight mb-3"
+          className="text-h3 font-extrabold leading-tight mb-5"
           style={{ color: "#1a1a2e" }}
         >
           {heading} <span className={`${accentTextColor}`}>{headingBlue}</span>
@@ -129,7 +129,8 @@ export default function IndustryDeepDive({
         <H2HeadingWrapper
           headdingBlack={headingBlack}
           headingBlue={headingBlue}
-          description={description}
+          // description={description}
+          padding="pb-[30px] md:pb-[60px]"
         />
 
         <div>

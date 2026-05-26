@@ -43,7 +43,7 @@ export default function WhyChooseDentalServce({
               subHeading={subheading}
               breakLine={breakLine}
               description={description}
-              padding="pb-[35px] md:pb-[60px]"
+              padding="pb-[30px] md:pb-[60px]"
             />
           </div>
         )}

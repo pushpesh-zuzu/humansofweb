@@ -107,7 +107,7 @@ export default function PillarsSection({
           <H2HeadingWrapper
             headdingBlack={headdingBlack}
             headingBlue={headingBlue}
-            padding="pb-[35px] md:pb-[60px]"
+            padding="pb-[30px] md:pb-[60px]"
           />
 
           {/* Feature cards 2×2 */}

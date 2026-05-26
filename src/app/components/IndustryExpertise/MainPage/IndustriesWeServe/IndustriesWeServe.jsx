@@ -17,10 +17,11 @@ export default function IndustriesWeServe({
         <H2HeadingWrapper
           headdingBlack={headdingBlack}
           headingBlue={headdingBlue}
-          description={description}
+          // description={description}
+          padding="pb-[30px] md:pb-[60px]"
         />
 
-        <div className="flex flex-wrap justify-center gap-6 md:pt-5">
+        <div className="flex flex-wrap justify-center gap-6">
           {INDUSTRIES.map((industry, idx) => (
             <div
               key={industry.title}

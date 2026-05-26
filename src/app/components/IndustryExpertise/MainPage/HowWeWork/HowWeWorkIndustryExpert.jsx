@@ -29,7 +29,7 @@ const HowItWorkIndustryExpert = ({
                 <HowItWorkStepCardIndustryExpert steps={steps} />
                 {showCtaButton ? (
                     <div className="flex justify-center pt-6 md:pt-[30px] lg:pt-10">
-                        <GetYourFreeConsultationButton onClick={()=>{setProposalOpen(true)}} text={ctaText} />
+                        <GetYourFreeConsultationButton className="py-3" onClick={()=>{setProposalOpen(true)}} text={ctaText} />
                     </div>
                 ) : null}
             </PaddingWrapper2>

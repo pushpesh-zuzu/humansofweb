@@ -46,7 +46,7 @@ export default function ServicesTwoGridSection({
             headingBlue={headingBlue}
             subHeading={subheading}
             breakLine={breakLine}
-            padding="pb-[35px] md:pb-[60px]"
+            padding="pb-[30px] md:pb-[60px]"
             headingBlueColor={headingBlueColor}
             headingBlackColor={headingBlackColor}
           />
@@ -91,7 +91,7 @@ export default function ServicesTwoGridSection({
                   headingBlue={headingBlue}
                   subHeading={subheading}
                   breakLine={breakLine}
-                  padding="pb-[35px] md:pb-[60px]"
+                  padding="pb-[30px] md:pb-[60px]"
                   headingBlueColor={headingBlueColor}
                   headingBlackColor={headingBlackColor}
                 />
