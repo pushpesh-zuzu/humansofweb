@@ -8,28 +8,29 @@ import CookieBanner from "./components/common/CookiesBanner/CookiesBanner";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
+  display: "swap"
 });
 
 export const metadata = {
-  title: "Boost Your SaaS & eCommerce Growth | How Digital Marketing Experts",
+  title: "Digital Marketing Agency | SEO, PPC & Growth Experts",
   description:
-    "A trusted digital marketing agency in San Jose, How offer bespoke digital marketing services that turn website visitors into paying customers. Call us now!",
+    "Partner with a digital marketing agency that delivers SEO, PPC, web development, AI solutions, and growth strategies to scale your business. Call us now!",
   icons: {
     icon: "/LogoIcon.svg",
     shortcut: "/LogoIcon.svg",
   },
   openGraph: {
-    title: "Boost Your SaaS & eCommerce Growth | How Digital Marketing Experts",
+    title: "Digital Marketing Agency | SEO, PPC & Growth Experts",
     description:
-      "A trusted digital marketing agency in San Jose, How offer bespoke digital marketing services that turn website visitors into paying customers. Call us now!",
-    url: "https://how.com",
-    siteName: "How Digital Marketing",
+      "Partner with a digital marketing agency that delivers SEO, PPC, web development, AI solutions, and growth strategies to scale your business. Call us now!",
+    url: "https://www.humansofweb.com",
+    siteName: "Humansofweb Digital Marketing",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "How Digital Marketing Agency",
+        alt: "Humansofweb Digital Marketing",
       },
     ],
     type: "website",
@@ -37,12 +38,12 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boost Your SaaS & eCommerce Growth | How Digital Marketing Experts",
+    title: "Digital Marketing Agency | SEO, PPC & Growth Experts",
     description:
-      "A trusted digital marketing agency in San Jose, How offer bespoke digital marketing services that turn website visitors into paying customers. Call us now!",
+      "Partner with a digital marketing agency that delivers SEO, PPC, web development, AI solutions, and growth strategies to scale your business. Call us now!",
     images: ["/og-image.png"],
   },
-  metadataBase: new URL("https://how.com"),
+  metadataBase: new URL("https://www.humansofweb.com/"),
 };
 
 export default function RootLayout({ children }) {
@@ -64,7 +65,7 @@ export default function RootLayout({ children }) {
             <ConditionalFooter />
           </StoreProvider>
         </div>
-        <CookieBanner/>
+        <CookieBanner />
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import ContainerWrapper from "../common/Container/ContainerWrapper";
 import PaddingWrapper2 from "../common/Container/PaddingWrapper2";
 import { submitEnquiry } from "@/lib/store/enquirySlice";
 import { useDispatch } from "react-redux";
+import { validatePhoneByCountry } from "@/lib/phoneValidation";
 
 const initialForm = {
   name: "",
@@ -65,11 +66,8 @@ const ContactForm = () => {
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
       nextErrors.email = "Invalid email address";
     }
-    if (!form.phone.trim()) {
-      nextErrors.phone = "Phone number is required";
-    } else if (form.phone.length < 10) {
-      nextErrors.phone = "Enter a valid phone number";
-    }
+    const phoneError = validatePhoneByCountry(form.phone, phoneCountry);
+    if (phoneError) nextErrors.phone = phoneError;
     if (!form.domain.trim()) nextErrors.domain = "Domain is required";
     if (!form.designation.trim()) {
       nextErrors.designation = "Designation is required";

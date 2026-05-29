@@ -18,6 +18,7 @@ import Logo from "../Icons/Home/Logo";
 import GetProposalModal from "../GetProposalModal/GetProposalModal";
 import PaddingWrapper2 from "../Container/PaddingWrapper2";
 import { usePathname } from "next/navigation";
+import { validatePhoneByCountry } from "@/lib/phoneValidation";
 
 const SOCIAL_LINKS = [
   { label: "Facebook", href: "#", icon: FaFacebookF },
@@ -74,11 +75,10 @@ const Footer = () => {
     dialCode: "971",
   });
   const handleProposalOpen = () => {
-    if (!phone.trim().length) {
-      setPhoneError("Phone Number is required");
-      return;
-    } else if (phone.length < 10) {
-      setPhoneError("Please enter your WhatsApp number.");
+    const nextPhoneError = validatePhoneByCountry(phone, phoneCountry);
+
+    if (nextPhoneError) {
+      setPhoneError(nextPhoneError);
       return;
     }
 
@@ -89,7 +89,7 @@ const Footer = () => {
     setPhone("");
     setPhoneError("");
     setPhoneCountry({
-      dialCode: "44",
+      dialCode: "971",
     });
 
     setPhoneInputKey((prev) => prev + 1);
@@ -300,6 +300,7 @@ const Footer = () => {
           resetFooterPhone();
         }}
         initialPhone={phone}
+        initialPhoneCountry={phoneCountry}
       />
     </footer>
   );

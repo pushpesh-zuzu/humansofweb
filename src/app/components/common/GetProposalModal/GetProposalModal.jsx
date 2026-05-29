@@ -6,6 +6,7 @@ import "react-phone-input-2/lib/style.css";
 import { useDispatch } from "react-redux";
 // import { useRouter } from "next/navigation";
 import { submitEnquiry } from "@/lib/store/enquirySlice";
+import { validatePhoneByCountry } from "@/lib/phoneValidation";
 import Loader from "../Loader/Loader";
 
 const initialForm = {
@@ -75,6 +76,7 @@ const GetProposalModal = ({
   onSubmit,
   heading = "Get Your Free Proposal",
   initialPhone = "",
+  initialPhoneCountry = null,
 }) => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
@@ -92,7 +94,11 @@ const GetProposalModal = ({
       ...current,
       phone: initialPhone,
     }));
-  }, [initialPhone, isOpen]);
+
+    if (initialPhoneCountry?.dialCode) {
+      setPhoneCountry(initialPhoneCountry);
+    }
+  }, [initialPhone, initialPhoneCountry, isOpen]);
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -135,11 +141,8 @@ const GetProposalModal = ({
     if (!form.fullName.trim()) {
       newErrors.fullName = "Full Name is required";
     }
-    if (!form.phone.trim()) {
-      newErrors.phone = "Phone Number is required";
-    } else if (form.phone.length < 10) {
-      newErrors.phone = "Enter valid phone number";
-    }
+    const phoneError = validatePhoneByCountry(form.phone, phoneCountry);
+    if (phoneError) newErrors.phone = phoneError;
     if (!form.email.trim()) {
       newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {

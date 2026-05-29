@@ -7,6 +7,7 @@ import "react-phone-input-2/lib/style.css";
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import { submitEnquiry } from "@/lib/store/enquirySlice";
+import { validatePhoneByCountry } from "@/lib/phoneValidation";
 import Loader from "../common/Loader/Loader";
 
 function CloseIcon() {
@@ -131,11 +132,8 @@ export default function ProposalModal({ isOpen, onClose }) {
     if (!form.firstName.trim()) {
       newErrors.firstName = "First name is required";
     }
-    if (!form.phone.trim() || form.phone.trim().length <= 3 ) {
-      newErrors.phone = "Phone Number is required";
-    } else if (form.phone.length < 10) {
-      newErrors.phone = "Enter valid phone number";
-    }
+    const phoneError = validatePhoneByCountry(form.phone, phoneCountry);
+    if (phoneError) newErrors.phone = phoneError;
 
     if (!form.email.trim()) {
       newErrors.email = "Email is required";
