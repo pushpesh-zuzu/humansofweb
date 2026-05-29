@@ -23,8 +23,8 @@ const GradRect = () => {
           y2="64"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F65A75" />
-          <stop offset="1" stop-color="#48179C" />
+          <stop stopColor="#F65A75" />
+          <stop offset="1" stopColor="#48179C" />
         </linearGradient>
 
         <clipPath id={clipId}>

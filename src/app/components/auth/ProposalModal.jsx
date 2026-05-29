@@ -194,7 +194,7 @@ export default function ProposalModal({ isOpen, onClose }) {
 
 - Humans of Web`;
 
-        const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
+        const whatsappUrl = `https://wa.me/916306003169?text=${encodeURIComponent(
           message,
         )}`;
 
@@ -418,11 +418,11 @@ export default function ProposalModal({ isOpen, onClose }) {
                   Prefer to connect with us on WhatsApp?
                 </p>
                 <a
-                  href="https://wa.me/447897024186"
+                  href="https://wa.me/916306003169"
                   className="flex items-center gap-2 font-bold max-w-fit text-secondary text-sm hover:text-primary transition-colors"
                 >
                   <FaWhatsapp className="h-5 w-5 text-[#25D366] group-hover:text-[#25D366]" />
-                  +44 7897 024186
+                  +91 6306003169
                 </a>
               </div>
             </div>
@@ -657,12 +657,12 @@ export default function ProposalModal({ isOpen, onClose }) {
                 Prefer to connect with us on WhatsApp?
               </span>
               <a
-                href="https://wa.me/447897024186"
+                href="https://wa.me/916306003169"
                 className="flex items-center gap-1.5 font-bold text-sm"
                 style={{ color: "#F65A75" }}
               >
                 <FaWhatsapp className="h-5 w-5 text-[#25D366] group-hover:text-[#25D366]" />
-                +44 7897 024186
+                +91 6306003169
               </a>
             </div>
           </div>

@@ -97,7 +97,7 @@ export default function CTASection({ onOpenModal }) {
               </button>
 
               <a
-                href="tel:+918888888888"
+                href="tel:+916306003169"
                 className="flex items-center gap-2 text-white/80 font-semibold text-sm hover:text-white transition-colors"
               >
                 <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

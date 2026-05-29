@@ -24,7 +24,7 @@ const ThankYou = () => {
 
         — Humans of Web`;
 
-        const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
+        const whatsappUrl = `https://wa.me/916306003169?text=${encodeURIComponent(
             message
         )}`;
 

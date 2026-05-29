@@ -107,7 +107,7 @@ const ContactForm = () => {
 
 - Humans of Web`;
 
-        const whatsappUrl = `https://wa.me/447897024186?text=${encodeURIComponent(
+        const whatsappUrl = `https://wa.me/916306003169?text=${encodeURIComponent(
           whatsappMessage,
         )}`;
 
@@ -145,7 +145,7 @@ const ContactForm = () => {
             </p>
 
             {[
-              { label: "Whatsapp:", val: "+44 7897 024186" },
+              { label: "Whatsapp:", val: "+91 6306003169" },
               { label: "Send Email:", val: "hello@humansofweb.com" },
               {
                 label: "Address:",

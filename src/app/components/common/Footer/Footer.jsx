@@ -57,8 +57,8 @@ const CONTACT_INFO = [
   },
   {
     label: "WhatsApp",
-    value: "+44 7897 024186",
-    href: "https://wa.me/447897024186",
+    value: "+91 6306003169",
+    href: "https://wa.me/916306003169",
     icon: FaWhatsapp,
   },
 ];
@@ -126,11 +126,11 @@ const Footer = () => {
                   Ready To Speak With A Marketing Expert?
                 </p>
                 <a
-                  href="https://wa.me/447897024186"
+                  href="https://wa.me/916306003169"
                   className="inline-flex items-center gap-3 text-h5 font-bold text-secondary transition hover:text-primary lg:whitespace-nowrap"
                 >
                   <FaWhatsapp className="h-6 w-6 text-[#25D366] group-hover:text-[#25D366]" />
-                  +44 7897 024186
+                  +91 6306003169
                 </a>
               </div>
             </div>
